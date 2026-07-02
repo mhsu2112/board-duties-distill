@@ -9,7 +9,7 @@ from pathlib import Path
 import pytest
 
 from adapters.fixture_loader import load_fixture
-from profiles.lex_balanus.pipeline import run_fixture
+from profiles.lex_balanus.pipeline import eval_fixture, run_fixture
 
 _FIXTURES = Path(__file__).resolve().parent.parent / "data" / "fixtures" / "us-gsib"
 _DIRS = ["icfr", "sr12-17", "board-effectiveness", "_calculus"]
@@ -61,6 +61,15 @@ def test_undeclared_force_conversion_fails() -> None:
     result = run_fixture(mutated)
     assert any(v.code == "undeclared_force_conversion" for v in result.violations)
     assert not result.ok
+
+
+@pytest.mark.parametrize("name", _DIRS)
+def test_eval_reports_full_agreement(name: str) -> None:
+    result = eval_fixture(load_fixture(_FIXTURES / name))
+    assert result.effect_agreement == 1.0
+    assert result.operation_agreement == 1.0
+    assert result.disposition_agreement == 1.0
+    assert result.all_match
 
 
 def test_declared_force_conversion_passes() -> None:

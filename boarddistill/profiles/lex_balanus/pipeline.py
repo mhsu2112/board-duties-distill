@@ -10,7 +10,7 @@ reform input; effect_class / disposition_state / baseline / verifier_records are
 from __future__ import annotations
 
 import json
-from collections.abc import Mapping, Sequence
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -157,6 +157,69 @@ def run_fixture(bundle: FixtureBundle) -> RunResult:
         diagnostics=diagnostics,
         alignment=alignment,
     )
+
+
+@dataclass(frozen=True)
+class EvalRow:
+    finding_id: str
+    effect_match: bool
+    operation_match: bool
+    disposition_match: bool
+    computed_effect: str | None
+    gold_effect: str
+
+
+@dataclass(frozen=True)
+class EvalResult:
+    name: str
+    rows: list[EvalRow]
+    residuals: int
+
+    @property
+    def effect_agreement(self) -> float:
+        return _rate(r.effect_match for r in self.rows)
+
+    @property
+    def operation_agreement(self) -> float:
+        return _rate(r.operation_match for r in self.rows)
+
+    @property
+    def disposition_agreement(self) -> float:
+        return _rate(r.disposition_match for r in self.rows)
+
+    @property
+    def all_match(self) -> bool:
+        return self.residuals == 0 and all(
+            r.effect_match and r.operation_match for r in self.rows
+        )
+
+
+def _rate(flags: Iterable[bool]) -> float:
+    values = list(flags)
+    return sum(1 for f in values if f) / len(values) if values else 1.0
+
+
+def eval_fixture(bundle: FixtureBundle) -> EvalResult:
+    """Deterministic agreement of the computed findings against the gold answer key —
+    operation set + effect class (+ disposition), plus the residual count."""
+    result = run_fixture(bundle)
+    computed = {f.id: f for f in result.computed_findings}
+    gold = {f.id: f for f in bundle.gold_findings}
+    rows: list[EvalRow] = []
+    for fid in sorted(gold):
+        g = gold[fid]
+        c = computed.get(fid)
+        rows.append(
+            EvalRow(
+                finding_id=fid,
+                effect_match=c is not None and c.effect_class == g.effect_class,
+                operation_match=c is not None and c.operation_ids == g.operation_ids,
+                disposition_match=c is not None and c.disposition_state == g.disposition_state,
+                computed_effect=c.effect_class if c is not None else None,
+                gold_effect=g.effect_class,
+            )
+        )
+    return EvalResult(name=bundle.name, rows=rows, residuals=len(result.residuals))
 
 
 def _verifier_ids_for(

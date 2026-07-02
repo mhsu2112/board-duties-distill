@@ -125,7 +125,26 @@ def eval_fixture(
     directory: Annotated[Path, typer.Argument(help="Fixture directory to evaluate against gold.")],
 ) -> None:
     """Deterministic agreement on operation set + effect class vs gold_findings.json."""
-    _stub("eval-fixture")
+    from adapters.fixture_loader import load_fixture
+    from profiles.lex_balanus.pipeline import eval_fixture as _eval
+
+    result = _eval(load_fixture(directory))
+    typer.echo(f"[boarddistill] eval {result.name}: {len(result.rows)} findings")
+    typer.echo(
+        f"  effect agreement: {result.effect_agreement:.0%} · "
+        f"operation agreement: {result.operation_agreement:.0%} · "
+        f"disposition agreement: {result.disposition_agreement:.0%} · "
+        f"residuals: {result.residuals}"
+    )
+    for row in result.rows:
+        if not (row.effect_match and row.operation_match):
+            typer.echo(
+                f"  MISMATCH {row.finding_id}: computed effect {row.computed_effect!r} "
+                f"vs gold {row.gold_effect!r} (op_match={row.operation_match})",
+                err=True,
+            )
+    if not result.all_match:
+        raise typer.Exit(code=1)
 
 
 @app.command("import-inventory")
