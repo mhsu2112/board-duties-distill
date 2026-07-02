@@ -16,7 +16,7 @@ from dataclasses import dataclass
 from distillcore.models.base import SourceSpan
 from distillcore.pipeline.verify import CitationVerdict
 
-from .citations import first_cfr, parse_citation
+from .citations import CfrAppendixCite, CfrCite, first_resolvable, parse_citation
 from .retrieval import Fetcher, NotAllowedError
 
 _QUOTE_CAP = 600
@@ -36,6 +36,18 @@ def _find_section(xml_text: str, section: str) -> tuple[str, str] | None:
     root = ET.fromstring(xml_text)
     for div in root.iter():
         if div.tag.startswith("DIV") and div.get("N") == section:
+            head_el = div.find("HEAD")
+            head = _normalize(head_el.text or "") if head_el is not None else ""
+            return head, _section_text(div)
+    return None
+
+
+def _find_appendix(xml_text: str, appendix: str) -> tuple[str, str] | None:
+    """Return (head, normalized_text) for the appendix DIV (N like 'Appendix D to Part ...')."""
+    root = ET.fromstring(xml_text)
+    want = f"appendix {appendix.lower()}"
+    for div in root.iter():
+        if div.tag.startswith("DIV") and (div.get("N") or "").lower().startswith(want):
             head_el = div.find("HEAD")
             head = _normalize(head_el.text or "") if head_el is not None else ""
             return head, _section_text(div)
@@ -65,29 +77,51 @@ class EcfrResolver:
     as_of: str = "2026-06-30"
 
     def verify(self, citation: str, *, expected_actor: str) -> CitationVerdict:
-        cfr = first_cfr(citation)
-        if cfr is None:
-            unresolved = parse_citation(citation)[0]
-            reason = getattr(unresolved, "reason", "unresolved citation")
-            return CitationVerdict("unverified", reason, False, "n/a", None)
+        cite = first_resolvable(citation)
+        if isinstance(cite, CfrCite):
+            return self._verify_cfr(cite, expected_actor)
+        if isinstance(cite, CfrAppendixCite):
+            return self._verify_appendix(cite, expected_actor)
+        reason = getattr(parse_citation(citation)[0], "reason", "non-CFR citation")
+        return CitationVerdict("unverified", reason, False, "n/a", None)
 
-        source_id = f"ecfr-t{cfr.title}-p{cfr.part}"
+    def _fetch_part(self, title: int, part: str, label: str) -> tuple[str, str] | str:
+        """Fetch a part's eCFR XML; return (source_id, text) or an error note."""
+        source_id = f"ecfr-t{title}-p{part}"
         url = (
-            f"https://www.ecfr.gov/api/versioner/v1/full/{self.as_of}"
-            f"/title-{cfr.title}.xml?part={cfr.part}"
+            f"https://www.ecfr.gov/api/versioner/v1/full/{self.as_of}/title-{title}.xml?part={part}"
         )
         try:
             doc = self.fetcher.fetch(
-                url, source_id, title=f"eCFR {cfr.title} CFR part {cfr.part}", notes=cfr.label
+                url, source_id, title=f"eCFR {title} CFR part {part}", notes=label
             )
         except NotAllowedError:
             raise
-        except Exception as exc:  # noqa: BLE001 — unreachable source ⇒ unverified, never a guess
-            return CitationVerdict(
-                "unverified", f"fetch failed: {type(exc).__name__}", False, "n/a", None
-            )
+        except Exception as exc:  # noqa: BLE001 — unreachable ⇒ unverified, never a guess
+            return f"fetch failed: {type(exc).__name__}"
+        return source_id, doc.text
 
-        found = _find_section(doc.text, cfr.section)
+    def _span(
+        self, source_id: str, key: str, citation: str, doc_text: str, text: str
+    ) -> SourceSpan:
+        full_norm = _normalize(" ".join(ET.fromstring(doc_text).itertext()))
+        quote = text[:_QUOTE_CAP]
+        start = full_norm.find(text[:80])
+        return SourceSpan(
+            id=f"span-{source_id}-{key}",
+            source_id=source_id,
+            citation=citation,
+            start=start if start >= 0 else None,
+            end=(start + len(quote)) if start >= 0 else None,
+            quote=quote,
+        )
+
+    def _verify_cfr(self, cfr: CfrCite, expected_actor: str) -> CitationVerdict:
+        fetched = self._fetch_part(cfr.title, cfr.part, cfr.label)
+        if isinstance(fetched, str):
+            return CitationVerdict("unverified", fetched, False, "n/a", None)
+        source_id, doc_text = fetched
+        found = _find_section(doc_text, cfr.section)
         if found is None:
             return CitationVerdict(
                 "contradicted",
@@ -96,7 +130,6 @@ class EcfrResolver:
                 "none",
                 None,
             )
-
         head, text = found
         if "[reserved]" in head.lower() or "[reserved]" in text.lower():
             return CitationVerdict(
@@ -106,22 +139,43 @@ class EcfrResolver:
                 "none",
                 None,
             )
-
-        full_norm = _normalize(" ".join(ET.fromstring(doc.text).itertext()))
-        quote = text[:_QUOTE_CAP]
-        start = full_norm.find(text[:80])
-        span = SourceSpan(
-            id=f"span-{source_id}-{cfr.section}",
-            source_id=source_id,
-            citation=cfr.label,
-            start=start if start >= 0 else None,
-            end=(start + len(quote)) if start >= 0 else None,
-            quote=quote,
-        )
+        span = self._span(source_id, cfr.section, cfr.label, doc_text, text)
         return CitationVerdict(
             "verified",
             f"{cfr.label} present and in force at {self.as_of}; verbatim text pinned",
             True,
             _support(text, expected_actor),
+            span,
+        )
+
+    def _verify_appendix(self, cite: CfrAppendixCite, expected_actor: str) -> CitationVerdict:
+        fetched = self._fetch_part(cite.title, cite.part, cite.label)
+        if isinstance(fetched, str):
+            return CitationVerdict("unverified", fetched, False, "n/a", None)
+        source_id, doc_text = fetched
+        found = _find_appendix(doc_text, cite.appendix)
+        if found is None:
+            return CitationVerdict(
+                "contradicted",
+                f"Appendix {cite.appendix} not found in {cite.title} CFR part {cite.part} (F1)",
+                False,
+                "none",
+                None,
+            )
+        _head, text = found
+        # window on the cited roman subsection (last occurrence = body, not the ToC)
+        window = text
+        if cite.subsection:
+            roman = cite.subsection.split(".")[0]
+            idx = text.rfind(f"{roman}. ")
+            if idx >= 0:
+                window = text[idx:]
+        key = f"app{cite.appendix}-{cite.subsection or 'full'}"
+        span = self._span(source_id, key, cite.label, doc_text, window)
+        return CitationVerdict(
+            "verified",
+            f"{cite.label} present and in force at {self.as_of}; verbatim text pinned",
+            True,
+            _support(window, expected_actor),
             span,
         )

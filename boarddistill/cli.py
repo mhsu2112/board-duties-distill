@@ -192,14 +192,14 @@ def verify_live(
     import json
     from collections import Counter
 
-    from adapters.ecfr_resolver import EcfrResolver
+    from adapters.resolvers import build_resolver
     from adapters.retrieval import Fetcher, default_client, offline_client
     from distillcore.pipeline.verify import verify_targets
 
     doc = json.loads(targets.read_text())
     client = offline_client() if offline else default_client()
     try:
-        resolver = EcfrResolver(Fetcher(cache, client))
+        resolver = build_resolver(Fetcher(cache, client))
         rows = verify_targets(doc["targets"], resolver)
     finally:
         client.close()

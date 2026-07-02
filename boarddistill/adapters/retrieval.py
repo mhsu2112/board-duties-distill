@@ -125,6 +125,21 @@ class Fetcher:
         ordered = sorted(entries.values(), key=lambda e: str(e["url"]))
         path.write_text(json.dumps({"entries": ordered}, indent=2, sort_keys=True) + "\n")
 
+    def final_url(self, url: str) -> str:
+        """Resolve redirects (e.g. a govinfo link-service URL) to the final URL. Network,
+        not cached — a resolution step, not content retrieval."""
+        check_allowed(url)
+        response = self.client.head(url)
+        return str(response.url)
+
+    def first_cached(self, source_id: str) -> CachedDocument | None:
+        """The single cached document under ``source_id`` (for sources whose final URL is
+        only known after a live redirect — replay finds it without re-resolving)."""
+        entries = self._load_manifest(source_id)
+        if len(entries) != 1:
+            return None
+        return self.cached(next(iter(entries)), source_id)
+
     def cached(self, url: str, source_id: str) -> CachedDocument | None:
         """Return the cached document for ``url`` if present, else None. No network."""
         entry = self._load_manifest(source_id).get(url)
