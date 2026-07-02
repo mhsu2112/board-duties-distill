@@ -85,7 +85,12 @@ def render_package(
     outdir: Annotated[Path, typer.Argument(help="Output dir holding the JSON stage outputs.")],
 ) -> None:
     """Write package.md from the JSON stage outputs."""
-    _stub("render-package")
+    from distillcore.pipeline.render import render_package as _render
+
+    markdown = _render(outdir)
+    dest = outdir / "package.md"
+    dest.write_text(markdown)
+    typer.echo(f"[boarddistill] wrote {dest} ({len(markdown)} chars)")
 
 
 @app.command("verify")

@@ -190,6 +190,7 @@ def write_outputs(result: RunResult, bundle: FixtureBundle, outdir: Path) -> Pat
 
     _dump(dest / "as_built.json", {"duties": [d.model_dump(mode="json") for d in bundle.as_built]})
     _dump(dest / "intended.json", {"duties": [d.model_dump(mode="json") for d in bundle.intended]})
+    _dump(dest / "instrument_graph.json", bundle.instrument_graph.model_dump(mode="json"))
     _dump(
         dest / "findings.json",
         {
