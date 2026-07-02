@@ -175,5 +175,29 @@ def import_inventory(
     typer.echo(f"  {result.banner}")
 
 
+@app.command("b1-targets")
+def b1_targets(
+    import_json: Annotated[
+        Path,
+        typer.Option("--import", help="Path to imported_duties.json."),
+    ] = Path("outputs/import/imported_duties.json"),
+    out: Annotated[Path, typer.Option("--out", help="Output directory for targets.json.")] = Path(
+        "outputs/b1"
+    ),
+) -> None:
+    """B1-T0: select the ~72 MVP-cluster target rows; write targets.json."""
+    import json
+
+    from adapters.b1_targets import build_targets
+
+    doc = build_targets(import_json)
+    out.mkdir(parents=True, exist_ok=True)
+    dest = out / "targets.json"
+    dest.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+    typer.echo(f"[boarddistill] B1 targets: {doc['count']} rows -> {dest}")
+    typer.echo("  clusters: " + " · ".join(doc["clusters"]))
+    typer.echo("  duty_ids: " + ", ".join(doc["duty_ids"]))
+
+
 if __name__ == "__main__":
     app()

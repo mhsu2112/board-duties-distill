@@ -231,6 +231,18 @@
           "title": "Claims",
           "type": "array"
         },
+        "cluster": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cluster"
+        },
         "confidence": {
           "maximum": 1.0,
           "minimum": 0.0,

@@ -159,6 +159,7 @@ def import_inventory(
                     "duty_id": duty_id,
                     "label": nature[:120],
                     "layer": "as_built",
+                    "cluster": cell(row, "Cluster") or None,
                     "snapshot_dates": snap.model_dump(mode="json"),
                     "board_level": cell(row, "Board level") or "full_board",
                     "director_class": cell(row, "Director-type distinction") or "any",
