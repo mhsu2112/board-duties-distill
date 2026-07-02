@@ -1,5 +1,157 @@
 {
   "$defs": {
+    "BankingOperation": {
+      "additionalProperties": false,
+      "description": "The banking Operation: the generic envelope with the primitive-keyed iff-rules\nbound to this profile's trigger members (RELATE_OBLIGATION / DEEM_SATISFIED /\nASSIGN_DUTY_PARAMETER).",
+      "properties": {
+        "actor_with_authority": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Actor With Authority",
+          "type": "array"
+        },
+        "arity": {
+          "title": "Arity",
+          "type": "integer"
+        },
+        "conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Conditions",
+          "type": "array"
+        },
+        "diagnostics_triggering": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Diagnostics Triggering",
+          "type": "array"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "instrument_required": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/InstrumentRequired"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "inverse": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inverse"
+        },
+        "normative_load": {
+          "default": "low",
+          "enum": [
+            "low",
+            "med",
+            "high"
+          ],
+          "title": "Normative Load",
+          "type": "string"
+        },
+        "operands": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Operands",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "parameter": {
+          "anyOf": [
+            {
+              "enum": [
+                "verb_standard",
+                "cadence"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parameter"
+        },
+        "primitive": {
+          "$ref": "#/$defs/PrimitiveOp"
+        },
+        "relation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RelationType"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "satisfied_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Satisfied Ref"
+        },
+        "satisfying_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Satisfying Ref"
+        },
+        "scope": {
+          "default": "duty_level",
+          "enum": [
+            "duty_level",
+            "general_part"
+          ],
+          "title": "Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "primitive",
+        "arity"
+      ],
+      "title": "BankingOperation",
+      "type": "object"
+    },
     "Cadence": {
       "description": "A duty's recurrence. Calendar vs fiscal basis is explicit so a basis change is\na visible parameter re-assignment (D4).",
       "enum": [
@@ -410,157 +562,6 @@
       ],
       "title": "NormativeKind",
       "type": "string"
-    },
-    "Operation_PrimitiveOp_RelationType_InstrumentRequired_": {
-      "additionalProperties": false,
-      "properties": {
-        "actor_with_authority": {
-          "items": {
-            "type": "string"
-          },
-          "title": "Actor With Authority",
-          "type": "array"
-        },
-        "arity": {
-          "title": "Arity",
-          "type": "integer"
-        },
-        "conditions": {
-          "items": {
-            "type": "string"
-          },
-          "title": "Conditions",
-          "type": "array"
-        },
-        "diagnostics_triggering": {
-          "items": {
-            "type": "string"
-          },
-          "title": "Diagnostics Triggering",
-          "type": "array"
-        },
-        "id": {
-          "title": "Id",
-          "type": "string"
-        },
-        "instrument_required": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/InstrumentRequired"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "inverse": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Inverse"
-        },
-        "normative_load": {
-          "default": "low",
-          "enum": [
-            "low",
-            "med",
-            "high"
-          ],
-          "title": "Normative Load",
-          "type": "string"
-        },
-        "operands": {
-          "items": {
-            "type": "string"
-          },
-          "title": "Operands",
-          "type": "array"
-        },
-        "outputs": {
-          "items": {
-            "type": "string"
-          },
-          "title": "Outputs",
-          "type": "array"
-        },
-        "parameter": {
-          "anyOf": [
-            {
-              "enum": [
-                "verb_standard",
-                "cadence"
-              ],
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Parameter"
-        },
-        "primitive": {
-          "$ref": "#/$defs/PrimitiveOp"
-        },
-        "relation": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/RelationType"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "satisfied_ref": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Satisfied Ref"
-        },
-        "satisfying_ref": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Satisfying Ref"
-        },
-        "scope": {
-          "default": "duty_level",
-          "enum": [
-            "duty_level",
-            "general_part"
-          ],
-          "title": "Scope",
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "primitive",
-        "arity"
-      ],
-      "title": "Operation[PrimitiveOp, RelationType, InstrumentRequired]",
-      "type": "object"
     },
     "PrimitiveOp": {
       "description": "The 16-member banking calculus. The set changes only by the B0 checkpoint route.",

@@ -9,6 +9,7 @@ are deliberately different types and are never conflated (invariant §2.5).
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from enum import Enum
 from typing import Generic, Literal, TypeVar
 
@@ -62,3 +63,44 @@ class Operation(StrictModel, Generic[PrimitiveT, RelationT, InstrumentReqT]):
     satisfying_ref: str | None = None
     conditions: list[str] = Field(default_factory=list)
     parameter: DutyParameter | None = None
+
+
+def validate_iff_rules(
+    *,
+    primitive: Enum,
+    relation: Enum | None,
+    satisfied_ref: str | None,
+    satisfying_ref: str | None,
+    conditions: Sequence[str],
+    parameter: str | None,
+    relate_primitive: Enum,
+    deem_primitive: Enum,
+    param_primitive: Enum,
+) -> None:
+    """The three envelope iff-rules (AGENTS §5), generic over which primitive triggers
+    each. A profile binds the trigger members; this is the profile-independent logic.
+
+    - ``relation`` set **iff** primitive is the RELATE primitive.
+    - ``satisfied_ref``/``satisfying_ref``/``conditions`` set **iff** DEEM_SATISFIED,
+      and for DEEM both refs are required and ``conditions`` non-empty (§2.12 model half).
+    - ``parameter`` set **iff** primitive is ASSIGN_DUTY_PARAMETER.
+    """
+    if (relation is not None) != (primitive == relate_primitive):
+        raise ValueError(f"relation must be set iff primitive is {relate_primitive.value}")
+
+    is_deem = primitive == deem_primitive
+    has_deem_fields = (
+        satisfied_ref is not None or satisfying_ref is not None or len(conditions) > 0
+    )
+    if is_deem:
+        if satisfied_ref is None or satisfying_ref is None or len(conditions) == 0:
+            raise ValueError(
+                "DEEM_SATISFIED requires satisfied_ref, satisfying_ref, and non-empty conditions"
+            )
+    elif has_deem_fields:
+        raise ValueError(
+            "satisfied_ref/satisfying_ref/conditions may be set iff primitive is DEEM_SATISFIED"
+        )
+
+    if (parameter is not None) != (primitive == param_primitive):
+        raise ValueError(f"parameter must be set iff primitive is {param_primitive.value}")

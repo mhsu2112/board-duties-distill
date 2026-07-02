@@ -9,13 +9,13 @@ Operation / Finding concretizations.
 from __future__ import annotations
 
 from datetime import date
-from typing import Literal
+from typing import Literal, Self
 
 import networkx as nx
-from pydantic import Field
+from pydantic import Field, model_validator
 
 from distillcore.models.base import LegalClaim, SnapshotBearing, StrictModel
-from distillcore.models.calculus import Operation
+from distillcore.models.calculus import Operation, validate_iff_rules
 from distillcore.models.review import Finding
 
 from .enums import (
@@ -31,10 +31,29 @@ from .enums import (
     VerbStandard,
 )
 
-# Profile-bound concretizations of the generic core envelopes. T-CALCULUS layers the
-# primitive-keyed iff-rules onto BankingOperation.
-BankingOperation = Operation[PrimitiveOp, RelationType, InstrumentRequired]
+# Profile-bound concretizations of the generic core envelopes.
 BankingFinding = Finding[NormativeKind]
+
+
+class BankingOperation(Operation[PrimitiveOp, RelationType, InstrumentRequired]):
+    """The banking Operation: the generic envelope with the primitive-keyed iff-rules
+    bound to this profile's trigger members (RELATE_OBLIGATION / DEEM_SATISFIED /
+    ASSIGN_DUTY_PARAMETER)."""
+
+    @model_validator(mode="after")
+    def _check_iff_rules(self) -> Self:
+        validate_iff_rules(
+            primitive=self.primitive,
+            relation=self.relation,
+            satisfied_ref=self.satisfied_ref,
+            satisfying_ref=self.satisfying_ref,
+            conditions=self.conditions,
+            parameter=self.parameter,
+            relate_primitive=PrimitiveOp.RELATE_OBLIGATION,
+            deem_primitive=PrimitiveOp.DEEM_SATISFIED,
+            param_primitive=PrimitiveOp.ASSIGN_DUTY_PARAMETER,
+        )
+        return self
 
 Entity = Literal["BHC", "IDI", "both"]
 Layer = Literal["as_built", "intended"]
