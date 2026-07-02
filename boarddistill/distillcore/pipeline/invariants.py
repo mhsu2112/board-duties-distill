@@ -121,3 +121,12 @@ def can_finalize(
         elif claim.verifier_status != "verified":
             blockers.append(f"claim {claim.id}: {claim.verifier_status}")
     return (not blockers, blockers)
+
+
+def finalize(finding: Finding[Any], claims: Sequence[LegalClaim]) -> Finding[Any]:
+    """Promote a finding to ``final`` iff ``can_finalize``; otherwise return it unchanged
+    (still ``draft``). The single choke point for reaching final status."""
+    ok, _ = can_finalize(finding, claims)
+    if ok:
+        return finding.model_copy(update={"status": "final"})
+    return finding

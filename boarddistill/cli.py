@@ -98,7 +98,26 @@ def verify(
     outdir: Annotated[Path, typer.Argument(help="Output dir to re-verify.")],
 ) -> None:
     """Recompute verifier statuses; print the final-status blocker summary."""
-    _stub("verify")
+    import json
+
+    from distillcore.pipeline.verify import reverify_dir
+
+    result = reverify_dir(outdir)
+    (outdir / "verification.json").write_text(
+        json.dumps(
+            {"records": result.records, "claim_status": result.claim_status},
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    total = len(result.claim_status)
+    verified = sum(1 for s in result.claim_status.values() if s == "verified")
+    typer.echo(f"[boarddistill] {outdir.name}: {verified}/{total} claims verified")
+    typer.echo(f"  final-eligible findings: {len(result.final_eligible)}")
+    typer.echo("  final-status blockers:")
+    for line in result.blocker_lines:
+        typer.echo(f"    {line}")
 
 
 @app.command("eval-fixture")

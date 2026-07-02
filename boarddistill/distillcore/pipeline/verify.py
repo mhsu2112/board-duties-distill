@@ -8,10 +8,14 @@ roadmap step 2). No network, no LLM.
 
 from __future__ import annotations
 
+import json
 from collections.abc import Sequence
+from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 from ..models.base import VerifierRecord, VerifierStatus
+from ..models.review import RESOLVED_DISPOSITIONS
 from .protocols import DutyLike
 
 
@@ -44,3 +48,76 @@ def verify_claims(
             )
             statuses[claim.id] = status
     return records, statuses
+
+
+def _finding_blockers(finding: dict[str, Any], claim_status: dict[str, str]) -> list[str]:
+    blockers: list[str] = []
+    if finding.get("normative_kind") and finding["disposition_state"] not in RESOLVED_DISPOSITIONS:
+        blockers.append(f"open normative item ({finding['disposition_state']})")
+    if finding["effect_class"] == "unresolved":
+        blockers.append("unresolved effect class")
+    for rec_id in finding.get("verifier_records", []):
+        claim_id = rec_id.removeprefix("v-")
+        status = claim_status.get(claim_id, "unverified")
+        if status != "verified":
+            blockers.append(f"claim {claim_id}: {status}")
+    return blockers
+
+
+def finalization_blocker_lines(
+    findings: Sequence[dict[str, Any]],
+    claim_status: dict[str, str],
+) -> list[str]:
+    """Human-readable blocker summary (§9 final section). Shared by render and verify."""
+    lines = [
+        f"- **{f['id']}** blocked: " + "; ".join(blk)
+        for f in findings
+        if (blk := _finding_blockers(f, claim_status))
+    ]
+    return lines or ["All findings are eligible for `final` (no blockers)."]
+
+
+@dataclass(frozen=True)
+class ReverifyResult:
+    records: list[dict[str, Any]]
+    claim_status: dict[str, str]
+    blocker_lines: list[str]
+    final_eligible: list[str]
+
+
+def reverify_dir(outdir: Path) -> ReverifyResult:
+    """Recompute verifier statuses and the final-status blocker summary from the written
+    JSON in ``outdir`` (profile-independent — operates on the JSON shapes)."""
+    duties = (
+        json.loads((outdir / "as_built.json").read_text())["duties"]
+        + json.loads((outdir / "intended.json").read_text())["duties"]
+    )
+    source_ids = {s["id"] for s in json.loads((outdir / "sources.json").read_text())["sources"]}
+    findings = json.loads((outdir / "findings.json").read_text())["findings"]
+
+    records: list[dict[str, Any]] = []
+    claim_status: dict[str, str] = {}
+    seen: set[str] = set()
+    for duty in duties:
+        for claim in duty.get("claims", []):
+            if claim["id"] in seen:
+                continue
+            seen.add(claim["id"])
+            spans = claim.get("source_span_ids", [])
+            resolved = bool(spans) and all(sid in source_ids for sid in spans)
+            status = "verified" if resolved else "contradicted"
+            records.append(
+                {
+                    "id": f"v-{claim['id']}",
+                    "claim_id": claim["id"],
+                    "status": status,
+                    "method": "span_present",
+                    "checked_span_ids": spans,
+                    "note": None if resolved else "one or more cited spans not present in sources",
+                }
+            )
+            claim_status[claim["id"]] = status
+
+    blocker_lines = finalization_blocker_lines(findings, claim_status)
+    eligible = [f["id"] for f in findings if not _finding_blockers(f, claim_status)]
+    return ReverifyResult(records, claim_status, blocker_lines, eligible)

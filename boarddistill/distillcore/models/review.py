@@ -8,7 +8,7 @@ it (verification, normative gate, floor) are wired in T3/T7.
 from __future__ import annotations
 
 from enum import Enum
-from typing import Generic, Literal, TypeVar
+from typing import Any, Generic, Literal, TypeVar
 
 from pydantic import Field
 
@@ -47,6 +47,15 @@ RESOLVED_DISPOSITIONS: frozenset[DispositionState] = frozenset(
 def can_transition(src: DispositionState, dst: DispositionState) -> bool:
     """True iff ``src -> dst`` is a legal disposition move."""
     return dst in _TRANSITIONS[src]
+
+
+def transition(finding: Finding[Any], to_state: DispositionState) -> Finding[Any]:
+    """Return a copy of ``finding`` moved to ``to_state``; raise on an illegal move."""
+    if not can_transition(finding.disposition_state, to_state):
+        raise ValueError(
+            f"illegal disposition transition {finding.disposition_state!r} -> {to_state!r}"
+        )
+    return finding.model_copy(update={"disposition_state": to_state})
 
 
 NormativeT = TypeVar("NormativeT", bound=Enum)

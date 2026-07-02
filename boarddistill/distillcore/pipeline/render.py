@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from ..models.review import RESOLVED_DISPOSITIONS
+from .verify import finalization_blocker_lines
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -180,27 +180,7 @@ def render_package(fixture_out: Path) -> str:
 
     # 11. final-status blocker summary
     parts.append("## Final-status blocker summary\n")
-    blocker_lines = _blocker_lines(findings, verification.get("claim_status", {}))
+    blocker_lines = finalization_blocker_lines(findings, verification.get("claim_status", {}))
     parts.append("\n".join(blocker_lines) + "\n")
 
     return "\n".join(parts)
-
-
-def _blocker_lines(findings: list[dict[str, Any]], claim_status: dict[str, str]) -> list[str]:
-    lines: list[str] = []
-    for f in findings:
-        blockers: list[str] = []
-        if f.get("normative_kind") and f["disposition_state"] not in RESOLVED_DISPOSITIONS:
-            blockers.append(f"open normative item ({f['disposition_state']})")
-        if f["effect_class"] == "unresolved":
-            blockers.append("unresolved effect class")
-        for rec_id in f.get("verifier_records", []):
-            claim_id = rec_id.removeprefix("v-")
-            status = claim_status.get(claim_id, "unverified")
-            if status != "verified":
-                blockers.append(f"claim {claim_id}: {status}")
-        if blockers:
-            lines.append(f"- **{f['id']}** blocked: " + "; ".join(blockers))
-    if not lines:
-        return ["All findings are eligible for `final` (no blockers)."]
-    return lines
