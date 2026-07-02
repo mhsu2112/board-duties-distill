@@ -78,21 +78,10 @@ A *central* integrity flag zeros out its dimension and sets a **reliability over
 
 ## Results at a glance — Round 1 horserace
 
-Weighted overall score (0–100) by judge. Report labels A–D map to producers as: **A = Caffrey, B = GPT-5.5, C = Opus-4.8, D = RegGenome.**
-
-| Report (producer) | Claude | Codex | Gemma | Mean |
-|-------------------|:------:|:-----:|:-----:|:----:|
-| Opus-4.8 (C)      | 85 | 69 | 100 | **85** |
-| GPT-5.5 (B)       | 83 | 81 | 85  | **83** |
-| Caffrey (A)       | 76 | 30 | 94  | **67** |
-| RegGenome (D)     | 30 | 14 | 36  | **27** |
-
 Headline takeaways (see `Evals/` for the full per-dimension detail and flags):
 
 - **Opus-4.8 and GPT-5.5 lead consistently** across all three judges and carry the cleanest integrity profiles.
-- **RegGenome lands last with every judge**, with low coverage and integrity scores; judges flagged scope and integrity problems.
-- **Judges disagree in strictness, not in ranking.** Gemma (no retrieval) is the most generous, Codex the harshest — Codex's low Caffrey/RegGenome scores reflect scope and integrity caps. The *ordering* of reports is stable across judges even where the absolute numbers differ, which is the main reason for using three judges.
-- **Caffrey is the most judge-dependent** result (30 → 94), a good illustration of why a single LLM judge is not enough.
+- **Judges disagree in strictness, not in ranking.** Gemma (no retrieval) is the most generous, Codex the harshest. The *ordering* of reports is stable across judges even where the absolute numbers differ, which is the main reason for using three judges.
 
 Round-2 follow-ups (expanded-prompt variants and additional models) are scored in `Evals/round-2-followups/` and the `Codex_judge` sheet of the summary workbook; several later runs drew integrity flags (e.g., invented obligations, stale-as-current), reinforcing the round-1 pattern that polish does not guarantee citation reliability.
 

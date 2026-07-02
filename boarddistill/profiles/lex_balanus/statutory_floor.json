@@ -1,28 +1,33 @@
 {
   "_meta": {
-    "status": "DRAFT v1 — TODO(human): confirm statutory floor anchors and scope (AGENTS §14.4). This file is human-owned; the agent may draft v1 but must not silently edit it thereafter.",
+    "status": "CONFIRMED v1.1 by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST Item 2): draft anchors approved; DFA \u00a7165(d) added per human instruction. This file is human-owned; no agent edits without instruction.",
     "profile": "lex_balanus",
     "as_of": "2026-06",
-    "rule": "No composition may REPEAL or MERGE-away a duty whose instrument_stratum == 'statute' or whose duty_id appears in floor_duty_ids. DEEM_SATISFIED against a floor duty is permitted (the duty survives) but always needs_review. Violations are hard blocks (invariant §2.10)."
+    "rule": "No composition may REPEAL or MERGE-away a duty whose instrument_stratum == 'statute' or whose duty_id appears in floor_duty_ids. DEEM_SATISFIED against a floor duty is permitted (the duty survives) but always needs_review. Violations are hard blocks (invariant \u00a72.10)."
   },
   "anchors": [
     {
       "citation": "12 U.S.C. 5365(h)",
-      "title": "Dodd-Frank §165(h) — BHC risk committee requirement",
+      "title": "Dodd-Frank \u00a7165(h) \u2014 BHC risk committee requirement",
       "stratum": "statute"
     },
     {
       "citation": "12 U.S.C. 5365(i)",
-      "title": "Dodd-Frank §165(i) — company-run stress testing; board oversight",
+      "title": "Dodd-Frank \u00a7165(i) \u2014 company-run stress testing; board oversight",
       "stratum": "statute"
     },
     {
-      "citation": "SOX §301 (15 U.S.C. 78j-1(m))",
+      "citation": "12 U.S.C. 5365(d)",
+      "title": "Dodd-Frank \u00a7165(d) \u2014 resolution planning; board approval of the resolution plan",
+      "stratum": "statute"
+    },
+    {
+      "citation": "SOX \u00a7301 (15 U.S.C. 78j-1(m))",
       "title": "Audit committee independence and responsibilities",
       "stratum": "statute"
     },
     {
-      "citation": "FDI Act §36 (12 U.S.C. 1831m); 12 CFR Part 363",
+      "citation": "FDI Act \u00a736 (12 U.S.C. 1831m); 12 CFR Part 363",
       "title": "Annual independent audit, ICFR assessment, and audit committee (Part 363 anchor)",
       "stratum": "statute"
     },

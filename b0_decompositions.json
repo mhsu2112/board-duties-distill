@@ -1,0 +1,554 @@
+{
+  "_meta": {
+    "task": "B0 banking M0 \u2014 calculus closure over MVP clusters",
+    "status": "hand-authored labels; TODO(human) 1-3 RESOLVED 2026-07-02 (amendments approved; row-ID mappings and fixture labels confirmed via REVIEW_CHECKLIST)",
+    "source_inventory": "Synthesis/gsib-board_duties-combined_inventory.xlsx (v2.1, inventory_as_of 2026-06)",
+    "primitive_set": "engine 14 with profile adaptations RELATE_OBLIGATION, ASSIGN_DUTY_STANDARD; DEEM_SATISFIED used as PROPOSED (TODO 1); ASSIGN_DUTY_PARAMETER used as PROPOSED generalization (TODO 2)",
+    "operand_id_convention": "inventory row IDs; prefix b:/s: = binding/supervisory layer where duplicated"
+  },
+  "decompositions": [
+    {
+      "id": "D1",
+      "lever": "One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation)",
+      "cluster": "Risk-governance framework / strategy",
+      "actor_with_authority": [
+        "FRB",
+        "OCC"
+      ],
+      "instrument_required": "interagency_statement_plus_rule_safe_harbor",
+      "operations": [
+        {
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "entity_level_mirror",
+          "operands": [
+            "b:RGC-02",
+            "b:RGC-07"
+          ],
+          "effect_class": "clarify"
+        },
+        {
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "b:RGC-07",
+          "satisfying_ref": "b:RGC-02",
+          "conditions": [
+            "risk profiles substantially the same",
+            "IDI addendum covering bank-specific limits"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "policy_choice",
+            "interagency_coordination"
+          ],
+          "proposed_primitive": true
+        },
+        {
+          "primitive": "FACTOR_EXCEPTION",
+          "operands": [
+            "b:RGC-07"
+          ],
+          "effect_class": null,
+          "note": "rider on DEEM_SATISFIED conditions"
+        },
+        {
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "operands": [
+            "s:GOV-15",
+            "s:GOV-20",
+            "s:FDR-01",
+            "s:FDR-02"
+          ],
+          "effect_class": "codify"
+        }
+      ],
+      "invariants_exercised": [
+        "statutory_floor(bank board independent responsibility survives)",
+        "binding_force_conservation(cross-stratum operands, declared)"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D2",
+      "lever": "One risk-committee standard at the consolidated level + streamlined IDI certification",
+      "cluster": "Risk committee architecture",
+      "actor_with_authority": [
+        "FRB",
+        "OCC"
+      ],
+      "instrument_required": "joint_rulemaking",
+      "operations": [
+        {
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "implements",
+          "operands": [
+            "b:RGC-02",
+            "b:RGC-03",
+            "b:RGC-04",
+            "b:RGC-05",
+            "b:RGC-01"
+          ],
+          "effect_class": "codify"
+        },
+        {
+          "primitive": "MERGE",
+          "operands": [
+            "b:RGC-02..05(RegYY standard)",
+            "AppD-committee-expectations"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "statutory_constraint",
+            "interagency_coordination"
+          ]
+        },
+        {
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "AppD-bank-committee-expectations",
+          "satisfying_ref": "consolidated-committee-standard",
+          "conditions": [
+            "streamlined IDI certification"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "policy_choice"
+          ],
+          "proposed_primitive": true
+        },
+        {
+          "primitive": "FACTOR_EXCEPTION",
+          "operands": [
+            "bank-specific risk limits retained"
+          ],
+          "effect_class": null
+        },
+        {
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "operands": [
+            "OCC App. D -> Reg YY"
+          ],
+          "effect_class": "codify"
+        }
+      ],
+      "invariants_exercised": [
+        "statutory_floor(12 USC 5365(h) BHC risk committee)",
+        "binding_force_conservation"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D3",
+      "lever": "Single 'independent director' definition; one audit committee satisfies all regimes",
+      "cluster": "Audit committee & independence",
+      "actor_with_authority": [
+        "FRB",
+        "OCC",
+        "FDIC",
+        "SEC"
+      ],
+      "instrument_required": "interagency_statement_plus_SEC_coordination",
+      "operations": [
+        {
+          "primitive": "CANONICALIZE_DEFINITION",
+          "term": "independent director",
+          "operands": [
+            "b:AUD-02(Part363 AppA)",
+            "SOX-301",
+            "AppD-independence",
+            "NYSE/Nasdaq"
+          ],
+          "effect_class": "change_unless_provable_superset",
+          "normative_kind": [
+            "interagency_coordination",
+            "statutory_constraint"
+          ]
+        },
+        {
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "parallel_distinct_purpose",
+          "operands": [
+            "b:AUD-01..03(FDICIA regime)",
+            "SOX-regime"
+          ],
+          "effect_class": "clarify"
+        },
+        {
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "Part363+SOX301+exchange committee requirements",
+          "satisfying_ref": "one properly-composed audit committee",
+          "conditions": [
+            "reconciled independence test met"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "policy_choice"
+          ],
+          "proposed_primitive": true
+        },
+        {
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "operands": [
+            "s:BCG-14",
+            "s:GOV-12"
+          ],
+          "effect_class": "codify"
+        }
+      ],
+      "invariants_exercised": [
+        "statutory_floor(SOX 301)",
+        "definitional_uniqueness(target state)"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D4",
+      "lever": "SOX 404(b) satisfies FDICIA ICFR by cross-reference; align cycles",
+      "cluster": "Internal control over financial reporting",
+      "actor_with_authority": [
+        "FDIC"
+      ],
+      "instrument_required": "rule_amendment(Part 363)",
+      "fixture_candidate": "primary B2 fixture",
+      "operations": [
+        {
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "Part363-ICFR-assessment",
+          "satisfying_ref": "SOX-404b-attestation",
+          "conditions": [
+            "external attestation retained"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "policy_choice"
+          ],
+          "proposed_primitive": true
+        },
+        {
+          "primitive": "FACTOR_EXCEPTION",
+          "operands": [
+            "designated safety-and-soundness laws compliance retained as annex"
+          ],
+          "effect_class": "clarify"
+        },
+        {
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "parallel_distinct_purpose",
+          "operands": [
+            "FDICIA-annex",
+            "SOX-regime"
+          ],
+          "effect_class": "clarify"
+        },
+        {
+          "primitive": "ASSIGN_DUTY_PARAMETER",
+          "parameter": "cadence",
+          "operands": [
+            "Part363 calendar-year cycle -> fiscal-year"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "institutional_discretion"
+          ],
+          "proposed_primitive": true,
+          "note": "proposed generalization of ASSIGN_DUTY_STANDARD (TODO 2)"
+        }
+      ],
+      "invariants_exercised": [
+        "binding_force_conservation(clean: rule-to-rule)"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D5",
+      "lever": "Separate board capital-action decisions from technical methodology reporting",
+      "cluster": "Capital planning & stress testing",
+      "actor_with_authority": [
+        "FRB"
+      ],
+      "instrument_required": "guidance_action_plus_conforming_rule_note",
+      "operations": [
+        {
+          "primitive": "SPLIT",
+          "operands": [
+            "board capital-planning duty bundle (b:CAP-02, b:CAP-03, s:CAP-01..09)"
+          ],
+          "outputs": [
+            "capital-action decision duties",
+            "methodology-information duties"
+          ],
+          "effect_class": "clarify"
+        },
+        {
+          "primitive": "ASSIGN_DUTY_STANDARD",
+          "standard": "approve",
+          "operands": [
+            "b:CAP-02",
+            "b:CAP-03",
+            "s:CAP-02",
+            "s:CAP-05"
+          ],
+          "effect_class": "codify"
+        },
+        {
+          "primitive": "ASSIGN_DUTY_STANDARD",
+          "standard": "receive_report",
+          "operands": [
+            "s:CAP-03",
+            "s:CAP-06",
+            "b:CAP-04(part)"
+          ],
+          "effect_class": "clarify_or_change_per_duty",
+          "normative_kind": [
+            "supervisory_value_judgment"
+          ]
+        },
+        {
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "operands": [
+            "SR 15-18 elaborations -> 12 CFR 225.8"
+          ],
+          "effect_class": "codify"
+        },
+        {
+          "primitive": "REPEAL",
+          "operands": [
+            "s:CAP-11(SR 09-4 remnant)"
+          ],
+          "effect_class": "codify",
+          "note": "formalize an already-superseded instrument with logged signal"
+        }
+      ],
+      "non_operations": [
+        {
+          "row": "s:CAP-10",
+          "note": "negative finding (no board Y-14A attestation) \u2014 diagnostic evidence only"
+        }
+      ],
+      "invariants_exercised": [
+        "statutory_floor(12 USC 5365(i) survives SPLIT)"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D6",
+      "lever": "Codify SR 12-17 governance content into Reg YY; retire the letter",
+      "cluster": "Risk-governance framework / strategy",
+      "actor_with_authority": [
+        "FRB"
+      ],
+      "instrument_required": "rule_amendment_notice_and_comment",
+      "fixture_candidate": "binding-force invariant test",
+      "operations": [
+        {
+          "primitive": "RELOCATE",
+          "operands": [
+            "s:GOV-02..13 (SR 12-17 attributes)"
+          ],
+          "target": "Reg YY",
+          "effect_class": "change",
+          "note": "per-se change: guidance->regulation force conversion, declared",
+          "normative_kind": [
+            "policy_choice",
+            "interpretive_ambiguity"
+          ]
+        },
+        {
+          "primitive": "ASSIGN_DUTY_STANDARD",
+          "operands": [
+            "'ensure' vs 'oversee' per duty"
+          ],
+          "effect_class": "clarify_or_change_per_duty",
+          "normative_kind": [
+            "interpretive_ambiguity"
+          ]
+        },
+        {
+          "primitive": "REPEAL",
+          "operands": [
+            "SR 12-17"
+          ],
+          "effect_class": null,
+          "note": "rider; formal rescission signal"
+        }
+      ],
+      "invariants_exercised": [
+        "binding_force_conservation(declared conversion \u2014 invariant requires declaration, does not block)",
+        "apa_pathway(notice-and-comment recorded)"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D7",
+      "lever": "Single interagency board-effectiveness assessment",
+      "cluster": "Risk-governance framework / strategy",
+      "actor_with_authority": [
+        "FRB",
+        "OCC"
+      ],
+      "instrument_required": "joint_statement",
+      "fixture_candidate": "codify-class contrast case",
+      "operations": [
+        {
+          "primitive": "MERGE",
+          "operands": [
+            "AppD-III.F self-assessment",
+            "SR 21-3 assessment"
+          ],
+          "effect_class": "codify"
+        },
+        {
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "operands": [
+            "survivor cited by both frameworks"
+          ],
+          "effect_class": "codify"
+        }
+      ],
+      "invariants_exercised": [
+        "binding_force_conservation(cross-stratum operands => needs_review despite codify)"
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "D8",
+      "lever": "Vertical HC/IDI rationalization via expanded reliance accommodation (schema, per mirror pair)",
+      "cluster": "cross-cutting (largest structural lever)",
+      "actor_with_authority": [
+        "FRB",
+        "OCC",
+        "FDIC"
+      ],
+      "instrument_required": "rulemaking_possibly_statutory",
+      "operations": [
+        {
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "entity_level_mirror",
+          "operands": [
+            "<BHC_duty>",
+            "<IDI_duty>"
+          ],
+          "effect_class": "clarify",
+          "note": "applied per pair"
+        },
+        {
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "<IDI_duty>",
+          "satisfying_ref": "<BHC_duty>",
+          "conditions": [
+            "documented reliance",
+            "risk profiles substantially the same"
+          ],
+          "effect_class": "change",
+          "normative_kind": [
+            "policy_choice"
+          ],
+          "proposed_primitive": true
+        },
+        {
+          "primitive": "FACTOR_EXCEPTION",
+          "operands": [
+            "bank-specific content retained"
+          ],
+          "effect_class": null
+        }
+      ],
+      "invariants_exercised": [
+        "statutory_floor(bank-level independent legal responsibility: reliance expandable, not eliminable \u2014 inventory's own statement)"
+      ],
+      "disposition_default": "needs_review",
+      "note": "MERGE legally unavailable for this lever; decisive evidence for DEEM_SATISFIED adoption"
+    },
+    {
+      "id": "D9",
+      "lever": "Recurring meta-duty (approve framework / review annually / receive reports) -> General Part",
+      "cluster": "cross-cutting",
+      "actor_with_authority": [
+        "per instrument owner"
+      ],
+      "instrument_required": "varies",
+      "operations": [
+        {
+          "primitive": "INTRODUCE",
+          "scope": "general_part",
+          "operands": [],
+          "output": "general board-governance section",
+          "effect_class": "codify_if_mechanics_identical"
+        },
+        {
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "operands": [
+            "b:RGC-07",
+            "b:RGC-10",
+            "b:CAP-02",
+            "s:CAP-05",
+            "s:STR-02",
+            "s:IAU-01",
+            "s:BCG-02",
+            "s:BCG-03",
+            "s:BCG-04",
+            "s:FDR-02"
+          ],
+          "effect_class": "codify_or_clarify_per_duty"
+        },
+        {
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "operands": [
+            "each domain instrument -> general section"
+          ],
+          "effect_class": "codify"
+        }
+      ],
+      "note": "confirms PRD hypothesis: ELEVATE_GENERAL_RULE is highest-leverage by rows touched; cadence divergences route to ASSIGN_DUTY_PARAMETER"
+    },
+    {
+      "id": "D10",
+      "lever": "non-operations",
+      "items": [
+        {
+          "ref": "Reform Roadmap row 12 (tiered feasibility principle)",
+          "classification": "sequencing policy over operations (ordering on instrument_required), not a primitive"
+        },
+        {
+          "ref": "s:GOV-19 (ascetic-principle repeal)",
+          "classification": "historical REGRADE referent (consequence re-tiering); no current lever proposes one"
+        },
+        {
+          "ref": "FID-02 / s:BCG-06 (12 CFR 9.9 fiduciary audit committee)",
+          "classification": "existing DEEM_SATISFIED instance in current law (audit committee may serve) \u2014 corroborating evidence for TODO 1"
+        }
+      ]
+    }
+  ],
+  "closure_verdict": {
+    "fired": [
+      "MERGE",
+      "SPLIT",
+      "INTRODUCE",
+      "REPEAL",
+      "RELOCATE",
+      "RELATE_OBLIGATION",
+      "CANONICALIZE_DEFINITION",
+      "DEFINE_TERM(weak)",
+      "NORMALIZE_ELEMENTS(precondition)",
+      "ASSIGN_DUTY_STANDARD",
+      "FACTOR_EXCEPTION",
+      "ELEVATE_GENERAL_RULE",
+      "RESOLVE_CROSS_REFERENCE"
+    ],
+    "not_fired": [
+      "SUBSTITUTE_TERM (expected: no pure renames in these clusters)",
+      "REGRADE (observed historically, not proposed)"
+    ],
+    "residuals": [
+      {
+        "name": "DEEM_SATISFIED",
+        "verdict": "confirmed \u2014 5 independent levers + 1 existing instance in law; propose as 15th primitive",
+        "todo_human": 1
+      },
+      {
+        "name": "ASSIGN_DUTY_PARAMETER",
+        "verdict": "marginal \u2014 propose as generalization of ASSIGN_DUTY_STANDARD over {verb_standard, cadence}, not a new primitive",
+        "todo_human": 2
+      }
+    ],
+    "exit_criterion": "met (amended-set branch); TODO(human) 1-2 approved 2026-07-02"
+  }
+}

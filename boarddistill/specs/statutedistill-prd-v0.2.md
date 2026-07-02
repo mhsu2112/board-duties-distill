@@ -101,9 +101,9 @@ Four layers, kept distinct:
 ### 7.1 Diagnostics (detect → trigger)
 Undefined term, duplicate definition, implicit mens rea, overlapping offenses, dead reference, scattered exception, recurring rule, archaic term, inconsistent grade, potential vagueness, merger conflict, impossible charging combination. Each diagnostic triggers one or more candidate operations.
 
-### 7.2 Operations (the primitives) — fourteen
+### 7.2 Operations (the primitives) — fifteen
 
-The set is **fourteen primitives**, validated by a hand-run M0 over theft/robbery/obstruction (which surfaced `RELATE-OFFENSE` as the fourteenth; see §7.5).
+The set is **fifteen primitives**, validated by a hand-run M0 over theft/robbery/obstruction (which surfaced `RELATE-OFFENSE` as the fifteenth; see §7.5). *(Count corrected 2026-07-02: earlier drafts said "fourteen" while enumerating fifteen.)*
 
 | Family | Primitives (arity / note) |
 |---|---|
@@ -127,8 +127,8 @@ Checked pre/post via `allium analyse`: `total_mens_rea` (every element has a men
 
 **Pipeline reads as compiler passes:** diagnostic pass (flag) → operation pass (rewrite) → invariant pass (validate) → classification pass (label effect vs. baseline).
 
-### 7.5 M0 validation (provenance of the fourteenth primitive)
-A hand-run M0 decomposed the high-salience CCRC changes to theft, robbery, and obstruction into the primitive set. All thirteen original primitives fired; every sampled change composed **except** cross-offense *relational* moves — robbery designed as the force-bearing sibling of a theft gradation, sharing theft's canonical defined terms and de-conflicted by the general merger provision (RCC § 22E-214). That coupling is reconstructable as a composite (shared `CANONICALIZE-DEFINITION` + general-scope `ELEVATE-GENERAL-RULE`) but the reconstruction loses the relational intent, so `RELATE-OFFENSE` was adopted as a first-class fourteenth primitive for legibility. The automated M0 (T-CALCULUS, see AGENTS.md) must reproduce this over fixtures.
+### 7.5 M0 validation (provenance of the fifteenth primitive)
+A hand-run M0 decomposed the high-salience CCRC changes to theft, robbery, and obstruction into the primitive set. All fourteen original primitives fired; every sampled change composed **except** cross-offense *relational* moves — robbery designed as the force-bearing sibling of a theft gradation, sharing theft's canonical defined terms and de-conflicted by the general merger provision (RCC § 22E-214). That coupling is reconstructable as a composite (shared `CANONICALIZE-DEFINITION` + general-scope `ELEVATE-GENERAL-RULE`) but the reconstruction loses the relational intent, so `RELATE-OFFENSE` was adopted as a first-class fifteenth primitive for legibility. The automated M0 (T-CALCULUS, see AGENTS.md) must reproduce this over fixtures.
 
 ---
 

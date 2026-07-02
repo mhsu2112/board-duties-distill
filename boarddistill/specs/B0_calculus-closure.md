@@ -1,10 +1,10 @@
 # B0 — Banking M0: Calculus Closure over the MVP Clusters
 
-**Task:** hand-express every "minimum reform lever" bearing on the three MVP clusters (risk-governance framework/strategy · audit committee & independence · capital planning & stress testing, plus the entangled risk-committee-architecture and ICFR clusters they operate on) as compositions of the 14 StatuteDistill primitives with the two Lex-Balanus profile adaptations (`RELATE_OBLIGATION`, `ASSIGN_DUTY_STANDARD`). Residual = candidate missing primitives.
+**Task:** hand-express every "minimum reform lever" bearing on the three MVP clusters (risk-governance framework/strategy · audit committee & independence · capital planning & stress testing, plus the entangled risk-committee-architecture and ICFR clusters they operate on) as compositions of the 15 StatuteDistill primitives with the two Lex-Balanus profile adaptations (`RELATE_OBLIGATION`, `ASSIGN_DUTY_STANDARD`). Residual = candidate missing primitives.
 
 **Inputs:** `Synthesis/gsib-board_duties-combined_inventory.xlsx` — 62 duty rows in the MVP clusters ("All Board Duties"), 5 relevant "Duplicate Clusters" rows, 12 "Reform Roadmap" rows. Machine-readable extract: `b0_decompositions.json` (companion file; seeds B2 fixtures).
 
-**Verdict (summary):** **The set closes at 15, not 14.** All profile primitives fire. One genuine residual: **`DEEM_SATISFIED` is confirmed** — it appears independently in five levers, including the corpus's largest structural reform, and cannot be expressed as a composite without losing exactly the relational content a reviewer needs. One marginal residual (cadence amendment) is proposed as a *generalization of `ASSIGN_DUTY_STANDARD`*, not a new primitive. Per checkpoint discipline (engine AGENTS §14.2): **proposed, not added** — see TODO(human) items at end.
+**Verdict (summary):** **The set closes at 16 members** (the engine's fifteen — count corrected 2026-07-02 — plus `DEEM_SATISFIED`). All profile primitives fire. One genuine residual: **`DEEM_SATISFIED` is confirmed** — it appears independently in five levers, including the corpus's largest structural reform, and cannot be expressed as a composite without losing exactly the relational content a reviewer needs. One marginal residual (cadence amendment) is proposed as a *generalization of `ASSIGN_DUTY_STANDARD`*, not a new primitive. Per checkpoint discipline (engine AGENTS §14.2): **proposed, not added** — see TODO(human) items at end.
 
 ---
 
@@ -114,7 +114,7 @@ for each (BHC_duty, IDI_duty) with relation entity_level_mirror:
     FACTOR_EXCEPTION(documented-reliance conditions; bank-specific content retained)
 ```
 
-`statutory_floor` (stated by the inventory itself): "bank-level independent legal responsibility is statutory; reliance can be expanded but not eliminated" — so `DEEM_SATISFIED` is the *only* primitive that can express this lever at all. `MERGE` is legally unavailable. **This is the decisive evidence for first-class adoption: the corpus's largest reform is inexpressible without the fifteenth primitive.**
+`statutory_floor` (stated by the inventory itself): "bank-level independent legal responsibility is statutory; reliance can be expanded but not eliminated" — so `DEEM_SATISFIED` is the *only* primitive that can express this lever at all. `MERGE` is legally unavailable. **This is the decisive evidence for first-class adoption: the corpus's largest reform is inexpressible without the sixteenth primitive.**
 
 ## D9 — Recurring meta-duty → General Part *(hypothesis from the PRD, tested here)*
 
@@ -152,7 +152,7 @@ The pattern "board approves framework/policy X, reviews annually, receives repor
 
 ## Residuals & proposals — TODO(human)
 
-1. **TODO(human): adopt `DEEM_SATISFIED` as the 15th primitive** (profile-level; candidate for engine-level). Signature: `DEEM_SATISFIED{ satisfied_ref, satisfying_ref, conditions: list[str] }`; both operands **survive** (distinct from MERGE); decomposition into `RESOLVE_CROSS_REFERENCE + FACTOR_EXCEPTION` loses the satisfaction edge (same argument as RELATE_OFFENSE, engine PRD §7.5). Evidence: five independent levers incl. the corpus's largest; an instance already exists in current law (12 CFR 9.9). Effect class is *not* fixed: expanding an accommodation = change; restating an existing one = codify.
+1. **TODO(human): adopt `DEEM_SATISFIED` as the 16th primitive** (profile-level; candidate for engine-level). Signature: `DEEM_SATISFIED{ satisfied_ref, satisfying_ref, conditions: list[str] }`; both operands **survive** (distinct from MERGE); decomposition into `RESOLVE_CROSS_REFERENCE + FACTOR_EXCEPTION` loses the satisfaction edge (same argument as RELATE_OFFENSE, engine PRD §7.5). Evidence: five independent levers incl. the corpus's largest; an instance already exists in current law (12 CFR 9.9). Effect class is *not* fixed: expanding an accommodation = change; restating an existing one = codify.
 2. **TODO(human): generalize `ASSIGN_DUTY_STANDARD` → `ASSIGN_DUTY_PARAMETER`** over `{verb_standard, cadence}` (assignment where implicit; re-assignment where explicit = change-class). Alternative rejected: a separate SET_CADENCE primitive (too narrow; violates basis minimality).
 3. **TODO(human): confirm operand row-ID mappings** in `b0_decompositions.json` against the inventory before B2 fixture authoring (per engine AGENTS §14.1 — these are hand-authored labels the eval will later grade against; they must be marked as such).
 4. No other residual. With #1 and #2 approved, **the set is closed over the MVP clusters**: exit criterion met in the amended-set branch.
@@ -161,4 +161,4 @@ The pattern "board approves framework/policy X, reviews annually, receives repor
 
 - **PRD §7.3**: `DEEM_SATISFIED` moves from pre-registered hypothesis to approved primitive (pending TODO 1); its M0 prediction is confirmed.
 - **B2 fixtures**: the natural deterministic fixture is **D4** (single-agency, two operands, exercises DEEM_SATISFIED + FACTOR_EXCEPTION + parallel_distinct_purpose + the cadence parameter) with **D7** as the codify-class contrast case and **D6** as the binding-force-invariant test.
-- **Banking AGENTS.md**: `PrimitiveOp` enum = 15 members; `validate_composition()` must assert DEEM_SATISFIED-not-decomposable and both-operands-survive; new behavioral test: a force-stratum-crossing operation without a declared conversion fails `binding_force_conservation`.
+- **Banking AGENTS.md**: `PrimitiveOp` enum = 16 members; `validate_composition()` must assert DEEM_SATISFIED-not-decomposable and both-operands-survive; new behavioral test: a force-stratum-crossing operation without a declared conversion fails `binding_force_conservation`.

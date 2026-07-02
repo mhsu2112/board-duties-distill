@@ -35,4 +35,4 @@ The as-built spec is the `before_as_of` law, not today's code — preserve this 
 Finding 2 (`MERGE`, effect `change`) matches the AGENTS §8 contract. It is framed as the RCC consolidating overlapping theft-related provisions and carving non-deprivation takings to UUP — a real, documented "change"-class move — rather than the §16 PRD wording ("fold false-pretense conduct into fraud"), which is less faithful to how the RCC actually structured theft/fraud/UUP. Confirm against the real CCRC theft report at README next-step 1.
 
 ## _calculus/relate_offense_case.json
-Separate stub proving the 14th primitive: robbery and theft-from-a-person both survive, related by a single `RELATE_OFFENSE(aggravated_form_of)`, `expected_residual` empty. Used only by `test_calculus_theft.py`.
+Separate stub proving the 15th primitive: robbery and theft-from-a-person both survive, related by a single `RELATE_OFFENSE(aggravated_form_of)`, `expected_residual` empty. Used only by `test_calculus_theft.py`.

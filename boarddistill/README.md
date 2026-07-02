@@ -90,6 +90,6 @@ Fixture placeholder labels and T8 mappings; any residual the calculus cannot exp
 any `statutory_floor.json` edit; a conflict between `AGENTS.md` and a PRD; anything needing
 network access, licensed text, or CSI.
 
-> Note (checkpoint §14.5): the parent docs say "fourteen primitives" but enumerate fifteen
-> names; the banking set closes at **16** (the fifteen + `DEEM_SATISFIED`). The enum is the
-> ground truth; reconciling the prose counts is a human `TODO`.
+> Resolved 2026-07-02 (was checkpoint §14.5): parent-doc prose counts corrected — the engine
+> set is fifteen primitives; the banking set closes at **16** (the fifteen + `DEEM_SATISFIED`).
+> The enum remains the ground truth.

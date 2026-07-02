@@ -40,7 +40,7 @@ Everything probabilistic (LLM-based distillation, retrieval) is introduced **lat
 1. **Snapshot present.** Every `OffenseSpec` carries `SnapshotDates(before_as_of, reform_as_of, current_as_of)`; validation rejects specs without it.
 2. **Every claim has a span.** A `LegalClaim` with empty `source_span_ids` fails verification.
 3. **Effect class needs a baseline.** `Finding.effect_class` is computed only by diffing against an as-built baseline from the authority graph. **No baseline ⇒ `effect_class = "unresolved"`. Never guess.**
-4. **Closed primitive set.** `Operation.primitive` is the 14-member `PrimitiveOp` enum (§5). A free-text primitive is invalid.
+4. **Closed primitive set.** `Operation.primitive` is the 15-member `PrimitiveOp` enum (§5). A free-text primitive is invalid.
 5. **effect_class ≠ primitive.** They are different types and must never be conflated (there is a test for exactly this).
 6. **Normative gate.** A `Finding` with non-empty `normative_kind` and an unresolved `disposition_state` cannot reach `final`.
 7. **Verification gate.** Any `unverified` or `contradicted` claim blocks `final`.
@@ -108,7 +108,7 @@ Pydantic v2, `model_config = ConfigDict(extra="forbid")`.
 - `GraphStore` protocol with `baseline_for(target_ref: str, as_of: date) -> SourceSpan | None` → the controlling, good-treatment, as-of-valid **holding** bearing on the target, else `None`.
 
 **Calculus (`calculus.py`)** — the spine:
-- `PrimitiveOp` enum, **exactly these 14**: `MERGE, SPLIT, INTRODUCE, REPEAL, RELOCATE, RELATE_OFFENSE, CANONICALIZE_DEFINITION, DEFINE_TERM, SUBSTITUTE_TERM, NORMALIZE_ELEMENTS, ASSIGN_MENS_REA, FACTOR_EXCEPTION, REGRADE, ELEVATE_GENERAL_RULE, RESOLVE_CROSS_REFERENCE`.
+- `PrimitiveOp` enum, **exactly these 15**: `MERGE, SPLIT, INTRODUCE, REPEAL, RELOCATE, RELATE_OFFENSE, CANONICALIZE_DEFINITION, DEFINE_TERM, SUBSTITUTE_TERM, NORMALIZE_ELEMENTS, ASSIGN_MENS_REA, FACTOR_EXCEPTION, REGRADE, ELEVATE_GENERAL_RULE, RESOLVE_CROSS_REFERENCE`.
 - `Operation{ id, primitive: PrimitiveOp, operands: list[str], inverse: PrimitiveOp | None, scope: Literal["special_part","general_part"] = "special_part", relation: Literal["aggravated_form_of","shares_term","merges_with"] | None = None, diagnostics_triggering: list[str], normative_load: Literal["low","med","high"] }`
   - `relation` is set **iff** `primitive == RELATE_OFFENSE`; validate this.
   - `RELATE_OFFENSE` operands are two offense ids that **both survive** (distinct from `MERGE`, which collapses to one).
@@ -154,7 +154,7 @@ Author `data/fixtures/dc/theft/` from the PRD §16 illustrative slice only. **Ma
 
 Authoring fixtures is a **checkpoint (§14)**: produce the draft, leave `TODO(human): confirm placeholder labels`, proceed using the draft.
 
-For the RELATE-OFFENSE M0 case, add a minimal `data/fixtures/dc/_calculus/` stub with a robbery and a theft-from-a-person offense and one expected `RELATE_OFFENSE(aggravated_form_of)` operation — used only by `test_calculus_theft.py` to exercise the 14th primitive deterministically.
+For the RELATE-OFFENSE M0 case, add a minimal `data/fixtures/dc/_calculus/` stub with a robbery and a theft-from-a-person offense and one expected `RELATE_OFFENSE(aggravated_form_of)` operation — used only by `test_calculus_theft.py` to exercise the 15th primitive deterministically.
 
 ---
 
@@ -168,7 +168,7 @@ For the RELATE-OFFENSE M0 case, add a minimal `data/fixtures/dc/_calculus/` stub
 
 ## 10. M0 calculus validation (belongs in slice one — it is pure, deterministic composition)
 
-In `operations.py`, implement `validate_composition(findings) -> list[Residual]`: every change in a fixture's gold findings must be a single primitive or a known `decompose()` composite; anything else is a residual. The CLI `run-fixture` runs this and fails on a non-empty residual. The robbery↔theft stub must validate as a single `RELATE_OFFENSE` (proving the 14th primitive is exercised and not silently absorbed into MERGE).
+In `operations.py`, implement `validate_composition(findings) -> list[Residual]`: every change in a fixture's gold findings must be a single primitive or a known `decompose()` composite; anything else is a residual. The CLI `run-fixture` runs this and fails on a non-empty residual. The robbery↔theft stub must validate as a single `RELATE_OFFENSE` (proving the 15th primitive is exercised and not silently absorbed into MERGE).
 
 ---
 
@@ -187,7 +187,7 @@ Plus: a finding whose target has **no authority baseline** yields `effect_class=
 
 - **T0 Scaffold** — repo, `pyproject.toml`, `Makefile`, Typer skeleton, empty CI-less `make check`.
 - **T1 Models** — §5 models + `SnapshotDates` enforcement + exported `schemas/canonical.schema.json`.
-- **T-CALCULUS** — `PrimitiveOp` (14), `Operation` (with `relation`/`scope` validation), `decompose()`, `validate_composition()`. *Tests:* closed enum; `relation` iff RELATE_OFFENSE; clarification-not-a-primitive; RELATE_OFFENSE-not-decomposable.
+- **T-CALCULUS** — `PrimitiveOp` (15), `Operation` (with `relation`/`scope` validation), `decompose()`, `validate_composition()`. *Tests:* closed enum; `relation` iff RELATE_OFFENSE; clarification-not-a-primitive; RELATE_OFFENSE-not-decomposable.
 - **T2 Invariants** — `invariants.py` + `can_finalize()`; `tests/test_invariants.py` (the §2 spine incl. effect-class-needs-baseline, normative gate, verification gate).
 - **T3 Fixtures** — theft fixture + `_calculus` stub (§8); `fixture_loader.py`; `validate-fixtures` CLI. Checkpoint.
 - **T4 Pipeline** — `distill`/`align`/`diagnostics`/`operations`/`classify`/`verify`; `run-fixture` CLI (runs M0). *DoD:* theft produces two findings matching gold operation+effect; residual empty; stub composes to RELATE_OFFENSE.

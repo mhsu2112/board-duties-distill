@@ -1,5 +1,5 @@
 {
-  "_note": "HAND-AUTHORED GOLD LABELS (checkpoint §14.1). The pipeline recomputes effect_class and disposition; these are the answer key the eval grades against. TODO(human): confirm.",
+  "_note": "HAND-AUTHORED GOLD LABELS (checkpoint \u00a714.1). The pipeline recomputes effect_class and disposition; these are the answer key the eval grades against. Confirmed by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST Item 1).",
   "operations": [
     {
       "id": "op-deem",
@@ -7,25 +7,37 @@
       "operands": [],
       "outputs": [],
       "arity": 2,
-      "actor_with_authority": ["FDIC"],
+      "actor_with_authority": [
+        "FDIC"
+      ],
       "instrument_required": "rule_apa",
       "normative_load": "high",
       "satisfied_ref": "b:AUD-ICFR-363",
       "satisfying_ref": "b:AUD-SOX-404b",
-      "conditions": ["external attestation retained", "designated-laws compliance retained as annex"]
+      "conditions": [
+        "external attestation retained",
+        "designated-laws compliance retained as annex"
+      ]
     },
     {
       "id": "op-factor",
       "primitive": "FACTOR_EXCEPTION",
-      "operands": ["b:AUD-FDICIA-ANNEX"],
+      "operands": [
+        "b:AUD-FDICIA-ANNEX"
+      ],
       "arity": 1,
-      "actor_with_authority": ["FDIC"],
+      "actor_with_authority": [
+        "FDIC"
+      ],
       "normative_load": "low"
     },
     {
       "id": "op-relate",
       "primitive": "RELATE_OBLIGATION",
-      "operands": ["b:AUD-FDICIA-ANNEX", "b:AUD-SOX-404b"],
+      "operands": [
+        "b:AUD-FDICIA-ANNEX",
+        "b:AUD-SOX-404b"
+      ],
       "arity": 2,
       "relation": "parallel_distinct_purpose",
       "normative_load": "low"
@@ -33,9 +45,13 @@
     {
       "id": "op-cadence",
       "primitive": "ASSIGN_DUTY_PARAMETER",
-      "operands": ["b:AUD-ICFR-363"],
+      "operands": [
+        "b:AUD-ICFR-363"
+      ],
       "arity": 1,
-      "actor_with_authority": ["FDIC"],
+      "actor_with_authority": [
+        "FDIC"
+      ],
       "instrument_required": "rule_apa",
       "normative_load": "med",
       "parameter": "cadence"
@@ -47,7 +63,9 @@
       "provision": "Part 363 ICFR assessment / SOX 404(b) attestation",
       "as_built_ref": "b:AUD-ICFR-363",
       "intended_ref": "b:AUD-ICFR-363",
-      "operation_ids": ["op-deem"],
+      "operation_ids": [
+        "op-deem"
+      ],
       "effect_class": "change",
       "rationale": "SOX 404(b) attestation is deemed to satisfy the Part 363 ICFR assessment; both duties survive. Expanding the accommodation is a policy choice.",
       "baseline": {
@@ -56,7 +74,9 @@
         "citation": "12 U.S.C. 1831m / 12 CFR Part 363",
         "quote": "[FIXTURE] baseline: standalone Part 363 ICFR assessment as currently required."
       },
-      "normative_kind": ["policy_choice"],
+      "normative_kind": [
+        "policy_choice"
+      ],
       "disposition_state": "needs_review",
       "force_conversion_declared": false,
       "confidence": 0.8,
@@ -68,7 +88,9 @@
       "provision": "FDICIA designated-laws annex",
       "as_built_ref": null,
       "intended_ref": "b:AUD-FDICIA-ANNEX",
-      "operation_ids": ["op-factor"],
+      "operation_ids": [
+        "op-factor"
+      ],
       "effect_class": "clarify",
       "rationale": "Designated safety-and-soundness laws compliance is factored out as a retained annex.",
       "baseline": {
@@ -89,7 +111,9 @@
       "provision": "FDICIA annex vs SOX regime",
       "as_built_ref": "b:AUD-SOX-404b",
       "intended_ref": "b:AUD-FDICIA-ANNEX",
-      "operation_ids": ["op-relate"],
+      "operation_ids": [
+        "op-relate"
+      ],
       "effect_class": "clarify",
       "rationale": "The retained FDICIA annex and the SOX regime are related as parallel-but-distinct-purpose obligations; both survive.",
       "baseline": {
@@ -110,16 +134,20 @@
       "provision": "Part 363 reporting cadence",
       "as_built_ref": "b:AUD-ICFR-363",
       "intended_ref": "b:AUD-ICFR-363",
-      "operation_ids": ["op-cadence"],
+      "operation_ids": [
+        "op-cadence"
+      ],
       "effect_class": "change",
-      "rationale": "The explicit calendar-year assessment cadence is re-assigned to the fiscal year to align cycles — a re-assignment of an explicit parameter.",
+      "rationale": "The explicit calendar-year assessment cadence is re-assigned to the fiscal year to align cycles \u2014 a re-assignment of an explicit parameter.",
       "baseline": {
         "id": "b-cadence",
         "source_id": "part-363",
         "citation": "12 CFR 363.2(b)",
         "quote": "[FIXTURE] baseline: explicit calendar-year assessment cycle."
       },
-      "normative_kind": ["institutional_discretion"],
+      "normative_kind": [
+        "institutional_discretion"
+      ],
       "disposition_state": "needs_review",
       "force_conversion_declared": false,
       "confidence": 0.8,

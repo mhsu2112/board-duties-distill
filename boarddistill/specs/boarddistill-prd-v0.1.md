@@ -127,7 +127,7 @@ Profile diagnostic set: duplicate duty (same actor+verb+object across instrument
 
 ### 7.3 Operations (the primitives)
 
-**The starting basis is the engine's closed 14-primitive set**, with two profile-level adaptations (renamings-with-extension, not new semantics) and one pre-registered candidate addition:
+**The starting basis is the engine's closed 15-primitive set**, with two profile-level adaptations (renamings-with-extension, not new semantics) and one pre-registered candidate addition:
 
 | Family | Primitive | Banking reading |
 |---|---|---|
@@ -147,7 +147,7 @@ Profile diagnostic set: duplicate duty (same actor+verb+object across instrument
 | General Part | `ELEVATE_GENERAL_RULE` | Lift the recurring meta-duty ("approve framework, review annually, receive reports") into a single general governance section — hypothesized to be the highest-value move in this corpus |
 | | `RESOLVE_CROSS_REFERENCE` | Guidance/manual cross-references the rule instead of restating it |
 
-**Pre-registered candidate 15th primitive — `DEEM_SATISFIED`** *(hypothesis, not yet in the enum)*: "compliance with X is deemed compliance with Y" (e.g., SOX 404(b) attestation satisfying FDICIA ICFR by cross-reference). Decomposable as `RESOLVE_CROSS_REFERENCE + FACTOR_EXCEPTION`, but the decomposition loses the cross-regime relational intent — the same argument that made `RELATE_OFFENSE` first-class in the criminal M0. **Discipline (engine AGENTS §14):** it is added to the enum only if the banking M0 (§17, phase B0) produces it as a residual; the M0 prediction is that it will.
+**Pre-registered candidate 16th primitive — `DEEM_SATISFIED`** *(hypothesis, not yet in the enum)*: "compliance with X is deemed compliance with Y" (e.g., SOX 404(b) attestation satisfying FDICIA ICFR by cross-reference). Decomposable as `RESOLVE_CROSS_REFERENCE + FACTOR_EXCEPTION`, but the decomposition loses the cross-regime relational intent — the same argument that made `RELATE_OFFENSE` first-class in the criminal M0. **Discipline (engine AGENTS §14):** it is added to the enum only if the banking M0 (§17, phase B0) produces it as a residual; the M0 prediction is that it will.
 
 Operation records carry the engine's full envelope — `operands[]`, `arity`, `inverse?`, `scope ∈ {duty_level, general_part}`, `diagnostics_triggering[]`, `normative_load` — **plus two profile fields**: `actor_with_authority` (which agency/agencies can execute the operation) and `instrument_required ∈ {rule (APA), joint_rulemaking, interagency_statement, guidance_action, statutory_amendment}`. An operation whose `instrument_required = statutory_amendment` is automatically `normative_load = high`.
 

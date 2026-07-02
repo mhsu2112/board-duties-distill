@@ -26,8 +26,8 @@ _HEADER_ROW = 3
 DRAFT_BANNER = (
     "DRAFT — imported from the inventory xlsx by adapters/inventory_xlsx.py. "
     "Every claim is UNVERIFIED and no spec is finalizable. Column mappings are fuzzy "
-    "hints (checkpoint §14.1); TODO(human): confirm the Layer->legal_force, Cadence, "
-    "Status, Entity, and Confidence mappings before trusting these drafts."
+    "hints; mappings CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST Item 3). "
+    "Claims remain UNVERIFIED until B1 citation verification."
 )
 
 _DEFAULT_SNAPSHOT = SnapshotDates(
