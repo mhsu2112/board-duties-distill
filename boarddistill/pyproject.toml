@@ -49,7 +49,7 @@ plugins = ["pydantic.mypy"]
 files = ["distillcore", "profiles", "adapters", "cli.py", "tests"]
 
 [[tool.mypy.overrides]]
-module = ["networkx.*"]
+module = ["networkx.*", "openpyxl.*"]
 ignore_missing_imports = true
 
 [tool.pydantic-mypy]

@@ -134,7 +134,26 @@ def import_inventory(
     out: Annotated[Path, typer.Option("--out", help="Output directory for draft DutySpecs.")],
 ) -> None:
     """T8 adapter: emit draft DutySpecs; every claim 'unverified'; banner in output."""
-    _stub("import-inventory")
+    import json
+
+    from adapters.inventory_xlsx import import_inventory as _import
+
+    result = _import(xlsx)
+    out.mkdir(parents=True, exist_ok=True)
+    dest = out / "imported_duties.json"
+    dest.write_text(
+        json.dumps(
+            {
+                "_banner": result.banner,
+                "duties": [d.model_dump(mode="json") for d in result.duties],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    typer.echo(f"[boarddistill] imported {len(result.duties)} DRAFT duties -> {dest}")
+    typer.echo(f"  {result.banner}")
 
 
 if __name__ == "__main__":
