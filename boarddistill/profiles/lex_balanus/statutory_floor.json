@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "status": "DRAFT v1 — TODO(human): confirm statutory floor anchors and scope (AGENTS §14.4). This file is human-owned; the agent may draft v1 but must not silently edit it thereafter.",
+    "profile": "lex_balanus",
+    "as_of": "2026-06",
+    "rule": "No composition may REPEAL or MERGE-away a duty whose instrument_stratum == 'statute' or whose duty_id appears in floor_duty_ids. DEEM_SATISFIED against a floor duty is permitted (the duty survives) but always needs_review. Violations are hard blocks (invariant §2.10)."
+  },
+  "anchors": [
+    {
+      "citation": "12 U.S.C. 5365(h)",
+      "title": "Dodd-Frank §165(h) — BHC risk committee requirement",
+      "stratum": "statute"
+    },
+    {
+      "citation": "12 U.S.C. 5365(i)",
+      "title": "Dodd-Frank §165(i) — company-run stress testing; board oversight",
+      "stratum": "statute"
+    },
+    {
+      "citation": "SOX §301 (15 U.S.C. 78j-1(m))",
+      "title": "Audit committee independence and responsibilities",
+      "stratum": "statute"
+    },
+    {
+      "citation": "FDI Act §36 (12 U.S.C. 1831m); 12 CFR Part 363",
+      "title": "Annual independent audit, ICFR assessment, and audit committee (Part 363 anchor)",
+      "stratum": "statute"
+    },
+    {
+      "citation": "31 U.S.C. 5318(h); 12 U.S.C. 1818(s)",
+      "title": "BSA/AML compliance program statutes",
+      "stratum": "statute"
+    }
+  ],
+  "floor_duty_ids": []
+}

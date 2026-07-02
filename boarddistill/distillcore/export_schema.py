@@ -1,9 +1,10 @@
 """Export the canonical JSON Schema to ``schemas/canonical.schema.json``.
 
 Deterministic: models are sorted by name and JSON keys are sorted, so re-exports are
-byte-identical. Run via ``make schema``. The profile-bound DutySpec + Operation +
-Finding are appended once the ``lex_balanus`` profile lands (T2); at T1 this exports
-the profile-independent core shapes.
+byte-identical. Run via ``make schema``. This module is the schema *composition root*:
+the canonical schema is the banking-bound one (DutySpec + Operation + Finding), so it
+imports the ``lex_balanus`` profile here even though ``distillcore`` is otherwise
+profile-independent.
 """
 
 from __future__ import annotations
@@ -15,6 +16,8 @@ from typing import Any
 from pydantic import BaseModel
 from pydantic.json_schema import models_json_schema
 
+from profiles.lex_balanus.models import BankingFinding, BankingOperation, DutySpec
+
 from .models.base import LegalClaim, SnapshotDates, SourceSpan, VerifierRecord
 from .models.calculus import Diagnostic
 
@@ -24,7 +27,10 @@ SCHEMA_PATH = Path(__file__).resolve().parent.parent / "schemas" / "canonical.sc
 def canonical_models() -> list[type[BaseModel]]:
     """The models composing the canonical schema, sorted for deterministic output."""
     models: list[type[BaseModel]] = [
+        BankingFinding,
+        BankingOperation,
         Diagnostic,
+        DutySpec,
         LegalClaim,
         SnapshotDates,
         SourceSpan,

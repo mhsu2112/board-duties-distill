@@ -1,5 +1,32 @@
 {
   "$defs": {
+    "Cadence": {
+      "description": "A duty's recurrence. Calendar vs fiscal basis is explicit so a basis change is\na visible parameter re-assignment (D4).",
+      "enum": [
+        "none_specified",
+        "event_driven",
+        "continuous",
+        "annual",
+        "annual_calendar",
+        "annual_fiscal",
+        "semiannual",
+        "quarterly"
+      ],
+      "title": "Cadence",
+      "type": "string"
+    },
+    "Consequence": {
+      "description": "What attaches on failure of a duty (profile placeholder vocabulary).",
+      "enum": [
+        "none_specified",
+        "supervisory_finding",
+        "enforcement_action",
+        "certification_required",
+        "public_disclosure"
+      ],
+      "title": "Consequence",
+      "type": "string"
+    },
     "Diagnostic": {
       "additionalProperties": false,
       "description": "A signal raised during alignment/diagnosis; points at duties and source spans.",
@@ -33,6 +60,259 @@
       ],
       "title": "Diagnostic",
       "type": "object"
+    },
+    "DutySpec": {
+      "additionalProperties": false,
+      "description": "A single board duty, as-built or intended. Snapshots are mandatory (\u00a72.1).",
+      "properties": {
+        "board_level": {
+          "title": "Board Level",
+          "type": "string"
+        },
+        "cadence": {
+          "$ref": "#/$defs/Cadence"
+        },
+        "claims": {
+          "items": {
+            "$ref": "#/$defs/LegalClaim"
+          },
+          "title": "Claims",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "consequence": {
+          "$ref": "#/$defs/Consequence"
+        },
+        "currency_status": {
+          "$ref": "#/$defs/TreatmentStatus"
+        },
+        "director_class": {
+          "title": "Director Class",
+          "type": "string"
+        },
+        "duty_id": {
+          "title": "Duty Id",
+          "type": "string"
+        },
+        "entity": {
+          "enum": [
+            "BHC",
+            "IDI",
+            "both"
+          ],
+          "title": "Entity",
+          "type": "string"
+        },
+        "instrument_id": {
+          "title": "Instrument Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "layer": {
+          "enum": [
+            "as_built",
+            "intended"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "legal_force": {
+          "$ref": "#/$defs/LegalForce"
+        },
+        "object": {
+          "title": "Object",
+          "type": "string"
+        },
+        "snapshot_dates": {
+          "$ref": "#/$defs/SnapshotDates"
+        },
+        "source_citations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Citations",
+          "type": "array"
+        },
+        "trigger": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Trigger"
+        },
+        "verb_standard": {
+          "$ref": "#/$defs/VerbStandard"
+        }
+      },
+      "required": [
+        "snapshot_dates",
+        "duty_id",
+        "label",
+        "layer",
+        "board_level",
+        "director_class",
+        "entity",
+        "verb_standard",
+        "object",
+        "cadence",
+        "legal_force",
+        "consequence",
+        "instrument_id",
+        "currency_status",
+        "confidence"
+      ],
+      "title": "DutySpec",
+      "type": "object"
+    },
+    "Finding_NormativeKind_": {
+      "additionalProperties": false,
+      "properties": {
+        "as_built_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "As Built Ref"
+        },
+        "baseline": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceSpan"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "disposition_state": {
+          "default": "needs_review",
+          "enum": [
+            "auto_ok",
+            "needs_review",
+            "reviewer_accepted",
+            "reviewer_rejected",
+            "reviewer_modified"
+          ],
+          "title": "Disposition State",
+          "type": "string"
+        },
+        "effect_class": {
+          "enum": [
+            "codify",
+            "clarify",
+            "fill_gap",
+            "change",
+            "unresolved"
+          ],
+          "title": "Effect Class",
+          "type": "string"
+        },
+        "force_conversion_declared": {
+          "default": false,
+          "title": "Force Conversion Declared",
+          "type": "boolean"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "intended_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Intended Ref"
+        },
+        "normative_kind": {
+          "items": {
+            "$ref": "#/$defs/NormativeKind"
+          },
+          "title": "Normative Kind",
+          "type": "array"
+        },
+        "operation_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Operation Ids",
+          "type": "array"
+        },
+        "provision": {
+          "title": "Provision",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "status": {
+          "default": "draft",
+          "enum": [
+            "draft",
+            "final"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "verifier_records": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Verifier Records",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "provision",
+        "effect_class",
+        "rationale",
+        "confidence"
+      ],
+      "title": "Finding[NormativeKind]",
+      "type": "object"
+    },
+    "InstrumentRequired": {
+      "description": "The lawful pathway a change must travel (APA pathway invariant, \u00a72.11).",
+      "enum": [
+        "rule_apa",
+        "joint_rulemaking",
+        "interagency_statement",
+        "guidance_action",
+        "statutory_amendment"
+      ],
+      "title": "InstrumentRequired",
+      "type": "string"
     },
     "LegalClaim": {
       "additionalProperties": false,
@@ -105,6 +385,217 @@
       ],
       "title": "LegalClaim",
       "type": "object"
+    },
+    "LegalForce": {
+      "description": "The binding force / stratum of an instrument. Ordered by STRATUM_RANK below.",
+      "enum": [
+        "statute",
+        "regulation",
+        "enforceable_guideline",
+        "guidance",
+        "manual"
+      ],
+      "title": "LegalForce",
+      "type": "string"
+    },
+    "NormativeKind": {
+      "description": "Why a finding needs human judgment (the normative gate keys on non-empty sets).",
+      "enum": [
+        "policy_choice",
+        "supervisory_value_judgment",
+        "statutory_constraint",
+        "interpretive_ambiguity",
+        "institutional_discretion",
+        "interagency_coordination"
+      ],
+      "title": "NormativeKind",
+      "type": "string"
+    },
+    "Operation_PrimitiveOp_RelationType_InstrumentRequired_": {
+      "additionalProperties": false,
+      "properties": {
+        "actor_with_authority": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Actor With Authority",
+          "type": "array"
+        },
+        "arity": {
+          "title": "Arity",
+          "type": "integer"
+        },
+        "conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Conditions",
+          "type": "array"
+        },
+        "diagnostics_triggering": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Diagnostics Triggering",
+          "type": "array"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "instrument_required": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/InstrumentRequired"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "inverse": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inverse"
+        },
+        "normative_load": {
+          "default": "low",
+          "enum": [
+            "low",
+            "med",
+            "high"
+          ],
+          "title": "Normative Load",
+          "type": "string"
+        },
+        "operands": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Operands",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "parameter": {
+          "anyOf": [
+            {
+              "enum": [
+                "verb_standard",
+                "cadence"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parameter"
+        },
+        "primitive": {
+          "$ref": "#/$defs/PrimitiveOp"
+        },
+        "relation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RelationType"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "satisfied_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Satisfied Ref"
+        },
+        "satisfying_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Satisfying Ref"
+        },
+        "scope": {
+          "default": "duty_level",
+          "enum": [
+            "duty_level",
+            "general_part"
+          ],
+          "title": "Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "primitive",
+        "arity"
+      ],
+      "title": "Operation[PrimitiveOp, RelationType, InstrumentRequired]",
+      "type": "object"
+    },
+    "PrimitiveOp": {
+      "description": "The 16-member banking calculus. The set changes only by the B0 checkpoint route.",
+      "enum": [
+        "MERGE",
+        "SPLIT",
+        "INTRODUCE",
+        "REPEAL",
+        "RELOCATE",
+        "RELATE_OBLIGATION",
+        "CANONICALIZE_DEFINITION",
+        "DEFINE_TERM",
+        "SUBSTITUTE_TERM",
+        "NORMALIZE_ELEMENTS",
+        "ASSIGN_DUTY_PARAMETER",
+        "FACTOR_EXCEPTION",
+        "REGRADE",
+        "ELEVATE_GENERAL_RULE",
+        "RESOLVE_CROSS_REFERENCE",
+        "DEEM_SATISFIED"
+      ],
+      "title": "PrimitiveOp",
+      "type": "string"
+    },
+    "RelationType": {
+      "description": "Set iff ``primitive == RELATE_OBLIGATION`` (validated in T-CALCULUS).",
+      "enum": [
+        "implements",
+        "elaborates",
+        "parallel_distinct_purpose",
+        "entity_level_mirror",
+        "shares_term"
+      ],
+      "title": "RelationType",
+      "type": "string"
     },
     "SnapshotDates": {
       "additionalProperties": false,
@@ -194,6 +685,32 @@
       ],
       "title": "SourceSpan",
       "type": "object"
+    },
+    "TreatmentStatus": {
+      "description": "Currency of an instrument/duty as of a snapshot date.",
+      "enum": [
+        "active",
+        "amended",
+        "superseded",
+        "rescinded_formal",
+        "rescinded_informal",
+        "stale_unverified"
+      ],
+      "title": "TreatmentStatus",
+      "type": "string"
+    },
+    "VerbStandard": {
+      "description": "The board's standard of engagement with a duty's object.\n\nAlso the value space of the ``verb_standard`` parameter of ASSIGN_DUTY_PARAMETER.",
+      "enum": [
+        "approve",
+        "review_and_challenge",
+        "receive_report",
+        "be_informed",
+        "certify",
+        "none_specified"
+      ],
+      "title": "VerbStandard",
+      "type": "string"
     },
     "VerifierRecord": {
       "additionalProperties": false,
