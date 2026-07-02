@@ -1,0 +1,84 @@
+{
+  "_note": "HAND-AUTHORED GOLD LABELS (checkpoint §14.1). TODO(human): confirm. Exercises §2.9: the RELOCATE is a declared guidance->regulation force conversion; a mutated copy with force_conversion_declared=false must fail (negative test in T5).",
+  "operations": [
+    {
+      "id": "op-relocate",
+      "primitive": "RELOCATE",
+      "operands": ["s:GOV-02", "s:GOV-03"],
+      "outputs": ["s:GOV-02", "s:GOV-03"],
+      "arity": 2,
+      "actor_with_authority": ["FRB"],
+      "instrument_required": "rule_apa",
+      "normative_load": "high"
+    },
+    {
+      "id": "op-verb",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "operands": ["s:GOV-02"],
+      "arity": 1,
+      "actor_with_authority": ["FRB"],
+      "instrument_required": "rule_apa",
+      "normative_load": "med",
+      "parameter": "verb_standard"
+    },
+    {
+      "id": "op-repeal",
+      "primitive": "REPEAL",
+      "operands": ["sr-12-17"],
+      "arity": 1,
+      "actor_with_authority": ["FRB"],
+      "instrument_required": "rule_apa",
+      "normative_load": "low"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f-relocate",
+      "provision": "SR 12-17 governance attributes -> Regulation YY",
+      "as_built_ref": "s:GOV-02",
+      "intended_ref": "s:GOV-02",
+      "operation_ids": ["op-relocate"],
+      "effect_class": "change",
+      "rationale": "Relocating SR 12-17 attribute content into Regulation YY converts guidance to regulation — a per-se binding-force conversion, declared.",
+      "baseline": {"id": "b-relocate", "source_id": "sr-12-17", "citation": "SR 12-17 / CA 12-14", "quote": "[FIXTURE] baseline: attributes stated at guidance force."},
+      "normative_kind": ["policy_choice", "interpretive_ambiguity"],
+      "disposition_state": "needs_review",
+      "force_conversion_declared": true,
+      "confidence": 0.8,
+      "verifier_records": [],
+      "status": "draft"
+    },
+    {
+      "id": "f-verb",
+      "provision": "Risk-governance verb standard ('ensure' -> oversight)",
+      "as_built_ref": "s:GOV-02",
+      "intended_ref": "s:GOV-02",
+      "operation_ids": ["op-verb"],
+      "effect_class": "clarify",
+      "rationale": "The vague 'ensure' standard is resolved to board oversight (review and challenge) — a clarification of an unspecified parameter.",
+      "baseline": {"id": "b-verb", "source_id": "sr-12-17", "citation": "SR 12-17 / CA 12-14", "quote": "[FIXTURE] baseline: 'ensure' — verb standard not specified."},
+      "normative_kind": ["interpretive_ambiguity"],
+      "disposition_state": "needs_review",
+      "force_conversion_declared": false,
+      "confidence": 0.78,
+      "verifier_records": [],
+      "status": "draft"
+    },
+    {
+      "id": "f-repeal",
+      "provision": "Retirement of SR 12-17",
+      "as_built_ref": null,
+      "intended_ref": null,
+      "operation_ids": ["op-repeal"],
+      "effect_class": "codify",
+      "rationale": "SR 12-17 is formally rescinded once its content is relocated; a rider on the relocation.",
+      "baseline": {"id": "b-repeal", "source_id": "sr-12-17", "citation": "SR 12-17 / CA 12-14", "quote": "[FIXTURE] baseline: SR 12-17 as an active guidance letter."},
+      "normative_kind": [],
+      "disposition_state": "auto_ok",
+      "force_conversion_declared": false,
+      "confidence": 0.82,
+      "verifier_records": [],
+      "status": "draft"
+    }
+  ]
+}

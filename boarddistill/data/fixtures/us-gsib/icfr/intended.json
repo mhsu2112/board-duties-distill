@@ -1,0 +1,106 @@
+{
+  "duties": [
+    {
+      "duty_id": "b:AUD-ICFR-363",
+      "label": "Audit committee oversight of ICFR, deemed satisfied by SOX 404(b) attestation",
+      "layer": "intended",
+      "snapshot_dates": {
+        "inventory_as_of": "2026-06-01",
+        "consolidation_as_of": "2026-06-30",
+        "current_as_of": "2026-07-01"
+      },
+      "board_level": "audit_committee",
+      "director_class": "independent",
+      "entity": "IDI",
+      "verb_standard": "review_and_challenge",
+      "object": "management assessment of internal control over financial reporting",
+      "cadence": "annual_fiscal",
+      "trigger": null,
+      "legal_force": "regulation",
+      "consequence": "supervisory_finding",
+      "instrument_id": "part-363",
+      "currency_status": "active",
+      "source_citations": ["s-part363", "s-deem"],
+      "claims": [
+        {
+          "id": "c-363-i",
+          "claim": "The Part 363 ICFR assessment is deemed satisfied by the SOX 404(b) attestation, with cycles aligned to the fiscal year.",
+          "source_span_ids": ["s-deem", "s-part363"],
+          "support_type": "paraphrased",
+          "authority_type": "regulation",
+          "as_of_valid": true,
+          "confidence": 0.8
+        }
+      ],
+      "confidence": 0.8
+    },
+    {
+      "duty_id": "b:AUD-SOX-404b",
+      "label": "Audit committee oversight of the SOX 404(b) external auditor attestation",
+      "layer": "intended",
+      "snapshot_dates": {
+        "inventory_as_of": "2026-06-01",
+        "consolidation_as_of": "2026-06-30",
+        "current_as_of": "2026-07-01"
+      },
+      "board_level": "audit_committee",
+      "director_class": "independent",
+      "entity": "BHC",
+      "verb_standard": "receive_report",
+      "object": "external auditor attestation on internal control over financial reporting",
+      "cadence": "annual_fiscal",
+      "trigger": null,
+      "legal_force": "regulation",
+      "consequence": "public_disclosure",
+      "instrument_id": "sox-404",
+      "currency_status": "active",
+      "source_citations": ["s-sox404b"],
+      "claims": [
+        {
+          "id": "c-404b-i",
+          "claim": "The audit committee receives the registered public accounting firm's ICFR attestation under SOX 404(b).",
+          "source_span_ids": ["s-sox404b"],
+          "support_type": "paraphrased",
+          "authority_type": "regulation",
+          "as_of_valid": true,
+          "confidence": 0.85
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "duty_id": "b:AUD-FDICIA-ANNEX",
+      "label": "Retained FDICIA annex: compliance with designated safety-and-soundness laws",
+      "layer": "intended",
+      "snapshot_dates": {
+        "inventory_as_of": "2026-06-01",
+        "consolidation_as_of": "2026-06-30",
+        "current_as_of": "2026-07-01"
+      },
+      "board_level": "audit_committee",
+      "director_class": "independent",
+      "entity": "IDI",
+      "verb_standard": "certify",
+      "object": "compliance with designated safety-and-soundness laws",
+      "cadence": "annual_fiscal",
+      "trigger": null,
+      "legal_force": "regulation",
+      "consequence": "supervisory_finding",
+      "instrument_id": "fdicia-36",
+      "currency_status": "active",
+      "source_citations": ["s-annex", "s-fdicia36"],
+      "claims": [
+        {
+          "id": "c-annex",
+          "claim": "Compliance with designated safety-and-soundness laws is retained as a distinct annex, not folded into the ICFR attestation.",
+          "source_span_ids": ["s-annex"],
+          "support_type": "paraphrased",
+          "authority_type": "statute",
+          "as_of_valid": true,
+          "confidence": 0.8
+        }
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

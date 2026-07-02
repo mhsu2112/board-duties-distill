@@ -1,0 +1,8 @@
+{
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). Mirror-pair stub proving the vertical_rationalization composite (D8) with DEEM_SATISFIED intact. Used by test_calculus_banking.py.",
+  "sources": [
+    {"id": "s-rgc02", "source_id": "reg-yy", "citation": "12 CFR 252.33(a)(1)", "quote": "[FIXTURE] The BHC board approves the enterprise-wide risk-management framework."},
+    {"id": "s-rgc07", "source_id": "occ-app-d", "citation": "12 CFR Part 30, App. D, II.A", "quote": "[FIXTURE] The covered bank board is responsible for the bank's risk-governance framework."},
+    {"id": "s-reliance", "source_id": "reform-lever-D8", "citation": "[PLACEHOLDER] Reform lever D8 memorandum", "quote": "[PLACEHOLDER] The IDI framework duty is deemed satisfied by the parent enterprise framework where reliance is documented and risk profiles are substantially the same; bank-specific content is retained."}
+  ]
+}

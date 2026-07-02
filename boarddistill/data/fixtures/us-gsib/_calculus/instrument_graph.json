@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "reg-yy", "citation": "12 CFR Part 252 (Regulation YY)", "agency": "FRB", "stratum": "regulation", "effective_date": "2014-06-01", "treatment_status": "active", "bears_on": ["b:RGC-02"]},
+    {"id": "occ-app-d", "citation": "12 CFR Part 30, Appendix D", "agency": "OCC", "stratum": "enforceable_guideline", "effective_date": "2014-09-25", "treatment_status": "active", "bears_on": ["b:RGC-07"]}
+  ],
+  "edges": [
+    {"source": "occ-app-d", "target": "reg-yy", "kind": "entity_level_mirror"}
+  ]
+}

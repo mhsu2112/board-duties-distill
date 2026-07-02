@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "id": "occ-app-d",
+      "citation": "12 CFR Part 30, Appendix D",
+      "agency": "OCC",
+      "stratum": "enforceable_guideline",
+      "effective_date": "2014-09-25",
+      "treatment_status": "active",
+      "bears_on": ["b:BCG-AppD-IIIF"]
+    },
+    {
+      "id": "sr-21-3",
+      "citation": "SR 21-3",
+      "agency": "FRB",
+      "stratum": "guidance",
+      "effective_date": "2021-02-26",
+      "treatment_status": "active",
+      "bears_on": ["s:BCG-SR21-3"]
+    }
+  ],
+  "edges": [
+    {"source": "sr-21-3", "target": "occ-app-d", "kind": "parallel_distinct_purpose"}
+  ]
+}

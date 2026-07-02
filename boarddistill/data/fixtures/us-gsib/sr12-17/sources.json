@@ -1,0 +1,29 @@
+{
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). TODO(human): confirm placeholder labels and citations.",
+  "sources": [
+    {
+      "id": "s-sr1217-02",
+      "source_id": "sr-12-17",
+      "citation": "SR 12-17 / CA 12-14, Attribute 1",
+      "quote": "[FIXTURE] The board should ensure that the risk-management function is independent and has appropriate stature."
+    },
+    {
+      "id": "s-sr1217-03",
+      "source_id": "sr-12-17",
+      "citation": "SR 12-17 / CA 12-14, Attribute 2",
+      "quote": "[FIXTURE] The board should ensure that risk appetite is established and embedded in the firm's risk-management framework."
+    },
+    {
+      "id": "s-regyy",
+      "source_id": "reg-yy",
+      "citation": "12 CFR 252.33(a)",
+      "quote": "[FIXTURE] The board of directors shall approve the enterprise-wide risk-management policies of the bank holding company."
+    },
+    {
+      "id": "s-relocate",
+      "source_id": "reform-lever-D6",
+      "citation": "[PLACEHOLDER] Reform lever D6 memorandum",
+      "quote": "[PLACEHOLDER] The governance attributes of SR 12-17 are codified into Regulation YY and the letter is retired; the standard is stated as oversight rather than ensure."
+    }
+  ]
+}

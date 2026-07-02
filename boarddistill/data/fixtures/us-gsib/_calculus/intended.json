@@ -1,0 +1,48 @@
+{
+  "duties": [
+    {
+      "duty_id": "b:RGC-02",
+      "label": "BHC board approves the enterprise risk-management framework (Reg YY)",
+      "layer": "intended",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "risk_committee",
+      "director_class": "any",
+      "entity": "BHC",
+      "verb_standard": "approve",
+      "object": "enterprise-wide risk-management framework",
+      "cadence": "annual",
+      "trigger": null,
+      "legal_force": "regulation",
+      "consequence": "supervisory_finding",
+      "instrument_id": "reg-yy",
+      "currency_status": "active",
+      "source_citations": ["s-rgc02"],
+      "claims": [
+        {"id": "c-rgc02-i", "claim": "Reg YY requires the BHC board to approve the enterprise risk-management framework.", "source_span_ids": ["s-rgc02"], "support_type": "quoted", "authority_type": "regulation", "as_of_valid": true, "confidence": 0.9}
+      ],
+      "confidence": 0.9
+    },
+    {
+      "duty_id": "b:RGC-07",
+      "label": "IDI framework duty, deemed satisfied by the parent enterprise framework",
+      "layer": "intended",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "full_board",
+      "director_class": "any",
+      "entity": "IDI",
+      "verb_standard": "approve",
+      "object": "bank risk-governance framework (with bank-specific addendum)",
+      "cadence": "annual",
+      "trigger": null,
+      "legal_force": "enforceable_guideline",
+      "consequence": "supervisory_finding",
+      "instrument_id": "occ-app-d",
+      "currency_status": "active",
+      "source_citations": ["s-reliance", "s-rgc07"],
+      "claims": [
+        {"id": "c-rgc07-i", "claim": "The IDI framework duty is deemed satisfied by the parent enterprise framework where reliance is documented; the bank board remains legally responsible.", "source_span_ids": ["s-reliance"], "support_type": "paraphrased", "authority_type": "enforceable_guideline", "as_of_valid": true, "confidence": 0.8}
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

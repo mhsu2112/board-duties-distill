@@ -1,0 +1,52 @@
+{
+  "_note": "HAND-AUTHORED GOLD LABELS (checkpoint §14.1). TODO(human): confirm. One BHC/IDI mirror pair; the single finding's three operations compose to the vertical_rationalization composite with DEEM_SATISFIED intact (proving the 15th primitive is not silently absorbed).",
+  "operations": [
+    {
+      "id": "op-relate",
+      "primitive": "RELATE_OBLIGATION",
+      "operands": ["b:RGC-02", "b:RGC-07"],
+      "arity": 2,
+      "relation": "entity_level_mirror",
+      "actor_with_authority": ["FRB", "OCC"],
+      "normative_load": "low"
+    },
+    {
+      "id": "op-deem",
+      "primitive": "DEEM_SATISFIED",
+      "operands": [],
+      "arity": 2,
+      "actor_with_authority": ["FRB", "OCC"],
+      "instrument_required": "joint_rulemaking",
+      "normative_load": "high",
+      "satisfied_ref": "b:RGC-07",
+      "satisfying_ref": "b:RGC-02",
+      "conditions": ["documented reliance", "risk profiles substantially the same"]
+    },
+    {
+      "id": "op-factor",
+      "primitive": "FACTOR_EXCEPTION",
+      "operands": ["b:RGC-07"],
+      "arity": 1,
+      "actor_with_authority": ["FRB", "OCC"],
+      "normative_load": "low"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f-mirror",
+      "provision": "Vertical HC/IDI rationalization via expanded reliance accommodation",
+      "as_built_ref": "b:RGC-07",
+      "intended_ref": "b:RGC-07",
+      "operation_ids": ["op-relate", "op-deem", "op-factor"],
+      "effect_class": "change",
+      "rationale": "The IDI framework duty is deemed satisfied by the BHC framework, related as an entity-level mirror, with bank-specific content factored out — the vertical_rationalization composite; both duties survive.",
+      "baseline": {"id": "b-mirror", "source_id": "occ-app-d", "citation": "12 CFR Part 30, App. D, II.A", "quote": "[FIXTURE] baseline: standalone IDI framework responsibility."},
+      "normative_kind": ["policy_choice"],
+      "disposition_state": "needs_review",
+      "force_conversion_declared": false,
+      "confidence": 0.8,
+      "verifier_records": [],
+      "status": "draft"
+    }
+  ]
+}

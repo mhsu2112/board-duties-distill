@@ -1,0 +1,70 @@
+{
+  "duties": [
+    {
+      "duty_id": "s:GOV-02",
+      "label": "Board ensures independence and stature of risk management (SR 12-17 attr. 1)",
+      "layer": "as_built",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "risk_committee",
+      "director_class": "any",
+      "entity": "BHC",
+      "verb_standard": "none_specified",
+      "object": "independence and stature of the risk-management function",
+      "cadence": "continuous",
+      "trigger": null,
+      "legal_force": "guidance",
+      "consequence": "supervisory_finding",
+      "instrument_id": "sr-12-17",
+      "currency_status": "active",
+      "source_citations": ["s-sr1217-02"],
+      "claims": [
+        {"id": "c-gov02", "claim": "SR 12-17 states the board should ensure risk-management independence and stature.", "source_span_ids": ["s-sr1217-02"], "support_type": "quoted", "authority_type": "guidance", "as_of_valid": true, "confidence": 0.8}
+      ],
+      "confidence": 0.8
+    },
+    {
+      "duty_id": "s:GOV-03",
+      "label": "Board ensures risk appetite is established and embedded (SR 12-17 attr. 2)",
+      "layer": "as_built",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "risk_committee",
+      "director_class": "any",
+      "entity": "BHC",
+      "verb_standard": "none_specified",
+      "object": "establishment and embedding of risk appetite",
+      "cadence": "continuous",
+      "trigger": null,
+      "legal_force": "guidance",
+      "consequence": "supervisory_finding",
+      "instrument_id": "sr-12-17",
+      "currency_status": "active",
+      "source_citations": ["s-sr1217-03"],
+      "claims": [
+        {"id": "c-gov03", "claim": "SR 12-17 states the board should ensure risk appetite is established and embedded.", "source_span_ids": ["s-sr1217-03"], "support_type": "quoted", "authority_type": "guidance", "as_of_valid": true, "confidence": 0.8}
+      ],
+      "confidence": 0.8
+    },
+    {
+      "duty_id": "b:GOV-RegYY",
+      "label": "Board approves enterprise-wide risk-management policies (Reg YY)",
+      "layer": "as_built",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "risk_committee",
+      "director_class": "any",
+      "entity": "BHC",
+      "verb_standard": "approve",
+      "object": "enterprise-wide risk-management policies",
+      "cadence": "annual",
+      "trigger": null,
+      "legal_force": "regulation",
+      "consequence": "supervisory_finding",
+      "instrument_id": "reg-yy",
+      "currency_status": "active",
+      "source_citations": ["s-regyy"],
+      "claims": [
+        {"id": "c-regyy", "claim": "Regulation YY requires the board to approve enterprise-wide risk-management policies.", "source_span_ids": ["s-regyy"], "support_type": "quoted", "authority_type": "regulation", "as_of_valid": true, "confidence": 0.9}
+      ],
+      "confidence": 0.9
+    }
+  ]
+}

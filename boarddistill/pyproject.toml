@@ -29,6 +29,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["distillcore", "profiles", "adapters"]
+# Add the repo root to the editable path so top-level cli.py reflects edits live.
+dev-mode-dirs = ["."]
 
 [tool.hatch.build.targets.wheel.force-include]
 "cli.py" = "cli.py"

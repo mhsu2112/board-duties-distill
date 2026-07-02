@@ -30,7 +30,26 @@ def validate_fixtures(
     directory: Annotated[Path, typer.Argument(help="Fixture directory to load and validate.")],
 ) -> None:
     """Load + schema-validate a fixture dir; non-zero exit on violation."""
-    _stub("validate-fixtures")
+    from adapters.fixture_loader import load_fixture, validate_bundle
+
+    try:
+        bundle = load_fixture(directory)
+    except Exception as exc:  # noqa: BLE001 — surface any schema/parse failure to the user
+        typer.echo(f"[boarddistill] {directory}: schema validation FAILED — {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    problems = validate_bundle(bundle)
+    if problems:
+        typer.echo(f"[boarddistill] {directory}: {len(problems)} referential problem(s):", err=True)
+        for problem in problems:
+            typer.echo(f"  - {problem}", err=True)
+        raise typer.Exit(code=1)
+
+    typer.echo(
+        f"[boarddistill] {bundle.name}: OK "
+        f"({len(bundle.as_built)} as-built, {len(bundle.intended)} intended, "
+        f"{len(bundle.gold_operations)} operations, {len(bundle.gold_findings)} findings)"
+    )
 
 
 @app.command("run-fixture")

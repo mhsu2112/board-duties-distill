@@ -1,0 +1,48 @@
+{
+  "duties": [
+    {
+      "duty_id": "b:BCG-AppD-IIIF",
+      "label": "Board annual self-assessment of effectiveness (OCC App. D III.F)",
+      "layer": "as_built",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "full_board",
+      "director_class": "any",
+      "entity": "IDI",
+      "verb_standard": "certify",
+      "object": "annual self-assessment of board effectiveness",
+      "cadence": "annual",
+      "trigger": null,
+      "legal_force": "enforceable_guideline",
+      "consequence": "supervisory_finding",
+      "instrument_id": "occ-app-d",
+      "currency_status": "active",
+      "source_citations": ["s-appd"],
+      "claims": [
+        {"id": "c-appd", "claim": "OCC Appendix D III.F calls for an annual board self-assessment of effectiveness.", "source_span_ids": ["s-appd"], "support_type": "quoted", "authority_type": "enforceable_guideline", "as_of_valid": true, "confidence": 0.85}
+      ],
+      "confidence": 0.85
+    },
+    {
+      "duty_id": "s:BCG-SR21-3",
+      "label": "Board periodic self-assessment of effectiveness (SR 21-3)",
+      "layer": "as_built",
+      "snapshot_dates": {"inventory_as_of": "2026-06-01", "consolidation_as_of": "2026-06-30", "current_as_of": "2026-07-01"},
+      "board_level": "full_board",
+      "director_class": "any",
+      "entity": "BHC",
+      "verb_standard": "certify",
+      "object": "periodic assessment of board effectiveness and composition",
+      "cadence": "annual",
+      "trigger": null,
+      "legal_force": "guidance",
+      "consequence": "supervisory_finding",
+      "instrument_id": "sr-21-3",
+      "currency_status": "active",
+      "source_citations": ["s-sr213"],
+      "claims": [
+        {"id": "c-sr213", "claim": "SR 21-3 calls for periodic board self-assessment of effectiveness and composition.", "source_span_ids": ["s-sr213"], "support_type": "quoted", "authority_type": "guidance", "as_of_valid": true, "confidence": 0.82}
+      ],
+      "confidence": 0.82
+    }
+  ]
+}

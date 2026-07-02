@@ -1,0 +1,57 @@
+{
+  "_note": "HAND-AUTHORED GOLD LABELS (checkpoint §14.1). TODO(human): confirm. Codify-class with cross-stratum operands (enforceable_guideline + guidance) still defaults needs_review — the default rule doing its job on the 'easy' reform.",
+  "operations": [
+    {
+      "id": "op-merge",
+      "primitive": "MERGE",
+      "operands": ["b:BCG-AppD-IIIF", "s:BCG-SR21-3"],
+      "outputs": ["b:BCG-AppD-IIIF"],
+      "arity": 2,
+      "actor_with_authority": ["FRB", "OCC"],
+      "instrument_required": "interagency_statement",
+      "normative_load": "med"
+    },
+    {
+      "id": "op-resolve",
+      "primitive": "RESOLVE_CROSS_REFERENCE",
+      "operands": ["s:BCG-SR21-3"],
+      "arity": 1,
+      "actor_with_authority": ["FRB", "OCC"],
+      "normative_load": "low"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f-merge",
+      "provision": "App. D III.F self-assessment + SR 21-3 assessment",
+      "as_built_ref": "b:BCG-AppD-IIIF",
+      "intended_ref": "b:BCG-AppD-IIIF",
+      "operation_ids": ["op-merge"],
+      "effect_class": "codify",
+      "rationale": "The two near-identical assessments are merged into one; substance unchanged (codify). Cross-stratum operands keep it in review.",
+      "baseline": {"id": "b-merge", "source_id": "occ-app-d", "citation": "12 CFR Part 30, App. D, III.F", "quote": "[FIXTURE] baseline: enforceable-guideline self-assessment."},
+      "normative_kind": ["interagency_coordination"],
+      "disposition_state": "needs_review",
+      "force_conversion_declared": false,
+      "confidence": 0.85,
+      "verifier_records": [],
+      "status": "draft"
+    },
+    {
+      "id": "f-resolve",
+      "provision": "Cross-references to SR 21-3",
+      "as_built_ref": "s:BCG-SR21-3",
+      "intended_ref": "b:BCG-AppD-IIIF",
+      "operation_ids": ["op-resolve"],
+      "effect_class": "codify",
+      "rationale": "Cross-references to the retired SR 21-3 are resolved to the surviving interagency assessment.",
+      "baseline": {"id": "b-resolve", "source_id": "sr-21-3", "citation": "SR 21-3", "quote": "[FIXTURE] baseline: SR 21-3 assessment cross-referenced elsewhere."},
+      "normative_kind": [],
+      "disposition_state": "auto_ok",
+      "force_conversion_declared": false,
+      "confidence": 0.85,
+      "verifier_records": [],
+      "status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "fdicia-36",
+      "citation": "12 U.S.C. 1831m (FDI Act §36)",
+      "agency": "Congress",
+      "stratum": "statute",
+      "effective_date": "1991-12-19",
+      "treatment_status": "active",
+      "bears_on": ["b:AUD-ICFR-363", "b:AUD-FDICIA-ANNEX"]
+    },
+    {
+      "id": "part-363",
+      "citation": "12 CFR Part 363",
+      "agency": "FDIC",
+      "stratum": "regulation",
+      "effective_date": "1993-07-02",
+      "treatment_status": "active",
+      "bears_on": ["b:AUD-ICFR-363"]
+    },
+    {
+      "id": "sox-404",
+      "citation": "15 U.S.C. 7262; 17 CFR 210.2-02",
+      "agency": "SEC",
+      "stratum": "regulation",
+      "effective_date": "2004-06-15",
+      "treatment_status": "active",
+      "bears_on": ["b:AUD-SOX-404b"]
+    }
+  ],
+  "edges": [
+    {"source": "part-363", "target": "fdicia-36", "kind": "implements"},
+    {"source": "sox-404", "target": "fdicia-36", "kind": "parallel_distinct_purpose"}
+  ]
+}

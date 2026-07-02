@@ -1,0 +1,23 @@
+{
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). TODO(human): confirm placeholder labels and citations.",
+  "sources": [
+    {
+      "id": "s-appd",
+      "source_id": "occ-app-d",
+      "citation": "12 CFR Part 30, App. D, III.F",
+      "quote": "[FIXTURE] The board should conduct an annual self-assessment of its effectiveness in meeting the heightened standards."
+    },
+    {
+      "id": "s-sr213",
+      "source_id": "sr-21-3",
+      "citation": "SR 21-3",
+      "quote": "[FIXTURE] The board should periodically assess its effectiveness, composition, and governance practices."
+    },
+    {
+      "id": "s-merge",
+      "source_id": "reform-lever-D7",
+      "citation": "[PLACEHOLDER] Reform lever D7 memorandum",
+      "quote": "[PLACEHOLDER] The App. D III.F self-assessment and the SR 21-3 assessment are combined into a single interagency board-effectiveness assessment; the survivor sits at the enforceable-guideline stratum."
+    }
+  ]
+}

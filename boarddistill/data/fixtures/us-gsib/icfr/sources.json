@@ -1,0 +1,35 @@
+{
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). [FIXTURE] = paraphrased reconstruction; [PLACEHOLDER] = fabricated stand-in. TODO(human): confirm placeholder labels and citations before B1.",
+  "sources": [
+    {
+      "id": "s-part363",
+      "source_id": "part-363",
+      "citation": "12 CFR 363.2(b)",
+      "quote": "[FIXTURE] Management shall annually assess and report on the effectiveness of the institution's internal control over financial reporting."
+    },
+    {
+      "id": "s-sox404b",
+      "source_id": "sox-404",
+      "citation": "15 U.S.C. 7262(b)",
+      "quote": "[FIXTURE] The registered public accounting firm shall attest to, and report on, management's assessment of internal control over financial reporting."
+    },
+    {
+      "id": "s-fdicia36",
+      "source_id": "fdicia-36",
+      "citation": "12 U.S.C. 1831m",
+      "quote": "[FIXTURE] Each insured depository institution shall file an annual report on compliance with designated safety-and-soundness laws and on internal control."
+    },
+    {
+      "id": "s-annex",
+      "source_id": "fdicia-36",
+      "citation": "12 U.S.C. 1831m (designated-laws annex)",
+      "quote": "[FIXTURE] Compliance with designated safety-and-soundness laws (insider lending, dividend restrictions) is retained as a distinct annex."
+    },
+    {
+      "id": "s-deem",
+      "source_id": "reform-lever-D4",
+      "citation": "[PLACEHOLDER] Reform lever D4 memorandum",
+      "quote": "[PLACEHOLDER] A SOX 404(b) external attestation is deemed to satisfy the Part 363 ICFR assessment where designated-laws compliance is retained as an annex and reporting cycles are aligned to the fiscal year."
+    }
+  ]
+}
