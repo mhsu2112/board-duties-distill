@@ -84,6 +84,6 @@ class VerifierRecord(StrictModel):
     id: str
     claim_id: str
     status: VerifierStatus
-    method: Literal["span_present", "quote_match", "cross_reference", "manual"]
+    method: Literal["span_present", "quote_match", "cross_reference", "manual", "live_retrieval"]
     checked_span_ids: list[str] = Field(default_factory=list)
     note: str | None = None

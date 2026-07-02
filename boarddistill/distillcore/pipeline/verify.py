@@ -12,9 +12,9 @@ import json
 from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Protocol
 
-from ..models.base import VerifierRecord, VerifierStatus
+from ..models.base import SourceSpan, VerifierRecord, VerifierStatus
 from ..models.review import RESOLVED_DISPOSITIONS
 from .protocols import DutyLike
 
@@ -121,3 +121,65 @@ def reverify_dir(outdir: Path) -> ReverifyResult:
     blocker_lines = finalization_blocker_lines(findings, claim_status)
     eligible = [f["id"] for f in findings if not _finding_blockers(f, claim_status)]
     return ReverifyResult(records, claim_status, blocker_lines, eligible)
+
+
+# --- B1 live verification (retrieval-backed; resolver is injected, so core stays offline)
+
+
+@dataclass(frozen=True)
+class CitationVerdict:
+    """A resolver's verdict on one citation: status, evidence span, and currency."""
+
+    status: VerifierStatus
+    note: str
+    as_of_valid: bool
+    support_signal: str  # "strong" | "weak" | "none" | "n/a"
+    span: SourceSpan | None
+
+
+class SourceResolver(Protocol):
+    """Resolves a citation to primary-source evidence. The live (network) implementation
+    lives in an adapter; the core only depends on this protocol."""
+
+    def verify(self, citation: str, *, expected_actor: str) -> CitationVerdict: ...
+
+
+@dataclass(frozen=True)
+class RowVerification:
+    duty_id: str
+    cluster: str | None
+    citation: str
+    record: VerifierRecord
+    verdict: CitationVerdict
+
+
+def verify_targets(
+    targets: Sequence[dict[str, Any]],
+    resolver: SourceResolver,
+) -> list[RowVerification]:
+    """Verify each target duty's primary claim against ``resolver``. One VerifierRecord per
+    duty; every row gets a status (never skipped). Deterministic given a fixed cache."""
+    out: list[RowVerification] = []
+    for duty in sorted(targets, key=lambda d: str(d["duty_id"])):
+        citation = str(duty.get("instrument_id") or "")
+        claims = duty.get("claims") or []
+        claim_id = claims[0]["id"] if claims else f"claim-{duty['duty_id']}"
+        verdict = resolver.verify(citation, expected_actor=str(duty.get("board_level") or ""))
+        record = VerifierRecord(
+            id=f"v-{claim_id}",
+            claim_id=claim_id,
+            status=verdict.status,
+            method="live_retrieval",
+            checked_span_ids=[verdict.span.id] if verdict.span is not None else [],
+            note=verdict.note,
+        )
+        out.append(
+            RowVerification(
+                duty_id=str(duty["duty_id"]),
+                cluster=duty.get("cluster"),
+                citation=citation,
+                record=record,
+                verdict=verdict,
+            )
+        )
+    return out

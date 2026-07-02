@@ -91,6 +91,16 @@ def default_client(timeout: float = 30.0) -> httpx.Client:
     )
 
 
+def offline_client() -> httpx.Client:
+    """A client that refuses all network I/O — for cache-only replay. A cache miss then
+    surfaces as a fetch failure (⇒ ``unverified``), never a live request."""
+
+    def _refuse(request: httpx.Request) -> httpx.Response:
+        raise RuntimeError(f"offline: {request.url} not in cache")
+
+    return httpx.Client(transport=httpx.MockTransport(_refuse))
+
+
 @dataclass
 class Fetcher:
     """Allowlisted, caching fetcher. Sequential and non-crawling by construction."""

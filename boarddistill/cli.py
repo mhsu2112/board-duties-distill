@@ -175,6 +175,60 @@ def import_inventory(
     typer.echo(f"  {result.banner}")
 
 
+@app.command("verify-live")
+def verify_live(
+    targets: Annotated[
+        Path, typer.Option("--targets", help="targets.json from b1-targets.")
+    ] = Path("outputs/b1/targets.json"),
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/sources"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="Output directory.")] = Path("outputs/b1"),
+    offline: Annotated[
+        bool, typer.Option("--offline", help="Replay from cache only; no network.")
+    ] = False,
+) -> None:
+    """B1-T2: verify each target row's citation against primary sources (allowlisted)."""
+    import json
+    from collections import Counter
+
+    from adapters.ecfr_resolver import EcfrResolver
+    from adapters.retrieval import Fetcher, default_client, offline_client
+    from distillcore.pipeline.verify import verify_targets
+
+    doc = json.loads(targets.read_text())
+    client = offline_client() if offline else default_client()
+    try:
+        resolver = EcfrResolver(Fetcher(cache, client))
+        rows = verify_targets(doc["targets"], resolver)
+    finally:
+        client.close()
+
+    out.mkdir(parents=True, exist_ok=True)
+    spans = [r.verdict.span.model_dump(mode="json") for r in rows if r.verdict.span is not None]
+    summary: dict[str, int] = dict(Counter(r.record.status for r in rows))
+    payload = {
+        "records": [r.record.model_dump(mode="json") for r in rows],
+        "spans": spans,
+        "rows": [
+            {
+                "duty_id": r.duty_id,
+                "cluster": r.cluster,
+                "citation": r.citation,
+                "status": r.record.status,
+                "as_of_valid": r.verdict.as_of_valid,
+                "support_signal": r.verdict.support_signal,
+                "note": r.verdict.note,
+            }
+            for r in rows
+        ],
+        "summary": summary,
+    }
+    (out / "verification.json").write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    typer.echo(f"[boarddistill] verify-live: {len(rows)} rows -> {out / 'verification.json'}")
+    typer.echo("  " + " · ".join(f"{k}={v}" for k, v in sorted(summary.items())))
+
+
 @app.command("b1-targets")
 def b1_targets(
     import_json: Annotated[
