@@ -1,0 +1,532 @@
+{
+  "_meta": "B1 review queue \u2014 TODO(human). Non-verified rows + F2/fidelity flags. The agent records these; it never edits the inventory, drafts, or B0 to match (\u00a76.1).",
+  "counts": {
+    "f2_support": 6,
+    "fidelity_caveat": 1,
+    "unverified": 51
+  },
+  "queue": [
+    {
+      "citation": "12 CFR 363.2, 363.3; App. A Guideline 31",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-04",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is weak",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "citation": "SOX sec. 404(a); 15 U.S.C. 7262(a)",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-05",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "SOX sec. 404(b); 15 U.S.C. 7262(b)",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-06",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "SOX sec. 302; 17 CFR 240.13a-14",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-07",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "App. D, secs. I.E.8(b),(c)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:AUD-08",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "12 U.S.C. 5365(i)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-01",
+      "kind": "fidelity_caveat",
+      "reason": "12 U.S.C. 5365(i) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "citation": "12 U.S.C. 5365(h)(1)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-01",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "App. D, sec. II.A",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "b:RGC-07",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "App. D, sec. II.D",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "b:RGC-10",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Executive committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-01",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Audit committee",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-02",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Credit committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-03",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Asset-liability committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-04",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Risk committee",
+      "cluster": "Risk committee architecture",
+      "duty_id": "s:BCG-05",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Fiduciary committees",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-06",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Compensation committee",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-07",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Board Leadership (CRG); Director's Book Board Structure",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-09",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Director Nomination and Selection",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-10",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Board and Committee Minutes",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-12",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Audit committee composition; 12 CFR part 363 worksheet",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-14",
+      "kind": "unverified",
+      "reason": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.A.1 (Board of Directors), p. 3",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-01",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.A.1, pp. 3-4; sec. III.A 'Differences in Expectations', p. 5",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-03",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.A.1, p. 4",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-04",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.A.1, p. 4; sec. III.D (Capital Policy), p. 11, fn. 18 (cites 225.8(e)(1)(iii))",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-05",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, secs. III.A.1 and III.A.2, p. 4",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-06",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.A.1, p. 4",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-07",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.D, p. 12",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-08",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "FR Y-14A attestation requirement",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-10",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "SR 15-18 fn. 5 (supersession)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-11",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Management (local ll. ~11944-12024)",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:FDR-01",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Management (local ll. ~12024-12054)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-02",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Management (local ll. ~12073-12119)",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:FDR-03",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Management (local ll. ~12170-12270)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-04",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Management component (local ll. ~1576-1607)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-05",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 1, p. 3, fns. 9-14",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-02",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 1, pp. 2-3",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-03",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 2, pp. 3-4",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-04",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 3, p. 5",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-08",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 3, p. 5, fn. 15",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-09",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 4, p. 6",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-11",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 4, p. 6",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-12",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 5, p. 7, fn. 19",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-13",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Section A.2 (Corporate Governance), pp. 5-6",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-15",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Governance & Controls component, sec. C.3, p. 12",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-18",
+      "kind": "unverified",
+      "reason": "guidance-document location (SR-letter attachment / manual); no addressable source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Adopting release (bcreg20251105a1), pp. 6, 10-12, 24",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-19",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Risk-management rating definitions",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-20",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "App. D, sec. III.B",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-22",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "App. D, secs. II.D, II.G.3, II.H.3",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-27",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "App. A, secs. II.A, II.B.7",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-31",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "App. A, secs. II.D.4, II.E.2, II.G.6, II.H.5",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-32",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "App. A, secs. II.I, III.A-B",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-33",
+      "kind": "unverified",
+      "reason": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 195-217)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-01",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 209-217)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-02",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 599-623)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-03",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Principle/Governance, p. (local ll. 800-806)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-01",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 822-838)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-02",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 813-822)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-03",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 860-872)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-04",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    }
+  ]
+}

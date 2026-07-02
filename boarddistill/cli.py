@@ -229,6 +229,35 @@ def verify_live(
     typer.echo("  " + " · ".join(f"{k}={v}" for k, v in sorted(summary.items())))
 
 
+@app.command("b1-report")
+def b1_report(
+    verification: Annotated[
+        Path, typer.Option("--verification", help="verification.json from verify-live.")
+    ] = Path("outputs/b1/verification.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json to write statuses back into.")
+    ] = Path("outputs/import/imported_duties.json"),
+    out: Annotated[Path, typer.Option("--out", help="Output directory.")] = Path("outputs/b1"),
+) -> None:
+    """B1-T4: write B1_report.md + review_queue.json; set verifier_status on target claims."""
+    import json
+
+    from adapters.b1_report import apply_statuses_to_import, build_report, build_review_queue
+
+    verif = json.loads(verification.read_text())
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "B1_report.md").write_text(build_report(verif))
+    queue = build_review_queue(verif)
+    (out / "review_queue.json").write_text(json.dumps(queue, indent=2, sort_keys=True) + "\n")
+
+    if import_json.exists():
+        doc = apply_statuses_to_import(json.loads(import_json.read_text()), verif)
+        import_json.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    typer.echo(f"[boarddistill] B1 report -> {out / 'B1_report.md'}")
+    typer.echo(f"  review queue: {sum(queue['counts'].values())} items {queue['counts']}")
+
+
 @app.command("realify-fixtures")
 def realify_fixtures(
     fixtures: Annotated[
