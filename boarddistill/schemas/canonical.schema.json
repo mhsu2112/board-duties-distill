@@ -1,0 +1,260 @@
+{
+  "$defs": {
+    "Diagnostic": {
+      "additionalProperties": false,
+      "description": "A signal raised during alignment/diagnosis; points at duties and source spans.",
+      "properties": {
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "source_span_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Span Ids",
+          "type": "array"
+        },
+        "target_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Target Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "kind",
+        "rationale"
+      ],
+      "title": "Diagnostic",
+      "type": "object"
+    },
+    "LegalClaim": {
+      "additionalProperties": false,
+      "description": "A cited legal assertion. Empty ``source_span_ids`` is a verification failure\n(invariant \u00a72.2) \u2014 enforced downstream, not silently here.",
+      "properties": {
+        "as_of_valid": {
+          "title": "As Of Valid",
+          "type": "boolean"
+        },
+        "authority_type": {
+          "enum": [
+            "statute",
+            "regulation",
+            "enforceable_guideline",
+            "guidance",
+            "manual",
+            "comparator",
+            "secondary"
+          ],
+          "title": "Authority Type",
+          "type": "string"
+        },
+        "claim": {
+          "title": "Claim",
+          "type": "string"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "source_span_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Span Ids",
+          "type": "array"
+        },
+        "support_type": {
+          "enum": [
+            "quoted",
+            "paraphrased"
+          ],
+          "title": "Support Type",
+          "type": "string"
+        },
+        "verifier_status": {
+          "default": "unverified",
+          "enum": [
+            "unverified",
+            "verified",
+            "contradicted"
+          ],
+          "title": "Verifier Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "claim",
+        "support_type",
+        "authority_type",
+        "as_of_valid",
+        "confidence"
+      ],
+      "title": "LegalClaim",
+      "type": "object"
+    },
+    "SnapshotDates": {
+      "additionalProperties": false,
+      "description": "The three snapshot dates every DutySpec must carry (invariant \u00a72.1).\n\nDistillation runs at ``inventory_as_of`` \u2014 never live law (the snapshot rule).",
+      "properties": {
+        "consolidation_as_of": {
+          "format": "date",
+          "title": "Consolidation As Of",
+          "type": "string"
+        },
+        "current_as_of": {
+          "format": "date",
+          "title": "Current As Of",
+          "type": "string"
+        },
+        "inventory_as_of": {
+          "format": "date",
+          "title": "Inventory As Of",
+          "type": "string"
+        }
+      },
+      "required": [
+        "inventory_as_of",
+        "consolidation_as_of",
+        "current_as_of"
+      ],
+      "title": "SnapshotDates",
+      "type": "object"
+    },
+    "SourceSpan": {
+      "additionalProperties": false,
+      "description": "A pointer into source text. Every legal claim resolves to >=1 of these.",
+      "properties": {
+        "citation": {
+          "title": "Citation",
+          "type": "string"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quote"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "citation"
+      ],
+      "title": "SourceSpan",
+      "type": "object"
+    },
+    "VerifierRecord": {
+      "additionalProperties": false,
+      "description": "The outcome of checking one claim: how it was checked and what it resolved to.",
+      "properties": {
+        "checked_span_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Checked Span Ids",
+          "type": "array"
+        },
+        "claim_id": {
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "method": {
+          "enum": [
+            "span_present",
+            "quote_match",
+            "cross_reference",
+            "manual"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "contradicted"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "claim_id",
+        "status",
+        "method"
+      ],
+      "title": "VerifierRecord",
+      "type": "object"
+    }
+  },
+  "title": "BoardDistill canonical schema"
+}
