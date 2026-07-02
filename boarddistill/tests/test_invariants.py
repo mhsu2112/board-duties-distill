@@ -183,9 +183,9 @@ def test_deem_against_floor_passes_but_needs_review() -> None:
 
 
 def test_parameter_assignment_effect_branches() -> None:
-    # implicit / none_specified -> codify|clarify (baseline-dependent)
-    assert classify_parameter_assignment(prior_explicit=False, baseline_present=True) == "codify"
-    assert classify_parameter_assignment(prior_explicit=False, baseline_present=False) == "clarify"
+    # implicit / none_specified -> codify|clarify (parameter-anchoring-dependent)
+    assert classify_parameter_assignment(prior_explicit=False, param_anchored=True) == "codify"
+    assert classify_parameter_assignment(prior_explicit=False, param_anchored=False) == "clarify"
     # re-assigning an explicit parameter -> change per se
-    assert classify_parameter_assignment(prior_explicit=True, baseline_present=True) == "change"
-    assert classify_parameter_assignment(prior_explicit=True, baseline_present=False) == "change"
+    assert classify_parameter_assignment(prior_explicit=True, param_anchored=True) == "change"
+    assert classify_parameter_assignment(prior_explicit=True, param_anchored=False) == "change"

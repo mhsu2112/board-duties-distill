@@ -67,7 +67,7 @@
     {
       "id": "f-repeal",
       "provision": "Retirement of SR 12-17",
-      "as_built_ref": null,
+      "as_built_ref": "s:GOV-02",
       "intended_ref": null,
       "operation_ids": ["op-repeal"],
       "effect_class": "codify",

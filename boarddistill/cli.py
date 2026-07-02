@@ -58,7 +58,26 @@ def run_fixture(
     out: Annotated[Path, typer.Option("--out", help="Output directory.")],
 ) -> None:
     """Distill -> align -> diagnose -> operations -> classify -> verify -> write JSON."""
-    _stub("run-fixture")
+    from adapters.fixture_loader import load_fixture
+    from profiles.lex_balanus.pipeline import run_fixture as _run
+    from profiles.lex_balanus.pipeline import write_outputs
+
+    bundle = load_fixture(directory)
+    result = _run(bundle)
+    dest = write_outputs(result, bundle, out)
+    typer.echo(f"[boarddistill] {result.name}: wrote {dest}")
+    typer.echo(
+        f"  findings={len(result.computed_findings)} "
+        f"residuals={len(result.residuals)} violations={len(result.violations)}"
+    )
+    if result.residuals:
+        for residual in result.residuals:
+            typer.echo(f"  RESIDUAL {residual.finding_id}: {residual.primitives}", err=True)
+    if result.violations:
+        for violation in result.violations:
+            typer.echo(f"  VIOLATION {violation.code} [{violation.subject_id}]", err=True)
+    if not result.ok:
+        raise typer.Exit(code=1)
 
 
 @app.command("render-package")
