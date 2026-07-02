@@ -52,12 +52,54 @@ The three fixtures — `icfr` (D4), `sr12-17` (D6), `board-effectiveness` (D7), 
 `_calculus` mirror — reproduce their gold operation + effect class + disposition exactly,
 with an empty residual and the mirror composing to `vertical_rationalization`.
 
+## B1 — claim verification (the first retrieval step)
+
+**What.** Full-coverage citation verification of the 72 MVP-cluster board-duty rows
+(3 MVP + 2 entangled clusters) against primary sources. Each row's citation is resolved,
+its verbatim provision text pinned as a `SourceSpan`, and currency checked. Verification
+never edits the inventory or the drafts — a bad citation is a finding for a human.
+
+**From where (allowlisted primary sources only).** eCFR versioner XML (CFR sections &
+appendices) · govinfo HTML granules (U.S. Code) · federalreserve.gov (SR letters). The
+allowlist is enforced in code (`adapters/retrieval.py`); a non-allowlisted / paywalled /
+CSI source is a checkpoint, never fetched.
+
+**When / reproducibility.** Verified 2026-07-02 at snapshot `2026-06-30` (eCFR) / U.S. Code
+2024 edition. Every document is cached under `data/sources/<source_id>/` with a
+`manifest.json` (url, retrieved_at, sha256). The whole run replays offline, byte-identical,
+from the committed cache — `make check` stays offline (live tests are `pytest -m live`,
+excluded by default).
+
+```bash
+uv run boarddistill b1-targets                 # select the 72 target rows
+uv run boarddistill verify-live --offline      # replay verification from cache
+uv run boarddistill b1-report                  # -> outputs/b1/B1_report.md + review_queue.json
+```
+
+**Result: 21 verified · 51 unverified · 0 contradicted.** All 21 verified are binding-rule
+cites (CFR sections, U.S.C., one SR letter) with pinned verbatim text. The 51 unverified are
+the honest finding: most **supervisory-layer duties cite guidance-document locations**
+(SR-letter attachments, exam-manual components, local line numbers), not addressable primary
+law — a sludge signal in itself (the Risk-governance strategy cluster is 0/21 verified).
+
+**Review queue (`outputs/b1/review_queue.json`) — TODO(human):** every non-verified row,
+plus F2 flags where a citation verifies but the provision text does not name the stated
+board actor (e.g. `b:AUD-07` — a board SOX-302 duty citing the *officer*-level
+`17 CFR 240.13a-14`; SOX 404 statute rows), plus fidelity caveats (U.S.C. quotes are
+section-level; SR attribute text lives in attachments, so the cover letter is pinned).
+
+**Open question for the human — re-verification cadence.** Verified law drifts (amendments,
+rescissions, new SR letters). B1 pins a snapshot; it does not subscribe to changes. Decide a
+re-verification cadence (e.g. quarterly re-run + diff against the cached sha256s) before this
+is relied on as standing L1 input.
+
 ## Next steps (roadmap — NOT built in slice one)
 
 1. **Human confirmation** of the fixture placeholder labels and the T8 draft column
    mappings (both are §14.1 checkpoint outputs marked `TODO(human)`).
-2. **Full-coverage claim verification** of the MVP-cluster rows (B1 exit criterion) —
-   requires retrieval; design it behind the existing `verify` interface.
+2. ~~**Full-coverage claim verification** of the MVP-cluster rows (B1 exit criterion).~~
+   **Done (B1)** — see the B1 section above. Remaining: extend to the other ~155 rows;
+   paragraph-precise U.S.C. and SR-attachment retrieval; the re-verification cadence.
 3. **Real instrument-graph ingestion**: eCFR / US Code parsing, guidance registries, and
    archival rescission reconstruction (`rescinded_informal`).
 4. **LLM-based distillation / diagnostics / classification** behind the interfaces this
