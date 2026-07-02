@@ -1,0 +1,321 @@
+{
+  "report_name": "Caffrey2_supervisory-expectations_final-memo.docx",
+  "judge_model": "OpenAI Codex (GPT-5)",
+  "spec_reconstruction": {
+    "domain": "Current U.S. federal board-of-directors obligations for Category I U.S. GSIB bank holding companies and their insured depository institution subsidiaries.",
+    "unit_of_analysis": "Each discrete board- or board-committee-level obligation, with entity tier, actor, precise source, binding status, currentness, and any inside/outside or independence distinction.",
+    "structural_axes": [
+      "Holding-company board versus insured-depository-institution board",
+      "Full board versus audit, risk, compensation, and nominating/governance committees",
+      "Inside versus outside directors",
+      "Independent versus non-independent directors",
+      "Federal Reserve, OCC, FDIC, CFPB, and interagency authority",
+      "Statute versus regulation versus supervisory guidance",
+      "Binding obligation versus nonbinding expectation",
+      "Current/in-force versus proposed, withdrawn, superseded, or rescinded"
+    ],
+    "actor_classes_required": [
+      "Full board",
+      "Audit committee",
+      "Risk committee",
+      "Compensation committee",
+      "Nominating or governance committee",
+      "Inside and outside directors",
+      "Independent and non-independent directors"
+    ],
+    "source_universe": [
+      "Federal Reserve statutes, regulations, supervisory letters, manuals, and guidance",
+      "OCC statutes, regulations, enforceable guidelines, bulletins, handbooks, and guidance",
+      "FDIC statutes, regulations, statements, manuals, and guidance",
+      "CFPB regulations and supervisory guidance",
+      "Relevant interagency standards and guidance"
+    ],
+    "coverage_areas": [
+      "Capital planning and stress testing",
+      "Liquidity risk management",
+      "Resolution planning",
+      "Recovery planning",
+      "Operational resilience",
+      "Model risk governance",
+      "Third-party risk management",
+      "Incentive compensation",
+      "Cybersecurity governance",
+      "BSA/AML program oversight",
+      "Consumer compliance oversight",
+      "Enterprise risk governance",
+      "Safety and soundness generally"
+    ],
+    "audience_use": "Bank directors and counsel, plus policymakers conducting defensible burden-reduction and regulatory-reform analysis.",
+    "form_depth_expectations": "A comprehensive, extensive 40-60-page working inventory using obligation-level, citation-specific entries and reform-actionable overlap analysis."
+  },
+  "coverage_ledger": {
+    "cells_expected": 38,
+    "cells_covered": 27,
+    "cells_thin": 8,
+    "cells_missing": 3,
+    "material_omissions": [
+      "Ledger basis: 26 domain-by-entity-tier cells, seven required actor-class cells, and five source-family cells.",
+      "Operational resilience is an expressly requested domain, but the report has no dedicated inventory of SR 20-24/OCC Bulletin 2020-94 board practices for either the holding-company or IDI tier.",
+      "CFPB coverage is reduced to a short uncited assertion; it does not inventory CFPB board-and-management CMS examination expectations at citation level.",
+      "IDI capital and stress-testing coverage omits the OCC and FDIC company-run stress-test regimes while presenting Federal Reserve state-member-bank provisions.",
+      "Several IDI liquidity, consumer-compliance, and FDIC-specific safety-and-soundness cells are generic or asserted without actor-specific primary citations.",
+      "Substantial space is diverted to FBO/IHC/SLHC, SEC/NYSE, charter-stage, and personal-liability material outside the requested core universe."
+    ]
+  },
+  "citation_check": {
+    "sampled": 20,
+    "results": [
+      {
+        "citation": "SR 21-3, Attachment",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "The official Federal Reserve guidance supports the five board-effectiveness attributes summarized in Section 4."
+      },
+      {
+        "citation": "12 CFR 238.122 (described as codifying SR 21-3 board-effectiveness duties)",
+        "verdict": "WRONG-ATTRIBUTION",
+        "centrality": "central",
+        "reason": "The section governs risk-management and risk-committee requirements for covered SLHCs; it does not codify SR 21-3's general BHC board-effectiveness catalogue."
+      },
+      {
+        "citation": "12 CFR Part 30, Appendix D II.L for compensation duties",
+        "verdict": "WRONG-ATTRIBUTION",
+        "centrality": "central",
+        "reason": "II.L is Talent Management Processes; compensation and performance management is II.M, which also does not support many of the board approvals attributed to II.L."
+      },
+      {
+        "citation": "12 CFR 225.8(e)(1)(iii)",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "Current eCFR text requires the BHC board or designated committee annually to review process robustness, ensure remediation, and approve the capital plan."
+      },
+      {
+        "citation": "12 CFR 252.47(a)",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "Current eCFR text supports board and senior-management consideration of supervisory stress-test results in capital, exposure, and recovery/resolution work."
+      },
+      {
+        "citation": "12 CFR 252.34(a)-(b)",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "Current eCFR text supports annual liquidity-risk-tolerance approval, semiannual review, periodic policy review, and annual risk-committee contingency-funding-plan approval."
+      },
+      {
+        "citation": "85 FR 33278 / Interagency Guidance on Credit Risk Review Systems",
+        "verdict": "SUPPORTS",
+        "centrality": "peripheral",
+        "reason": "The official guidance describes typical annual board policy and scope approval and quarterly reporting, though these are guidance practices rather than binding rules."
+      },
+      {
+        "citation": "88 FR 37920 / 2023 Interagency Third-Party Risk Management Guidance",
+        "verdict": "NOT-SUPPORTED",
+        "centrality": "central",
+        "reason": "The guidance uses risk-based, illustrative language such as 'may' and 'as appropriate'; it does not make every critical-activity plan, contract, review, and report a mandatory in-force board obligation."
+      },
+      {
+        "citation": "12 CFR 21.21 as an annual BSA/AML program approval",
+        "verdict": "NOT-SUPPORTED",
+        "centrality": "central",
+        "reason": "The rule requires a written, board-approved program noted in minutes but sets no annual reapproval frequency, contrary to the burden count."
+      },
+      {
+        "citation": "12 CFR 326.8 placed in the Federal Reserve column of the master matrix",
+        "verdict": "WRONG-ATTRIBUTION",
+        "centrality": "central",
+        "reason": "Section 326.8 is the FDIC rule; the domestic Federal Reserve analogue is 12 CFR 208.63, which the inventory omits."
+      },
+      {
+        "citation": "12 CFR Part 225, Appendix F as an annual information-security-program approval",
+        "verdict": "NOT-SUPPORTED",
+        "centrality": "central",
+        "reason": "Appendix F requires board approval and an annual report to the board, not annual board reapproval of the program."
+      },
+      {
+        "citation": "12 CFR 41.90(d) as an annual identity-theft-program approval",
+        "verdict": "NOT-SUPPORTED",
+        "centrality": "central",
+        "reason": "The rule requires approval of the initial written program; annual staff reporting is distinct from annual program approval."
+      },
+      {
+        "citation": "12 CFR 1026.36(j)(1) as a board-level duty",
+        "verdict": "NOT-SUPPORTED",
+        "centrality": "peripheral",
+        "reason": "The provision requires the depository institution to maintain policies and procedures but assigns no approval or oversight duty to the board."
+      },
+      {
+        "citation": "17 CFR Part 75, Appendix Z",
+        "verdict": "FABRICATED",
+        "centrality": "peripheral",
+        "reason": "The current official Part 75 contains Appendix A, not Appendix Z; the cited appendix and pinpoints do not exist."
+      },
+      {
+        "citation": "12 CFR 363.5 / 90 FR 55789 audit-committee thresholds",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "Current eCFR text supports the $1 billion and $5 billion tiers and the additional large-institution audit-committee requirements."
+      },
+      {
+        "citation": "12 CFR 243.4(f) and 12 CFR 381.4(f)",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "Both current joint-rule codifications require board approval of the resolution plan before submission and notation in minutes."
+      },
+      {
+        "citation": "91 FR 16156 / OCC recovery-planning rescission",
+        "verdict": "SUPPORTS",
+        "centrality": "central",
+        "reason": "The official OCC final rule rescinded 12 CFR Part 30, Appendix E effective May 1, 2026."
+      },
+      {
+        "citation": "SR 26-2 hyperlink and asserted board practices",
+        "verdict": "WRONG-ATTRIBUTION",
+        "centrality": "peripheral",
+        "reason": "The report links to SR2603 rather than official SR2602, and the revised non-enforceable guidance does not assign the board-specific practices inferred in the table."
+      },
+      {
+        "citation": "90 FR 31641 / LFI Governance and Controls component described as proposed",
+        "verdict": "STALE",
+        "centrality": "central",
+        "reason": "The LFI framework already existed, and the 2025 revisions were finalized at 90 FR 51329 and became effective January 16, 2026; the report repeatedly calls the component or revision proposed."
+      },
+      {
+        "citation": "Uncited CFPB CMS board-oversight assertion in Section 13.4",
+        "verdict": "UNVERIFIABLE",
+        "centrality": "central",
+        "reason": "The output supplies no CFPB source or pinpoint. A CFPB examination manual exists, but the report's assertion is not citation-level and cannot be checked from the cited record."
+      }
+    ],
+    "summary": {
+      "supports": 8,
+      "wrong_attribution": 4,
+      "not_supported": 5,
+      "stale": 1,
+      "fabricated": 1,
+      "unverifiable": 1
+    }
+  },
+  "subcriteria": {
+    "actor_mapping": {
+      "verdict": "Mixed: all required actor classes appear, but assignment is not reliably precise.",
+      "note": "The report usefully distinguishes full-board, risk-, audit-, compensation-, and nominating/governance actors, plus outside and independent directors. However, many entries use 'board or committee,' convert organization-level duties into board duties, or place an IDI duty in an HC-tier count."
+    },
+    "binding_vs_guidance": {
+      "verdict": "Fails the subcriterion; guidance-as-obligation blending is systematic.",
+      "note": "Some sections expressly label guidance nonbinding, but many tables still mark guidance practices 'In force' and count them as required actions. This caps raw D3 at 2 before critical-flag caps."
+    },
+    "reform_usefulness": {
+      "verdict": "Conceptually useful but not safely actionable.",
+      "note": "The guidance/rule/statute reform hierarchy and preserve-versus-consolidate caveats are strong, but the legal classifications and 70-75-action burden baseline require reconstruction before policy use."
+    }
+  },
+  "critical_flags": [
+    {
+      "flag": "F1",
+      "severity": "peripheral",
+      "evidence": "The report cites \"17 CFR Part 75, Appendix Z\"; no such appendix exists in the current official regulation."
+    },
+    {
+      "flag": "F2",
+      "severity": "central",
+      "evidence": "It repeatedly cites \"12 CFR 238.122 (SR 21-3/CA 21-1)\" for general board-effectiveness duties that the SLHC risk-committee rule does not codify."
+    },
+    {
+      "flag": "F3",
+      "severity": "central",
+      "evidence": "The report calls it \"the (proposed) LFI Governance and Controls component\" even though the framework is operative and the 2025 revision was final and effective."
+    },
+    {
+      "flag": "F4",
+      "severity": "central",
+      "evidence": "The headline count includes \"Annual BSA/AML program approval (12 CFR 21.21)\" and other annual reapprovals that the cited rules do not require."
+    },
+    {
+      "flag": "F5",
+      "severity": "na",
+      "evidence": "It claims to span \"every functional domain\" but omits the requested operational-resilience inventory and provides no citation-level CFPB inventory."
+    },
+    {
+      "flag": "F6",
+      "severity": "na",
+      "evidence": "The requested operational-resilience domain is missing while extensive out-of-scope FBO/IHC/SLHC, SEC/NYSE, and personal-liability material is included."
+    },
+    {
+      "flag": "F7",
+      "severity": "central",
+      "evidence": "The \"combined annual count of approximately 70 to 75\" mixes HC and IDI duties, binding rules and guidance, and unsupported frequencies."
+    }
+  ],
+  "scores": {
+    "D1_coverage": {
+      "raw": 2,
+      "effective": 1,
+      "weight": 20,
+      "evidence": "\"spanning every functional domain subject to heightened prudential standards\"",
+      "rationale": "Coverage is broad and all named actor classes appear, but operational resilience is absent, CFPB is not citation-level, and IDI stress-testing and other agency-tier cells are thin. F6 caps the effective score at 1."
+    },
+    "D2_integrity": {
+      "raw": 1,
+      "effective": 1,
+      "weight": 25,
+      "evidence": "\"12 CFR 238.122 (SR 21-3/CA 21-1, Page 5)\"",
+      "rationale": "Only 8 of 20 sampled citations supported the sampled claim; the sample found four wrong attributions, five unsupported claims, one stale citation, one fabricated appendix, and one uncited/unverifiable claim. F1, F2, and F7 cap D2 at 1."
+    },
+    "D3_accuracy": {
+      "raw": 1,
+      "effective": 0,
+      "weight": 20,
+      "evidence": "\"Annual BSA/AML program approval (12 CFR 21.21)\"",
+      "rationale": "The report repeatedly converts guidance, entity-level duties, and one-time approvals into recurring board mandates; it also contains currentness contradictions. Systematic guidance-as-law blending limits raw D3, and central F3/F4 errors reduce effective D3 to 0."
+    },
+    "D4_sludge_analysis": {
+      "raw": 2,
+      "effective": 2,
+      "weight": 15,
+      "evidence": "\"Guidance-layer consolidation (agency-curable, lowest cost)\"",
+      "rationale": "The vertical/horizontal overlap taxonomy, gray-area caveats, and tiered reform levers are useful. The analysis is only adequate because its central burden count and several claimed duplicates rest on misclassified actors, frequencies, or nonbinding guidance."
+    },
+    "D5_structure": {
+      "raw": 1,
+      "effective": 1,
+      "weight": 10,
+      "evidence": "\"organized topically and built around obligation-level matrices\"",
+      "rationale": "Topical headings and matrices aid navigation in extracted text, but the DOCX renders to 149 pages, far beyond the requested depth, with pervasive table fragmentation, nearly blank grid pages, and prose compressed into narrow cells. Actor and entity-tier labels also drift."
+    },
+    "D6_calibration": {
+      "raw": 2,
+      "effective": 1,
+      "weight": 10,
+      "evidence": "\"Counsel should verify the currency and specific application of each authority before acting\"",
+      "rationale": "Status cautions, scope notes, and the AI disclaimer are meaningful. They do not cure claims of comprehensive coverage, contradictory currentness labels, or confident unsupported counts. F5 caps the effective score at 1."
+    }
+  },
+  "overall_score": 24,
+  "tier": "E",
+  "reliability_overlay": "integrity+scope-flagged",
+  "narrative": {
+    "strengths": [
+      "D1/D5: The report covers most requested domains and expressly maps full-board, risk-, audit-, compensation-, nominating/governance-, outside-, and independent-director roles.",
+      "D3/D6: It frequently labels proposed, withdrawn, rescinded, and nonbinding material, including the careful qualification that SR 26-2 is non-enforceable.",
+      "D4: The distinction among vertical HC/IDI duplication, horizontal agency overlap, and deliberate differentiation is analytically useful.",
+      "D4: The guidance, rulemaking, and statutory reform hierarchy identifies realistic legal levers and notes what may need preservation rather than deletion."
+    ],
+    "weaknesses": [
+      "D2/D3—critical: Source verification found a fabricated Appendix Z, recurring wrong attributions, and unsupported conversion of guidance or entity duties into board obligations.",
+      "D3/D4—critical: The 70-75 annual-action conclusion is not auditable because it mixes HC and IDI tiers and invents annual frequencies for BSA, information-security, identity-theft, and other approvals.",
+      "D1—material: Operational resilience is omitted, CFPB treatment is uncited and cursory, and OCC/FDIC IDI stress-testing coverage is incomplete.",
+      "D5—material: The 149-page render contains pervasive broken tables, nearly blank pages, and narrow-cell prose, making the deliverable unsuitable as a 40-60-page working policy document.",
+      "D6—material: Currentness labels conflict internally, most notably describing the LFI Governance and Controls component or its revision as proposed after finalization."
+    ],
+    "prioritized_remediation": [
+      "Rebuild the inventory from official primary sources with mandatory fields for entity tier, precise actor, binding status, frequency, applicability trigger, current status, and pinpoint citation.",
+      "Add dedicated operational-resilience and CFPB sections, and complete the OCC/FDIC IDI capital-stress and other thin agency-tier cells.",
+      "Remove entity-level duties that do not expressly attach to a board, and separate binding law, enforceable safety-and-soundness guidelines, supervisory guidance, and recommendations into distinct ledgers.",
+      "Recompute burden counts only from verified recurring actions, separately by HC and each IDI board, with assumptions and deduplication rules shown.",
+      "Redesign the DOCX to a functional 40-60-page format: eliminate out-of-scope material, replace prose-heavy tables, use repeated headers and controlled widths, and verify every rendered page."
+    ],
+    "reliance_recommendation": "Do not rely on this memorandum as a legal inventory or quantitative reform baseline; use it only as an issue-spotting draft after counsel rebuilds and verifies the obligation ledger."
+  }
+}
+
+**Result:** Tier E (24/100) — integrity+scope-flagged. Broad issue spotting and useful reform categories are outweighed by material scope omissions, systematic legal-classification errors, an unsupported burden count, and a broken 149-page layout.
