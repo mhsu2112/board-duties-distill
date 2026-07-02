@@ -54,6 +54,34 @@ def _find_appendix(xml_text: str, appendix: str) -> tuple[str, str] | None:
     return None
 
 
+def _cfr_paragraph_window(text: str, paragraphs: str) -> str:
+    """Window ``text`` onto the first cited paragraph label (e.g. '(b)'), if present."""
+    match = re.match(r"\([^)]*\)", paragraphs)
+    if not match:
+        return text
+    pos = text.find(match.group(0), 25)  # skip the section head's own text
+    return text[pos:] if pos > 0 else text
+
+
+def _appendix_subsection_window(text: str, subsection: str) -> str:
+    """Window onto a cited appendix subsection like 'II.A' (roman then letter).
+
+    Uses a lookbehind so 'II.' does not match inside 'III.', and takes the last
+    occurrence (the body, not the table of contents)."""
+    parts = subsection.split(".")
+    roman = parts[0]
+    letter = parts[1] if len(parts) > 1 else None
+    matches = list(re.finditer(rf"(?<![A-Za-z]){re.escape(roman)}\.\s", text))
+    if not matches:
+        return text
+    window = text[matches[-1].start() :]  # last occurrence = body, not the ToC
+    if letter:
+        idx = window.find(f"{letter}. ")
+        if 0 < idx < 4000:
+            window = window[idx:]
+    return window
+
+
 def _support(text: str, expected_actor: str) -> str:
     body = text.lower()
     actor = expected_actor.lower()
@@ -139,12 +167,13 @@ class EcfrResolver:
                 "none",
                 None,
             )
-        span = self._span(source_id, cfr.section, cfr.label, doc_text, text)
+        window = _cfr_paragraph_window(text, cfr.paragraphs) if cfr.paragraphs else text
+        span = self._span(source_id, cfr.section, cfr.label, doc_text, window)
         return CitationVerdict(
             "verified",
             f"{cfr.label} present and in force at {self.as_of}; verbatim text pinned",
             True,
-            _support(text, expected_actor),
+            _support(window, expected_actor),
             span,
         )
 
@@ -163,13 +192,7 @@ class EcfrResolver:
                 None,
             )
         _head, text = found
-        # window on the cited roman subsection (last occurrence = body, not the ToC)
-        window = text
-        if cite.subsection:
-            roman = cite.subsection.split(".")[0]
-            idx = text.rfind(f"{roman}. ")
-            if idx >= 0:
-                window = text[idx:]
+        window = _appendix_subsection_window(text, cite.subsection) if cite.subsection else text
         key = f"app{cite.appendix}-{cite.subsection or 'full'}"
         span = self._span(source_id, key, cite.label, doc_text, window)
         return CitationVerdict(

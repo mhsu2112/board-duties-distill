@@ -1,17 +1,17 @@
 {
-  "_note": "OPENLY PLACEHOLDER (AGENTS \u00a78). TODO(human): confirm placeholder labels and citations. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). TODO(human): confirm placeholder labels and citations. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
   "sources": [
     {
       "id": "s-appd",
       "source_id": "occ-app-d",
       "citation": "12 CFR Part 30, App. D, III.F",
-      "quote": "[FIXTURE] The board should conduct an annual self-assessment of its effectiveness in meeting the heightened standards."
+      "quote": "F. Self-Assessments. A covered bank's board of directors should conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines. [79 FR 54545, Sept. 11, 2014, as amended at 91 FR 18293, Apr. 10, 2026]"
     },
     {
       "id": "s-sr213",
       "source_id": "sr-21-3",
       "citation": "SR 21-3",
-      "quote": "[FIXTURE] The board should periodically assess its effectiveness, composition, and governance practices."
+      "quote": "SUBJECT: Supervisory Guidance on Board of Directors' Effectiveness Applicability: This guidance applies to all domestic bank holding companies and savings and loan holding companies with total consolidated assets of $100 billion or more (excluding U.S. intermediate holding companies of foreign banking organizations established pursuant to the Federal Reserve's Regulation YY), and systemically impo"
     },
     {
       "id": "s-merge",

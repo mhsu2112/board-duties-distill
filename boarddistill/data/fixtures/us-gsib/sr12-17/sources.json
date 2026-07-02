@@ -1,23 +1,23 @@
 {
-  "_note": "OPENLY PLACEHOLDER (AGENTS \u00a78). TODO(human): confirm placeholder labels and citations. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). TODO(human): confirm placeholder labels and citations. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
   "sources": [
     {
       "id": "s-sr1217-02",
       "source_id": "sr-12-17",
       "citation": "SR 12-17 / CA 12-14, Attribute 1",
-      "quote": "[FIXTURE] The board should ensure that the risk-management function is independent and has appropriate stature."
+      "quote": "SUBJECT: Consolidated Supervision Framework for Large Financial Institutions Applicability to Community Banking Organizations: This guidance does not apply to community banking organizations, defined as institutions supervised by the Federal Reserve with total consolidated assets of $10 billion or less. Building upon lessons learned from the recent financial crisis, the Federal Reserve has taken a"
     },
     {
       "id": "s-sr1217-03",
       "source_id": "sr-12-17",
       "citation": "SR 12-17 / CA 12-14, Attribute 2",
-      "quote": "[FIXTURE] The board should ensure that risk appetite is established and embedded in the firm's risk-management framework."
+      "quote": "SUBJECT: Consolidated Supervision Framework for Large Financial Institutions Applicability to Community Banking Organizations: This guidance does not apply to community banking organizations, defined as institutions supervised by the Federal Reserve with total consolidated assets of $10 billion or less. Building upon lessons learned from the recent financial crisis, the Federal Reserve has taken a"
     },
     {
       "id": "s-regyy",
       "source_id": "reg-yy",
       "citation": "12 CFR 252.33(a)",
-      "quote": "[FIXTURE] The board of directors shall approve the enterprise-wide risk-management policies of the bank holding company."
+      "quote": "(a) Risk committee —(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set for"
     },
     {
       "id": "s-relocate",

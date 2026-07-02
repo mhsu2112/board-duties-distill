@@ -229,6 +229,37 @@ def verify_live(
     typer.echo("  " + " · ".join(f"{k}={v}" for k, v in sorted(summary.items())))
 
 
+@app.command("realify-fixtures")
+def realify_fixtures(
+    fixtures: Annotated[
+        Path, typer.Option("--fixtures", help="Fixture corpus root.")
+    ] = Path("data/fixtures/us-gsib"),
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/sources"
+    ),
+    offline: Annotated[
+        bool, typer.Option("--offline", help="Use cache only; no network.")
+    ] = False,
+) -> None:
+    """B1-T3: swap fixture [FIXTURE] paraphrases for verified verbatim text."""
+    from adapters.realify import realify_fixture
+    from adapters.resolvers import build_resolver
+    from adapters.retrieval import Fetcher, default_client, offline_client
+
+    client = offline_client() if offline else default_client()
+    try:
+        resolver = build_resolver(Fetcher(cache, client))
+        for fixture_dir in sorted(p for p in fixtures.iterdir() if (p / "sources.json").exists()):
+            changes = realify_fixture(fixture_dir, resolver)
+            realified = sum(1 for c in changes if c.status == "realified")
+            typer.echo(f"[boarddistill] {fixture_dir.name}: {realified} span(s) realified")
+            for c in changes:
+                if c.status in {"realified", "unresolved"}:
+                    typer.echo(f"    {c.status:12} {c.span_id:14} {c.citation}")
+    finally:
+        client.close()
+
+
 @app.command("b1-targets")
 def b1_targets(
     import_json: Annotated[

@@ -117,9 +117,12 @@ class SrResolver:
                 None,
             )
         superseded = any(w in text[:400].lower() for w in ("superseded", "rescinded"))
-        quote = text[idx : idx + _QUOTE_CAP]
+        # Window on the substantive body (after "SUBJECT:"), skipping the masthead.
+        subj = text.find("SUBJECT")
+        start = subj if subj >= 0 else idx
+        quote = text[start : start + _QUOTE_CAP]
         span = _text_span(source_id, marker, cite.label, text, quote)
-        note = f"{cite.label} retrieved from federalreserve.gov; verbatim text pinned"
+        note = f"{cite.label} retrieved from federalreserve.gov; cover-letter text pinned"
         if superseded:
             note += " — NOTE: page indicates superseded/rescinded (F3 — human review)"
         return CitationVerdict(

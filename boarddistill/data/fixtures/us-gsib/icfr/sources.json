@@ -1,29 +1,29 @@
 {
-  "_note": "OPENLY PLACEHOLDER (AGENTS \u00a78). [FIXTURE] = paraphrased reconstruction; [PLACEHOLDER] = fabricated stand-in. TODO(human): confirm placeholder labels and citations before B1. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). [FIXTURE] = paraphrased reconstruction; [PLACEHOLDER] = fabricated stand-in. TODO(human): confirm placeholder labels and citations before B1. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
   "sources": [
     {
       "id": "s-part363",
       "source_id": "part-363",
       "citation": "12 CFR 363.2(b)",
-      "quote": "[FIXTURE] Management shall annually assess and report on the effectiveness of the institution's internal control over financial reporting."
+      "quote": "(b) Management report. Each insured depository institution annually shall prepare, as of the end of the institution's most recent fiscal year, a management report that must contain the following: (1) A statement of management's responsibilities for preparing the institution's annual financial statements, for establishing and maintaining an adequate internal control structure and procedures for fin"
     },
     {
       "id": "s-sox404b",
       "source_id": "sox-404",
       "citation": "15 U.S.C. 7262(b)",
-      "quote": "[FIXTURE] The registered public accounting firm shall attest to, and report on, management's assessment of internal control over financial reporting."
+      "quote": "7262 - Management assessment of internal controls From the U.S. Government Publishing Office, www.gpo.gov §7262. Management assessment of internal controls (a) Rules required The Commission shall prescribe rules requiring each annual report required by section 78m(a) or 78o(d) of this title to contain an internal control report, which shall— (1) state the responsibility of management for establish"
     },
     {
       "id": "s-fdicia36",
       "source_id": "fdicia-36",
       "citation": "12 U.S.C. 1831m",
-      "quote": "[FIXTURE] Each insured depository institution shall file an annual report on compliance with designated safety-and-soundness laws and on internal control."
+      "quote": "1831m - Early identification of needed improvements in financial management From the U.S. Government Publishing Office, www.gpo.gov §1831m. Early identification of needed improvements in financial management (a) Annual report on financial condition and management (1) Report required Each insured depository institution shall submit an annual report to the Corporation, the appropriate Federal bankin"
     },
     {
       "id": "s-annex",
       "source_id": "fdicia-36",
       "citation": "12 U.S.C. 1831m (designated-laws annex)",
-      "quote": "[FIXTURE] Compliance with designated safety-and-soundness laws (insider lending, dividend restrictions) is retained as a distinct annex."
+      "quote": "1831m - Early identification of needed improvements in financial management From the U.S. Government Publishing Office, www.gpo.gov §1831m. Early identification of needed improvements in financial management (a) Annual report on financial condition and management (1) Report required Each insured depository institution shall submit an annual report to the Corporation, the appropriate Federal bankin"
     },
     {
       "id": "s-deem",

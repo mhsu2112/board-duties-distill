@@ -151,6 +151,29 @@ def test_usc_and_sr_resolvers_pin_quotes(tmp_path: Path) -> None:
     assert v2.span is not None
 
 
+def test_appendix_roman_windowing_not_confused_by_substring() -> None:
+    from adapters.ecfr_resolver import _appendix_subsection_window
+
+    text = (
+        "I. Introduction A. scope. "
+        "II. Standards for Risk Governance Framework A. framework text here. "
+        "III. Standards for Board of Directors A. board duty. F. Self-Assessments annual review."
+    )
+    # 'II.' must not match inside 'III.': II.A descends to the A subsection under II
+    # (the Risk-Governance framework text), not the A under III (Board of Directors).
+    assert _appendix_subsection_window(text, "II.A").startswith("A. framework text here")
+    assert _appendix_subsection_window(text, "III.F").startswith("F. Self-Assessments")
+
+
+def test_cfr_paragraph_windowing() -> None:
+    from adapters.ecfr_resolver import _cfr_paragraph_window
+
+    text = "§ 363.2 Annual reporting. (a) Audited statements. words (b) Management report. more"
+    assert _cfr_paragraph_window(text, "(b)").startswith("(b) Management report")
+    # no paragraph label -> unchanged
+    assert _cfr_paragraph_window(text, "") == text
+
+
 def test_find_section_and_support() -> None:
     found = _find_section(_FAKE_XML, "363.5")
     assert found is not None

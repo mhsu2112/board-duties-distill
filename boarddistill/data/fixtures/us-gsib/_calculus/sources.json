@@ -1,17 +1,17 @@
 {
-  "_note": "OPENLY PLACEHOLDER (AGENTS \u00a78). Mirror-pair stub proving the vertical_rationalization composite (D8) with DEEM_SATISFIED intact. Used by test_calculus_banking.py. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
+  "_note": "OPENLY PLACEHOLDER (AGENTS §8). Mirror-pair stub proving the vertical_rationalization composite (D8) with DEEM_SATISFIED intact. Used by test_calculus_banking.py. CONFIRMED by M. Hsu, 2026-07-02 (REVIEW_CHECKLIST): FIXTURE citations approved; PLACEHOLDER spans retained as declared stand-ins until B1.",
   "sources": [
     {
       "id": "s-rgc02",
       "source_id": "reg-yy",
       "citation": "12 CFR 252.33(a)(1)",
-      "quote": "[FIXTURE] The BHC board approves the enterprise-wide risk-management framework."
+      "quote": "(a) Risk committee —(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set for"
     },
     {
       "id": "s-rgc07",
       "source_id": "occ-app-d",
       "citation": "12 CFR Part 30, App. D, II.A",
-      "quote": "[FIXTURE] The covered bank board is responsible for the bank's risk-governance framework."
+      "quote": "A. Risk Governance Framework. A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee. The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the r"
     },
     {
       "id": "s-reliance",
