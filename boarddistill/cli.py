@@ -885,6 +885,44 @@ def b6_normalize(
         raise typer.Exit(code=1)
 
 
+@app.command("b6-engine")
+def b6_engine(
+    root: Annotated[Path, typer.Option("--root", help="Benchmark data root.")] = Path(
+        "data/benchmark"
+    ),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM cache.")] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B6 output dir.")] = Path("outputs/b6"),
+    live: Annotated[bool, typer.Option("--live", help="Populate cache via live calls.")] = False,
+) -> None:
+    """B6-T3: run the calculus engine over the pooled pseudonymized corpus (span-anchored)."""
+    import json
+
+    from adapters.b6_engine import run_engine
+    from adapters.benchmark_guard import guarded_read
+    from distillcore.llm import Budget, LlmHarness
+
+    pooled = json.loads(guarded_read(root / "pooled" / "instruments.json"))
+    harness = LlmHarness(
+        cache_root=cache,
+        live=live,
+        max_tokens=16000,
+        budget=Budget(max_calls=500, max_output_tokens=1_500_000),
+    )
+    doc = run_engine(harness, pooled["instruments"])
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "engine_proposals.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B6-T3 engine:")
+    typer.echo(
+        f"  groups: {c['groups']} ({c['multi_doc_groups']} multi-doc) · operations: "
+        f"{c['operations']} · op-mix: {c['operation_mix']} · budget: {c['budget']}"
+    )
+    typer.echo(f"  quarantined leakage: {c['quarantined_leakage']}")
+    if c["quarantined_leakage"]:
+        typer.echo(f"  ⚠ leakage quarantine (checkpoint 3.2): {doc['quarantined'][:3]}", err=True)
+
+
 @app.command("b6-acquire")
 def b6_acquire(
     cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(

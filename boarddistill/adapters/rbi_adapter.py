@@ -41,6 +41,15 @@ _DATE = re.compile(r"\b(?:January|February|March|April|May|June|July|August|Sept
                    r"November|December)\s+\d{1,2},\s*\d{4}")
 _ADDRESSEE = re.compile(r"(All [A-Z][^\n]{5,90}?Banks(?:\s*\([^)]{0,40}\))?)")
 
+# Consolidation-program references (§1.3a/c): some later circulars name the "Master Direction on
+# <topic>" they were folded into — that names the held-out grouping, so it is scrubbed to a
+# neutral token. The topic words remain elsewhere as ordinary subject content; only the "there is
+# a consolidated instrument named X" signal is removed.
+_MD_PHRASE = re.compile(
+    r"“?Master\s+Directions?”?(?:\s*(?:[–—-]|on|of|,)\s*[A-Za-z0-9 ,()&/–-]{0,55})?", re.I
+)
+_RRA = re.compile(r"Regulations?\s+Review\s+Authority|\bRRA\b", re.I)
+
 
 def _norm_ref(ref: str) -> str:
     """Normalize an RBI reference for cross-circular matching: drop spaces and case."""
@@ -113,6 +122,8 @@ def _scrub(text: str, ref_to_doc: dict[str, str], cross: set[str]) -> str:
     out = _RBI_MASTER.sub(repl, text)
     out = _DEPT_REF.sub(repl, out)
     out = _FILE_REF.sub(repl, out)  # catch ref tails the dept pattern missed
+    out = _MD_PHRASE.sub("[consolidated reference]", out)  # scrub the held-out grouping name
+    out = _RRA.sub("[review authority]", out)
     out = _HINDI_DATE.sub("", out)
     return out
 
@@ -145,5 +156,12 @@ def normalize_corpus(
 
 
 def has_leaked_identifier(text: str) -> bool:
-    """True iff a real RBI identifier survived pseudonymization (a §1.3 leakage-scan failure)."""
-    return bool(_RBI_MASTER.search(text) or _DEPT_REF.search(text) or _FILE_REF.search(text))
+    """True iff a real RBI identifier or a consolidation-program reference (Master Direction / RRA)
+    survived pseudonymization (a §1.3 leakage-scan failure)."""
+    return bool(
+        _RBI_MASTER.search(text)
+        or _DEPT_REF.search(text)
+        or _FILE_REF.search(text)
+        or _MD_PHRASE.search(text)
+        or _RRA.search(text)
+    )

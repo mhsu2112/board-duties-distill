@@ -1,0 +1,1445 @@
+{
+  "_meta": "B6-T3 engine proposals over the pooled pseudonymized corpus. Prompt never names Master Directions / RRA; every operation span-anchored; leakage-scanned outputs.",
+  "counts": {
+    "budget": "calls=0/500 in=0 out=0/1500000",
+    "groups": 12,
+    "instruments": 163,
+    "multi_doc_groups": 12,
+    "operation_mix": {
+      "CANONICALIZE_DEFINITION": 13,
+      "ELEVATE_GENERAL_RULE": 17,
+      "MERGE": 17,
+      "RELATE_OBLIGATION": 16,
+      "REPEAL": 32,
+      "RESOLVE_CROSS_REFERENCE": 36
+    },
+    "operations": 131,
+    "quarantined_leakage": 3
+  },
+  "groups": [
+    {
+      "doc_ids": [
+        "DOC-9a2a5f",
+        "DOC-a44386",
+        "DOC-918777",
+        "DOC-8f5ab6",
+        "DOC-ccfde6",
+        "DOC-d5df8b",
+        "DOC-771210",
+        "DOC-b9953b",
+        "DOC-e584ae",
+        "DOC-cfe6ce",
+        "DOC-9685f6",
+        "DOC-c1c167",
+        "DOC-0aa95a",
+        "DOC-1dc276",
+        "DOC-7d66c7",
+        "DOC-83709e"
+      ],
+      "group_id": "grp-psl-scb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-9a2a5f",
+            "DOC-ccfde6",
+            "DOC-771210",
+            "DOC-cfe6ce",
+            "DOC-0aa95a"
+          ],
+          "evidence_quote": "the system-wide average of the last three years achievement with regard to overall direct lending to non-corporate farmers will be notified in due course, and thereafter at the beginning of each year",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "These circulars each state the same annually-recurring obligation for a different financial year; kept distinct per-year but related."
+        },
+        {
+          "doc_ids": [
+            "DOC-9a2a5f",
+            "DOC-ccfde6",
+            "DOC-771210",
+            "DOC-cfe6ce",
+            "DOC-0aa95a"
+          ],
+          "evidence_quote": "the system-wide average of the last three years achievement with regard to overall direct lending to non-corporate farmers will be notified every year",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The annual notification mechanism recurs across circulars and should be lifted into a general provision."
+        },
+        {
+          "doc_ids": [
+            "DOC-7d66c7"
+          ],
+          "evidence_quote": "revised guidelines are being issued in supersession of guidelines mentioned in the Master Circular EXT-2d73f8 dated July 1, 2014",
+          "primitive": "REPEAL",
+          "rationale": "Explicit supersession of the prior master circular by the revised guidelines."
+        },
+        {
+          "doc_ids": [
+            "DOC-b9953b",
+            "DOC-e584ae",
+            "DOC-c1c167",
+            "DOC-1dc276",
+            "DOC-918777",
+            "DOC-8f5ab6"
+          ],
+          "evidence_quote": "Please refer to the revised priority sector guidelines issued to banks vide DOC-7d66c7 circular dated April 23, 2015",
+          "primitive": "MERGE",
+          "rationale": "These circulars each amend particular paragraphs of the base guidelines and should be folded into the consolidated instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-918777"
+          ],
+          "evidence_quote": "Please refer to paragraph 19 (b) (iv) of the [consolidated reference]T-c5dd0c dated July 7, 2016",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to a paragraph should be replaced with the consolidated text after amendment."
+        },
+        {
+          "doc_ids": [
+            "DOC-8f5ab6"
+          ],
+          "evidence_quote": "Please refer to [consolidated reference] EXT-c1ded5 dated July 7, 2016 on Priority Sector Lending (PSL)",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "External cross-reference resolved into consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-e584ae"
+          ],
+          "evidence_quote": "Para 10.1 of [consolidated reference]ted July 7, 2016 (updated as on April 16, 2018)",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to housing loan paragraph resolved into the consolidated instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-1dc276"
+          ],
+          "evidence_quote": "changes in para 8 of the [consolidated reference]\u201d dated July 7, 2016 (updated as on December 4, 2018) pertaining to export credit",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to export credit paragraph resolved into consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-c1c167"
+          ],
+          "evidence_quote": "Enhancement of the existing limits for on-lending by HFCs vide para 10.5 of our [consolidated reference]",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to on-lending paragraph resolved into the consolidated instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-9685f6",
+            "DOC-c1c167"
+          ],
+          "evidence_quote": "may engage with NBFC-ND-SIs (hereinafter referred to as NBFC) to co-originate loans for the creation of priority sector assets",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Co-origination and NBFC on-lending are parallel bank-NBFC arrangements kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-9685f6"
+          ],
+          "evidence_quote": "Non-Banking Financial Companies - Non-Deposit taking - Systemically Important (NBFC-ND-SIs)",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Single canonical definition of NBFC-ND-SI to replace divergent expansions across circulars."
+        },
+        {
+          "doc_ids": [
+            "DOC-a44386"
+          ],
+          "evidence_quote": "Please refer to Para VIII of Circular EXT-e06e86 dated April 23, 2015 on Priority Sector Lending - Targets and Classifications about introduction of Priority Sector Lending certificates",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to PSLC introduction paragraph resolved into consolidated text."
+        }
+      ],
+      "theme": "Priority Sector Lending \u2013 Targets and Classification (Scheduled Commercial Banks)"
+    },
+    {
+      "doc_ids": [
+        "DOC-93d77c",
+        "DOC-4a2e6b",
+        "DOC-782849"
+      ],
+      "group_id": "grp-psl-rrb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-93d77c"
+          ],
+          "evidence_quote": "The revised guidelines supersede all earlier guidelines mentioned in the Master Circular RPCD.CO.EXT-b86ef1 dated July 1, 2014 on Regional Rural Banks - Lending to Priority Sector.",
+          "primitive": "REPEAL",
+          "rationale": "The 2015 revised guidelines explicitly supersede earlier guidelines and are themselves folded into the later consolidated Direction."
+        },
+        {
+          "doc_ids": [
+            "DOC-4a2e6b",
+            "DOC-782849"
+          ],
+          "evidence_quote": "The list of circulars consolidated in this [consolidated reference] is indicated in the Appendix . The Direction will be updated from time to time as and when fresh instructions are issued.",
+          "primitive": "MERGE",
+          "rationale": "The 2019 housing loan eligibility circular is folded into the updated consolidated Direction."
+        },
+        {
+          "doc_ids": [
+            "DOC-4a2e6b"
+          ],
+          "evidence_quote": "loans to individuals up to \u20b9 20 lakh for purchase/construction of a dwelling unit per family provided the overall cost of the dwelling unit does not exceed \u20b9 25 lakh are eligible to be classified under priority sector",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "A single canonical housing-loan eligibility criterion for RRBs replaces divergent thresholds."
+        },
+        {
+          "doc_ids": [
+            "DOC-4a2e6b"
+          ],
+          "evidence_quote": "In terms of the Compendium for SFBs, loans to individuals up to \u20b9 28 lakh in metropolitan centres (with population of ten lakh and above) and \u20b9 20 lakh in other centres, are eligible to be classified under priority sector",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Parallel SFB housing eligibility criteria kept distinct from the RRB criteria."
+        },
+        {
+          "doc_ids": [
+            "DOC-4a2e6b",
+            "DOC-782849"
+          ],
+          "evidence_quote": "Para 9 of [consolidated reference] Targets and Classification dated July 7, 2016",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to the July 7, 2016 Direction should be replaced with the consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-93d77c"
+          ],
+          "evidence_quote": "Targets: 75 per cent of total outstanding to the sectors eligible for classification as priority sector lending and sub sector targets as indicated in subsequent paragraphs.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The overarching 75 per cent target is a recurring instruction to be lifted into a general part."
+        }
+      ],
+      "theme": "Priority Sector Lending \u2013 Regional Rural Banks"
+    },
+    {
+      "doc_ids": [
+        "DOC-62e3e2",
+        "DOC-efd07f",
+        "DOC-551b6f",
+        "DOC-4bf73d",
+        "DOC-5a351b"
+      ],
+      "group_id": "grp-psl-sfb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-efd07f",
+            "DOC-62e3e2"
+          ],
+          "evidence_quote": "Operating Guidelines for Small Finance Banks were issued vide Circular DBR.DOC-62e3e2 dated October 6, 2016 , which prescribed, inter alia, broad indicative guidelines in areas related to Financial Inclusion and Development. In continuation with the same, comprehensive set of guidelines in the form ",
+          "primitive": "REPEAL",
+          "rationale": "The compendium supersedes and consolidates the Financial Inclusion and Development guidelines earlier prescribed in the Operating Guidelines."
+        },
+        {
+          "doc_ids": [
+            "DOC-551b6f",
+            "DOC-efd07f"
+          ],
+          "evidence_quote": "A comprehensive set of guidelines for Small Finance banks in the form of compendium were published on our website on July 6, 2017. The guidelines issued under Chapter II of the compendium have been incorporated in this [consolidated reference].",
+          "primitive": "MERGE",
+          "rationale": "The compendium guidelines are folded into the consolidated instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-551b6f"
+          ],
+          "evidence_quote": "The [consolidated reference] enclosed incorporates the updated guidelines/ instructions/ circulars on the subject.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-references to individual circulars are replaced by the consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-4bf73d"
+          ],
+          "evidence_quote": "As per extant guidelines, lending by Small Finance Banks (SFBs) to Micro-Finance Institutions (MFIs) for on-lending is not reckoned for priority sector lending (PSL) classification.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The reference to extant guidelines should be replaced with the consolidated PSL text."
+        },
+        {
+          "doc_ids": [
+            "DOC-4bf73d",
+            "DOC-5a351b"
+          ],
+          "evidence_quote": "it has been decided to allow PSL classification to the fresh credit extended by SFBs to registered NBFC-MFIs and other MFIs (Societies, Trusts etc.)",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "The SFB on-lending PSL dispensation and the long-term bond PSL pre-emption relief are parallel PSL obligations kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-62e3e2"
+          ],
+          "evidence_quote": "These Operating Guidelines are supplementary to the Licensing Guidelines and take immediate effect.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The supplementary-and-effect instruction is a recurring rule suitable for a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-4bf73d"
+          ],
+          "evidence_quote": "which have a \u2018gross loan portfolio\u2019 of upto \u20b9500 crore as on 31 March 2021, for the purpose of on-lending to individuals",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "A single definition of 'gross loan portfolio' should replace divergent usages."
+        }
+      ],
+      "theme": "Priority Sector Lending and Operating Guidelines \u2013 Small Finance Banks"
+    },
+    {
+      "doc_ids": [
+        "DOC-159bec",
+        "DOC-30d8d4",
+        "DOC-1a58b8",
+        "DOC-0deb6c",
+        "DOC-a5882a",
+        "DOC-507c2b",
+        "DOC-577fab",
+        "DOC-1033fe",
+        "DOC-2efd06",
+        "DOC-807d2b",
+        "DOC-001384",
+        "DOC-2cb468",
+        "DOC-08996b"
+      ],
+      "group_id": "grp-psl-ucb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-159bec",
+            "DOC-0deb6c"
+          ],
+          "evidence_quote": "it has been decided to issue revised guidelines (as per Annex-I ) in supersession of the guidelines in the above-mentioned Master Circular",
+          "primitive": "REPEAL",
+          "rationale": "DOC-159bec supersedes earlier consolidated priority sector guidelines, of which DOC-0deb6c is the foundational revised guidelines instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-159bec",
+            "DOC-a5882a"
+          ],
+          "evidence_quote": "The existing guidelines have been reviewed and it has been decided to issue revised guidelines",
+          "primitive": "REPEAL",
+          "rationale": "DOC-a5882a revised the target under the 2007 guidelines regime now superseded by DOC-159bec."
+        },
+        {
+          "doc_ids": [
+            "DOC-159bec",
+            "DOC-a5882a"
+          ],
+          "evidence_quote": "Target for lending to total priority sector and weaker section will continue as 40 per cent and 10 per cent, respectively, of Adjusted Net Bank Credit (ANBC)",
+          "primitive": "MERGE",
+          "rationale": "Both instruments state the priority sector target; fold into a single target provision."
+        },
+        {
+          "doc_ids": [
+            "DOC-1a58b8",
+            "DOC-30d8d4"
+          ],
+          "evidence_quote": "it has been decided to extend the glide path for these PSL targets by an additional period of two years",
+          "primitive": "REPEAL",
+          "rationale": "DOC-1a58b8 extends and modifies the glide path/target timeline governing the shortfall-contribution regime."
+        },
+        {
+          "doc_ids": [
+            "DOC-30d8d4",
+            "DOC-1a58b8"
+          ],
+          "evidence_quote": "a glide path for achieving overall PSL target and sub-target for advances to weaker sections was prescribed till March 31, 2024",
+          "primitive": "MERGE",
+          "rationale": "The shortfall-contribution obligation and its glide path across these circulars fold into one provision."
+        },
+        {
+          "doc_ids": [
+            "DOC-577fab",
+            "DOC-1033fe"
+          ],
+          "evidence_quote": "loans granted to Micro and Small Enterprises (MSE) (manufacturing and services) are eligible for classification under priority sector provided such enterprises satisfy the definition of MSE sector as contained in MSMED Act 2006",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Divergent MSE eligibility descriptions under MSMED Act reduced to one canonical definition."
+        },
+        {
+          "doc_ids": [
+            "DOC-2efd06",
+            "DOC-507c2b"
+          ],
+          "evidence_quote": "Ministry of Minority Affairs, Government of India, have notified the Jain Community as a minority community",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "The list of minority communities across these circulars is unified into one definition."
+        },
+        {
+          "doc_ids": [
+            "DOC-2efd06"
+          ],
+          "evidence_quote": "Please refer to Para IV (h) of the Annex to our Circular UBD.CO.EXT-80c908 dated October 8, 2013 on \"Revised guidelines on lending to Priority Sector for UCBs\"",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Replace the cross-reference to a superseded circular with the consolidated weaker-sections/minority text."
+        },
+        {
+          "doc_ids": [
+            "DOC-807d2b"
+          ],
+          "evidence_quote": "Please refer to Paragraph 5 of our Master Circular UBD.CO.EXT-44677d dated July 1, 2014 on Priority Sector Lending-Targets and Classification",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Replace cross-reference to superseded master circular with consolidated weaker-sections provision."
+        },
+        {
+          "doc_ids": [
+            "DOC-001384"
+          ],
+          "evidence_quote": "In terms of para 7.4 of section I of Annex of the above Circular",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Replace reference to para 7.4 of the 2007 circular with consolidated housing text."
+        },
+        {
+          "doc_ids": [
+            "DOC-001384",
+            "DOC-2cb468"
+          ],
+          "evidence_quote": "Loans granted under the enhanced limits for the purposes detailed above will also be eligible for classification under priority sector",
+          "primitive": "MERGE",
+          "rationale": "Housing-related eligibility ceilings across both circulars fold into one housing provision."
+        },
+        {
+          "doc_ids": [
+            "DOC-807d2b",
+            "DOC-2efd06"
+          ],
+          "evidence_quote": "priority sector loans to Persons with Disabilities will be eligible for classification under Weaker Sections category",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "PwD weaker-sections classification and minority-community inclusion are parallel weaker-section obligations kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-507c2b"
+          ],
+          "evidence_quote": "specially monitor the credit flow to minorities in these 121 districts thereby ensuring that the minority communities receive an equitable portion of the credit within the overall target of the priority sector",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "Recurring monitoring instruction on minority credit flow lifted to a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-08996b"
+          ],
+          "evidence_quote": "UCBs will be required to frame, with the approval of their Board, a comprehensive policy on le",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "Board-approved policy framing is a recurring instruction that can be elevated to a general provision."
+        }
+      ],
+      "theme": "Priority Sector Lending for Primary (Urban) Co-operative Banks"
+    },
+    {
+      "doc_ids": [
+        "DOC-0c4489",
+        "DOC-3b7ea7",
+        "DOC-961c8c",
+        "DOC-90f919",
+        "DOC-eb72c4",
+        "DOC-3d2d45",
+        "DOC-190b44",
+        "DOC-a62b0a",
+        "DOC-c24af6",
+        "DOC-36e226",
+        "DOC-dc898f",
+        "DOC-ceadf1",
+        "DOC-e6ceb9",
+        "DOC-eec770",
+        "DOC-4f3d4e",
+        "DOC-97d758",
+        "DOC-475cfb",
+        "DOC-8b85a6",
+        "DOC-9fd09d",
+        "DOC-82a506",
+        "DOC-dcdee6",
+        "DOC-b43538",
+        "DOC-d64ce8",
+        "DOC-9bb8e0"
+      ],
+      "group_id": "grp-invest-ucb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-90f919",
+            "DOC-c24af6"
+          ],
+          "evidence_quote": "The matter has been reviewed with a view to allowing UCBs greater flexibility in making Non-SLR investments. Non-SLR investments would be governed by the following guidelines henceforth.",
+          "primitive": "REPEAL",
+          "rationale": "The 2007 circular reviews and supersedes the 2004 non-SLR debt securities guidelines."
+        },
+        {
+          "doc_ids": [
+            "DOC-c24af6",
+            "DOC-dc898f"
+          ],
+          "evidence_quote": "On the basis of representations received from banks and their Federations, the existing guidelines have been reviewed and it has been decided as under:",
+          "primitive": "REPEAL",
+          "rationale": "The 2009 circular reviews and replaces the 2007 non-SLR investment guidelines."
+        },
+        {
+          "doc_ids": [
+            "DOC-c24af6",
+            "DOC-dc898f"
+          ],
+          "evidence_quote": "Non-SLR investments will continue to be limited to 10% of a bank's total deposits as on March 31 of the previous year",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Divergent prudential-limit definitions across successive non-SLR circulars should be canonicalized to a single stated limit."
+        },
+        {
+          "doc_ids": [
+            "DOC-eb72c4",
+            "DOC-190b44",
+            "DOC-3d2d45"
+          ],
+          "evidence_quote": "banks are permitted on an ongoing basis to exceed the limit of 25 per cent of their total investments under HTM category provided",
+          "primitive": "MERGE",
+          "rationale": "Successive classification/valuation circulars stating one HTM-limit obligation should be folded into one instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-190b44",
+            "DOC-4f3d4e"
+          ],
+          "evidence_quote": "the total SLR securities held in the HTM category is not more than 25 per cent of their NDTL as on the last Friday of the second preceding fortnight",
+          "primitive": "MERGE",
+          "rationale": "Same HTM/NDTL obligation restated across classification circulars."
+        },
+        {
+          "doc_ids": [
+            "DOC-3b7ea7"
+          ],
+          "evidence_quote": "Please refer to para 2 (iii) (i) of our circular UBD.(PCB).EXT-11ba4d dated January 30, 2009 advising the Primary (Urban) Co-operative Banks (UCBs) that all transactions for acquisition / sale of non-SLR investments in secondary market may be undertaken only with commercial banks / primary dealers a",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to the 2009 circular should be replaced with consolidated counterparty text."
+        },
+        {
+          "doc_ids": [
+            "DOC-ceadf1"
+          ],
+          "evidence_quote": "As per the instructions contained in paragraph 2 (iii) (g) of our circular UBD.(PCB).EXT-11ba4d dated January 30, 2009, all fresh investments under Non-SLR category should be classified under Held For Trading (HFT)/Available For Sale (AFS) categories only and marked to market as applicable to these ",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to 2009 non-SLR classification rule should point to consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-e6ceb9"
+          ],
+          "evidence_quote": "please refer to paragraph 2 (iii) (b) of our Circular UBD.(PCB) EXT-11ba4d dated January 30, 2009 on investments in Non-SLR securities by Primary (Urban) Co-operative Banks (UCBs), in terms of which investments in unlisted securities (subject to the minimum rating prescribed) should not exceed 10 pe",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to 2009 unlisted-securities limit should be resolved into consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-eec770"
+          ],
+          "evidence_quote": "Please refer to paragraph 2 (iii) (c) of circular UBD(PCB) EXT-11ba4d dated January 30, 2009 on investments in Non-SLR securities by Primary (Urban) Co-operative Banks.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "ZCB circular's cross-reference should be replaced by consolidated non-SLR text."
+        },
+        {
+          "doc_ids": [
+            "DOC-97d758"
+          ],
+          "evidence_quote": "Please refer to our circular UBD.(PCB).EXT-9e1dd2 dated January 30, 2009 , in terms of which guidelines were issued to Urban Co-operative Banks (UCBs) for investment in Non-SLR securities.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "MIC circular's cross-reference should be resolved into consolidated non-SLR text."
+        },
+        {
+          "doc_ids": [
+            "DOC-475cfb"
+          ],
+          "evidence_quote": "It is advised that the investment made for subscribing to the capital of the UO, for acquiring its membership, shall be exempt from the limits prescribed in Paragraphs 2(i) and 2(iii)(b) of the circular ibid.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "UO exemption references 2009 limits; cross-reference should be resolved into consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-97d758",
+            "DOC-475cfb"
+          ],
+          "evidence_quote": "UCBs are allowed to exceed the limit for investments in Non-SLR/unlisted securities prescribed in Circular dated January 30, 2009, if it becomes necessary to do so for acquiring membership of MICs;",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "MIC-membership and UO-subscription exemptions are parallel exceptions to non-SLR limits and should be kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-36e226",
+            "DOC-b43538"
+          ],
+          "evidence_quote": "all special securities issued by the Government of India, directly to the beneficiary en",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Valuation definitions for special GOI securities and SDLs should be canonicalized within the valuation part."
+        },
+        {
+          "doc_ids": [
+            "DOC-b43538",
+            "DOC-36e226"
+          ],
+          "evidence_quote": "Till then banks shall continue to value SDLs as detailed in the circular EXT-ee73af dat",
+          "primitive": "REPEAL",
+          "rationale": "The 2018 SDL valuation circular changes the earlier valuation approach for these securities."
+        },
+        {
+          "doc_ids": [
+            "DOC-a62b0a",
+            "DOC-dcdee6"
+          ],
+          "evidence_quote": "The concurrent auditors are required to audit investment portfolio of the banks.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "Recurring audit/reporting instruction on the investment portfolio should be lifted into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-9fd09d"
+          ],
+          "evidence_quote": "it has been decided that banks should follow \u201cSettlement Date\u201d accounting for recording both outright and ready forward purchase and sale transactions in Government Securities.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "Uniform settlement-date accounting is a general recurring accounting rule to elevate."
+        },
+        {
+          "doc_ids": [
+            "DOC-82a506",
+            "DOC-d64ce8"
+          ],
+          "evidence_quote": "primary (urban) co-operative banks may also seek insurance companies, mutual funds and provident funds as counter parties.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "General counterparty rule for government securities transactions should be elevated into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-90f919",
+            "DOC-9bb8e0"
+          ],
+          "evidence_quote": "all other terms and conditions stated in our guidelines on Investment in non-SLR debt securities by Primary (Urban) Co-operative Banks remain unchanged.",
+          "primitive": "MERGE",
+          "rationale": "The AIFI list supplements the 2004 non-SLR guidelines and should be folded together."
+        },
+        {
+          "doc_ids": [
+            "DOC-8b85a6"
+          ],
+          "evidence_quote": "The instructions contained in paragraph 15.2.3 of the Circular may be omitted as they were inadvertently retained while updating the instructions on the subject.",
+          "primitive": "REPEAL",
+          "rationale": "Corrigendum omitting an inadvertently retained paragraph should be repealed on consolidation."
+        }
+      ],
+      "theme": "Investment Portfolio & Non-SLR Securities \u2013 Urban Co-operative Banks"
+    },
+    {
+      "doc_ids": [
+        "DOC-bab750",
+        "DOC-7c9fe6",
+        "DOC-93ee12",
+        "DOC-260dcc",
+        "DOC-36dff9",
+        "DOC-e66021",
+        "DOC-cc7b87",
+        "DOC-89606b",
+        "DOC-2e6f7c",
+        "DOC-50058b",
+        "DOC-f4d430",
+        "DOC-0cccfe",
+        "DOC-e7bfa1",
+        "DOC-1382ac",
+        "DOC-236f34",
+        "DOC-2ba42d",
+        "DOC-7c51f3",
+        "DOC-03f8cd",
+        "DOC-9c05d5"
+      ],
+      "group_id": "grp-govsec-ucb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-89606b",
+            "DOC-2e6f7c"
+          ],
+          "evidence_quote": "It is hereby clarified that UCBs should not maintain CSGL accounts of any entity. UCBs are, therefore, advised that they should immediately close all CSGL accounts and report compliance to the concerned Regional Office.",
+          "primitive": "REPEAL",
+          "rationale": "The later circular broadens and supersedes the earlier restriction on maintaining CSGL accounts of other UCBs to all entities."
+        },
+        {
+          "doc_ids": [
+            "DOC-50058b",
+            "DOC-e7bfa1"
+          ],
+          "evidence_quote": "it has been decided with immediate effect, to permit, sale of Government Securities allotted to successful bidders in primary issues on the day of allotment, with and between CSGL constituent acco",
+          "primitive": "REPEAL",
+          "rationale": "The later circular expands the same-day sale of primary allotments to CSGL account holders, superseding the earlier settlement-basis clarification."
+        },
+        {
+          "doc_ids": [
+            "DOC-50058b",
+            "DOC-0cccfe"
+          ],
+          "evidence_quote": "Accordingly, it has now been decided to adopt a standardised settlement on T+1 basis of all outright secondary market transactions in Government Securities.",
+          "primitive": "REPEAL",
+          "rationale": "The later T+1 standardisation supersedes the earlier T+0/T+1 clarification which it expressly refers to."
+        },
+        {
+          "doc_ids": [
+            "DOC-1382ac"
+          ],
+          "evidence_quote": "In supersession of the instructions contained in the above referred circular dated 28 March 2000, it is advised that the terms and conditions subject to which ready forward contracts (including reverse ready forward contracts) may be entered into, will be as under",
+          "primitive": "REPEAL",
+          "rationale": "This circular itself supersedes an earlier one and its terms are later reflected in the master circular referenced by DOC-f4d430."
+        },
+        {
+          "doc_ids": [
+            "DOC-f4d430",
+            "DOC-236f34"
+          ],
+          "evidence_quote": "it has been decided to permit Scheduled Urban Co-operative Banks with strong financials and sound risk management practices as eligible participants to undertake ready forward contracts in corporate debt securities",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Ready forward contracts in Government securities and in corporate debt securities are parallel but distinct obligations to keep separate."
+        },
+        {
+          "doc_ids": [
+            "DOC-260dcc",
+            "DOC-89606b"
+          ],
+          "evidence_quote": "Gilt Account holders also, who hold their stock of government securities in Gilt Accounts maintained with eligible custodians maintaining CSGL accounts in the Public Debt Office of the Reserve Bank",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "A single canonical definition of Gilt Account / CSGL holder should replace divergent uses across circulars."
+        },
+        {
+          "doc_ids": [
+            "DOC-260dcc",
+            "DOC-93ee12"
+          ],
+          "evidence_quote": "Please refer to the instructions contained in our circular BPD.SUB.DOC-93ee12 dated April 28, 2004 under which sale of government securities already contracted for purchase was permitted",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to DOC-93ee12 should be replaced with the consolidated text on sale of already-contracted securities."
+        },
+        {
+          "doc_ids": [
+            "DOC-2ba42d",
+            "DOC-7c9fe6"
+          ],
+          "evidence_quote": "Please refer to our circular UBD.DOC-7c9fe6 dated March 13, 2003 , in terms of which Urban Co-operative Banks were permitted to trade in Government Securities on the Stock Exchanges",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The intra-day short selling circular references the stock exchange trading circular; the cross-reference should be resolved into consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-93ee12",
+            "DOC-260dcc"
+          ],
+          "evidence_quote": "the settlement of government securities carried out through CCIL was shifted to DVP-III mode",
+          "primitive": "MERGE",
+          "rationale": "Both circulars address the DVP III settlement of sale-already-contracted-for-purchase transactions and can be merged."
+        },
+        {
+          "doc_ids": [
+            "DOC-cc7b87"
+          ],
+          "evidence_quote": "With effect from 1st April, 2003, all Government Securities transactions ( both outright and Repo ) are being settled compulsorily through Clearing Corporation of India Ltd. ( CCIL) only.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "Compulsory settlement through CCIL is a recurring baseline rule that should be lifted into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-36dff9"
+          ],
+          "evidence_quote": "Primary (urban) co-operative banks (UCBs) should not undertake any purchase / sale transactions with broking firms or other intermediaries on principal -to-principal basis.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "This general conduct-of-investment-portfolio instruction recurs and should be elevated to a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-e66021"
+          ],
+          "evidence_quote": "In terms of para 2 (iii) of this circular, urban co-operative banks were advised to take advantage of non-competitive bidding facility provided to them for acquiring Government of India securities in the primary auctions",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Reference to the prior master circular para should be resolved into the consolidated non-competitive bidding text."
+        }
+      ],
+      "theme": "Government Securities Transactions & Settlement \u2013 UCBs"
+    },
+    {
+      "doc_ids": [
+        "DOC-89eefe",
+        "DOC-709c7d",
+        "DOC-f73ea1",
+        "DOC-e6316c",
+        "DOC-5ac58e",
+        "DOC-0984fb",
+        "DOC-63e858",
+        "DOC-accde4"
+      ],
+      "group_id": "grp-deposits-placement-ucb",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-5ac58e",
+            "DOC-709c7d"
+          ],
+          "evidence_quote": "Please refer to the guidelines contained in our circular DOC-709c7d dated May 17, 2003 and UBD (PCB) BPD Cir No: EXT-068a4e dated January 30, 2009 on the captioned subject. 2. On a review it has been decided to permit scheduled UCBs to accept deposits from other scheduled UCBs",
+          "primitive": "REPEAL",
+          "rationale": "DOC-89eefe reviews and revises the guidelines contained in the earlier circulars, superseding them."
+        },
+        {
+          "doc_ids": [
+            "DOC-709c7d"
+          ],
+          "evidence_quote": "The revised guidelines on the subject are as under: i) Prudential inter-bank (gross) exposure limit",
+          "primitive": "REPEAL",
+          "rationale": "DOC-5ac58e reviewed and issued revised guidelines superseding the 2003 guidance."
+        },
+        {
+          "doc_ids": [
+            "DOC-709c7d",
+            "DOC-f73ea1",
+            "DOC-e6316c"
+          ],
+          "evidence_quote": "permitting non-scheduled urban co-operative banks (UCBs) to place deposits with eligible scheduled urban co-operative banks",
+          "primitive": "MERGE",
+          "rationale": "These three circulars together establish the single obligation permitting non-scheduled UCBs to place deposits with eligible scheduled UCBs and should be folded into one instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-f73ea1",
+            "DOC-709c7d"
+          ],
+          "evidence_quote": "Please refer to para 1(a) of our circular UBD No. DOC-709c7d dated May 17, 2003 on the captioned subject.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The cross-reference to the earlier circular should be replaced by the consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-e6316c",
+            "DOC-709c7d",
+            "DOC-f73ea1"
+          ],
+          "evidence_quote": "Please refer to our circular UBD. No. DOC-709c7d dated May 17, 2003 , permitting non-scheduled urban co-operative banks (UCBs) to place deposits with eligible scheduled urban co-operative banks. A reference may also be made to our circular UBD No.BPD. PCB. cir. EXT-a4c5af dated February 27, 2004 .",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-references to prior circulars replaced by consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-f73ea1"
+          ],
+          "evidence_quote": "It has been decided to delete the following criteria for considering the scheduled urban co-operative banks as strong. \"The bank has \u2018A\u2019 rating from Co-operative Auditors for the last three consecutive years\". All other terms and conditions for acceptance of deposits will remain unchanged.",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "The criteria defining an eligible/strong scheduled UCB should be canonicalized into a single definition after deletion."
+        },
+        {
+          "doc_ids": [
+            "DOC-5ac58e"
+          ],
+          "evidence_quote": "The total amount of deposits placed by an UCB with other banks (inter-bank) for all purposes including call money/ notice money, and deposits, if any, placed for availing clearing facility, CSGL facility, currency chest facility, remittance facility and non-fund based facilities like Bank Guarantee ",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The prudential inter-bank exposure limit is a recurring general rule that should be lifted into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-0984fb"
+          ],
+          "evidence_quote": "UCBs were advised to formulate a policy taking into account their funds position, liquidity and other needs for placement of deposits with other banks, the cost of funds, expected rate of return and interest margin on such deposits, the counter party risk, etc. and place it before their Board of Dir",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The Board-approved policy requirement is a recurring instruction suitable for a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-accde4",
+            "DOC-63e858"
+          ],
+          "evidence_quote": "In terms of circular DOR.(PCB).DOC-accde4 dated April 20, 2020 , Primary (Urban) Co-operative Banks (UCBs) were advised that the interbank exposures arising from deposits placed by UCBs with a UCB under All-inclusive Directions (AID)",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to the earlier provisioning circular resolved into consolidated text."
+        }
+      ],
+      "theme": "Placement of Deposits by UCBs with Other Banks"
+    },
+    {
+      "doc_ids": [
+        "DOC-831376",
+        "DOC-77d67a",
+        "DOC-3c4a80",
+        "DOC-5fbc75",
+        "DOC-72247e",
+        "DOC-641bb6",
+        "DOC-388575",
+        "DOC-152d7f",
+        "DOC-b65e77",
+        "DOC-327eb1",
+        "DOC-a8c8cf",
+        "DOC-f0aff2",
+        "DOC-375853",
+        "DOC-493590",
+        "DOC-806a08",
+        "DOC-c7e09f",
+        "DOC-5383ce",
+        "DOC-dcfe91"
+      ],
+      "group_id": "grp-interest-deposits",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-5fbc75",
+            "DOC-72247e"
+          ],
+          "evidence_quote": "Please refer to our circular DOC-5fbc75 dated April 24, 2009 advising banks that in view of the present satisfactory level of computerisation in commercial bank branches, it is proposed that payment of interest on savings bank accounts by scheduled commercial banks would be made on a daily product b",
+          "primitive": "REPEAL",
+          "rationale": "Later circular finalises the daily product basis proposal of the earlier one."
+        },
+        {
+          "doc_ids": [
+            "DOC-831376",
+            "DOC-152d7f"
+          ],
+          "evidence_quote": "It has been decided to increase the interest rate on domestic and ordinary Non-Resident savings deposits as well as savings deposits under Non-Resident (External) Accounts Scheme by 0.5 percentage point from 3.5 per cent to 4.0 per cent per annum with immediate effect.",
+          "primitive": "REPEAL",
+          "rationale": "Later circular reverses the earlier rate reduction, superseding the savings rate set in DOC-831376."
+        },
+        {
+          "doc_ids": [
+            "DOC-641bb6",
+            "DOC-388575"
+          ],
+          "evidence_quote": "we clarify that the revised guidelines issued vide our circular referred to above would be applicable to domestic savings bank deposits held by residents in India",
+          "primitive": "MERGE",
+          "rationale": "The clarification circular folds into the deregulation guidelines it clarifies."
+        },
+        {
+          "doc_ids": [
+            "DOC-327eb1",
+            "DOC-b65e77"
+          ],
+          "evidence_quote": "Please refer to our circulars DBOD. No. Dir.BC.36/13.03.00/98 dated April 29, 1998, EXT-cfb089 dated August 11, 2001 and DOC-b65e77 dated January 24, 2013 in terms of which banks are allowed to offer differential rates of interest on term deposits on the basis of tenor for deposits less than \u20b9 1 cro",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to earlier term deposit differential rate circulars replaced by consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-a8c8cf"
+          ],
+          "evidence_quote": "a reference is also invited to paragraph 2 (ii) of our circular EXT-2584ad dated November 4, 2000 on 'Interest Rates on Rupee Deposits held in Domestic, Ordinary Non-Resident (NRO), Non-Resident Special Rupee (NRSR) and Non-Resident (External) (NRE) Accounts' whereby banks were advised to pay intere",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Reference to prior directive replaced by consolidated periodicity instruction."
+        },
+        {
+          "doc_ids": [
+            "DOC-77d67a"
+          ],
+          "evidence_quote": "discriminate in the matter of interest paid on deposits, between one deposit and another, accepted on the same date and for the same maturity, whether such deposits are accepted at the same office or at different offices of the bank",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "Non-discrimination principle recurs across deregulation circulars and should be a general rule."
+        },
+        {
+          "doc_ids": [
+            "DOC-3c4a80",
+            "DOC-641bb6"
+          ],
+          "evidence_quote": "the banks may fix the interest rates on FCNR(B) deposits also on the basis of LIBOR/ SWAP rates as prevailing on the last working day of the preceding month",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "FCNR(B) rate-fixing obligation is parallel to savings deregulation but kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-806a08",
+            "DOC-c7e09f"
+          ],
+          "evidence_quote": "banks are advised to follow the procedure detailed below in the case of Term Deposit Accounts frozen by the enforcement authorities",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Frozen-account interest procedure and reinvestment conversion are parallel term deposit obligations kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-f0aff2"
+          ],
+          "evidence_quote": "the discretion given to banks to allow the benefit of additional interest rate of one per cent per annum as available to bank's own staff on deposits under NRE/NRO accounts stands withdrawn",
+          "primitive": "REPEAL",
+          "rationale": "Withdraws prior staff additional interest discretion for non-residents."
+        },
+        {
+          "doc_ids": [
+            "DOC-dcfe91"
+          ],
+          "evidence_quote": "the minimum amount for offering non-callable TDs may be increased from Rupees fifteen lakh to Rupees one crore i.e., all domestic term deposits accepted from individuals for amount of Rupees one crore and below shall have premature-withdrawal-facility",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Establishes the canonical threshold for non-callable/premature withdrawal facility."
+        },
+        {
+          "doc_ids": [
+            "DOC-493590",
+            "DOC-5383ce"
+          ],
+          "evidence_quote": "Public Sector Banks were permitted to pay additional interest of 1.28 per cent per annum over and above the normal rate of interest permissible",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Special deposit product rules kept as distinct parallel obligations."
+        }
+      ],
+      "theme": "Interest Rates on Rupee/Savings/Term Deposits"
+    },
+    {
+      "doc_ids": [
+        "DOC-4f2b34",
+        "DOC-fe8b2a",
+        "DOC-7340ca",
+        "DOC-f3b179",
+        "DOC-56cfa9",
+        "DOC-884067",
+        "DOC-33ba77",
+        "DOC-a90090",
+        "DOC-874662",
+        "DOC-b05e04",
+        "DOC-6368c9",
+        "DOC-0cbfc9",
+        "DOC-b9c1d2",
+        "DOC-4e7ae6",
+        "DOC-98bd20",
+        "DOC-757bd2",
+        "DOC-a7b85b",
+        "DOC-bb6855",
+        "DOC-bcafa2",
+        "DOC-87115a",
+        "DOC-053c5e",
+        "DOC-4fd9fd",
+        "DOC-2fc5bf",
+        "DOC-6bed4f",
+        "DOC-6a7c73",
+        "DOC-e1c03d",
+        "DOC-48c8eb",
+        "DOC-c70dfb",
+        "DOC-c56f5c",
+        "DOC-85568b",
+        "DOC-4de62d",
+        "DOC-7e69ae",
+        "DOC-1c17e9",
+        "DOC-bd45e3"
+      ],
+      "group_id": "grp-nre-fcnr",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-7340ca",
+            "DOC-f3b179"
+          ],
+          "evidence_quote": "in modification of Directive DOC-7340ca dated July 17, 2003 relating to interest rate on deposits accepted under Non-resident (External) Rupee Account Scheme",
+          "primitive": "REPEAL",
+          "rationale": "DOC-f3b179 modifies and supersedes DOC-7340ca, revising the ceiling from 250 to 100 basis points."
+        },
+        {
+          "doc_ids": [
+            "DOC-f3b179",
+            "DOC-56cfa9"
+          ],
+          "evidence_quote": "in modification of Directive DOC-f3b179 dated September 15, 2003 relating to interest rate on deposits accepted under Non-resident (External) Rupee Account Scheme",
+          "primitive": "REPEAL",
+          "rationale": "DOC-56cfa9 modifies and supersedes DOC-f3b179, revising the ceiling from 100 to 25 basis points."
+        },
+        {
+          "doc_ids": [
+            "DOC-b9c1d2",
+            "DOC-4e7ae6"
+          ],
+          "evidence_quote": "Please refer to paragraph 2 of our circular DOC-b9c1d2 dated April 24, 2007 on Interest Rates on Deposits held in Non-Resident (External) (NRE) Accounts.",
+          "primitive": "REPEAL",
+          "rationale": "DOC-4e7ae6 revises the NRE ceiling from LIBOR/SWAP to LIBOR/SWAP plus 50 bps, superseding DOC-b9c1d2."
+        },
+        {
+          "doc_ids": [
+            "DOC-4e7ae6",
+            "DOC-98bd20"
+          ],
+          "evidence_quote": "Please refer to paragraph 1 of our circular DOC-4e7ae6 dated September 16, 2008 on Interest Rates on Deposits held in Non-Resident (External) Rupee (NRE) Accounts.",
+          "primitive": "REPEAL",
+          "rationale": "DOC-98bd20 revises the NRE ceiling from 50 to 100 bps, superseding DOC-4e7ae6."
+        },
+        {
+          "doc_ids": [
+            "DOC-98bd20",
+            "DOC-757bd2"
+          ],
+          "evidence_quote": "Please refer to paragraph 1 of our circular DOC-98bd20 dated October 15, 2008 on Interest Rates on Deposits held in Non-Resident (External) Rupee (NRE) Accounts.",
+          "primitive": "REPEAL",
+          "rationale": "DOC-757bd2 revises the NRE ceiling from 100 to 175 bps, superseding DOC-98bd20."
+        },
+        {
+          "doc_ids": [
+            "DOC-757bd2",
+            "DOC-a7b85b"
+          ],
+          "evidence_quote": "Please refer to paragraph 1 of our circular DOC-757bd2 dated November 15, 2008 on Interest Rates on Deposits held in Non-Resident (External) Rupee (NRE) Accounts.",
+          "primitive": "REPEAL",
+          "rationale": "DOC-a7b85b revises the NRE ceiling from 175 to 275 bps, superseding DOC-757bd2."
+        },
+        {
+          "doc_ids": [
+            "DOC-a7b85b",
+            "DOC-bb6855"
+          ],
+          "evidence_quote": "paragraph 1 of our circular DOC-a7b85b dated November 23, 2011 on Interest Rates on Non-Resident (External) Rupee (NRE) Deposits and FCNR (B) Deposits",
+          "primitive": "REPEAL",
+          "rationale": "DOC-bb6855 deregulates NRE deposit interest rates, superseding the ceiling regime of DOC-a7b85b."
+        },
+        {
+          "doc_ids": [
+            "DOC-bcafa2",
+            "DOC-87115a"
+          ],
+          "evidence_quote": "Please refer to our circular No.DOC-bcafa2 dated May 4, 2012 on Interest Rates on Deposits held in FCNR(B) Accounts.",
+          "primitive": "REPEAL",
+          "rationale": "DOC-87115a revises the FCNR(B) 3-5 year ceiling from 300 to 400 bps, superseding DOC-bcafa2."
+        },
+        {
+          "doc_ids": [
+            "DOC-e1c03d",
+            "DOC-c70dfb"
+          ],
+          "evidence_quote": "Please refer to our circular EXT-0be549 dated 29 April 2002 advising therein that in respect of FCNR(B) deposits for a maturity of 1-3 years, banks may offer fixed and floating rates of interest within the ceiling rate of LIBOR/SWAPS rates for the respective currency/corresponding maturities minus 2",
+          "primitive": "REPEAL",
+          "rationale": "DOC-c70dfb amends the FCNR(B) rate regime introduced 29 April 2002, granting freedom on Yen deposits."
+        },
+        {
+          "doc_ids": [
+            "DOC-4f2b34",
+            "DOC-fe8b2a",
+            "DOC-7340ca"
+          ],
+          "evidence_quote": "the interest rates on fresh repatriable NRE deposits for one to three years contracted effective July 17, 2003 should not exceed 250 basis points above the LIBOR/SWAP rates for US dollar of corresponding maturity",
+          "primitive": "MERGE",
+          "rationale": "DOC-fe8b2a is the advisory letter and DOC-7340ca the directive stating the same NRE ceiling obligation; fold into one."
+        },
+        {
+          "doc_ids": [
+            "DOC-b05e04",
+            "DOC-33ba77"
+          ],
+          "evidence_quote": "banks are free to accept FCNR(B) deposits denominated in US dollar, Pound Sterling, EURO, Canadian dollar, Australian dollar and Japanese Yen for maturity period of 1-5 years",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Establish a single canonical statement of FCNR(B) eligible currencies and maturity period."
+        },
+        {
+          "doc_ids": [
+            "DOC-fe8b2a",
+            "DOC-7340ca",
+            "DOC-f3b179",
+            "DOC-56cfa9",
+            "DOC-a90090",
+            "DOC-6368c9"
+          ],
+          "evidence_quote": "The LIBOR/SWAP rates as on the last working day of the preceding month would form the base for fixing ceiling rates for the interest rates that would be offered effective from the following month.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The recurring base-rate-determination rule appears repeatedly and should be lifted into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-053c5e",
+            "DOC-2fc5bf"
+          ],
+          "evidence_quote": "interest rates offered by banks on NRE deposits cannot be higher than those offered by them on comparable domestic rupee deposits",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "NRE deregulation (DOC-053c5e) and FCNR(B) ceiling (DOC-2fc5bf) are parallel obligations that remain distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-b05e04",
+            "DOC-874662"
+          ],
+          "evidence_quote": "Please refer to item (a) of Annexure I to our Master Circular EXT-d5f95a dated July 1, 2005 and the Circular No. DOC-874662 dated February 8, 2006",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "DOC-b05e04 cross-references DOC-874662; replace with consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-7e69ae",
+            "DOC-1c17e9"
+          ],
+          "evidence_quote": "incremental FCNR (B) deposits as also NRE deposits with reference base date of July 26, 2013, and having maturity of three years and above, mobilised by banks will be exempt from maintenance of CRR and SLR",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Parallel CRR/SLR exemption obligations addressed to SCBs and to UCBs respectively; keep distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-053c5e",
+            "DOC-4fd9fd"
+          ],
+          "evidence_quote": "Please refer to our circular DOC-053c5e dated August 14, 2013 allowing banks the freedom to offer interest rates on incremental NRE deposits with maturity of 3 years and above without any ceiling",
+          "primitive": "REPEAL",
+          "rationale": "DOC-4fd9fd extends the validity of the DOC-053c5e dispensation, superseding its expiry provisions."
+        },
+        {
+          "doc_ids": [
+            "DOC-87115a",
+            "DOC-2fc5bf"
+          ],
+          "evidence_quote": "Please refer to our circular DOC-87115a dated August 14, 2013 advising interest rate ceilings on FCNR (B) deposits for maturity period of one year to less than three years and three to five years",
+          "primitive": "REPEAL",
+          "rationale": "DOC-2fc5bf extends the validity of the FCNR(B) ceilings set in DOC-87115a."
+        }
+      ],
+      "theme": "Interest Rates on NRE / FCNR(B) / Non-Resident Deposits"
+    },
+    {
+      "doc_ids": [
+        "DOC-7dd0fd",
+        "DOC-c464a6",
+        "DOC-54b121",
+        "DOC-f7e191",
+        "DOC-3ed54b",
+        "DOC-8d0fcd",
+        "DOC-31de22",
+        "DOC-9be0bf",
+        "DOC-30477d"
+      ],
+      "group_id": "grp-cards",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-c464a6",
+            "DOC-31de22"
+          ],
+          "evidence_quote": "Please refer to our circular DOC-c464a6 dated July 13, 2007 issued to UCBs on the captioned subject",
+          "primitive": "REPEAL",
+          "rationale": "The 2015 guidelines on ATM-cum-debit cards for co-operative banks build upon and supersede the 2007 UCB guidelines."
+        },
+        {
+          "doc_ids": [
+            "DOC-c464a6",
+            "DOC-31de22"
+          ],
+          "evidence_quote": "It has been now been decided to issue guidelines for issuance of ATM-cum-Debit Cards.",
+          "primitive": "MERGE",
+          "rationale": "Both circulars state guidelines for issue of ATM-cum-debit cards to co-operative banks and should be folded into one."
+        },
+        {
+          "doc_ids": [
+            "DOC-f7e191",
+            "DOC-54b121",
+            "DOC-3ed54b",
+            "DOC-8d0fcd"
+          ],
+          "evidence_quote": "The following guidelines on credit card operations of banks have been framed based on the recommendations of the Group",
+          "primitive": "MERGE",
+          "rationale": "Multiple circulars issue and refine credit card operation guidelines and should be consolidated into one instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-3ed54b"
+          ],
+          "evidence_quote": "Please refer to the Master Circular on Credit Card Operations of banks ( Circular No.EXT-173780 ) dated July 1, 2008.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The cross-reference to the prior master circular should be replaced with the consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-8d0fcd"
+          ],
+          "evidence_quote": "These guidelines are also compiled in the form of a Master Circular issued every year, the last being the circular EXT-c80738 dated July 1, 2010.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Reference to the annual master circular should be resolved into the consolidated instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-9be0bf",
+            "DOC-30477d"
+          ],
+          "evidence_quote": "proposing to accord general permission to banks for issue of co-branded debit and rupee denominated pre-paid instruments, subject to certain conditions, in order to obviate the need for banks to approach the Reserve Bank for every co-branding arrangement",
+          "primitive": "MERGE",
+          "rationale": "Both circulars issued the same day address co-branding permissions and should be merged."
+        },
+        {
+          "doc_ids": [
+            "DOC-30477d"
+          ],
+          "evidence_quote": "Debit cards are issued by banks in terms of the guidelines contained in circular DBOD.No.EXT-320e73 dated November 12, 1999, and subsequent amendments and mail box clarifications.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The reference to prior debit card guidelines should be resolved into the consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-7dd0fd",
+            "DOC-30477d"
+          ],
+          "evidence_quote": "it has been decided to permit banks to issue electronic cards to natural persons having Overdraft Accounts that are only in the nature of personal loan without any specific end-use restrictions",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "The overdraft electronic card obligation is parallel to but distinct from the general debit card issuance rules."
+        },
+        {
+          "doc_ids": [
+            "DOC-8d0fcd",
+            "DOC-54b121"
+          ],
+          "evidence_quote": "Each bank / NBFC must have a well documented policy and a Fair Practices Code for credit card operations.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The recurring requirement for a documented Fair Practices Code should be lifted into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-7dd0fd",
+            "DOC-30477d",
+            "DOC-c464a6"
+          ],
+          "evidence_quote": "banks have been permitted to issue debit cards to customers having Saving Bank/Current Accounts but not to cash credit/loan account holders",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "Divergent scopes of who may be issued debit/electronic cards should be reconciled into a single canonical definition."
+        }
+      ],
+      "theme": "Credit / Debit / ATM Card Operations"
+    },
+    {
+      "doc_ids": [
+        "DOC-3f15b9",
+        "DOC-e81695",
+        "DOC-06be19"
+      ],
+      "group_id": "grp-money-market",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-3f15b9",
+            "DOC-e81695"
+          ],
+          "evidence_quote": "IDBI-Principal Mutual Fund is permitted to participate, only as a lender, in the Call/Notice Money Market (overnight call money and short notice money for period upto and including 14 days) and Bills Rediscounting Scheme.",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Mutual fund permitted only as lender is a parallel but distinct obligation from Primary Dealer permission to act as both lender and borrower."
+        },
+        {
+          "doc_ids": [
+            "DOC-06be19",
+            "DOC-e81695"
+          ],
+          "evidence_quote": "It has been decided to allow HSBC Primary Dealership (India) Private Ltd., a new Primary Dealer to participate in the Call/Notice/Term Money Market and Bills Rediscounting Scheme, both as a lender and borrower.",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "One circular adds a participant while another revokes one; both maintain the same participant list but are distinct actions kept parallel."
+        },
+        {
+          "doc_ids": [
+            "DOC-3f15b9",
+            "DOC-e81695",
+            "DOC-06be19"
+          ],
+          "evidence_quote": "Amendments may please be carried out to Part A of Annexure I and to Annexure II to Paragraph 22.6 of the Manual of Instructions Vol. I \u2013 Part II by adding the name of the above institution.",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "The recurring instruction to amend Annexures I and II to Paragraph 22.6 by adding/deleting participant names appears in all circulars and can be lifted into a general part."
+        },
+        {
+          "doc_ids": [
+            "DOC-06be19"
+          ],
+          "evidence_quote": "Please refer to our circular DBOD.No.FSC.BC.143/24.92.001/2000 dated February 23, 2000 on the captioned subject.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to an earlier circular should be replaced with the consolidated participant list text."
+        },
+        {
+          "doc_ids": [
+            "DOC-e81695"
+          ],
+          "evidence_quote": "Please refer to our circular DBOD No.FSC.BC.20/24.92.001/99 dated March 10, 1999 in terms of which Tata TD Waterhouse Securities Ltd.(erstwhile Tata Finance Securities Ltd.) was, among others, permitted to participate both as a lender and a borrower in the Call/Notice/Term Money Market and Bills Red",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to an earlier authorising circular should be resolved into consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-3f15b9"
+          ],
+          "evidence_quote": "Please refer to our circular DBOD. No. FSC. BC. 68 /24.91.001/ 95 dated June 27, 1995 in terms of which IDBI Mutual Fund was permitted access in the Call/Notice Money Market and Bills Rediscounting Scheme as lender.",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "Cross-reference to the earlier IDBI Mutual Fund authorisation should be resolved into consolidated text."
+        }
+      ],
+      "theme": "Call/Notice/Term Money Market & Bills Rediscounting Participation"
+    },
+    {
+      "doc_ids": [
+        "DOC-ba5bfc",
+        "DOC-0ab961",
+        "DOC-fc1d77",
+        "DOC-c285d7",
+        "DOC-ac200c",
+        "DOC-9f04eb",
+        "DOC-540830",
+        "DOC-8607c3",
+        "DOC-cb54af",
+        "DOC-6dd367",
+        "DOC-c9cdcb"
+      ],
+      "group_id": "grp-customer-service",
+      "operations": [
+        {
+          "doc_ids": [
+            "DOC-ac200c",
+            "DOC-9f04eb",
+            "DOC-540830",
+            "DOC-8607c3"
+          ],
+          "evidence_quote": "We therefore reiterate that banks should ensure that only those DMAs/DSAs who are registered as telemarketers with DoT are employed by them.",
+          "primitive": "MERGE",
+          "rationale": "Four circulars state the same evolving obligation on telemarketer registration for unsolicited commercial communications and should be folded into a single instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-8607c3",
+            "DOC-540830"
+          ],
+          "evidence_quote": "any person involved in sending of commercial communications has to register with TRAI as a telemarketer",
+          "primitive": "REPEAL",
+          "rationale": "The 2013 NCPR circular supersedes the earlier DoT-registration requirement, shifting registration to TRAI, thereby withdrawing the prior directions."
+        },
+        {
+          "doc_ids": [
+            "DOC-9f04eb"
+          ],
+          "evidence_quote": "defines a 'telemarketer' as any person/legal entity engaged in the activity of telemarketing (transmission of any message, through telecommunication service, for the purpose of soliciting or promoting any commercial transacti",
+          "primitive": "CANONICALIZE_DEFINITION",
+          "rationale": "A single definition of 'telemarketer' should replace divergent references across the communications circulars."
+        },
+        {
+          "doc_ids": [
+            "DOC-c285d7"
+          ],
+          "evidence_quote": "Please refer to paragraph 19 of our Master Circular EXT-7c4ea3dated July 1, 2006 on 'Interest Rates on Deposits'",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The cross-reference to an external master circular should be replaced with the consolidated rounding-off text."
+        },
+        {
+          "doc_ids": [
+            "DOC-fc1d77"
+          ],
+          "evidence_quote": "In terms of the paragraph 22 of our Master Circular No.EXT-058c7d dated August 14, 2003 , at the time of opening savings bank accounts, banks should inform their customers about the requirement of maintaining minimum balance",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The cross-reference to the external master circular on minimum balance should be resolved into the consolidated instrument."
+        },
+        {
+          "doc_ids": [
+            "DOC-ba5bfc"
+          ],
+          "evidence_quote": "Please refer to paragraph 2 of our Circular EXT-18c8b3 dated October 17, 2000, permitting banks to open savings bank accounts in the name of Government departments/bodies/agencies",
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "rationale": "The reference to the prior circular on government-body savings accounts should be replaced with consolidated text."
+        },
+        {
+          "doc_ids": [
+            "DOC-fc1d77",
+            "DOC-ba5bfc"
+          ],
+          "evidence_quote": "the requirement of maintaining minimum balance and levy",
+          "primitive": "RELATE_OBLIGATION",
+          "rationale": "Minimum-balance disclosure and opening of accounts for certain bodies are parallel savings-account obligations to be kept distinct."
+        },
+        {
+          "doc_ids": [
+            "DOC-c285d7"
+          ],
+          "evidence_quote": "cheques issued by clients containing fractions of a rupee should not be rejected or dishonoured",
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "rationale": "This recurring customer-protection instruction should be lifted into a general part of the consolidated instrument."
+        }
+      ],
+      "theme": "Customer Service, Protection & Communications"
+    }
+  ],
+  "quarantined": [
+    {
+      "group": "grp-psl-rrb",
+      "quote": "The guidelines for priority sector lending by Regional Rural Banks were revised "
+    },
+    {
+      "group": "grp-govsec-ucb",
+      "quote": "primary (urban) co-operative banks maintaining a Subsidiary General Ledger (SGL)"
+    },
+    {
+      "group": "grp-cards",
+      "quote": "Reserve Bank of India reserves the right to impose penalty on a bank/NBFC under "
+    }
+  ]
+}

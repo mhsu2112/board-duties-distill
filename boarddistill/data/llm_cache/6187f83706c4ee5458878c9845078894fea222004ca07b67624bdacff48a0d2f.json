@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "6187f83706c4ee5458878c9845078894fea222004ca07b67624bdacff48a0d2f",
+  "response_text": "{\"operations\": [{\"primitive\": \"RESOLVE_CROSS_REFERENCE\", \"doc_ids\": [\"DOC-9bb8e0\"], \"evidence_quote\": \"Please refer to para b,8(i) and Appendix- II of our circular UBD. No. DOC-c24af6 dated April 15, 2004 wherein Urban Co-operative Banks were advised that they can invest in bonds / equity of All India Financial Institutions, subject to the limits prescribed in para 8 (ii) and (iii) thereof.\", \"rationale\": \"The circular cross-references an earlier circular for the applicable limits; consolidation would fold that referenced text in.\"}, {\"primitive\": \"CANONICALIZE_DEFINITION\", \"doc_ids\": [\"DOC-9bb8e0\"], \"evidence_quote\": \"Revised List of All India Financial Institutions Industrial Development Bank of India ( IDBI ) Industrial Finance Corporation of India\", \"rationale\": \"A single revised list defines the institutions, superseding prior divergent lists.\"}]}"
+}
