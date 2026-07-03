@@ -815,6 +815,94 @@ def b5_decompose(
         typer.echo(f"  statutory-floor candidates PROPOSED (human-owned): {sorted(fc)}")
 
 
+@app.command("b6-acquire")
+def b6_acquire(
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/benchmark/sources"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="Benchmark data root.")] = Path(
+        "data/benchmark"
+    ),
+    offline: Annotated[
+        bool, typer.Option("--offline", help="Replay from cache only; no network.")
+    ] = False,
+) -> None:
+    """B6-T1: acquire the sampled MDs' appendices (sealed answer key) + pooled circular corpus."""
+    import json
+
+    from adapters.rbi_acquire import (
+        DROPPED_MDS,
+        MD_SAMPLE,
+        acquire_md_appendix,
+        circular_clean_text,
+        fetch_circular_text,
+    )
+    from adapters.retrieval import Fetcher, default_client, offline_client
+
+    client = offline_client() if offline else default_client()
+    answer_key: dict[str, str] = {}  # circular_id -> md_id (the held-out grouping)
+    circular_meta: dict[str, dict[str, str]] = {}
+    corpus: dict[str, str] = {}
+    per_md: list[dict[str, object]] = []
+    try:
+        fetcher = Fetcher(cache, client)
+        for md in MD_SAMPLE:
+            acq = acquire_md_appendix(md, fetcher)
+            got, missed = 0, 0
+            for e in acq.entries:
+                text = fetch_circular_text(e.circular_id, fetcher)
+                if text is None:
+                    missed += 1
+                    continue  # symmetric drop: not in corpus, not in answer key
+                corpus[e.circular_id] = circular_clean_text(text)
+                answer_key[e.circular_id] = md.md_id
+                circular_meta[e.circular_id] = {
+                    "circular_ref": e.circular_ref,
+                    "date": e.date,
+                    "subject": e.subject,
+                }
+                got += 1
+            per_md.append(
+                {"md_id": md.md_id, "listed": len(acq.entries), "retrieved": got, "missed": missed}
+            )
+            typer.echo(
+                f"  {md.md_id:12} listed={len(acq.entries):3} retrieved={got:3} missed={missed}"
+            )
+    finally:
+        client.close()
+
+    (out / "answer_key").mkdir(parents=True, exist_ok=True)
+    (out / "corpus").mkdir(parents=True, exist_ok=True)
+    # SEALED: circular->MD grouping + per-circular metadata (subject leaks grouping → sealed too)
+    (out / "answer_key" / "grouping.json").write_text(
+        json.dumps(
+            {
+                "_meta": "SEALED answer key (B6 §1.3) — circular_id -> md_id grouping. Never read "
+                "by the proposal pipeline (benchmark_guard); scorer only via unseal_read.",
+                "grouping": dict(sorted(answer_key.items())),
+                "circular_meta": dict(sorted(circular_meta.items())),
+                "per_md": per_md,
+                "dropped_mds": DROPPED_MDS,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    # LLM-facing corpus texts (pseudonymized in T2); keyed by real id for now (mapping sealed later)
+    for cid, text in corpus.items():
+        (out / "corpus" / f"circ-{cid}.txt").write_text(text)
+
+    from collections import Counter
+
+    dist = Counter(answer_key.values())
+    typer.echo("[boarddistill] B6-T1 acquisition:")
+    typer.echo(
+        f"  MDs: {len(MD_SAMPLE)} (dropped {len(DROPPED_MDS)}) · pooled circulars: {len(corpus)} · "
+        f"per-MD: {dict(dist)}"
+    )
+
+
 @app.command("b5-waves")
 def b5_waves(
     import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(

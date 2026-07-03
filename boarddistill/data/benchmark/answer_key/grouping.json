@@ -1,0 +1,1021 @@
+{
+  "_meta": "SEALED answer key (B6 \u00a71.3) \u2014 circular_id -> md_id grouping. Never read by the proposal pipeline (benchmark_guard); scorer only via unseal_read.",
+  "circular_meta": {
+    "10122": {
+      "circular_ref": "",
+      "date": "16.20.000",
+      "subject": "Placement of Deposits with Other Banks by Primary (Urban) Co-operative Banks (UCBs)"
+    },
+    "10127": {
+      "circular_ref": "",
+      "date": "13/04.09",
+      "subject": "Priority Sector Lending-Targets and Classification"
+    },
+    "1013": {
+      "circular_ref": "DBOD.No.Dir.BC.50",
+      "date": "51/13.03",
+      "subject": "Opening of Saving Bank Accounts in the Name of certain Bodies/Organizations"
+    },
+    "10155": {
+      "circular_ref": "",
+      "date": "14/04.09",
+      "subject": "Regional Rural Banks - Priority Sector Lending \u2013 Targets and Classification"
+    },
+    "10339": {
+      "circular_ref": "",
+      "date": "23/04.09",
+      "subject": "Priority Sector Lending Certificates"
+    },
+    "10530": {
+      "circular_ref": "",
+      "date": "04.09.001",
+      "subject": "PSL-Targets and Classification \u2013 Bank loans to MFIs for on-lending- Qualifying asset \u2013 Revised loan limit"
+    },
+    "10549": {
+      "circular_ref": "",
+      "date": "10/04.09",
+      "subject": "Priority Sector Lending Status for Factoring Transactions"
+    },
+    "10587": {
+      "circular_ref": "",
+      "date": "14/04.09",
+      "subject": "Priority Sector Lending-Targets and Classifications: Lending to Non-corporate Farmers \u2013 System Wide Average of last three years"
+    },
+    "10634": {
+      "circular_ref": "",
+      "date": "17/04.09",
+      "subject": "Priority Sector Lending \u2013 Revised Reporting System"
+    },
+    "10636": {
+      "circular_ref": "DBR.NBD.No.26/16.13.218/2016-17 October 6",
+      "date": "26/16.13",
+      "subject": "Operating Guidelines for Small Finance Banks"
+    },
+    "1077": {
+      "circular_ref": "UBD.BP.No.35/16.26.00/2002-03 18-02-2003 Prices of Gov",
+      "date": "35/16.26",
+      "subject": "Prices of Government Securities in the Secondary Market"
+    },
+    "1088": {
+      "circular_ref": "DBOD.No.Dir.BC.75",
+      "date": "76/13.03",
+      "subject": "DBOD.No.Dir.BC.75 & 76/13.03.00/2002-03"
+    },
+    "1102": {
+      "circular_ref": "UBD.BPD.PCB.Cir.No.39/09.29.00/2002-03 13-03-2003 Trad",
+      "date": "39/09.29",
+      "subject": "Trading of Government Securities on Stock Exchange"
+    },
+    "11039": {
+      "circular_ref": "",
+      "date": "04.09.001",
+      "subject": "Small Finance Banks \u2013 Compendium of Guidelines on Financial Inclusion and Development"
+    },
+    "11040": {
+      "circular_ref": "UBD.BPD.(PCB)Cir.No.21/13.05.000/2010-11 dated Novembe",
+      "date": "22-23/92",
+      "subject": "RBI/2022-23/92 DoR.AUT.REC.No.27/24.01.041/2022-23 April 21, 2022 Master Direction \u2013 Credit Card and Debit Card \u2013 Issuance and Conduct Directions, 2022 In exercise of the powers conferred by Sections "
+    },
+    "11124": {
+      "circular_ref": "",
+      "date": "16/04.09",
+      "subject": "Priority Sector Lending \u2013 Targets and Classification: Lending to non-corporate farmers \u2013 System wide average of last three years"
+    },
+    "11223": {
+      "circular_ref": "",
+      "date": "18/04.09",
+      "subject": "Priority Sector Lending \u2013 Targets and Classification"
+    },
+    "11274": {
+      "circular_ref": "",
+      "date": "07/09.09",
+      "subject": "Revised guidelines on lending to Priority Sector for Primary (Urban) Co-operative Banks (UCBs)"
+    },
+    "11308": {
+      "circular_ref": "",
+      "date": "22/04.09",
+      "subject": "Priority Sector Lending \u2013 Targets and Classification"
+    },
+    "11329": {
+      "circular_ref": "",
+      "date": "16.20.000",
+      "subject": "Prudential Norms for Classification, Valuation and Operation of Investment Portfolio by Banks \u2013 Spreading of MTM losses and creation of Investment Fluctuation Reserve (IFR) by Co-operative banks"
+    },
+    "11333": {
+      "circular_ref": "",
+      "date": "07/04.09",
+      "subject": "Priority Sector Lending \u2013 Targets and Classification: Lending to non-corporate farmers \u2013 System wide average of last three years"
+    },
+    "11348": {
+      "circular_ref": "DBR.BP.BC.No.002/21.04.141/2018-19 (Repealed for UCBs",
+      "date": "02/21.04",
+      "subject": "Prudential Norms for Classification, Valuation and Operation of Investment Portfolio by banks \u2013 Valuation of State Development Loans"
+    },
+    "11360": {
+      "circular_ref": "",
+      "date": "02/16.20",
+      "subject": "Investments in Non-SLR Securities by Primary (Urban) Co-operative Banks \u2013 Approved counterparties for secondary market transactions"
+    },
+    "11376": {
+      "circular_ref": "",
+      "date": "08/04.09",
+      "subject": "Co-origination of loans by Banks and NBFCs for lending to priority sector"
+    },
+    "11550": {
+      "circular_ref": "",
+      "date": "04.09.01",
+      "subject": "Priority Sector Lending \u2013 Targets and Classification"
+    },
+    "11582": {
+      "circular_ref": "",
+      "date": "10/16.20",
+      "subject": "Sale of Securities held in Held to Maturity (HTM) Category - Accounting treatment"
+    },
+    "11604": {
+      "circular_ref": "",
+      "date": "04.09.01",
+      "subject": "Master Directions - Regional Rural Banks - Priority Sector Lending \u2013 Targets and Classification"
+    },
+    "11644": {
+      "circular_ref": "",
+      "date": "08/04.09",
+      "subject": "Master Directions \u2013 Priority Sector Lending \u2013 Small Finance Banks \u2013 Targets and Classification"
+    },
+    "11659": {
+      "circular_ref": "",
+      "date": "04.09.01",
+      "subject": "Priority Sector Lending \u2013 Lending by banks to NBFCs for On-Lending"
+    },
+    "11689": {
+      "circular_ref": "",
+      "date": "11/04.09",
+      "subject": "Priority Sector Targets- Lending to Non-Corporate Farmers-FY 2019-20"
+    },
+    "11692": {
+      "circular_ref": "",
+      "date": "12/04.09",
+      "subject": "Priority Sector Lending (PSL)-Classification of Exports under Priority Sector"
+    },
+    "1179": {
+      "circular_ref": "DBOD.No.Dir.BC.101",
+      "date": "02/13.01",
+      "subject": "Deposit under Non-Resident (External) Rupee Accounts (NRE Accounts)"
+    },
+    "1187": {
+      "circular_ref": "UBD.BPD.PCB.Cir.No.46/16.20.00/2002-03 17-05-2003 Plac",
+      "date": "46/16.20",
+      "subject": "Placement of deposits by non-scheduled UCBs with Scheduled UCBs"
+    },
+    "11874": {
+      "circular_ref": "DOR.(PCB).BPD.Cir.No.11/16.20.000/2019-20 20-04-2020 P",
+      "date": "11/16.20",
+      "subject": "Provisioning on interbank exposure of Primary (Urban) Co-operative Banks (UCBs) under All Inclusive Directions"
+    },
+    "11878": {
+      "circular_ref": "DOR.FSD.BC.No.67/24.01.041/2019-20 April 23",
+      "date": "67/24.01",
+      "subject": "Electronic Cards for Overdraft Accounts"
+    },
+    "11879": {
+      "circular_ref": "",
+      "date": "12/09.09",
+      "subject": "Non-achievement of Priority Sector Lending Targets by Primary (Urban) Co-operative Banks (UCBs) - Contribution to the Rural Infrastructure Development Fund (RIDF) and other funds"
+    },
+    "12081": {
+      "circular_ref": "",
+      "date": "10/04.09",
+      "subject": "Priority Sector Lending (PSL) - On-lending by Small Finance Banks (SFBs) to NBFC-MFIs"
+    },
+    "12108": {
+      "circular_ref": "DOR.MRG.REC.01/00-00-011/2023-24 April 1",
+      "date": "23-24/96",
+      "subject": "RBI/2023-24/96 DOR.MRG.REC.01/00-00-011/2023-24 April 1, 2023 All Primary (Urban) Co-operative Banks Madam / Sir, Master Direction \u2013 Reserve Bank of India (Classification, Valuation and Operation of I"
+    },
+    "1215": {
+      "circular_ref": "DBOD.No.FSC.BC.85",
+      "date": "86/24.91",
+      "subject": "Permission to Participate in Call/Notice/Term Money Market and Bills Rediscounting Scheme - Primary Dealers"
+    },
+    "1216": {
+      "circular_ref": "DBOD.No.FSC.BC.86/24.92.001/2002-03 26.03.2003 Permissi",
+      "date": "86/24.92",
+      "subject": "Permission to Participate in Call/Notice Money Market and Bills Rediscounting Scheme - Private Sector Mutual Funds"
+    },
+    "12249": {
+      "circular_ref": "DOR.REC.MRG.90/16.20.000/2021-22 03-03-2022 Investment",
+      "date": "90/16.20",
+      "subject": "Investment in Umbrella Organization (UO) by Primary (Urban) Co-operative Banks"
+    },
+    "12338": {
+      "circular_ref": "DOR.MRG.REC.46/00-00-011/2022-23 10-06-2022 Punjab and",
+      "date": "46/00-00",
+      "subject": "Punjab and Maharashtra Co-operative Bank Limited (Amalgamation with Unity Small Finance Bank Limited) Scheme, 2022 - Provisioning on Interbank Exposure and Valuation of Perpetual Non-Cumulative Prefer"
+    },
+    "1247": {
+      "circular_ref": "UBD.PCB.56/09.29.00/2003-04 02-07-2003 Investment Port",
+      "date": "56/09.29",
+      "subject": "Investment Portfolio of Banks \u2013Transactions in Securities"
+    },
+    "12515": {
+      "circular_ref": "DOR.CRE.REC.18/07.10.002/2023-24 June 8",
+      "date": "18/07.10",
+      "subject": "Priority Sector Lending (PSL) targets / sub-targets and contribution against shortfall in achievement of PSL targets \u2013 Primary (Urban) Co-operative Banks (UCBs) - Extension of time"
+    },
+    "12555": {
+      "circular_ref": "DBR.Dir.No.84/13.03.00/2015-16 March 03",
+      "date": "15-16/19",
+      "subject": "RBI/DBR/2015-16/19 Master Direction DBR.Dir.No.84/13.03.00/2015-16 March 03, 2016 ( Updated as on October 26, 2023 ) ( Updated as on September 16, 2022 ) ( Updated as on November 11, 2021 ) ( Updated "
+    },
+    "1257": {
+      "circular_ref": "UBD.BPD.PCB.Cir.No.2/09.80.00/2003-04 08-07-2003 Schem",
+      "date": "09.80.00",
+      "subject": "Scheme for Non-Competitive Bidding Facility in the Auction of Government of India dated securities"
+    },
+    "1258": {
+      "circular_ref": "UBD.BPD.Cir.No.1/09.11.00/2003-04 08-07-2003 Settlemen",
+      "date": "09.11.00",
+      "subject": "Settlement in respect of Government Securities Transaction \u2013 Compulsory settlement through Clearing Corporation of India Ltd."
+    },
+    "1263": {
+      "circular_ref": "",
+      "date": "37/07.01",
+      "subject": "Interest Rate on Deposits under Non-resident (External) Rupee Account (NRE Accounts)"
+    },
+    "1267": {
+      "circular_ref": "DBOD.No.Dir.BC.1",
+      "date": "13.01.09",
+      "subject": "Interest Rate on Deposits under Non-Resident (External) Rupee Accounts (NRE Accounts)"
+    },
+    "1305": {
+      "circular_ref": "DBOD.BL.BC.13/22.01.001/2003 18.08.2003 Section 23 of B",
+      "date": "13/22.01",
+      "subject": "Section 23 of Banking Regulation Act, 1949 - Takeover of Bank Branches"
+    },
+    "1342": {
+      "circular_ref": "",
+      "date": "26/13.01",
+      "subject": "Interest Rate on Deposits under Non-Resident (External) Rupee Accounts (NRE Accounts)"
+    },
+    "1378": {
+      "circular_ref": "",
+      "date": "36/13.01",
+      "subject": "Interest Rate on Deposits under Non-Resident (External) Rupee Accounts (NRE Accounts)"
+    },
+    "1486": {
+      "circular_ref": "UBD.BPD.PCB.Cir.33/09.11.00/2003-04 11-02-2004 Mainten",
+      "date": "33/09.11",
+      "subject": "Maintenance of CSGL Accounts"
+    },
+    "1499": {
+      "circular_ref": "",
+      "date": "69/13.03",
+      "subject": "Interest Rates on Rupee Deposits held in Domestic, Ordinary Non-Resident (NRO) and Non-Resident (External) (NRE) Accounts"
+    },
+    "1528": {
+      "circular_ref": "UBD.BPD.PCB.Cir.35/13.05.00/2003-04 27-02-2004 Placeme",
+      "date": "35/13.05",
+      "subject": "Placement of deposits by NSCBs with strong sch UCBs"
+    },
+    "1580": {
+      "circular_ref": "UBD.BPD.PCB.Cir.44/09.29.00/2003-04 12-04-2004 Sale of",
+      "date": "44/09.29",
+      "subject": "Sale of Govt. Securities allotted in the auctions for primary issues on the same day."
+    },
+    "1581": {
+      "circular_ref": "UBD.BPD.PCB.Cir.42/09.11.00/2003-04 01-04-2004 Mainten",
+      "date": "42/09.11",
+      "subject": "Maintenance of CSGL Accounts"
+    },
+    "1587": {
+      "circular_ref": "",
+      "date": "76/13.01",
+      "subject": "Interest Rates on Rupee Deposits held in Domestic, Ordinary Non-Resident (NRO) and Non-Resident (External) (NRE) Accounts"
+    },
+    "1607": {
+      "circular_ref": "UBD.BPD.PCB.Cir.45/16.20.00/2003-04 15-04-2004 Investm",
+      "date": "45/16.20",
+      "subject": "Investment in non-SLR debt securities by Primary (Urban) Co-operative Banks (UCBs)"
+    },
+    "1611": {
+      "circular_ref": "",
+      "date": "78/13.03",
+      "subject": "Committee on Procedures and Performances Audit on Public Services \u2013 Report No. III \u2013 Banking Operations : Deposit Accounts & Other Facilities relating to Individuals (Non-business)"
+    },
+    "1612": {
+      "circular_ref": "UBD.BPD.SUB.CIR.5/09.80.00/2003-04 28-04-2004 Transact",
+      "date": "09.80.00",
+      "subject": "Transactions in Government Securities (DVP III)"
+    },
+    "1794": {
+      "circular_ref": "UBD.No.PCB.Cir.5/16.20.00/2004-05 22-07-2004 List of A",
+      "date": "16.20.00",
+      "subject": "List of All India Financial Institutions"
+    },
+    "1807": {
+      "circular_ref": "UBD.PCB.Cir.No.6/12.05.01/2004-05 28-07-2004 Placement",
+      "date": "12.05.01",
+      "subject": "Placement of Deposits by Non Scheduled UCBs with Eligible Scheduled UCBs"
+    },
+    "1866": {
+      "circular_ref": "UBD.No.SUB.CIR.2/09.80.00/2004-05 19-08-2004 Transacti",
+      "date": "09.80.00",
+      "subject": "Transactions in Government Securities - DVP III Mode of Settlement"
+    },
+    "1923": {
+      "circular_ref": "UBD.No.PCB.Cir.16/16.20.00/2004-05 02-09-2004 Investme",
+      "date": "16/16.20",
+      "subject": "Investment Portfolio of Urban Co-operative Banks \u2013 classification and valuation of Investments"
+    },
+    "1998": {
+      "circular_ref": "DBOD.No.Dir.BC.51/13.03.00/2004-05 01.11.2004 Mid- term",
+      "date": "51/13.03",
+      "subject": "Mid- term Review of Annual Policy Statement for the year 2004-05 \u2013 Foreign Currency Non-Resident (Banks) Accounts"
+    },
+    "2020": {
+      "circular_ref": "",
+      "date": "54/13.03",
+      "subject": "Interest rates on Non-Resident (External) Rupee(NRE) Deposits"
+    },
+    "2140": {
+      "circular_ref": "UBD.BPD.No.37/12.05.01/2004-05 26-02-2005 Investment p",
+      "date": "37/12.05",
+      "subject": "Investment portfolio of banks \u2013 Reporting system"
+    },
+    "2167": {
+      "circular_ref": "",
+      "date": "41/16.20",
+      "subject": "Investment portfolio of Urban Co-operative Banks (UCBs) - Classification and Valuation of Investments"
+    },
+    "2293": {
+      "circular_ref": "",
+      "date": "49/09.80",
+      "subject": "UBD(PCB)/ Cir.49/09.80.00/2004-05"
+    },
+    "2294": {
+      "circular_ref": "",
+      "date": "50/09.80",
+      "subject": "Government Securities Transactions - T + 1 settlement - UCBs"
+    },
+    "2295": {
+      "circular_ref": "",
+      "date": "51/09.80",
+      "subject": "Sale of securities allotted in primary issues - UCBs"
+    },
+    "2392": {
+      "circular_ref": "DBOD.No.Dir.BC.22/13.03.00/2005-06 26.07.2005 FCNR (B)",
+      "date": "22/13.03",
+      "subject": "FCNR (B) Deposit Scheme"
+    },
+    "2619": {
+      "circular_ref": "",
+      "date": "48/13.03",
+      "subject": "Interest Rate on Non-Resident (External) Rupee (NRE) Deposits"
+    },
+    "2627": {
+      "circular_ref": "DBOD.FSD.BC.No.49/24.01.011/2005-06 November 21",
+      "date": "49/24.01",
+      "subject": "Credit Card Operations by banks"
+    },
+    "2718": {
+      "circular_ref": "DBOD.No.BL.BC.58/22.01.001/2005-06 25.01.2006 Financial",
+      "date": "58/22.01",
+      "subject": "Financial Inclusion by Extension of Banking Services - Use of Business Facilitators and Correspondents"
+    },
+    "2735": {
+      "circular_ref": "",
+      "date": "62/13.03",
+      "subject": "Interest Rates on Non-Resident Deposits"
+    },
+    "2797": {
+      "circular_ref": "",
+      "date": "41/16.20",
+      "subject": "Investment portfolio of Urban Co-operative Banks (UCBs) - Classification and Valuation of Investments"
+    },
+    "2798": {
+      "circular_ref": "DBOD.No.Dir.BC.75/13.03.00/2005-06 29.03.2006 Interest",
+      "date": "75/13.03",
+      "subject": "Interest Rate on FCNR(B) Deposits"
+    },
+    "2828": {
+      "circular_ref": "",
+      "date": "80/13.03",
+      "subject": "Interest Rate on Non-Resident (External) Rupee (NRE) Deposits"
+    },
+    "3068": {
+      "circular_ref": "",
+      "date": "09.29.000",
+      "subject": "'When issued' transactions in Govt. Securities"
+    },
+    "3257": {
+      "circular_ref": "DBOD.No.Dir.BC.54",
+      "date": "55/13.03",
+      "subject": "Interest Rates on Non-Resident (External) Rupee (NRE) Deposits and FCNR(B) deposits"
+    },
+    "3379": {
+      "circular_ref": "DBOD.No.Dir.BC.70/13. 01.01/2006-07 30.03.2007 Rounding",
+      "date": "01.01/2006",
+      "subject": "Rounding off cheques to the nearest rupee"
+    },
+    "3448": {
+      "circular_ref": "DBOD.No.Dir.BC.88",
+      "date": "89/13.03",
+      "subject": "Interest Rates on Non-Resident (External) Rupee (NRE) Deposits and FCNR(B) deposits"
+    },
+    "3676": {
+      "circular_ref": "DBOD.FSD.BC.19/24.01.011/2007-08 July 3",
+      "date": "19/24.01",
+      "subject": "Unsolicited Commercial Communications \u2013 National Do Not Call Registry"
+    },
+    "3717": {
+      "circular_ref": "",
+      "date": "09.18.300",
+      "subject": "Guidelines for issue of ATM-cum-Debit Cards by UCBs"
+    },
+    "3789": {
+      "circular_ref": "UBD.PCB.Cir.No.11/09.09.01/07-08 August 30",
+      "date": "11/09.09",
+      "subject": "Revised Guidelines on Lending to Priority Sector for UCBs"
+    },
+    "3807": {
+      "circular_ref": "UBD.PCB.Cir.No.11(126A)/09.09.001/2007-08 August 30",
+      "date": "09.09.001",
+      "subject": "Priority Sector Advances - List of minority Concentrated Districts"
+    },
+    "3817": {
+      "circular_ref": "",
+      "date": "14/16.20",
+      "subject": "Investments in Non-SLR securities by Primary (Urban) Cooperative Banks"
+    },
+    "387": {
+      "circular_ref": "DBOD.No.FSC.BC.120/24.01.011/2000-01 May 12",
+      "date": "20/24.01",
+      "subject": "Credit Card Business of Banks"
+    },
+    "3893": {
+      "circular_ref": "DBOD.FSD.BC.35/24.01.011/2007-08 October 19",
+      "date": "35/24.01",
+      "subject": "Unsolicited Commercial Communications \u2013National Do Not Call Registry"
+    },
+    "3898": {
+      "circular_ref": "",
+      "date": "39/13.03",
+      "subject": "Deposit schemes with lock-in period"
+    },
+    "3960": {
+      "circular_ref": "UBD.PCB.Cir.No.26/09.09.001/07-08 November 30",
+      "date": "26/09.09",
+      "subject": "Priority Sector lending-Revision of target - UCBs"
+    },
+    "4244": {
+      "circular_ref": "UBD.BPD.(PCB).No",
+      "date": "16.20.000",
+      "subject": "Valuation of Non-SLR securities issued by the Government of India"
+    },
+    "4379": {
+      "circular_ref": "DBOD.FSD.BC.23/24.01.01/2008-09 July 23",
+      "date": "23/24.01",
+      "subject": "Credit Card Operations of Banks"
+    },
+    "4471": {
+      "circular_ref": "DBOD.No.Dir.BC.44/13.03.00/2008-09 16.09.2008 Interest",
+      "date": "44/13.03",
+      "subject": "Interest Rates on Non-Resident (External) Rupee (NRE) Deposits and FCNR(B) Deposits"
+    },
+    "4472": {
+      "circular_ref": "DBOD.No.FSD.BC.45/24.01.011/2008-09 September 17",
+      "date": "45/24.01",
+      "subject": "Unsolicited Commercial Communications - National Do Not Call (NDNC) Registry"
+    },
+    "4483": {
+      "circular_ref": "DBOD.No.Leg.BC.47/09.07.005/2008-09 19.09.2008 Payment",
+      "date": "47/09.07",
+      "subject": "Payment of interest on accounts frozen by banks"
+    },
+    "4546": {
+      "circular_ref": "DBOD.No.Dir.BC.64/13.03.00/2008-09 15.10.2008 Interest",
+      "date": "64/13.03",
+      "subject": "Interest Rates on Non-Resident (External) Rupee (NRE) Deposits and FCNR (B) Deposits"
+    },
+    "458": {
+      "circular_ref": "DBOD.No.FSC.BC.125/24.92.001/2000-01 25.05.2001 Permiss",
+      "date": "25/24.92",
+      "subject": "Permission to Participate in Call/Notice/Term Money Market and Bills Rediscounting Scheme - Primary Dealers"
+    },
+    "4644": {
+      "circular_ref": "DBOD.No.Dir.BC.82/13.03.00/2008-09 15.11.2008 Interest",
+      "date": "82/13.03",
+      "subject": "Interest Rates on Non-Resident (External) Rupee (NRE) Deposits and FCNR(B) deposits"
+    },
+    "4808": {
+      "circular_ref": "",
+      "date": "46/16.20",
+      "subject": "Investments in Non-SLR securities by primary (urban) cooperative banks"
+    },
+    "4809": {
+      "circular_ref": "",
+      "date": "47/16.20",
+      "subject": "Placement of deposits with other banks by primary (urban) cooperative banks (UCBs)"
+    },
+    "492": {
+      "circular_ref": "DBOD.No.Dir.BC.104",
+      "date": "07/13.03",
+      "subject": "Monetary and Credit Policy for the year 2001-2002 - Interest Rate Policy"
+    },
+    "493": {
+      "circular_ref": "DBOD.No.Dir.BC.105",
+      "date": "07/13.03",
+      "subject": "Foreign Currency (Non-Resident) Accounts (Banks) Scheme"
+    },
+    "4949": {
+      "circular_ref": "DBOD.No.Dir.BC.128/13.03.00/2008-09 24.04.2009 Payment",
+      "date": "28/13.03",
+      "subject": "Payment of Interest on Savings Bank Account on a Daily Product Basis"
+    },
+    "5401": {
+      "circular_ref": "UBD.BPD.(PCB).Cir.No.27/16.20.000/2009-10 03-12-2009 M",
+      "date": "27/16.20",
+      "subject": "Master Circular on Investments by UCBs\u2013 Corrigendum"
+    },
+    "5508": {
+      "circular_ref": "DBOD.No.Dir.BC.77/13.03.00/2009-10 19.02.2010 Payment o",
+      "date": "77/13.03",
+      "subject": "Payment of Interest on Savings Bank Account on Daily Product Basis"
+    },
+    "5545": {
+      "circular_ref": "UBD.BPD(PCB).Cir.No.50/09.09.01/2009-10 March 25",
+      "date": "50/09.09",
+      "subject": "Categorisation of activities under Services"
+    },
+    "5606": {
+      "circular_ref": "DBOD.No.Dir.BC.91/13.03.00/2009-10 20.04.2010 Conversio",
+      "date": "91/13.03",
+      "subject": "Conversion of term deposits, daily deposits or recurring deposits for reinvestment in term deposits"
+    },
+    "5642": {
+      "circular_ref": "UBD.BPD.PCB.Cir.No.62/16.20.000/2009-10 30-04-2010 Cla",
+      "date": "62/16.20",
+      "subject": "Classification of investments in bonds issued by companies engaged in infrastructure activities"
+    },
+    "5646": {
+      "circular_ref": "UBD.BPD.PCB.Cir.No.63/16.20.000/2009-10 04-05-2010 Inv",
+      "date": "63/16.20",
+      "subject": "Investment in unlisted Non-SLR securities by Primary (Urban) Co-operative Banks"
+    },
+    "5710": {
+      "circular_ref": "UBD.CO.BSD./PCB.Cir./68/12.22.351/2009- 10 07-06-2010",
+      "date": "68/12.22",
+      "subject": "Placement of deposits with other banks by Primary (Urban) Co-operative Banks for availing clearing facility"
+    },
+    "5727": {
+      "circular_ref": "UBD.CO.BPD.No.70/09.09.001/2009-10 June 15",
+      "date": "70/09.09",
+      "subject": "Advances to MSEs engaged in exports and export credit to agriculture / allied activities"
+    },
+    "5866": {
+      "circular_ref": "DBOD.FSD.BC.No.25/24.01.011/2010-11 July 9",
+      "date": "25/24.01",
+      "subject": "Credit Card Operations of Banks"
+    },
+    "6224": {
+      "circular_ref": "UBD.(PCB).Cir.No.34/09.80.00/2010-11 18-01-2011 Accoun",
+      "date": "34/09.80",
+      "subject": "Accounting Procedure for Investments - Settlement Date Accounting"
+    },
+    "6268": {
+      "circular_ref": "",
+      "date": "36/16.20",
+      "subject": "Prudential Norms on Investment in Zero Coupon Bonds"
+    },
+    "6383": {
+      "circular_ref": "DBOD.Dir.BC.89",
+      "date": "90/13.03",
+      "subject": "DBOD.Dir.BC.89 & 90/13.03.00/2010-11"
+    },
+    "6450": {
+      "circular_ref": "UBD.BPD.(PCB)CIR.No.50/13.05.000(B)/2010-11 June 2",
+      "date": "50/13.05",
+      "subject": "Financing of Self Help Groups (SHGs) and Joint Liability Groups (JLGs) by Primary (Urban) Co-operative Banks (UCBs)"
+    },
+    "6454": {
+      "circular_ref": "",
+      "date": "09.06.2011",
+      "subject": "Remittance of assets by foreign nationals- Opening of NRO Accounts"
+    },
+    "648": {
+      "circular_ref": "DBOD.No.Dir.BC.93/13.01.09/2001-02 29.04.2002 Full Conv",
+      "date": "93/13.01",
+      "subject": "Full Convertibility of Deposit Schemes - Non-Resident Indians - NRNR Accounts & NRSR Accounts"
+    },
+    "653": {
+      "circular_ref": "DBOD.No.Dir.BC.97",
+      "date": "98/13.03",
+      "subject": "DBOD.No.Dir.BC.97 & 98/13.03.00/2001-02"
+    },
+    "6779": {
+      "circular_ref": "DBOD.Dir.BC.42/13.03.00/2011-12 25.10.2011 Deregulation",
+      "date": "42/13.03",
+      "subject": "Deregulation of Savings Bank Deposit Interest Rate-Guidelines"
+    },
+    "6838": {
+      "circular_ref": "DBOD.Dir.BC.59/13.03.00/2011-12 23.11.2011 Interest Rat",
+      "date": "59/13.03",
+      "subject": "Interest Rates on Non-resident (external) Rupee (NRE) Deposits and FCNR(B) Deposits"
+    },
+    "6875": {
+      "circular_ref": "DBOD.Dir.BC.64/13.03.00/2011-12 16.12.2011 Deregulation",
+      "date": "64/13.03",
+      "subject": "Deregulation of Interest Rates on NRE Deposits and NRO Accounts"
+    },
+    "6920": {
+      "circular_ref": "UBD.BPD(PCB).No.17/12.05.001/2011-12 03-01-2012 Negoti",
+      "date": "17/12.05",
+      "subject": "Negotiated Dealing System (NDS) \u2013 Order Matching (OM)- Grant of membership to UCBs"
+    },
+    "6965": {
+      "circular_ref": "DBOD.Dir.BC.75/13.03.00/2011-12 25.01 2012 Deregulation",
+      "date": "75/13.03",
+      "subject": "Deregulation of Savings Bank Deposit Interest Rate-Guidelines"
+    },
+    "7179": {
+      "circular_ref": "DBOD.No.Dir.BC.101",
+      "date": "02/13.03",
+      "subject": "DBOD.No.Dir.BC.101 & 102/13.03.00/2011-12"
+    },
+    "7221": {
+      "circular_ref": "UBD.BPD.(PCB).CIR.No.33/09.09.001/2011-12 May 18",
+      "date": "33/09.09",
+      "subject": "Priority Sector Lending -Indirect Finance to Housing Sector."
+    },
+    "7458": {
+      "circular_ref": "DBOD.Dir.BC.29/13.03.00/ 2012-13 18.07.2012 Interest Ra",
+      "date": "29/13.03",
+      "subject": "Interest Rates on Rupee Deposits held in Domestic, NRO and NRE Accounts"
+    },
+    "7459": {
+      "circular_ref": "DBOD.Dir.BC.30/13.03.00/2012-13 18.07.2012 Interest Rat",
+      "date": "30/13.03",
+      "subject": "Interest Rates on Deposits held in FCNR(B) Accounts"
+    },
+    "757": {
+      "circular_ref": "UBD.PCB.Cir.No.46/09.29.00/2001-02 06-06-2002 Investme",
+      "date": "46/09.29",
+      "subject": "Investment Portfolio of Banks \u2013Transaction in Securities"
+    },
+    "758": {
+      "circular_ref": "UBD.BR.No.47/16.26.00/2001-02 07-06-2002 Investments i",
+      "date": "47/16.26",
+      "subject": "Investments in Government and other approved securities by UCBs"
+    },
+    "759": {
+      "circular_ref": "UBD.CO.POT.PCB.Cir.No.48/09.29.00/2001-02 11-06-2002 C",
+      "date": "48/09.29",
+      "subject": "Certification of holding of securities in banks\u2019 investment portfolio"
+    },
+    "760": {
+      "circular_ref": "UBD.POT.No.49/09.80.00/2001-02 17-06-2002 Ready Forwar",
+      "date": "49/09.80",
+      "subject": "Ready Forward Contracts"
+    },
+    "7742": {
+      "circular_ref": "DBOD.No.FSD.BC.67/24.01.019/2012-13 December 12",
+      "date": "67/24.01",
+      "subject": "Issuance of Rupee denominated Co-branded Pre-paid Cards"
+    },
+    "7743": {
+      "circular_ref": "DBOD.No.FSD.BC.66/24.01.019/2012-13 December 12",
+      "date": "66/24.01",
+      "subject": "Guidelines for issue of Debit Cards by Banks"
+    },
+    "7825": {
+      "circular_ref": "DBOD.No.Dir.BC.74/13.03.00/2012-13 24.01.2013 Interest",
+      "date": "74/13.03",
+      "subject": "Interest Rates on and Premature Withdrawal of Rupee Term Deposits"
+    },
+    "8025": {
+      "circular_ref": "UBD.BPD(SCB).No.4/16.20.000/2012-13 10-06-2013 Ready F",
+      "date": "16.20.000",
+      "subject": "Ready Forward Contracts in Corporate Debt Securities"
+    },
+    "8235": {
+      "circular_ref": "DBOD.No.FSD.BC.30/24.01.001/2013-14 July 15",
+      "date": "30/24.01",
+      "subject": "Unsolicited Commercial Communications \u2013 National Customer Preference Register (NCPR)"
+    },
+    "8309": {
+      "circular_ref": "DBOD.No.Ret.BC.36/12.01.001/2013-14 dated August 14",
+      "date": "36/12.01",
+      "subject": "Advances extended in India against the incremental FCNR (B)/NRE deposits, qualifying for exemption from CRR/SLR requirements, as per the Reserve Bank\u2019s circulars DBOD.No.Ret.BC.36/12.01.001/2013-14 da"
+    },
+    "8310": {
+      "circular_ref": "DBOD.Dir.BC.38/13.03.00/2013-14 14.08.2013 Interest Rat",
+      "date": "38/13.03",
+      "subject": "Interest Rates on FCNR (B) Deposits"
+    },
+    "8311": {
+      "circular_ref": "DBOD.Dir.BC.40/13.03.00/2013-14 14.08.2013 Deregulation",
+      "date": "40/13.03",
+      "subject": "Deregulation of Interest Rates on Non-Resident (External) Rupee (NRE) Deposits"
+    },
+    "8349": {
+      "circular_ref": "UBD.BPD.(PCB).CIR.No.5/13.01.000/2013-14 August 27",
+      "date": "13.01.000",
+      "subject": "Section 42(1) of the Reserve Bank of India Act, 1934 and Section 18 and 24 of the Banking Regulation Act, 1949 (AACS) - FCNR (B) / NRE Deposits - Exemption from Maintenance of CRR / SLR and Exclusion "
+    },
+    "8375": {
+      "circular_ref": "UBD.BPD.(PCB).Cir.No.9/09.29.000/2013-14 04-09-2013 Se",
+      "date": "09.29.000",
+      "subject": "Secondary Market Transactions in Government Securities - Intra-day Short Selling"
+    },
+    "8390": {
+      "circular_ref": "UBD.CO.BPD.(PCB).Cir.No.13/09.22.010/2013-14 September",
+      "date": "13/09.22",
+      "subject": "Finance for Housing Schemes - Primary (Urban) Co-operative Banks - Loans for Repairs / Additions / Alterations - Enhancement of Limits"
+    },
+    "8552": {
+      "circular_ref": "UBD.BPD.(PCB).CIR.No.36/16.20.000/2013-14 01-11-2013 I",
+      "date": "36/16.20",
+      "subject": "Investment portfolio of Urban Co-operative Banks (UCBs) Classification, Valuation and Provisioning"
+    },
+    "8598": {
+      "circular_ref": "DBOD.No.Dir.BC.69/13.03.00/2013-14 29.11.2013 Periodici",
+      "date": "69/13.03",
+      "subject": "Periodicity of Payment of Interest on Rupee Savings/ Term Deposits"
+    },
+    "8601": {
+      "circular_ref": "DBOD.No.Dir.BC.71/13.03.00/2013-14 29.11.2013 Deregulat",
+      "date": "71/13.03",
+      "subject": "Deregulation of Interest Rates on Non-Resident (External) Rupee (NRE) Deposits"
+    },
+    "8602": {
+      "circular_ref": "DBOD.No.Dir.BC.73/13.03.00/2013-14 29.11.2013 Interest",
+      "date": "73/13.03",
+      "subject": "Interest Rates on FCNR (B) Deposits"
+    },
+    "8724": {
+      "circular_ref": "DBOD.No.Dir.BC.92/13.03.00/2013-14 31.01.2014 Interest",
+      "date": "92/13.03",
+      "subject": "Interest Rates on FCNR (B) Deposits"
+    },
+    "8725": {
+      "circular_ref": "DBOD.No.Dir.BC.90/13.03.00/2013-14 31.01.2014 Deregulat",
+      "date": "90/13.03",
+      "subject": "Deregulation of Interest Rates on Non-Resident (External) Rupee (NRE) Deposits"
+    },
+    "8869": {
+      "circular_ref": "UBD.BPD.(PCB).Cir.No.58/16.20.000/2013- 14 07-05-2014",
+      "date": "58/16.20",
+      "subject": "Investments in Market Infrastructure Companies by Primary (Urban) Cooperative Banks"
+    },
+    "8938": {
+      "circular_ref": "UBD.BPD.(PCB).Cir.No.72/13.01.000//2013-14 June 11",
+      "date": "72/13.01",
+      "subject": "Section 42(1) of the Reserve Bank of India Act, 1934 and Section 18 & 24 of the Banking Regulation Act, 1949 (AACS)- FCNR (B)/NRE deposits \u2013 Exemption from Maintenance of CRR/SLR and Exclusion from AB"
+    },
+    "910": {
+      "circular_ref": "DBOD.No.Dir.BC.30",
+      "date": "31/13.03",
+      "subject": "DBOD.No.Dir.BC.30 & 31/13.03.00/2002-03"
+    },
+    "9103": {
+      "circular_ref": "DBOD.BP.BC. No.25/08.12.014/2014-15 dated July 15",
+      "date": "25/08.12",
+      "subject": "Eligible amount for exemptions on issuance of long-term bonds for infrastructure and affordable housing as per circular DBOD.BP.BC. No.25/08.12.014/2014-15 dated July 15, 2014"
+    },
+    "9572": {
+      "circular_ref": "",
+      "date": "14.01.062",
+      "subject": "Credit Facilities to Minority Community \u2013 Inclusion of Jain Community under Section 2\u00a9 of National Commission of Minorities (NCM) Act, 1982"
+    },
+    "9607": {
+      "circular_ref": "",
+      "date": "14.01.062",
+      "subject": "Priority Sector Lending \u2013 Persons with Disabilities (PwD) \u2013 Inclusion under Weaker Sections"
+    },
+    "9665": {
+      "circular_ref": "DBR.No.Dir.BC.87/13.03.00/2014-15 16.04.2015 Interest",
+      "date": "87/13.03",
+      "subject": "Interest Rates on Deposits"
+    },
+    "9688": {
+      "circular_ref": "",
+      "date": "54/04.09",
+      "subject": "Priority Sector Lending-Targets and Classification"
+    },
+    "9946": {
+      "circular_ref": "",
+      "date": "16.20.000",
+      "subject": "DCBR.BPD.(PCB/RCB).Cir.No.1/16.20.000/2015-16"
+    },
+    "9948": {
+      "circular_ref": "",
+      "date": "08/04.09",
+      "subject": "Priority Sector Lending \u2013Targets and Classification"
+    },
+    "9977": {
+      "circular_ref": "DBR.Dir.BC.No.33/13.03.00/2015-16 06.08.2015 Interest",
+      "date": "33/13.03",
+      "subject": "Interest Rates on Deposits -Deposits of Army Group Insurance Directorate (AGID),Naval Group Insurance Fund (NGIF) and Air Force Group Insurance Society (AFGIS)"
+    }
+  },
+  "dropped_mds": [
+    {
+      "md": "MD-KYC (wb 11566, KYC/AML)",
+      "reason": "repeal appendix lists circulars as plain-text references (unlinked) \u2014 >15% unretrievable by Id (\u00a73.3); dropped symmetrically."
+    },
+    {
+      "md": "MD-FRAUDS (wb 10477, governance/fraud)",
+      "reason": "archived snapshots return a near-empty page; the linked appendix could not be retrieved (\u00a73.3)."
+    }
+  ],
+  "grouping": {
+    "10122": "MD-INVPF",
+    "10127": "MD-PSL",
+    "1013": "MD-DEPOSITS",
+    "10155": "MD-PSL",
+    "10339": "MD-PSL",
+    "10530": "MD-PSL",
+    "10549": "MD-PSL",
+    "10587": "MD-PSL",
+    "10634": "MD-PSL",
+    "10636": "MD-PSL",
+    "1077": "MD-INVPF",
+    "1088": "MD-DEPOSITS",
+    "1102": "MD-INVPF",
+    "11039": "MD-PSL",
+    "11040": "MD-CARDS",
+    "11124": "MD-PSL",
+    "11223": "MD-PSL",
+    "11274": "MD-PSL",
+    "11308": "MD-PSL",
+    "11329": "MD-INVPF",
+    "11333": "MD-PSL",
+    "11348": "MD-INVPF",
+    "11360": "MD-INVPF",
+    "11376": "MD-PSL",
+    "11550": "MD-PSL",
+    "11582": "MD-INVPF",
+    "11604": "MD-PSL",
+    "11644": "MD-PSL",
+    "11659": "MD-PSL",
+    "11689": "MD-PSL",
+    "11692": "MD-PSL",
+    "1179": "MD-DEPOSITS",
+    "1187": "MD-INVPF",
+    "11874": "MD-INVPF",
+    "11878": "MD-CARDS",
+    "11879": "MD-PSL",
+    "12081": "MD-PSL",
+    "12108": "MD-INVPF",
+    "1215": "MD-DEPOSITS",
+    "1216": "MD-DEPOSITS",
+    "12249": "MD-INVPF",
+    "12338": "MD-INVPF",
+    "1247": "MD-INVPF",
+    "12515": "MD-PSL",
+    "12555": "MD-DEPOSITS",
+    "1257": "MD-INVPF",
+    "1258": "MD-INVPF",
+    "1263": "MD-DEPOSITS",
+    "1267": "MD-DEPOSITS",
+    "1305": "MD-DEPOSITS",
+    "1342": "MD-DEPOSITS",
+    "1378": "MD-DEPOSITS",
+    "1486": "MD-INVPF",
+    "1499": "MD-DEPOSITS",
+    "1528": "MD-INVPF",
+    "1580": "MD-INVPF",
+    "1581": "MD-INVPF",
+    "1587": "MD-DEPOSITS",
+    "1607": "MD-INVPF",
+    "1611": "MD-DEPOSITS",
+    "1612": "MD-INVPF",
+    "1794": "MD-INVPF",
+    "1807": "MD-INVPF",
+    "1866": "MD-INVPF",
+    "1923": "MD-INVPF",
+    "1998": "MD-DEPOSITS",
+    "2020": "MD-DEPOSITS",
+    "2140": "MD-INVPF",
+    "2167": "MD-INVPF",
+    "2293": "MD-INVPF",
+    "2294": "MD-INVPF",
+    "2295": "MD-INVPF",
+    "2392": "MD-DEPOSITS",
+    "2619": "MD-DEPOSITS",
+    "2627": "MD-CARDS",
+    "2718": "MD-DEPOSITS",
+    "2735": "MD-DEPOSITS",
+    "2797": "MD-INVPF",
+    "2798": "MD-DEPOSITS",
+    "2828": "MD-DEPOSITS",
+    "3068": "MD-INVPF",
+    "3257": "MD-DEPOSITS",
+    "3379": "MD-DEPOSITS",
+    "3448": "MD-DEPOSITS",
+    "3676": "MD-CARDS",
+    "3717": "MD-CARDS",
+    "3789": "MD-PSL",
+    "3807": "MD-PSL",
+    "3817": "MD-INVPF",
+    "387": "MD-CARDS",
+    "3893": "MD-CARDS",
+    "3898": "MD-DEPOSITS",
+    "3960": "MD-PSL",
+    "4244": "MD-INVPF",
+    "4379": "MD-CARDS",
+    "4471": "MD-DEPOSITS",
+    "4472": "MD-CARDS",
+    "4483": "MD-DEPOSITS",
+    "4546": "MD-DEPOSITS",
+    "458": "MD-DEPOSITS",
+    "4644": "MD-DEPOSITS",
+    "4808": "MD-INVPF",
+    "4809": "MD-INVPF",
+    "492": "MD-DEPOSITS",
+    "493": "MD-DEPOSITS",
+    "4949": "MD-DEPOSITS",
+    "5401": "MD-INVPF",
+    "5508": "MD-DEPOSITS",
+    "5545": "MD-PSL",
+    "5606": "MD-DEPOSITS",
+    "5642": "MD-INVPF",
+    "5646": "MD-INVPF",
+    "5710": "MD-INVPF",
+    "5727": "MD-PSL",
+    "5866": "MD-CARDS",
+    "6224": "MD-INVPF",
+    "6268": "MD-INVPF",
+    "6383": "MD-DEPOSITS",
+    "6450": "MD-PSL",
+    "6454": "MD-DEPOSITS",
+    "648": "MD-DEPOSITS",
+    "653": "MD-DEPOSITS",
+    "6779": "MD-DEPOSITS",
+    "6838": "MD-DEPOSITS",
+    "6875": "MD-DEPOSITS",
+    "6920": "MD-INVPF",
+    "6965": "MD-DEPOSITS",
+    "7179": "MD-DEPOSITS",
+    "7221": "MD-PSL",
+    "7458": "MD-DEPOSITS",
+    "7459": "MD-DEPOSITS",
+    "757": "MD-INVPF",
+    "758": "MD-INVPF",
+    "759": "MD-INVPF",
+    "760": "MD-INVPF",
+    "7742": "MD-CARDS",
+    "7743": "MD-CARDS",
+    "7825": "MD-DEPOSITS",
+    "8025": "MD-INVPF",
+    "8235": "MD-CARDS",
+    "8309": "MD-PSL",
+    "8310": "MD-DEPOSITS",
+    "8311": "MD-DEPOSITS",
+    "8349": "MD-PSL",
+    "8375": "MD-INVPF",
+    "8390": "MD-PSL",
+    "8552": "MD-INVPF",
+    "8598": "MD-DEPOSITS",
+    "8601": "MD-DEPOSITS",
+    "8602": "MD-DEPOSITS",
+    "8724": "MD-DEPOSITS",
+    "8725": "MD-DEPOSITS",
+    "8869": "MD-INVPF",
+    "8938": "MD-PSL",
+    "910": "MD-DEPOSITS",
+    "9103": "MD-PSL",
+    "9572": "MD-PSL",
+    "9607": "MD-PSL",
+    "9665": "MD-DEPOSITS",
+    "9688": "MD-PSL",
+    "9946": "MD-CARDS",
+    "9948": "MD-PSL",
+    "9977": "MD-DEPOSITS"
+  },
+  "per_md": [
+    {
+      "listed": 58,
+      "md_id": "MD-DEPOSITS",
+      "missed": 0,
+      "retrieved": 58
+    },
+    {
+      "listed": 51,
+      "md_id": "MD-INVPF",
+      "missed": 0,
+      "retrieved": 51
+    },
+    {
+      "listed": 14,
+      "md_id": "MD-CARDS",
+      "missed": 0,
+      "retrieved": 14
+    },
+    {
+      "listed": 40,
+      "md_id": "MD-PSL",
+      "missed": 0,
+      "retrieved": 40
+    }
+  ]
+}

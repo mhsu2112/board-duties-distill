@@ -60,3 +60,25 @@ and cyber breadth.
 T1 acquires the traceability appendices into the sealed `data/benchmark/answer_key/` (path-guarded
 against the proposal pipeline in `adapters/benchmark_guard.py`) and the source circulars into
 `data/benchmark/corpus/`, under B1 cache/manifest discipline. **Not started — awaiting sign-off.**
+
+---
+
+## Acquisition outcome (post-sign-off, 2026-07-03)
+
+Acquired via web.archive.org (pre-2025 MD pages whose repeal appendices link each consolidated
+circular by Id) + live rbi.org.in for the circular texts. **163 circulars, 100% retrieval, 0
+missed:**
+
+| MD | domain | circulars |
+|---|---|---|
+| MD-DEPOSITS (Interest Rate on Deposits, 2016) | deposits / interest-rate | 58 |
+| MD-INVPF (Investment Portfolio Classification/Valuation) | prudential / investment | 51 |
+| MD-PSL (Priority Sector Lending) | lending / prudential | 40 |
+| MD-CARDS (Credit/Debit Card Issuance & Conduct, 2022) | conduct / payments | 14 |
+
+**Dropped at acquisition (§3.3, symmetric):** MD-KYC (repeal appendix lists circulars as
+plain-text references — unlinked, >15% unretrievable by Id) and MD-FRAUDS (archived snapshots
+near-empty). **Cost: the KYC/AML and governance/fraud domains** — a stated sample-spread
+limitation; the four acquired MDs still span deposits, prudential/investment, lending, and
+conduct. Answer key sealed at `data/benchmark/answer_key/grouping.json` (circular→MD, plus
+per-circular metadata, both held out); pooled corpus at `data/benchmark/corpus/` (163 texts).
