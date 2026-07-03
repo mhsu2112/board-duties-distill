@@ -332,6 +332,52 @@ def b3_distill(
         )
 
 
+@app.command("b3-intended")
+def b3_intended(
+    decompositions: Annotated[
+        Path, typer.Option("--decompositions", help="b0_decompositions.json.")
+    ] = Path("../b0_decompositions.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json (draft specs).")
+    ] = Path("outputs/import/imported_duties.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B3-T3: express the B0 decompositions as intended DutySpecs + Operation records.
+
+    Operations are scaffolded from b0 (operands verbatim); the LLM drafts only the
+    illustrative (NG2) consolidated duty language. Replay by default; ``--live`` populates."""
+    import json
+
+    from adapters.intended import build_all, intended_document
+    from distillcore.llm import LlmHarness
+
+    decs = json.loads(decompositions.read_text())["decompositions"]
+    imported = json.loads(import_json.read_text())
+    drafts = {d["duty_id"]: d for d in imported["duties"]}
+
+    harness = LlmHarness(cache_root=cache, live=live)
+    results = build_all(harness, decs, drafts)
+
+    out.mkdir(parents=True, exist_ok=True)
+    doc = intended_document(results)
+    (out / "intended.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B3-T3 intended layer:")
+    typer.echo(
+        f"  decompositions: {c['decompositions']} · operations: {c['operations']} · "
+        f"operand-coverage-ok: {c['operand_coverage_ok']}/{c['decompositions']} · "
+        f"unresolved operand refs: {c['unresolved_operand_refs']} · "
+        f"budget: {harness.budget.summary()}"
+    )
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[

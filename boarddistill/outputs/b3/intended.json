@@ -1,0 +1,1457 @@
+{
+  "_meta": "B3-T3 intended layer. B0 decompositions expressed as illustrative (NG2, non-authoritative) consolidated DutySpecs + Operation records scaffolded from b0_decompositions.json (operands verbatim). ASSIGN_DUTY_STANDARD amended to ASSIGN_DUTY_PARAMETER (B0 TODO-2). Nothing finalized.",
+  "by_cluster": [
+    "Audit committee & independence",
+    "Capital planning & stress testing",
+    "Internal control over financial reporting",
+    "Risk committee architecture",
+    "Risk-governance framework / strategy",
+    "cross-cutting",
+    "cross-cutting (largest structural lever)"
+  ],
+  "counts": {
+    "decompositions": 9,
+    "operand_coverage_ok": 7,
+    "operations": 33,
+    "unresolved_operand_refs": 33
+  },
+  "decompositions": [
+    {
+      "cluster": "Risk-governance framework / strategy",
+      "decomposition_id": "D1",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "regulation",
+            "claim": "[illustrative consolidation \u2014 NG2] The board of directors, as the source of authority and responsibility for sound policies and objectives, shall require management to establish, and shall approve, a single formal written enterprise risk-governance framework, together with the associated risk-management policies of the firm's global operations, and shall periodically review that framework and those policies. In discharging this duty the board (with senior management) shall set a clear risk appetite, strategic focus, and objectives; establish and maintain the culture, incentives, structure, and processes supporting sound risk management; give final approval to the written policies; and provide active oversight of risk-management processes and internal controls. Where the firm operates through one or more insured depository institutions, the requirement for a separate institution-level framework approval is deemed satisfied by an IDI addendum that documents the institution's reliance on, and any institution-specific supplements to, the approved enterprise framework, subject to any exception applicable to that framework-approval obligation.",
+            "confidence": 0.4,
+            "id": "claim-i:D1",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Risk-governance framework / strategy",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D1",
+        "entity": "both",
+        "instrument_id": "interagency_statement_plus_rule_safe_harbor",
+        "label": "[illustrative consolidation \u2014 NG2] Enterprise Risk-Governance Framework Approval with IDI Addendum",
+        "layer": "intended",
+        "legal_force": "regulation",
+        "object": "A single board-level approval of one enterprise risk-governance framework and strategy, satisfiable at the IDI level through an addendum that accommodates reliance on the enterprise framework.",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation)",
+        "source_citations": [
+          "b:RGC-02",
+          "b:RGC-07",
+          "s:GOV-15",
+          "s:GOV-20",
+          "s:FDR-01",
+          "s:FDR-02"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D1-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:RGC-02",
+            "b:RGC-07"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "entity_level_mirror",
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 2,
+          "conditions": [
+            "risk profiles substantially the same",
+            "IDI addendum covering bank-specific limits"
+          ],
+          "diagnostics_triggering": [],
+          "id": "op-D1-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "DEEM_SATISFIED",
+          "relation": null,
+          "satisfied_ref": "b:RGC-07",
+          "satisfying_ref": "b:RGC-02",
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D1-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:RGC-07"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "FACTOR_EXCEPTION",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 4,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D1-3",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "s:GOV-15",
+            "s:GOV-20",
+            "s:FDR-01",
+            "s:FDR-02"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 6,
+          "unresolved": 0
+        },
+        "resolved": [
+          "b:RGC-02",
+          "b:RGC-07",
+          "s:FDR-01",
+          "s:FDR-02",
+          "s:GOV-15",
+          "s:GOV-20"
+        ],
+        "unresolved": []
+      }
+    },
+    {
+      "cluster": "Risk committee architecture",
+      "decomposition_id": "D2",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "statute",
+            "claim": "[illustrative consolidation \u2014 NG2] A publicly traded bank holding company of the relevant size shall maintain a board risk committee that meets a single consolidated standard. That committee shall: (a) approve and periodically review the enterprise risk-management policies of the firm's global operations; (b) operate under a formal written charter approved by the board, be a standalone independent committee, and report directly to the board; (c) receive and review reports from the chief risk officer at least quarterly; and (d) be chaired by an independent director who meets SEC/NYSE independence standards and has risk-management experience. Where an insured depository institution within the consolidated organization would otherwise be subject to separate committee expectations, compliance with this consolidated risk-committee standard is deemed to satisfy those institution-level committee expectations, so that references formerly resolving through OCC Appendix D are read against the consolidated Reg YY standard. Notwithstanding this consolidation, bank-specific risk limits are retained and remain in force at the institution level.",
+            "confidence": 0.4,
+            "id": "claim-i:D2",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Risk committee architecture",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D2",
+        "entity": "BHC",
+        "instrument_id": "joint_rulemaking",
+        "label": "[illustrative consolidation \u2014 NG2] Consolidated Risk-Committee Standard with Streamlined IDI Certification",
+        "layer": "intended",
+        "legal_force": "statute",
+        "object": "A single risk-committee governance standard applied at the consolidated (BHC) level, with insured-depository-institution committee expectations deemed satisfied by that standard while bank-specific risk limits are preserved",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "One risk-committee standard at the consolidated level + streamlined IDI certification",
+        "source_citations": [
+          "b:RGC-02",
+          "b:RGC-03",
+          "b:RGC-04",
+          "b:RGC-05",
+          "b:RGC-01",
+          "b:RGC-02..05(RegYY standard)",
+          "AppD-committee-expectations",
+          "AppD-bank-committee-expectations",
+          "consolidated-committee-standard",
+          "bank-specific risk limits retained",
+          "OCC App. D -> Reg YY"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 5,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D2-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:RGC-02",
+            "b:RGC-03",
+            "b:RGC-04",
+            "b:RGC-05",
+            "b:RGC-01"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "implements",
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D2-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [
+            "b:RGC-02..05(RegYY standard)",
+            "AppD-committee-expectations"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "MERGE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 2,
+          "conditions": [
+            "streamlined IDI certification"
+          ],
+          "diagnostics_triggering": [],
+          "id": "op-D2-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "DEEM_SATISFIED",
+          "relation": null,
+          "satisfied_ref": "AppD-bank-committee-expectations",
+          "satisfying_ref": "consolidated-committee-standard",
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D2-3",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "bank-specific risk limits retained"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "FACTOR_EXCEPTION",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D2-4",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "OCC App. D -> Reg YY"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 5,
+          "unresolved": 6
+        },
+        "resolved": [
+          "b:RGC-01",
+          "b:RGC-02",
+          "b:RGC-03",
+          "b:RGC-04",
+          "b:RGC-05"
+        ],
+        "unresolved": [
+          "AppD-bank-committee-expectations",
+          "AppD-committee-expectations",
+          "OCC App. D -> Reg YY",
+          "b:RGC-02..05(RegYY standard)",
+          "bank-specific risk limits retained",
+          "consolidated-committee-standard"
+        ]
+      }
+    },
+    {
+      "cluster": "Audit committee & independence",
+      "decomposition_id": "D3",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "regulation",
+            "claim": "[illustrative consolidation \u2014 NG2] A covered institution shall apply one 'independent director' definition, canonicalized across Part 363 Appendix A independence criteria, SOX \u00a7301, Appendix D independence standards, and applicable NYSE/Nasdaq listing rules, so that a director determined independent under this unified definition is independent for all such regimes. The institution shall maintain a single, properly-composed audit committee that is deemed to satisfy Part 363, SOX \u00a7301, and exchange committee requirements together, harmonizing the FDICIA regime (b:AUD-01..03, including b:AUD-02 / Part 363 Appendix A) with the SOX regime. Consistent with s:BCG-14, for institutions over $3 billion the audit committee should include members with banking or financial-management expertise. Consistent with s:GOV-12, the audit committee shall meet directly with the Chief Audit Executive, support the internal-audit budget and staffing, and review the status of remediation.",
+            "confidence": 0.4,
+            "id": "claim-i:D3",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Audit committee & independence",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D3",
+        "entity": "both",
+        "instrument_id": "interagency_statement_plus_SEC_coordination",
+        "label": "[illustrative consolidation \u2014 NG2] Unified Independent Director and Single Audit Committee Standard",
+        "layer": "intended",
+        "legal_force": "regulation",
+        "object": "a single 'independent director' definition and one audit committee that satisfies FDICIA (Part 363), SOX \u00a7301, and exchange listing requirements simultaneously",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "Single 'independent director' definition; one audit committee satisfies all regimes",
+        "source_citations": [
+          "b:AUD-02(Part363 AppA)",
+          "SOX-301",
+          "AppD-independence",
+          "NYSE/Nasdaq",
+          "b:AUD-01..03(FDICIA regime)",
+          "SOX-regime",
+          "Part363+SOX301+exchange committee requirements",
+          "one properly-composed audit committee",
+          "s:BCG-14",
+          "s:GOV-12"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": false,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC",
+            "SEC"
+          ],
+          "arity": 4,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D3-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:AUD-02(Part363 AppA)",
+            "SOX-301",
+            "AppD-independence",
+            "NYSE/Nasdaq"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "CANONICALIZE_DEFINITION",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC",
+            "SEC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D3-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:AUD-01..03(FDICIA regime)",
+            "SOX-regime"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "parallel_distinct_purpose",
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC",
+            "SEC"
+          ],
+          "arity": 2,
+          "conditions": [
+            "reconciled independence test met"
+          ],
+          "diagnostics_triggering": [],
+          "id": "op-D3-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "DEEM_SATISFIED",
+          "relation": null,
+          "satisfied_ref": "Part363+SOX301+exchange committee requirements",
+          "satisfying_ref": "one properly-composed audit committee",
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC",
+            "SEC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D3-3",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "s:BCG-14",
+            "s:GOV-12"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 2,
+          "unresolved": 8
+        },
+        "resolved": [
+          "s:BCG-14",
+          "s:GOV-12"
+        ],
+        "unresolved": [
+          "AppD-independence",
+          "NYSE/Nasdaq",
+          "Part363+SOX301+exchange committee requirements",
+          "SOX-301",
+          "SOX-regime",
+          "b:AUD-01..03(FDICIA regime)",
+          "b:AUD-02(Part363 AppA)",
+          "one properly-composed audit committee"
+        ]
+      }
+    },
+    {
+      "cluster": "Internal control over financial reporting",
+      "decomposition_id": "D4",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "guidance",
+            "claim": "[illustrative consolidation \u2014 NG2] An institution that obtains an external auditor attestation on internal control over financial reporting under SOX 404(b) shall be deemed to satisfy the corresponding ICFR assessment and attestation requirement of Part 363 (FDICIA), with the two regimes related to one another such that the SOX 404(b) attestation discharges the overlapping FDICIA obligation. The reporting cycle for the Part 363 requirement is aligned from a calendar-year basis to the institution's fiscal-year basis to match the SOX regime. Compliance with designated safety-and-soundness laws is not absorbed by this cross-reference and is retained as a separate FDICIA annex obligation.",
+            "confidence": 0.4,
+            "id": "claim-i:D4",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Internal control over financial reporting",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D4",
+        "entity": "both",
+        "instrument_id": "rule_amendment(Part 363)",
+        "label": "[illustrative consolidation \u2014 NG2] Cross-Reference of SOX 404(b) to Satisfy FDICIA ICFR with Aligned Cycles",
+        "layer": "intended",
+        "legal_force": "guidance",
+        "object": "Consolidation of an institution's ICFR assessment and attestation obligations so that a SOX 404(b) attestation is deemed to satisfy the corresponding Part 363 FDICIA ICFR assessment requirement, on a fiscal-year cycle, while preserving safety-and-soundness law compliance as an annex.",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "SOX 404(b) satisfies FDICIA ICFR by cross-reference; align cycles",
+        "source_citations": [
+          "Part363-ICFR-assessment",
+          "SOX-404b-attestation",
+          "designated safety-and-soundness laws compliance retained as annex",
+          "FDICIA-annex",
+          "SOX-regime",
+          "Part363 calendar-year cycle -> fiscal-year"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FDIC"
+          ],
+          "arity": 2,
+          "conditions": [
+            "external attestation retained"
+          ],
+          "diagnostics_triggering": [],
+          "id": "op-D4-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "DEEM_SATISFIED",
+          "relation": null,
+          "satisfied_ref": "Part363-ICFR-assessment",
+          "satisfying_ref": "SOX-404b-attestation",
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FDIC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D4-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "designated safety-and-soundness laws compliance retained as annex"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "FACTOR_EXCEPTION",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FDIC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D4-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "FDICIA-annex",
+            "SOX-regime"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "parallel_distinct_purpose",
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FDIC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D4-3",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [
+            "Part363 calendar-year cycle -> fiscal-year"
+          ],
+          "outputs": [],
+          "parameter": "cadence",
+          "primitive": "ASSIGN_DUTY_PARAMETER",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 0,
+          "unresolved": 6
+        },
+        "resolved": [],
+        "unresolved": [
+          "FDICIA-annex",
+          "Part363 calendar-year cycle -> fiscal-year",
+          "Part363-ICFR-assessment",
+          "SOX-404b-attestation",
+          "SOX-regime",
+          "designated safety-and-soundness laws compliance retained as annex"
+        ]
+      }
+    },
+    {
+      "cluster": "Capital planning & stress testing",
+      "decomposition_id": "D5",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "regulation",
+            "claim": "[illustrative consolidation \u2014 NG2] The board (or a designated committee) shall retain and exercise the capital-action decisions reserved to it: at least annually and before submission, it shall review the robustness of the capital-adequacy process; annually review and approve the firm's capital plan, which must contain a board-approved capital policy; approve capital-planning policies and capital-planning activities and strategies and review those policies at least annually; and incorporate into its decisions the uncertainties in projections and the limitations of the capital-planning process. Distinct from these board decisions, senior management is responsible for the technical methodology work and reporting, providing the board a briefing on capital adequacy at least quarterly (or more often as warranted). The elaborations formerly carried in SR 15-18 are consolidated into and read against 12 CFR 225.8, and the SR 09-4 remnant reflected in s:CAP-11 is repealed.",
+            "confidence": 0.4,
+            "id": "claim-i:D5",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Capital planning & stress testing",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D5",
+        "entity": "BHC",
+        "instrument_id": "guidance_action_plus_conforming_rule_note",
+        "label": "[illustrative consolidation \u2014 NG2] Board capital-action decisions separated from technical methodology reporting",
+        "layer": "intended",
+        "legal_force": "regulation",
+        "object": "Allocation of the board's capital-planning duties, separating board-level capital-action approvals from senior management's technical methodology briefings and reporting",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "Separate board capital-action decisions from technical methodology reporting",
+        "source_citations": [
+          "board capital-planning duty bundle (b:CAP-02, b:CAP-03, s:CAP-01..09)",
+          "b:CAP-02",
+          "b:CAP-03",
+          "s:CAP-02",
+          "s:CAP-05",
+          "s:CAP-03",
+          "s:CAP-06",
+          "b:CAP-04(part)",
+          "SR 15-18 elaborations -> 12 CFR 225.8",
+          "s:CAP-11(SR 09-4 remnant)"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": false,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D5-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "board capital-planning duty bundle (b:CAP-02, b:CAP-03, s:CAP-01..09)"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "SPLIT",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 4,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D5-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:CAP-02",
+            "b:CAP-03",
+            "s:CAP-02",
+            "s:CAP-05"
+          ],
+          "outputs": [],
+          "parameter": "verb_standard",
+          "primitive": "ASSIGN_DUTY_PARAMETER",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 3,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D5-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "s:CAP-03",
+            "s:CAP-06",
+            "b:CAP-04(part)"
+          ],
+          "outputs": [],
+          "parameter": "verb_standard",
+          "primitive": "ASSIGN_DUTY_PARAMETER",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D5-3",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "SR 15-18 elaborations -> 12 CFR 225.8"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D5-4",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "s:CAP-11(SR 09-4 remnant)"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "REPEAL",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 6,
+          "unresolved": 4
+        },
+        "resolved": [
+          "b:CAP-02",
+          "b:CAP-03",
+          "s:CAP-02",
+          "s:CAP-03",
+          "s:CAP-05",
+          "s:CAP-06"
+        ],
+        "unresolved": [
+          "SR 15-18 elaborations -> 12 CFR 225.8",
+          "b:CAP-04(part)",
+          "board capital-planning duty bundle (b:CAP-02, b:CAP-03, s:CAP-01..09)",
+          "s:CAP-11(SR 09-4 remnant)"
+        ]
+      }
+    },
+    {
+      "cluster": "Risk-governance framework / strategy",
+      "decomposition_id": "D6",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "guidance",
+            "claim": "[illustrative consolidation \u2014 NG2] A covered institution shall maintain a risk-governance framework consistent with the governance attributes set out at s:GOV-02 through s:GOV-13 (as relocated from SR 12-17). For each such attribute, the responsible actor's obligation is calibrated per the assigned duty parameter: where a duty is designated 'ensure', the board or senior management as specified shall ensure the attribute is established and effective; where a duty is designated 'oversee', the board shall oversee its implementation and functioning. Upon codification of these attributes into Regulation YY, SR 12-17 is retired, and the relocated attributes carry the same governance content as the retired letter.",
+            "confidence": 0.4,
+            "id": "claim-i:D6",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Risk-governance framework / strategy",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D6",
+        "entity": "both",
+        "instrument_id": "rule_amendment_notice_and_comment",
+        "label": "[illustrative consolidation \u2014 NG2] Codified Risk-Governance Framework Duties",
+        "layer": "intended",
+        "legal_force": "guidance",
+        "object": "Board and senior management responsibilities for the risk-governance framework and strategy, relocated from SR 12-17 into Regulation YY",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "Codify SR 12-17 governance content into Reg YY; retire the letter",
+        "source_citations": [
+          "s:GOV-02..13 (SR 12-17 attributes)",
+          "'ensure' vs 'oversee' per duty",
+          "SR 12-17"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D6-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [
+            "s:GOV-02..13 (SR 12-17 attributes)"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RELOCATE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D6-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "'ensure' vs 'oversee' per duty"
+          ],
+          "outputs": [],
+          "parameter": "verb_standard",
+          "primitive": "ASSIGN_DUTY_PARAMETER",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D6-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "SR 12-17"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "REPEAL",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 0,
+          "unresolved": 3
+        },
+        "resolved": [],
+        "unresolved": [
+          "'ensure' vs 'oversee' per duty",
+          "SR 12-17",
+          "s:GOV-02..13 (SR 12-17 attributes)"
+        ]
+      }
+    },
+    {
+      "cluster": "Risk-governance framework / strategy",
+      "decomposition_id": "D7",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "guidance",
+            "claim": "[illustrative consolidation \u2014 NG2] The board of directors shall conduct a single, periodic self-assessment of its own effectiveness, satisfying in one exercise the assessment obligations otherwise arising under both frameworks. This consolidated assessment merges the self-assessment described in Appendix D-III.F with the board-effectiveness assessment described in SR 21-3, so that the board performs one interagency-recognized evaluation rather than separate, duplicative assessments. Where both frameworks cite a common surviving provision, that surviving provision governs the single consolidated assessment and is not applied twice.",
+            "confidence": 0.4,
+            "id": "claim-i:D7",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "Risk-governance framework / strategy",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D7",
+        "entity": "both",
+        "instrument_id": "joint_statement",
+        "label": "[illustrative consolidation \u2014 NG2] Unified board-effectiveness self-assessment",
+        "layer": "intended",
+        "legal_force": "guidance",
+        "object": "a single interagency assessment of board effectiveness that consolidates the parallel self-assessment duties currently expressed in the two supervisory frameworks",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "Single interagency board-effectiveness assessment",
+        "source_citations": [
+          "AppD-III.F self-assessment",
+          "SR 21-3 assessment",
+          "survivor cited by both frameworks"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D7-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "AppD-III.F self-assessment",
+            "SR 21-3 assessment"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "MERGE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D7-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "survivor cited by both frameworks"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 0,
+          "unresolved": 3
+        },
+        "resolved": [],
+        "unresolved": [
+          "AppD-III.F self-assessment",
+          "SR 21-3 assessment",
+          "survivor cited by both frameworks"
+        ]
+      }
+    },
+    {
+      "cluster": "cross-cutting (largest structural lever)",
+      "decomposition_id": "D8",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "guidance",
+            "claim": "[illustrative consolidation \u2014 NG2] Where a bank holding company and its insured depository institution are each subject to the corresponding duty in this mirror pair, the two duties are treated as one consolidated duty across the vertical structure. Satisfaction of the duty at the insured depository institution level is deemed to satisfy the corresponding duty at the bank holding company level, permitting reliance across the pair rather than duplicative discharge. This accommodation does not extend to any bank-specific content of the duty, which is retained and must be satisfied at the level to which it specifically applies.",
+            "confidence": 0.4,
+            "id": "claim-i:D8",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "cross-cutting (largest structural lever)",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D8",
+        "entity": "both",
+        "instrument_id": "rulemaking_possibly_statutory",
+        "label": "[illustrative consolidation \u2014 NG2] Vertical HC/IDI reliance accommodation with bank-specific carve-out",
+        "layer": "intended",
+        "legal_force": "guidance",
+        "object": "Consolidation of parallel bank holding company and insured depository institution duties into a single duty satisfiable at one level of the vertical structure, retaining any bank-specific content.",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "Vertical HC/IDI rationalization via expanded reliance accommodation (schema, per mirror pair)",
+        "source_citations": [
+          "<BHC_duty>",
+          "<IDI_duty>",
+          "bank-specific content retained"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC"
+          ],
+          "arity": 2,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D8-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "<BHC_duty>",
+            "<IDI_duty>"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "entity_level_mirror",
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC"
+          ],
+          "arity": 2,
+          "conditions": [
+            "documented reliance",
+            "risk profiles substantially the same"
+          ],
+          "diagnostics_triggering": [],
+          "id": "op-D8-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "high",
+          "operands": [],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "DEEM_SATISFIED",
+          "relation": null,
+          "satisfied_ref": "<IDI_duty>",
+          "satisfying_ref": "<BHC_duty>",
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "FRB",
+            "OCC",
+            "FDIC"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D8-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "bank-specific content retained"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "FACTOR_EXCEPTION",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 0,
+          "unresolved": 3
+        },
+        "resolved": [],
+        "unresolved": [
+          "<BHC_duty>",
+          "<IDI_duty>",
+          "bank-specific content retained"
+        ]
+      }
+    },
+    {
+      "cluster": "cross-cutting",
+      "decomposition_id": "D9",
+      "intended_spec": {
+        "board_level": "board",
+        "cadence": "none_specified",
+        "claims": [
+          {
+            "as_of_valid": false,
+            "authority_type": "regulation",
+            "claim": "[illustrative consolidation \u2014 NG2] The board (or, where an operand so provides, a designated board-level committee) shall exercise a recurring oversight meta-duty comprising three functions across the bank's risk-governance, capital-adequacy and capital-planning, strategic-planning, stress-testing, audit, credit, and asset-liability domains. First, the board shall approve the governing frameworks, policies, strategies, and risk appetites for each such domain \u2014 including requiring management to establish and then approving a formal written risk-governance framework, approving the three-year strategic plan with its risk assessment, approving capital-planning policies and activities, approving written stress-testing policies, giving final approval to written policies and setting a clear risk appetite and strategic objectives, and, through the relevant board-level committees, establishing lending strategy and credit risk appetite/limits (credit committee) and asset-liability strategies, rate-risk appetites, and limits (ALCO). Second, the board or its designated committee shall review these frameworks and policies at least annually and, where applicable, before submission \u2014 including reviewing the robustness of capital-adequacy assessment, reviewing capital-planning policies annually, annually reviewing stress-testing policies, and reviewing/approving credit and liquidity exposures within the committees' remit. Third, the board and its committees shall receive and monitor reports on implementation and performance \u2014 including monitoring strategic-plan implementation, overseeing the audit program and confirming comprehensive coverage while holding management accountable for internal controls, and receiving functional reporting from the chief audit executive to the audit committee on the audit plan and findings. This consolidated meta-duty is expressed as a General Part provision to which the individual domain instruments resolve by cross-reference.",
+            "confidence": 0.4,
+            "id": "claim-i:D9",
+            "source_span_ids": [],
+            "support_type": "paraphrased",
+            "verifier_status": "unverified"
+          }
+        ],
+        "cluster": "cross-cutting",
+        "confidence": 0.4,
+        "consequence": "none_specified",
+        "currency_status": "active",
+        "director_class": "all_directors",
+        "duty_id": "i:D9",
+        "entity": "both",
+        "instrument_id": "varies",
+        "label": "[illustrative consolidation \u2014 NG2] Board Governance Meta-Duty: Approve, Review, and Oversee",
+        "layer": "intended",
+        "legal_force": "regulation",
+        "object": "the board's recurring meta-duty to approve governance frameworks, review them at least annually, and receive reports across risk, capital, strategy, and audit domains",
+        "snapshot_dates": {
+          "consolidation_as_of": "2026-06-30",
+          "current_as_of": "2026-07-01",
+          "inventory_as_of": "2026-06-05"
+        },
+        "source": "Recurring meta-duty (approve framework / review annually / receive reports) -> General Part",
+        "source_citations": [
+          "b:RGC-07",
+          "b:RGC-10",
+          "b:CAP-02",
+          "s:CAP-05",
+          "s:STR-02",
+          "s:IAU-01",
+          "s:BCG-02",
+          "s:BCG-03",
+          "s:BCG-04",
+          "s:FDR-02",
+          "each domain instrument -> general section"
+        ],
+        "trigger": null,
+        "verb_standard": "none_specified"
+      },
+      "operand_coverage_ok": true,
+      "operations": [
+        {
+          "actor_with_authority": [
+            "per instrument owner"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D9-0",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "INTRODUCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "per instrument owner"
+          ],
+          "arity": 10,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D9-1",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "b:RGC-07",
+            "b:RGC-10",
+            "b:CAP-02",
+            "s:CAP-05",
+            "s:STR-02",
+            "s:IAU-01",
+            "s:BCG-02",
+            "s:BCG-03",
+            "s:BCG-04",
+            "s:FDR-02"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "ELEVATE_GENERAL_RULE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        },
+        {
+          "actor_with_authority": [
+            "per instrument owner"
+          ],
+          "arity": 1,
+          "conditions": [],
+          "diagnostics_triggering": [],
+          "id": "op-D9-2",
+          "instrument_required": null,
+          "inverse": null,
+          "normative_load": "low",
+          "operands": [
+            "each domain instrument -> general section"
+          ],
+          "outputs": [],
+          "parameter": null,
+          "primitive": "RESOLVE_CROSS_REFERENCE",
+          "relation": null,
+          "satisfied_ref": null,
+          "satisfying_ref": null,
+          "scope": "duty_level"
+        }
+      ],
+      "resolution": {
+        "counts": {
+          "resolved": 10,
+          "unresolved": 1
+        },
+        "resolved": [
+          "b:CAP-02",
+          "b:RGC-07",
+          "b:RGC-10",
+          "s:BCG-02",
+          "s:BCG-03",
+          "s:BCG-04",
+          "s:CAP-05",
+          "s:FDR-02",
+          "s:IAU-01",
+          "s:STR-02"
+        ],
+        "unresolved": [
+          "each domain instrument -> general section"
+        ]
+      }
+    }
+  ],
+  "unresolved_operand_refs": [
+    "'ensure' vs 'oversee' per duty",
+    "<BHC_duty>",
+    "<IDI_duty>",
+    "AppD-III.F self-assessment",
+    "AppD-bank-committee-expectations",
+    "AppD-committee-expectations",
+    "AppD-independence",
+    "FDICIA-annex",
+    "NYSE/Nasdaq",
+    "OCC App. D -> Reg YY",
+    "Part363 calendar-year cycle -> fiscal-year",
+    "Part363+SOX301+exchange committee requirements",
+    "Part363-ICFR-assessment",
+    "SOX-301",
+    "SOX-404b-attestation",
+    "SOX-regime",
+    "SR 12-17",
+    "SR 15-18 elaborations -> 12 CFR 225.8",
+    "SR 21-3 assessment",
+    "b:AUD-01..03(FDICIA regime)",
+    "b:AUD-02(Part363 AppA)",
+    "b:CAP-04(part)",
+    "b:RGC-02..05(RegYY standard)",
+    "bank-specific content retained",
+    "bank-specific risk limits retained",
+    "board capital-planning duty bundle (b:CAP-02, b:CAP-03, s:CAP-01..09)",
+    "consolidated-committee-standard",
+    "designated safety-and-soundness laws compliance retained as annex",
+    "each domain instrument -> general section",
+    "one properly-composed audit committee",
+    "s:CAP-11(SR 09-4 remnant)",
+    "s:GOV-02..13 (SR 12-17 attributes)",
+    "survivor cited by both frameworks"
+  ]
+}
