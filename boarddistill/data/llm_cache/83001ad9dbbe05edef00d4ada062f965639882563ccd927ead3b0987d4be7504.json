@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "83001ad9dbbe05edef00d4ada062f965639882563ccd927ead3b0987d4be7504",
+  "response_text": "{\"cluster\": \"Audit committee & independence\", \"diagnostics\": [{\"kind\": \"duplicate_duty\", \"target_ids\": [\"b:AUD-01\", \"b:AUD-02\", \"b:AUD-03\"], \"evidence_quote\": \"(b) Committees of large institutions. The audit committee of any insured depository institution with total assets of more than $5 billion, as adjusted from time to time in accordance with 12 CFR 314.1, as of the beginning of its fiscal year shall include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the institution.\", \"rationale\": \"These three duties quote the identical regulatory text stating the same composition requirement for large-institution audit committees.k, ...\"}]}"
+}

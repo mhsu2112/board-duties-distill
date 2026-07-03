@@ -378,6 +378,83 @@ def b3_intended(
     )
 
 
+@app.command("b3-diagnose")
+def b3_diagnose(
+    decompositions: Annotated[
+        Path, typer.Option("--decompositions", help="b0_decompositions.json.")
+    ] = Path("../b0_decompositions.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json (draft specs).")
+    ] = Path("outputs/import/imported_duties.json"),
+    intended: Annotated[
+        Path, typer.Option("--intended", help="B3-T3 intended.json.")
+    ] = Path("outputs/b3/intended.json"),
+    distilled: Annotated[
+        Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
+    ] = Path("outputs/b3/as_built_distilled.json"),
+    verification: Annotated[
+        Path, typer.Option("--verification", help="b2 verification.json.")
+    ] = Path("outputs/b2/verification.json"),
+    graph: Annotated[
+        Path, typer.Option("--graph", help="Instrument graph json.")
+    ] = Path("data/graph/us-gsib_v1.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B3-T4: consolidation findings (mechanical classify) + LLM diagnostics per MVP cluster."""
+    import json
+
+    from adapters.diagnose import diagnose_document, run_diagnose
+    from distillcore.llm import LlmHarness
+
+    decs = json.loads(decompositions.read_text())["decompositions"]
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    intended_doc = json.loads(intended.read_text())
+    distilled_doc = json.loads(distilled.read_text())
+    graph_doc = json.loads(graph.read_text())
+    verif = json.loads(verification.read_text())
+
+    records = {r["claim_id"]: r for r in verif["records"]}
+    spans = {s["id"]: s for s in verif["spans"]}
+    excerpts: dict[str, str] = {}
+    cluster_of: dict[str, str] = {}
+    for row in verif["rows"]:
+        cluster_of[row["duty_id"]] = row.get("cluster", "")
+        rec = records.get(f"claim-{row['duty_id']}")
+        if rec and rec["checked_span_ids"]:
+            span = spans.get(rec["checked_span_ids"][0])
+            if span:
+                excerpts[row["duty_id"]] = span["quote"]
+
+    harness = LlmHarness(cache_root=cache, live=live)
+    result = run_diagnose(
+        harness, decs, drafts, intended_doc, graph_doc, distilled_doc, excerpts, cluster_of
+    )
+    out.mkdir(parents=True, exist_ok=True)
+    doc = diagnose_document(result)
+    (out / "findings.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B3-T4 diagnose + classify:")
+    typer.echo(
+        f"  consolidation findings: {c['consolidation_findings']} · diagnostics: "
+        f"{c['diagnostic_findings']} · in-review: {c['in_review']} · effect classes: "
+        f"{c['effect_classes']} · budget: {harness.budget.summary()}"
+    )
+    dv = doc["duplicate_divergence"]["counts"]
+    typer.echo(
+        f"  duplicate divergence — agreed: {dv['agreed']} · b0-only: {dv['b0_only']} · "
+        f"llm-only: {dv['llm_only']}"
+    )
+    if c["anchor_failures"]:
+        typer.echo(f"  ⚠ diagnostic anchor failures: {c['anchor_failures']}", err=True)
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[
