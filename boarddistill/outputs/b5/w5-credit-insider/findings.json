@@ -1,0 +1,218 @@
+{
+  "_meta": "B5-T3 diagnostics for wave w5-credit-insider. LLM diagnostics per cluster (span-anchored) + deterministic cross-entity mirror pairs; every diagnostic 0-op \u21d2 unresolved effect, needs_review default. Consolidation findings come from the B5-T4 lever decomposition.",
+  "anchor_failures": [],
+  "counts": {
+    "anchor_failures": 0,
+    "diagnostic_findings": 10,
+    "effect_classes": {
+      "unresolved": 10
+    },
+    "in_review": 10
+  },
+  "duplication_families": {
+    "mirror_pair": {
+      "count": 0,
+      "finding_ids": []
+    },
+    "restatement": {
+      "count": 2,
+      "finding_ids": [
+        "w5-credit-insider-dx-ins-0",
+        "w5-credit-insider-dx-ins-1"
+      ]
+    }
+  },
+  "finding_cluster": {
+    "w5-credit-insider-dx-cre-0": "Credit risk governance",
+    "w5-credit-insider-dx-cre-1": "Credit risk governance",
+    "w5-credit-insider-dx-cre-2": "Credit risk governance",
+    "w5-credit-insider-dx-ins-0": "Insider / affiliate / related-party",
+    "w5-credit-insider-dx-ins-1": "Insider / affiliate / related-party",
+    "w5-credit-insider-dx-ins-2": "Insider / affiliate / related-party",
+    "w5-credit-insider-dx-ins-3": "Insider / affiliate / related-party",
+    "w5-credit-insider-dx-ins-4": "Insider / affiliate / related-party",
+    "w5-credit-insider-dx-ins-5": "Insider / affiliate / related-party",
+    "w5-credit-insider-dx-ins-6": "Insider / affiliate / related-party"
+  },
+  "finding_kind": {
+    "w5-credit-insider-dx-cre-0": "actor_ambiguity",
+    "w5-credit-insider-dx-cre-1": "undefined_term",
+    "w5-credit-insider-dx-cre-2": "undefined_term",
+    "w5-credit-insider-dx-ins-0": "restatement",
+    "w5-credit-insider-dx-ins-1": "restatement",
+    "w5-credit-insider-dx-ins-2": "undefined_term",
+    "w5-credit-insider-dx-ins-3": "undefined_term",
+    "w5-credit-insider-dx-ins-4": "undefined_term",
+    "w5-credit-insider-dx-ins-5": "undefined_term",
+    "w5-credit-insider-dx-ins-6": "actor_ambiguity"
+  },
+  "findings": [
+    {
+      "as_built_ref": "b:CRD-03",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-cre-0",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: b:CRD-03",
+      "rationale": "The excerpt lists roles and responsibilities generically without specifying whether the board, a committee, or management bears the duty.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CRX-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-cre-1",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:CRX-02",
+      "rationale": "The scoping term 'large derivatives portfolios' is used but not defined within the duty text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:CRD-03",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-cre-2",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:CRD-03",
+      "rationale": "The duty relies on 'independent risk management' as a term without defining it in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:AFF-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-0",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: b:AFF-01, b:CRD-04",
+      "rationale": "Both duties are drawn from \u00a7375b and state the identical prohibition on extensions of credit to insiders.donormitive",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:AFF-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-1",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: b:AFF-02, b:CRD-05",
+      "rationale": "Both duties cover the affiliate-transaction restriction regime (\u00a7371c and \u00a7371c-1), overlapping on member-bank covered transactions with affiliates..value",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:AFF-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-2",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:AFF-01",
+      "rationale": "The duty relies on the term 'related interest' without defining it in its own text.rel",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:AFF-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-3",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:AFF-02",
+      "rationale": "The duty uses 'covered transaction' without defining it in its own text.cover",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:CRD-05",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-4",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:CRD-05",
+      "rationale": "The duty references 'nonaffiliated companies' without defining the term in its own text.non",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:IND-09",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-5",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:IND-09",
+      "rationale": "The duty relies on the term 'related person' without defining it in its own text.rel",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:IND-09",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w5-credit-insider-dx-ins-6",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: b:IND-09",
+      "rationale": "The duty does not identify which board body bears the disclosure obligation.actor",
+      "status": "draft",
+      "verifier_records": []
+    }
+  ],
+  "wave": "w5-credit-insider"
+}

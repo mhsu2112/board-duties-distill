@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "522d901edbe22fa979f07f366466598d6ebb53fa5aefb22984a3e52d8641b29e",
+  "response_text": "{\"duty_id\":\"p:PLB-04\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The excerpt concerns 12 U.S.C. 1818(a) voluntary termination of insured depository institution status. It contains nothing about indemnification, Part 359, D&O insurance, fidelity bonds, culpable IAPs, or any board-action standard. No field in this indemnification/insurance duty can be supported by the provided text, so all substantive fields are left neutral and marked unresolved.\"}"
+}

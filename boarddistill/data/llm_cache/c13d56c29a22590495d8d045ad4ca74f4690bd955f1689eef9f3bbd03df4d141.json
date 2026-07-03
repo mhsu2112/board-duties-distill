@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "c13d56c29a22590495d8d045ad4ca74f4690bd955f1689eef9f3bbd03df4d141",
+  "response_text": "{\"cluster\":\"Board self-assessment / effectiveness\",\"diagnostics\":[{\"kind\":\"duplicate_duty\",\"target_ids\":[\"b:IND-03\",\"s:GOV-26\"],\"evidence_quote\":\"A covered bank's board of directors should conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines.\",\"rationale\":\"Both duties state the identical annual self-assessment obligation using word-for-word identical text.},}}}}}}} ]]\"}]}"
+}

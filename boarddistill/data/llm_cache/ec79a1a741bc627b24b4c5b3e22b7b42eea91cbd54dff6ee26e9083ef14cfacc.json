@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "ec79a1a741bc627b24b4c5b3e22b7b42eea91cbd54dff6ee26e9083ef14cfacc",
+  "response_text": "{\"duty_id\":\"b:BSA-01\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"additional anti-money laundering program requirements referenced in subpart B\",\"object_evidence\":\"any additional anti-money laundering program requirements\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[{\"text\":\"Refer to subpart B of the chapter X part for additional AML program requirements\",\"quote\":\"should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements\"}],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The excerpt is a cross-reference fragment pointing to subpart B for additional AML program requirements. It states no board action standard (no approve/minutes language) and no timing. Only the object can be partially grounded; verb_standard and cadence are unsupported by the excerpt.\"}"
+}

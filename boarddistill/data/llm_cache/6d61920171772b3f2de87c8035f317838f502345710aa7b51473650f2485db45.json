@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "6d61920171772b3f2de87c8035f317838f502345710aa7b51473650f2485db45",
+  "response_text": "{\"duty_id\":\"b:BSA-04\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"additional anti-money laundering program requirements\",\"object_evidence\":\"any additional anti-money laundering program requirements\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The excerpt is a cross-reference sentence directing the reader to subpart B of chapter X for additional AML program requirements. It contains no board-action standard and no timing standard, so verb_standard and cadence are unresolved. It also does not mention independent testing, so the draft's substance is not supported; only a general AML-program-requirements object can be grounded.\"}"
+}

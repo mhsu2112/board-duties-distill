@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "0258d45d2dc66b6a714cb5c98a82c1d5c38e3233f5087a3d519676d4191ba479",
+  "response_text": "{\"duty_id\":\"s:CYB-04\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns the standard for providing customer notice upon unauthorized access to sensitive customer information. It contains no reference to the board of directors, an approval standard, an information security program, or any board oversight duty. None of the draft duty's elements (board approval, oversight of development/implementation/maintenance, assigning responsibility, reviewing management reports) appear in this excerpt. No board-action standard, object, or cadence for CYB-04 can be supported by this text, so all substantive fields are unresolved.\"}"
+}

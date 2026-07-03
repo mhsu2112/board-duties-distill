@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "731037a860f7f290162135aabbbf207be57d61499cdb6a24836f02ba69d845ae",
+  "response_text": "{\"cluster\":\"Fiduciary (trust) governance\",\"diagnostics\":[{\"kind\":\"actor_ambiguity\",\"target_ids\":[\"b:FID-01\"],\"evidence_quote\":\"the board may assign any function related to the exercise of fiduciary powers to any director, officer, employee, or committee thereof\",\"rationale\":\"After the board may delegate any fiduciary function to a director, officer, employee, or committee, the duty's text does not make clear which body ultimately bears the responsibility.ret\"}, {\"kind\":\"undefined_term\",\"target_ids\":[\"b:FID-01\"],\"evidence_quote\":\"A national bank's fiduciary activities shall be managed by or under the direction of its board of directors\",\"rationale\":\"The duty relies on the term fiduciary activities without defining it in its own text.\"},{\"kind\":\"undefined_term\",\"target_ids\":[\"b:FID-03\"],\"evidence_quote\":\"collective investment fund\",\"rationale\":\"The duty uses the term collective investment fund without defining it in its own text.\"}]}"
+}

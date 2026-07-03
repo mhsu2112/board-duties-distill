@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "0806755974dc7f903f5ac46c5dbe7c97045a50dd94bf4b1d7d54015534cc2cc1",
+  "response_text": "{\"duty_id\":\"s:GOV-05\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The excerpt concerns an effective board evaluating its strengths and weaknesses and adapting its structure to address identified deficiencies. It contains no text about independent directors, the lead independent director, board chair, or committee chairs taking an active role in setting board and committee agendas (the draft's subject). Nothing in this excerpt supports the draft duty's verb, object, or cadence, so all substantive fields are left unresolved.\"}"
+}

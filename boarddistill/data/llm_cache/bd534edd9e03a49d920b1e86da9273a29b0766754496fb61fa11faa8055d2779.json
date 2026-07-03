@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "bd534edd9e03a49d920b1e86da9273a29b0766754496fb61fa11faa8055d2779",
+  "response_text": "{\"duty_id\":\"s:CYB-05\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns 'Customer Notice' \u2014 the affirmative duty to protect and notify customers of security incidents. It contains no text about reporting to the board or an appropriate committee, no board-action standard, no timing for board reporting, and none of the draft's described content (risk assessment, service-provider arrangements, test results, etc.). The excerpt does not support any field of this board-reporting duty, so all substantive fields are left neutral/unresolved.\"}"
+}

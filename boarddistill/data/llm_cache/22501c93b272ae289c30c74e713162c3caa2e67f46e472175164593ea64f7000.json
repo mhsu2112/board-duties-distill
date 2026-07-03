@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "22501c93b272ae289c30c74e713162c3caa2e67f46e472175164593ea64f7000",
+  "response_text": "{\"duty_id\":\"s:LIQ-01\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"Acceptable level of liquidity risk the firm may assume (liquidity risk tolerance)\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns approving the size and composition of the liquidity buffer at least quarterly and establishing an independent review function. It contains no text about the board approving the firm's liquidity risk tolerance/acceptable level of liquidity risk. None of the fields for this duty (s:LIQ-01, liquidity risk tolerance) are supported by the excerpt provided, so all substantive fields are left neutral and marked unresolved.\"}"
+}

@@ -1,0 +1,174 @@
+{
+  "_meta": "B5-T3 diagnostics for wave w3-thirdparty-inccomp. LLM diagnostics per cluster (span-anchored) + deterministic cross-entity mirror pairs; every diagnostic 0-op \u21d2 unresolved effect, needs_review default. Consolidation findings come from the B5-T4 lever decomposition.",
+  "anchor_failures": [
+    "Incentive compensation:undefined_term:'be excessive or that could lead to materi'"
+  ],
+  "counts": {
+    "anchor_failures": 1,
+    "diagnostic_findings": 7,
+    "effect_classes": {
+      "unresolved": 7
+    },
+    "in_review": 7
+  },
+  "duplication_families": {
+    "mirror_pair": {
+      "count": 0,
+      "finding_ids": []
+    },
+    "restatement": {
+      "count": 1,
+      "finding_ids": [
+        "w3-thirdparty-inccomp-dx-thi-0"
+      ]
+    }
+  },
+  "finding_cluster": {
+    "w3-thirdparty-inccomp-dx-inc-0": "Incentive compensation",
+    "w3-thirdparty-inccomp-dx-inc-2": "Incentive compensation",
+    "w3-thirdparty-inccomp-dx-inc-3": "Incentive compensation",
+    "w3-thirdparty-inccomp-dx-thi-0": "Third-party risk management",
+    "w3-thirdparty-inccomp-dx-thi-1": "Third-party risk management",
+    "w3-thirdparty-inccomp-dx-thi-2": "Third-party risk management",
+    "w3-thirdparty-inccomp-dx-thi-3": "Third-party risk management"
+  },
+  "finding_kind": {
+    "w3-thirdparty-inccomp-dx-inc-0": "actor_ambiguity",
+    "w3-thirdparty-inccomp-dx-inc-2": "undefined_term",
+    "w3-thirdparty-inccomp-dx-inc-3": "undefined_term",
+    "w3-thirdparty-inccomp-dx-thi-0": "restatement",
+    "w3-thirdparty-inccomp-dx-thi-1": "undefined_term",
+    "w3-thirdparty-inccomp-dx-thi-2": "actor_ambiguity",
+    "w3-thirdparty-inccomp-dx-thi-3": "actor_ambiguity"
+  },
+  "findings": [
+    {
+      "as_built_ref": "s:BCG-11",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-inc-0",
+      "intended_ref": null,
+      "normative_kind": [
+        "institutional_discretion",
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:BCG-11",
+      "rationale": "The duty explicitly leaves it open whether the full board or a designated committee bears the obligation.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:INC-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-inc-2",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:INC-01",
+      "rationale": "The duty relies on \"covered financial institution\" without defining it in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:INC-05",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-inc-3",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:INC-05",
+      "rationale": "The duty relies on \"covered bank\" without defining it in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:TPR-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-thi-0",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "restatement :: s:TPR-01, s:TPR-02, s:TPR-03, s:TPR-04, s:TPR-06",
+      "rationale": "All five duties share the identical excerpt and state the same obligation of periodic reporting to the board regarding third-party relationships.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:TPR-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-thi-1",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:TPR-01",
+      "rationale": "The duty relies on the term 'material risk' which is used but not defined in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:TPR-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-thi-2",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:TPR-01",
+      "rationale": "The text says reporting 'to the board' but does not clarify which body prepares or bears the reporting duty.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:TPR-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w3-thirdparty-inccomp-dx-thi-3",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:TPR-02",
+      "rationale": "The text does not make clear which board body or management function bears the reporting obligation.",
+      "status": "draft",
+      "verifier_records": []
+    }
+  ],
+  "wave": "w3-thirdparty-inccomp"
+}

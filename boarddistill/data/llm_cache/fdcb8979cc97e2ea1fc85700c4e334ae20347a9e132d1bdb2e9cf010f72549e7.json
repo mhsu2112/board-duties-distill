@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "fdcb8979cc97e2ea1fc85700c4e334ae20347a9e132d1bdb2e9cf010f72549e7",
+  "response_text": "{\"cluster\":\"Safety-and-soundness baseline\",\"diagnostics\":[{\"kind\":\"actor_ambiguity\",\"target_ids\":[\"b:SS-01\"],\"evidence_quote\":\"Operational and Managerial Standards\",\"rationale\":\"The duty text lists operational and managerial standards but never identifies which board body (board, committee, or management) bears the obligation.\"},{\"kind\":\"undefined_term\",\"target_ids\":[\"b:SS-01\"],\"evidence_quote\":\"Unsafe and Unsound Practice\",\"rationale\":\"The duty relies on the term 'Unsafe and Unsound Practice' which is used but not defined within its own text.\"}]}"
+}

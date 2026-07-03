@@ -1,0 +1,306 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 9,
+    "anchor_failures": 0,
+    "distilled": 9,
+    "source_mismatch_rows": 0,
+    "verb_retag_conflicts": 0
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "to require each covered financial institution to disclose to the appropriate Federal regulator",
+            "term": "covered financial institution"
+          },
+          {
+            "quote": "the appropriate Federal regulators jointly shall prescribe regulations or guidelines",
+            "term": "appropriate Federal regulators"
+          },
+          {
+            "quote": "the structures of all incentive-based compensation arrangements offered by such covered financial institutions",
+            "term": "incentive-based compensation arrangements"
+          }
+        ],
+        "duty_id": "b:INC-01",
+        "elements": [
+          {
+            "quote": "Not later than 9 months after July 21, 2010, the appropriate Federal regulators jointly shall prescribe regulations or guidelines",
+            "text": "Appropriate Federal regulators jointly prescribe regulations or guidelines within 9 months of July 21, 2010"
+          },
+          {
+            "quote": "to require each covered financial institution to disclose to the appropriate Federal regulator the structures of all incentive-based compensation arrangements offered by such covered financial institutions",
+            "text": "Regulations require each covered financial institution to disclose the structures of its incentive-based compensation arrangements"
+          }
+        ],
+        "notes": "The excerpt addresses agency rulemaking and institution disclosure duties, not a board-level action standard or recurring cadence. The excerpt is truncated ('sufficient to determine whet'). No board actor or timing standard is stated, so verb_standard and cadence are none_specified/unresolved.",
+        "object": "Disclosure to the appropriate Federal regulator of the structures of all incentive-based compensation arrangements offered by covered financial institutions",
+        "object_evidence": "to require each covered financial institution to disclose to the appropriate Federal regulator the structures of all incentive-based compensation arrangements offered by such covered financial institutions",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:INC-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "The rules of each national securities exchange registered pursuant to section 6 of the Act (15 U.S.C. 78f)",
+            "term": "national securities exchange"
+          }
+        ],
+        "duty_id": "b:IND-07",
+        "elements": [
+          {
+            "quote": "prohibit the initial or continued listing of any equity security of an is",
+            "text": "National securities exchanges' rules must prohibit initial or continued listing of any equity security"
+          }
+        ],
+        "notes": "The excerpt only introduces the listing-standards framework for compensation committees and is truncated mid-sentence. It states no board-action standard (the obligation runs to national securities exchanges, not the board) and no timing. The draft's independence and adviser-retention content is not present in this excerpt, so those elements cannot be anchored.",
+        "object": "Listing standards prohibiting listing of equity securities of an issuer not in compliance with compensation committee requirements",
+        "object_evidence": "Listing standards relating to compensation committees.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-07",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "sets and periodically reevaluates director compensation",
+        "definitions_used": [],
+        "duty_id": "s:BCG-11",
+        "elements": [
+          {
+            "quote": "director compensation should be competitive and sufficient to attract and retain qualified individuals",
+            "text": "Director compensation should be competitive and sufficient to attract and retain qualified individuals"
+          },
+          {
+            "quote": "The board or a designated committee sets and periodically reevaluates director compensation",
+            "text": "Board or designated committee sets and periodically reevaluates director compensation"
+          },
+          {
+            "quote": "Such compensation should be aligned with industry standards and be commensurate with an individual director\u2019s responsibilities",
+            "text": "Compensation should be aligned with industry standards and commensurate with the director's responsibilities"
+          },
+          {
+            "quote": "The board also should safeguard against payment of compensation, fees, and benefits that are excessive",
+            "text": "Board should safeguard against excessive compensation, fees, and benefits"
+          }
+        ],
+        "notes": "The excerpt describes the board setting and periodically reevaluating compensation, but does not map cleanly to a listed board-action verb standard (approve/review_and_challenge/etc.), so verb_standard is left none_specified. 'Periodically reevaluates' indicates recurrence but without a fixed interval; treated as event_driven. The safeguard clause is cut off ('lead to materi') so material-loss language is not fully quotable.",
+        "object": "Board or designated committee sets and periodically reevaluates director compensation, which should be competitive to attract and retain qualified directors, aligned with industry standards, and safeguarded against being excessive",
+        "object_evidence": "The board or a designated committee sets and periodically reevaluates director compensation. Such compensation should be aligned with industry standards and be commensurate with an individual director\u2019s responsibilities. The board also should safeguard against payment of compensation, fees, and benefits that are excessive",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:BCG-11",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "formal, ongoing training program",
+        "definitions_used": [],
+        "duty_id": "s:INC-05",
+        "elements": [
+          {
+            "quote": "The board of directors should establish and adhere to a formal, ongoing training program for all directors.",
+            "text": "Establish and adhere to a formal, ongoing training program for all directors."
+          },
+          {
+            "quote": "This program should consider the directors' knowledge and experience and the covered bank's risk profile.",
+            "text": "Program should consider directors' knowledge and experience and the bank's risk profile."
+          },
+          {
+            "quote": "Complex products, services, lines of business, and risks that have a significant impact on the covered bank",
+            "text": "Training on complex products, services, lines of business, and risks with significant impact."
+          },
+          {
+            "quote": "Laws, regulations, and supervisory requirements applicable to the covered bank",
+            "text": "Training on applicable laws, regulations, and supervisory requirements."
+          },
+          {
+            "quote": "Other topics identified by the board of directors.",
+            "text": "Training on other topics identified by the board."
+          }
+        ],
+        "notes": "The excerpt is about ongoing director training (App. D sec. E), not talent-management program approval as the draft label describes. The excerpt states no board-action standard from the enumerated set (uses 'establish and adhere to'), so verb_standard is unresolved/none_specified. Cadence 'ongoing' supports continuous. Object refined strictly to the training-program subject actually present in the excerpt; the draft's talent-management/succession/compensation content is not supported here.",
+        "object": "Ongoing training program for all directors, covering complex products/services/risks, applicable laws and supervisory requirements, and other board-identified topics.",
+        "object_evidence": "The board of directors should establish and adhere to a formal, ongoing training program for all directors.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:INC-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:TPR-01",
+        "elements": [
+          {
+            "quote": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities).",
+            "text": "Periodic reporting to the board"
+          }
+        ],
+        "notes": "The excerpt only supports a board reporting-receipt standard via 'Periodic reporting to the board.' It does not state ultimate responsibility, risk appetite guidance, policy approval, or a specific timing cadence ('periodic' is not one of the allowed cadence values), so cadence is left unresolved. The draft's broader oversight/approval claims are not grounded in this excerpt.",
+        "object": "Periodic reporting to the board regarding third-party relationships, including dependency on a single provider for multiple activities",
+        "object_evidence": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities).",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Periodic reporting to the board",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:TPR-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:TPR-02",
+        "elements": [
+          {
+            "quote": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities)",
+            "text": "Periodic reporting to the board, including dependency on a single provider for multiple activities"
+          }
+        ],
+        "notes": "The excerpt only supports a board-reporting standard ('Periodic reporting to the board'), so verb_standard is receive_report. The draft's broader object (strategic goals, risk appetite, due diligence, remediation of deterioration) is not in this excerpt and was not asserted. 'Periodic' is not a fixed cadence value in the enum, so cadence is left unresolved.",
+        "object": "Periodic reporting to the board on third-party relationships, including dependency on a single provider for multiple activities",
+        "object_evidence": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities)",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Periodic reporting to the board",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:TPR-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:TPR-03",
+        "elements": [
+          {
+            "quote": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities).",
+            "text": "Periodic reporting to the board, including dependency on a single provider for multiple activities"
+          }
+        ],
+        "notes": "The excerpt lists reporting items and references 'Periodic reporting to the board' but states no board-action standard (approve/delegate) and no specific timing beyond the word 'Periodic,' which does not map to an enumerated cadence value. The draft's content about approving or delegating approval of contracts involving higher-risk activities is not supported by this excerpt, so those fields are left unresolved.",
+        "object": "Periodic reporting to the board regarding third-party relationships",
+        "object_evidence": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities).",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:TPR-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:TPR-04",
+        "elements": [
+          {
+            "quote": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities).",
+            "text": "Periodic reporting to the board, including dependency on a single provider for multiple activities"
+          }
+        ],
+        "notes": "The excerpt mentions 'Periodic reporting to the board' supporting a receive_report standard. It does not mention plan approval for critical activities as in the draft, so the object was refined to match the excerpt. 'Periodic' is not one of the enumerated cadence values, so cadence is left none_specified/unresolved.",
+        "object": "Periodic reporting to the board, including dependency on a single provider for multiple activities",
+        "object_evidence": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities).",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Periodic reporting to the board",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:TPR-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:TPR-06",
+        "elements": [
+          {
+            "quote": "Periodic reporting to the board",
+            "text": "Periodic reporting to the board"
+          },
+          {
+            "quote": "including, as applicable, dependency on a single provider for multiple activities",
+            "text": "Reporting including dependency on a single provider for multiple activities"
+          }
+        ],
+        "notes": "Excerpt states 'Periodic reporting to the board' establishing the board receives reports (receive_report). 'Periodic' is not one of the allowed cadence values and no specific interval (annual/quarterly/etc.) is given, so cadence is left none_specified. The draft's 'continuous' is not supported.",
+        "object": "Periodic reporting to the board, including dependency on a single provider for multiple activities",
+        "object_evidence": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities)",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities)",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:TPR-06",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [],
+  "verb_retag_conflicts": []
+}

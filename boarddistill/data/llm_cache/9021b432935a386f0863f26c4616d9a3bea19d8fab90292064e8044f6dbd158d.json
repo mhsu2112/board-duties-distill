@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "9021b432935a386f0863f26c4616d9a3bea19d8fab90292064e8044f6dbd158d",
+  "response_text": "{\"duty_id\":\"b:CYB-02\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The excerpt is Section III (Customer Notice), concerning an institution's duty to notify customers of security incidents. It contains no board- or committee-action standard, no reference to receiving a report on the information-security program, and no annual cadence. None of the draft's fields are supported by this excerpt, so all substantive fields are left neutral and marked unresolved.\"}"
+}

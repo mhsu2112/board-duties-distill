@@ -607,6 +607,104 @@ def b5_graph_cmd(
         )
 
 
+@app.command("b5-distill")
+def b5_distill(
+    wave: Annotated[str, typer.Option("--wave", help="Wave slug, or 'all'.")] = "all",
+    waves_json: Annotated[
+        Path, typer.Option("--waves", help="B5-T1 waves.json.")
+    ] = Path("outputs/b5/waves.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json.")
+    ] = Path("outputs/import/imported_duties.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+    max_calls: Annotated[
+        int, typer.Option("--max-calls", help="Per-wave LLM call ceiling.")
+    ] = 60,
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B5-T3: LLM-distill a wave's verified rows against their pinned excerpts."""
+    import json
+
+    from adapters.distill import distill_all, distilled_document
+    from distillcore.llm import Budget, LlmHarness
+
+    waves_doc = json.loads(waves_json.read_text())
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    selected = [w for w in waves_doc["waves"] if wave in (w["wave"], "all")]
+
+    for w in selected:
+        verif = json.loads((out / w["wave"] / "verification.json").read_text())
+        harness = LlmHarness(
+            cache_root=cache,
+            live=live,
+            budget=Budget(max_calls=max_calls, max_output_tokens=400_000),
+        )
+        rows = distill_all(harness, verif, drafts, {})
+        doc = distilled_document(rows)
+        (out / w["wave"] / "as_built_distilled.json").write_text(
+            json.dumps(doc, indent=2, sort_keys=True) + "\n"
+        )
+        c = doc["counts"]
+        typer.echo(
+            f"[boarddistill] {w['wave']} distill: {c['distilled']} rows · anchor-clean "
+            f"{c['anchor_clean']} · anchor-fail {c['anchor_failures']} · "
+            f"budget {harness.budget.summary()}"
+        )
+        if c["anchor_failures"]:
+            typer.echo(f"  ⚠ anchor failures: {doc['anchor_failure_rows']}", err=True)
+
+
+@app.command("b5-diagnose")
+def b5_diagnose(
+    wave: Annotated[str, typer.Option("--wave", help="Wave slug, or 'all'.")] = "all",
+    waves_json: Annotated[
+        Path, typer.Option("--waves", help="B5-T1 waves.json.")
+    ] = Path("outputs/b5/waves.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+    max_calls: Annotated[int, typer.Option("--max-calls", help="Per-wave LLM call ceiling.")] = 20,
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B5-T3: LLM diagnostics + deterministic mirror pairs per wave; mechanical classify."""
+    import json
+
+    from adapters.b5_diagnose import run_wave_diagnose, wave_excerpts
+    from distillcore.llm import Budget, LlmHarness
+
+    waves_doc = json.loads(waves_json.read_text())
+    selected = [w for w in waves_doc["waves"] if wave in (w["wave"], "all")]
+
+    for w in selected:
+        wave_dir = out / w["wave"]
+        verif = json.loads((wave_dir / "verification.json").read_text())
+        distilled = json.loads((wave_dir / "as_built_distilled.json").read_text())
+        harness = LlmHarness(
+            cache_root=cache,
+            live=live,
+            budget=Budget(max_calls=max_calls, max_output_tokens=400_000),
+        )
+        doc = run_wave_diagnose(harness, w["wave"], w, distilled, wave_excerpts(verif))
+        (wave_dir / "findings.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+        c = doc["counts"]
+        fam = doc["duplication_families"]
+        typer.echo(
+            f"[boarddistill] {w['wave']} diagnose: {c['diagnostic_findings']} findings · "
+            f"mirror {fam['mirror_pair']['count']} · restatement {fam['restatement']['count']} · "
+            f"anchor-fail {c['anchor_failures']} · budget {harness.budget.summary()}"
+        )
+        if c["anchor_failures"]:
+            typer.echo(f"  ⚠ diagnostic anchor failures: {doc['anchor_failures']}", err=True)
+
+
 @app.command("b5-redistill")
 def b5_redistill(
     import_json: Annotated[

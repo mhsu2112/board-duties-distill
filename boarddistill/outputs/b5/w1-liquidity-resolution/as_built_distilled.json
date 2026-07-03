@@ -1,0 +1,724 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 20,
+    "anchor_failures": 0,
+    "distilled": 20,
+    "source_mismatch_rows": 2,
+    "verb_retag_conflicts": 0
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "quarterly",
+        "cadence_evidence": "at least quarterly",
+        "definitions_used": [
+          {
+            "quote": "the liquidity buffer established under \u00a7 252.35(b)",
+            "term": "liquidity buffer"
+          },
+          {
+            "quote": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+            "term": "independent review function"
+          }
+        ],
+        "duty_id": "b:LIQ-01",
+        "elements": [
+          {
+            "quote": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b) at least quarterly",
+            "text": "Approve the size and composition of the liquidity buffer at least quarterly"
+          }
+        ],
+        "notes": "The excerpt supports an approval duty over the liquidity buffer's size and composition with a quarterly cadence, not the drafted annual liquidity risk tolerance approval. The draft label describes liquidity risk tolerance approved annually, but the excerpt does not contain that; it settles verb (Approve), object (liquidity buffer size and composition), and cadence (at least quarterly). Fields are distilled strictly from the provided text.",
+        "object": "the size and composition of the liquidity buffer established under \u00a7 252.35(b)",
+        "object_evidence": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b)",
+        "unresolved_fields": [],
+        "verb_evidence": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b) at least quarterly",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:LIQ-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+        "definitions_used": [
+          {
+            "quote": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+            "term": "independent review function"
+          }
+        ],
+        "duty_id": "b:LIQ-02",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+            "text": "Establish and maintain an independent review function to evaluate liquidity risk management"
+          },
+          {
+            "quote": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+            "text": "The independent review function must at least annually review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes"
+          }
+        ],
+        "notes": "The excerpt addresses the independent review function (paragraph (d)), not a board review of operating within liquidity risk tolerance as the draft describes. No board-action standard appears; verb_standard is none_specified. The cadence stated is 'no less frequently than annually' (annual), not semi-annual. The object and elements are drawn strictly from the excerpt, which concerns the independent review function's obligations. The draft's semi-annual board review of liquidity risk tolerance is not supported by this excerpt.",
+        "object": "Independent review function to evaluate the company's liquidity risk management, including reviewing the adequacy and effectiveness of liquidity risk-management processes",
+        "object_evidence": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:LIQ-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b) at least quarterly",
+            "term": "liquidity buffer"
+          },
+          {
+            "quote": "a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+            "term": "independent review function"
+          }
+        ],
+        "duty_id": "b:LIQ-03",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+            "text": "A bank holding company must establish and maintain an independent review function to evaluate liquidity risk management."
+          },
+          {
+            "quote": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+            "text": "The independent review function must at least annually review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes."
+          }
+        ],
+        "notes": "The excerpt addresses an independent review function and a quarterly approval of the liquidity buffer size/composition, but does not state any board duty to approve and periodically review liquidity risk-management strategies, policies, and procedures. No board-action standard or object matching the draft appears here; the only 'Approve' verb concerns the liquidity buffer (quarterly), not the drafted object. Fields left as none_specified because the excerpt does not settle the drafted duty.",
+        "object": "The excerpt concerns an independent review function that evaluates the company's liquidity risk management, not a board approval/review of strategies, policies, and procedures.",
+        "object_evidence": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:LIQ-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+        "definitions_used": [],
+        "duty_id": "b:LIQ-04",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+            "text": "Establish and maintain an independent review function"
+          },
+          {
+            "quote": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+            "text": "Review function must at least annually review and evaluate the adequacy and effectiveness of liquidity risk-management processes"
+          }
+        ],
+        "notes": "The excerpt concerns the independent review function's evaluation of liquidity risk management, not board/risk-committee approval of a contingency funding plan. It states no board action standard, so verb_standard is unresolved. Cadence 'no less frequently than annually' supports annual. The draft's contingency funding plan approval is not supported by this excerpt.",
+        "object": "Independent review function to evaluate the company's liquidity risk management",
+        "object_evidence": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:LIQ-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "Before submission of a resolution plan under paragraphs (a) through (c) of this section",
+        "definitions_used": [
+          {
+            "quote": "the resolution plan of a covered company",
+            "term": "covered company"
+          },
+          {
+            "quote": "Before submission of a resolution plan under paragraphs (a) through (c) of this section",
+            "term": "resolution plan"
+          }
+        ],
+        "duty_id": "b:RES-01",
+        "elements": [
+          {
+            "quote": "Before submission of a resolution plan under paragraphs (a) through (c) of this section, the resolution plan of a covered company shall be approved",
+            "text": "Board approval must occur before submission of the resolution plan"
+          },
+          {
+            "quote": "The board of directors of the covered company and noted in the minutes",
+            "text": "Approval by the board of directors and noting in the minutes"
+          },
+          {
+            "quote": "In the case of a foreign-based covered company only, a delegee acting under the express authority of the board of directors of the covered company to approve the resolution plan",
+            "text": "For a foreign-based covered company only, a delegee acting under express board authority may approve"
+          }
+        ],
+        "notes": "Excerpt states board approval standard and event-driven timing (before submission). The draft's claim of strict non-delegability is not fully supported: the excerpt allows delegation for foreign-based covered companies. The 100,000-page detail is not in the excerpt and is omitted.",
+        "object": "The resolution plan of a covered company, which must be approved by the board of directors and noted in the minutes before submission",
+        "object_evidence": "Before submission of a resolution plan under paragraphs (a) through (c) of this section, the resolution plan of a covered company shall be approved by: (1) The board of directors of the covered company and noted in the minutes",
+        "unresolved_fields": [],
+        "verb_evidence": "the resolution plan of a covered company shall be approved by: (1) The board of directors of the covered company and noted in the minutes",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RES-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a covered insured depository institution with $100 billion or more in total assets (a group A CIDI, as defined in paragraph (b) of this section)",
+            "term": "group A CIDI"
+          }
+        ],
+        "duty_id": "b:RES-02",
+        "elements": [
+          {
+            "quote": "It requires a covered insured depository institution with $100 billion or more in total assets (a group A CIDI, as defined in paragraph (b) of this section) to submit a resolution plan",
+            "text": "A covered IDI with $100 billion or more in total assets must submit a resolution plan"
+          }
+        ],
+        "notes": "The excerpt is the scope/purpose paragraph (a). It establishes the submission requirement for a resolution plan but contains no board or committee action standard, no escalation-procedure content, no board-approval requirement, and no timing standard. The draft's references to board/committee escalation procedures and board approval (from paragraph (c)(5)) are not supported by this excerpt. Verb standard and cadence left unresolved.",
+        "object": "A covered insured depository institution's resolution plan submission",
+        "object_evidence": "to submit a resolution plan that should enable the FDIC, as receiver, t",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:RES-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-01",
+        "elements": [],
+        "notes": "The source excerpt concerns approving the size and composition of the liquidity buffer at least quarterly and establishing an independent review function. It contains no text about the board approving the firm's liquidity risk tolerance/acceptable level of liquidity risk. None of the fields for this duty (s:LIQ-01, liquidity risk tolerance) are supported by the excerpt provided, so all substantive fields are left neutral and marked unresolved.",
+        "object": "Acceptable level of liquidity risk the firm may assume (liquidity risk tolerance)",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+        "definitions_used": [
+          {
+            "quote": "(d) Independent review function. (1) A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+            "term": "Independent review function"
+          }
+        ],
+        "duty_id": "s:LIQ-02",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+            "text": "Establish and maintain an independent review function to evaluate liquidity risk management"
+          },
+          {
+            "quote": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+            "text": "The review function must at least annually review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes"
+          }
+        ],
+        "notes": "The excerpt does not address a board duty to receive/review information semi-annually to determine adherence to liquidity risk tolerance. It instead describes an independent review function requirement and an annual review cadence. No board-action standard is stated in this excerpt, so verb_standard is unresolved. The draft's semi-annual cadence and board actor are not supported here; the excerpt supports an annual cadence tied to the independent review function.",
+        "object": "Independent review function to evaluate the company's liquidity risk management",
+        "object_evidence": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-03",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+            "text": "Establish and maintain an independent review function"
+          },
+          {
+            "quote": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+            "text": "Independent review function must regularly review and evaluate adequacy and effectiveness of liquidity risk-management processes"
+          }
+        ],
+        "notes": "The excerpt concerns the independent review function's obligations (establish/maintain, annual review), not a board approval-and-periodic-review duty. It states no board-action standard, so verb_standard is none_specified. The 'annually' cadence applies to the independent review function, not the board duty in the draft, so cadence is left unresolved rather than asserted for this duty.",
+        "object": "Independent review function to evaluate the company's liquidity risk management",
+        "object_evidence": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "quarterly",
+        "cadence_evidence": "at least quarterly",
+        "definitions_used": [
+          {
+            "quote": "the liquidity buffer established under \u00a7 252.35(b)",
+            "term": "liquidity buffer"
+          }
+        ],
+        "duty_id": "s:LIQ-04",
+        "elements": [
+          {
+            "quote": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b) at least quarterly",
+            "text": "Approve the size and composition of the liquidity buffer at least quarterly"
+          }
+        ],
+        "notes": "The excerpt does not contain the draft's contingency funding plan language. The only board-action standard present is an approval of the liquidity buffer's size and composition at least quarterly, so verb_standard=approve and cadence=quarterly are grounded here. The draft's 'annually' and 'contingency funding plan' object are not supported by this excerpt; distilled fields reflect only what the excerpt states.",
+        "object": "the size and composition of the liquidity buffer established under \u00a7 252.35(b)",
+        "object_evidence": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b)",
+        "unresolved_fields": [],
+        "verb_evidence": "Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b) at least quarterly",
+        "verb_standard": "approve"
+      },
+      "duty_id": "s:LIQ-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-05",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+            "text": "Establish and maintain an independent review function to evaluate liquidity risk management"
+          },
+          {
+            "quote": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes, including its liquidity stre",
+            "text": "The review function must regularly, at least annually, review and evaluate the adequacy and effectiveness of liquidity risk-management processes"
+          }
+        ],
+        "notes": "The excerpt (12 CFR 252.34(d), independent review function) does not match the draft's subject matter (senior management reporting to the board on liquidity risk profile/tolerance). It states no board-action standard, so verb_standard is none_specified. Cadence in the excerpt is 'no less frequently than annually,' i.e., annual, not the draft's quarterly. Object and elements are grounded in the independent review function text actually present.",
+        "object": "Independent review function that is independent of management functions to evaluate liquidity risk management, which must regularly review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+        "object_evidence": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+        "definitions_used": [
+          {
+            "quote": "a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+            "term": "Independent review function"
+          }
+        ],
+        "duty_id": "s:LIQ-06",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+            "text": "Establish and maintain an independent review function to evaluate liquidity risk management"
+          },
+          {
+            "quote": "The independent review function must: (i) Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes",
+            "text": "Independent review function must regularly, no less than annually, review and evaluate adequacy and effectiveness of liquidity risk-management processes"
+          }
+        ],
+        "notes": "The excerpt describes the independent review function's obligation to review and evaluate liquidity risk-management processes at least annually, but does not state a board-action standard nor the drafted requirement to report material issues in writing to the board/risk committee (the excerpt is truncated). Cadence set to annual per 'no less frequently than annually'; the draft 'continuous' is not supported. No board reporting duty appears in the provided text, so verb_standard is unresolved.",
+        "object": "An independent review function, independent of management functions that execute funding, to evaluate the company's liquidity risk management",
+        "object_evidence": "establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-06",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "must maintain a risk committee that approves and periodically reviews the risk-management policies",
+            "term": "risk committee"
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "term": "global risk-management framework"
+          }
+        ],
+        "duty_id": "s:LIQ-07",
+        "elements": [
+          {
+            "quote": "must maintain a risk committee",
+            "text": "Firm must maintain a risk committee"
+          },
+          {
+            "quote": "approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "text": "Risk committee approves and periodically reviews the risk-management policies of the firm's global operations"
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "text": "Risk committee oversees the operation of the firm's global risk-management framework"
+          },
+          {
+            "quote": "The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b).",
+            "text": "Risk committee responsibilities include liquidity risk-management per \u00a7 252.34(b)"
+          }
+        ],
+        "notes": "The excerpt supports the maintain/approve/periodically-review/oversee obligations and the liquidity responsibility cross-reference. 'Periodically reviews' does not specify a discrete cadence value, and the excerpt contains none of the draft's quarterly meeting/reporting, board-reporting, documentation, or Category I GSIB independent-director requirements, so those are not asserted.",
+        "object": "maintenance of a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the global risk-management framework",
+        "object_evidence": "must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+        "verb_standard": "approve"
+      },
+      "duty_id": "s:LIQ-07",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-08",
+        "elements": [
+          {
+            "quote": "a clear understanding of the institution\u2019s liquidity risk exposure",
+            "text": "Reports impart clear understanding of liquidity risk exposure"
+          },
+          {
+            "quote": "compliance with risk limits",
+            "text": "Reports impart understanding of compliance with risk limits"
+          },
+          {
+            "quote": "consistency between management\u2019s strategies and tactics",
+            "text": "Reports show consistency between management\u2019s strategies and tactics"
+          },
+          {
+            "quote": "consistency between these strategies and the board's expressed risk tolerance",
+            "text": "Reports show consistency between strategies and the board's expressed risk tolerance"
+          }
+        ],
+        "notes": "The excerpt describes what liquidity risk reports should impart to the board, supporting a receive_report standard. The draft's broader claims about ultimate responsibility and establishing risk tolerance are not in this excerpt. No timing for board reporting cadence is settled; the reference to increasing frequency 'on short notice' concerns senior management reporting frequency generally, not a board cadence.",
+        "object": "Liquidity risk reports imparting to the board a clear understanding of liquidity risk exposure, compliance with risk limits, and consistency with the board's expressed risk tolerance",
+        "object_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure, compliance with risk limits, consistency between management\u2019s strategies and tactics, and consistency between these strategies and the board's expressed risk tolerance.",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:LIQ-08",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-09",
+        "elements": [
+          {
+            "quote": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure",
+            "text": "Liquidity risk reports should give the board a clear understanding of the institution's liquidity risk exposure"
+          },
+          {
+            "quote": "compliance with risk limits",
+            "text": "Reports should show compliance with risk limits"
+          },
+          {
+            "quote": "consistency between these strategies and the board's expressed risk tolerance",
+            "text": "Reports should show consistency between management's strategies and tactics and the board's expressed risk tolerance"
+          }
+        ],
+        "notes": "The excerpt concerns liquidity risk reporting to the board, not board oversight/approval or annual review of strategies as in the draft. No board-action standard verb (approve/review/etc.) is stated, and no timing/cadence appears. Object refined to the reporting content the excerpt actually supports; draft's approval-and-annual-review claims are not present in this excerpt.",
+        "object": "Liquidity risk reports to senior management and the board conveying understanding of liquidity risk exposure, compliance with risk limits, and consistency of strategies with the board's risk tolerance",
+        "object_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure, compliance with risk limits, consistency between management\u2019s strategies and tactics, and consistency between these strategies and the board's expressed risk tolerance.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-09",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-10",
+        "elements": [
+          {
+            "quote": "a clear understanding of the institution\u2019s liquidity risk exposure",
+            "text": "Reports impart clear understanding of liquidity risk exposure"
+          },
+          {
+            "quote": "compliance with risk limits",
+            "text": "Reports impart understanding of compliance with risk limits"
+          },
+          {
+            "quote": "consistency between management\u2019s strategies and tactics",
+            "text": "Reports impart consistency between management's strategies and tactics"
+          },
+          {
+            "quote": "consistency between these strategies and the board's expressed risk tolerance",
+            "text": "Reports impart consistency between strategies and the board's expressed risk tolerance"
+          }
+        ],
+        "notes": "Excerpt describes liquidity risk reports that impart understanding to the board, supporting a receive_report standard. The draft's broader duties (authority lines, enforcing management duties, contingency funding plans, subsidiary profiles) are not present in this excerpt, so the object is narrowed to what the excerpt supports. No timing/cadence for board action is stated in this excerpt (the reporting-frequency language concerns senior management, not a board cadence).",
+        "object": "Liquidity risk reports providing the board a clear understanding of the institution's liquidity risk exposure, compliance with risk limits, and consistency between strategies and the board's expressed risk tolerance",
+        "object_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure, compliance with risk limits, consistency between management\u2019s strategies and tactics, and consistency between these strategies and the board's expressed risk tolerance",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:LIQ-10",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:LIQ-11",
+        "elements": [
+          {
+            "quote": "a clear understanding of the institution\u2019s liquidity risk exposure",
+            "text": "Reports convey liquidity risk exposure"
+          },
+          {
+            "quote": "compliance with risk limits",
+            "text": "Reports convey compliance with risk limits"
+          },
+          {
+            "quote": "consistency between management\u2019s strategies and tactics",
+            "text": "Reports convey consistency between management's strategies and tactics"
+          },
+          {
+            "quote": "consistency between these strategies and the board's expressed risk tolerance",
+            "text": "Reports convey consistency between strategies and the board's expressed risk tolerance"
+          },
+          {
+            "quote": "it should have the ability to increase the frequency of reporting on short notice, if the need arises",
+            "text": "Ability to increase reporting frequency on short notice if needed"
+          }
+        ],
+        "notes": "The excerpt states the content of liquidity risk reports imparted to the board (supporting receive_report), but does not state a quarterly or other fixed cadence \u2014 only the ability to increase reporting frequency on short notice. The draft's 'at least quarterly' is not supported by this excerpt, so cadence is none_specified/unresolved.",
+        "object": "Liquidity risk reports conveying the institution's liquidity risk exposure, compliance with risk limits, consistency between management's strategies and tactics, and consistency between these strategies and the board's expressed risk tolerance",
+        "object_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure, compliance with risk limits, consistency between management\u2019s strategies and tactics, and consistency between these strategies and the board's expressed risk tolerance",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure",
+        "verb_standard": "receive_report"
+      },
+      "duty_id": "s:LIQ-11",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "A bank holding company subject to this subpart must conduct stress tests",
+            "term": "bank holding company subject to this subpart"
+          }
+        ],
+        "duty_id": "s:LIQ-13",
+        "elements": [
+          {
+            "quote": "must conduct stress tests to assess the potential impact of the liquidity stress scenarios set forth in paragraph (a)(3) of this section",
+            "text": "Conduct stress tests to assess impact of liquidity stress scenarios"
+          },
+          {
+            "quote": "taking into account its current liquidity condition, risks, exposures, strategies, and activities",
+            "text": "Take into account current liquidity condition, risks, exposures, strategies, and activities"
+          },
+          {
+            "quote": "The bank holding company must take into consideration its balance sheet exposures, off-balance sheet exposures, size, risk profile,",
+            "text": "Take into consideration balance sheet and off-balance sheet exposures, size, and risk profile"
+          }
+        ],
+        "notes": "The excerpt describes a stress-testing requirement imposed on the bank holding company, not a board-approval standard. It names no board action (verb_standard none_specified) and states no timing/cadence for board engagement. No support for board approval of ILST methodology or LCR/NSFR appears here; these fields are left unresolved.",
+        "object": "Conducting liquidity stress tests to assess the impact of liquidity stress scenarios on the bank holding company's cash flows, liquidity position, profitability, and solvency",
+        "object_evidence": "must conduct stress tests to assess the potential impact of the liquidity stress scenarios set forth in paragraph (a)(3) of this section on its cash flows, liquidity position, profitability, and solvency",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:LIQ-13",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:REC-02",
+        "elements": [
+          {
+            "quote": "The firm's board of directors is responsible for oversight of the firm. This should include oversight of the firm's recovery planning process.",
+            "text": "Board is responsible for oversight of the firm, including oversight of the recovery planning process"
+          },
+          {
+            "quote": "The board, or a designated committee thereof, should focus this oversight on the firm's ability to effectively identify and implement recovery options",
+            "text": "The board, or a designated committee, should focus oversight on the firm's ability to identify and implement recovery options"
+          },
+          {
+            "quote": "oversee management's remediation of weaknesses identified in the firm\u2019s processes",
+            "text": "Oversee management's remediation of weaknesses identified in the firm's processes"
+          }
+        ],
+        "notes": "Excerpt describes oversight responsibility but states no explicit board-action standard from the enumerated set (approve/review_and_challenge/etc.), so verb_standard is none_specified. No timing language appears, so cadence is none_specified; the draft's event_driven is not supported by the excerpt.",
+        "object": "Oversight of the firm's recovery planning process, focused on the firm's ability to identify and implement recovery options and oversee management's remediation of weaknesses",
+        "object_evidence": "This should include oversight of the firm's recovery planning process. The board, or a designated committee thereof, should focus this oversight on the firm's ability to effectively identify and implement recovery options and oversee management's remediation of weaknesses identified in the firm\u2019s processes.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:REC-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a covered insured depository institution with $100 billion or more in total assets (a group A CIDI, as defined in paragraph (b) of this section)",
+            "term": "group A CIDI"
+          }
+        ],
+        "duty_id": "s:RES-05",
+        "elements": [
+          {
+            "quote": "This section applies to insured depository institutions with $50 billion or more in total assets.",
+            "text": "Section applies to insured depository institutions with $50 billion or more in total assets"
+          },
+          {
+            "quote": "It requires a covered insured depository institution with $100 billion or more in total assets (a group A CIDI, as defined in paragraph (b) of this section) to submit a resolution plan that should enable the FDIC, as receiver",
+            "text": "A group A CIDI must submit a resolution plan enabling the FDIC, as receiver"
+          }
+        ],
+        "notes": "The excerpt is the scope/purpose paragraph of \u00a7 360.10. It does not contain the draft's substantive requirement about procedures for escalating decision-making to senior management or the board, nor any board-action standard or timing. The excerpt only establishes applicability and the general obligation of a group A CIDI to submit a resolution plan. Object and elements are grounded strictly in the provided text; verb_standard and cadence are unresolved because the excerpt states neither.",
+        "object": "Applicability of resolution plan and informational filing requirements to insured depository institutions with $50 billion or more in total assets",
+        "object_evidence": "This section applies to insured depository institutions with $50 billion or more in total assets.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:RES-05",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [
+    "b:LIQ-03",
+    "s:LIQ-01"
+  ],
+  "verb_retag_conflicts": []
+}

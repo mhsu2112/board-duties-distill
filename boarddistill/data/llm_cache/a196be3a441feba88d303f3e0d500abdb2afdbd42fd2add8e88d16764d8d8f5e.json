@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "a196be3a441feba88d303f3e0d500abdb2afdbd42fd2add8e88d16764d8d8f5e",
+  "response_text": "{\"cluster\":\"Personal liability\",\"diagnostics\":[{\"kind\":\"undefined_term\",\"target_ids\":[\"p:PLB-03\"],\"evidence_quote\":\"substantially responsible for the failed condition of the covered financial company\",\"normative_kind\":[\"interpretive_ambiguity\"],\"rationale\":\"The duty relies on the term \\\"substantially responsible\\\" without defining it in its own excerpt text.\"},{\"kind\":\"undefined_term\",\"target_ids\":[\"p:PLB-01\"],\"evidence_quote\":\"without authority from the directors of such bank\",\"normative_kind\":[\"interpretive_ambiguity\"],\"rationale\":\"The duty uses \\\"without authority\\\" as the operative condition but does not define what constitutes authority.\"}]}"
+}

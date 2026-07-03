@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "01b141c615c51a0a8062d0ef9d583c244c4c2753dec96e5c1f11635a4dcb3e00",
+  "response_text": "{\"duty_id\":\"b:RGC-09\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns Concentration Risk Management (I) and Risk Data Aggregation and Reporting (J). It contains no text about appointment, removal, or compensation of a chief risk executive, nor any board-action standard for such a duty. No field for this duty (CRO/CRE appointment & compensation) can be supported by this excerpt.\"}"
+}

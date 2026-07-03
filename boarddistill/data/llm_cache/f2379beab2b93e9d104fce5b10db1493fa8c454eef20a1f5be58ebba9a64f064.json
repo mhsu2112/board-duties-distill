@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "f2379beab2b93e9d104fce5b10db1493fa8c454eef20a1f5be58ebba9a64f064",
+  "response_text": "{\"cluster\":\"Source of strength / charter sanctity\",\"diagnostics\":[{\"kind\":\"undefined_term\",\"target_ids\":[\"b:SS-02\"],\"evidence_quote\":\"source of financial and managerial strength\",\"rationale\":\"The duty imposes the source-of-strength obligation but does not define what constitutes financial and managerial strength within its own text.,\"},{\"kind\":\"undefined_term\",\"target_ids\":[\"b:SS-02\"],\"evidence_quote\":\"unsafe or unsound manner\",\"rationale\":\"The duty prohibits conducting operations in an unsafe or unsound manner but does not define these terms in its own text.\"},{\"kind\":\"actor_ambiguity\",\"target_ids\":[\"b:SS-02\"],\"evidence_quote\":\"Whenever the Board believes an activity of a bank holding company\",\"rationale\":\"The excerpt references the Board's belief but does not clarify which body within the bank holding company bears the underlying operational duty.\"}]}"
+}

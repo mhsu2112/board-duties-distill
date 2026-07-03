@@ -1,0 +1,302 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 9,
+    "anchor_failures": 0,
+    "distilled": 9,
+    "source_mismatch_rows": 3,
+    "verb_retag_conflicts": 0
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:CYB-01",
+        "elements": [
+          {
+            "quote": "A. Involve the Board of Directors",
+            "text": "Involve the Board of Directors in the customer information security program"
+          },
+          {
+            "quote": "F. Report to the Board",
+            "text": "Report to the Board"
+          }
+        ],
+        "notes": "The excerpt is only a table of contents. It lists 'Involve the Board of Directors' and 'Report to the Board' as headings but states no specific board-action standard (e.g., approve) and no timing/cadence. The draft's 'approve' and 'continuous' are not supported by the excerpt's substantive text, so verb_standard and cadence are left none_specified/unresolved.",
+        "object": "Board of Directors involvement in the development and implementation of the customer information security program",
+        "object_evidence": "III. Development and Implementation of Customer Information Security Program A. Involve the Board of Directors",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CYB-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:CYB-02",
+        "elements": [],
+        "notes": "The excerpt is Section III (Customer Notice), concerning an institution's duty to notify customers of security incidents. It contains no board- or committee-action standard, no reference to receiving a report on the information-security program, and no annual cadence. None of the draft's fields are supported by this excerpt, so all substantive fields are left neutral and marked unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CYB-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Cybersecurity incident means an unauthorized occurrence, or a series of related unauthorized occurrences, on or conducted through a registrant's information systems that jeopardizes the confidentiality, integrity, or availability of a registrant's information systems or any information residing therein.",
+            "term": "Cybersecurity incident"
+          },
+          {
+            "quote": "Cybersecurity threat means any potential unauthorized occurrence on or conducted through a registrant's information systems that may result in adverse effects on the confidentiality, integrity, or availability of",
+            "term": "Cybersecurity threat"
+          }
+        ],
+        "duty_id": "b:CYB-03",
+        "elements": [
+          {
+            "quote": "Cybersecurity incident means an unauthorized occurrence, or a series of related unauthorized occurrences, on or conducted through a registrant's information systems that jeopardizes the confidentiality, integrity, or availability of a registrant's information systems or any information residing therein.",
+            "text": "Definition of cybersecurity incident"
+          },
+          {
+            "quote": "Cybersecurity threat means any potential unauthorized occurrence on or conducted through a registrant's information systems that may result in adverse effects on the confidentiality, integrity, or availability of",
+            "text": "Definition of cybersecurity threat"
+          }
+        ],
+        "notes": "The excerpt contains only the section heading and definitions of 'cybersecurity incident' and 'cybersecurity threat.' It states no board-action standard and no timing/cadence, and does not mention board oversight disclosure or Form 8-K. Those draft claims are not supported by this excerpt, so verb_standard and cadence are unresolved.",
+        "object": "Cybersecurity, including definitions of cybersecurity incident and cybersecurity threat relating to a registrant's information systems",
+        "object_evidence": "Cybersecurity. (a) Definitions. For purposes of this section: Cybersecurity incident means an unauthorized occurrence",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CYB-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:CYB-04",
+        "elements": [],
+        "notes": "The source excerpt concerns the standard for providing customer notice upon unauthorized access to sensitive customer information. It contains no reference to the board of directors, an approval standard, an information security program, or any board oversight duty. None of the draft duty's elements (board approval, oversight of development/implementation/maintenance, assigning responsibility, reviewing management reports) appear in this excerpt. No board-action standard, object, or cadence for CYB-04 can be supported by this text, so all substantive fields are unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CYB-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:CYB-05",
+        "elements": [],
+        "notes": "The source excerpt concerns 'Customer Notice' \u2014 the affirmative duty to protect and notify customers of security incidents. It contains no text about reporting to the board or an appropriate committee, no board-action standard, no timing for board reporting, and none of the draft's described content (risk assessment, service-provider arrangements, test results, etc.). The excerpt does not support any field of this board-reporting duty, so all substantive fields are left neutral/unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CYB-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "the sunset of the Cybersecurity Assessment Tool (CAT) in August 2025",
+        "definitions_used": [
+          {
+            "quote": "the Cybersecurity Assessment Tool (CAT) in August 2025",
+            "term": "CAT"
+          },
+          {
+            "quote": "The Federal Financial Institutions Examination Council (FFIEC)",
+            "term": "FFIEC"
+          }
+        ],
+        "duty_id": "s:CYB-07",
+        "elements": [
+          {
+            "quote": "the CAT will no longer be updated",
+            "text": "The CAT will no longer be updated"
+          },
+          {
+            "quote": "will be removed from the FFIEC website",
+            "text": "The CAT will be removed from the FFIEC website"
+          }
+        ],
+        "notes": "The excerpt announces the sunset of the CAT but states no board-level action standard. No board actor or board duty is described in the excerpt, so verb_standard is unresolved/none_specified. Cadence is event_driven (a one-time sunset tied to August 2025), not the draft's 'continuous'. The draft's references to CRI Cyber Profile, CIS Controls, NIST CSF 2.0, and CISA CPGs are not present in this excerpt and are not asserted.",
+        "object": "The sunset of the FFIEC Cybersecurity Assessment Tool (CAT), which will no longer be updated and will be removed from the FFIEC website",
+        "object_evidence": "the sunset of the Cybersecurity Assessment Tool (CAT) in August 2025 (Statement). In light of new government resources available to financial institutions, the CAT will no longer be updated and will be removed from the FFIEC website",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CYB-07",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:OPR-01",
+        "elements": [
+          {
+            "quote": "The firm\u2019s board of directors oversees the firm\u2019s management of operational risk in its business line operations",
+            "text": "Board oversees management of operational risk in business line operations"
+          },
+          {
+            "quote": "its independent operational risk management function",
+            "text": "Board oversees the independent operational risk management function"
+          },
+          {
+            "quote": "its independent internal (or external) audit function",
+            "text": "Board oversees the independent internal (or external) audit function"
+          }
+        ],
+        "notes": "The excerpt describes the board's oversight of operational risk management functions, not the draft's risk-appetite approval/review language. No approval verb standard appears (the 'approve' language pertains to budgets/resources, not the risk appetite object). No timing/cadence term is present, so cadence is none_specified rather than the draft's 'continuous'. Object refined to what the excerpt actually supports; the draft's risk-appetite/tolerance-for-disruption content is not in this excerpt.",
+        "object": "The board's oversight of the firm's management of operational risk across business line operations, the independent operational risk management function, and the independent internal (or external) audit function.",
+        "object_evidence": "The firm\u2019s board of directors oversees the firm\u2019s management of operational risk in its business line operations, its independent operational risk management function, and its independent internal (or external) audit function.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:OPR-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:OPR-02",
+        "elements": [
+          {
+            "quote": "practices are led and staffed by individuals with relevant expertise",
+            "text": "Ensure practices are led and staffed by individuals with relevant expertise"
+          },
+          {
+            "quote": "approve appropriate budgets and resources",
+            "text": "Approve appropriate budgets and resources"
+          },
+          {
+            "quote": "promote a culture of effective risk management.",
+            "text": "Promote a culture of effective risk management"
+          }
+        ],
+        "notes": "The excerpt begins mid-sentence and lists three actions, one of which ('approve') is an explicit board-action standard. The excerpt gives no timing standard, so cadence is left unresolved rather than adopting the draft's 'continuous'. The subsequent sentences describe a separate oversight duty (c) and are not this duty's object.",
+        "object": "ensuring operational-resilience practices are led and staffed by individuals with relevant expertise, approving budgets and resources, and promoting a culture of effective risk management",
+        "object_evidence": "practices are led and staffed by individuals with relevant expertise, approve appropriate budgets and resources, and promote a culture of effective risk management.",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approve appropriate budgets and resources",
+        "verb_standard": "approve"
+      },
+      "duty_id": "s:OPR-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:OPR-03",
+        "elements": [
+          {
+            "quote": "oversees the firm\u2019s management of operational risk in its business line operations",
+            "text": "Board oversees management of operational risk in business line operations."
+          },
+          {
+            "quote": "its independent operational risk management function",
+            "text": "Board oversees the independent operational risk management function."
+          },
+          {
+            "quote": "its independent internal (or external) audit function",
+            "text": "Board oversees the independent internal (or external) audit function."
+          }
+        ],
+        "notes": "The excerpt states the board 'oversees' but 'oversees' does not map cleanly to any enumerated verb standard (approve/review_and_challenge/receive_report/be_informed/certify), so verb_standard is none_specified. No timing language appears in the excerpt, so cadence is none_specified rather than the draft's 'continuous'.",
+        "object": "The firm's management of operational risk in its business line operations, its independent operational risk management function, and its independent internal (or external) audit function.",
+        "object_evidence": "oversees the firm\u2019s management of operational risk in its business line operations, its independent operational risk management function, and its independent internal (or external) audit function",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:OPR-03",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [
+    "b:CYB-02",
+    "s:CYB-04",
+    "s:CYB-05"
+  ],
+  "verb_retag_conflicts": []
+}

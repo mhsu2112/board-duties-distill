@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "4bc50bed5581204253fdf98edb758d954dbf04f11b007fe4b5fa663a828d385b",
+  "response_text": "{\"cluster\":\"Director eligibility & continuity\",\"diagnostics\":[{\"kind\":\"undefined_term\",\"target_ids\":[\"b:ELG-01\"],\"evidence_quote\":\"a person who serves on the board of directors of a regulated institution\",\"rationale\":\"The definition relies on 'regulated institution' which is used but not defined within the quoted text of this duty.evience.evidence.evidence.evidence.evidence.\"},{\"kind\":\"undefined_term\",\"target_ids\":[\"b:ELG-02\"],\"evidence_quote\":\"may not become or continue as an institution-affiliated party\",\"rationale\":\"The duty uses 'institution-affiliated party' without defining it in its own text.\"},{\"kind\":\"actor_ambiguity\",\"target_ids\":[\"b:ELG-01\"],\"evidence_quote\":\"Has not been identified by the Board or Reserve Bank as a person who performs the functions of a director\",\"rationale\":\"The text leaves ambiguous whether the Board or the Reserve Bank makes the identifying determination.ambiguity.evidence.evidence.\"}]}"
+}

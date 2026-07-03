@@ -1,0 +1,244 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 7,
+    "anchor_failures": 0,
+    "distilled": 7,
+    "source_mismatch_rows": 0,
+    "verb_retag_conflicts": 0
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "any of its executive officers, directors, or principal shareholders, or to any related interest of such a person",
+            "term": "executive officers, directors, or principal shareholders"
+          }
+        ],
+        "duty_id": "b:AFF-01",
+        "elements": [
+          {
+            "quote": "No member bank may extend credit to any of its executive officers, directors, or principal shareholders, or to any related interest of such a person, except to the extent permitted under paragraphs (2), (3), (4), (5), and (6).",
+            "text": "General prohibition on extending credit to insiders except as permitted"
+          },
+          {
+            "quote": "Preferential terms prohibited",
+            "text": "Preferential terms prohibited"
+          }
+        ],
+        "notes": "The excerpt addresses member banks, not a board actor, and states no board-action standard or timing. The draft's prior-approval thresholds and aggregate limits are not present in this truncated excerpt (only paragraphs (2) and start of preferential-terms rule appear), so object is grounded only to the general prohibition and preferential-terms clause. Cadence 'continuous' is not stated in the text.",
+        "object": "Extensions of credit by a member bank to its executive officers, directors, or principal shareholders, or related interests, restricted to permitted paragraphs and prohibiting preferential terms",
+        "object_evidence": "No member bank may extend credit to any of its executive officers, directors, or principal shareholders, or to any related interest of such a person, except to the extent permitted under paragraphs (2), (3), (4), (5), and (6).",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AFF-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "may engage in a covered transaction with an affiliate only if\u2014",
+            "term": "covered transaction"
+          },
+          {
+            "quote": "in the case of any affiliate, the aggregate amount of covered transactions",
+            "term": "affiliate"
+          }
+        ],
+        "duty_id": "b:AFF-02",
+        "elements": [
+          {
+            "quote": "in the case of any affiliate, the aggregate amount of covered transactions of the member bank and its subsidiaries will not exceed 10 per centum of the capital stock and surplus of the member bank",
+            "text": "Per-affiliate quantitative limit: covered transactions may not exceed 10 percent of capital stock and surplus"
+          },
+          {
+            "quote": "in the case of all affiliates, the aggregate amount of covered transactions of the member bank and its subsidiaries will not exceed",
+            "text": "Aggregate limit across all affiliates on covered transactions"
+          }
+        ],
+        "notes": "The excerpt states substantive statutory restrictions on covered transactions with affiliates and quantitative limits, but contains no board-action standard and no timing standard. It also does not mention policies/procedures, section 23B, or the low-quality asset prohibition referenced in the draft; those cannot be anchored here. verb_standard and cadence left unresolved.",
+        "object": "Restrictions on covered transactions between a member bank and its affiliates, subject to quantitative limits",
+        "object_evidence": "Restrictions on transactions with affiliates (1) A member bank and its subsidiaries may engage in a covered transaction with an affiliate only if\u2014",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AFF-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:CRD-03",
+        "elements": [
+          {
+            "quote": "2. Role and Responsibilities of Independent Risk Management",
+            "text": "Independent risk management role and responsibilities are among the framework's roles and responsibilities"
+          }
+        ],
+        "notes": "The excerpt is only a table of contents for Appendix D. It lists section headings (Risk Governance Framework, Roles and Responsibilities of Independent Risk Management) but contains no operative text stating a board action standard, no timing, and nothing specific to a credit-risk-review or loan review function whose findings are reported to the board. The draft's specifics are not supported by this excerpt, so verb_standard and cadence are left unresolved.",
+        "object": "Standards for a risk governance framework, including independent risk management roles and responsibilities",
+        "object_evidence": "Standards For Risk Governance Framework",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CRD-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:CRD-04",
+        "elements": [
+          {
+            "quote": "No member bank may extend credit to any of its executive officers, directors, or principal shareholders, or to any related interest of such a person, except to the extent permitted under paragraphs (2), (3), (4), (5), and (6).",
+            "text": "General prohibition on extending credit to insiders except as permitted under paragraphs (2)-(6)"
+          },
+          {
+            "quote": "(2) Preferential terms prohibited",
+            "text": "Preferential terms prohibited"
+          }
+        ],
+        "notes": "The excerpt only sets out the general prohibition on insider credit and the beginning of the preferential-terms rule. It contains no board-action standard (no reference to board approval, majority of the entire board, or abstention) and no timing/cadence language. The draft's board-approval requirement (paragraph (3)) is not present in the provided excerpt, so verb_standard and cadence cannot be settled from this text.",
+        "object": "Extensions of credit by a member bank to its executive officers, directors, principal shareholders, or their related interests",
+        "object_evidence": "No member bank may extend credit to any of its executive officers, directors, or principal shareholders, or to any related interest of such a person",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CRD-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:CRD-05",
+        "elements": [
+          {
+            "quote": "A member bank and its subsidiaries may engage in any of the transactions described in paragraph (2) only\u2014 (A) on terms and under circumstances, including credit standards, that are substantially the same, or at least as favorable to such bank or its subsidiary, as those prevailing at the time for comparable transactions with or involving other nonaffiliated companies",
+            "text": "A member bank and its subsidiaries may engage in the described transactions only on substantially the same, or at least as favorable, terms as comparable transactions with nonaffiliated companies"
+          }
+        ],
+        "notes": "The excerpt is the general terms restriction of 12 U.S.C. 371c-1. It states no board-action standard (approve/review/etc.) and no timing/cadence for any board duty. The draft's specific board-approval provisions (\u00a7223.53(b), \u00a7223.15(b)(2), \u00a7223.41(d)) do not appear in this excerpt, so verb_standard and cadence cannot be grounded and are left as none_specified/unresolved.",
+        "object": "Restrictions on a member bank's and its subsidiaries' transactions with affiliates, requiring such transactions to be on terms substantially the same or at least as favorable as those for comparable transactions with nonaffiliated companies",
+        "object_evidence": "Restrictions on transactions with affiliates",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CRD-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "in which any related person had or will have a direct or indirect material interest",
+            "term": "related person"
+          }
+        ],
+        "duty_id": "b:IND-09",
+        "elements": [
+          {
+            "quote": "Describe any transaction, since the beginning of the registrant's last fiscal year, or any currently proposed transaction, in which the registrant was or is to be a participant and the amount involved exceeds $120,000, and in which any related person had or will have a direct or indirect material interest.",
+            "text": "Describe any transaction since the beginning of the last fiscal year, or any currently proposed transaction, meeting the participation, threshold, and material-interest criteria"
+          },
+          {
+            "quote": "The name of the related person and the basis on which the person is a related person.",
+            "text": "Disclose the name of the related person and the basis on which the person is a related person"
+          }
+        ],
+        "notes": "The excerpt is a disclosure requirement (Item 404) directed at the registrant's disclosure obligations. It contains no board-action standard (no approve/review language) and no board-level actor, so verb_standard is none_specified. It states no recurring board timing; the temporal phrase 'since the beginning of the registrant's last fiscal year' scopes which transactions to disclose, not a duty cadence, so cadence is left unresolved. The draft's 'review and approve' and 'continuous' are not supported by this excerpt.",
+        "object": "Disclosure of transactions with related persons in which the registrant is a participant, the amount exceeds $120,000, and a related person has a direct or indirect material interest",
+        "object_evidence": "Describe any transaction, since the beginning of the registrant's last fiscal year, or any currently proposed transaction, in which the registrant was or is to be a participant and the amount involved exceeds $120,000, and in which any related person had or will have a direct or indirect material interest.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-09",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "counterparty credit risk (CCR) management practices",
+            "term": "counterparty credit risk (CCR)"
+          }
+        ],
+        "duty_id": "s:CRX-02",
+        "elements": [
+          {
+            "quote": "establishing and maintaining counterparty credit risk (CCR) management practices",
+            "text": "Establishing and maintaining CCR management practices"
+          }
+        ],
+        "notes": "The excerpt describes interagency guidance on CCR management aimed at banking organizations with large derivatives portfolios and their supervisors. It states no board or committee action standard and no timing/cadence, so both are left unresolved. It also contains nothing about leveraged-lending risk-appetite or exception reporting from the draft.",
+        "object": "Counterparty credit risk management practices for banking organizations with large derivatives portfolios",
+        "object_evidence": "establishing and maintaining counterparty credit risk (CCR) management practices",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CRX-02",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [],
+  "verb_retag_conflicts": []
+}

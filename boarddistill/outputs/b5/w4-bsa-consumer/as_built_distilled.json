@@ -1,0 +1,311 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 10,
+    "anchor_failures": 0,
+    "distilled": 10,
+    "source_mismatch_rows": 0,
+    "verb_retag_conflicts": 0
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:BSA-01",
+        "elements": [
+          {
+            "quote": "should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements",
+            "text": "Refer to subpart B of the chapter X part for additional AML program requirements"
+          }
+        ],
+        "notes": "The excerpt is a cross-reference fragment pointing to subpart B for additional AML program requirements. It states no board action standard (no approve/minutes language) and no timing. Only the object can be partially grounded; verb_standard and cadence are unsupported by the excerpt.",
+        "object": "additional anti-money laundering program requirements referenced in subpart B",
+        "object_evidence": "any additional anti-money laundering program requirements",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:BSA-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:BSA-02",
+        "elements": [],
+        "notes": "The excerpt is a fragmentary cross-reference clause directing readers to subpart B for additional AML program requirements. It does not mention a board, designation of a compliance officer, qualifications, authority, independence, or resources. No board-action standard or timing is stated, so verb_standard and cadence are none_specified. The object is grounded only in the cross-reference text actually present.",
+        "object": "reference to subpart B of chapter X part for additional anti-money laundering program requirements",
+        "object_evidence": "should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:BSA-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:BSA-03",
+        "elements": [
+          {
+            "quote": "should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements",
+            "text": "Refer to subpart B of the chapter X part for additional anti-money laundering program requirements"
+          }
+        ],
+        "notes": "The excerpt is a fragment cross-referencing subpart B for additional AML program requirements. It contains no board actor, no board-action standard, and no timing. It does not mention SAR-filing notification, CTR, or risk-assessment reporting to the board as the draft claims, so those cannot be asserted. verb_standard and cadence are unresolved.",
+        "object": "Referral to subpart B of chapter X part for additional anti-money laundering program requirements",
+        "object_evidence": "should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:BSA-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:BSA-04",
+        "elements": [],
+        "notes": "The excerpt is a cross-reference sentence directing the reader to subpart B of chapter X for additional AML program requirements. It contains no board-action standard and no timing standard, so verb_standard and cadence are unresolved. It also does not mention independent testing, so the draft's substance is not supported; only a general AML-program-requirements object can be grounded.",
+        "object": "additional anti-money laundering program requirements",
+        "object_evidence": "any additional anti-money laundering program requirements",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:BSA-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:BSA-05",
+        "elements": [
+          {
+            "quote": "should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements",
+            "text": "Refer to subpart B of the applicable chapter X part for additional AML program requirements"
+          }
+        ],
+        "notes": "The excerpt is a cross-reference note directing the reader to subpart B for additional AML program requirements. It states no board actor, no board-action standard, no training obligation, and no timing. The draft's claims about training, directors, and risk-profile tailoring are not supported by this excerpt, so those are not asserted. verb_standard and cadence are unresolved.",
+        "object": "referral to subpart B for additional anti-money laundering program requirements",
+        "object_evidence": "should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:BSA-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "Provide for a system of internal controls to assure ongoing compliance",
+        "definitions_used": [],
+        "duty_id": "s:BSA-01",
+        "elements": [
+          {
+            "quote": "Provide for a system of internal controls to assure ongoing compliance",
+            "text": "Provide a system of internal controls to assure ongoing compliance"
+          },
+          {
+            "quote": "Provide for independent testing for compliance to be conducted by bank personnel or by an outside party",
+            "text": "Provide independent testing for compliance by bank personnel or an outside party"
+          },
+          {
+            "quote": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+            "text": "Designate individual(s) responsible for coordinating and monitoring day-to-day compliance"
+          },
+          {
+            "quote": "Provide training for appropriate personnel",
+            "text": "Provide training for appropriate personnel"
+          }
+        ],
+        "notes": "The excerpt describes the minimum contents of the compliance program but states no board-action standard (no mention of the board, approval, or minutes), so verb_standard is none_specified. Cadence 'continuous' is supported by 'ongoing compliance'. The draft's claims about board approval and being noted in minutes are not in this excerpt and are not asserted.",
+        "object": "The compliance program's minimum contents: internal controls, independent testing, a designated compliance coordinator, and training for appropriate personnel",
+        "object_evidence": "Contents of compliance program. The compliance program shall, at a minimum:",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:BSA-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "to assure ongoing compliance",
+        "definitions_used": [
+          {
+            "quote": "Contents of compliance program. The compliance program shall, at a minimum",
+            "term": "compliance program"
+          }
+        ],
+        "duty_id": "s:BSA-02",
+        "elements": [
+          {
+            "quote": "(1) Provide for a system of internal controls to assure ongoing compliance",
+            "text": "Provide for a system of internal controls to assure ongoing compliance"
+          }
+        ],
+        "notes": "The excerpt is a program-content requirement (12 CFR 208.63(c)(1)) stating the compliance program must provide for a system of internal controls to assure ongoing compliance. It does not name the board or state any board-action standard, so verb_standard is none_specified. The phrase 'ongoing' supports a continuous cadence. The draft's language about board/senior management responsibility and culture is not present in this excerpt and is not asserted.",
+        "object": "A system of internal controls to assure ongoing compliance, as a required content of the compliance program",
+        "object_evidence": "Provide for a system of internal controls to assure ongoing compliance",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:BSA-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:BSA-04",
+        "elements": [
+          {
+            "quote": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+            "text": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance"
+          }
+        ],
+        "notes": "The excerpt requires the compliance program to designate an individual/individuals for day-to-day compliance but names no board actor and states no board-action standard; hence verb_standard is none_specified. No timing is given, so cadence is none_specified. The draft's assertions about board responsibility for authority, independence, and access to resources are not supported by this excerpt.",
+        "object": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+        "object_evidence": "Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:BSA-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:CCX-01",
+        "elements": [
+          {
+            "quote": "regulated financial institutions are required by law to demonstrate that their deposit facilities serve the convenience and needs of the communities in which they are chartered to do business",
+            "text": "Institutions must demonstrate their deposit facilities serve the convenience and needs of their communities"
+          },
+          {
+            "quote": "the convenience and needs of communities include the need for credit services as well as deposit services",
+            "text": "Community convenience and needs include credit services as well as deposit services"
+          },
+          {
+            "quote": "regulated financial institutions have continuing and affirmative obligation to help meet",
+            "text": "Institutions have a continuing and affirmative obligation to help meet community credit needs"
+          }
+        ],
+        "notes": "The excerpt is the Congressional findings and statement of purpose (\u00a72901). It imposes obligations on 'regulated financial institutions,' not on a board, and states no board-action standard. It does not mention strategic plans, board oversight, or CRA performance review as the draft asserts. No timing standard is given; the phrase 'continuing and affirmative obligation' describes the institution's obligation, not a board cadence, so cadence is left none_specified.",
+        "object": "Obligation of regulated financial institutions to help meet the credit needs of the communities they serve",
+        "object_evidence": "regulated financial institutions have continuing and affirmative obligation to help meet",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CCX-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "This guidance applies to large financial institutions supervised by the Federal Reserve, as defined in SR letter 12-17 / CA letter 12-14",
+            "term": "large financial institutions"
+          },
+          {
+            "quote": "community and regional banking organizations, defined as those with less than $50 billion in total consolidated assets, unless the banking organization engages in significant foreign exchange activities",
+            "term": "community and regional banking organizations"
+          }
+        ],
+        "duty_id": "s:CCX-02",
+        "elements": [
+          {
+            "quote": "This guidance applies to large financial institutions supervised by the Federal Reserve, as defined in SR letter 12-17 / CA letter 12-14",
+            "text": "Guidance applies to large financial institutions supervised by the Federal Reserve"
+          },
+          {
+            "quote": "This guidance does not apply to community and regional banking organizations, defined as those with less than $50 billion in total consolidated assets, unless the banking organization engages in significant foreign exchange activities",
+            "text": "Guidance does not apply to community and regional banking organizations under $50 billion unless engaged in significant FX activities"
+          }
+        ],
+        "notes": "The excerpt only states the subject and applicability scope of FX settlement risk guidance. It does not state any board-action standard or timing, and contains nothing about FDIC Part 328 deposit-insurance advertising rules. Verb and cadence are unresolved; object grounded strictly in the excerpt's subject/applicability language.",
+        "object": "Applicability scope of guidance on managing foreign exchange settlement risks for physically settled transactions at large financial institutions and certain banking organizations engaged in significant FX activities",
+        "object_evidence": "SUBJECT: Managing Foreign Exchange Settlement Risks for Physically Settled Transactions Applicability: This guidance applies to large financial institutions supervised by the Federal Reserve",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CCX-02",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [],
+  "verb_retag_conflicts": []
+}

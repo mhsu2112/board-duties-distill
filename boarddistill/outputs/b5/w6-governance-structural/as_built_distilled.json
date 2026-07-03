@@ -1,0 +1,1304 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 36,
+    "anchor_failures": 0,
+    "distilled": 36,
+    "source_mismatch_rows": 3,
+    "verb_retag_conflicts": 0
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Director means a person who serves on the board of directors of a regulated institution, except that this term does not include an advisory director who: (1) Is not elected by the shareholders of the regulated institution; (2) Is not authorized to vote on any matters before the board of directors or any committee thereof; (3) Solely provides general policy advice to the board of directors and any committee thereof; and (4) Has not been identified by the Board or Reserve Bank as a person who performs the functions of a director for purposes of this subpart.",
+            "term": "Director"
+          }
+        ],
+        "duty_id": "b:ELG-01",
+        "elements": [],
+        "notes": "The excerpt only provides the definition of 'Director' (and begins 'Regulated'), which is a definitions section. It contains no board-action standard, timing, or the substantive 30-day notice/914-process obligation described in the draft. Object is grounded strictly in the definitional text present; verb_standard and cadence are unresolved because the excerpt states no action standard or timing.",
+        "object": "Definition of 'Director' for purposes of this subpart, including the exclusion of certain advisory directors",
+        "object_evidence": "Director means a person who serves on the board of directors of a regulated institution, except that this term does not include an advisory director",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:ELG-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "has been convicted of any criminal offense involving dishonesty or a breach of trust or money laundering, or has agreed to enter into a pretrial diversion or similar program",
+        "definitions_used": [
+          {
+            "quote": "become, or continue as, an institution-affiliated party",
+            "term": "institution-affiliated party"
+          }
+        ],
+        "duty_id": "b:ELG-02",
+        "elements": [
+          {
+            "quote": "any person who has been convicted of any criminal offense involving dishonesty or a breach of trust or money laundering",
+            "text": "Barred class: persons convicted of a criminal offense involving dishonesty, breach of trust, or money laundering."
+          },
+          {
+            "quote": "or has agreed to enter into a pretrial diversion or similar program in connection with a prosecution for such offense",
+            "text": "Barred class extends to persons who agreed to enter pretrial diversion for such offense."
+          },
+          {
+            "quote": "may not\u2014 (i) become, or continue as, an institution-affiliated party",
+            "text": "Prohibition on becoming or continuing as an institution-affiliated party."
+          },
+          {
+            "quote": "Except with the prior written consent of the Corporation\u2014",
+            "text": "Exception where the Corporation gives prior written consent."
+          }
+        ],
+        "notes": "The excerpt states a statutory prohibition on the affected person, not a board action standard, so verb_standard is none_specified. The removal/prohibition-order aspect of the draft object (FDI Act 8(e)/(g)) is not present in this excerpt (which is only \u00a71829), so it was omitted. Cadence is event_driven as the bar triggers on conviction or diversion agreement.",
+        "object": "A person convicted of a criminal offense involving dishonesty, breach of trust, or money laundering, or who has entered a pretrial diversion for such offense, may not become or continue as an institution-affiliated party without the prior written consent of the Corporation.",
+        "object_evidence": "any person who has been convicted of any criminal offense involving dishonesty or a breach of trust or money laundering, or has agreed to enter into a pretrial diversion or similar program in connection with a prosecution for such offense, may not\u2014 (i) become, or continue as, an institution-affiliated party",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:ELG-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "shall be managed by or under the direction of its board of directors",
+        "definitions_used": [
+          {
+            "quote": "A national bank's fiduciary activities shall be managed by or under the direction of its board of directors.",
+            "term": "fiduciary activities"
+          },
+          {
+            "quote": "the board may assign any function related to the exercise of fiduciary powers",
+            "term": "fiduciary powers"
+          }
+        ],
+        "duty_id": "b:FID-01",
+        "elements": [
+          {
+            "quote": "A national bank's fiduciary activities shall be managed by or under the direction of its board of directors.",
+            "text": "The bank's fiduciary activities must be managed by or under the direction of the board of directors."
+          },
+          {
+            "quote": "the board may assign any function related to the exercise of fiduciary powers to any director, officer, employee, or committee thereof",
+            "text": "The board may assign any function related to the exercise of fiduciary powers to any director, officer, employee, or committee."
+          }
+        ],
+        "notes": "The excerpt establishes an ongoing management/direction responsibility (continuous), not a periodic or annual cadence. The excerpt does not state a specific board-action standard (approve/review/etc.), nor does it mention the draft's 'written policies' requirement, so that is omitted. The draft cadence 'annual' is unsupported by the excerpt.",
+        "object": "A national bank's fiduciary activities managed by or under the direction of its board of directors",
+        "object_evidence": "A national bank's fiduciary activities shall be managed by or under the direction of its board of directors.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:FID-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "members of the same affiliated group, as defined at 26 U.S.C. 1504",
+            "term": "affiliated group"
+          }
+        ],
+        "duty_id": "b:FID-03",
+        "elements": [
+          {
+            "quote": "A fund consisting solely of assets of retirement, pension, profit sharing, stock bonus or other trusts that are exempt from Federal income tax.",
+            "text": "A fund may consist solely of assets of tax-exempt trusts"
+          },
+          {
+            "quote": "A national bank may invest assets of retirement, pension, profit sharing, stock bonus, or other trusts exempt from Federal income tax and that the bank holds in its capacity as trustee in a collective investment fund established under paragraph (a)(1) or (a)(2)",
+            "text": "A national bank may invest such trust assets it holds as trustee in a collective investment fund"
+          }
+        ],
+        "notes": "The excerpt describes the composition of collective investment funds of tax-exempt trust assets and a national bank's authority to invest such assets. It states no board-action standard (no approval, review, or written-plan requirement appears here) and no timing/cadence. The draft's board-approved written plan and joint-custody claims are not supported by this excerpt, so verb_standard and cadence are left unresolved.",
+        "object": "Collective investment fund consisting of assets of tax-exempt trusts held by a national bank in its capacity as trustee",
+        "object_evidence": "A national bank may invest assets of retirement, pension, profit sharing, stock bonus, or other trusts exempt from Federal income tax and that the bank holds in its capacity as trustee in a collective investment fund",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:FID-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:IND-01",
+        "elements": [
+          {
+            "quote": "Should not be an officer or employee of the parent company or covered bank and has not been an officer or employee of the parent company or covered bank during the previous three years;",
+            "text": "At least two board members should not be an officer or employee of the parent company or covered bank, nor have been in the previous three years"
+          }
+        ],
+        "notes": "Excerpt establishes a compositional independence requirement (at least two members) and the 3-year no-officer/employee test. It states no board-action verb standard and no timing/cadence; both marked none_specified. The excerpt is truncated at element 2 ('Should not be a member o'), so that criterion cannot be captured as a complete element. The draft's family-tie and listing-standard prongs are not present in the provided excerpt and were not asserted.",
+        "object": "Composition of the board so that at least two members are independent directors",
+        "object_evidence": "Include Independent Directors. To promote effective, independent oversight of the covered bank's management, at least two members of the board of directors:",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "a formal, ongoing training program for all directors",
+        "definitions_used": [],
+        "duty_id": "b:IND-02",
+        "elements": [
+          {
+            "quote": "The board of directors should establish and adhere to a formal, ongoing training program for all directors.",
+            "text": "Establish and adhere to a formal, ongoing training program for all directors"
+          },
+          {
+            "quote": "This program should consider the directors' knowledge and experience and the covered bank's risk profile.",
+            "text": "Program should consider the directors' knowledge and experience and the covered bank's risk profile"
+          },
+          {
+            "quote": "Complex products, services, lines of business, and risks that have a significant impact on the covered bank;",
+            "text": "Include training on complex products, services, lines of business, and risks with significant impact"
+          },
+          {
+            "quote": "Laws, regulations, and supervisory requirements applicable to the covered bank; and",
+            "text": "Include training on applicable laws, regulations, and supervisory requirements"
+          },
+          {
+            "quote": "Other topics identified by the board of directors.",
+            "text": "Include training on other topics identified by the board"
+          }
+        ],
+        "notes": "The excerpt uses 'should establish and adhere to' \u2014 an establish/maintain obligation, not one of the enumerated board-action standards (approve, review_and_challenge, receive_report, be_informed, certify), so verb_standard is none_specified. 'Ongoing' supports continuous cadence. Object and elements grounded directly in the excerpt's enumerated training topics.",
+        "object": "a formal, ongoing training program for all directors",
+        "object_evidence": "The board of directors should establish and adhere to a formal, ongoing training program for all directors.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "conduct an annual self-assessment",
+        "definitions_used": [
+          {
+            "quote": "A covered bank's board of directors should conduct an annual self-assessment",
+            "term": "covered bank"
+          }
+        ],
+        "duty_id": "b:IND-03",
+        "elements": [
+          {
+            "quote": "should conduct an annual self-assessment",
+            "text": "Conduct an annual self-assessment"
+          },
+          {
+            "quote": "that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines",
+            "text": "The self-assessment includes an evaluation of the board's effectiveness in meeting the section III standards"
+          }
+        ],
+        "notes": "The excerpt uses 'should conduct' but does not map to any of the enumerated board-action standards (approve, review_and_challenge, receive_report, be_informed, certify), so verb_standard is none_specified. Cadence is explicitly annual. Object is the self-assessment evaluating board effectiveness against section III standards.",
+        "object": "annual self-assessment that includes an evaluation of the board's effectiveness in meeting the standards in section III of these Guidelines",
+        "object_evidence": "conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "When providing active oversight under paragraph III.B. of these Guidelines",
+        "definitions_used": [],
+        "duty_id": "b:IND-04",
+        "elements": [
+          {
+            "quote": "When providing active oversight under paragraph III.B. of these Guidelines, each member of the board of directors should exercise sound, independent judgment.",
+            "text": "Each board member should exercise sound, independent judgment when providing active oversight."
+          }
+        ],
+        "notes": "The excerpt requires each board member to exercise sound, independent judgment, but the standard is a personal judgment quality rather than one of the enumerated board-action standards (approve, review_and_challenge, etc.), so verb_standard is none_specified. Cadence is tied to the event of 'providing active oversight,' hence event_driven rather than continuous.",
+        "object": "each member of the board of directors should exercise sound, independent judgment when providing active oversight",
+        "object_evidence": "each member of the board of directors should exercise sound, independent judgment",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:IND-05",
+        "elements": [
+          {
+            "quote": "The rules of each national securities exchange registered pursuant to section 6 of the Act (15 U.S.C. 78f) must, in accordance with the provisions of this section, prohibit the initial or continued listing of any security of an issuer that is not in compliance with the requirements of any portion of paragraph (b) or (c) of this section.",
+            "text": "National securities exchange rules must prohibit initial or continued listing of noncompliant issuers"
+          }
+        ],
+        "notes": "The excerpt is the general listing-standards provision of 10A-3(a). It addresses exchange rules prohibiting noncompliant listings, not the specific substantive requirements (member independence, authority to engage counsel/advisers) which live in paragraphs (b)/(c) not provided here. No board-action standard or timing is stated in this excerpt, so verb_standard and cadence are unresolved. The draft object about member independence and authority to engage advisers is not supported by this excerpt.",
+        "object": "Listing standards prohibiting listing of securities of issuers not in compliance with audit committee requirements of paragraph (b) or (c)",
+        "object_evidence": "prohibit the initial or continued listing of any security of an issuer that is not in compliance with the requirements of any portion of paragraph (b) or (c) of this section",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "that is independent under the independence standards applicable to the registrant under paragraph (a)(1) of this Item",
+            "term": "independent"
+          }
+        ],
+        "duty_id": "b:IND-08",
+        "elements": [
+          {
+            "quote": "Identify each director and, when the disclosure called for by this paragraph is being presented in a proxy or information statement relating to the election of directors, each nominee for director, that is independent under the independence standards applicable to the registrant under paragraph (a)(1) of this Item",
+            "text": "Identify each director (and, in proxy/information statements for director elections, each nominee) that is independent under applicable standards"
+          },
+          {
+            "quote": "if such independence standards contain independence requirements for committees of the board of directors, identify each director that is a member of the compensation, nominating or audit committee",
+            "text": "If independence standards contain committee independence requirements, identify each director who is a member of the compensation, nominating or audit committee"
+          }
+        ],
+        "notes": "The excerpt addresses director/committee independence disclosure (Item 407(a)), not audit-committee financial experts or compensation-committee processes as the draft label suggested. The excerpt states a disclosure/identification requirement but attributes no board-action standard and no timing (except a conditional reference to proxy/information statements, which is not a recurrence cadence), so both are unresolved.",
+        "object": "Identify each independent director (and nominee) and identify each director that is a member of the compensation, nominating or audit committee",
+        "object_evidence": "Identify each director and, when the disclosure called for by this paragraph is being presented in a proxy or information statement relating to the election of directors, each nominee for director, that is independent under the independence standards applicable to the registrant under paragraph (a)(1) of this Item. In addition, if such independence standards contain independence requirements for committees of the board of directors, identify each director that is a member of the compensation, nominating or audit committee",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:IND-08",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:RGC-06",
+        "elements": [
+          {
+            "quote": "The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size and must include",
+            "text": "The global risk-management framework must be commensurate with structure, risk profile, complexity, activities, and size"
+          },
+          {
+            "quote": "Policies and procedures establishing risk-management governance, risk-management procedures, and risk-control infrastructure for its global operations",
+            "text": "Must include policies and procedures establishing risk-management governance, risk-management procedures, and risk-control infrastructure"
+          },
+          {
+            "quote": "Processes and systems for implementing and monitoring compliance with such policies and procedures",
+            "text": "Must include processes and systems for implementing and monitoring compliance with such policies and procedures"
+          },
+          {
+            "quote": "Processes and systems for identifying and reporting risks and risk-management deficiencies",
+            "text": "Must include processes and systems for identifying and reporting risks and risk-management deficiencies"
+          }
+        ],
+        "notes": "The excerpt describes the required contents of the global risk-management framework, not the appointment of a chief risk officer described in the draft label. It states no board-action verb standard and no timing/cadence, so both are set to the neutral value and marked unresolved. The object was refined to match the excerpt's actual subject matter.",
+        "object": "The bank holding company's global risk-management framework and its required components",
+        "object_evidence": "The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size and must include",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:RGC-06",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+            "term": "risk governance framework"
+          }
+        ],
+        "duty_id": "b:RGC-08",
+        "elements": [
+          {
+            "quote": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+            "text": "The board of directors or the board's risk committee approves the risk governance framework."
+          }
+        ],
+        "notes": "The excerpt supports board/risk-committee approval of the risk governance framework, not of a 'risk-appetite statement' per se, and mentions no risk-appetite statement or quarterly monitoring. The 'at least annually' cadence in the excerpt applies to independent risk management's review/update, not to any board action, so no board-duty cadence is settled. Draft's cadence and quarterly-monitoring/risk-appetite object are not supported by this excerpt.",
+        "object": "The formal, written risk governance framework designed by independent risk management",
+        "object_evidence": "A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee.",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approved by the board of directors or the board's risk committee",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RGC-08",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:RGC-09",
+        "elements": [],
+        "notes": "The source excerpt concerns Concentration Risk Management (I) and Risk Data Aggregation and Reporting (J). It contains no text about appointment, removal, or compensation of a chief risk executive, nor any board-action standard for such a duty. No field for this duty (CRO/CRE appointment & compensation) can be supported by this excerpt.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:RGC-09",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:SS-01",
+        "elements": [
+          {
+            "quote": "A. Internal controls and information systems.",
+            "text": "Internal controls and information systems"
+          },
+          {
+            "quote": "B. Internal audit system.",
+            "text": "Internal audit system"
+          },
+          {
+            "quote": "C. Loan documentation.",
+            "text": "Loan documentation"
+          },
+          {
+            "quote": "D. Credit underwriting.",
+            "text": "Credit underwriting"
+          },
+          {
+            "quote": "E. Interest rate exposure.",
+            "text": "Interest rate exposure"
+          },
+          {
+            "quote": "F. Asset growth.",
+            "text": "Asset growth"
+          },
+          {
+            "quote": "G. Asset quality.",
+            "text": "Asset quality"
+          },
+          {
+            "quote": "H. Earnings.",
+            "text": "Earnings"
+          },
+          {
+            "quote": "I. Compensation, fees and benefits.",
+            "text": "Compensation, fees and benefits"
+          },
+          {
+            "quote": "III. Prohibition on Compensation That Constitutes an Unsafe and Unsound Practice A. Excessive compensation.",
+            "text": "Prohibition on compensation constituting an unsafe and unsound practice, including excessive compensation"
+          }
+        ],
+        "notes": "The excerpt is a table of contents listing operational and managerial standards; it enumerates the subject areas but states no board-action standard (approve/review/etc.) and no timing. Both verb_standard and cadence are therefore unresolved. Object and elements are grounded in the listed subheadings. No definitions appear in the excerpt (I.B. Definitions is only listed, not stated).",
+        "object": "Operational and managerial standards for safety and soundness: internal controls and information systems, internal audit, loan documentation, credit underwriting, interest rate exposure, asset growth, asset quality, earnings, and compensation, fees and benefits.",
+        "object_evidence": "II. Operational and Managerial Standards A. Internal controls and information systems. B. Internal audit system. C. Loan documentation. D. Credit underwriting. E. Interest rate exposure. F. Asset growth. G. Asset quality. H. Earnings. I. Compensation, fees and benefits.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:SS-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "shall serve as a source of financial and managerial strength to its subsidiary banks",
+        "definitions_used": [
+          {
+            "quote": "A bank holding company shall serve as a source of financial and managerial strength to its subsidiary banks",
+            "term": "bank holding company"
+          }
+        ],
+        "duty_id": "b:SS-02",
+        "elements": [
+          {
+            "quote": "A bank holding company shall serve as a source of financial and managerial strength to its subsidiary banks",
+            "text": "Serve as a source of financial and managerial strength to subsidiary banks"
+          },
+          {
+            "quote": "shall not conduct its operations in an unsafe or unsound manner",
+            "text": "Not conduct operations in an unsafe or unsound manner"
+          }
+        ],
+        "notes": "The excerpt imposes the duty on the bank holding company itself, not specifically on its board, and states no board-action standard, so verb_standard is none_specified. The 'shall serve as a source of ... strength' phrasing is an ongoing obligation, supporting continuous cadence. The excerpt references financial and managerial strength (broader than the draft's 'financial strength' only) and subsidiary banks generally (not limited to insured subsidiary banks).",
+        "object": "A bank holding company serving as a source of financial and managerial strength to its subsidiary banks and not conducting operations in an unsafe or unsound manner",
+        "object_evidence": "A bank holding company shall serve as a source of financial and managerial strength to its subsidiary banks and shall not conduct its operations in an unsafe or unsound manner",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:SS-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "must maintain an outstanding eligible external long-term debt amount",
+        "definitions_used": [
+          {
+            "quote": "a global systemically important BHC must maintain an outstanding eligible external long-term debt amount",
+            "term": "global systemically important BHC"
+          },
+          {
+            "quote": "the sum of 6 percent plus the global systemically important BHC's GSIB surcharge (expressed as a percentage)",
+            "term": "GSIB surcharge"
+          },
+          {
+            "quote": "The global systemically important BHC's total leverage exposure multiplied by the sum of 2.5",
+            "term": "total leverage exposure"
+          },
+          {
+            "quote": "The global systemically important BHC's total risk-weighted assets multiplied by the sum of 6 percent",
+            "term": "total risk-weighted assets"
+          }
+        ],
+        "duty_id": "b:TLA-01",
+        "elements": [
+          {
+            "quote": "must maintain an outstanding eligible external long-term debt amount that is no less than the amount equal to the greater of",
+            "text": "Maintain eligible external long-term debt at no less than the greater of two calculated amounts"
+          },
+          {
+            "quote": "The global systemically important BHC's total risk-weighted assets multiplied by the sum of 6 percent plus the global systemically important BHC's GSIB surcharge (expressed as a percentage)",
+            "text": "Risk-weighted-asset-based minimum: total RWA times (6 percent plus GSIB surcharge)"
+          },
+          {
+            "quote": "The global systemically important BHC's total leverage exposure multiplied by the sum of 2.5",
+            "text": "Leverage-exposure-based minimum: total leverage exposure times the sum of 2.5"
+          }
+        ],
+        "notes": "The excerpt imposes a substantive maintenance obligation on the GSIB itself and states no board-action standard, so verb_standard is none_specified. 'Must maintain' supports a continuous cadence. The draft's framing as 'board oversight' is not supported by this excerpt, which addresses the firm's obligation, not a board duty.",
+        "object": "A global systemically important BHC's maintenance of an outstanding eligible external long-term debt amount",
+        "object_evidence": "a global systemically important BHC must maintain an outstanding eligible external long-term debt amount that is no less than the amount equal to the greater of",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:TLA-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "A global systemically important BHC may not directly",
+            "term": "global systemically important BHC"
+          }
+        ],
+        "duty_id": "b:TLA-02",
+        "elements": [
+          {
+            "quote": "Issue any debt instrument with an original maturity of less than 365 days (one year), including short term deposits and demand deposits, to any person, unless the person is a subsidiary of the global systemically important BHC",
+            "text": "Prohibition on issuing debt instruments with an original maturity of less than 365 days to non-subsidiaries"
+          },
+          {
+            "quote": "Issue any instrument, or enter into any related contract, with respect to which the holder of the instrument has a contractual right to offset debt owed by the holder o",
+            "text": "Prohibition on issuing instruments or contracts giving the holder a contractual right of offset"
+          }
+        ],
+        "notes": "The excerpt addresses prohibited corporate practices of a GSIB BHC and states no board-action standard and no timing. It imposes prohibitions on the entity, not a described board oversight verb or cadence, so both verb_standard and cadence are unresolved/none_specified.",
+        "object": "Restrictions on corporate practices of U.S. global systemically important banking organizations, prohibiting certain corporate practices by a global systemically important BHC",
+        "object_evidence": "Restrictions on corporate practices of U.S. global systemically important banking organizations. (a) Prohibited corporate practices. A global systemically important BHC may not directly",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:TLA-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Covered company means: (A) A global systemically important BHC; (B) A Category II bank holding company; and (C) A Category III bank holding company",
+            "term": "Covered company"
+          },
+          {
+            "quote": "Major covered company means any covered company that is a global systemically important BHC.",
+            "term": "Major covered company"
+          }
+        ],
+        "duty_id": "b:TLA-03",
+        "elements": [
+          {
+            "quote": "This subpart establishes single counterparty credit limits for a covered company.",
+            "text": "The subpart establishes single counterparty credit limits for a covered company."
+          },
+          {
+            "quote": "Section 252.72 establishes credit exposure limits for a covered company and a major covered company.",
+            "text": "Section 252.72 establishes credit exposure limits for a covered company and a major covered company."
+          }
+        ],
+        "notes": "The excerpt describes applicability and general provisions of the single-counterparty credit limit rules but states no board-action standard and no timing/cadence. It does not mention the board at all, so verb_standard and cadence are unresolved. Object is grounded in the establishment of single counterparty credit limits.",
+        "object": "Single counterparty credit limits for a covered company",
+        "object_evidence": "This subpart establishes single counterparty credit limits for a covered company.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:TLA-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a banking entity shall not\u2014",
+            "term": "banking entity"
+          },
+          {
+            "quote": "engage in proprietary trading",
+            "term": "proprietary trading"
+          },
+          {
+            "quote": "sponsor a hedge fund or a private equity fund",
+            "term": "hedge fund or a private equity fund"
+          }
+        ],
+        "duty_id": "b:VOL-01",
+        "elements": [
+          {
+            "quote": "a banking entity shall not\u2014 (A) engage in proprietary trading",
+            "text": "A banking entity shall not engage in proprietary trading"
+          },
+          {
+            "quote": "acquire or retain any equity, partnership, or other ownership interest in or sponsor a hedge fund or a private equity fund",
+            "text": "A banking entity shall not acquire or retain any ownership interest in or sponsor a hedge fund or private equity fund"
+          }
+        ],
+        "notes": "The excerpt is the opening of 12 U.S.C. 1851 stating the substantive prohibitions on banking entities. It contains no board-action standard (approve/oversee), no CEO attestation requirement, and no annual timing. The compliance-program and attestation content in the draft comes from the CFR subpart D, which is not present in this excerpt, so verb_standard and cadence are left unresolved.",
+        "object": "Prohibitions on proprietary trading and certain relationships with hedge funds and private equity funds",
+        "object_evidence": "Prohibitions on proprietary trading and certain relationships with hedge funds and private equity funds",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:VOL-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "being an officer, director, agent or employee of any Federal Reserve bank, member bank, depository institution holding company",
+            "term": "director"
+          },
+          {
+            "quote": "depository institution holding company",
+            "term": "depository institution holding company"
+          }
+        ],
+        "duty_id": "p:PLB-01",
+        "elements": [
+          {
+            "quote": "Whoever, being an officer, director, agent or employee of any Federal Reserve bank, member bank, depository institution holding company, national bank, insured bank, branch or agency of a foreign bank, or organization operating under section 25 or section 25(a) 1 of the Federal Reserve Act",
+            "text": "The prohibition applies to an officer, director, agent or employee of a covered institution"
+          },
+          {
+            "quote": "without authority from the directors of such bank, branch, agency, or organization or company",
+            "text": "The act must be done without authority from the directors"
+          },
+          {
+            "quote": "issues or puts in circulation any notes of such bank, branch, age",
+            "text": "The prohibited act is issuing or putting into circulation notes of such institution"
+          }
+        ],
+        "notes": "The excerpt is a criminal prohibition statute, not a board-action mandate. It states no board action standard (approve/review/etc.) and no timing/cadence, so both are none_specified. The draft label references 'false entries' but the provided excerpt only covers the issuance/circulation of unauthorized notes; object is grounded strictly in the excerpt text, which is truncated ('age').",
+        "object": "Criminal prohibition against an officer, director, agent or employee of a covered bank or holding company issuing or circulating notes without authority from the directors",
+        "object_evidence": "Whoever, being an officer, director, agent or employee of any Federal Reserve bank, member bank, depository institution holding company, national bank, insured bank, branch or agency of a foreign bank, or organization operating under section 25 or section 25(a) 1 of the Federal Reserve Act, without authority from the directors of such bank, branch, agency, or organization or company, issues or puts in circulation any notes of such bank, branch, age",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "p:PLB-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "any compensation received during the 2-year period preceding the date on which the Corporation was appointed as the receiver of the covered financial company",
+        "definitions_used": [
+          {
+            "quote": "Substantially responsible. The Corporation, as receiver of a covered financial company, may file an action to recover from any current or former senior executive or director substantially responsible for the failed condition of the covered financial company",
+            "term": "Substantially responsible"
+          }
+        ],
+        "duty_id": "p:PLB-03",
+        "elements": [
+          {
+            "quote": "The Corporation, as receiver of a covered financial company, may file an action to recover from any current or former senior executive or director substantially responsible for the failed condition of the covered financial company any compensation received",
+            "text": "The FDIC, as receiver of a covered financial company, may file an action to recover compensation from a current or former senior executive or director substantially responsible for the failed condition."
+          },
+          {
+            "quote": "any compensation received during the 2-year period preceding the date on which the Corporation was appointed as the receiver of the covered financial company",
+            "text": "Recoverable compensation is that received during the 2-year period preceding the FDIC's appointment as receiver."
+          },
+          {
+            "quote": "except that, in the case of fraud, no time limit shall apply",
+            "text": "In cases of fraud, no time limit applies to recovery."
+          }
+        ],
+        "notes": "The excerpt describes an FDIC receiver enforcement/recoupment action against executives and directors, not a board action standard, so verb_standard is none_specified. Cadence is event_driven, keyed to the FDIC's appointment as receiver. The excerpt is truncated ('shall be deem') and does not address the \u00a7210(s) negligence standard or burden-of-proof language in the draft, nor the 1821(k) gross-negligence liability, so those are not asserted.",
+        "object": "Recoupment by the FDIC as receiver of compensation received by senior executives or directors substantially responsible for the failed condition of a covered financial company during the 2-year period preceding receivership (no time limit in cases of fraud)",
+        "object_evidence": "The Corporation, as receiver of a covered financial company, may file an action to recover from any current or former senior executive or director substantially responsible for the failed condition of the covered financial company any compensation received during the 2-year period preceding the date on which the Corporation was appointed as the receiver of the covered financial company, except that, in the case of fraud, no time limit shall apply.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "p:PLB-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "p:PLB-04",
+        "elements": [],
+        "notes": "The excerpt concerns 12 U.S.C. 1818(a) voluntary termination of insured depository institution status. It contains nothing about indemnification, Part 359, D&O insurance, fidelity bonds, culpable IAPs, or any board-action standard. No field in this indemnification/insurance duty can be supported by the provided text, so all substantive fields are left neutral and marked unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "p:PLB-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "evaluates on an ongoing basis",
+        "definitions_used": [],
+        "duty_id": "s:GOV-01",
+        "elements": [
+          {
+            "quote": "lement the board's knowledge, expertise, and experience and support the board in making sound, well-informed decisions",
+            "text": "Board members complement the board's knowledge, expertise, and experience and support sound, well-informed decisions"
+          },
+          {
+            "quote": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees",
+            "text": "Board evaluates on an ongoing basis its strengths and weaknesses, including committee performance"
+          },
+          {
+            "quote": "An effective board adapts its structure and practices to address identified weaknesses or deficiencies and as the firm's asset size, scope of operations, risk profile, and other characteristics",
+            "text": "Board adapts its structure and practices to address identified weaknesses and firm changes"
+          }
+        ],
+        "notes": "The excerpt concerns board self-evaluation and adaptation, not the drafted subject of strategy and risk appetite oversight. Cadence 'ongoing basis' supports continuous. No explicit board-action standard (approve/review/etc.) is stated, so verb_standard is unresolved. The draft object about strategy/risk appetite is not supported by this excerpt; object is grounded in the actual excerpt text.",
+        "object": "Board self-evaluation and adaptation of its structure and practices to address weaknesses and the firm's changing characteristics",
+        "object_evidence": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-05",
+        "elements": [],
+        "notes": "The excerpt concerns an effective board evaluating its strengths and weaknesses and adapting its structure to address identified deficiencies. It contains no text about independent directors, the lead independent director, board chair, or committee chairs taking an active role in setting board and committee agendas (the draft's subject). Nothing in this excerpt supports the draft duty's verb, object, or cadence, so all substantive fields are left unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "evaluates on an ongoing basis",
+        "definitions_used": [],
+        "duty_id": "s:GOV-06",
+        "elements": [
+          {
+            "quote": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees.",
+            "text": "Board evaluates its strengths and weaknesses, including committee performance, on an ongoing basis"
+          },
+          {
+            "quote": "An effective board adapts its structure and practices to address identified weaknesses or deficiencies",
+            "text": "Board adapts its structure and practices to address identified weaknesses or deficiencies"
+          }
+        ],
+        "notes": "The excerpt concerns board self-evaluation and adaptation of structure/practices, not oversight of strategy implementation, risk appetite, complaint/whistleblower reports, or emerging risks as stated in the draft. Those draft objects are not supported by this excerpt, so the object was refined to what the text supports. Cadence 'on an ongoing basis' maps to continuous. No explicit board-action standard (approve/review/etc.) is stated.",
+        "object": "Board self-evaluation and adaptation of its structure and practices to address identified weaknesses or deficiencies",
+        "object_evidence": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-06",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "evaluates on an ongoing basis",
+        "definitions_used": [],
+        "duty_id": "s:GOV-07",
+        "elements": [
+          {
+            "quote": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees.",
+            "text": "Board evaluates on an ongoing basis its strengths and weaknesses, including committee performance"
+          },
+          {
+            "quote": "An effective board adapts its structure and practices to address identified weaknesses or deficiencies",
+            "text": "Board adapts its structure and practices to address identified weaknesses or deficiencies"
+          }
+        ],
+        "notes": "The excerpt concerns board self-evaluation and adaptation of structure/practices on an ongoing basis. It does not mention independent directors, lead independent director, or executive chair as in the draft, so the object was refined to what the excerpt actually supports. No explicit board-action standard verb is stated.",
+        "object": "Board evaluates its strengths and weaknesses and adapts its structure and practices to address identified weaknesses",
+        "object_evidence": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-07",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "evaluates on an ongoing basis",
+        "definitions_used": [],
+        "duty_id": "s:GOV-10",
+        "elements": [
+          {
+            "quote": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees.",
+            "text": "The board evaluates on an ongoing basis its strengths and weaknesses, including committee performance"
+          },
+          {
+            "quote": "An effective board adapts its structure and practices to address identified weaknesses or deficiencies and as the firm's asset size, scope of operations, risk profile, and other characteristics",
+            "text": "The board adapts its structure and practices to address identified weaknesses or deficiencies and as firm characteristics change"
+          }
+        ],
+        "notes": "The excerpt concerns the board evaluating and adapting its own structure and committee performance on an ongoing basis. It does not support the draft's framing about assessing the stature and independence of independent risk management and internal audit, nor does it state a board-action standard from the allowed enum, so verb_standard is none_specified. Cadence 'continuous' is grounded in 'on an ongoing basis'.",
+        "object": "The board's evaluation of its strengths and weaknesses, including the performance of board committees, and adaptation of its structure and practices",
+        "object_evidence": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-10",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "evaluates on an ongoing basis",
+        "definitions_used": [],
+        "duty_id": "s:GOV-14",
+        "elements": [
+          {
+            "quote": "An effective board evaluates on an ongoing basis its strengths and weaknesses",
+            "text": "Board evaluates its strengths and weaknesses on an ongoing basis"
+          },
+          {
+            "quote": "including the performance of the board committees, particularly the risk, audit, and other key committees",
+            "text": "Evaluation includes the performance of board committees, particularly risk, audit, and other key committees"
+          },
+          {
+            "quote": "An effective board adapts its structure and practices to address identified weaknesses or deficiencies and as the firm's asset size, scope of operations, risk profile, and other characteristics",
+            "text": "Board adapts its structure and practices to address identified weaknesses or deficiencies and as the firm's characteristics change"
+          }
+        ],
+        "notes": "The excerpt states the board evaluates 'on an ongoing basis' rather than annually, so cadence is continuous, not annual as drafted. No explicit board-action standard from the enumerated set is stated, so verb_standard is none_specified.",
+        "object": "The board's ongoing evaluation of its strengths and weaknesses, including the performance of the board committees (risk, audit, and other key committees), and adaptation of its structure and practices to address identified weaknesses",
+        "object_evidence": "An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-14",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-17",
+        "elements": [
+          {
+            "quote": "Ensure that the recovery plan is updated as needed, and reflects lessons learned from reviews of trigger events, testing, and training exercises.",
+            "text": "Recovery plan updated as needed, reflecting lessons learned from reviews of trigger events, testing, and training exercises"
+          },
+          {
+            "quote": "Ensure that recovery planning is sufficiently integrated into corporate governance structures and processes",
+            "text": "Recovery planning sufficiently integrated into corporate governance structures and processes"
+          },
+          {
+            "quote": "subject to independent validation",
+            "text": "Recovery planning subject to independent validation"
+          },
+          {
+            "quote": "effectively supported by related MIS reporting to the board and its committees",
+            "text": "Recovery planning effectively supported by related MIS reporting to the board and its committees"
+          }
+        ],
+        "notes": "The excerpt uses 'Ensure that...' framing without naming the board or a specific board-action standard (approve/review/certify), so verb_standard is none_specified. 'updated as needed' does not settle a defined recurrence, so cadence is none_specified rather than continuous. Object grounded in the integration/independent validation/MIS reporting clause. The draft mentions 'resolution planning' but the excerpt only addresses recovery planning.",
+        "object": "Recovery planning integrated into corporate governance, subject to independent validation, and supported by related MIS reporting to the board and its committees",
+        "object_evidence": "Ensure that recovery planning is sufficiently integrated into corporate governance structures and processes, subject to independent validation, and effectively supported by related MIS reporting to the board and its committees.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-17",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "approve any significant changes to the risk governance framework",
+        "definitions_used": [
+          {
+            "quote": "an effective risk governance framework that meets the minimum standards described in these Guidelines",
+            "term": "risk governance framework"
+          }
+        ],
+        "duty_id": "s:GOV-21",
+        "elements": [
+          {
+            "quote": "The board of directors should also require management to establish and implement an effective risk governance framework that meets the minimum standards described in these Guidelines.",
+            "text": "Board requires management to establish and implement an effective risk governance framework meeting minimum standards"
+          },
+          {
+            "quote": "The board of directors or the board's risk committee should approve any significant changes to the risk governance framework",
+            "text": "Board or risk committee approves significant changes to the framework"
+          },
+          {
+            "quote": "and monitor compliance with such framework",
+            "text": "Board or risk committee monitors compliance with the framework"
+          }
+        ],
+        "notes": "The excerpt supports approval of significant changes (event-driven) but contains no annual approval of a risk appetite statement; the draft's annual cadence and risk appetite statement language are not in the excerpt, so cadence is event_driven based on 'significant changes'.",
+        "object": "An effective risk governance framework that meets the minimum standards, including approval of significant changes and monitoring of compliance",
+        "object_evidence": "require management to establish and implement an effective risk governance framework that meets the minimum standards described in these Guidelines",
+        "unresolved_fields": [],
+        "verb_evidence": "The board of directors or the board's risk committee should approve any significant changes to the risk governance framework and monitor compliance with such framework.",
+        "verb_standard": "approve"
+      },
+      "duty_id": "s:GOV-21",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "When providing active oversight under paragraph III.B. of these Guidelines",
+        "definitions_used": [],
+        "duty_id": "s:GOV-23",
+        "elements": [
+          {
+            "quote": "When providing active oversight under paragraph III.B. of these Guidelines, each member of the board of directors should exercise sound, independent judgment.",
+            "text": "Each board member should exercise sound, independent judgment when providing active oversight."
+          }
+        ],
+        "notes": "The excerpt states no board-action standard from the enumerated set (approve/review_and_challenge/etc.); the duty is to exercise judgment, so verb_standard is none_specified. Cadence is tied to the event of providing active oversight, hence event_driven rather than continuous. No defined terms are supplied within the excerpt.",
+        "object": "Each member of the board of directors should exercise sound, independent judgment when providing active oversight",
+        "object_evidence": "each member of the board of directors should exercise sound, independent judgment",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-23",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "at least two members of the board of directors",
+        "definitions_used": [
+          {
+            "quote": "an officer or employee of the parent company or covered bank",
+            "term": "parent company or covered bank"
+          }
+        ],
+        "duty_id": "s:GOV-24",
+        "elements": [
+          {
+            "quote": "Should not be an officer or employee of the parent company or covered bank",
+            "text": "At least two board members should not be an officer or employee of the parent company or covered bank"
+          },
+          {
+            "quote": "has not been an officer or employee of the parent company or covered bank during the previous three years",
+            "text": "and has not been an officer or employee of the parent company or covered bank during the previous three years"
+          }
+        ],
+        "notes": "The excerpt is a board-composition requirement with no explicit board-action verb standard, so verb_standard is none_specified. Cadence is continuous, grounded in the standing requirement that at least two members meet the criteria. The excerpt is truncated at element 2 ('Should not be a member o'), and the draft's family-member and national-securities-exchange independence criteria are not present in the provided text, so they are not asserted.",
+        "object": "Composition of the board to include at least two members who are not, and have not been within the previous three years, officers or employees of the parent company or covered bank, to promote independent oversight",
+        "object_evidence": "Include Independent Directors. To promote effective, independent oversight of the covered bank's management, at least two members of the board of directors:",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-24",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "a formal, ongoing training program for all directors",
+        "definitions_used": [],
+        "duty_id": "s:GOV-25",
+        "elements": [
+          {
+            "quote": "The board of directors should establish and adhere to a formal, ongoing training program for all directors.",
+            "text": "Establish and adhere to a formal, ongoing training program for all directors"
+          },
+          {
+            "quote": "This program should consider the directors' knowledge and experience and the covered bank's risk profile.",
+            "text": "Program should consider directors' knowledge and experience and the covered bank's risk profile"
+          },
+          {
+            "quote": "Complex products, services, lines of business, and risks that have a significant impact on the covered bank",
+            "text": "Include training on complex products, services, lines of business, and risks with significant impact"
+          },
+          {
+            "quote": "Laws, regulations, and supervisory requirements applicable to the covered bank",
+            "text": "Include training on applicable laws, regulations, and supervisory requirements"
+          },
+          {
+            "quote": "Other topics identified by the board of directors",
+            "text": "Include training on other topics identified by the board"
+          }
+        ],
+        "notes": "The excerpt describes the board establishing/adhering to a training program but states no engagement standard matching the enum (approve/review/receive/certify/be_informed), so verb_standard is none_specified. 'Ongoing' supports continuous cadence.",
+        "object": "A formal, ongoing training program for all directors covering complex products/services/risks, applicable laws and supervisory requirements, and other topics identified by the board",
+        "object_evidence": "The board of directors should establish and adhere to a formal, ongoing training program for all directors.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-25",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "conduct an annual self-assessment",
+        "definitions_used": [
+          {
+            "quote": "A covered bank's board of directors",
+            "term": "covered bank"
+          }
+        ],
+        "duty_id": "s:GOV-26",
+        "elements": [
+          {
+            "quote": "should conduct an annual self-assessment",
+            "text": "The board should conduct an annual self-assessment."
+          },
+          {
+            "quote": "that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines",
+            "text": "The self-assessment includes an evaluation of the board's effectiveness in meeting the section III standards."
+          }
+        ],
+        "notes": "The excerpt uses 'should conduct' which describes the board performing/carrying out a self-assessment, not one of the listed engagement standards (approve/review_and_challenge/receive_report/be_informed/certify); hence none_specified. Cadence 'annual' is explicit. 'Covered bank' is a used defined term.",
+        "object": "An annual self-assessment including an evaluation of the board's effectiveness in meeting the standards in section III of the Guidelines",
+        "object_evidence": "conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-26",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "Independent risk management should review and update the risk governance framework at least annually, and as",
+        "definitions_used": [
+          {
+            "quote": "designed by independent risk management",
+            "term": "independent risk management"
+          },
+          {
+            "quote": "a formal, written risk governance framework",
+            "term": "risk governance framework"
+          }
+        ],
+        "duty_id": "s:GOV-28",
+        "elements": [
+          {
+            "quote": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+            "text": "The board or its risk committee approves the risk governance framework designed by independent risk management."
+          },
+          {
+            "quote": "The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities.",
+            "text": "The framework should include delegations of authority and risk limits for material activities."
+          },
+          {
+            "quote": "Independent risk management should review and update the risk governance framework at least annually",
+            "text": "Independent risk management reviews and updates the framework at least annually."
+          }
+        ],
+        "notes": "The excerpt concerns board/risk-committee approval of the risk governance framework, not the CEO/CAE/CRO appointment duties described in the draft label. Verb standard is 'approve' per the board's role; cadence is at least annually per the review/update requirement. The draft's appointment content is not supported by this excerpt.",
+        "object": "a formal, written risk governance framework designed by independent risk management",
+        "object_evidence": "A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee.",
+        "unresolved_fields": [],
+        "verb_evidence": "approved by the board of directors or the board's risk committee",
+        "verb_standard": "approve"
+      },
+      "duty_id": "s:GOV-28",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-29",
+        "elements": [
+          {
+            "quote": "The board is responsible for overseeing management",
+            "text": "Board is responsible for overseeing management"
+          },
+          {
+            "quote": "providing organizational leadership",
+            "text": "Board provides organizational leadership"
+          },
+          {
+            "quote": "establishing core corporate values",
+            "text": "Board establishes core corporate values"
+          },
+          {
+            "quote": "The board should create a corporate and risk governance framework to facilitate oversight and help set the bank\u2019s strategic direction, risk culture, and risk appetite.",
+            "text": "Board should create a corporate and risk governance framework to facilitate oversight and help set strategic direction, risk culture, and risk appetite"
+          },
+          {
+            "quote": "The board also oversees the talent management processes for senior management",
+            "text": "Board oversees talent management processes for senior management"
+          }
+        ],
+        "notes": "The excerpt describes responsibilities but states no specific board action standard (approve/review/etc.) \u2014 verb standard left none_specified. No timing language appears, so cadence is none_specified. The draft's 'continuous' cadence and 'holds management accountable / not managing day-to-day' content are not supported by this excerpt.",
+        "object": "Overseeing management, providing organizational leadership, establishing core corporate values, and creating a corporate and risk governance framework to help set the bank's strategic direction, risk culture, and risk appetite",
+        "object_evidence": "The board is responsible for overseeing management, providing organizational leadership, and establishing core corporate values. The board should create a corporate and risk governance framework to facilitate oversight and help set the bank\u2019s strategic direction, risk culture, and risk appetite.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-29",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [
+    "b:RGC-09",
+    "p:PLB-04",
+    "s:GOV-05"
+  ],
+  "verb_retag_conflicts": []
+}

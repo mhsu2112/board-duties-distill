@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "dbe600fb98851cbbf677ad6663f02d8534465b59f58c3a3396d1dd5bc026d8bb",
+  "response_text": "{\"duty_id\":\"b:BSA-02\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"reference to subpart B of chapter X part for additional anti-money laundering program requirements\",\"object_evidence\":\"should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The excerpt is a fragmentary cross-reference clause directing readers to subpart B for additional AML program requirements. It does not mention a board, designation of a compliance officer, qualifications, authority, independence, or resources. No board-action standard or timing is stated, so verb_standard and cadence are none_specified. The object is grounded only in the cross-reference text actually present.\"}"
+}

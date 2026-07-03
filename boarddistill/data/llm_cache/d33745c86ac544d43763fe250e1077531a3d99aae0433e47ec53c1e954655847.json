@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "d33745c86ac544d43763fe250e1077531a3d99aae0433e47ec53c1e954655847",
+  "response_text": "{\"cluster\":\"Director training\",\"diagnostics\":[{\"kind\":\"duplicate_duty\",\"target_ids\":[\"b:IND-02\",\"s:GOV-25\"],\"evidence_quote\":\"The board of directors should establish and adhere to a formal, ongoing training program for all directors. This program should consider the directors' knowledge and experience and the covered bank's risk profile.\",\"rationale\":\"Both duties state the same training-program obligation with identical excerpt text, one at the binding layer and one at the supervisory layer.rationionale\"},{\"kind\":\"rule_guidance_restatement\",\"target_ids\":[\"s:GOV-25\",\"b:IND-02\"],\"evidence_quote\":\"The board of directors should establish and adhere to a formal, ongoing training program for all directors.\",\"rationale\":\"The supervisory-layer duty restates the binding rule duty verbatim without adding any obligation.\"}]}"
+}

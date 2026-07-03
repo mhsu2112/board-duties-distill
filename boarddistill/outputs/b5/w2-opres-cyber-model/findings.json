@@ -1,0 +1,165 @@
+{
+  "_meta": "B5-T3 diagnostics for wave w2-opres-cyber-model. LLM diagnostics per cluster (span-anchored) + deterministic cross-entity mirror pairs; every diagnostic 0-op \u21d2 unresolved effect, needs_review default. Consolidation findings come from the B5-T4 lever decomposition.",
+  "anchor_failures": [
+    "Operational resilience / business continuity:duplicate_duty:'The firm\\\\u2019s board of directors oversees the firm\\\\u2019s '"
+  ],
+  "counts": {
+    "anchor_failures": 1,
+    "diagnostic_findings": 7,
+    "effect_classes": {
+      "unresolved": 7
+    },
+    "in_review": 7
+  },
+  "duplication_families": {
+    "mirror_pair": {
+      "count": 0,
+      "finding_ids": []
+    },
+    "restatement": {
+      "count": 1,
+      "finding_ids": [
+        "w2-opres-cyber-model-dx-inf-0"
+      ]
+    }
+  },
+  "finding_cluster": {
+    "w2-opres-cyber-model-dx-inf-0": "Information security & cybersecurity",
+    "w2-opres-cyber-model-dx-inf-1": "Information security & cybersecurity",
+    "w2-opres-cyber-model-dx-inf-2": "Information security & cybersecurity",
+    "w2-opres-cyber-model-dx-inf-3": "Information security & cybersecurity",
+    "w2-opres-cyber-model-dx-ope-1": "Operational resilience / business continuity",
+    "w2-opres-cyber-model-dx-ope-2": "Operational resilience / business continuity",
+    "w2-opres-cyber-model-dx-ope-3": "Operational resilience / business continuity"
+  },
+  "finding_kind": {
+    "w2-opres-cyber-model-dx-inf-0": "restatement",
+    "w2-opres-cyber-model-dx-inf-1": "undefined_term",
+    "w2-opres-cyber-model-dx-inf-2": "undefined_term",
+    "w2-opres-cyber-model-dx-inf-3": "actor_ambiguity",
+    "w2-opres-cyber-model-dx-ope-1": "undefined_term",
+    "w2-opres-cyber-model-dx-ope-2": "actor_ambiguity",
+    "w2-opres-cyber-model-dx-ope-3": "undefined_term"
+  },
+  "findings": [
+    {
+      "as_built_ref": "b:CYB-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-inf-0",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: b:CYB-02, s:CYB-05",
+      "rationale": "b:CYB-02 and s:CYB-05 quote the identical Customer Notice introductory text stating the same obligation.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CYB-04",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-inf-1",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:CYB-04",
+      "rationale": "The duty relies on the term 'sensitive customer information' without defining it in its own text.},",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CYB-04",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-inf-2",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:CYB-04",
+      "rationale": "The duty invokes 'reasonable investigation' as a standard without defining it in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CYB-04",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-inf-3",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:CYB-04",
+      "rationale": "The text does not identify which board body versus management bears the investigation and notification obligation.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:OPR-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-ope-1",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:OPR-02",
+      "rationale": "The duty relies on 'operational-resilience practices' without defining what practices are covered.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:OPR-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-ope-2",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:OPR-02",
+      "rationale": "The excerpt does not make clear whether the board, a committee, or senior management bears the approving/promoting obligations.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:OPR-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "w2-opres-cyber-model-dx-ope-3",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:OPR-01, s:OPR-03",
+      "rationale": "The term 'independent operational risk management function' is used but not defined within the duty text.",
+      "status": "draft",
+      "verifier_records": []
+    }
+  ],
+  "wave": "w2-opres-cyber-model"
+}
