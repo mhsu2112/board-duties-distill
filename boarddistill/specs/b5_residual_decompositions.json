@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "task": "B5 residual closure — hand decompositions of the six residual levers",
+    "status": "hand-authored (Cowork, M. Hsu session 2026-07-02); pending TODO(human) approval of 3 proposed composites; see B5_residual-closure.md",
+    "verdict": "closure holds at 16 primitives; 5 residuals decompose; 1 (incentive comp) is a policy disjunction with decomposable branches",
+    "proposed_composites": {
+      "partial_consolidation": ["MERGE", "FACTOR_EXCEPTION", "RELATE_OBLIGATION(parallel_distinct_purpose)"],
+      "safe_harbor_template": ["INTRODUCE(general_part)", "DEEM_SATISFIED", "FACTOR_EXCEPTION", "RESOLVE_CROSS_REFERENCE"],
+      "tiered_attention": ["DEFINE_TERM", "SPLIT", "ASSIGN_DUTY_PARAMETER"]
+    },
+    "held_out_dial_rule": "quantitative parameter values (thresholds, chosen cadences, penalty-like dials) are never set by the tool; the operation expresses the move, the value routes to the human"
+  },
+  "decompositions": [
+    {
+      "id": "R1",
+      "lever_id": "L-cro-cre-appointment-",
+      "lever": "Consolidate CRO/CRE appointment & compensation into Reg YY; OCC incorporates by reference",
+      "composite": "partial_consolidation (proposed)",
+      "actor_with_authority": ["FRB", "OCC"],
+      "instrument_required": "joint_rulemaking",
+      "operations": [
+        {"primitive": "RELATE_OBLIGATION", "relation": "entity_level_mirror", "operands": ["RegYY-252.33(b)-CRO", "AppD-I.E.7-CRE"], "effect_class": "clarify"},
+        {"primitive": "MERGE", "operands": ["duplicated two-level board approval of same individual's appointment/pay"], "output": "one consolidated approval (Reg YY home)", "effect_class": "change", "normative_kind": ["interagency_coordination"]},
+        {"primitive": "RESOLVE_CROSS_REFERENCE", "operands": ["AppD-I.E.7 -> RegYY-252.33(b)"], "effect_class": "codify"},
+        {"primitive": "FACTOR_EXCEPTION", "operands": ["OCC CRE-independence-from-front-line structure retained"], "effect_class": "clarify"}
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "R2",
+      "lever_id": "L-director-training",
+      "lever": "One consolidated director-training program covering all topics",
+      "actor_with_authority": ["FRB", "OCC", "FDIC", "FinCEN"],
+      "instrument_required": "interagency_statement",
+      "operations": [
+        {"primitive": "MERGE", "operands": ["AppD-III.E training", "SR21-3/Directors-Book training expectations"], "output": "one consolidated program", "effect_class": "change", "normative_kind": ["supervisory_value_judgment", "interagency_coordination"]},
+        {"primitive": "DEEM_SATISFIED", "satisfied_ref": "BSA-training-pillar(31 USC 5318(h) - statutory floor)", "satisfying_ref": "consolidated-program BSA module", "conditions": ["module meets BSA program-rule content"], "effect_class": "change", "normative_kind": ["policy_choice"], "note": "floor-adjacent: always needs_review; MERGE of the BSA duty itself is blocked by statutory_floor"},
+        {"primitive": "RESOLVE_CROSS_REFERENCE", "operands": ["guidance restatements -> consolidated program"], "effect_class": "codify"}
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "R3",
+      "lever_id": "L-incentive-compensati",
+      "lever": "Finalize one 956 framework or rely on guidance; SEC independence satisfies the prudential element",
+      "classification": "policy_disjunction_non_operation (B0 D10 category); branches decomposed, branch choice routed to human",
+      "actor_with_authority": ["FRB", "OCC", "FDIC", "SEC", "NCUA", "FHFA"],
+      "branches": [
+        {"branch": "A-finalize", "operations": [
+          {"primitive": "INTRODUCE", "output": "final DFA-956 rule", "effect_class": "change", "normative_kind": ["statutory_constraint", "interagency_coordination"]},
+          {"primitive": "REPEAL", "operands": ["2010 interagency guidance (superseded on finalization)"], "effect_class": "change"},
+          {"primitive": "DEEM_SATISFIED", "satisfied_ref": "prudential comp-committee-independence element", "satisfying_ref": "SEC/exchange comp-committee independence", "conditions": ["listing-standard independence maintained"], "effect_class": "change", "normative_kind": ["policy_choice"]}
+        ]},
+        {"branch": "B-rely-on-guidance", "operations": [
+          {"primitive": "REPEAL", "operands": ["pending 956 proposals (withdrawn)"], "effect_class": "change", "normative_kind": ["institutional_discretion", "statutory_constraint"], "note": "leaves a statutory mandate unexecuted - hard needs_review"},
+          {"primitive": "RESOLVE_CROSS_REFERENCE", "operands": ["2010 guidance as operative framework"], "effect_class": "codify"}
+        ]},
+        {"branch": "C-statutory-repeal", "operations": [], "note": "legislative act - outside the calculus"}
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "R4",
+      "lever_id": "L-resolution-recovery-",
+      "lever": "Single resilience-planning board cycle; shared resolution submission with an IDI annex",
+      "composite": "partial_consolidation + INTRODUCE + ASSIGN_DUTY_PARAMETER (cadence)",
+      "actor_with_authority": ["FRB", "FDIC"],
+      "instrument_required": "joint_rulemaking",
+      "operations": [
+        {"primitive": "INTRODUCE", "scope": "general_part", "output": "one resilience-planning board cycle (recovery + CFP + resolution modules)", "effect_class": "fill_gap"},
+        {"primitive": "ASSIGN_DUTY_PARAMETER", "parameter": "cadence", "operands": ["each plan's explicit cycle -> the single cycle"], "effect_class": "change", "normative_kind": ["institutional_discretion"]},
+        {"primitive": "MERGE", "operands": ["parent 165(d)/RegQQ submission", "IDI 360.10 submission"], "output": "shared submission", "effect_class": "change", "normative_kind": ["statutory_constraint", "interagency_coordination"], "note": "165(d) is on the statutory floor - the duty survives, only the format merges"},
+        {"primitive": "FACTOR_EXCEPTION", "operands": ["IDI annex carrying FDIC-specific resolvability content"], "effect_class": "clarify"},
+        {"primitive": "RELATE_OBLIGATION", "relation": "parallel_distinct_purpose", "operands": ["FDIC insured-bank resolvability interest", "FRB parent regime"], "effect_class": "clarify"}
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "R5",
+      "lever_id": "L-risk-appetite-statem",
+      "lever": "Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all",
+      "composite": "safe_harbor_template (proposed)",
+      "actor_with_authority": ["FRB", "OCC"],
+      "instrument_required": "interagency_statement_plus_rule_safe_harbor",
+      "operations": [
+        {"primitive": "INTRODUCE", "scope": "general_part", "output": "interagency risk-appetite template", "effect_class": "fill_gap", "normative_kind": ["interagency_coordination"]},
+        {"primitive": "DEEM_SATISFIED", "satisfied_ref": "each instrument's risk-appetite approval duty (x4)", "satisfying_ref": "one board-approved template-conforming statement", "conditions": ["template conformity (the safe harbor)"], "effect_class": "change", "normative_kind": ["policy_choice"]},
+        {"primitive": "FACTOR_EXCEPTION", "operands": ["liquidity tolerance vs operational-disruption tolerance retained as distinct modules"], "effect_class": "clarify"},
+        {"primitive": "RESOLVE_CROSS_REFERENCE", "operands": ["four instruments -> template"], "effect_class": "codify"}
+      ],
+      "disposition_default": "needs_review"
+    },
+    {
+      "id": "R6",
+      "lever_id": "L-third-party-risk-man",
+      "lever": "Quantitative critical-activity threshold for board attention; management approval + aggregate reporting otherwise",
+      "composite": "tiered_attention (proposed) + FACTOR_EXCEPTION",
+      "actor_with_authority": ["FRB", "OCC", "FDIC"],
+      "instrument_required": "interagency_statement",
+      "operations": [
+        {"primitive": "DEFINE_TERM", "term": "critical activity", "operands": ["2023 interagency TPRM guidance (qualitative)"], "effect_class": "change", "normative_kind": ["policy_choice", "interagency_coordination"], "note": "threshold VALUE is a held-out dial - never set by the tool"},
+        {"primitive": "SPLIT", "operands": ["board third-party duty"], "outputs": ["critical-activity board duty", "non-critical management duty"], "effect_class": "change", "normative_kind": ["supervisory_value_judgment"]},
+        {"primitive": "ASSIGN_DUTY_PARAMETER", "parameter": "verb_standard", "operands": ["board: approve (critical); receive_report aggregate (otherwise)"], "effect_class": "change"},
+        {"primitive": "FACTOR_EXCEPTION", "operands": ["CFPB consumer service-provider concern retained, not consolidated"], "effect_class": "clarify"}
+      ],
+      "disposition_default": "needs_review"
+    }
+  ]
+}

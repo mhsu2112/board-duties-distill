@@ -1,5 +1,7 @@
 # B5 Decision Packet — the corpus scale-out review
 
+> **✅ RESOLVED — July 2, 2026.** M. Hsu accepted all recommendations (via chat): all clean levers advance; documented non-targets noted; verification residuals and the wave-4 rate accepted; statutory-floor additions per packet recommendations; the six closure residuals sent to hand decomposition — result in `B5_residual-closure.md` (closure holds; no new primitive). Retained as the decision record.
+
 **For:** Mike Hsu · **What this is:** every open item from the B5 run — the 22 non-MVP reform levers, the statutory-floor proposals, the verification residuals, and the closure-test result — in plain English with a recommendation on each. Reply with item numbers + your call; *"accept all recommendations"* also works, and every deviation is one line. Full evidence sits in `outputs/b5/<wave>/<cluster>/package.md`; nothing here finalizes anything.
 
 
