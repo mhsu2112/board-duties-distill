@@ -1,6 +1,8 @@
 # BoardDistill — Project Overview Memo
 
-**To:** Mike Hsu · **Date:** July 2, 2026 · **Status:** Slice one built and verified
+**To:** Mike Hsu · **Date:** July 2, 2026 · **Status:** ~~Slice one built and verified~~ → **MVP arc complete (B0–B4)**
+
+> **Addendum — end of day, July 2, 2026.** Since this memo was written, four further phases ran and closed: **B1** citation verification (21/72 verified, 0 contradicted), **B2** appendix/SR/manual resolvers + instrument graph (50/72 verified; 6 actor retags), **B3** the LLM layer (three consolidation packages; 0 hallucinated citations; caught 10 mispinned rows and the two-duplication-families result), and **B4** review-disposition write-back + defect closure (all 10 re-pins fixed, concept-node graph, **8/9 B0 effect-class agreement**, zero unresolved). All 28 human dispositions recorded via `REVIEW_PACKET_B3.md`. Headline empirical findings: zero fabricated/invented duties after four audit passes; 41/50 duties state no board-action standard; duplication has two distinct structures (`mirror_pair` vs `restatement`). Full trail: `boarddistill/B1_TASKS.md`–`B4_TASKS.md` and `boarddistill/outputs/b1–b4/`. **Remaining arcs (not started):** scale-out to ~27 clusters; RBI Master-Directions rediscovery benchmark; minor carry-forwards (10-row re-distill needs API key; D9 characterized disagreement; D7 disposition rule refinement).
 
 ---
 
