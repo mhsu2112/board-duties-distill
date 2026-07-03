@@ -308,6 +308,32 @@ def b4_apply(
     )
 
 
+@app.command("b4-repin")
+def b4_repin(
+    out: Annotated[Path, typer.Option("--out", help="B4 output directory.")] = Path("outputs/b4"),
+) -> None:
+    """B4-T2: re-pin the ten source-mismatch rows (cache-verified corrected quotes)."""
+    import json
+
+    from adapters.repin import repin_document
+
+    doc = repin_document()
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "repins.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B4-T2 re-pin:")
+    typer.echo(
+        f"  {c['rows']} rows re-pinned · quotes verified: {c['quote_verified']}/{c['rows']} · "
+        f"fuzzy anchor-matched: {c['anchor_matched_fuzzy']} · F2/F4 escalations: "
+        f"{c['escalated_f2_f4']} · partial-support: {c['partial_support']}"
+    )
+    if doc["unverified_quotes"]:
+        typer.echo(f"  ⚠ UNVERIFIED quotes: {doc['unverified_quotes']}", err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"  {doc['redistill_checkpoint']}")
+
+
 @app.command("b4-aud07")
 def b4_aud07(
     distilled: Annotated[
