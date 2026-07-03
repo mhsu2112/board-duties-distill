@@ -102,6 +102,7 @@ class InstrumentNode(StrictModel):
     effective_date: date
     treatment_status: TreatmentStatus
     treatment_date: date | None = None
+    treatment_evidence: str | None = None
     bears_on: list[str] = Field(default_factory=list)
 
 

@@ -1,0 +1,257 @@
+{
+  "_meta": "Instrument-graph v1 (B2-T6). One node per instrument the 72 MVP rows cite; bears_on from B2 verification. Treatment-status judgment calls are flagged, not decided.",
+  "_verified_not_covered": [],
+  "coverage": {
+    "baseline_answered": 50,
+    "instruments": 16,
+    "verified_duties": 50
+  },
+  "graph": {
+    "edges": [],
+    "nodes": [
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "b:CAP-02",
+          "b:CAP-03",
+          "s:CAP-02",
+          "s:CAP-09"
+        ],
+        "citation": "12 CFR Part 225",
+        "effective_date": "1984-01-01",
+        "id": "12-cfr-part-225",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "b:CAP-04",
+          "b:CAP-05",
+          "b:RGC-02",
+          "b:RGC-03",
+          "b:RGC-04",
+          "b:RGC-05"
+        ],
+        "citation": "12 CFR Part 252",
+        "effective_date": "2014-06-01",
+        "id": "12-cfr-part-252",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "s:GOV-31",
+          "s:GOV-32",
+          "s:GOV-33"
+        ],
+        "citation": "12 CFR Part 30 App. A",
+        "effective_date": "1995-08-09",
+        "id": "12-cfr-part-30-app-a",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "b:AUD-08",
+          "b:RGC-07",
+          "b:RGC-10",
+          "s:GOV-22",
+          "s:GOV-27"
+        ],
+        "citation": "12 CFR Part 30 App. D",
+        "effective_date": "2014-09-25",
+        "id": "12-cfr-part-30-app-d",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "b:AUD-01",
+          "b:AUD-02",
+          "b:AUD-03",
+          "b:AUD-04"
+        ],
+        "citation": "12 CFR Part 363",
+        "effective_date": "1993-07-02",
+        "id": "12-cfr-part-363",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "b:FID-02"
+        ],
+        "citation": "12 CFR Part 9",
+        "effective_date": "1996-12-30",
+        "id": "12-cfr-part-9",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:CAP-01",
+          "b:RGC-01"
+        ],
+        "citation": "12 U.S.C. 5365",
+        "effective_date": "2010-07-21",
+        "id": "12-u-s-c-5365",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:AUD-05",
+          "b:AUD-06"
+        ],
+        "citation": "15 U.S.C. 7262",
+        "effective_date": "2002-07-30",
+        "id": "15-u-s-c-7262",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "SEC",
+        "bears_on": [
+          "b:AUD-07"
+        ],
+        "citation": "17 CFR Part 240",
+        "effective_date": "2003-08-29",
+        "id": "17-cfr-part-240",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "s:FDR-01",
+          "s:FDR-02"
+        ],
+        "citation": "FDIC RMS Manual: Management",
+        "effective_date": "2005-01-01",
+        "id": "fdic-rms-manual-management",
+        "stratum": "manual",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "s:BCG-03",
+          "s:BCG-06"
+        ],
+        "citation": "OCC Comptroller's Handbook: Corporate & Risk Governance",
+        "effective_date": "2019-07-01",
+        "id": "occ-comptroller-s-handbook-corporate-risk-governance",
+        "stratum": "manual",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CAP-11"
+        ],
+        "citation": "SR 09-4",
+        "effective_date": "2009-03-27",
+        "id": "sr-09-4",
+        "stratum": "guidance",
+        "treatment_date": "2015-12-18",
+        "treatment_evidence": "SR 15-18 fn. 5 supersedes SR 09-4 for GSIBs (cited by s:CAP-11).",
+        "treatment_status": "superseded"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:STR-01",
+          "s:STR-03",
+          "s:STR-04"
+        ],
+        "citation": "SR 12-7",
+        "effective_date": "2012-05-14",
+        "id": "sr-12-7",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:IAU-01",
+          "s:IAU-02"
+        ],
+        "citation": "SR 13-1",
+        "effective_date": "2013-01-23",
+        "id": "sr-13-1",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CAP-01",
+          "s:CAP-03",
+          "s:CAP-04",
+          "s:CAP-06",
+          "s:CAP-07",
+          "s:CAP-08",
+          "s:CAP-11"
+        ],
+        "citation": "SR 15-18",
+        "effective_date": "2015-12-18",
+        "id": "sr-15-18",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:GOV-03",
+          "s:GOV-04",
+          "s:GOV-08",
+          "s:GOV-09",
+          "s:GOV-12",
+          "s:GOV-13"
+        ],
+        "citation": "SR 21-3",
+        "effective_date": "2021-02-26",
+        "id": "sr-21-3",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      }
+    ]
+  }
+}

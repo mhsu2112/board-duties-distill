@@ -229,6 +229,43 @@ def verify_live(
     typer.echo("  " + " · ".join(f"{k}={v}" for k, v in sorted(summary.items())))
 
 
+@app.command("b2-graph")
+def b2_graph(
+    targets: Annotated[
+        Path, typer.Option("--targets", help="targets.json from b1-targets.")
+    ] = Path("outputs/b1/targets.json"),
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/sources"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="Graph output path.")] = Path(
+        "data/graph/us-gsib_v1.json"
+    ),
+) -> None:
+    """B2-T6: build instrument-graph v1 from the (cache-replayed) verification."""
+    import json
+
+    from adapters.graph_build import build_instrument_graph, graph_document
+    from adapters.resolvers import build_resolver
+    from adapters.retrieval import Fetcher, offline_client
+    from distillcore.pipeline.verify import verify_targets
+
+    doc = json.loads(targets.read_text())
+    resolver = build_resolver(Fetcher(cache, offline_client()))
+    rows = verify_targets(doc["targets"], resolver)
+
+    graph = build_instrument_graph(rows)
+    document = graph_document(graph, rows)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(document, indent=2, sort_keys=True) + "\n")
+
+    cov = document["coverage"]
+    typer.echo(f"[boarddistill] instrument graph -> {out}")
+    typer.echo(
+        f"  instruments={cov['instruments']} · verified duties={cov['verified_duties']} "
+        f"· baseline answered={cov['baseline_answered']}"
+    )
+
+
 @app.command("b2-accept")
 def b2_accept(
     verification: Annotated[
