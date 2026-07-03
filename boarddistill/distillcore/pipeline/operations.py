@@ -36,22 +36,28 @@ class Residual:
 def validate_composition(
     findings: Sequence[_FindingLike],
     operations: Sequence[_OperationLike],
-    resolve_composite: Callable[[Sequence[Any]], str | None],
+    is_forbidden: Callable[[Sequence[Any]], bool],
 ) -> list[Residual]:
-    """Residuals for every finding whose operations are neither a single primitive nor a
-    recognized composite. A finding with 0 or 1 operations is always expressible."""
+    """Residuals for every finding whose operations form an explicitly *forbidden* composition.
+
+    B6-T0 relaxation (per ``specs/B5_residual-closure.md``): the closure claim is that levers are
+    **compositions** of the fixed primitives, not that each must be one of a few named composites.
+    So any composition of enum members is expressible; only a composition ``is_forbidden`` flags
+    (the DEEM_SATISFIED re-expression, §6) is a residual. A 0- or 1-op finding is always
+    expressible. Named composites are recognized separately (``composite_of``) as reporting sugar.
+    """
     ops_by_id = {op.id: op for op in operations}
     residuals: list[Residual] = []
     for finding in findings:
         primitives = [ops_by_id[oid].primitive for oid in finding.operation_ids if oid in ops_by_id]
         if len(primitives) <= 1:
             continue
-        if resolve_composite(primitives) is None:
+        if is_forbidden(primitives):
             residuals.append(
                 Residual(
                     finding_id=finding.id,
                     primitives=tuple(str(p) for p in primitives),
-                    reason="not a single primitive or a known composite",
+                    reason="forbidden composition (e.g. DEEM_SATISFIED re-expression, §6)",
                 )
             )
     return residuals

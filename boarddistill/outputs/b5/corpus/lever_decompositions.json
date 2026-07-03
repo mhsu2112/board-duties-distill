@@ -1,27 +1,20 @@
 {
-  "_meta": "B5-T4 lever decomposition. LLM proposed; validate_composition enforced the 16-enum + 4 known composites. Residuals are checkpoints (propose, never add a primitive). Statutory-floor candidates are proposals; the floor file is human-owned.",
+  "_meta": "B5-T4 lever decomposition, closed per B6-T0. LLM proposed; the six B5 residuals carry approved hand decompositions (specs/b5_residual_decompositions.json). validate_composition accepts any composition of enum members (named composites as sugar); a residual is only a forbidden composition. The 16-primitive set is closed over the corpus \u2014 zero residuals; one policy disjunction (R3) recorded as a non-operation.",
   "closure_test": {
-    "residual_levers": [
-      "L-cro-cre-appointment-",
-      "L-director-training",
-      "L-incentive-compensati",
-      "L-resolution-recovery-",
-      "L-risk-appetite-statem",
-      "L-third-party-risk-man"
-    ],
-    "sixteen_primitive_set_held": false
+    "residual_levers": [],
+    "sixteen_primitive_set_held": true
   },
   "counts": {
     "by_status": {
       "documented_non_target": 8,
-      "residual": 6,
-      "valid_composite": 4,
+      "policy_disjunction": 1,
+      "valid_composite": 9,
       "valid_single": 4
     },
-    "closure_holds": false,
-    "floor_candidates": 19,
+    "closure_holds": true,
+    "floor_candidates": 15,
     "levers": 22,
-    "residuals": 6
+    "residuals": 0
   },
   "levers": [
     {
@@ -185,22 +178,56 @@
         "OCC"
       ],
       "cluster": "CRO / CRE appointment & compensation",
-      "composition": "residual",
-      "effect_class": "unresolved",
+      "composition": "composition",
+      "effect_class": "clarify",
       "instrument_required": "joint_rulemaking",
       "is_consolidation": true,
       "lever_id": "L-cro-cre-appointment-",
       "min_reform_lever": "Consolidate into Reg YY; OCC incorporates by reference.",
       "normative_kinds": [
-        "supervisory_value_judgment",
-        "interagency_coordination",
-        "institutional_discretion"
+        "interagency_coordination"
       ],
-      "operations": [],
-      "primitives": [],
-      "rationale": "Per the source: 'Consolidate into Reg YY; OCC incorporates by reference' and 'Board approval of the same individual's appointment/pay at two levels' is duplicative, but 'Bank-level independence-of-CRE-from-front-line structure is an OCC-specific control' is legally distinct and must be retained. The retained distinct OCC control alongside the consolidation of the duplicative board approval does not close under a single primitive or one of the four composites. Overlapping sources 'Reg YY 252.33(b); OCC App. D I.E.7' name both FRB and OCC as actors; a binding cross-agency consolidation with OCC incorporation-by-reference requires joint rulemaking. No roadmap row was provided, so the lawful pathway and statutory obstacles are not settled by the source; instrument marked as the coordinated pathway the two named regimes imply, but no statutory floor candidate is asserted absent supporting text.",
-      "residual_reason": "The lever bundles two structurally distinct actions that no single primitive or named composite captures: (1) consolidating the duplicative board-approval of the same individual's appointment/pay into Reg YY with OCC incorporation-by-reference (a MERGE + RESOLVE_CROSS_REFERENCE or DEEM_SATISFIED shape), while (2) preserving the legally distinct OCC-specific independence-of-CRE-from-front-line control as a retained non-target. The consolidation-plus-retained-distinct-control combination does not match any of the four composites (consolidation, master_direction_build, board_role_clarification, vertical_rationalization), and the source text does not settle which primitive expresses the OCC incorporation-by-reference (whether the two duties both survive for DEEM_SATISFIED or whether one is repealed via MERGE). Marking residual rather than guessing.",
-      "status": "residual",
+      "operations": [
+        {
+          "effect_class": "clarify",
+          "operands": [
+            "RegYY-252.33(b)-CRO",
+            "AppD-I.E.7-CRE"
+          ],
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "entity_level_mirror"
+        },
+        {
+          "effect_class": "change",
+          "operands": [
+            "duplicated two-level board approval of same individual's appointment/pay"
+          ],
+          "primitive": "MERGE"
+        },
+        {
+          "effect_class": "codify",
+          "operands": [
+            "AppD-I.E.7 -> RegYY-252.33(b)"
+          ],
+          "primitive": "RESOLVE_CROSS_REFERENCE"
+        },
+        {
+          "effect_class": "clarify",
+          "operands": [
+            "OCC CRE-independence-from-front-line structure retained"
+          ],
+          "primitive": "FACTOR_EXCEPTION"
+        }
+      ],
+      "primitives": [
+        "RELATE_OBLIGATION",
+        "MERGE",
+        "RESOLVE_CROSS_REFERENCE",
+        "FACTOR_EXCEPTION"
+      ],
+      "rationale": "Consolidate CRO/CRE appointment & compensation into Reg YY; OCC incorporates by reference",
+      "residual_reason": "",
+      "status": "valid_composite",
       "statutory_floor_candidates": []
     },
     {
@@ -301,23 +328,59 @@
       ]
     },
     {
-      "actor_with_authority": [],
+      "actor_with_authority": [
+        "FRB",
+        "OCC",
+        "FDIC",
+        "FinCEN"
+      ],
       "cluster": "Director training",
-      "composition": "residual",
-      "effect_class": "unresolved",
-      "instrument_required": null,
+      "composition": "composition",
+      "effect_class": "change",
+      "instrument_required": "interagency_statement",
       "is_consolidation": true,
       "lever_id": "L-director-training",
       "min_reform_lever": "One consolidated director-training program covering all topics.",
       "normative_kinds": [
+        "supervisory_value_judgment",
         "interagency_coordination",
-        "supervisory_value_judgment"
+        "policy_choice"
       ],
-      "operations": [],
-      "primitives": [],
-      "rationale": "No roadmap or statutory-obstacle text was provided, so actor_with_authority, instrument_required, and statutory_floor_candidates are left empty (unresolved) rather than inferred. The structural need \u2014 merge overlapping general director-training obligations while factoring out the legally distinct topic-specific BSA training \u2014 exceeds a single primitive and does not match the primitive set of any of the four named composites, so the honest finding is residual.",
-      "residual_reason": "The lever proposes 'one consolidated director-training program covering all topics' spanning OCC App. D III.E, SR 21-3 / Director's Book, and the BSA program rule. This would combine MERGE of the overlapping general training obligations with preservation of the topic-specific BSA training as a distinct element ('BSA training is topic-specific'). The retained-distinct BSA carve-out plus consolidation of the remainder does not match any single primitive or the fixed primitive-set of the four named composites: consolidation lacks the FACTOR_EXCEPTION needed to preserve the topic-specific BSA obligation, and no composite bundles MERGE with a distinct-purpose retention of a topic-specific duty. The source text provided here also gives no roadmap row (actor/authority/instrument/statutory obstacle), so those fields are left unresolved rather than guessed.",
-      "status": "residual",
+      "operations": [
+        {
+          "effect_class": "change",
+          "operands": [
+            "AppD-III.E training",
+            "SR21-3/Directors-Book training expectations"
+          ],
+          "primitive": "MERGE"
+        },
+        {
+          "conditions": [
+            "module meets BSA program-rule content"
+          ],
+          "effect_class": "change",
+          "operands": [],
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "BSA-training-pillar(31 USC 5318(h) - statutory floor)",
+          "satisfying_ref": "consolidated-program BSA module"
+        },
+        {
+          "effect_class": "codify",
+          "operands": [
+            "guidance restatements -> consolidated program"
+          ],
+          "primitive": "RESOLVE_CROSS_REFERENCE"
+        }
+      ],
+      "primitives": [
+        "MERGE",
+        "DEEM_SATISFIED",
+        "RESOLVE_CROSS_REFERENCE"
+      ],
+      "rationale": "One consolidated director-training program covering all topics",
+      "residual_reason": "",
+      "status": "valid_composite",
       "statutory_floor_candidates": []
     },
     {
@@ -369,28 +432,84 @@
         "NCUA",
         "FHFA"
       ],
+      "branches": [
+        {
+          "branch": "A-finalize",
+          "operations": [
+            {
+              "effect_class": "change",
+              "normative_kind": [
+                "statutory_constraint",
+                "interagency_coordination"
+              ],
+              "output": "final DFA-956 rule",
+              "primitive": "INTRODUCE"
+            },
+            {
+              "effect_class": "change",
+              "operands": [
+                "2010 interagency guidance (superseded on finalization)"
+              ],
+              "primitive": "REPEAL"
+            },
+            {
+              "conditions": [
+                "listing-standard independence maintained"
+              ],
+              "effect_class": "change",
+              "normative_kind": [
+                "policy_choice"
+              ],
+              "primitive": "DEEM_SATISFIED",
+              "satisfied_ref": "prudential comp-committee-independence element",
+              "satisfying_ref": "SEC/exchange comp-committee independence"
+            }
+          ]
+        },
+        {
+          "branch": "B-rely-on-guidance",
+          "operations": [
+            {
+              "effect_class": "change",
+              "normative_kind": [
+                "institutional_discretion",
+                "statutory_constraint"
+              ],
+              "note": "leaves a statutory mandate unexecuted - hard needs_review",
+              "operands": [
+                "pending 956 proposals (withdrawn)"
+              ],
+              "primitive": "REPEAL"
+            },
+            {
+              "effect_class": "codify",
+              "operands": [
+                "2010 guidance as operative framework"
+              ],
+              "primitive": "RESOLVE_CROSS_REFERENCE"
+            }
+          ]
+        },
+        {
+          "branch": "C-statutory-repeal",
+          "note": "legislative act - outside the calculus",
+          "operations": []
+        }
+      ],
       "cluster": "Incentive compensation",
-      "composition": "residual",
+      "composition": "policy_disjunction",
       "effect_class": "unresolved",
-      "instrument_required": "joint_rulemaking",
-      "is_consolidation": true,
+      "instrument_required": null,
+      "is_consolidation": false,
       "lever_id": "L-incentive-compensati",
       "min_reform_lever": "Finalize one 956 framework or rely on guidance; SEC independence satisfies the prudential element.",
-      "normative_kinds": [
-        "policy_choice",
-        "interagency_coordination",
-        "statutory_constraint",
-        "institutional_discretion"
-      ],
+      "normative_kinds": [],
       "operations": [],
       "primitives": [],
-      "rationale": "Source states DFA 956 is 'unimplemented' / an 'unfinished rule' and the reform requires a six-agency final rule or statutory repeal, with FRB/SEC having 'previously declined.' Because the target text is a not-yet-enacted mandate and the lever is a policy choice among finalize/guidance/repeal paths, it exceeds the fixed 16-primitive/4-composite closure and is an honest residual. SEC comp-committee independence is noted as legally distinct (serves investors), reinforcing that the overlap is not a clean consolidation target.",
-      "residual_reason": "The lever offers a disjunctive choice ('finalize one 956 framework OR rely on guidance') requiring a six-agency policy decision to complete an unimplemented statutory mandate, not a mechanical structural consolidation of existing enacted text. Completing an unfinished DFA \u00a7956 rulemaking (or electing to abandon it in favor of guidance) is a discretionary interagency policy act that no primitive expresses; the calculus operates on enacted overlapping duties, and \u00a7956 duties are 'unimplemented.' The additional claim that 'SEC independence satisfies the prudential element' would suggest DEEM_SATISFIED, but the SEC comp-committee independence duty and the prudential \u00a7956 duty serve distinct purposes (investor protection vs. safety-and-soundness) and one duty (the \u00a7956 rule) does not yet exist to be deemed-satisfying, so no both-survive deem relation can be anchored.",
-      "status": "residual",
-      "statutory_floor_candidates": [
-        "DFA \u00a7956 (12 U.S.C. 5641)",
-        "DFA \u00a7952"
-      ]
+      "rationale": "policy_disjunction_non_operation (B0 D10 category); branches decomposed, branch choice routed to human",
+      "residual_reason": "",
+      "status": "policy_disjunction",
+      "statutory_floor_candidates": []
     },
     {
       "actor_with_authority": [
@@ -592,28 +711,67 @@
         "FDIC"
       ],
       "cluster": "Resolution, recovery & contingency funding",
-      "composition": "residual",
-      "effect_class": "unresolved",
+      "composition": "composition",
+      "effect_class": "clarify",
       "instrument_required": "joint_rulemaking",
       "is_consolidation": true,
       "lever_id": "L-resolution-recovery-",
       "min_reform_lever": "Single 'resilience planning' board cycle; shared resolution submission with an IDI annex.",
       "normative_kinds": [
-        "policy_choice",
-        "supervisory_value_judgment",
-        "interagency_coordination",
-        "statutory_constraint"
+        "institutional_discretion",
+        "statutory_constraint",
+        "interagency_coordination"
       ],
-      "operations": [],
-      "primitives": [],
-      "rationale": "Source describes 'Multiple board-approved resilience plans on different cycles' and 'parent and IDI resolution submissions overlap heavily' as duplicative, while 'The FDIC's interest in resolving the insured bank even if the parent's plan fails is genuinely distinct (parallel-but-justified).' The reform 'Single resilience planning board cycle; shared resolution submission with an IDI annex' therefore mixes cadence alignment, partial merge, and a retained parallel-distinct obligation across two statutes (DFA 165(d)/Reg QQ, FDI Act/360.10) plus Reg YY 252.34(b) and SR 14-8. Because a distinct FDIC interest is explicitly preserved, the merge is incomplete, and no single primitive or named composite matches the composite of cadence + partial-merge + preserved-parallel. Marked residual honestly.",
-      "residual_reason": "The lever bundles two structurally different moves that no single primitive or named composite captures: (1) collapsing multiple board-approved resilience/recovery plans onto one cycle (a cadence/parameter move plus MERGE of overlapping approvals), and (2) creating a shared resolution submission where the FDIC IDI interest is retained as a genuinely distinct annex ('parallel-but-justified'). The FDIC's distinct interest in resolving the insured bank even if the parent's plan fails means this is NOT a clean MERGE (the IDI submission survives as a distinct annex), nor is it vertical_rationalization (no entity_level_mirror + DEEM_SATISFIED + FACTOR_EXCEPTION pattern fits the 'shared submission with retained-distinct annex' shape). It combines a cadence-alignment across cycles, a partial merge of overlapping content, and a preserved parallel-distinct obligation \\u2014 a mixture that spans authorities under two separate statutes and cannot be reduced to one primitive or one of the four composites.",
-      "status": "residual",
-      "statutory_floor_candidates": [
-        "12 U.S.C. 5365(d) (DFA \":___placeholder_do_not_use",
-        "DFA \\u00a7165(d)",
-        "FDI Act"
-      ]
+      "operations": [
+        {
+          "effect_class": "fill_gap",
+          "operands": [],
+          "primitive": "INTRODUCE"
+        },
+        {
+          "effect_class": "change",
+          "operands": [
+            "each plan's explicit cycle -> the single cycle"
+          ],
+          "parameter": "cadence",
+          "primitive": "ASSIGN_DUTY_PARAMETER"
+        },
+        {
+          "effect_class": "change",
+          "operands": [
+            "parent 165(d)/RegQQ submission",
+            "IDI 360.10 submission"
+          ],
+          "primitive": "MERGE"
+        },
+        {
+          "effect_class": "clarify",
+          "operands": [
+            "IDI annex carrying FDIC-specific resolvability content"
+          ],
+          "primitive": "FACTOR_EXCEPTION"
+        },
+        {
+          "effect_class": "clarify",
+          "operands": [
+            "FDIC insured-bank resolvability interest",
+            "FRB parent regime"
+          ],
+          "primitive": "RELATE_OBLIGATION",
+          "relation": "parallel_distinct_purpose"
+        }
+      ],
+      "primitives": [
+        "INTRODUCE",
+        "ASSIGN_DUTY_PARAMETER",
+        "MERGE",
+        "FACTOR_EXCEPTION",
+        "RELATE_OBLIGATION"
+      ],
+      "rationale": "Single resilience-planning board cycle; shared resolution submission with an IDI annex",
+      "residual_reason": "",
+      "status": "valid_composite",
+      "statutory_floor_candidates": []
     },
     {
       "actor_with_authority": [
@@ -621,25 +779,57 @@
         "OCC"
       ],
       "cluster": "Risk appetite statement",
-      "composition": "residual",
-      "effect_class": "unresolved",
-      "instrument_required": "joint_rulemaking",
+      "composition": "safe_harbor_template",
+      "effect_class": "change",
+      "instrument_required": "interagency_statement",
       "is_consolidation": true,
       "lever_id": "L-risk-appetite-statem",
       "min_reform_lever": "Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all.",
       "normative_kinds": [
-        "policy_choice",
         "interagency_coordination",
-        "supervisory_value_judgment"
+        "policy_choice"
       ],
-      "operations": [],
-      "primitives": [],
-      "rationale": "Source describes a 'safe harbor that one board-approved statement satisfies all' four instruments (deem-satisfied flavor) plus an 'interagency risk-appetite template' (introduce), while expressly retaining a legally distinct split between liquidity tolerance and operational-disruption tolerance. This multi-op shape with a preserved exception does not map to single or to any of the four sanctioned composites, so it is an honest residual. Actor and instrument are supported by the roadmap: 'FRB + OCC (interagency) ... APA rulemaking / Interagency rule or joint statement + safe harbor'; statutory anchor 'FDI Act \u00a739'; and 'requires inter-agency coordination'.",
-      "residual_reason": "The lever combines two structural moves that do not fit a single primitive or any one of the four named composites: (1) INTRODUCE an interagency risk-appetite template, and (2) a DEEM_SATISFIED-style safe harbor that one board-approved statement satisfies the parallel approval duties across four instruments. However, the source text also affirms that liquidity tolerance and operational-disruption tolerance are 'genuinely different risk dimensions' (legally distinct), so a clean single DEEM_SATISFIED across all four is complicated by a preserved distinction that would require FACTOR_EXCEPTION for the distinct dimensions. The INTRODUCE(template)+DEEM_SATISFIED+FACTOR_EXCEPTION bundle matches no named composite (not consolidation, not master_direction_build, not board_role_clarification, not vertical_rationalization). The provided lever text specifies the outcome ('one board-approved statement satisfies all') but does not settle the exact surviving duty refs or safe-harbor conditions needed to populate DEEM_SATISFIED fields; marking residual over guessing.",
-      "status": "residual",
-      "statutory_floor_candidates": [
-        "FDI Act \u00a739"
-      ]
+      "operations": [
+        {
+          "effect_class": "fill_gap",
+          "operands": [],
+          "primitive": "INTRODUCE"
+        },
+        {
+          "conditions": [
+            "template conformity (the safe harbor)"
+          ],
+          "effect_class": "change",
+          "operands": [],
+          "primitive": "DEEM_SATISFIED",
+          "satisfied_ref": "each instrument's risk-appetite approval duty (x4)",
+          "satisfying_ref": "one board-approved template-conforming statement"
+        },
+        {
+          "effect_class": "clarify",
+          "operands": [
+            "liquidity tolerance vs operational-disruption tolerance retained as distinct modules"
+          ],
+          "primitive": "FACTOR_EXCEPTION"
+        },
+        {
+          "effect_class": "codify",
+          "operands": [
+            "four instruments -> template"
+          ],
+          "primitive": "RESOLVE_CROSS_REFERENCE"
+        }
+      ],
+      "primitives": [
+        "INTRODUCE",
+        "DEEM_SATISFIED",
+        "FACTOR_EXCEPTION",
+        "RESOLVE_CROSS_REFERENCE"
+      ],
+      "rationale": "Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all",
+      "residual_reason": "",
+      "status": "valid_composite",
+      "statutory_floor_candidates": []
     },
     {
       "actor_with_authority": [],
@@ -691,25 +881,58 @@
         "FDIC"
       ],
       "cluster": "Third-party risk management",
-      "composition": "residual",
-      "effect_class": "unresolved",
+      "composition": "composition",
+      "effect_class": "clarify",
       "instrument_required": "interagency_statement",
       "is_consolidation": true,
       "lever_id": "L-third-party-risk-man",
       "min_reform_lever": "Quantitative 'critical activity' threshold for board attention; management approval + aggregate reporting otherwise.",
       "normative_kinds": [
         "policy_choice",
-        "supervisory_value_judgment",
-        "interagency_coordination"
+        "interagency_coordination",
+        "supervisory_value_judgment"
       ],
-      "operations": [],
-      "primitives": [],
-      "rationale": "Source lever text: 'Quantitative critical activity threshold for board attention; management approval + aggregate reporting otherwise.' The roadmap ties action to 'FRB + OCC + FDIC / FDI Act \u00a739; safety-and-soundness / Amend/supplement 2023 interagency guidance / Defining critical quantitatively.' Instrument is amendment/supplement to interagency guidance. The distinct consumer-compliance service-provider concern (CFPB) is flagged as legally distinct and is not consolidated. Because 'Defining critical quantitatively' is left open, the exact threshold parameter is unresolved rather than settled by the text, so no single primitive or composite cleanly captures the lever.",
-      "residual_reason": "The lever combines a quantitative 'critical activity' threshold governing WHEN board attention is triggered (FACTOR_EXCEPTION / ASSIGN_DUTY_PARAMETER cadence) with a re-routing of non-critical activities to management approval plus aggregate board reporting (an ASSIGN_DUTY_PARAMETER on who-approves + reporting cadence). This threshold-plus-reallocation pattern is not a single primitive nor any of the four named composites (consolidation, master_direction_build, board_role_clarification, vertical_rationalization). The named board_role_clarification is ASSIGN_DUTY_PARAMETER + SPLIT, but this lever's core novelty is defining 'critical' quantitatively as an exception threshold, which the text ('Defining critical quantitatively') identifies as the unresolved structural question, and it is not clear from the source that a SPLIT of a duty is intended. Missing structure: a primitive/composite that expresses 'quantitative trigger threshold that reallocates approval authority between board and management with aggregate reporting.'",
-      "status": "residual",
-      "statutory_floor_candidates": [
-        "FDI Act \u00a739"
-      ]
+      "operations": [
+        {
+          "effect_class": "change",
+          "operands": [
+            "2023 interagency TPRM guidance (qualitative)"
+          ],
+          "primitive": "DEFINE_TERM"
+        },
+        {
+          "effect_class": "change",
+          "operands": [
+            "board third-party duty"
+          ],
+          "primitive": "SPLIT"
+        },
+        {
+          "effect_class": "change",
+          "operands": [
+            "board: approve (critical); receive_report aggregate (otherwise)"
+          ],
+          "parameter": "verb_standard",
+          "primitive": "ASSIGN_DUTY_PARAMETER"
+        },
+        {
+          "effect_class": "clarify",
+          "operands": [
+            "CFPB consumer service-provider concern retained, not consolidated"
+          ],
+          "primitive": "FACTOR_EXCEPTION"
+        }
+      ],
+      "primitives": [
+        "DEFINE_TERM",
+        "SPLIT",
+        "ASSIGN_DUTY_PARAMETER",
+        "FACTOR_EXCEPTION"
+      ],
+      "rationale": "Quantitative critical-activity threshold for board attention; management approval + aggregate reporting otherwise",
+      "residual_reason": "",
+      "status": "valid_composite",
+      "statutory_floor_candidates": []
     },
     {
       "actor_with_authority": [],
@@ -729,50 +952,7 @@
       "statutory_floor_candidates": []
     }
   ],
-  "residual_checkpoints": [
-    {
-      "cluster": "CRO / CRE appointment & compensation",
-      "lever_id": "L-cro-cre-appointment-",
-      "primitives": [],
-      "reason": "The lever bundles two structurally distinct actions that no single primitive or named composite captures: (1) consolidating the duplicative board-approval of the same individual's appointment/pay into Reg YY with OCC incorporation-by-reference (a MERGE + RESOLVE_CROSS_REFERENCE or DEEM_SATISFIED shape), while (2) preserving the legally distinct OCC-specific independence-of-CRE-from-front-line control as a retained non-target. The consolidation-plus-retained-distinct-control combination does not match any of the four composites (consolidation, master_direction_build, board_role_clarification, vertical_rationalization), and the source text does not settle which primitive expresses the OCC incorporation-by-reference (whether the two duties both survive for DEEM_SATISFIED or whether one is repealed via MERGE). Marking residual rather than guessing.",
-      "status": "residual"
-    },
-    {
-      "cluster": "Director training",
-      "lever_id": "L-director-training",
-      "primitives": [],
-      "reason": "The lever proposes 'one consolidated director-training program covering all topics' spanning OCC App. D III.E, SR 21-3 / Director's Book, and the BSA program rule. This would combine MERGE of the overlapping general training obligations with preservation of the topic-specific BSA training as a distinct element ('BSA training is topic-specific'). The retained-distinct BSA carve-out plus consolidation of the remainder does not match any single primitive or the fixed primitive-set of the four named composites: consolidation lacks the FACTOR_EXCEPTION needed to preserve the topic-specific BSA obligation, and no composite bundles MERGE with a distinct-purpose retention of a topic-specific duty. The source text provided here also gives no roadmap row (actor/authority/instrument/statutory obstacle), so those fields are left unresolved rather than guessed.",
-      "status": "residual"
-    },
-    {
-      "cluster": "Incentive compensation",
-      "lever_id": "L-incentive-compensati",
-      "primitives": [],
-      "reason": "The lever offers a disjunctive choice ('finalize one 956 framework OR rely on guidance') requiring a six-agency policy decision to complete an unimplemented statutory mandate, not a mechanical structural consolidation of existing enacted text. Completing an unfinished DFA \u00a7956 rulemaking (or electing to abandon it in favor of guidance) is a discretionary interagency policy act that no primitive expresses; the calculus operates on enacted overlapping duties, and \u00a7956 duties are 'unimplemented.' The additional claim that 'SEC independence satisfies the prudential element' would suggest DEEM_SATISFIED, but the SEC comp-committee independence duty and the prudential \u00a7956 duty serve distinct purposes (investor protection vs. safety-and-soundness) and one duty (the \u00a7956 rule) does not yet exist to be deemed-satisfying, so no both-survive deem relation can be anchored.",
-      "status": "residual"
-    },
-    {
-      "cluster": "Resolution, recovery & contingency funding",
-      "lever_id": "L-resolution-recovery-",
-      "primitives": [],
-      "reason": "The lever bundles two structurally different moves that no single primitive or named composite captures: (1) collapsing multiple board-approved resilience/recovery plans onto one cycle (a cadence/parameter move plus MERGE of overlapping approvals), and (2) creating a shared resolution submission where the FDIC IDI interest is retained as a genuinely distinct annex ('parallel-but-justified'). The FDIC's distinct interest in resolving the insured bank even if the parent's plan fails means this is NOT a clean MERGE (the IDI submission survives as a distinct annex), nor is it vertical_rationalization (no entity_level_mirror + DEEM_SATISFIED + FACTOR_EXCEPTION pattern fits the 'shared submission with retained-distinct annex' shape). It combines a cadence-alignment across cycles, a partial merge of overlapping content, and a preserved parallel-distinct obligation \\u2014 a mixture that spans authorities under two separate statutes and cannot be reduced to one primitive or one of the four composites.",
-      "status": "residual"
-    },
-    {
-      "cluster": "Risk appetite statement",
-      "lever_id": "L-risk-appetite-statem",
-      "primitives": [],
-      "reason": "The lever combines two structural moves that do not fit a single primitive or any one of the four named composites: (1) INTRODUCE an interagency risk-appetite template, and (2) a DEEM_SATISFIED-style safe harbor that one board-approved statement satisfies the parallel approval duties across four instruments. However, the source text also affirms that liquidity tolerance and operational-disruption tolerance are 'genuinely different risk dimensions' (legally distinct), so a clean single DEEM_SATISFIED across all four is complicated by a preserved distinction that would require FACTOR_EXCEPTION for the distinct dimensions. The INTRODUCE(template)+DEEM_SATISFIED+FACTOR_EXCEPTION bundle matches no named composite (not consolidation, not master_direction_build, not board_role_clarification, not vertical_rationalization). The provided lever text specifies the outcome ('one board-approved statement satisfies all') but does not settle the exact surviving duty refs or safe-harbor conditions needed to populate DEEM_SATISFIED fields; marking residual over guessing.",
-      "status": "residual"
-    },
-    {
-      "cluster": "Third-party risk management",
-      "lever_id": "L-third-party-risk-man",
-      "primitives": [],
-      "reason": "The lever combines a quantitative 'critical activity' threshold governing WHEN board attention is triggered (FACTOR_EXCEPTION / ASSIGN_DUTY_PARAMETER cadence) with a re-routing of non-critical activities to management approval plus aggregate board reporting (an ASSIGN_DUTY_PARAMETER on who-approves + reporting cadence). This threshold-plus-reallocation pattern is not a single primitive nor any of the four named composites (consolidation, master_direction_build, board_role_clarification, vertical_rationalization). The named board_role_clarification is ASSIGN_DUTY_PARAMETER + SPLIT, but this lever's core novelty is defining 'critical' quantitatively as an exception threshold, which the text ('Defining critical quantitatively') identifies as the unresolved structural question, and it is not clear from the source that a SPLIT of a duty is intended. Missing structure: a primitive/composite that expresses 'quantitative trigger threshold that reallocates approval authority between board and management with aggregate reporting.'",
-      "status": "residual"
-    }
-  ],
+  "residual_checkpoints": [],
   "statutory_floor_candidates": {
     "_note": "PROPOSED additions only \u2014 the floor file (profiles/lex_balanus/statutory_floor.json) is human-owned (checkpoint 3). Not added.",
     "candidates": {
@@ -802,26 +982,12 @@
       "DFA 952": [
         "L-director-independenc"
       ],
-      "DFA \u00a7165(d)": [
-        "L-resolution-recovery-"
-      ],
-      "DFA \u00a7952": [
-        "L-incentive-compensati"
-      ],
-      "DFA \u00a7956 (12 U.S.C. 5641)": [
-        "L-incentive-compensati"
-      ],
-      "FDI Act": [
-        "L-resolution-recovery-"
-      ],
       "FDI Act \u00a736": [
         "L-fiduciary-trust-gove"
       ],
       "FDI Act \u00a739": [
         "L-board-self-assessmen",
-        "L-operational-resilien",
-        "L-risk-appetite-statem",
-        "L-third-party-risk-man"
+        "L-operational-resilien"
       ],
       "FDI Act \u00a77(j)": [
         "L-director-eligibility"

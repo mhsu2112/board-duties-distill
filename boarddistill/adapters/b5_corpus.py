@@ -346,13 +346,16 @@ def review_packet_b5_md(
     rows = []
     for i, x in enumerate(b5, 1):
         tier = feasibility_tier(x["instrument_required"], x["composition"])
-        rec = (
-            "**Advance**"
-            if x["status"] != "residual"
-            else "**Advance, decompose first** (residual)"
-        )
-        if x["status"] == "documented_non_target":
+        rec = "**Advance**"
+        if x["status"] == "residual":
+            rec = "**Advance, decompose first** (residual)"
+        elif x["status"] == "documented_non_target":
             rec = "**Note** — documented non-target (retain / coordinate)"
+        elif x["status"] == "policy_disjunction":
+            rec = (
+                "**Route to human** — policy disjunction (branches decompose; "
+                "branch choice is normative)"
+            )
         rows.append([f"1.{i}", x["cluster"], x["min_reform_lever"], tier, x["status"], rec])
     parts.append(_table(["#", "cluster", "reform lever", "tier", "status", "recommendation"], rows))
     parts.append("\n**Your call on 1.1–1.22:** *(accept recommendations / list exceptions)*\n")
@@ -360,28 +363,42 @@ def review_packet_b5_md(
     parts.append("\n## Part 2 — The closure test (the B0 claim at corpus scale)\n")
     n_clean = sum(1 for x in b5 if x["status"] in {"valid_single", "valid_composite"})
     n_nontarget = sum(1 for x in b5 if x["status"] == "documented_non_target")
-    parts.append(
-        f"> Of the 22 levers, {n_clean} decomposed cleanly into a single primitive or a known "
-        f"composite, {n_nontarget} are documented non-targets, "
-        f"and **{len(residuals)} are residual checkpoints** — the LLM pass did not express them as "
-        "one primitive or one of the four composites. This is the closure test surfacing honestly: "
-        "the 16-primitive set held for the clean levers; the residuals are candidates for human "
-        "decomposition (several likely reduce to a known composite — e.g. risk-appetite ≈ "
-        "`vertical_rationalization`), NOT evidence a new primitive is needed. **Recommendation:** "
-        "review each residual; no primitive is added without your word (checkpoint 2).\n"
-    )
-    parts.append(
-        _table(
-            ["residual lever", "cluster", "why flagged"],
-            [
-                [x["lever_id"], x["cluster"], _esc(x.get("residual_reason"))[:120]]
-                for x in residuals
-            ],
+    n_disjunction = sum(1 for x in b5 if x["status"] == "policy_disjunction")
+    if residuals:
+        parts.append(
+            f"> Of the 22 levers, {n_clean} decomposed cleanly into a single primitive or a known "
+            f"composite, {n_nontarget} are documented non-targets, "
+            f"and **{len(residuals)} are residual checkpoints** — the LLM pass did not express "
+            "them as one primitive or one of the four composites. This is the closure test "
+            "surfacing honestly: the 16-primitive set held for the clean levers; the residuals "
+            "are candidates for human decomposition (several likely reduce to a known composite "
+            "— e.g. risk-appetite ≈ `vertical_rationalization`), NOT evidence a new primitive is "
+            "needed. **Recommendation:** review each residual; no primitive added without your "
+            "word.\n"
         )
-    )
-    parts.append(
-        "\n**Your call:** *(confirm residuals for human decomposition / propose a composition)*\n"
-    )
+        parts.append(
+            _table(
+                ["residual lever", "cluster", "why flagged"],
+                [
+                    [x["lever_id"], x["cluster"], _esc(x.get("residual_reason"))[:120]]
+                    for x in residuals
+                ],
+            )
+        )
+        parts.append(
+            "\n**Your call:** *(confirm residuals for decomposition / propose a composition)*\n"
+        )
+    else:
+        parts.append(
+            f"> **Closure holds.** All 22 levers are accounted for: {n_clean} clean compositions "
+            f"(single primitive or a composition of enum members), {n_nontarget} documented "
+            f"non-targets, and {n_disjunction} policy disjunction (branches decompose; branch "
+            "choice is normative, routed to the human). **Zero residuals — no new primitive is "
+            "needed.** The six B5-flagged residuals were hand-decomposed (`specs/"
+            "B5_residual-closure.md`, approved), adding three named composites "
+            "(`partial_consolidation`, `safe_harbor_template`, `tiered_attention`) as sugar + one "
+            "held-out-dial rule; the enum is unchanged.\n"
+        )
 
     parts.append("\n## Part 3 — Statutory-floor candidates (PROPOSED, not added)\n")
     parts.append(

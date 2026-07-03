@@ -30,7 +30,7 @@ from distillcore.pipeline.invariants import InvariantViolation, run_core_invaria
 from distillcore.pipeline.operations import Residual, validate_composition
 from distillcore.pipeline.verify import verify_claims
 
-from .composites import composite_of
+from .composites import is_forbidden_composition
 from .enums import is_binding
 from .invariants import (
     check_apa_pathway,
@@ -75,7 +75,9 @@ def run_fixture(bundle: FixtureBundle) -> RunResult:
 
     alignment = align(bundle.as_built, bundle.intended)
     diagnostics = diagnose(bundle.as_built, bundle.intended, alignment)
-    residuals = validate_composition(bundle.gold_findings, bundle.gold_operations, composite_of)
+    residuals = validate_composition(
+        bundle.gold_findings, bundle.gold_operations, is_forbidden_composition
+    )
 
     ops_by_id = {op.id: op for op in bundle.gold_operations}
     deem_floor_ops = set(deem_against_floor_op_ids(bundle.gold_operations, duties_all, floor_ids))

@@ -31,7 +31,9 @@ class CompositeStep:
 NON_DECOMPOSABLE: frozenset[PrimitiveOp] = frozenset({PrimitiveOp.DEEM_SATISFIED})
 
 # The approved composites (§6). vertical_rationalization is the D8 schema; DEEM_SATISFIED
-# rides inside it *intact*, never decomposed.
+# rides inside it *intact*, never decomposed. The final three are the B5-residual-closure
+# additions (M. Hsu, 2026-07-02, REVIEW_PACKET_B5): compositions of existing primitives — no
+# enum change — that recur across the corpus and are named for reporting sugar.
 COMPOSITES: dict[str, tuple[CompositeStep, ...]] = {
     "consolidation": (
         CompositeStep(PrimitiveOp.MERGE),
@@ -53,7 +55,40 @@ COMPOSITES: dict[str, tuple[CompositeStep, ...]] = {
         CompositeStep(PrimitiveOp.DEEM_SATISFIED),
         CompositeStep(PrimitiveOp.FACTOR_EXCEPTION),
     ),
+    # B5-residual-closure additions (R1/R4, R5, R6).
+    "partial_consolidation": (
+        CompositeStep(PrimitiveOp.MERGE),
+        CompositeStep(PrimitiveOp.FACTOR_EXCEPTION),
+        CompositeStep(
+            PrimitiveOp.RELATE_OBLIGATION, relation=RelationType.PARALLEL_DISTINCT_PURPOSE
+        ),
+    ),
+    "safe_harbor_template": (
+        CompositeStep(PrimitiveOp.INTRODUCE, scope="general_part"),
+        CompositeStep(PrimitiveOp.DEEM_SATISFIED),
+        CompositeStep(PrimitiveOp.FACTOR_EXCEPTION),
+        CompositeStep(PrimitiveOp.RESOLVE_CROSS_REFERENCE),
+    ),
+    "tiered_attention": (
+        CompositeStep(PrimitiveOp.DEFINE_TERM),
+        CompositeStep(PrimitiveOp.SPLIT),
+        CompositeStep(PrimitiveOp.ASSIGN_DUTY_PARAMETER),
+    ),
 }
+
+# Compositions the calculus explicitly disallows regardless of the relaxed "any composition of
+# enum members" rule (B6-T0). The sole member is the forbidden DEEM_SATISFIED re-expression (§6):
+# a deem-satisfaction must never be re-written as RESOLVE_CROSS_REFERENCE + FACTOR_EXCEPTION.
+FORBIDDEN_COMPOSITIONS: tuple[tuple[PrimitiveOp, ...], ...] = (
+    (PrimitiveOp.RESOLVE_CROSS_REFERENCE, PrimitiveOp.FACTOR_EXCEPTION),
+)
+
+
+def is_forbidden_composition(primitives: Iterable[PrimitiveOp]) -> bool:
+    """True iff the operation multiset is an explicitly disallowed composition (the deem
+    re-expression). Everything else made of enum members is a valid composition (B6-T0)."""
+    want = Counter(primitives)
+    return any(Counter(f) == want for f in FORBIDDEN_COMPOSITIONS)
 
 
 def decompose(name: str) -> tuple[CompositeStep, ...]:

@@ -35,15 +35,27 @@ def test_known_composite_is_valid() -> None:
     assert v["composition"] == "consolidation"
 
 
-def test_unknown_multiop_bundle_is_a_residual() -> None:
-    # RELOCATE + RESOLVE_CROSS_REFERENCE is not a named composite ⇒ residual (checkpoint).
+def test_unnamed_enum_composition_is_valid_after_b6t0_relaxation() -> None:
+    # B6-T0: RELOCATE + RESOLVE_CROSS_REFERENCE is not a *named* composite but IS a valid
+    # composition of enum members ⇒ valid_composite (labeled "composition"), not a residual.
     lever = ProposedLever(
         lever_id="L3",
-        composition="consolidation",
+        composition="composite",
         operations=[_op("RELOCATE"), _op("RESOLVE_CROSS_REFERENCE")],
     )
     v = validate_lever(lever)
-    assert v["status"] == "residual"
+    assert v["status"] == "valid_composite"
+    assert v["composition"] == "composition"
+
+
+def test_forbidden_deem_reexpression_is_still_a_residual() -> None:
+    # The one composition the relaxation does NOT accept: the DEEM re-expression (§6).
+    lever = ProposedLever(
+        lever_id="L3b",
+        composition="composite",
+        operations=[_op("RESOLVE_CROSS_REFERENCE"), _op("FACTOR_EXCEPTION")],
+    )
+    assert validate_lever(lever)["status"] == "residual"
 
 
 def test_llm_declared_residual_with_no_ops_is_honored() -> None:
@@ -83,8 +95,15 @@ def test_floor_candidate_cleaning() -> None:
 def test_decomposition_artifact_every_lever_resolved_or_checkpointed() -> None:
     doc = json.loads(_DECOMP.read_text())
     statuses = {r["lever_id"]: r["status"] for r in doc["levers"]}
-    allowed = {"valid_single", "valid_composite", "residual", "documented_non_target"}
+    allowed = {
+        "valid_single",
+        "valid_composite",
+        "residual",
+        "documented_non_target",
+        "policy_disjunction",  # R3 (B6-T0)
+    }
     assert all(s in allowed for s in statuses.values())  # no incomplete/invalid left
-    # residuals are surfaced as checkpoints, floor candidates proposed (not added)
+    # B6-T0: closure holds over the corpus — zero residuals, the six B5 residuals decomposed
+    assert doc["counts"]["residuals"] == 0
     assert doc["counts"]["residuals"] == len(doc["residual_checkpoints"])
     assert "GLBA §501(b)" in doc["statutory_floor_candidates"]["candidates"]

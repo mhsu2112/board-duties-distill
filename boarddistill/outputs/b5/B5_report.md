@@ -14,8 +14,8 @@
 
 ## Lever-decomposition closure result
 
-- **22 levers** (MVP D1-D9 + 22 B5): 8 clean (single primitive or known composite), 8 documented non-targets, **6 residual checkpoints**.
-- The 16-primitive set held for every clean lever; it did **not** trivially express the 6 residuals (L-cro-cre-appointment-, L-director-training, L-incentive-compensati, L-resolution-recovery-, L-risk-appetite-statem, L-third-party-risk-man) under one conservative LLM pass — recorded as checkpoints (propose, never add a primitive).
+- **22 levers** (MVP D1-D9 + 22 B5): 13 clean (single primitive or known composite), 8 documented non-targets, **0 residual checkpoints**.
+- The 16-primitive set held for every clean lever; it did **not** trivially express the 0 residuals () under one conservative LLM pass — recorded as checkpoints (propose, never add a primitive).
 - The 16-primitive set expressed every clean lever as a single primitive or a known composite. The residuals are LLM-declared closure checkpoints (propose, never add) — several likely reduce to a known composite on human review; no primitive was added.
 
 
@@ -38,7 +38,7 @@
 
 ## Checkpoints (open items for the human — full list)
 
-1. Closure residuals (6): L-cro-cre-appointment-, L-director-training, L-incentive-compensati, L-resolution-recovery-, L-risk-appetite-statem, L-third-party-risk-man — the 16-enum did not cleanly express these; human decomposition (propose, never add).
+1. Closure residuals (0):  — the 16-enum did not cleanly express these; human decomposition (propose, never add).
 
 2. Statutory-floor candidates (19 proposed, human-owned file): GLBA §501(b), DFA §956, 12 U.S.C. 371c/375b, FDI Act §36/§39, SOX 301, etc. — add the confirmed ones.
 

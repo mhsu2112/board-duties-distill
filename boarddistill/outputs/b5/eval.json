@@ -2,23 +2,16 @@
   "closure": {
     "by_status": {
       "documented_non_target": 8,
-      "residual": 6,
-      "valid_composite": 4,
+      "policy_disjunction": 1,
+      "valid_composite": 9,
       "valid_single": 4
     },
-    "clean": 8,
+    "clean": 13,
     "levers": 22,
     "note": "The 16-primitive set expressed every clean lever as a single primitive or a known composite. The residuals are LLM-declared closure checkpoints (propose, never add) \u2014 several likely reduce to a known composite on human review; no primitive was added.",
-    "residual_levers": [
-      "L-cro-cre-appointment-",
-      "L-director-training",
-      "L-incentive-compensati",
-      "L-resolution-recovery-",
-      "L-risk-appetite-statem",
-      "L-third-party-risk-man"
-    ],
-    "residuals": 6,
-    "sixteen_primitive_set_held_trivially": false
+    "residual_levers": [],
+    "residuals": 0,
+    "sixteen_primitive_set_held_trivially": true
   },
   "funnel": {
     "classified_findings": 129,

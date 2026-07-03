@@ -1,11 +1,12 @@
 """B5-T4 — lever decomposition (LLM proposes; ``validate_composition`` enforces closure).
 
-For each non-MVP reform lever the LLM proposes a composition of the fixed 16 primitives (or a
-named composite, or an honest ``residual``). Code is the teeth: every proposed operation is built
-through ``scaffold_operation`` (the model's iff-rules validate it), and multi-op levers must match
-a known composite via ``composite_of`` — anything else is a **residual**, a checkpoint (propose,
-never add a primitive). Statutory-floor candidates the LLM surfaces are recorded as proposals; the
-floor file stays human-owned. This is the live test of B0's closure claim at corpus scale.
+For each non-MVP reform lever the LLM proposes a composition of the fixed 16 primitives. Code is
+the teeth: every proposed operation is built through ``scaffold_operation`` (the model's iff-rules
+validate it). Post B6-T0, ``validate_composition`` accepts **any composition of enum members**
+(named composites are reporting sugar); only an explicitly forbidden composition (the DEEM
+re-expression) is a residual. The six B5-flagged residuals now carry approved hand decompositions
+(``specs/b5_residual_decompositions.json``); R3 is recorded as a policy disjunction (non-operation).
+Statutory-floor candidates the LLM surfaces are proposals; the floor file stays human-owned.
 """
 
 from __future__ import annotations
@@ -21,7 +22,7 @@ from distillcore.models.base import StrictModel
 from distillcore.models.calculus import EffectClass
 from distillcore.pipeline.classify import PRIMITIVE_DEFAULT_EFFECT, dominant_effect
 from distillcore.pipeline.operations import validate_composition
-from profiles.lex_balanus.composites import composite_of
+from profiles.lex_balanus.composites import composite_of, is_forbidden_composition
 from profiles.lex_balanus.enums import (
     InstrumentRequired,
     NormativeKind,
@@ -176,7 +177,9 @@ def validate_lever(proposed: ProposedLever) -> dict[str, Any]:
         }
     resolved_composite = composite_of(primitives) if len(primitives) > 1 else None
     finding = _Finding(proposed.lever_id, [op.id for op in ops])
-    residuals = validate_composition([finding], ops, composite_of)
+    # B6-T0: a multi-op finding is a residual only if it is an explicitly forbidden composition
+    # (the deem re-expression); any other composition of enum members is expressible.
+    residuals = validate_composition([finding], ops, is_forbidden_composition)
 
     prim_effects = [PRIMITIVE_DEFAULT_EFFECT.get(str(p.value), "unresolved") for p in primitives]
     # DEEM_SATISFIED is per-se change (classify rule) even though its default table entry agrees.
@@ -190,7 +193,8 @@ def validate_lever(proposed: ProposedLever) -> dict[str, Any]:
         composition = "residual"
     else:
         status = "valid_composite"
-        composition = resolved_composite or "residual"
+        # named composite as sugar; an unnamed-but-valid enum composition is still expressible
+        composition = resolved_composite or "composition"
 
     return {
         "status": status,
@@ -203,14 +207,93 @@ def validate_lever(proposed: ProposedLever) -> dict[str, Any]:
     }
 
 
-def decompose_all(harness: LlmHarness, levers: list[dict[str, Any]]) -> dict[str, Any]:
+def _coerce_instrument_required(raw: str | None) -> InstrumentRequired | None:
+    if not raw:
+        return None
+    for member in InstrumentRequired:
+        if raw.startswith(member.value):
+            return member
+    return None
+
+
+def proposed_from_hand(hand: dict[str, Any]) -> ProposedLever:
+    """Build a ProposedLever from a hand decomposition (specs/b5_residual_decompositions.json)."""
+    ops = [
+        ProposedOp(
+            primitive=o["primitive"],
+            operands=o.get("operands", []),
+            relation=o.get("relation"),
+            parameter=o.get("parameter"),
+            satisfied_ref=o.get("satisfied_ref"),
+            satisfying_ref=o.get("satisfying_ref"),
+            conditions=o.get("conditions", []),
+            effect_class=o.get("effect_class", "change"),
+        )
+        for o in hand.get("operations", [])
+    ]
+    nks: list[NormativeKind] = []
+    for o in hand.get("operations", []):
+        for k in o.get("normative_kind", []) or []:
+            if k in {m.value for m in NormativeKind} and NormativeKind(k) not in nks:
+                nks.append(NormativeKind(k))
+    return ProposedLever(
+        lever_id=hand["lever_id"],
+        is_consolidation=True,
+        composition="composite",
+        operations=ops,
+        actor_with_authority=hand.get("actor_with_authority", []),
+        instrument_required=_coerce_instrument_required(hand.get("instrument_required")),
+        normative_kinds=nks,
+        rationale=hand.get("lever", ""),
+    )
+
+
+def _policy_disjunction_record(lever: dict[str, Any], hand: dict[str, Any]) -> dict[str, Any]:
+    """R3-shaped: a policy disjunction (non-operation, B0 D10 category). Each branch decomposes;
+    the branch choice is routed to the human by the normative gate — not a residual."""
+    return {
+        "lever_id": lever["lever_id"],
+        "cluster": lever["cluster"],
+        "min_reform_lever": lever["min_reform_lever"],
+        "is_consolidation": False,
+        "composition": "policy_disjunction",
+        "status": "policy_disjunction",
+        "primitives": [],
+        "effect_class": "unresolved",
+        "actor_with_authority": hand.get("actor_with_authority", []),
+        "instrument_required": None,
+        "normative_kinds": [],
+        "statutory_floor_candidates": [],
+        "residual_reason": "",
+        "rationale": hand.get("classification", "policy disjunction; branches decompose"),
+        "branches": hand.get("branches", []),
+        "operations": [],
+    }
+
+
+def decompose_all(
+    harness: LlmHarness,
+    levers: list[dict[str, Any]],
+    hand_decompositions: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    hand_decompositions = hand_decompositions or {}
     records: list[dict[str, Any]] = []
     residuals: list[dict[str, Any]] = []
     floor_candidates: dict[str, list[str]] = {}
     for lever in levers:
-        if lever.get("non_consolidation"):
+        hand = hand_decompositions.get(lever["lever_id"])
+        # B6-T0: the six B5 residuals now carry an approved hand decomposition. A policy
+        # disjunction (R3) is recorded as a non-operation; the rest validate as compositions.
+        if hand is not None and "branches" in hand:
+            records.append(_policy_disjunction_record(lever, hand))
+            continue
+        if hand is not None:
+            proposed = proposed_from_hand(hand)
+        elif lever.get("non_consolidation"):
             proposed = ProposedLever(
-                lever_id=lever["lever_id"], is_consolidation=False, composition="none",
+                lever_id=lever["lever_id"],
+                is_consolidation=False,
+                composition="none",
                 rationale=lever["min_reform_lever"],
             )
         else:
@@ -258,9 +341,11 @@ def decompose_all(harness: LlmHarness, levers: list[dict[str, Any]]) -> dict[str
         status_hist[r["status"]] = status_hist.get(r["status"], 0) + 1
 
     return {
-        "_meta": "B5-T4 lever decomposition. LLM proposed; validate_composition enforced the "
-        "16-enum + 4 known composites. Residuals are checkpoints (propose, never add a primitive). "
-        "Statutory-floor candidates are proposals; the floor file is human-owned.",
+        "_meta": "B5-T4 lever decomposition, closed per B6-T0. LLM proposed; the six B5 residuals "
+        "carry approved hand decompositions (specs/b5_residual_decompositions.json). "
+        "validate_composition accepts any composition of enum members (named composites as sugar); "
+        "a residual is only a forbidden composition. The 16-primitive set is closed over the "
+        "corpus — zero residuals; one policy disjunction (R3) recorded as a non-operation.",
         "counts": {
             "levers": len(records),
             "by_status": dict(sorted(status_hist.items())),

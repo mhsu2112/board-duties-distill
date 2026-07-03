@@ -71,12 +71,12 @@
 
 ## CRO / CRE appointment & compensation  (2/2 verified)
 
-- Reform lever: **Consolidate into Reg YY; OCC incorporates by reference.** — `residual` (residual); intended home traceable to `outputs/b5/w6-governance-structural/cro-cre-appointment-compensation/package.md`.
+- Reform lever: **Consolidate into Reg YY; OCC incorporates by reference.** — `composition` (valid_composite); intended home traceable to `outputs/b5/w6-governance-structural/cro-cre-appointment-compensation/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
-| b:RGC-06 | verified | residual | residual |
-| b:RGC-09 | verified | residual | residual |
+| b:RGC-06 | verified | composition | valid_composite |
+| b:RGC-09 | verified | composition | valid_composite |
 
 
 ## Capital planning & stress testing  (17/20 verified)
@@ -180,12 +180,12 @@
 
 ## Director training  (2/2 verified)
 
-- Reform lever: **One consolidated director-training program covering all topics.** — `residual` (residual); intended home traceable to `outputs/b5/w6-governance-structural/director-training/package.md`.
+- Reform lever: **One consolidated director-training program covering all topics.** — `composition` (valid_composite); intended home traceable to `outputs/b5/w6-governance-structural/director-training/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
-| b:IND-02 | verified | residual | residual |
-| s:GOV-25 | verified | residual | residual |
+| b:IND-02 | verified | composition | valid_composite |
+| s:GOV-25 | verified | composition | valid_composite |
 
 
 ## Fiduciary (trust) governance  (2/2 verified)
@@ -200,21 +200,21 @@
 
 ## Incentive compensation  (4/11 verified)
 
-- Reform lever: **Finalize one 956 framework or rely on guidance; SEC independence satisfies the prudential element.** — `residual` (residual); intended home traceable to `outputs/b5/w3-thirdparty-inccomp/incentive-compensation/package.md`.
+- Reform lever: **Finalize one 956 framework or rely on guidance; SEC independence satisfies the prudential element.** — `policy_disjunction` (policy_disjunction); intended home traceable to `outputs/b5/w3-thirdparty-inccomp/incentive-compensation/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
-| b:ELG-04 | unverified | residual | residual |
-| b:INC-01 | verified | residual | residual |
-| b:IND-07 | verified | residual | residual |
-| s:BCG-08 | unverified | residual | residual |
-| s:BCG-11 | verified | residual | residual |
-| s:BCG-13 | unverified | residual | residual |
-| s:INC-01 | unverified | residual | residual |
-| s:INC-02 | unverified | residual | residual |
-| s:INC-03 | unverified | residual | residual |
-| s:INC-04 | unverified | residual | residual |
-| s:INC-05 | verified | residual | residual |
+| b:ELG-04 | unverified | policy_disjunction | policy_disjunction |
+| b:INC-01 | verified | policy_disjunction | policy_disjunction |
+| b:IND-07 | verified | policy_disjunction | policy_disjunction |
+| s:BCG-08 | unverified | policy_disjunction | policy_disjunction |
+| s:BCG-11 | verified | policy_disjunction | policy_disjunction |
+| s:BCG-13 | unverified | policy_disjunction | policy_disjunction |
+| s:INC-01 | unverified | policy_disjunction | policy_disjunction |
+| s:INC-02 | unverified | policy_disjunction | policy_disjunction |
+| s:INC-03 | unverified | policy_disjunction | policy_disjunction |
+| s:INC-04 | unverified | policy_disjunction | policy_disjunction |
+| s:INC-05 | verified | policy_disjunction | policy_disjunction |
 
 
 ## Information security & cybersecurity  (6/12 verified)
@@ -324,36 +324,36 @@
 
 ## Resolution, recovery & contingency funding  (5/13 verified)
 
-- Reform lever: **Single 'resilience planning' board cycle; shared resolution submission with an IDI annex.** — `residual` (residual); intended home traceable to `outputs/b5/w1-liquidity-resolution/resolution-recovery-contingency-/package.md`.
+- Reform lever: **Single 'resilience planning' board cycle; shared resolution submission with an IDI annex.** — `composition` (valid_composite); intended home traceable to `outputs/b5/w1-liquidity-resolution/resolution-recovery-contingency-/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
-| b:LIQ-04 | verified | residual | residual |
-| b:RES-01 | verified | residual | residual |
-| b:RES-02 | verified | residual | residual |
-| b:RES-03 | unverified | residual | residual |
-| s:REC-01 | unverified | residual | residual |
-| s:REC-02 | verified | residual | residual |
-| s:REC-03 | unverified | residual | residual |
-| s:REC-04 | unverified | residual | residual |
-| s:RES-01 | unverified | residual | residual |
-| s:RES-02 | unverified | residual | residual |
-| s:RES-03 | unverified | residual | residual |
-| s:RES-04 | unverified | residual | residual |
-| s:RES-05 | verified | residual | residual |
+| b:LIQ-04 | verified | composition | valid_composite |
+| b:RES-01 | verified | composition | valid_composite |
+| b:RES-02 | verified | composition | valid_composite |
+| b:RES-03 | unverified | composition | valid_composite |
+| s:REC-01 | unverified | composition | valid_composite |
+| s:REC-02 | verified | composition | valid_composite |
+| s:REC-03 | unverified | composition | valid_composite |
+| s:REC-04 | unverified | composition | valid_composite |
+| s:RES-01 | unverified | composition | valid_composite |
+| s:RES-02 | unverified | composition | valid_composite |
+| s:RES-03 | unverified | composition | valid_composite |
+| s:RES-04 | unverified | composition | valid_composite |
+| s:RES-05 | verified | composition | valid_composite |
 
 
 ## Risk appetite statement  (5/5 verified)
 
-- Reform lever: **Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all.** — `residual` (residual); intended home traceable to `outputs/b5/w6-governance-structural/risk-appetite-statement/package.md`.
+- Reform lever: **Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all.** — `safe_harbor_template` (valid_composite); intended home traceable to `outputs/b5/w6-governance-structural/risk-appetite-statement/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
-| b:RGC-08 | verified | residual | residual |
-| s:GOV-01 | verified | residual | residual |
-| s:GOV-06 | verified | residual | residual |
-| s:GOV-21 | verified | residual | residual |
-| s:GOV-29 | verified | residual | residual |
+| b:RGC-08 | verified | safe_harbor_template | valid_composite |
+| s:GOV-01 | verified | safe_harbor_template | valid_composite |
+| s:GOV-06 | verified | safe_harbor_template | valid_composite |
+| s:GOV-21 | verified | safe_harbor_template | valid_composite |
+| s:GOV-29 | verified | safe_harbor_template | valid_composite |
 
 
 ## Risk committee architecture  (5/6 verified)
@@ -419,17 +419,17 @@
 
 ## Third-party risk management  (5/7 verified)
 
-- Reform lever: **Quantitative 'critical activity' threshold for board attention; management approval + aggregate reporting otherwise.** — `residual` (residual); intended home traceable to `outputs/b5/w3-thirdparty-inccomp/third-party-risk-management/package.md`.
+- Reform lever: **Quantitative 'critical activity' threshold for board attention; management approval + aggregate reporting otherwise.** — `composition` (valid_composite); intended home traceable to `outputs/b5/w3-thirdparty-inccomp/third-party-risk-management/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
-| s:TPR-01 | verified | residual | residual |
-| s:TPR-02 | verified | residual | residual |
-| s:TPR-03 | verified | residual | residual |
-| s:TPR-04 | verified | residual | residual |
-| s:TPR-05 | unverified | residual | residual |
-| s:TPR-06 | verified | residual | residual |
-| s:TPR-07 | unverified | residual | residual |
+| s:TPR-01 | verified | composition | valid_composite |
+| s:TPR-02 | verified | composition | valid_composite |
+| s:TPR-03 | verified | composition | valid_composite |
+| s:TPR-04 | verified | composition | valid_composite |
+| s:TPR-05 | unverified | composition | valid_composite |
+| s:TPR-06 | verified | composition | valid_composite |
+| s:TPR-07 | unverified | composition | valid_composite |
 
 
 ## Unique structural duties  (4/4 verified)

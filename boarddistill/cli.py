@@ -769,6 +769,9 @@ def b5_decompose(
     out: Annotated[Path, typer.Option("--out", help="B5 corpus output directory.")] = Path(
         "outputs/b5/corpus"
     ),
+    residuals: Annotated[
+        Path, typer.Option("--residuals", help="Approved hand decompositions of the B5 residuals.")
+    ] = Path("specs/b5_residual_decompositions.json"),
     max_calls: Annotated[int, typer.Option("--max-calls", help="LLM call ceiling.")] = 40,
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
@@ -785,10 +788,14 @@ def b5_decompose(
     out.mkdir(parents=True, exist_ok=True)
     (out / "levers_source.json").write_text(json.dumps(lever_doc, indent=2, sort_keys=True) + "\n")
 
+    hand: dict[str, dict[str, object]] = {}
+    if residuals.exists():
+        hand = {d["lever_id"]: d for d in json.loads(residuals.read_text())["decompositions"]}
+
     harness = LlmHarness(
         cache_root=cache, live=live, budget=Budget(max_calls=max_calls, max_output_tokens=400_000)
     )
-    doc = decompose_all(harness, lever_doc["levers"])
+    doc = decompose_all(harness, lever_doc["levers"], hand)
     (out / "lever_decompositions.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
 
     c = doc["counts"]
