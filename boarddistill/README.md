@@ -164,6 +164,48 @@ uv run boarddistill b3-eval            # T6 -> outputs/b3/eval_report.md (--live
 The next event is the **human review pass over the three packages** — see
 `outputs/b3/B3_report.md`.
 
+## B4 — apply the review dispositions and close the known defects
+
+The first pass *after* human review. `../REVIEW_PACKET_B3.md` (M. Hsu, 2026-07-02) accepted all
+recommendations; B4 writes them into the review state and fixes the two known defect classes.
+Deterministic and offline — `make check` runs from cache, no key. Nothing finalized (NG2).
+
+- **T0 dispositions.** f-D1…f-D9 `reviewer_accepted` *as draft roadmap direction*, b:AUD-07
+  `reviewer_modified`, the 18 diagnostics `reviewer_accepted` — 28 records under `mhsu`;
+  **0 findings final.**
+- **T1 AUD-07.** Split into a management `certify` record (CEO/CFO) and a board-side
+  `review_and_challenge` oversight residual; the verb-vs-retag conflict cleared.
+- **T2 re-pin.** The 10 source-mismatch rows re-pinned to the supporting location in the cited
+  instrument — **10/10 quotes cache-verified, 0 F2/F4 escalations.** The live LLM re-distill is
+  checkpointed (needs `ANTHROPIC_API_KEY`).
+- **T3 duplication split.** `duplicate_duty` → `mirror_pair` (11, cross-layer/entity) +
+  `restatement` (8, same-text); packages report the two families in separate tables.
+- **T4 concept graph** (`data/graph/us-gsib_v2.json`). 9 grounded `concept_ref` nodes with
+  cache-verified span evidence; `baseline_for` answers for all 11 B0 concept operands.
+- **T5 re-classify + re-render.** Graph-aware target selection + a dominant-effect classifier
+  resolve the five formerly-`unresolved` levers — **zero `unresolved` among f-D1…f-D9**
+  (D3/D4/D6/D8 change, D7 codify). **B0 effect-class agreement 3/9 → 8/9**; the one
+  disagreement (D9 `fill_gap` vs B0 `codify`) is characterized, not reconciled. Zero
+  hallucinated citations.
+- **T6** — `outputs/b4/B4_report.md`.
+
+```bash
+uv run boarddistill b4-apply           # T0 dispositions -> outputs/b4/dispositions.json
+uv run boarddistill b4-aud07           # T1 -> outputs/b4/as_built_distilled.json (+ resolution)
+uv run boarddistill b4-repin           # T2 -> outputs/b4/repins.json
+uv run boarddistill b4-graph           # T4 -> data/graph/us-gsib_v2.json
+uv run boarddistill b3-diagnose --graph data/graph/us-gsib_v2.json \
+    --distilled outputs/b4/as_built_distilled.json --out outputs/b4   # T5 re-classify
+uv run boarddistill b3-package --findings outputs/b4/findings.json \
+    --distilled outputs/b4/as_built_distilled.json \
+    --graph data/graph/us-gsib_v2.json --out outputs/b4               # T5 re-render
+uv run boarddistill b3-eval --findings outputs/b4/findings.json \
+    --distilled outputs/b4/as_built_distilled.json --out outputs/b4   # T5 eval
+```
+
+After B4, two arcs remain (their own files when called for): scale to the remaining ~27
+clusters, and the RBI Master-Directions rediscovery benchmark. Neither is started.
+
 ## Next steps (roadmap — NOT built in slice one)
 
 1. **Human confirmation** of the fixture placeholder labels and the T8 draft column
@@ -176,7 +218,8 @@ The next event is the **human review pass over the three packages** — see
 4. **LLM-based distillation / diagnostics / classification** behind the interfaces this
    slice proved — temperature 0, structured output, every claim span-anchored. This is the
    step that makes the product probabilistic; it is gated by everything slice one proved.
-5. **Scale to all ~30 clusters**; per-cluster consolidation packages (B4).
+5. Per-cluster consolidation packages for the three MVP clusters — **done (B3/B4).**
+   Remaining: **scale to the remaining ~27 clusters.**
 6. **RBI Master-Directions rediscovery benchmark** + baselines (the existing horserace
    reports in `Reports/` are the plain-LLM baselines).
 7. **`lex_allium` profile build** per the engine `AGENTS.md` (proves the core is genuinely
