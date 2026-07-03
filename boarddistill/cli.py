@@ -452,6 +452,50 @@ def b3_distill(
         )
 
 
+@app.command("b5-package")
+def b5_package(
+    wave: Annotated[str, typer.Option("--wave", help="Wave slug, or 'all'.")] = "all",
+    waves_json: Annotated[
+        Path, typer.Option("--waves", help="B5-T1 waves.json.")
+    ] = Path("outputs/b5/waves.json"),
+    graph: Annotated[
+        Path, typer.Option("--graph", help="Corpus instrument graph.")
+    ] = Path("data/graph/us-gsib_v3.json"),
+    decompositions: Annotated[
+        Path, typer.Option("--decompositions", help="B5-T4 lever_decompositions.json.")
+    ] = Path("outputs/b5/corpus/lever_decompositions.json"),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+) -> None:
+    """B5-T5: render each wave's clusters into per-cluster consolidation packages."""
+    import json
+
+    from adapters.b5_package import build_wave_packages
+
+    waves_doc = json.loads(waves_json.read_text())
+    graph_doc = json.loads(graph.read_text())
+    levers = json.loads(decompositions.read_text())["levers"]
+    selected = [w for w in waves_doc["waves"] if wave in (w["wave"], "all")]
+
+    typer.echo("[boarddistill] B5-T5 per-wave packages:")
+    total = 0
+    for w in selected:
+        wave_dir = out / w["wave"]
+        distilled = json.loads((wave_dir / "as_built_distilled.json").read_text())
+        findings = json.loads((wave_dir / "findings.json").read_text())
+        verif = json.loads((wave_dir / "verification.json").read_text())
+        packages = build_wave_packages(w["wave"], w, distilled, findings, verif, graph_doc, levers)
+        for slug, md in packages.items():
+            pkg_dir = wave_dir / slug
+            pkg_dir.mkdir(parents=True, exist_ok=True)
+            (pkg_dir / "package.md").write_text(md)
+            final = md.count("| final |")
+            total += 1
+            typer.echo(
+                f"  {w['wave']}/{slug}/package.md · {len(md.splitlines())} lines · final: {final}"
+            )
+    typer.echo(f"  {total} packages rendered.")
+
+
 @app.command("b5-decompose")
 def b5_decompose(
     inventory: Annotated[
