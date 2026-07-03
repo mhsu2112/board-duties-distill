@@ -278,6 +278,36 @@ def b3_apply(
     )
 
 
+@app.command("b4-apply")
+def b4_apply(
+    findings: Annotated[
+        Path, typer.Option("--findings", help="B3-T4 findings.json.")
+    ] = Path("outputs/b3/findings.json"),
+    out: Annotated[Path, typer.Option("--out", help="B4 output directory.")] = Path("outputs/b4"),
+) -> None:
+    """B4-T0: write back the B3 dispositions (f-D1…f-D9, AUD-07, the 18 diagnostics)."""
+    import json
+
+    from adapters.b4_dispositions import ledger
+
+    findings_doc = json.loads(findings.read_text())
+    doc = ledger(findings_doc)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "dispositions.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    b = doc["blocker_summary"]
+    typer.echo("[boarddistill] B4-T0 dispositions written back (reviewer mhsu):")
+    typer.echo(
+        f"  {len(doc['consolidation_findings'])} consolidation + "
+        f"{len(doc['diagnostic_findings'])} diagnostics + AUD-07 · states: {c}"
+    )
+    typer.echo(
+        f"  blocker summary: {b['findings_draft']}/{b['findings_total']} draft, "
+        f"{b['findings_final']} final (silently finalized: {b['silently_finalized'] or 'none'})"
+    )
+
+
 @app.command("b3-distill")
 def b3_distill(
     verification: Annotated[
