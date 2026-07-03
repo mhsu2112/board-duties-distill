@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "0291ec9006a46d00fe4d831f053a72990a928d2a12aacebd52e9e6531ce6b10f",
+  "response_text": "{\"duty_id\":\"b:CAP-01\",\"verb_standard\":\"none_specified\",\"object\":\"Enhanced supervision and prudential standards for nonbank financial companies and certain bank holding companies\",\"object_evidence\":\"Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The excerpt is only the heading and the beginning of the purpose clause of \u00a75365. It does not mention stress-testing, capital planning, or any board-action standard for the duty, nor any timing. Only a general object (enhanced supervision and prudential standards) is supported. Verb_standard and cadence cannot be settled from this excerpt (subsection (i) on stress tests is not present).\"}"
+}

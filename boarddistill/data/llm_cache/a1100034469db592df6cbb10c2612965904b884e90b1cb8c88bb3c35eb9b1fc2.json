@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "a1100034469db592df6cbb10c2612965904b884e90b1cb8c88bb3c35eb9b1fc2",
+  "response_text": "{\"duty_id\":\"b:RGC-01\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"Enhanced supervision and prudential standards for certain bank holding companies\",\"object_evidence\":\"Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The provided excerpt only contains the section heading and the beginning of subsection (a)(1) Purpose. It does not contain any text establishing a board risk committee requirement, a board-action standard, or a timing standard. Only a general object (enhanced supervision and prudential standards for certain BHCs) is supported. The risk-committee mandate of 5365(h)(1) is not present in the excerpt, so verb_standard and cadence cannot be settled from this evidence.\"}"
+}

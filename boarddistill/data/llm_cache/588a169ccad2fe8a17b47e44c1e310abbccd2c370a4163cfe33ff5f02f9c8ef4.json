@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "588a169ccad2fe8a17b47e44c1e310abbccd2c370a4163cfe33ff5f02f9c8ef4",
+  "response_text": "{\"duty_id\":\"s:GOV-04\",\"verb_standard\":\"none_specified\",\"object\":\"\",\"cadence\":\"none_specified\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns a process for identifying and selecting potential director nominees (skills, expertise, diversity, conflicts of interest). It contains no text about the board directing senior management to provide timely, accurate information, evaluating information sufficiency, or demanding improvement. None of the fields for this duty (verb_standard, object, cadence) can be supported by a verbatim substring of this excerpt, so all are left unresolved.\"}"
+}

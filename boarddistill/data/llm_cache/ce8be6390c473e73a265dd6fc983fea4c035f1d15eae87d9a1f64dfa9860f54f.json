@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "ce8be6390c473e73a265dd6fc983fea4c035f1d15eae87d9a1f64dfa9860f54f",
+  "response_text": "{\"duty_id\":\"s:GOV-03\",\"verb_standard\":\"none_specified\",\"object\":\"\",\"cadence\":\"none_specified\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"object_evidence\",\"cadence\"],\"notes\":\"The source excerpt concerns a process to identify and select potential director nominees (skills, diversity, conflicts of interest) and references the Interagency Policy Statement on diversity. It contains no text about evaluating risk of expansion into a new business or jurisdiction, nor about risk-management/control enhancements, BSA, or FCPA. None of the draft duty's assertions are supported by this excerpt; no board-action standard or timing is stated. All substantive fields are left unresolved.\"}"
+}

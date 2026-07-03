@@ -278,6 +278,60 @@ def b3_apply(
     )
 
 
+@app.command("b3-distill")
+def b3_distill(
+    verification: Annotated[
+        Path, typer.Option("--verification", help="b2 verification.json.")
+    ] = Path("outputs/b2/verification.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json (draft specs).")
+    ] = Path("outputs/import/imported_duties.json"),
+    retags: Annotated[
+        Path, typer.Option("--retags", help="b2 retags.json.")
+    ] = Path("outputs/b2/retags.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B3-T2: LLM-distill the 50 verified as-built duties against their pinned excerpts.
+
+    Replay is the default and reads only the cache. ``--live`` populates it (requires
+    ANTHROPIC_API_KEY; the harness stops with a TODO(human) note if it is absent)."""
+    import json
+
+    from adapters.distill import diff_report, distill_all, distilled_document
+    from distillcore.llm import LlmHarness
+
+    verif = json.loads(verification.read_text())
+    imported = json.loads(import_json.read_text())
+    drafts = {d["duty_id"]: d for d in imported["duties"]}
+    retag_ledger = {r["duty_id"]: r for r in json.loads(retags.read_text())["retags"]}
+
+    harness = LlmHarness(cache_root=cache, live=live)
+    rows = distill_all(harness, verif, drafts, retag_ledger)
+
+    out.mkdir(parents=True, exist_ok=True)
+    doc = distilled_document(rows)
+    (out / "as_built_distilled.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+    (out / "distill_diff.md").write_text(diff_report(rows, drafts))
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B3-T2 distilled as-built:")
+    typer.echo(
+        f"  distilled: {c['distilled']} · anchor-clean: {c['anchor_clean']} · "
+        f"anchor-failures: {c['anchor_failures']} · verb-vs-retag conflicts: "
+        f"{c['verb_retag_conflicts']} · budget: {harness.budget.summary()}"
+    )
+    if c["anchor_failures"]:
+        typer.echo(
+            f"  ⚠ anchor failures (checkpoint 1): {', '.join(doc['anchor_failure_rows'])}", err=True
+        )
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[

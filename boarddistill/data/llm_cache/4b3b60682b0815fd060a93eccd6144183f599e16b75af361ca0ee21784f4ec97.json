@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "4b3b60682b0815fd060a93eccd6144183f599e16b75af361ca0ee21784f4ec97",
+  "response_text": "{\"duty_id\":\"b:AUD-08\",\"verb_standard\":\"none_specified\",\"object\":\"\",\"cadence\":\"none_specified\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns Concentration Risk Management and Risk Data Aggregation and Reporting components of the risk governance framework. It contains nothing about the audit committee, chief audit executive, appointment/removal/compensation, or the internal-audit charter and plan. No field of this duty is supported by the provided text; all substantive fields are unresolved.\"}"
+}

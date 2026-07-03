@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "db825cd6be75777da511f3e624bef5f6b43dbeb37f6c1355c6b45a5208dbc96a",
+  "response_text": "{\"duty_id\":\"b:RGC-05\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"Chair of the risk committee (independence and risk-management experience qualifications)\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The draft duty concerns who must chair the risk committee (independent director with risk-management experience per 252.33(a)(4)(ii)). The provided excerpt covers only (a)(1) General and (a)(2) Risk-management framework \u2014 it says nothing about the committee chair, chair independence, SEC/NYSE standards, or risk-management experience. No substring supports the object, verb_standard, or cadence for this duty. Everything left unresolved per the unresolved-over-guess rule.\"}"
+}

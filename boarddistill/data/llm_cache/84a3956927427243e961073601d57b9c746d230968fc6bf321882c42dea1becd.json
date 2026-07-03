@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "84a3956927427243e961073601d57b9c746d230968fc6bf321882c42dea1becd",
+  "response_text": "{\"duty_id\":\"s:GOV-08\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The excerpt concerns a process for identifying and selecting director nominees (skills, diversity, conflicts of interest), which does not correspond to the draft duty on approving CEO/executive performance objectives and compensation. No text in this excerpt supports the verb_standard, object, or cadence for s:GOV-08, so all are left unresolved/neutral.\"}"
+}

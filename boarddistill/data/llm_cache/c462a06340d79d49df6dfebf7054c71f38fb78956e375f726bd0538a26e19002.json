@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "c462a06340d79d49df6dfebf7054c71f38fb78956e375f726bd0538a26e19002",
+  "response_text": "{\"duty_id\":\"s:BCG-03\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The source excerpt concerns a fiduciary audit committee overseeing the audit of fiduciary activities \u2014 not a credit committee, lending strategy, credit risk appetite, credit policies, or portfolio monitoring. None of the draft duty's subject matter is supported by this excerpt. There is no verbatim text here establishing a credit-committee lending/credit-risk duty, so verb_standard, object, and cadence cannot be grounded and are left unresolved.\"}"
+}

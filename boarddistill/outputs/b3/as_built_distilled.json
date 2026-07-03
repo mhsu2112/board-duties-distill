@@ -1,0 +1,1746 @@
+{
+  "_meta": "B3-T2 as-built distillation. LLM proposals refined against each verified pinned excerpt; every asserted field anchored to a substring of that excerpt. Nothing overwritten or finalized \u2014 all reviewable draft.",
+  "anchor_failure_rows": [],
+  "counts": {
+    "anchor_clean": 50,
+    "anchor_failures": 0,
+    "distilled": 50,
+    "source_mismatch_rows": 10,
+    "verb_retag_conflicts": 1
+  },
+  "rows": [
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "If a large institution is a subsidiary of a holding company and relies on the audit committee of the holding company to comply with this rule",
+            "term": "large institution"
+          }
+        ],
+        "duty_id": "b:AUD-01",
+        "elements": [
+          {
+            "quote": "shall include members with banking or related financial management expertise",
+            "text": "Audit committee shall include members with banking or related financial management expertise"
+          },
+          {
+            "quote": "have access to its own outside counsel",
+            "text": "Audit committee shall have access to its own outside counsel"
+          },
+          {
+            "quote": "not include any large customers of the institution",
+            "text": "Audit committee shall not include any large customers of the institution"
+          },
+          {
+            "quote": "If a large institution is a subsidiary of a holding company and relies on the audit committee of the holding company to comply with this rule",
+            "text": "A large institution that is a subsidiary of a holding company may rely on the holding company's audit committee to comply"
+          }
+        ],
+        "notes": "The excerpt (12 CFR 363.5(b)) addresses composition/resource requirements for large-institution audit committees, not the draft's 'establish an audit committee of outside directors' claim. No board-action verb standard is stated. The phrase 'as of the beginning of its fiscal year' sets a measurement point for the asset threshold, not a recurrence cadence, so cadence is left none_specified.",
+        "object": "Composition and resources of the audit committee of a large insured depository institution (over $5 billion in total assets): members with banking/financial expertise, access to own outside counsel, and exclusion of large customers",
+        "object_evidence": "The audit committee of any insured depository institution with total assets of more than $5 billion, as adjusted from time to time in accordance with 12 CFR 314.1, as of the beginning of its fiscal year shall include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the institution.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:AUD-02",
+        "elements": [
+          {
+            "quote": "shall include members with banking or related financial management expertise",
+            "text": "Audit committee shall include members with banking or related financial management expertise"
+          },
+          {
+            "quote": "have access to its own outside counsel",
+            "text": "Audit committee shall have access to its own outside counsel"
+          },
+          {
+            "quote": "not include any large customers of the institution",
+            "text": "Audit committee shall not include any large customers of the institution"
+          }
+        ],
+        "notes": "The excerpt addresses audit-committee composition for large institutions (12 CFR 363.5(b)), not a board's annual independence determination. It states no board-action standard and no recurring cadence (the 'beginning of its fiscal year' clause fixes a measurement point for the asset threshold, not a duty cadence). Draft's 'annually determine independence' object is not supported by this excerpt, so verb_standard and cadence are marked unresolved.",
+        "object": "Composition requirements for the audit committee of large institutions (>$5 billion in total assets): members with banking/financial management expertise, access to outside counsel, and no large customers",
+        "object_evidence": "The audit committee of any insured depository institution with total assets of more than $5 billion, as adjusted from time to time in accordance with 12 CFR 314.1, as of the beginning of its fiscal year shall include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the institution.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "as of the beginning of its fiscal year shall include",
+        "definitions_used": [
+          {
+            "quote": "any insured depository institution with total assets of more than $5 billion, as adjusted from time to time in accordance with 12 CFR 314.1, as of the beginning of its fiscal year",
+            "term": "large institution"
+          },
+          {
+            "quote": "not include any large customers of the institution",
+            "term": "large customers"
+          }
+        ],
+        "duty_id": "b:AUD-03",
+        "elements": [
+          {
+            "quote": "shall include members with banking or related financial management expertise",
+            "text": "The audit committee must include members with banking or related financial management expertise."
+          },
+          {
+            "quote": "have access to its own outside counsel",
+            "text": "The audit committee must have access to its own outside counsel."
+          },
+          {
+            "quote": "not include any large customers of the institution",
+            "text": "The audit committee must not include any large customers of the institution."
+          }
+        ],
+        "notes": "The excerpt states composition/resource requirements for the audit committee of a large IDI but no board-action standard (approve/review/certify), so verb_standard is none_specified. Cadence treated as continuous because the requirements are ongoing committee attributes determined as of the beginning of the fiscal year. The threshold and 'large customers' function as defined/using terms in the excerpt.",
+        "object": "Composition and resources of the audit committee of a large insured depository institution: it must include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the institution.",
+        "object_evidence": "shall include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the institution",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual_fiscal",
+        "cadence_evidence": "Each insured depository institution annually shall prepare, as of the end of the institution's most recent fiscal year, a management report",
+        "definitions_used": [
+          {
+            "quote": "which shall be audited by an independent public accountant",
+            "term": "independent public accountant"
+          },
+          {
+            "quote": "prepare annual financial statements in accordance with GAAP",
+            "term": "GAAP"
+          }
+        ],
+        "duty_id": "b:AUD-04",
+        "elements": [
+          {
+            "quote": "Each insured depository institution shall prepare annual financial statements in accordance with GAAP",
+            "text": "Prepare annual financial statements in accordance with GAAP"
+          },
+          {
+            "quote": "which shall be audited by an independent public accountant",
+            "text": "Financial statements audited by an independent public accountant"
+          },
+          {
+            "quote": "The annual financial statements must reflect all material correcting adjustments necessary to conform with GAAP that were identified by the independent public accountant.",
+            "text": "Financial statements must reflect all material correcting adjustments to conform with GAAP identified by the accountant"
+          },
+          {
+            "quote": "Each insured depository institution annually shall prepare, as of the end of the institution's most recent fiscal year, a management report that must contain the followin",
+            "text": "Prepare an annual management report as of the end of the most recent fiscal year"
+          }
+        ],
+        "notes": "The excerpt imposes obligations on the insured depository institution, not on the board or audit committee; it states no board-action standard, so verb_standard is none_specified. Cadence is annual on a fiscal-year basis per 'annually' and 'as of the end of the institution's most recent fiscal year'. The excerpt does not mention audit committee oversight of the accountant, ICFR assessment review, or safety-and-soundness law compliance, so those draft elements are not asserted.",
+        "object": "Preparation of annual audited financial statements and a management report by each insured depository institution",
+        "object_evidence": "Each insured depository institution shall prepare annual financial statements in accordance with GAAP, which shall be audited by an independent public accountant.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual_fiscal",
+        "cadence_evidence": "an assessment, as of the end of the most recent fiscal year of the issuer",
+        "definitions_used": [],
+        "duty_id": "b:AUD-05",
+        "elements": [
+          {
+            "quote": "state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting",
+            "text": "State management's responsibility for establishing and maintaining an adequate internal control structure and procedures for financial reporting"
+          },
+          {
+            "quote": "contain an assessment, as of the end of the most recent fiscal year of the issuer",
+            "text": "Contain an assessment as of the end of the most recent fiscal year"
+          }
+        ],
+        "notes": "The excerpt imposes duties on the Commission (to prescribe rules) and on management/issuers (to include the internal control report and assessment). It states no board-action standard, so verb_standard is none_specified. Cadence is tied to the annual report and the end of the most recent fiscal year, supporting annual_fiscal. The excerpt is truncated at 'the eff' and does not describe the board or audit committee's role.",
+        "object": "An internal control report containing management's assessment of the internal control structure and procedures for financial reporting",
+        "object_evidence": "contain an internal control report, which shall\u2014 (1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and (2) contain an assessment, as of the end of the most recent fiscal year of the issuer",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual_fiscal",
+        "cadence_evidence": "an assessment, as of the end of the most recent fiscal year of the issuer",
+        "definitions_used": [],
+        "duty_id": "b:AUD-06",
+        "elements": [
+          {
+            "quote": "state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting",
+            "text": "State management's responsibility for establishing and maintaining an adequate internal control structure and procedures for financial reporting"
+          },
+          {
+            "quote": "contain an assessment, as of the end of the most recent fiscal year of the issuer, of the eff",
+            "text": "Contain an assessment as of the end of the most recent fiscal year"
+          }
+        ],
+        "notes": "The excerpt (sec. 7262 management assessment) addresses management's obligation to include an internal control report in the annual report; it states no board-action standard, so verb_standard is none_specified. The draft's focus on external auditor attestation (404(b)) is not present in this excerpt, which is 404(a) text. Cadence is tied to the fiscal year end. The excerpt is truncated at 'the eff' so element (2) is incomplete.",
+        "object": "An internal control report stating management's responsibility for and assessment of internal control structure and procedures for financial reporting",
+        "object_evidence": "contain an internal control report, which shall\u2014 (1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and (2) contain an assessment, as of the end of the most recent fiscal year of the issuer",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-06",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "quarterly",
+        "cadence_evidence": "Certification of disclosure in annual and quarterly reports",
+        "definitions_used": [
+          {
+            "quote": "a report filed by an Asset-Backed Issuer (as defined in \u00a7 229.1101 of this chapter)",
+            "term": "Asset-Backed Issuer"
+          }
+        ],
+        "duty_id": "b:AUD-07",
+        "elements": [
+          {
+            "quote": "must include certifications in the form specified in the applicable exhibit filing requirements of such report",
+            "text": "Each covered report must include certifications in the form specified in the applicable exhibit filing requirements"
+          },
+          {
+            "quote": "such certifications must be filed as an exhibit",
+            "text": "Certifications must be filed as an exhibit"
+          },
+          {
+            "quote": "filed on Form 10-Q, Form 10-K, Form 20-F or Form 40-F (\u00a7 249.308a, \u00a7 249.310, \u00a7 249.220f or \u00a7 249.240f of this chapter) under Section 13(a) of the Act",
+            "text": "Applies to reports filed on Form 10-Q, Form 10-K, Form 20-F or Form 40-F under Section 13(a)"
+          },
+          {
+            "quote": "other than a report filed by an Asset-Backed Issuer (as defined in \u00a7 229.1101 of this chapter) or a report on Form 20-F filed under \u00a7 240.13a-19",
+            "text": "Excludes reports filed by Asset-Backed Issuers and Form 20-F filed under \u00a7 240.13a-19"
+          }
+        ],
+        "notes": "The excerpt sets a certification requirement for annual and quarterly reports; cadence 'quarterly' is supported by the title referencing quarterly reports. The excerpt does not name CEO/CFO or the audit committee, so those draft actors are not asserted. Verb 'certify' is grounded in the certification-filing requirement.",
+        "object": "Certification of disclosure in annual and quarterly reports",
+        "object_evidence": "Certification of disclosure in annual and quarterly reports",
+        "unresolved_fields": [],
+        "verb_evidence": "must include certifications in the form specified in the applicable exhibit filing requirements of such report and such certifications must be filed as an exhibit",
+        "verb_standard": "certify"
+      },
+      "duty_id": "b:AUD-07",
+      "retag_conflict": {
+        "distilled_verb_standard": "certify",
+        "duty_id": "b:AUD-07",
+        "reason": "distilled verb_standard 'certify' asserts board performance, but B2 retagged the actor to 'CEO and CFO (principal executive and financial officers)'. Flagged, not overwritten (TODO(human): reconcile verb vs. actor).",
+        "retag_from_actor": "Audit committee",
+        "retag_to_actor": "CEO and CFO (principal executive and financial officers)"
+      }
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:AUD-08",
+        "elements": [],
+        "notes": "The source excerpt concerns Concentration Risk Management and Risk Data Aggregation and Reporting components of the risk governance framework. It contains nothing about the audit committee, chief audit executive, appointment/removal/compensation, or the internal-audit charter and plan. No field of this duty is supported by the provided text; all substantive fields are unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:AUD-08",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:CAP-01",
+        "elements": [],
+        "notes": "The excerpt is only the heading and the beginning of the purpose clause of \u00a75365. It does not mention stress-testing, capital planning, or any board-action standard for the duty, nor any timing. Only a general object (enhanced supervision and prudential standards) is supported. Verb_standard and cadence cannot be settled from this excerpt (subsection (i) on stress tests is not present).",
+        "object": "Enhanced supervision and prudential standards for nonbank financial companies and certain bank holding companies",
+        "object_evidence": "Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CAP-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Capital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year.",
+            "term": "Capital plan cycle"
+          },
+          {
+            "quote": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines.",
+            "term": "Capital policy"
+          }
+        ],
+        "duty_id": "b:CAP-02",
+        "elements": [],
+        "notes": "The provided excerpt is a definitions section (capital plan cycle, capital policy, category IV bank holding company). It contains no board-action standard, no duty to review/approve, and no cadence directed at the board. The draft duty's substance (board or committee reviewing robustness, remedying deficiencies, approving the capital plan) is not supported by this excerpt, so verb_standard, object, and cadence are all unresolved.",
+        "object": "Capital policy and related capital planning definitions",
+        "object_evidence": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CAP-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines.",
+            "term": "Capital policy"
+          },
+          {
+            "quote": "Capital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year.",
+            "term": "Capital plan cycle"
+          }
+        ],
+        "duty_id": "b:CAP-03",
+        "elements": [
+          {
+            "quote": "written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals",
+            "text": "Capital policy consists of written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals"
+          },
+          {
+            "quote": "the quantitative or qualitative guidelines for capital distributions",
+            "text": "Includes quantitative or qualitative guidelines for capital distributions"
+          },
+          {
+            "quote": "the strategies for addressing potential capital shortfalls",
+            "text": "Includes strategies for addressing potential capital shortfalls"
+          },
+          {
+            "quote": "the internal governance procedures around capital policy principles and guidelines",
+            "text": "Includes internal governance procedures around capital policy principles and guidelines"
+          }
+        ],
+        "notes": "The excerpt is definitional only: it defines 'capital policy' (and 'capital plan cycle') but states no board-action standard and no timing requirement for board approval. The draft's 'board-approved' verb and 'continuous' cadence are not supported by this excerpt, so both are left as none_specified/unresolved.",
+        "object": "A bank holding company's written capital policy \u2014 the principles and guidelines used for capital planning, capital issuance, capital usage and distributions",
+        "object_evidence": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CAP-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual_calendar",
+        "cadence_evidence": "Annually, by April 5 of each calendar year based on data as of December 31 of the preceding calendar year",
+        "definitions_used": [
+          {
+            "quote": "A covered company must conduct a stress test as required under this subpart.",
+            "term": "covered company"
+          },
+          {
+            "quote": "Global systemically important BHC Annually, by April 5 of each calendar year based on data as of December 31 of the preceding calendar year",
+            "term": "Global systemically important BHC"
+          }
+        ],
+        "duty_id": "b:CAP-04",
+        "elements": [
+          {
+            "quote": "A covered company must conduct a stress test as required under this subpart.",
+            "text": "A covered company must conduct a stress test as required under this subpart."
+          },
+          {
+            "quote": "a covered company must conduct a stress test according to the frequency in Table 1 to \u00a7 252.54(a)(2)(i)",
+            "text": "The stress test must be conducted according to the frequency in Table 1."
+          },
+          {
+            "quote": "Global systemically important BHC Annually, by April 5 of each calendar year based on data as of December 31 of the preceding calendar year",
+            "text": "A global systemically important BHC must conduct the stress test annually by April 5 based on December 31 data."
+          }
+        ],
+        "notes": "The excerpt addresses the covered company's obligation to conduct a stress test and its annual (calendar-year) frequency. It contains no board or senior management action standard, so verb_standard is none_specified. The draft's 'oversee ... processes and results' framing is not supported by this excerpt.",
+        "object": "Conduct of a company-run stress test by a covered company as required under this subpart",
+        "object_evidence": "A covered company must conduct a stress test as required under this subpart.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CAP-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "an analysis of each covered company's capital, on a total consolidated basis",
+            "term": "covered company"
+          }
+        ],
+        "duty_id": "b:CAP-05",
+        "elements": [
+          {
+            "quote": "The Board will conduct an analysis of each covered company's capital, on a total consolidated basis, taking into account all relevant exposures and activities of that covered company, to evaluate the ability of the covered company to absorb losses in specified economic and financial conditions.",
+            "text": "The Board conducts an analysis of each covered company's capital on a total consolidated basis to evaluate loss-absorption capacity."
+          },
+          {
+            "quote": "The analysis will include an assessment of the projected losses, net income, and pro forma capital levels and regulatory capital ratios and other capital ratios for the covered company and use such analytical techniques that the Board det",
+            "text": "The analysis includes assessment of projected losses, net income, and pro forma capital levels and ratios using analytical techniques the Board determines."
+          }
+        ],
+        "notes": "The excerpt describes analysis conducted BY the Board (the regulator/Federal Reserve), not a board-of-directors duty. It states no board-action standard and no timing. The draft's framing (firm must ensure data submission) is not supported by this excerpt, which addresses the Board's own analysis.",
+        "object": "The Board's analysis of each covered company's capital to evaluate its ability to absorb losses in specified conditions",
+        "object_evidence": "The Board will conduct an analysis of each covered company's capital, on a total consolidated basis, taking into account all relevant exposures and activities of that covered company, to evaluate the ability of the covered company to absorb losses in specified economic and financial conditions.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:CAP-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual_calendar",
+        "cadence_evidence": "At least once during each calendar year",
+        "definitions_used": [
+          {
+            "quote": "under the direction of its fiduciary audit committee",
+            "term": "fiduciary audit committee"
+          }
+        ],
+        "duty_id": "b:FID-02",
+        "elements": [
+          {
+            "quote": "At least once during each calendar year, a national bank shall arrange for a suitable audit (by internal or external auditors) of all significant fiduciary activities, under the direction of its fiduciary audit committee, unless the bank adopts a continuous audit system in accordance with paragraph (b) of this section.",
+            "text": "At least once each calendar year, arrange a suitable audit of all significant fiduciary activities, under the direction of the fiduciary audit committee, unless a continuous audit system is adopted"
+          },
+          {
+            "quote": "The bank shall note the results of the audit (including significant actions taken as a result of the audit) in the minutes of the board of directors.",
+            "text": "Note the results of the audit (including significant actions taken) in the minutes of the board of directors"
+          }
+        ],
+        "notes": "The excerpt imposes duties on 'a national bank' and directs the audit under the fiduciary audit committee, but states no explicit board action standard (approve/review/receive report), so verb_standard is unresolved. Cadence is calendar-year based ('during each calendar year'). Note the continuous-audit alternative under paragraph (b) is referenced but not fully stated in the excerpt.",
+        "object": "Arranging a suitable audit of all significant fiduciary activities, under the direction of the fiduciary audit committee",
+        "object_evidence": "a national bank shall arrange for a suitable audit (by internal or external auditors) of all significant fiduciary activities, under the direction of its fiduciary audit committee",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:FID-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:RGC-01",
+        "elements": [],
+        "notes": "The provided excerpt only contains the section heading and the beginning of subsection (a)(1) Purpose. It does not contain any text establishing a board risk committee requirement, a board-action standard, or a timing standard. Only a general object (enhanced supervision and prudential standards for certain BHCs) is supported. The risk-committee mandate of 5365(h)(1) is not present in the excerpt, so verb_standard and cadence cannot be settled from this evidence.",
+        "object": "Enhanced supervision and prudential standards for certain bank holding companies",
+        "object_evidence": "Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:RGC-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "periodically reviews",
+        "definitions_used": [],
+        "duty_id": "b:RGC-02",
+        "elements": [
+          {
+            "quote": "must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "text": "Maintain a risk committee that approves and periodically reviews the risk-management policies of the global operations"
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "text": "The risk committee oversees the operation of the global risk-management framework"
+          },
+          {
+            "quote": "The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b).",
+            "text": "Responsibilities include liquidity risk-management"
+          }
+        ],
+        "notes": "Excerpt supports 'approve' as the verb standard ('approves and periodically reviews'). Cadence anchored to 'periodically reviews' indicating ongoing/continuous engagement rather than a fixed interval; no discrete interval (annual/quarterly) is stated. Object grounded to risk-management policies of global operations plus oversight of the global risk-management framework.",
+        "object": "the risk-management policies of the bank holding company's global operations, and oversight of the global risk-management framework",
+        "object_evidence": "approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework",
+        "unresolved_fields": [],
+        "verb_evidence": "approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RGC-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "term": "risk committee"
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "term": "global risk-management framework"
+          }
+        ],
+        "duty_id": "b:RGC-03",
+        "elements": [
+          {
+            "quote": "A bank holding company subject to this subpart must maintain a risk committee",
+            "text": "The bank holding company must maintain a risk committee."
+          },
+          {
+            "quote": "approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "text": "The risk committee approves and periodically reviews the risk-management policies of the company's global operations."
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "text": "The risk committee oversees the operation of the company's global risk-management framework."
+          },
+          {
+            "quote": "The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b)",
+            "text": "The risk committee's responsibilities include liquidity risk-management."
+          }
+        ],
+        "notes": "The excerpt supports 'approve' (and periodic review/oversight) for risk-management policies. The draft's claims of written charter, standalone independence, direct board reporting, quarterly meetings, and full documentation are NOT in this excerpt, so cadence is set to none_specified. 'Periodically reviews' does not fix a specific cadence value from the enum, so cadence is unresolved.",
+        "object": "The risk-management policies of the bank holding company's global operations and oversight of its global risk-management framework, maintained by the risk committee",
+        "object_evidence": "must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RGC-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "term": "risk committee"
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "term": "global risk-management framework"
+          }
+        ],
+        "duty_id": "b:RGC-04",
+        "elements": [
+          {
+            "quote": "must maintain a risk committee",
+            "text": "Maintain a risk committee"
+          },
+          {
+            "quote": "approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "text": "Approve and periodically review global risk-management policies"
+          },
+          {
+            "quote": "oversees the operation of the bank holding company's global risk-management framework",
+            "text": "Oversee operation of the global risk-management framework"
+          }
+        ],
+        "notes": "The excerpt does not mention the chief risk officer or quarterly reporting; those elements of the draft are unsupported. The excerpt supports an 'approve' standard ('approves and periodically reviews'). Cadence is only 'periodically,' which does not map to a quarterly or other enumerated timing value, so cadence is unresolved.",
+        "object": "risk-management policies of the bank holding company's global operations and the operation of its global risk-management framework",
+        "object_evidence": "approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RGC-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "b:RGC-05",
+        "elements": [],
+        "notes": "The draft duty concerns who must chair the risk committee (independent director with risk-management experience per 252.33(a)(4)(ii)). The provided excerpt covers only (a)(1) General and (a)(2) Risk-management framework \u2014 it says nothing about the committee chair, chair independence, SEC/NYSE standards, or risk-management experience. No substring supports the object, verb_standard, or cadence for this duty. Everything left unresolved per the unresolved-over-guess rule.",
+        "object": "Chair of the risk committee (independence and risk-management experience qualifications)",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "b:RGC-05",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+            "term": "risk governance framework"
+          },
+          {
+            "quote": "A covered bank should establish and adhere to a formal, written risk governance framework",
+            "term": "covered bank"
+          }
+        ],
+        "duty_id": "b:RGC-07",
+        "elements": [
+          {
+            "quote": "approved by the board of directors or the board's risk committee",
+            "text": "The risk governance framework must be approved by the board of directors or the board's risk committee"
+          },
+          {
+            "quote": "The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities",
+            "text": "The framework must include delegations of authority from the board to management committees and executive officers, and risk limits for material activities"
+          }
+        ],
+        "notes": "The excerpt supports an 'approve' board standard (framework approved by board or board's risk committee). The annual review/update cadence in the excerpt is assigned to independent risk management, not the board, so it is not a cadence for this board duty; board cadence is unresolved. The requirement that management establish the framework maps to the covered bank establishing it; the board's role in the excerpt is approval only.",
+        "object": "a formal, written risk governance framework designed by independent risk management",
+        "object_evidence": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approved by the board of directors or the board's risk committee",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RGC-07",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+            "term": "risk governance framework"
+          }
+        ],
+        "duty_id": "b:RGC-10",
+        "elements": [
+          {
+            "quote": "approved by the board of directors or the board's risk committee",
+            "text": "The risk governance framework is approved by the board of directors or the board's risk committee."
+          },
+          {
+            "quote": "The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities",
+            "text": "The framework should include delegations of authority and risk limits for material activities."
+          }
+        ],
+        "notes": "The excerpt concerns board approval of the risk governance framework, not a three-year strategic plan as the draft states. Verb standard is 'approve' per the board approval language. The 'at least annually' cadence in the excerpt applies to independent risk management's review/update, not to a board action, so no board-duty cadence is settled.",
+        "object": "the risk governance framework",
+        "object_evidence": "A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approved by the board of directors or the board's risk committee",
+        "verb_standard": "approve"
+      },
+      "duty_id": "b:RGC-10",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:BCG-03",
+        "elements": [],
+        "notes": "The source excerpt concerns a fiduciary audit committee overseeing the audit of fiduciary activities \u2014 not a credit committee, lending strategy, credit risk appetite, credit policies, or portfolio monitoring. None of the draft duty's subject matter is supported by this excerpt. There is no verbatim text here establishing a credit-committee lending/credit-risk duty, so verb_standard, object, and cadence cannot be grounded and are left unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:BCG-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "The audit could be conducted annually or continuously, depending on the audit\u2019s setup.",
+        "definitions_used": [
+          {
+            "quote": "A bank with fiduciary powers must have an audit of fiduciary activities as well as a fiduciary audit committee.",
+            "term": "fiduciary audit committee"
+          }
+        ],
+        "duty_id": "s:BCG-06",
+        "elements": [
+          {
+            "quote": "A bank with fiduciary powers must have an audit of fiduciary activities as well as a fiduciary audit committee.",
+            "text": "A bank with fiduciary powers must have an audit of fiduciary activities and a fiduciary audit committee."
+          },
+          {
+            "quote": "Regulations outline the composition requirements of the fiduciary audit committee.",
+            "text": "Regulations outline the composition requirements of the fiduciary audit committee."
+          },
+          {
+            "quote": "The committee oversees the bank\u2019s audit of significant fiduciary activities.",
+            "text": "The committee oversees the bank's audit of significant fiduciary activities."
+          },
+          {
+            "quote": "The committee should note results of the audit and actions taken in the minutes",
+            "text": "Results of the audit and actions taken should be noted in the minutes."
+          }
+        ],
+        "notes": "The excerpt describes oversight and recording in minutes but states no explicit board-action standard from the enumerated set, so verb_standard is none_specified. Cadence is described as annually or continuously depending on setup; continuous is chosen as it is the more standing framing, anchored to the verbatim clause. Composition requirements are set by regulation but the specific 12 CFR 9.9 citation in the draft is not in the excerpt and is omitted.",
+        "object": "the bank's audit of significant fiduciary activities, overseen by a fiduciary audit committee",
+        "object_evidence": "The committee oversees the bank\u2019s audit of significant fiduciary activities.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:BCG-06",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "definitions_used": [],
+        "duty_id": "s:CAP-01",
+        "elements": [
+          {
+            "quote": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+            "text": "Policy should incorporate actionable protocols, including governance and escalation, upon breach of a capital goal, target level, or early warning metric"
+          },
+          {
+            "quote": "The policy should also include elements such as: \u2022 Roles and responsibilities of key parties, including those responsible for producing analytical materials, reviewing the analysis, an",
+            "text": "Policy should include roles and responsibilities of key parties, including those producing analytical materials and reviewing the analysis"
+          }
+        ],
+        "notes": "The excerpt describes policy content requirements (protocols, roles/responsibilities) but states no explicit board action standard (approve/review/etc.), so verb_standard is unresolved. The draft's claims about board ultimate responsibility and capital planning consistency with strategy/risk appetite are not present in this excerpt and cannot be asserted. Cadence is event_driven because the protocols are triggered by breach events.",
+        "object": "The policy's inclusion of actionable protocols (governance, escalation) triggered when a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached, and elements such as roles and responsibilities of key parties",
+        "object_evidence": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "Capital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year.",
+            "term": "Capital plan cycle"
+          },
+          {
+            "quote": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines.",
+            "term": "Capital policy"
+          }
+        ],
+        "duty_id": "s:CAP-02",
+        "elements": [],
+        "notes": "The excerpt is a definitions section (capital plan cycle, capital policy) and contains no board-action standard and no timing directive imposed on the board. It defines terms but states no duty verb or cadence for the board. Object is grounded only in the definitional text about capital planning/policy; the excerpt does not mention the board reviewing or approving a capital plan, so verb_standard and cadence are unresolved despite the draft's 'annually review and approve' framing.",
+        "object": "capital planning and related capital policy",
+        "object_evidence": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "definitions_used": [],
+        "duty_id": "s:CAP-03",
+        "elements": [
+          {
+            "quote": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+            "text": "Policy should incorporate actionable protocols including governance and escalation upon breach of a capital goal or early warning metric"
+          },
+          {
+            "quote": "Roles and responsibilities of key parties, including those responsible for producing analytical materials, reviewing the analysis, an",
+            "text": "Policy should include roles and responsibilities of key parties, including those producing and reviewing analytical materials"
+          }
+        ],
+        "notes": "The excerpt concerns policy content for capital breach protocols and roles/responsibilities. It does not state any board-action standard (approve, review, receive report, etc.), so verb_standard is none_specified. The draft's quarterly briefing to the board is not supported by this excerpt; the only timing found is event-driven (breach of a metric). The draft object (quarterly board briefing) is not reflected in the excerpt; refined object is grounded in the excerpt's policy-protocol language.",
+        "object": "policy protocols for governance and escalation when a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "object_evidence": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "definitions_used": [],
+        "duty_id": "s:CAP-04",
+        "elements": [
+          {
+            "quote": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+            "text": "Policy should incorporate actionable protocols, including governance and escalation, upon breach of a capital metric"
+          },
+          {
+            "quote": "Roles and responsibilities of key parties, including those responsible for producing analytical materials, reviewing the analysis, an",
+            "text": "Policy should include roles and responsibilities of key parties"
+          }
+        ],
+        "notes": "The excerpt addresses policy content (protocols, governance, escalation, roles/responsibilities) and does not state a board action standard, nor does it mention holding senior management accountable or understanding projection drivers as in the draft. verb_standard left none_specified as no board-action verb appears. Cadence is event_driven based on the 'in the event...breached' trigger.",
+        "object": "Policy protocols and elements for capital planning, including governance, escalation, and roles and responsibilities of key parties",
+        "object_evidence": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "definitions_used": [],
+        "duty_id": "s:CAP-06",
+        "elements": [
+          {
+            "quote": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+            "text": "Policy should incorporate actionable protocols, including governance and escalation, upon breach of a capital goal, targeted level, or early warning metric"
+          },
+          {
+            "quote": "Roles and responsibilities of key parties, including those responsible for producing analytical materials, reviewing the analysis, an",
+            "text": "Policy should include roles and responsibilities of key parties, including those producing analytical materials and reviewing the analysis"
+          }
+        ],
+        "notes": "The excerpt describes what the policy should incorporate/include; it states no board-action standard (no board actor, no approve/review verb tied to the board), so verb_standard is none_specified. The excerpt's draft label about incorporating uncertainties and board decisions is not supported by this excerpt, which concerns policy protocols on metric breaches. Cadence is event_driven based on 'in the event ... is breached'.",
+        "object": "Policy incorporating actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "object_evidence": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-06",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:CAP-07",
+        "elements": [],
+        "notes": "The excerpt concerns policy protocols for breached capital goals, roles and responsibilities of key parties producing/reviewing analysis. It says nothing about the board maintaining a record of its meetings pertaining to the capital-planning process. No board-action standard, no object matching the draft duty, and no timing standard for record-keeping are stated. All substantive fields are unresolved from this excerpt.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-07",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "event_driven",
+        "cadence_evidence": "in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "definitions_used": [],
+        "duty_id": "s:CAP-08",
+        "elements": [
+          {
+            "quote": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+            "text": "Policy should incorporate actionable protocols including governance and escalation upon breach of a capital goal, targeted level, or early warning metric"
+          },
+          {
+            "quote": "The policy should also include elements such as: \u2022 Roles and responsibilities of key parties, including those responsible for producing analytical materials, reviewing the analysis, an",
+            "text": "Policy should include roles and responsibilities of key parties, including those producing analytical materials and reviewing the analysis"
+          }
+        ],
+        "notes": "The excerpt describes what the capital policy should contain (protocols, roles) but states no board-action standard (approve/review/etc.), so verb_standard is none_specified. Cadence is event_driven, triggered by a breach event, not continuous. Draft cadence 'continuous' is not supported by the excerpt.",
+        "object": "Capital policy incorporating actionable protocols (governance and escalation) for when a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached",
+        "object_evidence": "The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-08",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "C apital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year.",
+            "term": "Capital plan cycle"
+          },
+          {
+            "quote": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines.",
+            "term": "Capital policy"
+          }
+        ],
+        "duty_id": "s:CAP-09",
+        "elements": [],
+        "notes": "The excerpt contains only definitional text (capital plan cycle, capital policy, and the start of a Category IV definition). It states no board action, no object of a duty, and no cadence for any board action. The draft's assertions about board review, remediation, and approval are not supported by this excerpt, so verb_standard, object, and cadence are all unresolved. Definitions present are captured.",
+        "object": "Capital policy and capital plan cycle terminology; the excerpt only provides definitions and states no board duty.",
+        "object_evidence": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-09",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "U.S. bank holding companies that are subject to Category I standards under the Board\u2019s tailoring framework",
+            "term": "Category I standards"
+          }
+        ],
+        "duty_id": "s:CAP-11",
+        "elements": [],
+        "notes": "The excerpt is the subject/applicability preamble of an SR letter on capital planning for Category I firms. It contains no board-action standard, no dividend/repurchase board duty, and no timing. It cannot support the draft's supersession claims regarding SR 09-4 or SR 15-18; those references do not appear in this excerpt. Object is grounded only in the stated purpose of the letter.",
+        "object": "Supervisory expectations for capital planning at firms subject to Category I standards",
+        "object_evidence": "explain its supervisory expectations for capital planning at firms subject to Category I standards",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:CAP-11",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "the Bank Secrecy Act (BSA)",
+            "term": "Bank Secrecy Act (BSA)"
+          },
+          {
+            "quote": "Information Technology (IT)",
+            "term": "Information Technology (IT)"
+          }
+        ],
+        "duty_id": "s:FDR-01",
+        "elements": [
+          {
+            "quote": "ctives and policies at a minimum, include written guidelines for such matters as investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning , internal routine and controls , audit programs, conflicts of interest, code of ethics, and personnel.",
+            "text": "Objectives and policies at a minimum include written guidelines for enumerated matters"
+          },
+          {
+            "quote": "Policies for specialty areas, such as the Bank Secrecy Act (BSA), Information Technology (IT), Trust Department activities, and consumer compliance will also facilitate appropriate oversight.",
+            "text": "Policies for specialty areas facilitate appropriate oversight"
+          }
+        ],
+        "notes": "The excerpt describes the content of objectives and policies (written guidelines for various matters) but does not state a board-action standard or any timing. The draft's broad statements about board authority are not present in this excerpt, so object is narrowed to what the excerpt actually supports.",
+        "object": "Written guidelines within objectives and policies covering matters such as investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning, internal routine and controls, audit programs, conflicts of interest, code of ethics, personnel, and specialty areas",
+        "object_evidence": "ctives and policies at a minimum, include written guidelines for such matters as investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning , internal routine and controls , audit programs, conflicts of interest, code of ethics, and personnel.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:FDR-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "the Bank Secrecy Act (BSA)",
+            "term": "BSA"
+          },
+          {
+            "quote": "Information Technology (IT)",
+            "term": "IT"
+          }
+        ],
+        "duty_id": "s:FDR-02",
+        "elements": [
+          {
+            "quote": "ctives and policies at a minimum, include written guidelines for such matters as investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning , internal routine and controls , audit programs, conflicts of interest, code of ethics, and personnel.",
+            "text": "Objectives and policies must, at a minimum, include written guidelines for core matters"
+          },
+          {
+            "quote": "Policies for specialty areas, such as the Bank Secrecy Act (BSA), Information Technology (IT), Trust Department activities, and consumer compliance will also facilitate appropriate oversight.",
+            "text": "Policies for specialty areas facilitate appropriate oversight"
+          }
+        ],
+        "notes": "The excerpt enumerates the content of required written guidelines/policies but states no explicit board-action standard (no 'approve', 'review', etc. attributed to directors) and no timing/cadence. The draft's 'set... and give final approval' and 'continuous' cadence are not supported by this excerpt, so verb_standard and cadence are left unresolved.",
+        "object": "Written guidelines/policies covering investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning, internal routine and controls, audit programs, conflicts of interest, code of ethics, personnel, and specialty areas such as BSA, IT, Trust Department activities, and consumer compliance",
+        "object_evidence": "include written guidelines for such matters as investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning , internal routine and controls , audit programs, conflicts of interest, code of ethics, and personnel. Policies for specialty areas, such as the Bank Secrecy Act (BSA), Information Technology (IT), Trust Department activities, and consumer compliance",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:FDR-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-03",
+        "elements": [],
+        "notes": "The source excerpt concerns a process to identify and select potential director nominees (skills, diversity, conflicts of interest) and references the Interagency Policy Statement on diversity. It contains no text about evaluating risk of expansion into a new business or jurisdiction, nor about risk-management/control enhancements, BSA, or FCPA. None of the draft duty's assertions are supported by this excerpt; no board-action standard or timing is stated. All substantive fields are left unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "object_evidence",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-04",
+        "elements": [],
+        "notes": "The source excerpt concerns a process for identifying and selecting potential director nominees (skills, expertise, diversity, conflicts of interest). It contains no text about the board directing senior management to provide timely, accurate information, evaluating information sufficiency, or demanding improvement. None of the fields for this duty (verb_standard, object, cadence) can be supported by a verbatim substring of this excerpt, so all are left unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-04",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-08",
+        "elements": [],
+        "notes": "The excerpt concerns a process for identifying and selecting director nominees (skills, diversity, conflicts of interest), which does not correspond to the draft duty on approving CEO/executive performance objectives and compensation. No text in this excerpt supports the verb_standard, object, or cadence for s:GOV-08, so all are left unresolved/neutral.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-08",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-09",
+        "elements": [
+          {
+            "quote": "a process designed to identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives",
+            "text": "Identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives"
+          },
+          {
+            "quote": "This process takes into account, for example, a potential nominee's expertise, availability, integrity, and potential conflicts of interest",
+            "text": "Take into account a nominee's expertise, availability, integrity, and potential conflicts of interest"
+          },
+          {
+            "quote": "considers a diverse pool of potential nominees, including women and minorities",
+            "text": "Consider a diverse pool of potential nominees, including women and minorities"
+          }
+        ],
+        "notes": "The excerpt describes a director-nominee identification/selection process with diversity considerations, not CEO/CRO/CAE succession as the draft states. No board-action standard verb and no timing are present in the excerpt, so both are none_specified. The draft label about succession is not supported by this excerpt.",
+        "object": "process to identify and select potential director nominees with a diverse mix of skills, knowledge, experience, and perspectives",
+        "object_evidence": "es a process designed to identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-09",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-12",
+        "elements": [],
+        "notes": "The source excerpt concerns director nominee selection processes, skills/diversity considerations, and cites the Final Interagency Policy Statement on diversity policies. It contains nothing about the audit committee, the CAE, internal-audit budget/staffing, or remediation of audit/supervisory findings. No field for this duty can be supported by the provided excerpt, so all substantive fields are left neutral and marked unresolved.",
+        "object": "",
+        "object_evidence": "",
+        "unresolved_fields": [
+          "verb_standard",
+          "object",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-12",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-13",
+        "elements": [
+          {
+            "quote": "a process designed to identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives",
+            "text": "Process identifies and selects potential director nominees with a mix of skills, knowledge, experience, and perspectives"
+          },
+          {
+            "quote": "This process takes into account, for example, a potential nominee's expertise, availability, integrity, and potential conflicts of interest",
+            "text": "Process takes into account a potential nominee's expertise, availability, integrity, and potential conflicts of interest"
+          },
+          {
+            "quote": "considers a diverse pool of potential nominees, including women and minorities",
+            "text": "Process considers a diverse pool of potential nominees, including women and minorities"
+          }
+        ],
+        "notes": "Excerpt describes attributes of the nomination process but does not state a board-action standard (no approve/review/etc. verb tied to the board) nor any timing/recurrence, so both are left none_specified. The excerpt begins mid-word ('es a process') so no explicit actor is captured.",
+        "object": "a process designed to identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives, considering a diverse pool of potential nominees",
+        "object_evidence": "es a process designed to identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-13",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "continuous",
+        "cadence_evidence": "actively oversee",
+        "definitions_used": [
+          {
+            "quote": "hold management accountable for adhering to the risk governance framework",
+            "term": "risk governance framework"
+          },
+          {
+            "quote": "risk assessments and reports prepared by independent risk management and internal audit",
+            "term": "independent risk management"
+          },
+          {
+            "quote": "risk assessments and reports prepared by independent risk management and internal audit",
+            "term": "internal audit"
+          },
+          {
+            "quote": "exceed its risk appetite",
+            "term": "risk appetite"
+          }
+        ],
+        "duty_id": "s:GOV-22",
+        "elements": [
+          {
+            "quote": "actively oversee the covered bank's risk-taking activities",
+            "text": "Actively oversee the bank's risk-taking activities"
+          },
+          {
+            "quote": "hold management accountable for adhering to the risk governance framework",
+            "text": "Hold management accountable for adhering to the risk governance framework"
+          },
+          {
+            "quote": "the board of directors may rely on risk assessments and reports prepared by independent risk management and internal audit",
+            "text": "Board may rely on risk assessments and reports prepared by IRM and internal audit"
+          },
+          {
+            "quote": "question, challenge, and when necessary, oppose recommendations and decisions made by management that could cause the covered bank's risk profile to exceed its risk appetite",
+            "text": "Question, challenge, and when necessary oppose management recommendations and decisions that could exceed risk appetite"
+          }
+        ],
+        "notes": "Excerpt directs board to actively oversee and hold management accountable, with authority to question/challenge/oppose (review_and_challenge). 'Actively oversee' supports continuous cadence. Object grounded in the two core obligations. Final clause ('or jeopardize') is truncated in the excerpt.",
+        "object": "Actively oversee the covered bank's risk-taking activities and hold management accountable for adhering to the risk governance framework",
+        "object_evidence": "actively oversee the covered bank's risk-taking activities and hold management accountable for adhering to the risk governance framework",
+        "unresolved_fields": [],
+        "verb_evidence": "question, challenge, and when necessary, oppose recommendations and decisions made by management",
+        "verb_standard": "review_and_challenge"
+      },
+      "duty_id": "s:GOV-22",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee",
+            "term": "risk governance framework"
+          }
+        ],
+        "duty_id": "s:GOV-27",
+        "elements": [
+          {
+            "quote": "approved by the board of directors or the board's risk committee",
+            "text": "The risk governance framework is approved by the board of directors or the board's risk committee."
+          },
+          {
+            "quote": "The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities.",
+            "text": "The framework includes delegations of authority and risk limits for material activities."
+          }
+        ],
+        "notes": "The excerpt supports board approval of the risk governance framework. It does not mention a 3-year strategic plan, IRM quarterly reporting on risk profile vs. appetite, or breach-protocol escalation \u2014 those draft elements are unsupported here. The only cadence stated ('at least annually') applies to independent risk management's review/update, not a board action, so board cadence is unresolved.",
+        "object": "the covered bank's formal, written risk governance framework",
+        "object_evidence": "A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee.",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "approved by the board of directors or the board's risk committee",
+        "verb_standard": "approve"
+      },
+      "duty_id": "s:GOV-27",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-31",
+        "elements": [
+          {
+            "quote": "An organizational structure that establishes clear lines of authority and responsibility for monitoring adherence to established policies",
+            "text": "Organizational structure establishing clear lines of authority and responsibility for monitoring adherence to established policies"
+          },
+          {
+            "quote": "Effective risk assessment",
+            "text": "Effective risk assessment"
+          },
+          {
+            "quote": "Timely and accurate financial, operational and regulatory reports",
+            "text": "Timely and accurate financial, operational and regulatory reports"
+          },
+          {
+            "quote": "Adequate procedures to safeguard and manage assets",
+            "text": "Adequate procedures to safeguard and manage assets"
+          },
+          {
+            "quote": "Compliance with applicable laws and regulations",
+            "text": "Compliance with applicable laws and regulations"
+          }
+        ],
+        "notes": "The excerpt (sec. II.A) states requirements for the institution's internal controls but names no board-action standard and no timing. The draft's reference to the audit committee/board reviewing internal audit effectiveness derives from sec. II.B.7, which is not in this excerpt, so it cannot be asserted. verb_standard and cadence left as none_specified/unresolved.",
+        "object": "Internal controls and information systems appropriate to the institution that provide for clear lines of authority, effective risk assessment, timely/accurate reporting, asset safeguards, and legal compliance",
+        "object_evidence": "An institution should have internal controls and information systems that are appropriate to the size of the institution and the nature, scope and risk of its activities and that provide for:",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-31",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-32",
+        "elements": [
+          {
+            "quote": "Are commensurate with the types of loans the institution will make and consider the terms and conditions under which they will be made",
+            "text": "Underwriting practices commensurate with the types of loans and their terms and conditions"
+          },
+          {
+            "quote": "Consider the nature of the markets in which loans will be made",
+            "text": "Consider the nature of the markets in which loans will be made"
+          },
+          {
+            "quote": "Provide for consideration, prior to credit commitment, of the borrower's overall financial condition and resources, the financial responsibility of any guarantor, the nature and value of any underlying collateral, and the borrower's character and willingness to repay as agreed",
+            "text": "Consider, prior to credit commitment, borrower financial condition, guarantor responsibility, collateral value, and borrower character/willingness to repay"
+          }
+        ],
+        "notes": "The excerpt addresses only credit underwriting and imposes duties on the institution to establish/maintain underwriting practices. It states no board-action standard and no timing, so verb_standard and cadence are none_specified. The draft's broader object (interest-rate risk, asset quality, earnings) and its board-communication/reporting framing are not supported by this excerpt, which covers only section D (Credit underwriting).",
+        "object": "Establishment and maintenance of prudent credit underwriting practices",
+        "object_evidence": "An institution should establish and maintain prudent credit underwriting practices",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-32",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:GOV-33",
+        "elements": [
+          {
+            "quote": "An organizational structure that establishes clear lines of authority and responsibility for monitoring adherence to established policies",
+            "text": "Organizational structure establishing clear lines of authority and responsibility for monitoring adherence to established policies"
+          },
+          {
+            "quote": "Effective risk assessment",
+            "text": "Effective risk assessment"
+          },
+          {
+            "quote": "Timely and accurate financial, operational and regulatory reports",
+            "text": "Timely and accurate financial, operational and regulatory reports"
+          },
+          {
+            "quote": "Adequate procedures to safeguard and manage assets",
+            "text": "Adequate procedures to safeguard and manage assets"
+          }
+        ],
+        "notes": "The excerpt covers internal controls and information systems standards (sec. I.A), not compensation safeguards described in the draft object. The excerpt states no board-action standard and no timing. Object refined to match what the excerpt actually addresses; the compensation-related draft object is not supported by this excerpt.",
+        "object": "Institution's internal controls and information systems appropriate to its size and the nature, scope and risk of its activities",
+        "object_evidence": "An institution should have internal controls and information systems that are appropriate to the size of the institution and the nature, scope and risk of its activities",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:GOV-33",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "periodically (at least annually)",
+        "definitions_used": [
+          {
+            "quote": "the CAE reports administratively to the chief executive officer (CEO)",
+            "term": "CAE"
+          },
+          {
+            "quote": "the chief executive officer (CEO)",
+            "term": "CEO"
+          }
+        ],
+        "duty_id": "s:IAU-01",
+        "elements": [
+          {
+            "quote": "If the CAE reports administratively to someone other than the CEO, the audit committee should document its rationale for this reporting structure, including mitigating controls available for situations that could adversely impact the objectivity of the CAE.",
+            "text": "Where the CAE reports administratively to someone other than the CEO, the audit committee should document its rationale, including mitigating controls"
+          },
+          {
+            "quote": "In such instances, the audit committee should periodically (at least annually) evaluate whether the CAE is impartial and not undul",
+            "text": "In such instances, the audit committee should periodically (at least annually) evaluate whether the CAE is impartial and not unduly influenced"
+          }
+        ],
+        "notes": "The excerpt addresses the audit committee's duties regarding administrative reporting of the CAE, not the functional reporting or performance/compensation described in the draft. The excerpt states no board-action standard from the fixed verb set, so verb_standard is none_specified. Cadence is grounded in 'periodically (at least annually)'. The excerpt is truncated ('undul').",
+        "object": "The audit committee should document its rationale where the CAE reports administratively to someone other than the CEO, and periodically evaluate whether the CAE is impartial and not unduly influenced",
+        "object_evidence": "the audit committee should document its rationale for this reporting structure, including mitigating controls available for situations that could adversely impact the objectivity of the CAE. In such instances, the audit committee should periodically (at least annually) evaluate whether the CAE is impartial and not undul",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:IAU-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "annual",
+        "cadence_evidence": "periodically (at least annually)",
+        "definitions_used": [
+          {
+            "quote": "the CAE reports administratively to the chief executive officer (CEO)",
+            "term": "CAE"
+          },
+          {
+            "quote": "the chief executive officer (CEO)",
+            "term": "CEO"
+          }
+        ],
+        "duty_id": "s:IAU-02",
+        "elements": [
+          {
+            "quote": "the audit committee should document its rationale for this reporting structure, including mitigating controls available for situations that could adversely impact the objectivity of the CAE",
+            "text": "Document the rationale for the reporting structure, including mitigating controls"
+          },
+          {
+            "quote": "the audit committee should periodically (at least annually) evaluate whether the CAE is impartial and not undul",
+            "text": "Periodically (at least annually) evaluate whether the CAE is impartial"
+          }
+        ],
+        "notes": "The excerpt assigns the duty to the audit committee, not clearly to a board-action standard from the enumerated set (approve/review/receive_report/be_informed/certify), so verb_standard is left none_specified. Cadence is grounded in 'at least annually'.",
+        "object": "Where the CAE reports administratively to someone other than the CEO, documenting the rationale for the reporting structure and periodically evaluating whether the CAE is impartial",
+        "object_evidence": "If the CAE reports administratively to someone other than the CEO, the audit committee should document its rationale for this reporting structure, including mitigating controls available for situations that could adversely impact the objectivity of the CAE.",
+        "unresolved_fields": [
+          "verb_standard"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:IAU-02",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:STR-01",
+        "elements": [
+          {
+            "quote": "Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans.",
+            "text": "Stress testing results should be considered directly by the board and senior management for capital and liquidity adequacy decisions"
+          },
+          {
+            "quote": "Senior management, in consultation with the board, should ensure that the stress testing framework includes",
+            "text": "Senior management, in consultation with the board, ensures the stress testing framework includes certain content"
+          }
+        ],
+        "notes": "The excerpt describes that stress testing results should be considered by board and senior management, but states no explicit board-action standard from the enumerated set (approve/review_and_challenge/etc.), so verb_standard is none_specified. No timing language appears, so cadence is none_specified. The draft's 'continuous' cadence is not supported by this excerpt.",
+        "object": "Stress testing results to be considered by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans",
+        "object_evidence": "Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:STR-01",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [],
+        "duty_id": "s:STR-03",
+        "elements": [
+          {
+            "quote": "Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans.",
+            "text": "Stress testing results should be considered directly by the board and senior management for decisions on capital and liquidity adequacy"
+          },
+          {
+            "quote": "Senior management, in consultation with the board, should ensure that the stress testing framework includes",
+            "text": "Senior management, in consultation with the board, should ensure the stress testing framework includes certain elements"
+          }
+        ],
+        "notes": "The excerpt describes stress testing results being 'considered directly by the board' but states no explicit board-action standard from the enumerated list (approve/review_and_challenge/receive_report/be_informed/certify), so verb_standard is none_specified. The draft's 'regularly reports' and 'continuous' cadence are not supported by this excerpt; no timing language appears, so cadence is none_specified. The draft's reporting framing is not present in the excerpt, which instead frames the board as considering results for decisions.",
+        "object": "Stress testing results considered directly by the board and senior management for decisions relating to capital and liquidity adequacy",
+        "object_evidence": "Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans.",
+        "unresolved_fields": [
+          "verb_standard",
+          "cadence"
+        ],
+        "verb_evidence": "",
+        "verb_standard": "none_specified"
+      },
+      "duty_id": "s:STR-03",
+      "retag_conflict": null
+    },
+    {
+      "anchor_failures": [],
+      "anchor_ok": true,
+      "distilled": {
+        "cadence": "none_specified",
+        "cadence_evidence": "",
+        "definitions_used": [
+          {
+            "quote": "alignment of the banking organization\u2019s risk profile with the board\u2019s chosen risk appetite",
+            "term": "risk appetite"
+          }
+        ],
+        "duty_id": "s:STR-04",
+        "elements": [
+          {
+            "quote": "be used to inform the board about alignment of the banking organization\u2019s risk profile with the board\u2019s chosen risk appetite",
+            "text": "Stress testing results inform the board about alignment of the risk profile with the chosen risk appetite"
+          },
+          {
+            "quote": "as well as inform operating and strategic decisions",
+            "text": "Stress testing results inform operating and strategic decisions"
+          },
+          {
+            "quote": "Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans.",
+            "text": "Stress testing results considered directly by the board for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans"
+          }
+        ],
+        "notes": "Excerpt frames the board's role as being informed by and considering stress testing results, so verb_standard is be_informed. No timing standard appears in the excerpt, so cadence is unresolved. The draft's 'continuous' cadence is not supported by the excerpt.",
+        "object": "Stress testing results used to inform the board about alignment of the risk profile with risk appetite and considered by the board for decisions on capital and liquidity adequacy, including capital contingency plans and contingency funding plans",
+        "object_evidence": "Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans.",
+        "unresolved_fields": [
+          "cadence"
+        ],
+        "verb_evidence": "be used to inform the board about alignment of the banking organization\u2019s risk profile with the board\u2019s chosen risk appetite",
+        "verb_standard": "be_informed"
+      },
+      "duty_id": "s:STR-04",
+      "retag_conflict": null
+    }
+  ],
+  "source_mismatch_rows": [
+    "b:AUD-08",
+    "b:CAP-02",
+    "b:RGC-05",
+    "s:BCG-03",
+    "s:CAP-07",
+    "s:CAP-09",
+    "s:GOV-03",
+    "s:GOV-04",
+    "s:GOV-08",
+    "s:GOV-12"
+  ],
+  "verb_retag_conflicts": [
+    {
+      "distilled_verb_standard": "certify",
+      "duty_id": "b:AUD-07",
+      "reason": "distilled verb_standard 'certify' asserts board performance, but B2 retagged the actor to 'CEO and CFO (principal executive and financial officers)'. Flagged, not overwritten (TODO(human): reconcile verb vs. actor).",
+      "retag_from_actor": "Audit committee",
+      "retag_to_actor": "CEO and CFO (principal executive and financial officers)"
+    }
+  ]
+}

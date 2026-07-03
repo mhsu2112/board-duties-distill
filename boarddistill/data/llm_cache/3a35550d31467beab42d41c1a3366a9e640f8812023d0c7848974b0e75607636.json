@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "3a35550d31467beab42d41c1a3366a9e640f8812023d0c7848974b0e75607636",
+  "response_text": "{\"duty_id\":\"s:CAP-07\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The excerpt concerns policy protocols for breached capital goals, roles and responsibilities of key parties producing/reviewing analysis. It says nothing about the board maintaining a record of its meetings pertaining to the capital-planning process. No board-action standard, no object matching the draft duty, and no timing standard for record-keeping are stated. All substantive fields are unresolved from this excerpt.\"}"
+}

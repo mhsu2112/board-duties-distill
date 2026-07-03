@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "a0a2c405142b759251a141aafcc5ad8682e466a411699d2ed0272eabc44399ec",
+  "response_text": "{\"duty_id\":\"s:CAP-11\",\"verb_standard\":\"none_specified\",\"object\":\"Supervisory expectations for capital planning at firms subject to Category I standards\",\"object_evidence\":\"explain its supervisory expectations for capital planning at firms subject to Category I standards\",\"cadence\":\"none_specified\",\"definitions_used\":[{\"term\":\"Category I standards\",\"quote\":\"U.S. bank holding companies that are subject to Category I standards under the Board\u2019s tailoring framework\"}],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The excerpt is the subject/applicability preamble of an SR letter on capital planning for Category I firms. It contains no board-action standard, no dividend/repurchase board duty, and no timing. It cannot support the draft's supersession claims regarding SR 09-4 or SR 15-18; those references do not appear in this excerpt. Object is grounded only in the stated purpose of the letter.\"}"
+}
