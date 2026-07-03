@@ -815,6 +815,76 @@ def b5_decompose(
         typer.echo(f"  statutory-floor candidates PROPOSED (human-owned): {sorted(fc)}")
 
 
+@app.command("b6-normalize")
+def b6_normalize(
+    root: Annotated[Path, typer.Option("--root", help="Benchmark data root.")] = Path(
+        "data/benchmark"
+    ),
+) -> None:
+    """B6-T2: parse + pseudonymize the pooled corpus into InstrumentSummary records."""
+    import json
+
+    from adapters.benchmark_guard import guarded_read
+    from adapters.rbi_adapter import (
+        build_pseudonym_map,
+        has_leaked_identifier,
+        normalize_corpus,
+    )
+
+    corpus_dir = root / "corpus"
+    corpus: dict[str, str] = {}
+    for f in sorted(corpus_dir.glob("circ-*.txt")):
+        cid = f.stem.removeprefix("circ-")
+        corpus[cid] = guarded_read(f)  # guard: proves we're reading corpus, not the answer key
+
+    pmap = build_pseudonym_map(corpus)
+    instruments = normalize_corpus(corpus, pmap)
+
+    leaked = [s.doc_id for s in instruments if has_leaked_identifier(s.body + " " + s.subject)]
+
+    # LLM-facing pooled corpus (pseudonymized) — no answer key, no real identifiers
+    (root / "pooled").mkdir(parents=True, exist_ok=True)
+    (root / "pooled" / "instruments.json").write_text(
+        json.dumps(
+            {
+                "_meta": "B6-T2 pooled corpus (pseudonymized). LLM-facing; contains no real RBI "
+                "identifier and no Master-Direction grouping. The engine (T3) and baseline (T4) "
+                "read ONLY this file.",
+                "count": len(instruments),
+                "instruments": [s.model_dump(mode="json") for s in instruments],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    # SEALED pseudonym map (real circular id ↔ doc_id, and ref→doc) — pseudonym_map dir is guarded
+    (root / "pseudonym_map").mkdir(parents=True, exist_ok=True)
+    (root / "pseudonym_map" / "map.json").write_text(
+        json.dumps(
+            {
+                "_meta": "SEALED — real circular_id ↔ pseudonym doc_id, plus reference→doc map. "
+                "Held out of the proposal pipeline; restored only at scoring (T5).",
+                "doc_id": pmap["doc_id"],
+                "ref_to_doc": pmap["ref_to_doc"],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+
+    total_cross = sum(len(s.cross_refs) for s in instruments)
+    typer.echo("[boarddistill] B6-T2 normalize + pseudonymize:")
+    typer.echo(
+        f"  instruments: {len(instruments)} · cross-references: {total_cross} · "
+        f"leaked identifiers: {len(leaked)}"
+    )
+    if leaked:
+        typer.echo(f"  ⚠ LEAKAGE — identifiers survived in: {leaked[:5]}", err=True)
+        raise typer.Exit(code=1)
+
+
 @app.command("b6-acquire")
 def b6_acquire(
     cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
