@@ -123,11 +123,68 @@ def operations_prompt(theme: str, docs: list[dict[str, Any]]) -> str:
     )
 
 
+def baseline_prompt(instruments: list[dict[str, Any]]) -> str:
+    """The §1.4 plain-LLM baseline: one prompt, no calculus scaffold, no operations, no
+    span-anchoring — just 'propose how to consolidate these instruments.' Same index, same model,
+    same leakage rules. Its grouping is scored identically to the engine's; the benchmark claim is
+    the delta the scaffold adds."""
+    return (
+        "Below is a list of regulatory circulars, each with an id, subject, addressee, and the "
+        "circulars it cites. Propose how to consolidate these instruments: group together the "
+        "circulars that should be combined into a single consolidated instrument, "
+        "assigning every "
+        "id to exactly one group. Return JSON only. Do not name any real regulation "
+        "or regulator.\n\n"
+        "## Circulars\n" + _index_block(instruments)
+    )
+
+
 # --- driver ----------------------------------------------------------------------------
 
 
 def _despace(s: str) -> str:
     return re.sub(r"\s+", "", s)
+
+
+def _partition(
+    grouping: GroupingProposal, all_ids: set[str]
+) -> list[ProposedGroup]:
+    """Turn a raw grouping into a clean partition: dedup within/across groups, singletons for any
+    unassigned id (never silently dropped)."""
+    assigned: set[str] = set()
+    groups: list[ProposedGroup] = []
+    for g in grouping.groups:
+        ids = list(dict.fromkeys(d for d in g.doc_ids if d in all_ids and d not in assigned))
+        if not ids:
+            continue
+        assigned.update(ids)
+        groups.append(ProposedGroup(group_id=g.group_id, theme=g.theme, doc_ids=ids))
+    for missing in sorted(all_ids - assigned):
+        groups.append(
+            ProposedGroup(group_id=f"solo-{missing}", theme="(unassigned)", doc_ids=[missing])
+        )
+    return groups
+
+
+def run_baseline(harness: LlmHarness, instruments: list[dict[str, Any]]) -> dict[str, Any]:
+    all_ids = {s["doc_id"] for s in instruments}
+    grouping = harness.complete(baseline_prompt(instruments), GroupingProposal)
+    groups = _partition(grouping, all_ids)
+    leaky = [g.group_id for g in groups if leakage_hit(g.theme)]
+    return {
+        "_meta": "B6-T4 plain-LLM baseline: one grouping prompt, no calculus scaffold, no "
+        "operations. Same corpus/model/leakage rules; scored identically to the engine (§1.4).",
+        "counts": {
+            "instruments": len(instruments),
+            "groups": len(groups),
+            "multi_doc_groups": sum(1 for g in groups if len(g.doc_ids) > 1),
+            "leaky_themes": len(leaky),
+            "budget": harness.budget.summary(),
+        },
+        "groups": [
+            {"group_id": g.group_id, "theme": g.theme, "doc_ids": g.doc_ids} for g in groups
+        ],
+    }
 
 
 def run_engine(

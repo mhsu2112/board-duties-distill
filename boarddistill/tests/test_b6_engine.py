@@ -9,6 +9,7 @@ from adapters.b6_engine import leakage_hit
 
 _ROOT = Path(__file__).resolve().parents[1]
 _PROPOSALS = _ROOT / "outputs" / "b6" / "engine_proposals.json"
+_BASELINE = _ROOT / "outputs" / "b6" / "baseline_proposals.json"
 _POOLED = _ROOT / "data" / "benchmark" / "pooled" / "instruments.json"
 
 
@@ -43,3 +44,14 @@ def test_engine_proposals_are_clean_anchored_and_cover_the_corpus() -> None:
         1 for g in doc["groups"] for op in g["operations"] if leakage_hit(op["evidence_quote"])
     )
     assert emitted_leaks == 0
+
+
+def test_baseline_covers_corpus_and_is_leakage_free() -> None:
+    if not (_BASELINE.exists() and _POOLED.exists()):
+        return
+    doc = json.loads(_BASELINE.read_text())
+    corpus = {s["doc_id"] for s in json.loads(_POOLED.read_text())["instruments"]}
+    assigned = [d for g in doc["groups"] for d in g["doc_ids"]]
+    assert set(assigned) == corpus  # partition covers every doc
+    assert len(assigned) == len(set(assigned))
+    assert all(not leakage_hit(g["theme"]) for g in doc["groups"])
