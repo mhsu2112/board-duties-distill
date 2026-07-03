@@ -29,6 +29,16 @@ _APPX_RE = re.compile(
     r"(?:\s*,?\s*(?:secs?\.?)?\s*(?P<sub>[IVX]+\.[A-Za-z0-9().]+))?",
     re.I,
 )
+# Terse board-governance appendix cite, e.g. "App. D, sec. II.A" / "App. A, secs. II.A, II.B.7"
+# (no Part). In the US-GSIB board-duty corpus these are the OCC 12 CFR Part 30 appendices.
+_APPX_TERSE_RE = re.compile(
+    r"App(?:endix|\.)\s*(?P<appx>[A-Z])\s*,\s*secs?\.?\s*(?P<sub>[IVX]+\.[A-Za-z0-9().]+)",
+    re.I,
+)
+# Documented assumption: terse "App. X" cites resolve to 12 CFR Part 30 (OCC heightened /
+# safety-and-soundness appendices — the board-governance regime).
+_TERSE_APPENDIX_TITLE = 12
+_TERSE_APPENDIX_PART = "30"
 
 
 @dataclass(frozen=True)
@@ -95,6 +105,11 @@ def _unresolved_reason(text: str) -> str:
     s = text.lower()
     if "u.s.c" in s:
         return "statute cite (U.S.C.); primary text at govinfo/uscode — not resolved in B1-T2"
+    if "appendix c" in s and "committee" in s:
+        return (
+            "OCC Director's Book / handbook appendix (board committees); NOT a CFR appendix "
+            "(12 CFR Part 30 App. C is Residential Mortgage Lending) — guidance, see B2-T4"
+        )
     if "app." in s or "appendix" in s:
         return "CFR/guidance appendix — not section-addressable in this pass"
     if "local ll" in s or re.search(r"\bll\.", s):
@@ -151,6 +166,18 @@ def parse_citation(text: str) -> list[Citation]:
     sr = _SR_RE.search(text)
     if sr:
         return [SrCite(year=sr.group("yr"), number=sr.group("num"), raw=sr.group(0))]
+
+    terse = _APPX_TERSE_RE.search(text)
+    if terse:
+        return [
+            CfrAppendixCite(
+                title=_TERSE_APPENDIX_TITLE,
+                part=_TERSE_APPENDIX_PART,
+                appendix=terse.group("appx").upper(),
+                subsection=terse.group("sub"),
+                raw=terse.group(0),
+            )
+        ]
 
     return [UnresolvedCite(raw=text, reason=_unresolved_reason(text))]
 

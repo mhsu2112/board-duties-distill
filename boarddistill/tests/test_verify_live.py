@@ -69,9 +69,15 @@ def test_resolvable_non_cfr_citation_types() -> None:
     assert appx is not None and appx.label == "12 CFR Part 30, App. D, II.A"
 
 
+def test_terse_appendix_resolves_to_part_30() -> None:
+    # "App. D, sec. II.A" (no Part) resolves to 12 CFR Part 30 App. D in this corpus
+    cite = first_resolvable("App. D, sec. II.A")
+    assert cite is not None and cite.label == "12 CFR Part 30, App. D, II.A"
+
+
 def test_unresolvable_citations_get_reasons() -> None:
     for text, needle in [
-        ("App. D, sec. II.A", "appendix"),  # no part -> not addressable
+        ("Appendix C — Audit committee", "Director's Book"),  # not a CFR appendix
         ("Attachment, Attribute 1, p. 3", "guidance-document"),
         ("Management (local ll. ~11944-12024)", "local line-number"),
     ]:
@@ -200,8 +206,8 @@ def test_full_72_row_pass_from_cache_is_deterministic() -> None:
     resolver = build_resolver(Fetcher(_CACHE, offline_client()))
     first = verify_targets(targets, resolver)
     assert len(first) == 72
-    # 16 CFR sections + 4 U.S.C. + 1 SR letter, all replayed from the committed cache
-    assert sum(1 for r in first if r.record.status == "verified") == 21
+    # 16 CFR sections + 4 U.S.C. + 1 SR letter + 8 CFR appendices (Part 30), from cache
+    assert sum(1 for r in first if r.record.status == "verified") == 29
     # every row has a status; verified rows carry a pinned span
     for r in first:
         assert r.record.status in {"verified", "contradicted", "unverified"}
