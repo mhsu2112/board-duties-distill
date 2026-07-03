@@ -10,6 +10,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from adapters.diagnose import MIRROR_PAIR, RESTATEMENT, duplication_family
+
 MVP_CLUSTERS = (
     "Risk-governance framework / strategy",
     "Audit committee & independence",
@@ -51,7 +53,9 @@ def render_cluster_package(
     excerpts: dict[str, str],
     verification_records: dict[str, dict[str, Any]],
     graph_nodes: list[dict[str, Any]],
+    finding_kind: dict[str, str] | None = None,
 ) -> str:
+    finding_kind = finding_kind or {}
     parts: list[str] = [f"# Consolidation package — {cluster}\n"]
     parts.append(
         "> **Status: blocked pending human review.** Every finding below is `draft`; none is "
@@ -99,6 +103,28 @@ def render_cluster_package(
     ]
     f_headers = ["id", "provision", "effect_class", "normative_kind", "disposition", "status"]
     parts.append(_table(f_headers, f_rows))
+
+    # B4-T3: the two duplication families, reported in separate tables.
+    def _family_rows(family: str) -> list[list[Any]]:
+        return [
+            [f["id"], f["provision"], _cell(f["normative_kind"]), f["disposition_state"]]
+            for f in findings
+            if duplication_family(finding_kind.get(f["id"], "")) == family
+        ]
+
+    fam_headers = ["id", "provision", "normative_kind", "disposition"]
+    parts.append("\n## Duplication — mirror pairs (cross-layer / cross-entity)\n")
+    parts.append(
+        "> Parallel obligations across layer/entity (BHC↔IDI, rule↔guideline). Reform lever: "
+        "`DEEM_SATISFIED` / reliance.\n"
+    )
+    parts.append(_table(fam_headers, _family_rows(MIRROR_PAIR)))
+    parts.append("\n## Duplication — restatements (same text repeated)\n")
+    parts.append(
+        "> The same obligation restated across rows. Reform lever: `MERGE` / "
+        "`RESOLVE_CROSS_REFERENCE`.\n"
+    )
+    parts.append(_table(fam_headers, _family_rows(RESTATEMENT)))
 
     parts.append("\n## Duty crosswalk (as-built → intended consolidation)\n")
     cw_rows = []
@@ -194,6 +220,7 @@ def build_packages(
     excerpts = _excerpts(verification)
     vrecords = _verification_records(verification)
     finding_cluster = findings_doc["finding_cluster"]
+    finding_kind = findings_doc.get("finding_kind", {})
 
     packages: dict[str, str] = {}
     for cluster in MVP_CLUSTERS:
@@ -209,6 +236,7 @@ def build_packages(
         cluster_duties = {r["duty_id"] for r in distilled_rows}
         graph_nodes = _graph_nodes_for(cluster_duties, graph_doc)
         packages[cluster_slug(cluster)] = render_cluster_package(
-            cluster, distilled_rows, intended_specs, findings, excerpts, vrecords, graph_nodes
+            cluster, distilled_rows, intended_specs, findings, excerpts, vrecords, graph_nodes,
+            finding_kind,
         )
     return packages

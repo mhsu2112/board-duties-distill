@@ -52,6 +52,45 @@ MVP_CLUSTERS = (
 
 _NORMATIVE_VALUES = frozenset(m.value for m in NormativeKind)
 
+# --- diagnostic-kind vocabulary (B4-T3) ------------------------------------------------
+#
+# The B3 duplicate diagnostic splits into two first-class, non-overlapping families
+# (REVIEW_PACKET_B3 Part 4, accepted):
+#   * ``mirror_pair`` — cross-layer / cross-entity parallel obligations (BHC↔IDI, rule↔
+#     guideline), RELATE_OBLIGATION / DEEM_SATISFIED-shaped. These are B0's hand-labelled
+#     mirror pairs; the reform lever is DEEM_SATISFIED / reliance.
+#   * ``restatement`` — the same text repeated across rows, MERGE / RESOLVE_CROSS_REFERENCE-
+#     shaped. These are the LLM's within-cluster duplicates (``duplicate_duty``, re-keyed) plus
+#     the rule↔guidance restatements (``rule_guidance_restatement``).
+MIRROR_PAIR = "mirror_pair"
+RESTATEMENT = "restatement"
+RULE_GUIDANCE_RESTATEMENT = "rule_guidance_restatement"
+UNDEFINED_TERM = "undefined_term"
+ACTOR_AMBIGUITY = "actor_ambiguity"
+
+OFFICIAL_DIAGNOSTIC_KINDS: frozenset[str] = frozenset(
+    {MIRROR_PAIR, RESTATEMENT, RULE_GUIDANCE_RESTATEMENT, UNDEFINED_TERM, ACTOR_AMBIGUITY}
+)
+
+# The LLM's ``duplicate_duty`` is re-keyed to ``restatement`` (its within-cluster duplicates
+# are same-text repetitions, distinct from B0's parallel-obligation mirror pairs).
+_KIND_REMAP: dict[str, str] = {"duplicate_duty": RESTATEMENT}
+
+
+def official_kind(kind: str) -> str:
+    """Map a raw (possibly LLM-emitted) diagnostic kind to its official B4 kind."""
+    return _KIND_REMAP.get(kind, kind)
+
+
+def duplication_family(kind: str) -> str | None:
+    """The duplication family a kind belongs to (``mirror_pair`` / ``restatement``), else None."""
+    canon = official_kind(kind)
+    if canon == MIRROR_PAIR:
+        return MIRROR_PAIR
+    if canon in {RESTATEMENT, RULE_GUIDANCE_RESTATEMENT}:
+        return RESTATEMENT
+    return None
+
 
 # --- loaders ---------------------------------------------------------------------------
 
@@ -243,11 +282,12 @@ def diagnose_cluster(
 
 def diagnostic_finding(cluster: str, index: int, d: Diagnostic, anchor_ok: bool) -> BankingFinding:
     nk = [k.value for k in d.normative_kind]
+    kind = official_kind(d.kind)  # duplicate_duty -> restatement (B4-T3)
     # 0-operation diagnostic: no baseline diff to run ⇒ unresolved (never guessed).
     return BankingFinding.model_validate(
         {
             "id": f"dx-{cluster[:3].lower()}-{index}",
-            "provision": f"{d.kind} :: {', '.join(d.target_ids)}",
+            "provision": f"{kind} :: {', '.join(d.target_ids)}",
             "as_built_ref": d.target_ids[0] if d.target_ids else None,
             "intended_ref": None,
             "operation_ids": [],
@@ -311,6 +351,40 @@ def duplicate_divergence(
     }
 
 
+# --- mirror-pair diagnostics (B4-T3) ---------------------------------------------------
+
+
+def mirror_pair_findings(
+    divergence: dict[str, Any], cluster_of: dict[str, str]
+) -> list[BankingFinding]:
+    """Materialize the B0 cross-layer/cross-entity mirror pairs (the ``b0_only`` divergence)
+    as first-class ``mirror_pair`` diagnostics. 0-op ⇒ unresolved (never guessed)."""
+    findings: list[BankingFinding] = []
+    for i, pair in enumerate(divergence.get("b0_only", [])):
+        a, b = pair[0], pair[1]
+        findings.append(
+            BankingFinding.model_validate(
+                {
+                    "id": f"dx-mp-{i}",
+                    "provision": f"{MIRROR_PAIR} :: {a}, {b}",
+                    "as_built_ref": a,
+                    "intended_ref": None,
+                    "operation_ids": [],
+                    "effect_class": "unresolved",
+                    "rationale": f"B0 cross-layer/cross-entity mirror pair "
+                    f"(RELATE_OBLIGATION / DEEM_SATISFIED-shaped): {a} ↔ {b}. Reform lever: "
+                    "DEEM_SATISFIED / reliance, not MERGE.",
+                    "baseline": None,
+                    "normative_kind": [],
+                    "disposition_state": "needs_review",
+                    "confidence": 0.5,
+                    "status": "draft",
+                }
+            )
+        )
+    return findings
+
+
 # --- driver ----------------------------------------------------------------------------
 
 
@@ -322,6 +396,7 @@ class DiagnoseResult:
     anchor_failures: list[str] = field(default_factory=list)
     divergence: dict[str, Any] = field(default_factory=dict)
     finding_cluster: dict[str, str] = field(default_factory=dict)  # finding_id -> cluster
+    finding_kind: dict[str, str] = field(default_factory=dict)  # diagnostic finding_id -> kind
 
 
 def run_diagnose(
@@ -361,8 +436,17 @@ def run_diagnose(
             df = diagnostic_finding(cluster, i, d, ok)
             result.diagnostic_findings.append(df)
             result.finding_cluster[df.id] = cluster
+            result.finding_kind[df.id] = official_kind(d.kind)
 
     result.divergence = duplicate_divergence(decompositions, result.diagnostic_sets, set(drafts))
+
+    # B4-T3: the B0 mirror pairs become first-class mirror_pair diagnostics.
+    for mp in mirror_pair_findings(result.divergence, cluster_of):
+        result.diagnostic_findings.append(mp)
+        first_target = mp.as_built_ref or ""
+        result.finding_cluster[mp.id] = cluster_of.get(first_target, "")
+        result.finding_kind[mp.id] = MIRROR_PAIR
+
     return result
 
 
@@ -382,8 +466,21 @@ def diagnose_document(result: DiagnoseResult) -> dict[str, Any]:
         },
         "anchor_failures": result.anchor_failures,
         "duplicate_divergence": result.divergence,
+        "duplication_families": _duplication_families(result),
         "finding_cluster": result.finding_cluster,
+        "finding_kind": result.finding_kind,
         "findings": [f.model_dump(mode="json") for f in findings],
+    }
+
+
+def _duplication_families(result: DiagnoseResult) -> dict[str, Any]:
+    """The two official duplication families (B4-T3), each as a list of finding ids."""
+    fk = result.finding_kind
+    mirror = sorted(fid for fid, k in fk.items() if duplication_family(k) == MIRROR_PAIR)
+    restate = sorted(fid for fid, k in fk.items() if duplication_family(k) == RESTATEMENT)
+    return {
+        "mirror_pair": {"count": len(mirror), "finding_ids": mirror},
+        "restatement": {"count": len(restate), "finding_ids": restate},
     }
 
 
