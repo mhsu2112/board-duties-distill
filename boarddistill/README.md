@@ -125,6 +125,45 @@ uv run boarddistill b2-graph           # build data/graph/us-gsib_v1.json
 uv run boarddistill b2-report          # outputs/b2/B2_report.md
 ```
 
+## B3 — the LLM layer (distill · intended · diagnose → packages → eval)
+
+The first slice to permit LLM calls, behind the interfaces B0–B2 proved. Every LLM output
+lands as reviewable `draft`, anchored to the cache; the deterministic classifier runs after
+every proposal. The harness (`distillcore/llm.py`) pins `claude-opus-4-8`, validates
+structured output against the Pydantic schemas (reject-retry once, then hard-fail), and
+**caches every call under `data/llm_cache/` keyed by `(model, prompt_sha256)`** — replay is
+the default, so `make check` runs the whole layer offline with no key. Live calls need
+`--live` + `ANTHROPIC_API_KEY`; absent the key the harness stops with `TODO(human)` and does
+not improvise another provider.
+
+- **T0 dispositions.** 22 B2 residuals accepted as documented; `s:CAP-11` reclassified as a
+  supersession note (71 duty rows); SR 95-51 resolved as *amended* from the Fed page.
+- **T2 distill.** The 50 verified duties refined against their pinned excerpts — **50/50
+  anchor-clean, 0 hallucinated citations.** Surfaced 1 verb-vs-retag conflict (`b:AUD-07`) and
+  **10 source-mismatch rows** (verified-but-mispinned spans).
+- **T3 intended.** The 9 B0 levers as illustrative (NG2) consolidated specs + **33 operations**
+  scaffolded verbatim from `b0_decompositions.json` (`ASSIGN_DUTY_STANDARD` → `ASSIGN_DUTY_PARAMETER`).
+- **T4 diagnose + classify.** 9 consolidation findings (mechanical effect classes) + 18 LLM
+  diagnostics; the B0-vs-LLM duplicate divergence recorded both directions (0 agreed).
+- **T5 packages.** Three per-cluster `package.md` — every finding `draft`, **zero final**
+  (the intended blocked-pending-review end-state).
+- **T6 eval.** B0 effect-class agreement 3/9 (disagreements characterized, not reconciled);
+  distill stable across samples; **hallucinated-citation rate 0.0 — release gate PASS**;
+  baseline comparison vs the raw inventory.
+- **T7** — `outputs/b3/B3_report.md` is the human review queue (the main artifact).
+
+```bash
+uv run boarddistill b3-apply           # T0 dispositions
+uv run boarddistill b3-distill         # T2 (add --live to populate the cache)
+uv run boarddistill b3-intended        # T3
+uv run boarddistill b3-diagnose        # T4
+uv run boarddistill b3-package         # T5 -> outputs/b3/<cluster>/package.md
+uv run boarddistill b3-eval            # T6 -> outputs/b3/eval_report.md (--live for stability)
+```
+
+The next event is the **human review pass over the three packages** — see
+`outputs/b3/B3_report.md`.
+
 ## Next steps (roadmap — NOT built in slice one)
 
 1. **Human confirmation** of the fixture placeholder labels and the T8 draft column
