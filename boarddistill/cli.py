@@ -452,6 +452,35 @@ def b3_distill(
         )
 
 
+@app.command("b5-waves")
+def b5_waves(
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json.")
+    ] = Path("outputs/import/imported_duties.json"),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+) -> None:
+    """B5-T1: partition the ~155 non-MVP rows into domain waves (deterministic)."""
+    import json
+
+    from adapters.b5_waves import build_wave_plan
+
+    doc = build_wave_plan(json.loads(import_json.read_text())["duties"])
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "waves.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B5-T1 wave plan:")
+    typer.echo(
+        f"  waves: {c['waves']} · non-MVP rows assigned: {c['non_mvp_rows_assigned']}"
+        f"/{c['non_mvp_rows_total']}"
+    )
+    for w in doc["waves"]:
+        typer.echo(f"  {w['wave']:26} {w['row_count']:3} rows · {w['cluster_count']} clusters")
+    if c["non_mvp_rows_assigned"] != c["non_mvp_rows_total"]:
+        typer.echo("  ⚠ some non-MVP row is unassigned", err=True)
+        raise typer.Exit(code=1)
+
+
 @app.command("b5-redistill")
 def b5_redistill(
     import_json: Annotated[

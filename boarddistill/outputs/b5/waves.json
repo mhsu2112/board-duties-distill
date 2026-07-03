@@ -1,0 +1,264 @@
+{
+  "_meta": "B5-T1 wave plan. The ~155 non-MVP duty rows partitioned into six domain waves (the five MVP clusters excluded \u2014 already carried through B1-B4). Deterministic: cluster\u2192wave is a fixed table, row IDs sorted. Every non-MVP row lands in exactly one wave.",
+  "counts": {
+    "mvp_clusters_excluded": [
+      "Audit committee & independence",
+      "Capital planning & stress testing",
+      "Internal control over financial reporting",
+      "Risk committee architecture",
+      "Risk-governance framework / strategy"
+    ],
+    "non_mvp_rows_assigned": 155,
+    "non_mvp_rows_total": 155,
+    "waves": 6
+  },
+  "waves": [
+    {
+      "cluster_count": 2,
+      "clusters": {
+        "Liquidity risk management": [
+          "b:LIQ-01",
+          "b:LIQ-02",
+          "b:LIQ-03",
+          "s:LIQ-01",
+          "s:LIQ-02",
+          "s:LIQ-03",
+          "s:LIQ-04",
+          "s:LIQ-05",
+          "s:LIQ-06",
+          "s:LIQ-07",
+          "s:LIQ-08",
+          "s:LIQ-09",
+          "s:LIQ-10",
+          "s:LIQ-11",
+          "s:LIQ-12",
+          "s:LIQ-13",
+          "s:OLQ-01",
+          "s:OLQ-02",
+          "s:OLQ-03"
+        ],
+        "Resolution, recovery & contingency funding": [
+          "b:LIQ-04",
+          "b:RES-01",
+          "b:RES-02",
+          "b:RES-03",
+          "s:REC-01",
+          "s:REC-02",
+          "s:REC-03",
+          "s:REC-04",
+          "s:RES-01",
+          "s:RES-02",
+          "s:RES-03",
+          "s:RES-04",
+          "s:RES-05"
+        ]
+      },
+      "row_count": 32,
+      "title": "Liquidity & resolution/recovery",
+      "wave": "w1-liquidity-resolution"
+    },
+    {
+      "cluster_count": 3,
+      "clusters": {
+        "Information security & cybersecurity": [
+          "b:CYB-01",
+          "b:CYB-02",
+          "b:CYB-03",
+          "b:CYB-04",
+          "s:CYB-01",
+          "s:CYB-02",
+          "s:CYB-03",
+          "s:CYB-04",
+          "s:CYB-05",
+          "s:CYB-06",
+          "s:CYB-07",
+          "s:CYB-08"
+        ],
+        "Model risk governance": [
+          "s:MOD-01",
+          "s:MOD-02"
+        ],
+        "Operational resilience / business continuity": [
+          "s:OPR-01",
+          "s:OPR-02",
+          "s:OPR-03",
+          "s:OPR-04",
+          "s:OPR-05"
+        ]
+      },
+      "row_count": 19,
+      "title": "Operational resilience, cyber & model risk",
+      "wave": "w2-opres-cyber-model"
+    },
+    {
+      "cluster_count": 2,
+      "clusters": {
+        "Incentive compensation": [
+          "b:ELG-04",
+          "b:INC-01",
+          "b:IND-07",
+          "s:BCG-08",
+          "s:BCG-11",
+          "s:BCG-13",
+          "s:INC-01",
+          "s:INC-02",
+          "s:INC-03",
+          "s:INC-04",
+          "s:INC-05"
+        ],
+        "Third-party risk management": [
+          "s:TPR-01",
+          "s:TPR-02",
+          "s:TPR-03",
+          "s:TPR-04",
+          "s:TPR-05",
+          "s:TPR-06",
+          "s:TPR-07"
+        ]
+      },
+      "row_count": 18,
+      "title": "Third-party & incentive compensation",
+      "wave": "w3-thirdparty-inccomp"
+    },
+    {
+      "cluster_count": 2,
+      "clusters": {
+        "BSA/AML program": [
+          "b:BSA-01",
+          "b:BSA-02",
+          "b:BSA-03",
+          "b:BSA-04",
+          "b:BSA-05",
+          "s:BSA-01",
+          "s:BSA-02",
+          "s:BSA-03",
+          "s:BSA-04",
+          "s:BSA-05",
+          "s:BSA-06",
+          "s:BSA-07",
+          "s:BSA-08",
+          "s:BSA-09",
+          "s:BSA-10",
+          "s:BSA-11",
+          "s:BSA-12",
+          "s:BSA-13"
+        ],
+        "Consumer compliance (CMS)": [
+          "s:CCX-01",
+          "s:CCX-02",
+          "s:CON-01",
+          "s:CON-02",
+          "s:CON-03",
+          "s:CON-04",
+          "s:CON-05",
+          "s:CON-06",
+          "s:CON-07",
+          "s:CON-08",
+          "s:CON-09",
+          "s:CON-10",
+          "s:CON-11",
+          "s:CON-12",
+          "s:CON-13"
+        ]
+      },
+      "row_count": 33,
+      "title": "BSA/AML & consumer compliance",
+      "wave": "w4-bsa-consumer"
+    },
+    {
+      "cluster_count": 2,
+      "clusters": {
+        "Credit risk governance": [
+          "b:CRD-01",
+          "b:CRD-02",
+          "b:CRD-03",
+          "b:CRD-06",
+          "s:CRX-01",
+          "s:CRX-02"
+        ],
+        "Insider / affiliate / related-party": [
+          "b:AFF-01",
+          "b:AFF-02",
+          "b:CRD-04",
+          "b:CRD-05",
+          "b:IND-09"
+        ]
+      },
+      "row_count": 11,
+      "title": "Credit & insider/affiliate lending",
+      "wave": "w5-credit-insider"
+    },
+    {
+      "cluster_count": 11,
+      "clusters": {
+        "Board self-assessment / effectiveness": [
+          "b:IND-03",
+          "s:GOV-14",
+          "s:GOV-26"
+        ],
+        "CRO / CRE appointment & compensation": [
+          "b:RGC-06",
+          "b:RGC-09"
+        ],
+        "Director eligibility & continuity": [
+          "b:ELG-01",
+          "b:ELG-02",
+          "b:ELG-03"
+        ],
+        "Director independence (cross-cutting)": [
+          "b:IND-01",
+          "b:IND-04",
+          "b:IND-05",
+          "b:IND-06",
+          "b:IND-08",
+          "s:GOV-05",
+          "s:GOV-07",
+          "s:GOV-10",
+          "s:GOV-16",
+          "s:GOV-17",
+          "s:GOV-23",
+          "s:GOV-24",
+          "s:GOV-28",
+          "s:GOV-30",
+          "s:SUB-01"
+        ],
+        "Director training": [
+          "b:IND-02",
+          "s:GOV-25"
+        ],
+        "Fiduciary (trust) governance": [
+          "b:FID-01",
+          "b:FID-03"
+        ],
+        "Personal liability": [
+          "p:PLB-01",
+          "p:PLB-02",
+          "p:PLB-03",
+          "p:PLB-04"
+        ],
+        "Risk appetite statement": [
+          "b:RGC-08",
+          "s:GOV-01",
+          "s:GOV-06",
+          "s:GOV-21",
+          "s:GOV-29"
+        ],
+        "Safety-and-soundness baseline": [
+          "b:SS-01"
+        ],
+        "Source of strength / charter sanctity": [
+          "b:SS-02"
+        ],
+        "Unique structural duties": [
+          "b:TLA-01",
+          "b:TLA-02",
+          "b:TLA-03",
+          "b:VOL-01"
+        ]
+      },
+      "row_count": 42,
+      "title": "Governance, independence & structural",
+      "wave": "w6-governance-structural"
+    }
+  ]
+}
