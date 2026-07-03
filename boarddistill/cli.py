@@ -229,6 +229,31 @@ def verify_live(
     typer.echo("  " + " · ".join(f"{k}={v}" for k, v in sorted(summary.items())))
 
 
+@app.command("b2-report")
+def b2_report(
+    out: Annotated[Path, typer.Option("--out", help="B2 output directory.")] = Path("outputs/b2"),
+    graph: Annotated[Path, typer.Option("--graph", help="Instrument graph json.")] = Path(
+        "data/graph/us-gsib_v1.json"
+    ),
+) -> None:
+    """B2-T7: write outputs/b2/B2_report.md from the b2 artifacts."""
+    import json
+
+    from adapters.b2_report import build_b2_report
+
+    verif = json.loads((out / "verification.json").read_text())
+    graph_doc = json.loads(graph.read_text())
+    retags = json.loads((out / "retags.json").read_text()) if (out / "retags.json").exists() else {}
+    disps = (
+        json.loads((out / "dispositions.json").read_text())
+        if (out / "dispositions.json").exists()
+        else {}
+    )
+    report = build_b2_report(verif, graph_doc, retags, disps)
+    (out / "B2_report.md").write_text(report)
+    typer.echo(f"[boarddistill] B2 report -> {out / 'B2_report.md'} ({len(report)} chars)")
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[

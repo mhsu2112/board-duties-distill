@@ -93,6 +93,38 @@ rescissions, new SR letters). B1 pins a snapshot; it does not subscribe to chang
 re-verification cadence (e.g. quarterly re-run + diff against the cached sha256s) before this
 is relied on as standing L1 input.
 
+## B2 — dispositions, expanded resolution, instrument graph
+
+Applied the human B1 dispositions and built the resolvers for the harder citation classes,
+then re-verified.
+
+- **Dispositions.** The 21 verified rows are `reviewer_accepted`; the 6 support-flagged rows
+  are `reviewer_modified` via an **actor retag** — corrected to the party the verified text
+  actually binds (management / CEO-CFO / the company / the external auditor), with the
+  board's indirect oversight annotated and the B1 quote as evidence. `s:CAP-11` carries a
+  `TODO(human)`. Persisted in `outputs/b2/dispositions.json` + `retags.json`; duty text is
+  never edited.
+- **Expanded resolvers.** CFR **appendices** (terse "App. D" → 12 CFR Part 30), **SR-letter
+  attachment PDFs** and **OCC/FDIC manuals** — the latter two via fuzzy **anchor matching**
+  (the duty's paraphrase located in the source; high-confidence pins the span, borderline
+  0.40–0.60 is recorded as a candidate for human review, never auto-verified).
+- **Result: 21 → 50 verified / 72, 0 contradicted.** The Risk-governance strategy cluster
+  went 0 → 11. The 22 residuals are mostly borderline anchor candidates, each with a reason
+  (`outputs/b2/review_queue.json`, `B2_report.md`).
+- **Instrument graph v1** (`data/graph/us-gsib_v1.json`): one node per instrument the 72
+  rows cite (statute / regulation / enforceable_guideline / guidance / manual) with agency,
+  effective date, and treatment status; `baseline_for` answers for all 50 verified duties.
+  SR 09-4 is recorded `superseded` (SR 15-18 fn.5); SR 95-51 treatment is flagged
+  `TODO(human)` rather than decided.
+
+```bash
+uv run boarddistill b2-accept          # reviewer_accepted for the verified rows
+uv run boarddistill b2-retag           # actor retag for the approved 6
+uv run boarddistill verify-live --offline --out outputs/b2   # re-verify from cache
+uv run boarddistill b2-graph           # build data/graph/us-gsib_v1.json
+uv run boarddistill b2-report          # outputs/b2/B2_report.md
+```
+
 ## Next steps (roadmap — NOT built in slice one)
 
 1. **Human confirmation** of the fixture placeholder labels and the T8 draft column
