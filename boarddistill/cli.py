@@ -452,6 +452,56 @@ def b3_distill(
         )
 
 
+@app.command("b5-decompose")
+def b5_decompose(
+    inventory: Annotated[
+        Path, typer.Option("--inventory", help="Combined inventory xlsx.")
+    ] = Path("../Synthesis/gsib-board_duties-combined_inventory.xlsx"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[
+        Path, typer.Option("--out", help="B5 corpus output directory.")
+    ] = Path("outputs/b5/corpus"),
+    max_calls: Annotated[int, typer.Option("--max-calls", help="LLM call ceiling.")] = 40,
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B5-T4: decompose the ~22 non-MVP reform levers into validated operation compositions."""
+    import json
+
+    from adapters.b5_decompose import decompose_all
+    from adapters.b5_levers import extract_levers
+    from distillcore.llm import Budget, LlmHarness
+
+    lever_doc = extract_levers(inventory)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "levers_source.json").write_text(json.dumps(lever_doc, indent=2, sort_keys=True) + "\n")
+
+    harness = LlmHarness(
+        cache_root=cache, live=live, budget=Budget(max_calls=max_calls, max_output_tokens=400_000)
+    )
+    doc = decompose_all(harness, lever_doc["levers"])
+    (out / "lever_decompositions.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B5-T4 lever decomposition:")
+    typer.echo(
+        f"  levers: {c['levers']} · by status: {c['by_status']} · residuals: {c['residuals']} · "
+        f"closure holds: {c['closure_holds']} · budget: {harness.budget.summary()}"
+    )
+    if doc["residual_checkpoints"]:
+        typer.echo(
+            f"  ⚠ residual checkpoints (propose, never add): "
+            f"{[r['lever_id'] for r in doc['residual_checkpoints']]}",
+            err=True,
+        )
+    fc = doc["statutory_floor_candidates"]["candidates"]
+    if fc:
+        typer.echo(f"  statutory-floor candidates PROPOSED (human-owned): {sorted(fc)}")
+
+
 @app.command("b5-waves")
 def b5_waves(
     import_json: Annotated[

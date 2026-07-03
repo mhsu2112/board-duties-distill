@@ -1,0 +1,428 @@
+{
+  "_meta": "B5-T4 lever source: the non-MVP clusters' minimum reform levers (Duplicate Clusters sheet) + Reform Roadmap enrichment. Read-only from the inventory xlsx.",
+  "counts": {
+    "consolidation_targets": 20,
+    "levers": 22,
+    "non_consolidation": 2
+  },
+  "levers": [
+    {
+      "cluster": "Board self-assessment / effectiveness",
+      "duty_count": 3,
+      "lever_id": "L-board-self-assessmen",
+      "min_reform_lever": "Single interagency board-effectiveness assessment.",
+      "non_consolidation": false,
+      "overlapping_sources": "OCC App. D III.F; SR 21-3; LFI rating",
+      "redundancy": "Candidate redundancy",
+      "roadmap": {
+        "actor": "FRB + OCC",
+        "authority": "FDI Act \u00a739; LFI framework",
+        "difficulty": "Low",
+        "instrument": "Joint statement; align App. D III.F with SR 21-3",
+        "reform": "Single interagency board-effectiveness assessment",
+        "statutory_obstacle": "Minimal"
+      },
+      "whats_distinct": "Minimal.",
+      "whats_duplicative": "Parallel self-assessment / effectiveness evaluation under Fed and OCC."
+    },
+    {
+      "cluster": "BSA/AML program",
+      "duty_count": 18,
+      "lever_id": "L-bsa-aml-program",
+      "min_reform_lever": "Cross-reference manual to the rule; avoid restating. v2.1: resolve the two unreconciled pending rewrites (2024 proposals add a freestanding board-oversight standard + annual ratification; 2026 proposals permit approval by the board, an equivalent body, or senior management) before they compound the layering.",
+      "non_consolidation": false,
+      "overlapping_sources": "31 CFR 1010.210; agency program rules; FFIEC manual; FinCEN reproposal",
+      "redundancy": "Candidate redundancy (intra-program)",
+      "roadmap": null,
+      "whats_distinct": "Largely one program; overlap is rule-vs-manual elaboration.",
+      "whats_duplicative": "Board approval/oversight/training/independent-testing duties stated in the rule and elaborated by the FFIEC manual."
+    },
+    {
+      "cluster": "Consumer compliance (CMS)",
+      "duty_count": 15,
+      "lever_id": "L-consumer-compliance-",
+      "min_reform_lever": "Coordinate CMS expectations; CFPB now lightly enforced (2026).",
+      "non_consolidation": false,
+      "overlapping_sources": "CFPB manual; OCC/FDIC CMS; SR 08-8",
+      "redundancy": "Candidate redundancy",
+      "roadmap": null,
+      "whats_distinct": "CFPB consumer mandate vs. prudential safety-and-soundness.",
+      "whats_duplicative": "CMS board oversight across CFPB and prudential regulators."
+    },
+    {
+      "cluster": "Credit risk governance",
+      "duty_count": 6,
+      "lever_id": "L-credit-risk-governan",
+      "min_reform_lever": "One interagency real-estate-lending standard; fold ACL/credit-review into the risk-committee credit cycle.",
+      "non_consolidation": false,
+      "overlapping_sources": "Real Estate Lending Standards (parts 208/365/34); ACL policy statement; credit-risk-review guidance; Reg O; Reg W; Reg F",
+      "redundancy": "Candidate redundancy",
+      "roadmap": null,
+      "whats_distinct": "Insider-credit (Reg O) and affiliate (Reg W) approvals protect the insured bank specifically.",
+      "whats_duplicative": "Annual real-estate-lending policy approval, ACL oversight, and independent credit review stated in parallel across agency appendices and rules."
+    },
+    {
+      "cluster": "CRO / CRE appointment & compensation",
+      "duty_count": 2,
+      "lever_id": "L-cro-cre-appointment-",
+      "min_reform_lever": "Consolidate into Reg YY; OCC incorporates by reference.",
+      "non_consolidation": false,
+      "overlapping_sources": "Reg YY 252.33(b); OCC App. D I.E.7",
+      "redundancy": "Candidate redundancy",
+      "roadmap": null,
+      "whats_distinct": "Bank-level independence-of-CRE-from-front-line structure is an OCC-specific control.",
+      "whats_duplicative": "Board approval of the same individual's appointment/pay at two levels."
+    },
+    {
+      "cluster": "Director eligibility & continuity",
+      "duty_count": 3,
+      "lever_id": "L-director-eligibility",
+      "min_reform_lever": "Single interagency change-in-director notice procedure.",
+      "non_consolidation": false,
+      "overlapping_sources": "12 U.S.C. 1831i; Reg Y 225.71-.73; OCC 5.51; 12 U.S.C. 1829; FDIA \u00a78(e)/(g); FDI Act \u00a77(a)(3)/(j)",
+      "redundancy": "Candidate redundancy",
+      "roadmap": null,
+      "whats_distinct": "Statutory disqualification and Call Report attestation are unique, low-burden duties.",
+      "whats_duplicative": "Parallel FRB/OCC change-in-director (914) notice regimes; statutory bars; report attestation."
+    },
+    {
+      "cluster": "Director independence (cross-cutting)",
+      "duty_count": 15,
+      "lever_id": "L-director-independenc",
+      "min_reform_lever": "Single cross-referenced prudential independence definition.",
+      "non_consolidation": false,
+      "overlapping_sources": "OCC App. D III.D; Reg YY 252.33(a)(4); FDICIA; SOX 301; DFA 952; exchange listing",
+      "redundancy": "Candidate redundancy",
+      "roadmap": {
+        "actor": "FRB + OCC + FDIC + SEC",
+        "authority": "Multiple (SOX, DFA, FDI Act, exchange oversight)",
+        "difficulty": "High",
+        "instrument": "Joint interagency statement + SEC coordination",
+        "reform": "Single 'independent director' definition for banking orgs",
+        "statutory_obstacle": "Cross-regulator (SEC + banking) coordination; differing statutory lineages"
+      },
+      "whats_distinct": "Different lookback periods and affiliation tests reflect different statutory lineages.",
+      "whats_duplicative": "Six non-uniform independence tests applied to the same directors."
+    },
+    {
+      "cluster": "Director training",
+      "duty_count": 2,
+      "lever_id": "L-director-training",
+      "min_reform_lever": "One consolidated director-training program covering all topics.",
+      "non_consolidation": false,
+      "overlapping_sources": "OCC App. D III.E; SR 21-3 / Director's Book; BSA program rule",
+      "redundancy": "Candidate redundancy",
+      "roadmap": null,
+      "whats_distinct": "BSA training is topic-specific.",
+      "whats_duplicative": "Ongoing director-training obligations from multiple sources, separately documented."
+    },
+    {
+      "cluster": "Fiduciary (trust) governance",
+      "duty_count": 2,
+      "lever_id": "L-fiduciary-trust-gove",
+      "min_reform_lever": "Permit the \u00a736/Part 363 audit committee to satisfy the fiduciary-audit duty where composition overlaps.",
+      "non_consolidation": false,
+      "overlapping_sources": "12 CFR part 9 (9.4/9.5/9.9/9.13/9.18)",
+      "redundancy": "Unique / limited overlap",
+      "roadmap": null,
+      "whats_distinct": "Charter-specific trust duties distinct from enterprise risk governance.",
+      "whats_duplicative": "Board direction of fiduciary activities, written fiduciary policies, and a fiduciary audit committee (most material to BNY, State Street)."
+    },
+    {
+      "cluster": "Incentive compensation",
+      "duty_count": 11,
+      "lever_id": "L-incentive-compensati",
+      "min_reform_lever": "Finalize one 956 framework or rely on guidance; SEC independence satisfies the prudential element.",
+      "non_consolidation": false,
+      "overlapping_sources": "DFA 956 (unimplemented); 2010 guidance; OCC App. D; DFA 952 / exchange",
+      "redundancy": "Candidate redundancy",
+      "roadmap": {
+        "actor": "Congress / 6 agencies",
+        "authority": "DFA \u00a7956 (12 U.S.C. 5641)",
+        "difficulty": "High",
+        "instrument": "Final rule (6-agency) or statutory repeal",
+        "reform": "Finalize or withdraw Dodd-Frank \u00a7956",
+        "statutory_obstacle": "Six-agency joint action; FRB/SEC previously declined"
+      },
+      "whats_distinct": "SEC comp-committee independence serves investors.",
+      "whats_duplicative": "Comp-governance duties across an unfinished rule, guidance, and SEC independence rules."
+    },
+    {
+      "cluster": "Information security & cybersecurity",
+      "duty_count": 12,
+      "lever_id": "L-information-security",
+      "min_reform_lever": "One enterprise info-security program approval; joint SEC/banking statement on cyber oversight. v2.1: the 36-hour interagency incident-notification rule and the SEC cyber-disclosure regime impose non-aligned timelines on the same incident \u2014 harmonization here is selection of a single operational standard, not deletion.",
+      "non_consolidation": false,
+      "overlapping_sources": "GLBA 501(b) (12 CFR 30 App. B + three parallel appendices); SEC Reg S-K 106; incident-notification rule; FFIEC IT",
+      "redundancy": "Candidate redundancy",
+      "roadmap": {
+        "actor": "FRB + OCC + FDIC",
+        "authority": "GLBA \u00a7501(b)",
+        "difficulty": "Low-Medium",
+        "instrument": "Conform the four parallel appendices",
+        "reform": "One enterprise information-security program approval",
+        "statutory_obstacle": "Four codified appendices to amend"
+      },
+      "whats_distinct": "SEC disclosure serves investors; the prudential program serves safety-and-soundness.",
+      "whats_duplicative": "Same information-security program approved at BHC and IDI levels under four parallel appendices; cyber oversight also disclosed to the SEC."
+    },
+    {
+      "cluster": "Insider / affiliate / related-party",
+      "duty_count": 5,
+      "lever_id": "L-insider-affiliate-re",
+      "min_reform_lever": "Coordinate related-party review processes.",
+      "non_consolidation": false,
+      "overlapping_sources": "Reg O (215); Reg W (223); SEC Reg S-K 404",
+      "redundancy": "Limited overlap",
+      "roadmap": null,
+      "whats_distinct": "Reg O/W protect the insured bank; SEC protects investors.",
+      "whats_duplicative": "Related-party and insider-transaction board review across banking and SEC rules."
+    },
+    {
+      "cluster": "Liquidity risk management",
+      "duty_count": 19,
+      "lever_id": "L-liquidity-risk-manag",
+      "min_reform_lever": "One board liquidity approval satisfies rule and guidance.",
+      "non_consolidation": false,
+      "overlapping_sources": "Reg YY 252.34; SR 10-6; OCC Liquidity handbook",
+      "redundancy": "Candidate redundancy",
+      "roadmap": null,
+      "whats_distinct": "IDI-level liquidity matters where the bank funds independently.",
+      "whats_duplicative": "Liquidity risk-tolerance/strategy approval stated as rule (BHC) and guidance (BHC + IDI)."
+    },
+    {
+      "cluster": "Model risk governance",
+      "duty_count": 2,
+      "lever_id": "L-model-risk-governanc",
+      "min_reform_lever": "Confirm the Heightened Standards do not re-impose the dropped board duty. v2.1: SR 26-2 and OCC Bulletin 2026-13 (eff. Apr. 17, 2026) are expressly non-prescriptive and non-enforceable \u2014 neither should be cited as a binding board-approval mandate; any enforceable duty derives from 12 U.S.C. 1831p-1 / 12 CFR 30 App. D.",
+      "non_consolidation": false,
+      "overlapping_sources": "SR 26-2 (replaced SR 11-7); OCC App. D (residual)",
+      "redundancy": "Mostly removed (2026)",
+      "roadmap": null,
+      "whats_distinct": "n/a",
+      "whats_duplicative": "Largely removed in 2026; residual oversight via the risk-governance framework."
+    },
+    {
+      "cluster": "Operational resilience / business continuity",
+      "duty_count": 5,
+      "lever_id": "L-operational-resilien",
+      "min_reform_lever": "Fold into the enterprise risk-appetite approval.",
+      "non_consolidation": false,
+      "overlapping_sources": "SR 20-24; FFIEC BCM; OCC App. D",
+      "redundancy": "Limited overlap",
+      "roadmap": {
+        "actor": "FRB + OCC (interagency)",
+        "authority": "FDI Act \u00a739; BHC Act; APA rulemaking",
+        "difficulty": "Medium",
+        "instrument": "Interagency rule or joint statement + safe harbor",
+        "reform": "Single consolidated risk-appetite statement",
+        "statutory_obstacle": "None statutory; requires inter-agency coordination"
+      },
+      "whats_distinct": "Operational resilience is a distinct risk dimension.",
+      "whats_duplicative": "Board approval of disruption tolerance and resilience oversight across guidance."
+    },
+    {
+      "cluster": "Personal & individual-director liability",
+      "duty_count": 4,
+      "lever_id": "L-personal-individual-",
+      "min_reform_lever": "Not a consolidation target; documented to show how personal liability compounds the cost of duplicative mandates.",
+      "non_consolidation": true,
+      "overlapping_sources": "18 U.S.C. 1005; FDIA \u00a78(e); 12 U.S.C. 1821(k)/5390(f)/5390(s); 12 CFR 359/380.7; \u00a71818(n)",
+      "redundancy": "n/a (individual; not a board action)",
+      "roadmap": null,
+      "whats_distinct": "Runs to the individual director, not the board as a governance body; NOT counted as recurring board actions.",
+      "whats_duplicative": "Analytically distinct individual-director exposure (criminal, removal, receivership/OLA, indemnification) \u2014 amplifies cumulative burden."
+    },
+    {
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_count": 13,
+      "lever_id": "L-resolution-recovery-",
+      "min_reform_lever": "Single 'resilience planning' board cycle; shared resolution submission with an IDI annex.",
+      "non_consolidation": false,
+      "overlapping_sources": "DFA 165(d)/Reg QQ; FDIC 360.10; Reg YY 252.34(b) CFP; SR 14-8 (recovery)",
+      "redundancy": "Mixed (parallel-but-justified + candidate redundancy)",
+      "roadmap": {
+        "actor": "FRB + FDIC",
+        "authority": "DFA \u00a7165(d); FDI Act",
+        "difficulty": "High",
+        "instrument": "Joint guidance + rule conforming amendments",
+        "reform": "Integrate recovery + contingency funding + resolution into one 'resilience planning' cycle",
+        "statutory_obstacle": "Two statutes/rules; genuine distinct interests (parallel-but-justified)"
+      },
+      "whats_distinct": "The FDIC's interest in resolving the insured bank even if the parent's plan fails is genuinely distinct (parallel-but-justified).",
+      "whats_duplicative": "Multiple board-approved resilience plans on different cycles; parent and IDI resolution submissions overlap heavily."
+    },
+    {
+      "cluster": "Risk appetite statement",
+      "duty_count": 5,
+      "lever_id": "L-risk-appetite-statem",
+      "min_reform_lever": "Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all.",
+      "non_consolidation": false,
+      "overlapping_sources": "OCC App. D II.E/G; Reg YY 252.34 (liquidity tolerance); SR 21-3; SR 20-24 (disruption tolerance)",
+      "redundancy": "Candidate redundancy",
+      "roadmap": {
+        "actor": "FRB + OCC (interagency)",
+        "authority": "FDI Act \u00a739; BHC Act; APA rulemaking",
+        "difficulty": "Medium",
+        "instrument": "Interagency rule or joint statement + safe harbor",
+        "reform": "Single consolidated risk-appetite statement",
+        "statutory_obstacle": "None statutory; requires inter-agency coordination"
+      },
+      "whats_distinct": "Liquidity tolerance and operational-disruption tolerance are genuinely different risk dimensions.",
+      "whats_duplicative": "Board approval of a risk-appetite/tolerance statement required by four instruments with differing content."
+    },
+    {
+      "cluster": "Safety-and-soundness baseline",
+      "duty_count": 1,
+      "lever_id": "L-safety-and-soundness",
+      "min_reform_lever": "Treat as baseline; avoid re-imposing in domain rules.",
+      "non_consolidation": false,
+      "overlapping_sources": "12 CFR 30 App. A / 364 App. A",
+      "redundancy": "Limited overlap",
+      "roadmap": null,
+      "whats_distinct": "Residual baseline.",
+      "whats_duplicative": "Broad standards can duplicate domain-specific programs."
+    },
+    {
+      "cluster": "Source of strength / charter sanctity",
+      "duty_count": 1,
+      "lever_id": "L-source-of-strength-c",
+      "min_reform_lever": "Clarify the interaction for overlapping directors.",
+      "non_consolidation": false,
+      "overlapping_sources": "12 U.S.C. 1831o-1; Reg Y 225.4(a); OCC sanctity-of-charter",
+      "redundancy": "Unique (tension, not overlap)",
+      "roadmap": null,
+      "whats_distinct": "Parent-support duty vs. bank-board duty to protect the bank.",
+      "whats_duplicative": "None; a tension rather than a duplication."
+    },
+    {
+      "cluster": "Third-party risk management",
+      "duty_count": 7,
+      "lever_id": "L-third-party-risk-man",
+      "min_reform_lever": "Quantitative 'critical activity' threshold for board attention; management approval + aggregate reporting otherwise.",
+      "non_consolidation": false,
+      "overlapping_sources": "2023 interagency guidance (SR 23-4); OCC App. D; FFIEC; CFPB",
+      "redundancy": "Candidate redundancy",
+      "roadmap": {
+        "actor": "FRB + OCC + FDIC",
+        "authority": "FDI Act \u00a739; safety-and-soundness",
+        "difficulty": "Low-Medium",
+        "instrument": "Amend/supplement 2023 interagency guidance",
+        "reform": "Quantitative 'critical activity' threshold for board-level third-party attention",
+        "statutory_obstacle": "Defining 'critical' quantitatively"
+      },
+      "whats_distinct": "Consumer-compliance service-provider oversight is a distinct statutory concern.",
+      "whats_duplicative": "Board oversight/approval of third-party risk across interagency guidance and enforceable standards."
+    },
+    {
+      "cluster": "Unique structural duties",
+      "duty_count": 4,
+      "lever_id": "L-unique-structural-du",
+      "min_reform_lever": "Retain; distinct purpose.",
+      "non_consolidation": true,
+      "overlapping_sources": "TLAC (252.62-64); single-counterparty (252.70-78); Volcker (12 CFR 248)",
+      "redundancy": "Unique / limited overlap",
+      "roadmap": null,
+      "whats_distinct": "GSIB-specific structural and trading-compliance duties.",
+      "whats_duplicative": "None material."
+    }
+  ],
+  "roadmap_rows": [
+    {
+      "actor": "FRB + OCC (interagency)",
+      "authority": "FDI Act \u00a739; BHC Act; APA rulemaking",
+      "difficulty": "Medium",
+      "instrument": "Interagency rule or joint statement + safe harbor",
+      "reform": "Single consolidated risk-appetite statement",
+      "statutory_obstacle": "None statutory; requires inter-agency coordination"
+    },
+    {
+      "actor": "FRB + OCC",
+      "authority": "DFA \u00a7165(h); FDI Act \u00a739",
+      "difficulty": "Medium-High",
+      "instrument": "Joint rulemaking; OCC App. D cross-references Reg YY",
+      "reform": "One risk-committee standard at the consolidated level",
+      "statutory_obstacle": "165(h) is statutory at the BHC level; bank-level via guideline"
+    },
+    {
+      "actor": "FRB + OCC + FDIC + SEC",
+      "authority": "Multiple (SOX, DFA, FDI Act, exchange oversight)",
+      "difficulty": "High",
+      "instrument": "Joint interagency statement + SEC coordination",
+      "reform": "Single 'independent director' definition for banking orgs",
+      "statutory_obstacle": "Cross-regulator (SEC + banking) coordination; differing statutory lineages"
+    },
+    {
+      "actor": "FDIC",
+      "authority": "FDI Act \u00a736 / Part 363",
+      "difficulty": "Low-Medium",
+      "instrument": "Part 363 amendment",
+      "reform": "SOX 404(b) satisfies FDICIA ICFR by cross-reference",
+      "statutory_obstacle": "Calendar vs. fiscal-year alignment"
+    },
+    {
+      "actor": "FRB + FDIC",
+      "authority": "DFA \u00a7165(d); FDI Act",
+      "difficulty": "High",
+      "instrument": "Joint guidance + rule conforming amendments",
+      "reform": "Integrate recovery + contingency funding + resolution into one 'resilience planning' cycle",
+      "statutory_obstacle": "Two statutes/rules; genuine distinct interests (parallel-but-justified)"
+    },
+    {
+      "actor": "FRB + OCC + FDIC",
+      "authority": "GLBA \u00a7501(b)",
+      "difficulty": "Low-Medium",
+      "instrument": "Conform the four parallel appendices",
+      "reform": "One enterprise information-security program approval",
+      "statutory_obstacle": "Four codified appendices to amend"
+    },
+    {
+      "actor": "FRB",
+      "authority": "DFA \u00a7165",
+      "difficulty": "Medium",
+      "instrument": "Reg YY amendment; rescind SR 12-17",
+      "reform": "Codify SR 12-17 governance content into Reg YY; retire the letter",
+      "statutory_obstacle": "Notice-and-comment; defining the binding line"
+    },
+    {
+      "actor": "Congress / 6 agencies",
+      "authority": "DFA \u00a7956 (12 U.S.C. 5641)",
+      "difficulty": "High",
+      "instrument": "Final rule (6-agency) or statutory repeal",
+      "reform": "Finalize or withdraw Dodd-Frank \u00a7956",
+      "statutory_obstacle": "Six-agency joint action; FRB/SEC previously declined"
+    },
+    {
+      "actor": "FRB + OCC + FDIC",
+      "authority": "FDI Act \u00a739; safety-and-soundness",
+      "difficulty": "Low-Medium",
+      "instrument": "Amend/supplement 2023 interagency guidance",
+      "reform": "Quantitative 'critical activity' threshold for board-level third-party attention",
+      "statutory_obstacle": "Defining 'critical' quantitatively"
+    },
+    {
+      "actor": "FRB + OCC",
+      "authority": "FDI Act \u00a739; LFI framework",
+      "difficulty": "Low",
+      "instrument": "Joint statement; align App. D III.F with SR 21-3",
+      "reform": "Single interagency board-effectiveness assessment",
+      "statutory_obstacle": "Minimal"
+    },
+    {
+      "actor": "FRB + OCC + FDIC",
+      "authority": "DFA \u00a7165; FDI Act \u00a739; OCC Part 30 App. D",
+      "difficulty": "High",
+      "instrument": "Rulemaking (possibly statutory); expand App. D reliance accommodation",
+      "reform": "Vertical (HC/IDI) rationalization via expanded reliance accommodation",
+      "statutory_obstacle": "Bank-level independent legal responsibility is statutory; reliance can be expanded but not eliminated"
+    },
+    {
+      "actor": "All agencies",
+      "authority": "Cross-cutting",
+      "difficulty": "Varies by tier",
+      "instrument": "Sequence reforms by instrument: (1) guidance consolidation, (2) guidance retirement, (3) rule harmonization, (4) vertical HC/IDI rationalization, (5) statutory consolidation",
+      "reform": "Tiered feasibility principle (v2.1): harmonization is selection, not deletion",
+      "statutory_obstacle": "Divergent standards (audit-committee independence; 36-hr vs SEC cyber timelines) require choosing a prevailing formulation"
+    }
+  ]
+}

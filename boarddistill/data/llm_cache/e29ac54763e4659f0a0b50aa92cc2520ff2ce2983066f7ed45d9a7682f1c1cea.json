@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "e29ac54763e4659f0a0b50aa92cc2520ff2ce2983066f7ed45d9a7682f1c1cea",
+  "response_text": "{\"lever_id\":\"L-safety-and-soundness\",\"is_consolidation\":false,\"composition\":\"non_target\",\"operations\":[],\"actor_with_authority\":[],\"instrument_required\":null,\"normative_kinds\":[\"policy_choice\",\"supervisory_value_judgment\"],\"statutory_floor_candidates\":[],\"residual_reason\":\"\",\"rationale\":\"The lever's minimum reform action is 'Treat as baseline; avoid re-imposing in domain rules' and it is characterized as a 'Residual baseline' that is 'legally distinct'. This is a retain/coordinate action rather than a structural consolidation. The source text says 'Broad standards can duplicate domain-specific programs' but the prescribed action is to preserve the baseline and avoid re-imposition, so no calculus primitive applies. No roadmap row is provided, so actor and instrument are unresolved and left empty rather than guessed.\"}"
+}
