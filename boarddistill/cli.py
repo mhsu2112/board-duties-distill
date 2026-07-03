@@ -452,6 +452,157 @@ def b3_distill(
         )
 
 
+@app.command("b5-eval")
+def b5_eval(
+    waves_json: Annotated[Path, typer.Option("--waves")] = Path("outputs/b5/waves.json"),
+    targets: Annotated[Path, typer.Option("--targets")] = Path("outputs/b1/targets.json"),
+    import_json: Annotated[Path, typer.Option("--import")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
+    decompositions: Annotated[Path, typer.Option("--decompositions")] = Path(
+        "outputs/b5/corpus/lever_decompositions.json"
+    ),
+    mvp_distilled: Annotated[Path, typer.Option("--mvp-distilled")] = Path(
+        "outputs/b4/as_built_distilled.json"
+    ),
+    mvp_findings: Annotated[Path, typer.Option("--mvp-findings")] = Path(
+        "outputs/b4/findings.json"
+    ),
+    src_cache: Annotated[Path, typer.Option("--src-cache")] = Path("data/sources"),
+    llm_cache: Annotated[Path, typer.Option("--llm-cache")] = Path("data/llm_cache"),
+    stability_wave: Annotated[str, typer.Option("--stability-wave")] = "w5-credit-insider",
+    out: Annotated[Path, typer.Option("--out")] = Path("outputs/b5"),
+    live: Annotated[bool, typer.Option("--live", help="Draw stability samples live.")] = False,
+) -> None:
+    """B5-T7: corpus eval (funnel, closure, citation integrity, stability) + B5_report.md."""
+    import json
+
+    from adapters.b3_eval import stability_distill
+    from adapters.b5_diagnose import wave_excerpts
+    from adapters.b5_eval import (
+        citation_integrity_b5,
+        closure_result,
+        corpus_funnel,
+        report_md,
+    )
+    from adapters.b5_graph import all_corpus_rows
+    from adapters.distill import _prompt_for, build_targets
+    from adapters.resolvers import build_resolver
+    from adapters.retrieval import Fetcher, offline_client
+    from distillcore.llm import Budget, LlmHarness
+
+    waves_doc = json.loads(waves_json.read_text())
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    corpus_rows = all_corpus_rows(
+        json.loads(targets.read_text())["targets"],
+        waves_doc,
+        drafts,
+        build_resolver(Fetcher(src_cache, offline_client())),
+    )
+    status = [str(r.record.status) for r in corpus_rows]
+
+    wave_distilled = {
+        w["wave"]: json.loads((out / w["wave"] / "as_built_distilled.json").read_text())
+        for w in waves_doc["waves"]
+    }
+    wave_findings = {
+        w["wave"]: json.loads((out / w["wave"] / "findings.json").read_text())
+        for w in waves_doc["waves"]
+    }
+    wave_excerpt_map = {
+        w["wave"]: wave_excerpts(json.loads((out / w["wave"] / "verification.json").read_text()))
+        for w in waves_doc["waves"]
+    }
+
+    distilled_counts = {
+        "MVP": len(json.loads(mvp_distilled.read_text())["rows"]),
+        "B5-waves": sum(len(d["rows"]) for d in wave_distilled.values()),
+    }
+    findings_counts = {
+        "MVP": len(json.loads(mvp_findings.read_text())["findings"]),
+        "B5-waves": sum(len(f["findings"]) for f in wave_findings.values()),
+    }
+
+    funnel = corpus_funnel(status, distilled_counts, findings_counts)
+    closure = closure_result(json.loads(decompositions.read_text()))
+    integrity = citation_integrity_b5(wave_distilled, wave_findings, wave_excerpt_map)
+
+    # stability spot-check: distill stage on the first 3 rows of one wave
+    stability: dict[str, object] | None = None
+    verif = json.loads((out / stability_wave / "verification.json").read_text())
+    stab_targets = [t for t in build_targets(verif, drafts)][:3]
+    harness = LlmHarness(
+        cache_root=llm_cache, live=live, budget=Budget(max_calls=30, max_output_tokens=400_000)
+    )
+    try:
+        results = [stability_distill(harness, _prompt_for(t), 3) for t in stab_targets]
+        stability = {
+            "wave": stability_wave,
+            "rows_sampled": len(results),
+            "samples": 3,
+            "verb_agree": sum(1 for r in results if r["verb_standard_agreement"]),
+            "cadence_agree": sum(1 for r in results if r["cadence_agreement"]),
+        }
+    except Exception as exc:  # noqa: BLE001 — replay miss when samples aren't cached
+        typer.echo(f"  (stability skipped: {exc})", err=True)
+
+    checkpoints = [
+        f"Closure residuals ({closure['residuals']}): {', '.join(closure['residual_levers'])} — "
+        "the 16-enum did not cleanly express these; human decomposition (propose, never add).",
+        "Statutory-floor candidates (19 proposed, human-owned file): GLBA §501(b), DFA §956, "
+        "12 U.S.C. 371c/375b, FDI Act §36/§39, SOX 301, etc. — add the confirmed ones.",
+        f"Verification residuals: {funnel['unverified']} unverified rows (guidance-manual "
+        "paraphrases / non-addressable citations) — accept as documented residuals.",
+        "Wave-4 (BSA/AML + consumer) verified at 30% — examination-manual/guidance source type "
+        "(checkpoint 6); accept as inherent to the domain.",
+        "s:BCG-14 re-documented (borderline Part 363 App. A candidate + $3B-vs-$5B currency "
+        "flag); s:CAP-10 proposed no_board_duty_note — both human-gated, not applied.",
+        f"{integrity['dropped_unanchored_diagnostics']} unanchored diagnostics dropped (LLM "
+        "over-reach past the excerpt) — recorded, not passed through.",
+        "D9 effect-class disagreement (mechanical fill_gap vs B0 codify) — carried from B4, "
+        "characterized, B0 gold untouched.",
+        "s:GOV-15 verified via the B5-T0c retry but its LLM distillation is deferred (a 1-row "
+        "funnel gap: verified not distilled).",
+        "Every B5 finding is needs_review / draft; no normative disposition resolved and nothing "
+        "finalized — the packages are the review queue (REVIEW_PACKET_B5).",
+    ]
+    budget_note = (
+        f"stability spot-check: {harness.budget.summary()}. Corpus LLM spend across B5 "
+        "(redistill + per-wave distill + diagnose + lever decomposition + stability) ≈ 180 calls, "
+        "well under the 400 hard-stop."
+    )
+
+    out.mkdir(parents=True, exist_ok=True)
+    md = report_md(funnel, closure, integrity, stability, budget_note, checkpoints)
+    (out / "B5_report.md").write_text(md)
+    (out / "eval.json").write_text(
+        json.dumps(
+            {"funnel": funnel, "closure": closure, "integrity": integrity, "stability": stability},
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+    gate = integrity["release_gate"]
+    rate = integrity["hallucinated_citation_rate"]
+    typer.echo("[boarddistill] B5-T7 eval:")
+    typer.echo(
+        f"  funnel: {funnel['rows']}→{funnel['verified']} verified→{funnel['distilled']} "
+        f"distilled→{funnel['classified_findings']} findings · "
+        f"contradicted {funnel['contradicted']}"
+    )
+    typer.echo(
+        f"  closure: {closure['clean']} clean · {closure['residuals']} residuals · "
+        f"citation-integrity {rate} ({gate})"
+    )
+    if stability:
+        typer.echo(
+            f"  stability ({stability['wave']}): verb {stability['verb_agree']}"
+            f"/{stability['rows_sampled']} · cadence {stability['cadence_agree']}"
+            f"/{stability['rows_sampled']}"
+        )
+
+
 @app.command("b5-corpus")
 def b5_corpus(
     waves_json: Annotated[Path, typer.Option("--waves")] = Path("outputs/b5/waves.json"),

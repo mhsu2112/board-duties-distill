@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "de0ea7bab1e3c9a56ea67b263cc3684e37776b2c54bf6a9cb4370748c11e20ac",
+  "response_text": "{\"duty_id\":\"b:CRD-03\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"\",\"object_evidence\":\"\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"object\",\"cadence\"],\"notes\":\"The excerpt is only the Table of Contents for Appendix D to Part 30. It lists section headings (Introduction, Standards for Risk Governance Framework, Roles and Responsibilities including Independent Risk Management) but contains no substantive text about a credit-risk-review/loan review function, no board-action standard, no object, and no cadence. Nothing here supports any specific duty content, so all substantive fields are left unresolved.\"}"
+}

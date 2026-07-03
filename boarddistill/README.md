@@ -203,8 +203,56 @@ uv run boarddistill b3-eval --findings outputs/b4/findings.json \
     --distilled outputs/b4/as_built_distilled.json --out outputs/b4   # T5 eval
 ```
 
-After B4, two arcs remain (their own files when called for): scale to the remaining ~27
-clusters, and the RBI Master-Directions rediscovery benchmark. Neither is started.
+After B4, two arcs remained (their own files when called for): scale to the remaining ~27
+clusters, and the RBI Master-Directions rediscovery benchmark.
+
+## B5 — scale-out to the full corpus (the remaining ~155 rows → the product)
+
+Runs the proven per-cluster pipeline over the ~155 non-MVP duty rows and rolls everything up
+into a corpus-wide product. No new methods, no new primitives, no scope growth — novelty is a
+checkpoint, not a feature.
+
+- **T0 carry-forwards** — live re-distill of the ten B4 re-pins; the D7 disposition now reads
+  cross-stratum *through concept groundings* (`needs_review`); retry of three B2 residuals
+  (`s:GOV-15` resolves via a new SR-letter-body anchor fallback; two re-documented).
+- **T1 wave plan** — the 155 non-MVP rows partitioned into six domain waves
+  (`outputs/b5/waves.json`).
+- **T2 per-wave verification** — every row evidenced against primary sources; **142/227
+  verified, 0 contradicted.** Two resolver fixes: an SR-letter `/boarddocs/` URL fallback, and
+  CFR section-*range* parsing (`252.62-252.63`) that had produced three *false* contradictions.
+  Corpus instrument graph `data/graph/us-gsib_v3.json` (49 instruments, 0 unknown-agency).
+- **T3 distill + diagnose + classify** — 91 wave rows distilled 100% anchor-clean; per-cluster
+  diagnostics (both duplication families) with 0-op ⇒ `unresolved` + `needs_review`. Two
+  unanchored diagnostics were caught and **dropped** (never passed through).
+- **T4 lever decomposition** — the 22 non-MVP reform levers decomposed (LLM proposes,
+  `validate_composition()` enforces the 16-enum + 4 composites). **Closure result:** 8 clean,
+  8 documented non-targets, **6 residual checkpoints** (propose, never add). 19 statutory-floor
+  candidates proposed (human-owned file).
+- **T5 packages** — 22 per-cluster `outputs/b5/<wave>/<cluster>/package.md`, full §9, nothing
+  final.
+- **T6 corpus roll-up** — `outputs/b5/corpus/{master_crosswalk,reform_roadmap_v2,corpus_stats}.md`
+  and the consolidated `../REVIEW_PACKET_B5.md`. Corpus-wide: **79% of distilled duties state no
+  board-action standard.**
+- **T7 eval** — `outputs/b5/B5_report.md`: funnel, closure, **citation-integrity 0.0 (PASS)**,
+  stability spot-check (3/3 verb + cadence agreement on one wave), budget (~180 calls), full
+  checkpoint list.
+
+```bash
+uv run python cli.py b5-redistill --live        # T0(a)
+uv run python cli.py b5-retry-residuals         # T0(c)
+uv run python cli.py b5-waves                    # T1
+uv run python cli.py b5-verify --wave all        # T2 (network; --offline to replay)
+uv run python cli.py b5-graph                    # T2 corpus graph v3
+uv run python cli.py b5-distill --wave all --live # T3 distill
+uv run python cli.py b5-diagnose --wave all      # T3 diagnose (replay)
+uv run python cli.py b5-decompose --live         # T4
+uv run python cli.py b5-package --wave all       # T5
+uv run python cli.py b5-corpus                   # T6
+uv run python cli.py b5-eval                     # T7
+```
+
+After B5 and the human review pass, one arc remains: the RBI Master-Directions rediscovery
+benchmark — its own file, on M. Hsu's word. Not started.
 
 ## Next steps (roadmap — NOT built in slice one)
 
@@ -218,8 +266,9 @@ clusters, and the RBI Master-Directions rediscovery benchmark. Neither is starte
 4. **LLM-based distillation / diagnostics / classification** behind the interfaces this
    slice proved — temperature 0, structured output, every claim span-anchored. This is the
    step that makes the product probabilistic; it is gated by everything slice one proved.
-5. Per-cluster consolidation packages for the three MVP clusters — **done (B3/B4).**
-   Remaining: **scale to the remaining ~27 clusters.**
+5. Per-cluster consolidation packages — **done (B3/B4 for the MVP clusters; B5 for the
+   remaining ~27).** The corpus-wide product (master crosswalk, reform roadmap v2, stats,
+   `REVIEW_PACKET_B5`) is built.
 6. **RBI Master-Directions rediscovery benchmark** + baselines (the existing horserace
    reports in `Reports/` are the plain-LLM baselines).
 7. **`lex_allium` profile build** per the engine `AGENTS.md` (proves the core is genuinely

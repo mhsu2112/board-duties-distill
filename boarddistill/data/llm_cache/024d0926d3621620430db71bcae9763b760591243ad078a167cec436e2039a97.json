@@ -1,0 +1,5 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_sha256": "024d0926d3621620430db71bcae9763b760591243ad078a167cec436e2039a97",
+  "response_text": "{\"duty_id\":\"b:CRD-03\",\"verb_standard\":\"none_specified\",\"verb_evidence\":\"\",\"object\":\"Independent Risk Management roles and responsibilities within the risk governance framework\",\"object_evidence\":\"Role and Responsibilities of Independent Risk Management\",\"cadence\":\"none_specified\",\"cadence_evidence\":\"\",\"definitions_used\":[],\"elements\":[],\"unresolved_fields\":[\"verb_standard\",\"cadence\"],\"notes\":\"The excerpt is only a table of contents for Appendix D. It lists 'Role and Responsibilities of Independent Risk Management' but contains no substantive text establishing a board-action standard, an independent credit-risk-review/loan-review function, reporting to the board, or any timing. Nothing supports the draft's specific credit-risk-review object, verb, or continuous cadence, so those fields are left at neutral/unresolved.\"}"
+}
