@@ -229,6 +229,40 @@ def verify_live(
     typer.echo("  " + " · ".join(f"{k}={v}" for k, v in sorted(summary.items())))
 
 
+@app.command("b2-accept")
+def b2_accept(
+    verification: Annotated[
+        Path, typer.Option("--verification", help="verification.json from verify-live.")
+    ] = Path("outputs/b1/verification.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json to stamp.")
+    ] = Path("outputs/import/imported_duties.json"),
+    out: Annotated[Path, typer.Option("--out", help="Output directory for the ledger.")] = Path(
+        "outputs/b2"
+    ),
+) -> None:
+    """B2-T0: record reviewer_accepted dispositions for the B1-verified rows."""
+    import json
+
+    from adapters.dispositions import accept_verified, ledger, stamp_dispositions
+
+    verif = json.loads(verification.read_text())
+    dispositions = accept_verified(verif)
+
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "dispositions.json").write_text(
+        json.dumps(ledger(dispositions), indent=2, sort_keys=True) + "\n"
+    )
+    if import_json.exists():
+        doc = stamp_dispositions(json.loads(import_json.read_text()), dispositions)
+        import_json.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    verified = sum(1 for r in verif["rows"] if r["status"] == "verified")
+    remaining = sum(1 for r in verif["rows"] if r["status"] != "verified")
+    typer.echo(f"[boarddistill] B2 accept: {len(dispositions)} rows -> reviewer_accepted")
+    typer.echo(f"  cleared: {verified} · still in review queue: {remaining}")
+
+
 @app.command("b1-report")
 def b1_report(
     verification: Annotated[

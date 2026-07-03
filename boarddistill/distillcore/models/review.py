@@ -62,13 +62,18 @@ NormativeT = TypeVar("NormativeT", bound=Enum)
 
 
 class ReviewDisposition(StrictModel):
-    """A record of one reviewer action moving a finding's disposition state."""
+    """A recorded human review action on a subject (a duty row or a finding).
 
-    finding_id: str
-    from_state: DispositionState
-    to_state: DispositionState
-    reviewer: str
-    note: str | None = None
+    ``timestamp`` is supplied by the caller — the core has no clock, keeping records
+    deterministic and replayable.
+    """
+
+    subject_id: str
+    state: DispositionState
+    reviewer_id: str
+    timestamp: str
+    rationale: str
+    from_state: DispositionState | None = None
 
 
 class Finding(StrictModel, Generic[NormativeT]):

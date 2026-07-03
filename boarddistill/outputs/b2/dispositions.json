@@ -1,0 +1,176 @@
+{
+  "_meta": "B2 review-state ledger. Human dispositions on B1-verified rows; duty text is never edited (\u00a76.1).",
+  "counts": {
+    "reviewer_accepted": 21
+  },
+  "dispositions": [
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-01",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-03",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-04",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-05",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-06",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:AUD-07",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:CAP-01",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:CAP-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:CAP-03",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:CAP-04",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:CAP-05",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:FID-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:RGC-01",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:RGC-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:RGC-03",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:RGC-04",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "b:RGC-05",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:CAP-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:CAP-09",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "B1 verification accepted via chat review",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:CAP-11",
+      "timestamp": "2026-07-02"
+    }
+  ]
+}
