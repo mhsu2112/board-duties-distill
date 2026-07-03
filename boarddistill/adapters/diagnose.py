@@ -321,6 +321,7 @@ class DiagnoseResult:
     diagnostic_sets: list[DiagnosticSet] = field(default_factory=list)
     anchor_failures: list[str] = field(default_factory=list)
     divergence: dict[str, Any] = field(default_factory=dict)
+    finding_cluster: dict[str, str] = field(default_factory=dict)  # finding_id -> cluster
 
 
 def run_diagnose(
@@ -342,9 +343,9 @@ def run_diagnose(
         if not dec.get("operations"):
             continue
         ops = scaffold_operations(dec)
-        result.consolidation_findings.append(
-            consolidation_finding(dec, ops, ab, intended, graph)
-        )
+        cf = consolidation_finding(dec, ops, ab, intended, graph)
+        result.consolidation_findings.append(cf)
+        result.finding_cluster[cf.id] = str(dec.get("cluster", ""))
 
     distilled_doc = {**distilled_doc, "_cluster_of": cluster_of}
     for cluster in MVP_CLUSTERS:
@@ -357,7 +358,9 @@ def run_diagnose(
             ok = diagnostic_anchor_ok(d, corpus)
             if not ok:
                 result.anchor_failures.append(f"{cluster}:{d.kind}:{d.evidence_quote[:40]!r}")
-            result.diagnostic_findings.append(diagnostic_finding(cluster, i, d, ok))
+            df = diagnostic_finding(cluster, i, d, ok)
+            result.diagnostic_findings.append(df)
+            result.finding_cluster[df.id] = cluster
 
     result.divergence = duplicate_divergence(decompositions, result.diagnostic_sets, set(drafts))
     return result
@@ -379,6 +382,7 @@ def diagnose_document(result: DiagnoseResult) -> dict[str, Any]:
         },
         "anchor_failures": result.anchor_failures,
         "duplicate_divergence": result.divergence,
+        "finding_cluster": result.finding_cluster,
         "findings": [f.model_dump(mode="json") for f in findings],
     }
 

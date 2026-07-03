@@ -455,6 +455,46 @@ def b3_diagnose(
         typer.echo(f"  ⚠ diagnostic anchor failures: {c['anchor_failures']}", err=True)
 
 
+@app.command("b3-package")
+def b3_package(
+    distilled: Annotated[
+        Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
+    ] = Path("outputs/b3/as_built_distilled.json"),
+    intended: Annotated[
+        Path, typer.Option("--intended", help="B3-T3 intended.json.")
+    ] = Path("outputs/b3/intended.json"),
+    findings: Annotated[
+        Path, typer.Option("--findings", help="B3-T4 findings.json.")
+    ] = Path("outputs/b3/findings.json"),
+    verification: Annotated[
+        Path, typer.Option("--verification", help="b2 verification.json.")
+    ] = Path("outputs/b2/verification.json"),
+    graph: Annotated[
+        Path, typer.Option("--graph", help="Instrument graph json.")
+    ] = Path("data/graph/us-gsib_v1.json"),
+    out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
+) -> None:
+    """B3-T5: render the three per-cluster consolidation packages (deterministic)."""
+    import json
+
+    from adapters.b3_package import build_packages
+
+    packages = build_packages(
+        json.loads(distilled.read_text()),
+        json.loads(intended.read_text()),
+        json.loads(findings.read_text()),
+        json.loads(verification.read_text()),
+        json.loads(graph.read_text()),
+    )
+    typer.echo("[boarddistill] B3-T5 consolidation packages:")
+    for slug, md in packages.items():
+        pkg_dir = out / slug
+        pkg_dir.mkdir(parents=True, exist_ok=True)
+        (pkg_dir / "package.md").write_text(md)
+        final = md.count("| final |")
+        typer.echo(f"  {slug}/package.md · {len(md.splitlines())} lines · findings final: {final}")
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[

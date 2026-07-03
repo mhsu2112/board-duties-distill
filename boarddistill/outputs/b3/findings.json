@@ -209,6 +209,35 @@
       ]
     ]
   },
+  "finding_cluster": {
+    "dx-aud-0": "Audit committee & independence",
+    "dx-cap-0": "Capital planning & stress testing",
+    "dx-cap-1": "Capital planning & stress testing",
+    "dx-cap-2": "Capital planning & stress testing",
+    "dx-cap-3": "Capital planning & stress testing",
+    "dx-cap-4": "Capital planning & stress testing",
+    "dx-cap-5": "Capital planning & stress testing",
+    "dx-cap-6": "Capital planning & stress testing",
+    "dx-ris-0": "Risk-governance framework / strategy",
+    "dx-ris-1": "Risk-governance framework / strategy",
+    "dx-ris-2": "Risk-governance framework / strategy",
+    "dx-ris-3": "Risk-governance framework / strategy",
+    "dx-ris-4": "Risk-governance framework / strategy",
+    "dx-ris-5": "Risk-governance framework / strategy",
+    "dx-ris-6": "Risk-governance framework / strategy",
+    "dx-ris-7": "Risk-governance framework / strategy",
+    "dx-ris-8": "Risk-governance framework / strategy",
+    "dx-ris-9": "Risk-governance framework / strategy",
+    "f-D1": "Risk-governance framework / strategy",
+    "f-D2": "Risk committee architecture",
+    "f-D3": "Audit committee & independence",
+    "f-D4": "Internal control over financial reporting",
+    "f-D5": "Capital planning & stress testing",
+    "f-D6": "Risk-governance framework / strategy",
+    "f-D7": "Risk-governance framework / strategy",
+    "f-D8": "cross-cutting (largest structural lever)",
+    "f-D9": "cross-cutting"
+  },
   "findings": [
     {
       "as_built_ref": "b:RGC-02",
