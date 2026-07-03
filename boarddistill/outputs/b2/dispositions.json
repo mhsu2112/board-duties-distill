@@ -1,7 +1,8 @@
 {
   "_meta": "B2 review-state ledger. Human dispositions on B1-verified rows; duty text is never edited (\u00a76.1).",
   "counts": {
-    "reviewer_accepted": 21
+    "reviewer_accepted": 15,
+    "reviewer_modified": 6
   },
   "dispositions": [
     {
@@ -29,34 +30,34 @@
       "timestamp": "2026-07-02"
     },
     {
-      "from_state": null,
-      "rationale": "B1 verification accepted via chat review",
+      "from_state": "reviewer_accepted",
+      "rationale": "B1 support-flag retag: actor corrected to the bound party; board oversight annotated",
       "reviewer_id": "mhsu",
-      "state": "reviewer_accepted",
+      "state": "reviewer_modified",
       "subject_id": "b:AUD-04",
       "timestamp": "2026-07-02"
     },
     {
-      "from_state": null,
-      "rationale": "B1 verification accepted via chat review",
+      "from_state": "reviewer_accepted",
+      "rationale": "B1 support-flag retag: actor corrected to the bound party; board oversight annotated",
       "reviewer_id": "mhsu",
-      "state": "reviewer_accepted",
+      "state": "reviewer_modified",
       "subject_id": "b:AUD-05",
       "timestamp": "2026-07-02"
     },
     {
-      "from_state": null,
-      "rationale": "B1 verification accepted via chat review",
+      "from_state": "reviewer_accepted",
+      "rationale": "B1 support-flag retag: actor corrected to the bound party; board oversight annotated",
       "reviewer_id": "mhsu",
-      "state": "reviewer_accepted",
+      "state": "reviewer_modified",
       "subject_id": "b:AUD-06",
       "timestamp": "2026-07-02"
     },
     {
-      "from_state": null,
-      "rationale": "B1 verification accepted via chat review",
+      "from_state": "reviewer_accepted",
+      "rationale": "B1 support-flag retag: actor corrected to the bound party; board oversight annotated",
       "reviewer_id": "mhsu",
-      "state": "reviewer_accepted",
+      "state": "reviewer_modified",
       "subject_id": "b:AUD-07",
       "timestamp": "2026-07-02"
     },
@@ -109,10 +110,10 @@
       "timestamp": "2026-07-02"
     },
     {
-      "from_state": null,
-      "rationale": "B1 verification accepted via chat review",
+      "from_state": "reviewer_accepted",
+      "rationale": "B1 support-flag retag: actor corrected to the bound party; board oversight annotated",
       "reviewer_id": "mhsu",
-      "state": "reviewer_accepted",
+      "state": "reviewer_modified",
       "subject_id": "b:RGC-01",
       "timestamp": "2026-07-02"
     },
@@ -165,10 +166,10 @@
       "timestamp": "2026-07-02"
     },
     {
-      "from_state": null,
-      "rationale": "B1 verification accepted via chat review",
+      "from_state": "reviewer_accepted",
+      "rationale": "B1 support-flag retag: actor corrected to the bound party; board oversight annotated",
       "reviewer_id": "mhsu",
-      "state": "reviewer_accepted",
+      "state": "reviewer_modified",
       "subject_id": "s:CAP-11",
       "timestamp": "2026-07-02"
     }

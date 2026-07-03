@@ -263,6 +263,46 @@ def b2_accept(
     typer.echo(f"  cleared: {verified} · still in review queue: {remaining}")
 
 
+@app.command("b2-retag")
+def b2_retag(
+    verification: Annotated[
+        Path, typer.Option("--verification", help="verification.json from verify-live.")
+    ] = Path("outputs/b1/verification.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json to retag.")
+    ] = Path("outputs/import/imported_duties.json"),
+    out: Annotated[Path, typer.Option("--out", help="Output directory.")] = Path("outputs/b2"),
+) -> None:
+    """B2-T1: actor retag for the approved 6 support-flagged rows."""
+    import json
+
+    from adapters.dispositions import ledger
+    from adapters.retag import build_retags, combined_ledger, retag_ledger
+
+    verif = json.loads(verification.read_text())
+    out.mkdir(parents=True, exist_ok=True)
+
+    if import_json.exists():
+        records, doc = build_retags(verif, json.loads(import_json.read_text()))
+        import_json.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+    else:
+        records, _ = build_retags(verif, {"duties": []})
+
+    (out / "retags.json").write_text(
+        json.dumps(retag_ledger(records), indent=2, sort_keys=True) + "\n"
+    )
+    # refine the disposition ledger: 15 accepted + 6 modified
+    (out / "dispositions.json").write_text(
+        json.dumps(ledger(combined_ledger(verif)), indent=2, sort_keys=True) + "\n"
+    )
+
+    todos = sum(1 for r in records if r.todo_human is not None)
+    typer.echo(f"[boarddistill] B2 retag: {len(records)} rows retagged ({todos} TODO(human))")
+    for r in records:
+        flag = "  [TODO(human)]" if r.todo_human else ""
+        typer.echo(f"  {r.duty_id:10} {r.from_actor!r} -> {r.to_actor!r}{flag}")
+
+
 @app.command("b1-report")
 def b1_report(
     verification: Annotated[
@@ -294,15 +334,13 @@ def b1_report(
 
 @app.command("realify-fixtures")
 def realify_fixtures(
-    fixtures: Annotated[
-        Path, typer.Option("--fixtures", help="Fixture corpus root.")
-    ] = Path("data/fixtures/us-gsib"),
+    fixtures: Annotated[Path, typer.Option("--fixtures", help="Fixture corpus root.")] = Path(
+        "data/fixtures/us-gsib"
+    ),
     cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
         "data/sources"
     ),
-    offline: Annotated[
-        bool, typer.Option("--offline", help="Use cache only; no network.")
-    ] = False,
+    offline: Annotated[bool, typer.Option("--offline", help="Use cache only; no network.")] = False,
 ) -> None:
     """B1-T3: swap fixture [FIXTURE] paraphrases for verified verbatim text."""
     from adapters.realify import realify_fixture

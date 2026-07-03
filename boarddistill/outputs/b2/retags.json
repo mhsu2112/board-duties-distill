@@ -1,0 +1,71 @@
+{
+  "_meta": "B2-T1 actor-retag ledger. The approved 6 support-flagged rows; actor corrected to the bound party with the B1 quote as evidence. s:CAP-11 is TODO(human). Formalizing 'actor' as an ASSIGN_DUTY_PARAMETER member is a \u00a714.2 proposal, not applied.",
+  "retags": [
+    {
+      "board_oversight_note": "Board oversight via the audit committee under FDI Act \u00a736 / Part 363; the annual report and audited financial statements are management's.",
+      "duty_id": "b:AUD-04",
+      "evidence_citation": "12 CFR 363.2",
+      "evidence_quote": "\u00a7 363.2 Annual reporting requirements. (a) Audited financial statements. Each insured depository institution shall prepare annual financial statements in accordance with GAAP, which shall be audited by an independent public accountant. The annual financial statements must reflect all material correcting adjustments necessary to conform with GAAP that were identified by the independent public accountant. (b) Management report. Each insured depository institution annually shall prepare, as of the end of the institution's most recent fiscal year, a management report that must contain the followin",
+      "from_actor": "Audit committee",
+      "parameter": "actor",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "to_actor": "management / the institution",
+      "todo_human": null
+    },
+    {
+      "board_oversight_note": "Board oversight via the audit committee under SOX 301 / Part 363; SOX 404(a) binds management's ICFR assessment, not the board.",
+      "duty_id": "b:AUD-05",
+      "evidence_citation": "15 U.S.C. 7262(a)",
+      "evidence_quote": "7262 - Management assessment of internal controls From the U.S. Government Publishing Office, www.gpo.gov \u00a77262. Management assessment of internal controls (a) Rules required The Commission shall prescribe rules requiring each annual report required by section 78m(a) or 78o(d) of this title to contain an internal control report, which shall\u2014 (1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and (2) contain an assessment, as of the end of the most recent fiscal year of the issuer, of the eff",
+      "from_actor": "Audit committee",
+      "parameter": "actor",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "to_actor": "management",
+      "todo_human": null
+    },
+    {
+      "board_oversight_note": "The audit committee oversees the external auditor's ICFR attestation under SOX 301 / Part 363; SOX 404(b) binds the auditor.",
+      "duty_id": "b:AUD-06",
+      "evidence_citation": "15 U.S.C. 7262(b)",
+      "evidence_quote": "7262 - Management assessment of internal controls From the U.S. Government Publishing Office, www.gpo.gov \u00a77262. Management assessment of internal controls (a) Rules required The Commission shall prescribe rules requiring each annual report required by section 78m(a) or 78o(d) of this title to contain an internal control report, which shall\u2014 (1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and (2) contain an assessment, as of the end of the most recent fiscal year of the issuer, of the eff",
+      "from_actor": "Audit committee",
+      "parameter": "actor",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "to_actor": "external auditor (registered public accounting firm)",
+      "todo_human": null
+    },
+    {
+      "board_oversight_note": "Board oversight via the audit committee under SOX 301 / Part 363; SOX 302 binds the certifying officers, not the board.",
+      "duty_id": "b:AUD-07",
+      "evidence_citation": "17 CFR 240.13a-14",
+      "evidence_quote": "\u00a7 240.13a-14 Certification of disclosure in annual and quarterly reports. (a) Each report, including transition reports, filed on Form 10-Q, Form 10-K, Form 20-F or Form 40-F (\u00a7 249.308a, \u00a7 249.310, \u00a7 249.220f or \u00a7 249.240f of this chapter) under Section 13(a) of the Act (15 U.S.C. 78m(a)), other than a report filed by an Asset-Backed Issuer (as defined in \u00a7 229.1101 of this chapter) or a report on Form 20-F filed under \u00a7 240.13a-19, must include certifications in the form specified in the applicable exhibit filing requirements of such report and such certifications must be filed as an exhibit",
+      "from_actor": "Audit committee",
+      "parameter": "actor",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "to_actor": "CEO and CFO (principal executive and financial officers)",
+      "todo_human": null
+    },
+    {
+      "board_oversight_note": "Statute mandates committee existence; the board duty is structural (maintain a risk committee), not operational.",
+      "duty_id": "b:RGC-01",
+      "evidence_citation": "12 U.S.C. 5365(h)(1)",
+      "evidence_quote": "5365 - Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies From the U.S. Government Publishing Office, www.gpo.gov \u00a75365. Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies (a) In general (1) Purpose In order to prevent or mitigate risks to the financial stability of the United States that could arise from the material financial distress or failure, or ongoing activities, of large, interconnected fin",
+      "from_actor": "Risk committee",
+      "parameter": "actor",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "to_actor": "the bank holding company",
+      "todo_human": null
+    },
+    {
+      "board_oversight_note": "TODO(human): s:CAP-11 cites SR 15-18 fn. 5 \u2014 a supersession note (SR 09-4 superseded for GSIBs), not a board-actor misattribution. Actor retag is a placeholder.",
+      "duty_id": "s:CAP-11",
+      "evidence_citation": "SR 15-18",
+      "evidence_quote": "SUBJECT: Federal Reserve Supervisory Assessment of Capital Planning and Positions for Firms Subject to Category I Standards Applicability: This guidance applies only to U.S. bank holding companies that are subject to Category I standards under the Board\u2019s tailoring framework. The Federal Reserve is issuing this letter to explain its supervisory expectations for capital planning at firms subject to Category I standards, consistent with the broad supervisory expectations set forth in SR letter 12-17/CA letter 12-14, \"Consolidated Supervision Framework for Large Financial Institutions.\" 2 Capital",
+      "from_actor": "n/a (superseded for target firms)",
+      "parameter": "actor",
+      "primitive": "ASSIGN_DUTY_PARAMETER",
+      "to_actor": "management / the company (proposed)",
+      "todo_human": "confirm whether s:CAP-11 is a retag at all; it is an instrument-treatment note (B2-T1 gave no board_oversight guidance for it)."
+    }
+  ]
+}
