@@ -32,6 +32,16 @@ def test_anchor_match_low_for_unrelated_text() -> None:
     assert score < CANDIDATE_FLOOR
 
 
+def test_manual_resolver_source_matching() -> None:
+    from adapters.resolvers import ManualResolver
+
+    mr = ManualResolver(fetcher=None)  # type: ignore[arg-type]
+    assert mr.matches("Comptroller's Handbook, Corporate and Risk Governance")
+    assert mr.matches("FDIC RMS Manual, Management section")
+    assert not mr.matches("SR 21-3 / CA 21-1")
+    assert not mr.matches("12 CFR 363.5")
+
+
 def test_attachment_pdf_path_prefers_a1_skips_comment() -> None:
     html = (
         '<a href="/supervisionreg/srletters/SR2103.pdf">letter</a>'

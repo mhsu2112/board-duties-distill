@@ -209,6 +209,82 @@ class SrAttachmentResolver:
         )
 
 
+# Manual / handbook sources (allowlisted OCC/FDIC pages, §5). Match = all substrings present.
+_MANUAL_SOURCES: list[tuple[tuple[str, ...], str, str, str]] = [
+    (
+        ("comptroller", "corporate and risk governance"),
+        "occ-ch-crg",
+        "https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/"
+        "files/corporate-risk-governance/pub-ch-corporate-risk.pdf",
+        "OCC Comptroller's Handbook: Corporate and Risk Governance",
+    ),
+    (
+        ("fdic", "management"),
+        "fdic-rms-mgmt",
+        "https://www.fdic.gov/risk-management-manual-examination-policies/"
+        "section-41-management.pdf",
+        "FDIC RMS Manual of Examination Policies: Management (Section 4.1)",
+    ),
+]
+
+
+@dataclass
+class ManualResolver:
+    """Anchor-match a duty against a mapped OCC/FDIC handbook or manual PDF (cached once)."""
+
+    fetcher: Fetcher
+
+    @staticmethod
+    def _entry(source: str) -> tuple[str, str, str] | None:
+        s = source.lower()
+        for needles, source_id, url, title in _MANUAL_SOURCES:
+            if all(n in s for n in needles):
+                return source_id, url, title
+        return None
+
+    def matches(self, source: str) -> bool:
+        return self._entry(source) is not None
+
+    def verify(
+        self, *, source: str, citation: str, anchor: str, expected_actor: str
+    ) -> CitationVerdict:
+        entry = self._entry(source)
+        if entry is None:
+            return CitationVerdict(
+                "unverified", f"manual source not mapped: {source!r}", False, "n/a", None
+            )
+        source_id, url, title = entry
+        try:
+            doc = self.fetcher.fetch_extracted(url, source_id, pdf_to_text, title=title)
+        except NotAllowedError:
+            raise
+        except Exception as exc:  # noqa: BLE001
+            return CitationVerdict(
+                "unverified", f"manual fetch failed: {type(exc).__name__}", False, "n/a", None
+            )
+
+        score, window = anchor_match(anchor, doc.text)
+        if score >= HIGH_CONFIDENCE:
+            span = _text_span(source_id, "anchor", title, doc.text, window)
+            note = f"{title}: duty text anchor-matched (score {score:.2f})"
+            return CitationVerdict(
+                "verified", note, True, _support(window, expected_actor), span, True
+            )
+        if score >= CANDIDATE_FLOOR:
+            note = (
+                f"anchor match borderline in {title} (best {score:.2f}); "
+                f"candidate recorded — checkpoint §3: {window[:100]!r}"
+            )
+            return CitationVerdict("unverified", note, False, "n/a", None)
+        return CitationVerdict(
+            "unverified",
+            f"duty text not located in {title} (best {score:.2f})",
+            False,
+            "none",
+            None,
+        )
+
+
 @dataclass
 class CompositeResolver:
     """Dispatches a citation to the resolver for its source type."""
@@ -217,6 +293,7 @@ class CompositeResolver:
     usc: UscResolver
     sr: SrResolver
     sr_attachment: SrAttachmentResolver
+    manual: ManualResolver
 
     def verify(
         self, citation: str, *, expected_actor: str, source: str = "", anchor: str = ""
@@ -229,10 +306,15 @@ class CompositeResolver:
         if isinstance(cite, SrCite):
             return self.sr.verify(cite, expected_actor)
         # unresolved citation — try guidance-document anchor match via the source instrument
-        if source and isinstance(first_resolvable(source), SrCite) and anchor:
-            return self.sr_attachment.verify(
-                source=source, citation=citation, anchor=anchor, expected_actor=expected_actor
-            )
+        if source and anchor:
+            if isinstance(first_resolvable(source), SrCite):
+                return self.sr_attachment.verify(
+                    source=source, citation=citation, anchor=anchor, expected_actor=expected_actor
+                )
+            if self.manual.matches(source):
+                return self.manual.verify(
+                    source=source, citation=citation, anchor=anchor, expected_actor=expected_actor
+                )
         reason = getattr(parse_citation(citation)[0], "reason", "unresolved citation")
         return CitationVerdict("unverified", reason, False, "n/a", None)
 
@@ -243,4 +325,5 @@ def build_resolver(fetcher: Fetcher) -> CompositeResolver:
         UscResolver(fetcher),
         SrResolver(fetcher),
         SrAttachmentResolver(fetcher),
+        ManualResolver(fetcher),
     )

@@ -206,8 +206,8 @@ def test_full_72_row_pass_from_cache_is_deterministic() -> None:
     resolver = build_resolver(Fetcher(_CACHE, offline_client()))
     first = verify_targets(targets, resolver)
     assert len(first) == 72
-    # 21 (CFR/USC/SR) + 8 appendices + 17 SR-attachment anchor matches, all from cache
-    assert sum(1 for r in first if r.record.status == "verified") == 46
+    # 21 base + 8 appendices + 17 SR-attachment + 4 manual (OCC/FDIC) anchor matches, from cache
+    assert sum(1 for r in first if r.record.status == "verified") == 50
     # borderline anchor matches are recorded as candidates, never auto-verified (§3)
     assert any("candidate recorded" in (r.record.note or "") for r in first)
     # every row has a status; verified rows carry a pinned span
