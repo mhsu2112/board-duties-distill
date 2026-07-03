@@ -6,7 +6,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from distillcore import llm
 from distillcore.llm import (
@@ -19,12 +19,45 @@ from distillcore.llm import (
     RawCompletion,
     SchemaRejection,
     render,
+    sanitize_json_schema,
 )
 
 
 class _Toy(BaseModel):
     verb: str
     cadence: str
+
+
+class _Bounded(BaseModel):
+    model_config = {"extra": "forbid"}
+    confidence: float = Field(ge=0.0, le=1.0)
+    note: str
+
+
+def test_sanitize_strips_bounds_and_adds_additional_properties() -> None:
+    san = sanitize_json_schema(_Bounded.model_json_schema())
+    assert san["additionalProperties"] is False
+    conf = san["properties"]["confidence"]
+    assert "minimum" not in conf and "maximum" not in conf
+    # Pydantic still enforces the bound client-side — the model is the real validator.
+    with pytest.raises(ValueError):
+        _Bounded(confidence=2.0, note="x")
+
+
+def test_sanitize_recurses_into_nested_objects() -> None:
+    schema = {
+        "type": "object",
+        "properties": {
+            "inner": {
+                "type": "object",
+                "properties": {"n": {"type": "integer", "minimum": 0}},
+            }
+        },
+    }
+    san = sanitize_json_schema(schema)
+    assert san["additionalProperties"] is False
+    assert san["properties"]["inner"]["additionalProperties"] is False
+    assert "minimum" not in san["properties"]["inner"]["properties"]["n"]
 
 
 def _fake_transport(texts: list[str], calls: list[int]) -> object:

@@ -224,6 +224,45 @@ def _prompt_sha256(prompt: str) -> str:
     return hashlib.sha256(prompt.encode("utf-8")).hexdigest()
 
 
+# Structured-output schema constraints Anthropic rejects: numeric/length/array bounds and
+# patterns. We strip them from the schema sent to the API but keep the full Pydantic model
+# for validation, so e.g. ``confidence: float = Field(ge=0, le=1)`` is still enforced
+# client-side — the harness's own validation is the teeth, the API schema only shapes output.
+_UNSUPPORTED_SCHEMA_KEYS = frozenset(
+    {
+        "minimum",
+        "maximum",
+        "exclusiveMinimum",
+        "exclusiveMaximum",
+        "multipleOf",
+        "minLength",
+        "maxLength",
+        "minItems",
+        "maxItems",
+        "uniqueItems",
+        "pattern",
+    }
+)
+
+
+def sanitize_json_schema(node: Any) -> Any:
+    """Recursively (a) set ``additionalProperties: false`` on every object with properties
+    and (b) drop constraint keywords the structured-outputs API rejects. Pure — returns a new
+    structure; the caller's Pydantic model is untouched and remains the real validator."""
+    if isinstance(node, dict):
+        out = {
+            k: sanitize_json_schema(v)
+            for k, v in node.items()
+            if k not in _UNSUPPORTED_SCHEMA_KEYS
+        }
+        if out.get("type") == "object" and "properties" in out:
+            out["additionalProperties"] = False
+        return out
+    if isinstance(node, list):
+        return [sanitize_json_schema(v) for v in node]
+    return node
+
+
 @dataclass
 class LlmHarness:
     """Prompt-in, validated-object-out, cache-first. ``live=False`` (the default) replays and
@@ -284,7 +323,7 @@ class LlmHarness:
             prompt=prompt,
             max_tokens=self.max_tokens,
             schema_name=schema.__name__,
-            json_schema=schema.model_json_schema(),
+            json_schema=sanitize_json_schema(schema.model_json_schema()),
         )
 
         last_error: ValidationError | None = None
