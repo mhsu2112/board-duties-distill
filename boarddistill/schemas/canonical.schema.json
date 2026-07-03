@@ -298,6 +298,18 @@
         "snapshot_dates": {
           "$ref": "#/$defs/SnapshotDates"
         },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        },
         "source_citations": {
           "items": {
             "type": "string"

@@ -178,10 +178,41 @@ class Fetcher:
 
         response = self.client.get(url)
         response.raise_for_status()
-        text = response.text
-        sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
-        filename = f"{_url_key(url)}.html"
+        return self._store(url, source_id, response.text, title, notes, ext="html")
 
+    def fetch_extracted(
+        self,
+        url: str,
+        source_id: str,
+        transform: Callable[[bytes], str],
+        *,
+        title: str | None = None,
+        notes: str | None = None,
+        force: bool = False,
+    ) -> CachedDocument:
+        """Fetch a binary document (e.g. a PDF), apply ``transform`` to the raw bytes, and
+        cache the *extracted text* — so replay is text-based and byte-identical."""
+        check_allowed(url)
+        if not force:
+            hit = self.cached(url, source_id)
+            if hit is not None:
+                return hit
+        response = self.client.get(url)
+        response.raise_for_status()
+        return self._store(url, source_id, transform(response.content), title, notes, ext="txt")
+
+    def _store(
+        self,
+        url: str,
+        source_id: str,
+        text: str,
+        title: str | None,
+        notes: str | None,
+        *,
+        ext: str,
+    ) -> CachedDocument:
+        sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        filename = f"{_url_key(url)}.{ext}"
         src_dir = self.cache_root / source_id
         src_dir.mkdir(parents=True, exist_ok=True)
         (src_dir / filename).write_text(text)

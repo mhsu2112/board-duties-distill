@@ -75,6 +75,7 @@ class DutySpec(SnapshotBearing):
     label: str
     layer: Layer
     cluster: str | None = None
+    source: str | None = None
     board_level: str
     director_class: str
     entity: Entity

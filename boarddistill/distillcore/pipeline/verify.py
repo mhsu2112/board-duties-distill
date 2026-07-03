@@ -135,13 +135,19 @@ class CitationVerdict:
     as_of_valid: bool
     support_signal: str  # "strong" | "weak" | "none" | "n/a"
     span: SourceSpan | None
+    anchor_matched: bool = False  # True when the span was located by fuzzy anchor match
 
 
 class SourceResolver(Protocol):
     """Resolves a citation to primary-source evidence. The live (network) implementation
-    lives in an adapter; the core only depends on this protocol."""
+    lives in an adapter; the core only depends on this protocol.
 
-    def verify(self, citation: str, *, expected_actor: str) -> CitationVerdict: ...
+    ``source`` (the citing instrument, e.g. an SR-letter name) and ``anchor`` (the duty's
+    paraphrased text) support guidance-document resolution by anchor match."""
+
+    def verify(
+        self, citation: str, *, expected_actor: str, source: str = "", anchor: str = ""
+    ) -> CitationVerdict: ...
 
 
 @dataclass(frozen=True)
@@ -164,7 +170,12 @@ def verify_targets(
         citation = str(duty.get("instrument_id") or "")
         claims = duty.get("claims") or []
         claim_id = claims[0]["id"] if claims else f"claim-{duty['duty_id']}"
-        verdict = resolver.verify(citation, expected_actor=str(duty.get("board_level") or ""))
+        verdict = resolver.verify(
+            citation,
+            expected_actor=str(duty.get("board_level") or ""),
+            source=str(duty.get("source") or ""),
+            anchor=str(duty.get("object") or ""),
+        )
         record = VerifierRecord(
             id=f"v-{claim_id}",
             claim_id=claim_id,

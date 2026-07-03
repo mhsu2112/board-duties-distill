@@ -104,7 +104,9 @@ class EcfrResolver:
     fetcher: Fetcher
     as_of: str = "2026-06-30"
 
-    def verify(self, citation: str, *, expected_actor: str) -> CitationVerdict:
+    def verify(
+        self, citation: str, *, expected_actor: str, source: str = "", anchor: str = ""
+    ) -> CitationVerdict:
         cite = first_resolvable(citation)
         if isinstance(cite, CfrCite):
             return self._verify_cfr(cite, expected_actor)
