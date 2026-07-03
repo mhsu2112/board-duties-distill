@@ -308,6 +308,37 @@ def b4_apply(
     )
 
 
+@app.command("b4-graph")
+def b4_graph(
+    graph: Annotated[
+        Path, typer.Option("--graph", help="Instrument graph v1 json.")
+    ] = Path("data/graph/us-gsib_v1.json"),
+    out: Annotated[
+        Path, typer.Option("--out", help="Extended graph output path.")
+    ] = Path("data/graph/us-gsib_v2.json"),
+) -> None:
+    """B4-T4: extend instrument-graph v1 with grounded concept nodes for the lever operands."""
+    import json
+
+    from adapters.concept_graph import extended_graph_document
+
+    base_doc = json.loads(graph.read_text())
+    doc = extended_graph_document(base_doc)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    cov = doc["coverage"]
+    typer.echo(f"[boarddistill] concept-extended graph -> {out}")
+    typer.echo(
+        f"  concept nodes: {cov['concept_nodes']} · groundings all verified: "
+        f"{cov['grounded_all_verified']} · B0 concept operands answered: "
+        f"{cov['b0_concept_operands_answered']}/{cov['b0_concept_operands_total']}"
+    )
+    if not cov["grounded_all_verified"]:
+        typer.echo("  ⚠ some concept grounding quote did not resolve to cache", err=True)
+        raise typer.Exit(code=1)
+
+
 @app.command("b4-repin")
 def b4_repin(
     out: Annotated[Path, typer.Option("--out", help="B4 output directory.")] = Path("outputs/b4"),

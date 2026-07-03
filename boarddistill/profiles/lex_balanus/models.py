@@ -92,8 +92,24 @@ class DutySpec(SnapshotBearing):
     confidence: float = Field(ge=0.0, le=1.0)
 
 
+class ConceptGrounding(StrictModel):
+    """Span evidence tying a ``concept_ref`` node to an underlying instrument node (B4-T4).
+
+    A concept node is never free-floating: every one carries ≥1 grounding whose ``quote`` is a
+    verbatim span from ``source_id``'s cached text, pinning the concept to a real instrument."""
+
+    instrument_id: str  # id of the underlying InstrumentNode
+    source_id: str  # cached source the quote is drawn from
+    quote: str  # verbatim span evidence
+
+
 class InstrumentNode(StrictModel):
-    """A node in the instrument hierarchy graph. Structurally a core ``BaselineNode``."""
+    """A node in the instrument hierarchy graph. Structurally a core ``BaselineNode``.
+
+    ``kind == "concept_ref"`` marks a B4-T4 concept node — an operand-level concept the reform
+    levers cite (e.g. ``SOX-404b-attestation``) that no single duty row carries. It ``bears_on``
+    the concept operand string(s) so ``baseline_for`` can answer for the levers, and is
+    ``grounded_to`` its underlying instrument node(s) with span evidence."""
 
     id: str
     citation: str
@@ -104,6 +120,8 @@ class InstrumentNode(StrictModel):
     treatment_date: date | None = None
     treatment_evidence: str | None = None
     bears_on: list[str] = Field(default_factory=list)
+    kind: Literal["instrument", "concept_ref"] = "instrument"
+    grounded_to: list[ConceptGrounding] = Field(default_factory=list)
 
 
 class InstrumentEdge(StrictModel):
