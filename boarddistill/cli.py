@@ -280,9 +280,9 @@ def b3_apply(
 
 @app.command("b4-apply")
 def b4_apply(
-    findings: Annotated[
-        Path, typer.Option("--findings", help="B3-T4 findings.json.")
-    ] = Path("outputs/b3/findings.json"),
+    findings: Annotated[Path, typer.Option("--findings", help="B3-T4 findings.json.")] = Path(
+        "outputs/b3/findings.json"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B4 output directory.")] = Path("outputs/b4"),
 ) -> None:
     """B4-T0: write back the B3 dispositions (f-D1…f-D9, AUD-07, the 18 diagnostics)."""
@@ -310,12 +310,12 @@ def b4_apply(
 
 @app.command("b4-graph")
 def b4_graph(
-    graph: Annotated[
-        Path, typer.Option("--graph", help="Instrument graph v1 json.")
-    ] = Path("data/graph/us-gsib_v1.json"),
-    out: Annotated[
-        Path, typer.Option("--out", help="Extended graph output path.")
-    ] = Path("data/graph/us-gsib_v2.json"),
+    graph: Annotated[Path, typer.Option("--graph", help="Instrument graph v1 json.")] = Path(
+        "data/graph/us-gsib_v1.json"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="Extended graph output path.")] = Path(
+        "data/graph/us-gsib_v2.json"
+    ),
 ) -> None:
     """B4-T4: extend instrument-graph v1 with grounded concept nodes for the lever operands."""
     import json
@@ -370,9 +370,9 @@ def b4_aud07(
     distilled: Annotated[
         Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
     ] = Path("outputs/b3/as_built_distilled.json"),
-    retags: Annotated[
-        Path, typer.Option("--retags", help="b2 retags.json.")
-    ] = Path("outputs/b2/retags.json"),
+    retags: Annotated[Path, typer.Option("--retags", help="b2 retags.json.")] = Path(
+        "outputs/b2/retags.json"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B4 output directory.")] = Path("outputs/b4"),
 ) -> None:
     """B4-T1: apply the AUD-07 resolution (board oversight; certify→CEO/CFO)."""
@@ -406,12 +406,12 @@ def b3_distill(
     import_json: Annotated[
         Path, typer.Option("--import", help="imported_duties.json (draft specs).")
     ] = Path("outputs/import/imported_duties.json"),
-    retags: Annotated[
-        Path, typer.Option("--retags", help="b2 retags.json.")
-    ] = Path("outputs/b2/retags.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    retags: Annotated[Path, typer.Option("--retags", help="b2 retags.json.")] = Path(
+        "outputs/b2/retags.json"
+    ),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
@@ -452,15 +452,126 @@ def b3_distill(
         )
 
 
+@app.command("b5-corpus")
+def b5_corpus(
+    waves_json: Annotated[Path, typer.Option("--waves")] = Path("outputs/b5/waves.json"),
+    targets: Annotated[Path, typer.Option("--targets")] = Path("outputs/b1/targets.json"),
+    import_json: Annotated[Path, typer.Option("--import")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
+    decompositions: Annotated[Path, typer.Option("--decompositions")] = Path(
+        "outputs/b5/corpus/lever_decompositions.json"
+    ),
+    b0: Annotated[Path, typer.Option("--b0")] = Path("../b0_decompositions.json"),
+    mvp_findings: Annotated[Path, typer.Option("--mvp-findings")] = Path(
+        "outputs/b4/findings.json"
+    ),
+    mvp_distilled: Annotated[Path, typer.Option("--mvp-distilled")] = Path(
+        "outputs/b4/as_built_distilled.json"
+    ),
+    graph: Annotated[Path, typer.Option("--graph")] = Path("data/graph/us-gsib_v3.json"),
+    cache: Annotated[Path, typer.Option("--cache")] = Path("data/sources"),
+    out: Annotated[Path, typer.Option("--out")] = Path("outputs/b5/corpus"),
+    packet: Annotated[Path, typer.Option("--packet")] = Path("../REVIEW_PACKET_B5.md"),
+) -> None:
+    """B5-T6: build the corpus roll-up — master crosswalk, reform roadmap v2, stats, packet."""
+    import json
+    from collections import Counter
+
+    from adapters.b5_corpus import (
+        b5_lever_records,
+        corpus_stats_md,
+        master_crosswalk_md,
+        mvp_levers,
+        reform_roadmap_v2_md,
+        review_packet_b5_md,
+    )
+    from adapters.b5_graph import all_corpus_rows
+    from adapters.resolvers import build_resolver
+    from adapters.retrieval import Fetcher, offline_client
+
+    waves_doc = json.loads(waves_json.read_text())
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    mvp_targets = json.loads(targets.read_text())["targets"]
+    corpus_rows = all_corpus_rows(
+        mvp_targets, waves_doc, drafts, build_resolver(Fetcher(cache, offline_client()))
+    )
+
+    decs = json.loads(b0.read_text())["decompositions"]
+    mvp_f = json.loads(mvp_findings.read_text())["findings"]
+    b5_decomp = json.loads(decompositions.read_text())
+    cluster_to_wave = {c: w["wave"] for w in waves_doc["waves"] for c in w["clusters"]}
+
+    levers = mvp_levers(decs, mvp_f) + b5_lever_records(b5_decomp["levers"], cluster_to_wave)
+    levers_by_cluster = {x["cluster"]: x for x in levers}
+
+    # verb standards + findings + finding_kind across MVP (b4) and all B5 waves
+    verb_standards: dict[str, str] = {}
+    all_findings: list[dict[str, object]] = []
+    finding_kind: dict[str, str] = {}
+    for row in json.loads(mvp_distilled.read_text())["rows"]:
+        verb_standards[row["duty_id"]] = row["distilled"]["verb_standard"]
+    mvp_fdoc = json.loads(mvp_findings.read_text())
+    all_findings += mvp_fdoc["findings"]
+    finding_kind.update(mvp_fdoc.get("finding_kind", {}))
+    for w in waves_doc["waves"]:
+        wd = out.parent / w["wave"]
+        dist = json.loads((wd / "as_built_distilled.json").read_text())
+        for row in dist["rows"]:
+            verb_standards[row["duty_id"]] = row["distilled"]["verb_standard"]
+        fdoc = json.loads((wd / "findings.json").read_text())
+        all_findings += fdoc["findings"]
+        finding_kind.update(fdoc.get("finding_kind", {}))
+
+    residual_taxonomy = dict(
+        Counter(
+            (r.verdict.note or "").split(";")[0].split("(")[0].strip()[:60]
+            for r in corpus_rows
+            if r.record.status != "verified"
+        )
+    )
+    floor_candidates = b5_decomp["statutory_floor_candidates"]["candidates"]
+    totals: dict[str, int] = dict(Counter(str(r.record.status) for r in corpus_rows))
+    totals["rows"] = len(corpus_rows)
+    wave_rates: dict[str, tuple[int, int]] = {}
+    for w in waves_doc["waves"]:
+        v = json.loads((out.parent / w["wave"] / "verification.json").read_text())
+        s = v["summary"]
+        wave_rates[w["wave"]] = (s.get("verified", 0), sum(s.values()))
+
+    graph_doc = json.loads(graph.read_text())
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "master_crosswalk.md").write_text(
+        master_crosswalk_md(corpus_rows, levers_by_cluster, drafts)
+    )
+    (out / "reform_roadmap_v2.md").write_text(reform_roadmap_v2_md(levers))
+    (out / "corpus_stats.md").write_text(
+        corpus_stats_md(
+            corpus_rows, graph_doc, verb_standards, all_findings, finding_kind, residual_taxonomy
+        )
+    )
+    packet.write_text(
+        review_packet_b5_md(levers, floor_candidates, residual_taxonomy, totals, wave_rates)
+    )
+    typer.echo("[boarddistill] B5-T6 corpus roll-up:")
+    typer.echo(
+        f"  levers: {len(levers)} (MVP {len(decs)} + B5 {len(b5_decomp['levers'])}) · "
+        f"verified {totals.get('verified', 0)}/{totals['rows']} · "
+        f"floor candidates {len(floor_candidates)}"
+    )
+    typer.echo(f"  wrote {out}/master_crosswalk.md, reform_roadmap_v2.md, corpus_stats.md")
+    typer.echo(f"  wrote {packet}")
+
+
 @app.command("b5-package")
 def b5_package(
     wave: Annotated[str, typer.Option("--wave", help="Wave slug, or 'all'.")] = "all",
-    waves_json: Annotated[
-        Path, typer.Option("--waves", help="B5-T1 waves.json.")
-    ] = Path("outputs/b5/waves.json"),
-    graph: Annotated[
-        Path, typer.Option("--graph", help="Corpus instrument graph.")
-    ] = Path("data/graph/us-gsib_v3.json"),
+    waves_json: Annotated[Path, typer.Option("--waves", help="B5-T1 waves.json.")] = Path(
+        "outputs/b5/waves.json"
+    ),
+    graph: Annotated[Path, typer.Option("--graph", help="Corpus instrument graph.")] = Path(
+        "data/graph/us-gsib_v3.json"
+    ),
     decompositions: Annotated[
         Path, typer.Option("--decompositions", help="B5-T4 lever_decompositions.json.")
     ] = Path("outputs/b5/corpus/lever_decompositions.json"),
@@ -498,15 +609,15 @@ def b5_package(
 
 @app.command("b5-decompose")
 def b5_decompose(
-    inventory: Annotated[
-        Path, typer.Option("--inventory", help="Combined inventory xlsx.")
-    ] = Path("../Synthesis/gsib-board_duties-combined_inventory.xlsx"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
-    out: Annotated[
-        Path, typer.Option("--out", help="B5 corpus output directory.")
-    ] = Path("outputs/b5/corpus"),
+    inventory: Annotated[Path, typer.Option("--inventory", help="Combined inventory xlsx.")] = Path(
+        "../Synthesis/gsib-board_duties-combined_inventory.xlsx"
+    ),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="B5 corpus output directory.")] = Path(
+        "outputs/b5/corpus"
+    ),
     max_calls: Annotated[int, typer.Option("--max-calls", help="LLM call ceiling.")] = 40,
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
@@ -548,9 +659,9 @@ def b5_decompose(
 
 @app.command("b5-waves")
 def b5_waves(
-    import_json: Annotated[
-        Path, typer.Option("--import", help="imported_duties.json.")
-    ] = Path("outputs/import/imported_duties.json"),
+    import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
 ) -> None:
     """B5-T1: partition the ~155 non-MVP rows into domain waves (deterministic)."""
@@ -580,12 +691,12 @@ def b5_verify(
     wave: Annotated[
         str, typer.Option("--wave", help="Wave slug, or 'all' for every wave.")
     ] = "all",
-    waves_json: Annotated[
-        Path, typer.Option("--waves", help="B5-T1 waves.json.")
-    ] = Path("outputs/b5/waves.json"),
-    import_json: Annotated[
-        Path, typer.Option("--import", help="imported_duties.json.")
-    ] = Path("outputs/import/imported_duties.json"),
+    waves_json: Annotated[Path, typer.Option("--waves", help="B5-T1 waves.json.")] = Path(
+        "outputs/b5/waves.json"
+    ),
+    import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
     cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
         "data/sources"
     ),
@@ -638,15 +749,15 @@ def b5_verify(
 
 @app.command("b5-graph")
 def b5_graph_cmd(
-    waves_json: Annotated[
-        Path, typer.Option("--waves", help="B5-T1 waves.json.")
-    ] = Path("outputs/b5/waves.json"),
-    targets: Annotated[
-        Path, typer.Option("--targets", help="MVP targets.json.")
-    ] = Path("outputs/b1/targets.json"),
-    import_json: Annotated[
-        Path, typer.Option("--import", help="imported_duties.json.")
-    ] = Path("outputs/import/imported_duties.json"),
+    waves_json: Annotated[Path, typer.Option("--waves", help="B5-T1 waves.json.")] = Path(
+        "outputs/b5/waves.json"
+    ),
+    targets: Annotated[Path, typer.Option("--targets", help="MVP targets.json.")] = Path(
+        "outputs/b1/targets.json"
+    ),
+    import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
     cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
         "data/sources"
     ),
@@ -704,19 +815,17 @@ def b5_graph_cmd(
 @app.command("b5-distill")
 def b5_distill(
     wave: Annotated[str, typer.Option("--wave", help="Wave slug, or 'all'.")] = "all",
-    waves_json: Annotated[
-        Path, typer.Option("--waves", help="B5-T1 waves.json.")
-    ] = Path("outputs/b5/waves.json"),
-    import_json: Annotated[
-        Path, typer.Option("--import", help="imported_duties.json.")
-    ] = Path("outputs/import/imported_duties.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    waves_json: Annotated[Path, typer.Option("--waves", help="B5-T1 waves.json.")] = Path(
+        "outputs/b5/waves.json"
+    ),
+    import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
-    max_calls: Annotated[
-        int, typer.Option("--max-calls", help="Per-wave LLM call ceiling.")
-    ] = 60,
+    max_calls: Annotated[int, typer.Option("--max-calls", help="Per-wave LLM call ceiling.")] = 60,
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
     ] = False,
@@ -756,12 +865,12 @@ def b5_distill(
 @app.command("b5-diagnose")
 def b5_diagnose(
     wave: Annotated[str, typer.Option("--wave", help="Wave slug, or 'all'.")] = "all",
-    waves_json: Annotated[
-        Path, typer.Option("--waves", help="B5-T1 waves.json.")
-    ] = Path("outputs/b5/waves.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    waves_json: Annotated[Path, typer.Option("--waves", help="B5-T1 waves.json.")] = Path(
+        "outputs/b5/waves.json"
+    ),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
     max_calls: Annotated[int, typer.Option("--max-calls", help="Per-wave LLM call ceiling.")] = 20,
     live: Annotated[
@@ -804,15 +913,15 @@ def b5_redistill(
     import_json: Annotated[
         Path, typer.Option("--import", help="imported_duties.json (draft specs).")
     ] = Path("outputs/import/imported_duties.json"),
-    retags: Annotated[
-        Path, typer.Option("--retags", help="b2 retags.json.")
-    ] = Path("outputs/b2/retags.json"),
+    retags: Annotated[Path, typer.Option("--retags", help="b2 retags.json.")] = Path(
+        "outputs/b2/retags.json"
+    ),
     distilled: Annotated[
         Path, typer.Option("--distilled", help="MVP as_built_distilled.json to merge into.")
     ] = Path("outputs/b4/as_built_distilled.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
@@ -852,9 +961,9 @@ def b5_redistill(
 
 @app.command("b5-retry-residuals")
 def b5_retry_residuals(
-    import_json: Annotated[
-        Path, typer.Option("--import", help="imported_duties.json.")
-    ] = Path("outputs/import/imported_duties.json"),
+    import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
     cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
         "data/sources"
     ),
@@ -886,9 +995,9 @@ def b3_intended(
     import_json: Annotated[
         Path, typer.Option("--import", help="imported_duties.json (draft specs).")
     ] = Path("outputs/import/imported_duties.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
@@ -932,21 +1041,21 @@ def b3_diagnose(
     import_json: Annotated[
         Path, typer.Option("--import", help="imported_duties.json (draft specs).")
     ] = Path("outputs/import/imported_duties.json"),
-    intended: Annotated[
-        Path, typer.Option("--intended", help="B3-T3 intended.json.")
-    ] = Path("outputs/b3/intended.json"),
+    intended: Annotated[Path, typer.Option("--intended", help="B3-T3 intended.json.")] = Path(
+        "outputs/b3/intended.json"
+    ),
     distilled: Annotated[
         Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
     ] = Path("outputs/b3/as_built_distilled.json"),
     verification: Annotated[
         Path, typer.Option("--verification", help="b2 verification.json.")
     ] = Path("outputs/b2/verification.json"),
-    graph: Annotated[
-        Path, typer.Option("--graph", help="Instrument graph json.")
-    ] = Path("data/graph/us-gsib_v1.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    graph: Annotated[Path, typer.Option("--graph", help="Instrument graph json.")] = Path(
+        "data/graph/us-gsib_v1.json"
+    ),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
     live: Annotated[
         bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
@@ -1006,18 +1115,18 @@ def b3_package(
     distilled: Annotated[
         Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
     ] = Path("outputs/b3/as_built_distilled.json"),
-    intended: Annotated[
-        Path, typer.Option("--intended", help="B3-T3 intended.json.")
-    ] = Path("outputs/b3/intended.json"),
-    findings: Annotated[
-        Path, typer.Option("--findings", help="B3-T4 findings.json.")
-    ] = Path("outputs/b3/findings.json"),
+    intended: Annotated[Path, typer.Option("--intended", help="B3-T3 intended.json.")] = Path(
+        "outputs/b3/intended.json"
+    ),
+    findings: Annotated[Path, typer.Option("--findings", help="B3-T4 findings.json.")] = Path(
+        "outputs/b3/findings.json"
+    ),
     verification: Annotated[
         Path, typer.Option("--verification", help="b2 verification.json.")
     ] = Path("outputs/b2/verification.json"),
-    graph: Annotated[
-        Path, typer.Option("--graph", help="Instrument graph json.")
-    ] = Path("data/graph/us-gsib_v1.json"),
+    graph: Annotated[Path, typer.Option("--graph", help="Instrument graph json.")] = Path(
+        "data/graph/us-gsib_v1.json"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
 ) -> None:
     """B3-T5: render the three per-cluster consolidation packages (deterministic)."""
@@ -1046,21 +1155,21 @@ def b3_eval_cmd(
     decompositions: Annotated[
         Path, typer.Option("--decompositions", help="b0_decompositions.json.")
     ] = Path("../b0_decompositions.json"),
-    import_json: Annotated[
-        Path, typer.Option("--import", help="imported_duties.json.")
-    ] = Path("outputs/import/imported_duties.json"),
+    import_json: Annotated[Path, typer.Option("--import", help="imported_duties.json.")] = Path(
+        "outputs/import/imported_duties.json"
+    ),
     distilled: Annotated[
         Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
     ] = Path("outputs/b3/as_built_distilled.json"),
-    findings: Annotated[
-        Path, typer.Option("--findings", help="B3-T4 findings.json.")
-    ] = Path("outputs/b3/findings.json"),
+    findings: Annotated[Path, typer.Option("--findings", help="B3-T4 findings.json.")] = Path(
+        "outputs/b3/findings.json"
+    ),
     verification: Annotated[
         Path, typer.Option("--verification", help="b2 verification.json.")
     ] = Path("outputs/b2/verification.json"),
-    cache: Annotated[
-        Path, typer.Option("--cache", help="LLM response cache directory.")
-    ] = Path("data/llm_cache"),
+    cache: Annotated[Path, typer.Option("--cache", help="LLM response cache directory.")] = Path(
+        "data/llm_cache"
+    ),
     out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
     samples: Annotated[int, typer.Option("--samples", help="Stability samples per stage.")] = 3,
     live: Annotated[
