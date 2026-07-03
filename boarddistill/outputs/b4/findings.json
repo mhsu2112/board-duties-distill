@@ -1,0 +1,1075 @@
+{
+  "_meta": "B3-T4 diagnose + classify. Consolidation findings (one per B0 lever) and LLM diagnostics per MVP cluster; every effect class computed by the mechanical classifier after the LLM, never by the LLM. Normative kinds are proposals; nothing finalized.",
+  "anchor_failures": [],
+  "counts": {
+    "anchor_failures": 0,
+    "consolidation_findings": 9,
+    "diagnostic_findings": 29,
+    "effect_classes": {
+      "change": 6,
+      "clarify": 1,
+      "codify": 1,
+      "fill_gap": 1,
+      "unresolved": 29
+    },
+    "in_review": 37
+  },
+  "duplicate_divergence": {
+    "agreed": [],
+    "b0_only": [
+      [
+        "b:RGC-01",
+        "b:RGC-02"
+      ],
+      [
+        "b:RGC-01",
+        "b:RGC-03"
+      ],
+      [
+        "b:RGC-01",
+        "b:RGC-04"
+      ],
+      [
+        "b:RGC-01",
+        "b:RGC-05"
+      ],
+      [
+        "b:RGC-02",
+        "b:RGC-03"
+      ],
+      [
+        "b:RGC-02",
+        "b:RGC-04"
+      ],
+      [
+        "b:RGC-02",
+        "b:RGC-05"
+      ],
+      [
+        "b:RGC-02",
+        "b:RGC-07"
+      ],
+      [
+        "b:RGC-03",
+        "b:RGC-04"
+      ],
+      [
+        "b:RGC-03",
+        "b:RGC-05"
+      ],
+      [
+        "b:RGC-04",
+        "b:RGC-05"
+      ]
+    ],
+    "counts": {
+      "agreed": 0,
+      "b0_only": 11,
+      "llm_only": 35
+    },
+    "llm_only": [
+      [
+        "b:AUD-01",
+        "b:AUD-02"
+      ],
+      [
+        "b:AUD-01",
+        "b:AUD-03"
+      ],
+      [
+        "b:AUD-02",
+        "b:AUD-03"
+      ],
+      [
+        "b:CAP-02",
+        "b:CAP-03"
+      ],
+      [
+        "b:CAP-02",
+        "s:CAP-02"
+      ],
+      [
+        "b:CAP-02",
+        "s:CAP-09"
+      ],
+      [
+        "b:CAP-03",
+        "s:CAP-02"
+      ],
+      [
+        "b:CAP-03",
+        "s:CAP-09"
+      ],
+      [
+        "b:RGC-07",
+        "b:RGC-10"
+      ],
+      [
+        "b:RGC-10",
+        "s:GOV-27"
+      ],
+      [
+        "s:CAP-01",
+        "s:CAP-03"
+      ],
+      [
+        "s:CAP-01",
+        "s:CAP-04"
+      ],
+      [
+        "s:CAP-01",
+        "s:CAP-06"
+      ],
+      [
+        "s:CAP-01",
+        "s:CAP-07"
+      ],
+      [
+        "s:CAP-01",
+        "s:CAP-08"
+      ],
+      [
+        "s:CAP-02",
+        "s:CAP-09"
+      ],
+      [
+        "s:CAP-03",
+        "s:CAP-04"
+      ],
+      [
+        "s:CAP-03",
+        "s:CAP-06"
+      ],
+      [
+        "s:CAP-03",
+        "s:CAP-07"
+      ],
+      [
+        "s:CAP-03",
+        "s:CAP-08"
+      ],
+      [
+        "s:CAP-04",
+        "s:CAP-06"
+      ],
+      [
+        "s:CAP-04",
+        "s:CAP-07"
+      ],
+      [
+        "s:CAP-04",
+        "s:CAP-08"
+      ],
+      [
+        "s:CAP-06",
+        "s:CAP-07"
+      ],
+      [
+        "s:CAP-06",
+        "s:CAP-08"
+      ],
+      [
+        "s:CAP-07",
+        "s:CAP-08"
+      ],
+      [
+        "s:GOV-03",
+        "s:GOV-04"
+      ],
+      [
+        "s:GOV-03",
+        "s:GOV-09"
+      ],
+      [
+        "s:GOV-03",
+        "s:GOV-13"
+      ],
+      [
+        "s:GOV-04",
+        "s:GOV-09"
+      ],
+      [
+        "s:GOV-04",
+        "s:GOV-13"
+      ],
+      [
+        "s:GOV-09",
+        "s:GOV-13"
+      ],
+      [
+        "s:STR-01",
+        "s:STR-03"
+      ],
+      [
+        "s:STR-01",
+        "s:STR-04"
+      ],
+      [
+        "s:STR-03",
+        "s:STR-04"
+      ]
+    ]
+  },
+  "duplication_families": {
+    "mirror_pair": {
+      "count": 11,
+      "finding_ids": [
+        "dx-mp-0",
+        "dx-mp-1",
+        "dx-mp-10",
+        "dx-mp-2",
+        "dx-mp-3",
+        "dx-mp-4",
+        "dx-mp-5",
+        "dx-mp-6",
+        "dx-mp-7",
+        "dx-mp-8",
+        "dx-mp-9"
+      ]
+    },
+    "restatement": {
+      "count": 8,
+      "finding_ids": [
+        "dx-aud-0",
+        "dx-cap-0",
+        "dx-cap-1",
+        "dx-cap-2",
+        "dx-ris-0",
+        "dx-ris-1",
+        "dx-ris-2",
+        "dx-ris-3"
+      ]
+    }
+  },
+  "finding_cluster": {
+    "dx-aud-0": "Audit committee & independence",
+    "dx-cap-0": "Capital planning & stress testing",
+    "dx-cap-1": "Capital planning & stress testing",
+    "dx-cap-2": "Capital planning & stress testing",
+    "dx-cap-3": "Capital planning & stress testing",
+    "dx-cap-4": "Capital planning & stress testing",
+    "dx-cap-5": "Capital planning & stress testing",
+    "dx-cap-6": "Capital planning & stress testing",
+    "dx-mp-0": "Risk-governance framework / strategy",
+    "dx-mp-1": "Risk-governance framework / strategy",
+    "dx-mp-10": "Risk-governance framework / strategy",
+    "dx-mp-2": "Risk-governance framework / strategy",
+    "dx-mp-3": "Risk-governance framework / strategy",
+    "dx-mp-4": "Risk-governance framework / strategy",
+    "dx-mp-5": "Risk-governance framework / strategy",
+    "dx-mp-6": "Risk-governance framework / strategy",
+    "dx-mp-7": "Risk-governance framework / strategy",
+    "dx-mp-8": "Risk-governance framework / strategy",
+    "dx-mp-9": "Risk-governance framework / strategy",
+    "dx-ris-0": "Risk-governance framework / strategy",
+    "dx-ris-1": "Risk-governance framework / strategy",
+    "dx-ris-2": "Risk-governance framework / strategy",
+    "dx-ris-3": "Risk-governance framework / strategy",
+    "dx-ris-4": "Risk-governance framework / strategy",
+    "dx-ris-5": "Risk-governance framework / strategy",
+    "dx-ris-6": "Risk-governance framework / strategy",
+    "dx-ris-7": "Risk-governance framework / strategy",
+    "dx-ris-8": "Risk-governance framework / strategy",
+    "dx-ris-9": "Risk-governance framework / strategy",
+    "f-D1": "Risk-governance framework / strategy",
+    "f-D2": "Risk committee architecture",
+    "f-D3": "Audit committee & independence",
+    "f-D4": "Internal control over financial reporting",
+    "f-D5": "Capital planning & stress testing",
+    "f-D6": "Risk-governance framework / strategy",
+    "f-D7": "Risk-governance framework / strategy",
+    "f-D8": "cross-cutting (largest structural lever)",
+    "f-D9": "cross-cutting"
+  },
+  "finding_kind": {
+    "dx-aud-0": "restatement",
+    "dx-cap-0": "restatement",
+    "dx-cap-1": "restatement",
+    "dx-cap-2": "restatement",
+    "dx-cap-3": "undefined_term",
+    "dx-cap-4": "undefined_term",
+    "dx-cap-5": "actor_ambiguity",
+    "dx-cap-6": "actor_ambiguity",
+    "dx-mp-0": "mirror_pair",
+    "dx-mp-1": "mirror_pair",
+    "dx-mp-10": "mirror_pair",
+    "dx-mp-2": "mirror_pair",
+    "dx-mp-3": "mirror_pair",
+    "dx-mp-4": "mirror_pair",
+    "dx-mp-5": "mirror_pair",
+    "dx-mp-6": "mirror_pair",
+    "dx-mp-7": "mirror_pair",
+    "dx-mp-8": "mirror_pair",
+    "dx-mp-9": "mirror_pair",
+    "dx-ris-0": "restatement",
+    "dx-ris-1": "restatement",
+    "dx-ris-2": "rule_guidance_restatement",
+    "dx-ris-3": "restatement",
+    "dx-ris-4": "actor_ambiguity",
+    "dx-ris-5": "actor_ambiguity",
+    "dx-ris-6": "actor_ambiguity",
+    "dx-ris-7": "undefined_term",
+    "dx-ris-8": "undefined_term",
+    "dx-ris-9": "undefined_term"
+  },
+  "findings": [
+    {
+      "as_built_ref": "b:RGC-02",
+      "baseline": {
+        "citation": "12 CFR Part 252",
+        "end": null,
+        "id": "baseline-12-cfr-part-252",
+        "quote": null,
+        "source_id": "12-cfr-part-252",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "change",
+      "force_conversion_declared": false,
+      "id": "f-D1",
+      "intended_ref": "i:D1",
+      "normative_kind": [
+        "policy_choice",
+        "interagency_coordination"
+      ],
+      "operation_ids": [
+        "op-D1-0",
+        "op-D1-1",
+        "op-D1-2",
+        "op-D1-3"
+      ],
+      "provision": "One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation)",
+      "rationale": "Consolidation lever D1 (Risk-governance framework / strategy).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-02",
+      "baseline": {
+        "citation": "12 CFR Part 252",
+        "end": null,
+        "id": "baseline-12-cfr-part-252",
+        "quote": null,
+        "source_id": "12-cfr-part-252",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "change",
+      "force_conversion_declared": false,
+      "id": "f-D2",
+      "intended_ref": "i:D2",
+      "normative_kind": [
+        "statutory_constraint",
+        "interagency_coordination",
+        "policy_choice"
+      ],
+      "operation_ids": [
+        "op-D2-0",
+        "op-D2-1",
+        "op-D2-2",
+        "op-D2-3",
+        "op-D2-4"
+      ],
+      "provision": "One risk-committee standard at the consolidated level + streamlined IDI certification",
+      "rationale": "Consolidation lever D2 (Risk committee architecture).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "Part363+SOX301+exchange committee requirements",
+      "baseline": {
+        "citation": "D3 audit-committee requirements composite (Part 363 App. A + SOX 301 / Rule 10A-3 + SOX 404(b))",
+        "end": null,
+        "id": "baseline-concept-d3-committee-requirements",
+        "quote": null,
+        "source_id": "concept-d3-committee-requirements",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "change",
+      "force_conversion_declared": false,
+      "id": "f-D3",
+      "intended_ref": "i:D3",
+      "normative_kind": [
+        "interagency_coordination",
+        "statutory_constraint",
+        "policy_choice"
+      ],
+      "operation_ids": [
+        "op-D3-0",
+        "op-D3-1",
+        "op-D3-2",
+        "op-D3-3"
+      ],
+      "provision": "Single 'independent director' definition; one audit committee satisfies all regimes",
+      "rationale": "Consolidation lever D3 (Audit committee & independence).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "Part363-ICFR-assessment",
+      "baseline": {
+        "citation": "Part 363 ICFR management assessment (12 CFR 363.2)",
+        "end": null,
+        "id": "baseline-concept-part363-icfr-assessment",
+        "quote": null,
+        "source_id": "concept-part363-icfr-assessment",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "change",
+      "force_conversion_declared": false,
+      "id": "f-D4",
+      "intended_ref": "i:D4",
+      "normative_kind": [
+        "policy_choice",
+        "institutional_discretion"
+      ],
+      "operation_ids": [
+        "op-D4-0",
+        "op-D4-1",
+        "op-D4-2",
+        "op-D4-3"
+      ],
+      "provision": "SOX 404(b) satisfies FDICIA ICFR by cross-reference; align cycles",
+      "rationale": "Consolidation lever D4 (Internal control over financial reporting).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:CAP-02",
+      "baseline": {
+        "citation": "12 CFR Part 225",
+        "end": null,
+        "id": "baseline-12-cfr-part-225",
+        "quote": null,
+        "source_id": "12-cfr-part-225",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "clarify",
+      "force_conversion_declared": false,
+      "id": "f-D5",
+      "intended_ref": "i:D5",
+      "normative_kind": [
+        "supervisory_value_judgment"
+      ],
+      "operation_ids": [
+        "op-D5-0",
+        "op-D5-1",
+        "op-D5-2",
+        "op-D5-3",
+        "op-D5-4"
+      ],
+      "provision": "Separate board capital-action decisions from technical methodology reporting",
+      "rationale": "Consolidation lever D5 (Capital planning & stress testing).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:GOV-02..13 (SR 12-17 attributes)",
+      "baseline": {
+        "citation": "D6 SR 12-17 board-governance attributes",
+        "end": null,
+        "id": "baseline-concept-d6-sr1217-attributes",
+        "quote": null,
+        "source_id": "concept-d6-sr1217-attributes",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "change",
+      "force_conversion_declared": false,
+      "id": "f-D6",
+      "intended_ref": "i:D6",
+      "normative_kind": [
+        "policy_choice",
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [
+        "op-D6-0",
+        "op-D6-1",
+        "op-D6-2"
+      ],
+      "provision": "Codify SR 12-17 governance content into Reg YY; retire the letter",
+      "rationale": "Consolidation lever D6 (Risk-governance framework / strategy).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "AppD-III.F self-assessment",
+      "baseline": {
+        "citation": "D7 board-effectiveness assessment (App. D III.F self-assessment + SR 21-3)",
+        "end": null,
+        "id": "baseline-concept-d7-board-effectiveness",
+        "quote": null,
+        "source_id": "concept-d7-board-effectiveness",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "auto_ok",
+      "effect_class": "codify",
+      "force_conversion_declared": false,
+      "id": "f-D7",
+      "intended_ref": "i:D7",
+      "normative_kind": [],
+      "operation_ids": [
+        "op-D7-0",
+        "op-D7-1"
+      ],
+      "provision": "Single interagency board-effectiveness assessment",
+      "rationale": "Consolidation lever D7 (Risk-governance framework / strategy).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "<BHC_duty>",
+      "baseline": {
+        "citation": "D8 BHC/IDI vertical mirror (Reg YY risk committee \u2194 App. D)",
+        "end": null,
+        "id": "baseline-concept-d8-vertical-mirror",
+        "quote": null,
+        "source_id": "concept-d8-vertical-mirror",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "change",
+      "force_conversion_declared": false,
+      "id": "f-D8",
+      "intended_ref": "i:D8",
+      "normative_kind": [
+        "policy_choice"
+      ],
+      "operation_ids": [
+        "op-D8-0",
+        "op-D8-1",
+        "op-D8-2"
+      ],
+      "provision": "Vertical HC/IDI rationalization via expanded reliance accommodation (schema, per mirror pair)",
+      "rationale": "Consolidation lever D8 (cross-cutting (largest structural lever)).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-07",
+      "baseline": {
+        "citation": "12 CFR Part 30 App. D",
+        "end": null,
+        "id": "baseline-12-cfr-part-30-app-d",
+        "quote": null,
+        "source_id": "12-cfr-part-30-app-d",
+        "start": null
+      },
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "fill_gap",
+      "force_conversion_declared": false,
+      "id": "f-D9",
+      "intended_ref": "i:D9",
+      "normative_kind": [],
+      "operation_ids": [
+        "op-D9-0",
+        "op-D9-1",
+        "op-D9-2"
+      ],
+      "provision": "Recurring meta-duty (approve framework / review annually / receive reports) -> General Part",
+      "rationale": "Consolidation lever D9 (cross-cutting).",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-07",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-0",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "restatement :: b:RGC-07, b:RGC-10",
+      "rationale": "b:RGC-07 and b:RGC-10 are both binding-layer statements of the same approval obligation drawn from identical text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-10",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-1",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "restatement :: b:RGC-10, s:GOV-27",
+      "rationale": "s:GOV-27 restates the identical framework-approval obligation captured by b:RGC-10 from the same source passage.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:GOV-27",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-2",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "rule_guidance_restatement :: s:GOV-27, b:RGC-10",
+      "rationale": "The supervisory duty s:GOV-27 restates the binding rule duty b:RGC-10 verbatim without adding a new obligation.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:GOV-03",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-3",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "restatement :: s:GOV-03, s:GOV-04, s:GOV-09, s:GOV-13",
+      "rationale": "These four supervisory duties all draw the same director-nominee process obligation from an identical passage.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-07",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-4",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity",
+        "institutional_discretion"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: b:RGC-07",
+      "rationale": "The duty offers a choice between the full board and the risk committee without specifying which bears the approval obligation.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-10",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-5",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity",
+        "institutional_discretion"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: b:RGC-10",
+      "rationale": "The duty leaves open whether the board or its risk committee bears the approval obligation.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:GOV-27",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-6",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity",
+        "institutional_discretion"
+      ],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:GOV-27",
+      "rationale": "The duty does not settle which board body approves the framework.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-07",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-7",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:RGC-07",
+      "rationale": "The duty relies on the term 'independent risk management' without defining it in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-07",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-8",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: b:RGC-07",
+      "rationale": "The duty uses 'material activities' as a scoping term without defining it.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:GOV-32",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-ris-9",
+      "intended_ref": null,
+      "normative_kind": [
+        "interpretive_ambiguity",
+        "supervisory_value_judgment"
+      ],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:GOV-32",
+      "rationale": "The duty hinges on 'prudent credit underwriting practices' without defining what qualifies as prudent.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:AUD-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-aud-0",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: b:AUD-01, b:AUD-02, b:AUD-03",
+      "rationale": "These three duties quote the identical regulatory text stating the same composition requirement for large-institution audit committees.k, ...",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:CAP-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-0",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: b:CAP-02, b:CAP-03, s:CAP-02, s:CAP-09",
+      "rationale": "These duties all draw on the identical capital-policy definition excerpt and state the same content.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CAP-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-1",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: s:CAP-01, s:CAP-03, s:CAP-04, s:CAP-06, s:CAP-07, s:CAP-08",
+      "rationale": "These supervisory duties all restate the same protocol-and-escalation expectation from the identical excerpt.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:STR-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-2",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "restatement :: s:STR-01, s:STR-03, s:STR-04",
+      "rationale": "These three duties state the same expectation that stress testing results be considered for capital and liquidity decisions.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CAP-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-3",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:CAP-01",
+      "rationale": "The duty relies on 'real-time targeted capital level' and 'early warning metric' without defining them in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CAP-11",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-4",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "undefined_term :: s:CAP-11",
+      "rationale": "The duty refers to 'Category I standards' without defining the term in its own text.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:CAP-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-5",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:CAP-01",
+      "rationale": "The duty does not identify which board body (board, committee, or management) bears the obligation.,",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "s:STR-04",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-cap-6",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "actor_ambiguity :: s:STR-04",
+      "rationale": "The duty splits responsibility between senior management and the board without clearly assigning who bears it.,",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-0",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-01, b:RGC-02",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-01 \u2194 b:RGC-02. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-1",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-01, b:RGC-03",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-01 \u2194 b:RGC-03. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-2",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-01, b:RGC-04",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-01 \u2194 b:RGC-04. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-01",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-3",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-01, b:RGC-05",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-01 \u2194 b:RGC-05. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-4",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-02, b:RGC-03",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-02 \u2194 b:RGC-03. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-5",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-02, b:RGC-04",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-02 \u2194 b:RGC-04. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-6",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-02, b:RGC-05",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-02 \u2194 b:RGC-05. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-02",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-7",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-02, b:RGC-07",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-02 \u2194 b:RGC-07. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-03",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-8",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-03, b:RGC-04",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-03 \u2194 b:RGC-04. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-03",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-9",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-03, b:RGC-05",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-03 \u2194 b:RGC-05. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    },
+    {
+      "as_built_ref": "b:RGC-04",
+      "baseline": null,
+      "confidence": 0.5,
+      "disposition_state": "needs_review",
+      "effect_class": "unresolved",
+      "force_conversion_declared": false,
+      "id": "dx-mp-10",
+      "intended_ref": null,
+      "normative_kind": [],
+      "operation_ids": [],
+      "provision": "mirror_pair :: b:RGC-04, b:RGC-05",
+      "rationale": "B0 cross-layer/cross-entity mirror pair (RELATE_OBLIGATION / DEEM_SATISFIED-shaped): b:RGC-04 \u2194 b:RGC-05. Reform lever: DEEM_SATISFIED / reliance, not MERGE.",
+      "status": "draft",
+      "verifier_records": []
+    }
+  ]
+}

@@ -50,6 +50,11 @@ MVP_CLUSTERS = (
     "Capital planning & stress testing",
 )
 
+# Non-MVP clusters routed to an MVP package for rendering (same governance family).
+_MVP_CLUSTER_ALIAS = {
+    "Risk committee architecture": "Risk-governance framework / strategy",
+}
+
 _NORMATIVE_VALUES = frozenset(m.value for m in NormativeKind)
 
 # --- diagnostic-kind vocabulary (B4-T3) ------------------------------------------------
@@ -144,6 +149,19 @@ def _first_resolved(ops: list[BankingOperation], as_built: dict[str, DutySpec]) 
     return None
 
 
+def _baseline_target(
+    ops: list[BankingOperation], as_built: dict[str, DutySpec], graph: InstrumentGraph
+) -> str | None:
+    """The finding's as-built anchor: the first operation ref (in order) the graph can baseline
+    — an inventory row *or* a B4 concept node (so the five concept-operand levers now resolve).
+    Falls back to the first in-inventory ref for display when nothing is graph-covered."""
+    for op in ops:
+        for ref in operation_refs(op):
+            if graph.baseline_for(ref, AS_OF) is not None:
+                return ref
+    return _first_resolved(ops, as_built)
+
+
 def _force_conversion(
     ops: list[BankingOperation], as_built: dict[str, DutySpec], output_force: Any
 ) -> bool:
@@ -169,7 +187,7 @@ def consolidation_finding(
     nk = _decomp_normative_kinds(dec)
     stub = _FindingStub(
         id=f"f-{dec['id']}",
-        as_built_ref=_first_resolved(ops, as_built),
+        as_built_ref=_baseline_target(ops, as_built, graph),
         intended_ref=intended_ref if intended_ref in intended else None,
         operation_ids=[op.id for op in ops],
         normative_kind=nk,
@@ -440,11 +458,14 @@ def run_diagnose(
 
     result.divergence = duplicate_divergence(decompositions, result.diagnostic_sets, set(drafts))
 
-    # B4-T3: the B0 mirror pairs become first-class mirror_pair diagnostics.
+    # B4-T3: the B0 mirror pairs become first-class mirror_pair diagnostics. Their duties sit in
+    # the (non-rendered) "Risk committee architecture" cluster; route them to the risk-governance
+    # package (the same governance family) so the family renders where reviewers look.
     for mp in mirror_pair_findings(result.divergence, cluster_of):
         result.diagnostic_findings.append(mp)
         first_target = mp.as_built_ref or ""
-        result.finding_cluster[mp.id] = cluster_of.get(first_target, "")
+        raw_cluster = cluster_of.get(first_target, "")
+        result.finding_cluster[mp.id] = _MVP_CLUSTER_ALIAS.get(raw_cluster, raw_cluster)
         result.finding_kind[mp.id] = MIRROR_PAIR
 
     return result

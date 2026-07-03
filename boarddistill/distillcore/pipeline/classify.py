@@ -132,25 +132,30 @@ def classify_finding(
         if finding.intended_ref is not None and finding.intended_ref in intended
         else None
     )
-    for op in operations:
-        if str(op.primitive) not in FORCE_MOVING_PRIMITIVES:
-            continue
-        operand_forces = [as_built[o].legal_force for o in op.operands if o in as_built]
-        if output_force is not None and is_force_conversion(operand_forces, output_force):
-            return "change", baseline
-
-    primitives = [str(op.primitive) for op in operations]
-    if "ASSIGN_DUTY_PARAMETER" in primitives:
-        param_op = next(op for op in operations if str(op.primitive) == "ASSIGN_DUTY_PARAMETER")
-        prior_explicit = _param_prior_explicit(param_op, as_built)
-        effect = classify_parameter_assignment(prior_explicit=prior_explicit, param_anchored=False)
-        return effect, baseline
-    if "DEEM_SATISFIED" in primitives:
-        return "change", baseline
-    if not primitives:
+    if not operations:
         return "unresolved", baseline
-    effects = [PRIMITIVE_DEFAULT_EFFECT.get(p, "unresolved") for p in primitives]
+    # The finding's effect is the most severe effect among its operations (each op classified
+    # by its own rule: force conversion / DEEM / parameter re-assignment / per-primitive default).
+    effects = [_op_effect(op, as_built, output_force) for op in operations]
     return dominant_effect(effects), baseline
+
+
+def _op_effect(
+    op: OperationLike, as_built: Mapping[str, DutyLike], output_force: Any
+) -> EffectClass:
+    """The effect class attributable to a single operation."""
+    primitive = str(op.primitive)
+    if primitive in FORCE_MOVING_PRIMITIVES and output_force is not None:
+        operand_forces = [as_built[o].legal_force for o in op.operands if o in as_built]
+        if is_force_conversion(operand_forces, output_force):
+            return "change"
+    if primitive == "ASSIGN_DUTY_PARAMETER":
+        return classify_parameter_assignment(
+            prior_explicit=_param_prior_explicit(op, as_built), param_anchored=False
+        )
+    if primitive == "DEEM_SATISFIED":
+        return "change"
+    return PRIMITIVE_DEFAULT_EFFECT.get(primitive, "unresolved")
 
 
 def compute_disposition(

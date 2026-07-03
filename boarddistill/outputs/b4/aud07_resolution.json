@@ -1,0 +1,23 @@
+{
+  "board_side": {
+    "actor": "Audit committee",
+    "grounding": "Board oversight via the audit committee under SOX 301 / Part 363; SOX 302 binds the certifying officers, not the board.",
+    "grounding_citation": "SOX 301 / 12 CFR Part 363 (audit committee oversight)",
+    "object": "oversight of the CEO/CFO certification process via the audit committee",
+    "verb_evidence": "",
+    "verb_standard": "review_and_challenge"
+  },
+  "conflict_cleared": true,
+  "duty_id": "b:AUD-07",
+  "management_side": {
+    "actor": "CEO and CFO (principal executive and financial officers)",
+    "citation": "17 CFR 240.13a-14",
+    "note": "SOX 302 certification verb lives on the management actor, not the board.",
+    "object": "quarterly certification of financial reports",
+    "verb_evidence": "must include certifications in the form specified in the applicable exhibit filing requirements of such report and such certifications must be filed as an exhibit",
+    "verb_standard": "certify"
+  },
+  "rationale": "REVIEW_PACKET_B3 Part 2 \u2014 SOX 302 (17 CFR 240.13a-14) binds the certifying officers, not the board; the board-side residual is audit-committee oversight of the certification process (review_and_challenge), grounded in SOX 301 / Part 363, not SOX 302.",
+  "reviewer_id": "mhsu",
+  "timestamp": "2026-07-02"
+}

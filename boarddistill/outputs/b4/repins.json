@@ -1,0 +1,213 @@
+{
+  "_meta": "B4-T2 re-pin. Corrected pins for the ten source-mismatch rows; every quote verbatim-verified against the cited instrument's cache (allowlist unchanged). The live LLM re-distill is checkpointed (no API key this pass).",
+  "corrected_spans": [
+    {
+      "anchor_matched": true,
+      "citation": "12 CFR Part 30, App. D, II.C (internal audit independence)",
+      "end": null,
+      "id": "repin-b:AUD-08",
+      "quote": "The audit committee approves all decisions regarding the appointment or removal and annual compensation and salary adjustment of the Chief Audit Executive",
+      "source_id": "ecfr-t12-p30",
+      "start": null
+    },
+    {
+      "anchor_matched": false,
+      "citation": "12 CFR 225.8(e)(3)",
+      "end": null,
+      "id": "repin-b:CAP-02",
+      "quote": "at least annually and prior to submission of the capital plan under paragraph (e)(1)(ii) of this section: (A) Review the robustness of the bank holding company's process for assessing capital adequacy",
+      "source_id": "ecfr-t12-p225",
+      "start": null
+    },
+    {
+      "anchor_matched": false,
+      "citation": "12 CFR 225.8(e)(3)",
+      "end": null,
+      "id": "repin-s:CAP-09",
+      "quote": "at least annually and prior to submission of the capital plan under paragraph (e)(1)(ii) of this section: (A) Review the robustness of the bank holding company's process for assessing capital adequacy",
+      "source_id": "ecfr-t12-p225",
+      "start": null
+    },
+    {
+      "anchor_matched": false,
+      "citation": "12 CFR 252.33(a)(3)(ii)",
+      "end": null,
+      "id": "repin-b:RGC-05",
+      "quote": "Be chaired by a director who: (A) Is not an officer or employee of the bank holding company",
+      "source_id": "ecfr-t12-p252",
+      "start": null
+    },
+    {
+      "anchor_matched": true,
+      "citation": "OCC Comptroller's Handbook, Corporate and Risk Governance \u2014 Committee descriptions: Credit committee",
+      "end": null,
+      "id": "repin-s:BCG-03",
+      "quote": "establish and guide the bank\u2019s lending strategy, credit risk appetite, and risk limits.",
+      "source_id": "occ-ch-crg",
+      "start": null
+    },
+    {
+      "anchor_matched": true,
+      "citation": "SR 15-18 attachment, sec. III.A.1 (Board of Directors)",
+      "end": null,
+      "id": "repin-s:CAP-07",
+      "quote": "The board of directors should maintain an accurate record of its meetings pertaining to the firm's capital planning process.",
+      "source_id": "sr-15-18-att",
+      "start": null
+    },
+    {
+      "anchor_matched": true,
+      "citation": "SR 21-3 attachment, Attribute 1 (Effective board \u2014 strategy), pp. 2-3",
+      "end": null,
+      "id": "repin-s:GOV-03",
+      "quote": "If the strategy calls for expansion into a new line of business or a new jurisdiction, the board evaluates the increased level of risk.",
+      "source_id": "sr-21-3-att",
+      "start": null
+    },
+    {
+      "anchor_matched": true,
+      "citation": "SR 21-3 attachment, Attribute 2 (Information), pp. 3-4",
+      "end": null,
+      "id": "repin-s:GOV-04",
+      "quote": "An effective board directs senior management to provide it with information that is timely, accurate, and well organized.",
+      "source_id": "sr-21-3-att",
+      "start": null
+    },
+    {
+      "anchor_matched": true,
+      "citation": "SR 21-3 attachment, Attribute 3 (Talent & compensation), p. 5",
+      "end": null,
+      "id": "repin-s:GOV-08",
+      "quote": "An effective board approves clear financial and nonfinancial performance objectives aligned with the firm's strategy and risk appetite for the CEO and business line executives",
+      "source_id": "sr-21-3-att",
+      "start": null
+    },
+    {
+      "anchor_matched": true,
+      "citation": "SR 21-3 attachment, Attribute 4 (Audit), p. 6",
+      "end": null,
+      "id": "repin-s:GOV-12",
+      "quote": "assesses and supports the stature and independence of the firm's independent risk management and internal",
+      "source_id": "sr-21-3-att",
+      "start": null
+    }
+  ],
+  "counts": {
+    "anchor_matched_fuzzy": 7,
+    "escalated_f2_f4": 0,
+    "partial_support": 1,
+    "quote_verified": 10,
+    "rows": 10
+  },
+  "f2_f4_review_queue": [],
+  "partial_support_rows": [
+    "s:GOV-12"
+  ],
+  "quote_verification": {
+    "b:AUD-08": true,
+    "b:CAP-02": true,
+    "b:RGC-05": true,
+    "s:BCG-03": true,
+    "s:CAP-07": true,
+    "s:CAP-09": true,
+    "s:GOV-03": true,
+    "s:GOV-04": true,
+    "s:GOV-08": true,
+    "s:GOV-12": true
+  },
+  "redistill_checkpoint": "TODO(human): export ANTHROPIC_API_KEY, then re-run `boarddistill b3-distill --live` restricted to the ten re-pinned rows to LLM-distill them from the corrected excerpts (replay-cached thereafter). Blocked this pass: no key present.",
+  "repins": [
+    {
+      "anchor_matched": true,
+      "duty_id": "b:AUD-08",
+      "new_citation": "12 CFR Part 30, App. D, II.C (internal audit independence)",
+      "old_citation": "App. D, secs. I.E.8(b),(c)",
+      "old_pin_topic": "concentration-risk-management paragraph (App. D I.E) \u2014 wrong section",
+      "quote": "The audit committee approves all decisions regarding the appointment or removal and annual compensation and salary adjustment of the Chief Audit Executive",
+      "source_id": "ecfr-t12-p30"
+    },
+    {
+      "anchor_matched": false,
+      "duty_id": "b:CAP-02",
+      "new_citation": "12 CFR 225.8(e)(3)",
+      "old_citation": "12 CFR 225.8(e)(1)(iii)",
+      "old_pin_topic": "225.8(d) definitions (capital plan cycle / policy) \u2014 wrong subsection",
+      "quote": "at least annually and prior to submission of the capital plan under paragraph (e)(1)(ii) of this section: (A) Review the robustness of the bank holding company's process for assessing capital adequacy",
+      "source_id": "ecfr-t12-p225"
+    },
+    {
+      "anchor_matched": false,
+      "duty_id": "s:CAP-09",
+      "new_citation": "12 CFR 225.8(e)(3)",
+      "old_citation": "12 CFR 225.8(e)(1)(iii); 225.8(d)",
+      "old_pin_topic": "225.8(d) definitions \u2014 wrong subsection (mirror of b:CAP-02)",
+      "quote": "at least annually and prior to submission of the capital plan under paragraph (e)(1)(ii) of this section: (A) Review the robustness of the bank holding company's process for assessing capital adequacy",
+      "source_id": "ecfr-t12-p225"
+    },
+    {
+      "anchor_matched": false,
+      "duty_id": "b:RGC-05",
+      "new_citation": "12 CFR 252.33(a)(3)(ii)",
+      "old_citation": "12 CFR 252.33(a)(4)(ii)",
+      "old_pin_topic": "252.33(a)(1) general risk-committee mandate \u2014 chair clause missed",
+      "quote": "Be chaired by a director who: (A) Is not an officer or employee of the bank holding company",
+      "source_id": "ecfr-t12-p252"
+    },
+    {
+      "anchor_matched": true,
+      "duty_id": "s:BCG-03",
+      "new_citation": "OCC Comptroller's Handbook, Corporate and Risk Governance \u2014 Committee descriptions: Credit committee",
+      "old_citation": "Appendix C \u2014 Credit committee",
+      "old_pin_topic": "fiduciary/trust audit-committee paragraph \u2014 wrong committee",
+      "quote": "establish and guide the bank\u2019s lending strategy, credit risk appetite, and risk limits.",
+      "source_id": "occ-ch-crg"
+    },
+    {
+      "anchor_matched": true,
+      "duty_id": "s:CAP-07",
+      "new_citation": "SR 15-18 attachment, sec. III.A.1 (Board of Directors)",
+      "old_citation": "Attachment, sec. III.A.1, p. 4",
+      "old_pin_topic": "post-stress escalation-protocol paragraph \u2014 wrong para, right section",
+      "quote": "The board of directors should maintain an accurate record of its meetings pertaining to the firm's capital planning process.",
+      "source_id": "sr-15-18-att"
+    },
+    {
+      "anchor_matched": true,
+      "duty_id": "s:GOV-03",
+      "new_citation": "SR 21-3 attachment, Attribute 1 (Effective board \u2014 strategy), pp. 2-3",
+      "old_citation": "Attachment, Attribute 1, pp. 2-3",
+      "old_pin_topic": "director-nominee-process passage \u2014 wrong attribute (fuzzy pin)",
+      "quote": "If the strategy calls for expansion into a new line of business or a new jurisdiction, the board evaluates the increased level of risk.",
+      "source_id": "sr-21-3-att"
+    },
+    {
+      "anchor_matched": true,
+      "duty_id": "s:GOV-04",
+      "new_citation": "SR 21-3 attachment, Attribute 2 (Information), pp. 3-4",
+      "old_citation": "Attachment, Attribute 2, pp. 3-4",
+      "old_pin_topic": "director-nominee-process passage \u2014 wrong attribute",
+      "quote": "An effective board directs senior management to provide it with information that is timely, accurate, and well organized.",
+      "source_id": "sr-21-3-att"
+    },
+    {
+      "anchor_matched": true,
+      "duty_id": "s:GOV-08",
+      "new_citation": "SR 21-3 attachment, Attribute 3 (Talent & compensation), p. 5",
+      "old_citation": "Attachment, Attribute 3, p. 5",
+      "old_pin_topic": "director-nominee-process passage \u2014 wrong attribute",
+      "quote": "An effective board approves clear financial and nonfinancial performance objectives aligned with the firm's strategy and risk appetite for the CEO and business line executives",
+      "source_id": "sr-21-3-att"
+    },
+    {
+      "anchor_matched": true,
+      "duty_id": "s:GOV-12",
+      "new_citation": "SR 21-3 attachment, Attribute 4 (Audit), p. 6",
+      "old_citation": "Attachment, Attribute 4, p. 6",
+      "old_pin_topic": "director-nominee-process passage \u2014 wrong attribute",
+      "partial_support_note": "SR 21-3 (Audit) supports audit-committee oversight of internal audit and remediation-timeliness; the duty's 'meets directly with the CAE' and 'budget and staffing' specifics are more fully grounded in App. D II.C / SR 13-1. Pin covers the core obligation; the sub-elements are a soft flag for the re-distill pass.",
+      "quote": "assesses and supports the stature and independence of the firm's independent risk management and internal",
+      "source_id": "sr-21-3-att"
+    }
+  ],
+  "unverified_quotes": []
+}

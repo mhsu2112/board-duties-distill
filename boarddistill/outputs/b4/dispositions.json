@@ -1,0 +1,273 @@
+{
+  "_meta": "B4-T0 disposition write-back. Human record: ../REVIEW_PACKET_B3.md (mhsu, 2026-07-02, all recommendations accepted). reviewer_accepted on f-D* is draft-direction, not policy adoption; nothing finalized (NG2).",
+  "blocker_summary": {
+    "findings_draft": 27,
+    "findings_final": 0,
+    "findings_total": 27,
+    "note": "reviewer_accepted is recorded on a draft-direction basis; status stays draft until an operative reform instrument exists (NG2). No finding reaches final.",
+    "silently_finalized": []
+  },
+  "consolidation_findings": [
+    "f-D1",
+    "f-D2",
+    "f-D3",
+    "f-D4",
+    "f-D5",
+    "f-D6",
+    "f-D7",
+    "f-D8",
+    "f-D9"
+  ],
+  "counts": {
+    "reviewer_accepted": 27,
+    "reviewer_modified": 1
+  },
+  "diagnostic_findings": [
+    "dx-aud-0",
+    "dx-cap-0",
+    "dx-cap-1",
+    "dx-cap-2",
+    "dx-cap-3",
+    "dx-cap-4",
+    "dx-cap-5",
+    "dx-cap-6",
+    "dx-ris-0",
+    "dx-ris-1",
+    "dx-ris-2",
+    "dx-ris-3",
+    "dx-ris-4",
+    "dx-ris-5",
+    "dx-ris-6",
+    "dx-ris-7",
+    "dx-ris-8",
+    "dx-ris-9"
+  ],
+  "dispositions": [
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D1",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D2",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D3",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D4",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D5",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D6",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "auto_ok",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D7",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D8",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 1 \u2014 advance as draft roadmap direction (evidence-backed candidate), NOT policy adoption. Feasibility ranking: D4 first, D5 second, D3 hardest.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "f-D9",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 2 \u2014 certification duty stays with the CEO/CFO; the board-side residual is audit-committee oversight of the certification process (review_and_challenge, never certify as a board verb).",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_modified",
+      "subject_id": "b:AUD-07",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-aud-0",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-0",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-1",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-2",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-3",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-4",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-5",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-cap-6",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-0",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-1",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-2",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-3",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-4",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-5",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-6",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-7",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-8",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": "needs_review",
+      "rationale": "REVIEW_PACKET_B3 Part 5 \u2014 accepted as an investigation item (seeds the DEFINE_TERM / ASSIGN_DUTY_PARAMETER worklists); not a decision.",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "dx-ris-9",
+      "timestamp": "2026-07-02"
+    }
+  ],
+  "reviewer": "mhsu",
+  "timestamp": "2026-07-02"
+}
