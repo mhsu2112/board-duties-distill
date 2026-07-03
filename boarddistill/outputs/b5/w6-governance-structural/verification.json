@@ -1,0 +1,1131 @@
+{
+  "_meta": "B5-T2 verification for wave w6-governance-structural. Same resolver stack and allowlist as B1/B2; verified rows carry a pinned span, non-verified rows carry a reason. A contradicted row halts the wave (checkpoint).",
+  "contradicted": [],
+  "records": [
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p225-225.71"
+      ],
+      "claim_id": "claim-b:ELG-01",
+      "id": "v-claim-b:ELG-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 225.71 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s1829-1829"
+      ],
+      "claim_id": "claim-b:ELG-02",
+      "id": "v-claim-b:ELG-02",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 1829 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:ELG-03",
+      "id": "v-claim-b:ELG-03",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p9-9.4"
+      ],
+      "claim_id": "claim-b:FID-01",
+      "id": "v-claim-b:FID-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 9.4(a) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p9-9.18"
+      ],
+      "claim_id": "claim-b:FID-03",
+      "id": "v-claim-b:FID-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 9.18(b)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.D"
+      ],
+      "claim_id": "claim-b:IND-01",
+      "id": "v-claim-b:IND-01",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.E"
+      ],
+      "claim_id": "claim-b:IND-02",
+      "id": "v-claim-b:IND-02",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.F"
+      ],
+      "claim_id": "claim-b:IND-03",
+      "id": "v-claim-b:IND-03",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.C"
+      ],
+      "claim_id": "claim-b:IND-04",
+      "id": "v-claim-b:IND-04",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.C present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t17-p240-240.10A-3"
+      ],
+      "claim_id": "claim-b:IND-05",
+      "id": "v-claim-b:IND-05",
+      "method": "live_retrieval",
+      "note": "17 CFR 240.10A-3 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:IND-06",
+      "id": "v-claim-b:IND-06",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t17-p229-229.407"
+      ],
+      "claim_id": "claim-b:IND-08",
+      "id": "v-claim-b:IND-08",
+      "method": "live_retrieval",
+      "note": "17 CFR 229.407 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.33"
+      ],
+      "claim_id": "claim-b:RGC-06",
+      "id": "v-claim-b:RGC-06",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.33(b)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-II.E"
+      ],
+      "claim_id": "claim-b:RGC-08",
+      "id": "v-claim-b:RGC-08",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, II.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-I.E.7(c)"
+      ],
+      "claim_id": "claim-b:RGC-09",
+      "id": "v-claim-b:RGC-09",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, I.E.7(c) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appA-full"
+      ],
+      "claim_id": "claim-b:SS-01",
+      "id": "v-claim-b:SS-01",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p225-225.4"
+      ],
+      "claim_id": "claim-b:SS-02",
+      "id": "v-claim-b:SS-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 225.4(a) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.62"
+      ],
+      "claim_id": "claim-b:TLA-01",
+      "id": "v-claim-b:TLA-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.62 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.64"
+      ],
+      "claim_id": "claim-b:TLA-02",
+      "id": "v-claim-b:TLA-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.64 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.70"
+      ],
+      "claim_id": "claim-b:TLA-03",
+      "id": "v-claim-b:TLA-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.70 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s1851-1851"
+      ],
+      "claim_id": "claim-b:VOL-01",
+      "id": "v-claim-b:VOL-01",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 1851 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t18-s1005-1005"
+      ],
+      "claim_id": "claim-p:PLB-01",
+      "id": "v-claim-p:PLB-01",
+      "method": "live_retrieval",
+      "note": "18 U.S.C. 1005 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-p:PLB-02",
+      "id": "v-claim-p:PLB-02",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p380-380.7"
+      ],
+      "claim_id": "claim-p:PLB-03",
+      "id": "v-claim-p:PLB-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 380.7 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s1818-1818"
+      ],
+      "claim_id": "claim-p:PLB-04",
+      "id": "v-claim-p:PLB-04",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 1818(n) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-01",
+      "id": "v-claim-s:GOV-01",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.79)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-05",
+      "id": "v-claim-s:GOV-05",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-06",
+      "id": "v-claim-s:GOV-06",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.64)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-07",
+      "id": "v-claim-s:GOV-07",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.72)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-10",
+      "id": "v-claim-s:GOV-10",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-14",
+      "id": "v-claim-s:GOV-14",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.62)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-16",
+      "id": "v-claim-s:GOV-16",
+      "method": "live_retrieval",
+      "note": "no attachment PDF on the SR 12-17 page; letter-body anchor borderline (best 0.42); candidate recorded \u2014 checkpoint \u00a73: 'ure, incentives, structure, and processes that promote its compliance with laws, regulations, and su'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-12-17-body-anchor"
+      ],
+      "claim_id": "claim-s:GOV-17",
+      "id": "v-claim-s:GOV-17",
+      "method": "live_retrieval",
+      "note": "SR 12-17: no attachment PDF; duty text anchor-matched in the letter body (score 0.73)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.A"
+      ],
+      "claim_id": "claim-s:GOV-21",
+      "id": "v-claim-s:GOV-21",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.C"
+      ],
+      "claim_id": "claim-s:GOV-23",
+      "id": "v-claim-s:GOV-23",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.C present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.D"
+      ],
+      "claim_id": "claim-s:GOV-24",
+      "id": "v-claim-s:GOV-24",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.E"
+      ],
+      "claim_id": "claim-s:GOV-25",
+      "id": "v-claim-s:GOV-25",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.F"
+      ],
+      "claim_id": "claim-s:GOV-26",
+      "id": "v-claim-s:GOV-26",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-II.L"
+      ],
+      "claim_id": "claim-s:GOV-28",
+      "id": "v-claim-s:GOV-28",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, II.L present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-occ-ch-crg-anchor"
+      ],
+      "claim_id": "claim-s:GOV-29",
+      "id": "v-claim-s:GOV-29",
+      "method": "live_retrieval",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.68)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-30",
+      "id": "v-claim-s:GOV-30",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:SUB-01",
+      "id": "v-claim-s:SUB-01",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    }
+  ],
+  "rows": [
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 1831i; 12 CFR 225.71-.73; 12 CFR 5.51",
+      "cluster": "Director eligibility & continuity",
+      "duty_id": "b:ELG-01",
+      "note": "12 CFR 225.71 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 1829; FDI Act \u00a78(e), \u00a78(g)",
+      "cluster": "Director eligibility & continuity",
+      "duty_id": "b:ELG-02",
+      "note": "12 U.S.C. 1829 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "FDI Act \u00a77(a)(3); \u00a77(j)",
+      "cluster": "Director eligibility & continuity",
+      "duty_id": "b:ELG-03",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 9.4(a); 12 CFR 9.5; 12 CFR part 150",
+      "cluster": "Fiduciary (trust) governance",
+      "duty_id": "b:FID-01",
+      "note": "12 CFR 9.4(a) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 9.18(b)(1); 12 CFR 9.13(a)",
+      "cluster": "Fiduciary (trust) governance",
+      "duty_id": "b:FID-03",
+      "note": "12 CFR 9.18(b)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.D",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "b:IND-01",
+      "note": "12 CFR Part 30, App. D, III.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.E",
+      "cluster": "Director training",
+      "duty_id": "b:IND-02",
+      "note": "12 CFR Part 30, App. D, III.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.F",
+      "cluster": "Board self-assessment / effectiveness",
+      "duty_id": "b:IND-03",
+      "note": "12 CFR Part 30, App. D, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.C",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "b:IND-04",
+      "note": "12 CFR Part 30, App. D, III.C present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "SOX sec. 301; 17 CFR 240.10A-3",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "b:IND-05",
+      "note": "17 CFR 240.10A-3 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "NYSE Listed Company Manual 303A; Nasdaq Rule 5600",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "b:IND-06",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "17 CFR 229.407",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "b:IND-08",
+      "note": "17 CFR 229.407 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.33(b)(1)",
+      "cluster": "CRO / CRE appointment & compensation",
+      "duty_id": "b:RGC-06",
+      "note": "12 CFR 252.33(b)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, secs. II.E, II.G",
+      "cluster": "Risk appetite statement",
+      "duty_id": "b:RGC-08",
+      "note": "12 CFR Part 30, App. D, II.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. I.E.7(c)",
+      "cluster": "CRO / CRE appointment & compensation",
+      "duty_id": "b:RGC-09",
+      "note": "12 CFR Part 30, App. D, I.E.7(c) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 30 App. A (OCC) / part 364 App. A (FDIC); FDI Act sec. 39",
+      "cluster": "Safety-and-soundness baseline",
+      "duty_id": "b:SS-01",
+      "note": "12 CFR Part 30, App. A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 1831o-1; Regulation Y, 12 CFR 225.4(a)",
+      "cluster": "Source of strength / charter sanctity",
+      "duty_id": "b:SS-02",
+      "note": "12 CFR 225.4(a) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.62-252.63",
+      "cluster": "Unique structural duties",
+      "duty_id": "b:TLA-01",
+      "note": "12 CFR 252.62 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.64",
+      "cluster": "Unique structural duties",
+      "duty_id": "b:TLA-02",
+      "note": "12 CFR 252.64 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.70-252.78",
+      "cluster": "Unique structural duties",
+      "duty_id": "b:TLA-03",
+      "note": "12 CFR 252.70 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 1851; 12 CFR part 248 (subpart D)",
+      "cluster": "Unique structural duties",
+      "duty_id": "b:VOL-01",
+      "note": "12 U.S.C. 1851 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "18 U.S.C. 1005; 12 U.S.C. 1847(a)(2)",
+      "cluster": "Personal liability",
+      "duty_id": "p:PLB-01",
+      "note": "18 U.S.C. 1005 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "FDI Act \u00a78(e); \u00a78(e)(2)(B)",
+      "cluster": "Personal liability",
+      "duty_id": "p:PLB-02",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 1821(k); 12 U.S.C. 5390(f); 12 U.S.C. 5390(s); 12 CFR 380.7",
+      "cluster": "Personal liability",
+      "duty_id": "p:PLB-03",
+      "note": "12 CFR 380.7 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 359; 12 U.S.C. 1818(n)",
+      "cluster": "Personal liability",
+      "duty_id": "p:PLB-04",
+      "note": "12 U.S.C. 1818(n) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 1, pp. 2-3",
+      "cluster": "Risk appetite statement",
+      "duty_id": "s:GOV-01",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.79)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 2, p. 4",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-05",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 3, pp. 4-5",
+      "cluster": "Risk appetite statement",
+      "duty_id": "s:GOV-06",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.64)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 3, p. 5",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-07",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.72)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 4, pp. 5-6",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-10",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 5, p. 7",
+      "cluster": "Board self-assessment / effectiveness",
+      "duty_id": "s:GOV-14",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.62)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Section A.2(a)-(f); A.1(f)",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-16",
+      "note": "no attachment PDF on the SR 12-17 page; letter-body anchor borderline (best 0.42); candidate recorded \u2014 checkpoint \u00a73: 'ure, incentives, structure, and processes that promote its compliance with laws, regulations, and su'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Sections A.3(f), B.3(g)",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-17",
+      "note": "SR 12-17: no attachment PDF; duty text anchor-matched in the letter body (score 0.73)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.A; sec. II.A, II.G.1",
+      "cluster": "Risk appetite statement",
+      "duty_id": "s:GOV-21",
+      "note": "12 CFR Part 30, App. D, III.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.C",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-23",
+      "note": "12 CFR Part 30, App. D, III.C present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.D",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-24",
+      "note": "12 CFR Part 30, App. D, III.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.E",
+      "cluster": "Director training",
+      "duty_id": "s:GOV-25",
+      "note": "12 CFR Part 30, App. D, III.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.F",
+      "cluster": "Board self-assessment / effectiveness",
+      "duty_id": "s:GOV-26",
+      "note": "12 CFR Part 30, App. D, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, sec. II.L; definitions of 'independent risk management' and 'internal audit'",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-28",
+      "note": "12 CFR Part 30, App. D, II.L present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Director's Book (OCC Bulletin 2020-97); Corporate and Risk Governance booklet",
+      "cluster": "Risk appetite statement",
+      "duty_id": "s:GOV-29",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.68)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Five enumerated duties",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-30",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Corporate Governance \u2014 subsidiary bank / affiliate relationships (local ll. ~1915-1962)",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:SUB-01",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "12 CFR 225.71",
+      "end": 277112,
+      "id": "span-ecfr-t12-p225-225.71",
+      "quote": "\u00a7 225.71 Definitions. (a) Director means a person who serves on the board of directors of a regulated institution, except that this term does not include an advisory director who: (1) Is not elected by the shareholders of the regulated institution; (2) Is not authorized to vote on any matters before the board of directors or any committee thereof; (3) Solely provides general policy advice to the board of directors and any committee thereof; and (4) Has not been identified by the Board or Reserve Bank as a person who performs the functions of a director for purposes of this subpart. (b) Regulat",
+      "source_id": "ecfr-t12-p225",
+      "start": 276512
+    },
+    {
+      "citation": "12 U.S.C. 1829",
+      "end": 728,
+      "id": "span-usc-t12-s1829-1829",
+      "quote": "1829 - Penalty for unauthorized participation by convicted individual From the U.S. Government Publishing Office, www.gpo.gov \u00a71829. Penalty for unauthorized participation by convicted individual (a) Prohibition (1) In general Except with the prior written consent of the Corporation\u2014 (A) any person who has been convicted of any criminal offense involving dishonesty or a breach of trust or money laundering, or has agreed to enter into a pretrial diversion or similar program in connection with a prosecution for such offense, may not\u2014 (i) become, or continue as, an institution-affiliated party wi",
+      "source_id": "usc-t12-s1829",
+      "start": 128
+    },
+    {
+      "citation": "12 CFR 9.4(a)",
+      "end": 5965,
+      "id": "span-ecfr-t12-p9-9.4",
+      "quote": "(a) Responsibilities of the board of directors. A national bank's fiduciary activities shall be managed by or under the direction of its board of directors. In discharging its responsibilities, the board may assign any function related to the exercise of fiduciary powers to any director, officer, employee, or committee thereof. (b) Use of other personnel. The national bank may use any qualified personnel and facilities of the bank or its affiliates to perform services related to the exercise of its fiduciary powers, and any department of the bank or its affiliates may use fiduciary officers, e",
+      "source_id": "ecfr-t12-p9",
+      "start": 5365
+    },
+    {
+      "citation": "12 CFR 9.18(b)(1)",
+      "end": 24736,
+      "id": "span-ecfr-t12-p9-9.18",
+      "quote": "(b), but are not members of the same affiliated group, as defined at 26 U.S.C. 1504, may fail to qualify for tax-exempt status under the Internal Revenue Code. See 26 U.S.C. 584. (2) A fund consisting solely of assets of retirement, pension, profit sharing, stock bonus or other trusts that are exempt from Federal income tax. (i) A national bank may invest assets of retirement, pension, profit sharing, stock bonus, or other trusts exempt from Federal income tax and that the bank holds in its capacity as trustee in a collective investment fund established under paragraph (a)(1) or (a)(2) of this",
+      "source_id": "ecfr-t12-p9",
+      "start": 24136
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.D",
+      "end": 110175,
+      "id": "span-ecfr-t12-p30-appD-III.D",
+      "quote": "D. Include Independent Directors. To promote effective, independent oversight of the covered bank's management, at least two members of the board of directors: 6 6 This provision does not supersede other regulatory requirements regarding the composition of the Board that apply to Federal savings associations. These institutions must continue to comply with such other requirements. 1. Should not be an officer or employee of the parent company or covered bank and has not been an officer or employee of the parent company or covered bank during the previous three years; 2. Should not be a member o",
+      "source_id": "ecfr-t12-p30",
+      "start": 109575
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.E",
+      "end": 111269,
+      "id": "span-ecfr-t12-p30-appD-III.E",
+      "quote": "E. Provide Ongoing Training to All Directors. The board of directors should establish and adhere to a formal, ongoing training program for all directors. This program should consider the directors' knowledge and experience and the covered bank's risk profile. The program should include, as appropriate, training on: 1. Complex products, services, lines of business, and risks that have a significant impact on the covered bank; 2. Laws, regulations, and supervisory requirements applicable to the covered bank; and 3. Other topics identified by the board of directors. F. Self-Assessments. A covered",
+      "source_id": "ecfr-t12-p30",
+      "start": 110669
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.F",
+      "end": 111518,
+      "id": "span-ecfr-t12-p30-appD-III.F",
+      "quote": "F. Self-Assessments. A covered bank's board of directors should conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines. [79 FR 54545, Sept. 11, 2014, as amended at 91 FR 18293, Apr. 10, 2026]",
+      "source_id": "ecfr-t12-p30",
+      "start": 111239
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.C",
+      "end": 109982,
+      "id": "span-ecfr-t12-p30-appD-III.C",
+      "quote": "C. Exercise Independent Judgment. When providing active oversight under paragraph III.B. of these Guidelines, each member of the board of directors should exercise sound, independent judgment. D. Include Independent Directors. To promote effective, independent oversight of the covered bank's management, at least two members of the board of directors: 6 6 This provision does not supersede other regulatory requirements regarding the composition of the Board that apply to Federal savings associations. These institutions must continue to comply with such other requirements. 1. Should not be an off",
+      "source_id": "ecfr-t12-p30",
+      "start": 109382
+    },
+    {
+      "citation": "17 CFR 240.10A-3",
+      "end": 419326,
+      "id": "span-ecfr-t17-p240-240.10A-3",
+      "quote": "\u00a7 240.10A-3 Listing standards relating to audit committees. (a) Pursuant to section 10A(m) of the Act (15 U.S.C. 78j-1(m)) and section 3 of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7202): (1) National securities exchanges. The rules of each national securities exchange registered pursuant to section 6 of the Act (15 U.S.C. 78f) must, in accordance with the provisions of this section, prohibit the initial or continued listing of any security of an issuer that is not in compliance with the requirements of any portion of paragraph (b) or (c) of this section. (2) National securities associations.",
+      "source_id": "ecfr-t17-p240",
+      "start": 418726
+    },
+    {
+      "citation": "17 CFR 229.407",
+      "end": 380691,
+      "id": "span-ecfr-t17-p229-229.407",
+      "quote": "\u00a7 229.407 (Item 407) Corporate governance. (a) Director independence. Identify each director and, when the disclosure called for by this paragraph is being presented in a proxy or information statement relating to the election of directors, each nominee for director, that is independent under the independence standards applicable to the registrant under paragraph (a)(1) of this Item. In addition, if such independence standards contain independence requirements for committees of the board of directors, identify each director that is a member of the compensation, nominating or audit committee th",
+      "source_id": "ecfr-t17-p229",
+      "start": 380091
+    },
+    {
+      "citation": "12 CFR 252.33(b)(1)",
+      "end": 55410,
+      "id": "span-ecfr-t12-p252-252.33",
+      "quote": "(b). (2) Risk-management framework. The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size and must include: (i) Policies and procedures establishing risk-management governance, risk-management procedures, and risk-control infrastructure for its global operations; and (ii) Processes and systems for implementing and monitoring compliance with such policies and procedures, including: (A) Processes and systems for identifying and reporting risks and risk-management deficiencies, including regarding emergi",
+      "source_id": "ecfr-t12-p252",
+      "start": 54810
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, II.E",
+      "end": 88343,
+      "id": "span-ecfr-t12-p30-appD-II.E",
+      "quote": "II. Standards for Risk Governance Framework A. Risk Governance Framework. A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee. The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities. Independent risk management should review and update the risk governance framework at least annually, and as",
+      "source_id": "ecfr-t12-p30",
+      "start": 87743
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, I.E.7(c)",
+      "end": 104670,
+      "id": "span-ecfr-t12-p30-appD-I.E.7(c)",
+      "quote": "I. Concentration Risk Management. The risk governance framework should include policies and supporting processes appropriate for the covered bank's size, complexity, and risk profile for effectively identifying, measuring, monitoring, and controlling the covered bank's concentrations of risk. J. Risk Data Aggregation and Reporting. The risk governance framework should include a set of policies, supported by appropriate procedures and processes, designed to provide risk data aggregation and reporting capabilities appropriate for the size, complexity, and risk profile of the covered bank, and to",
+      "source_id": "ecfr-t12-p30",
+      "start": 104070
+    },
+    {
+      "citation": "12 CFR Part 30, App. A",
+      "end": 14514,
+      "id": "span-ecfr-t12-p30-appA-full",
+      "quote": "Appendix A to Part 30\u2014Interagency Guidelines Establishing Standards for Safety and Soundness Table of Contents I. Introduction A. Preservation of existing authority. B. Definitions. II. Operational and Managerial Standards A. Internal controls and information systems. B. Internal audit system. C. Loan documentation. D. Credit underwriting. E. Interest rate exposure. F. Asset growth. G. Asset quality. H. Earnings. I. Compensation, fees and benefits. III. Prohibition on Compensation That Constitutes an Unsafe and Unsound Practice A. Excessive compensation. B. Compensation leading to material fin",
+      "source_id": "ecfr-t12-p30",
+      "start": 13914
+    },
+    {
+      "citation": "12 CFR 225.4(a)",
+      "end": 26198,
+      "id": "span-ecfr-t12-p225-225.4",
+      "quote": "(a) Bank holding company policy and operations. (1) A bank holding company shall serve as a source of financial and managerial strength to its subsidiary banks and shall not conduct its operations in an unsafe or unsound manner. (2) Whenever the Board believes an activity of a bank holding company or control of a nonbank subsidiary (other than a nonbank subsidiary of a bank) constitutes a serious risk to the financial safety, soundness, or stability of a subsidiary bank of the bank holding company and is inconsistent with sound banking principles or the purposes of the BHC Act or the Financial",
+      "source_id": "ecfr-t12-p225",
+      "start": 25598
+    },
+    {
+      "citation": "12 CFR 252.62",
+      "end": 127499,
+      "id": "span-ecfr-t12-p252-252.62",
+      "quote": "\u00a7 252.62 External long-term debt requirement. (a) External long-term debt requirement. Except as provided under paragraph (c) of this section, a global systemically important BHC must maintain an outstanding eligible external long-term debt amount that is no less than the amount equal to the greater of: (1) The global systemically important BHC's total risk-weighted assets multiplied by the sum of 6 percent plus the global systemically important BHC's GSIB surcharge (expressed as a percentage); and (2) The global systemically important BHC's total leverage exposure multiplied by the sum of 2.5",
+      "source_id": "ecfr-t12-p252",
+      "start": 126899
+    },
+    {
+      "citation": "12 CFR 252.64",
+      "end": 142620,
+      "id": "span-ecfr-t12-p252-252.64",
+      "quote": "\u00a7 252.64 Restrictions on corporate practices of U.S. global systemically important banking organizations. (a) Prohibited corporate practices. A global systemically important BHC may not directly: (1) Issue any debt instrument with an original maturity of less than 365 days (one year), including short term deposits and demand deposits, to any person, unless the person is a subsidiary of the global systemically important BHC; (2) Issue any instrument, or enter into any related contract, with respect to which the holder of the instrument has a contractual right to offset debt owed by the holder o",
+      "source_id": "ecfr-t12-p252",
+      "start": 142020
+    },
+    {
+      "citation": "12 CFR 252.70",
+      "end": 147133,
+      "id": "span-ecfr-t12-p252-252.70",
+      "quote": "\u00a7 252.70 Applicability and general provisions. (a) In general. (1) This subpart establishes single counterparty credit limits for a covered company. (2) For purposes of this subpart: (i) Covered company means: (A) A global systemically important BHC; (B) A Category II bank holding company; and (C) A Category III bank holding company; (ii) Major covered company means any covered company that is a global systemically important BHC. (b) Credit exposure limits. (1) Section 252.72 establishes credit exposure limits for a covered company and a major covered company. (2) A covered company is required",
+      "source_id": "ecfr-t12-p252",
+      "start": 146533
+    },
+    {
+      "citation": "12 U.S.C. 1851",
+      "end": 713,
+      "id": "span-usc-t12-s1851-1851",
+      "quote": "1851 - Prohibitions on proprietary trading and certain relationships with hedge funds and private equity funds From the U.S. Government Publishing Office, www.gpo.gov \u00a71851. Prohibitions on proprietary trading and certain relationships with hedge funds and private equity funds (a) In general (1) Prohibition Unless otherwise provided in this section, a banking entity shall not\u2014 (A) engage in proprietary trading; or (B) acquire or retain any equity, partnership, or other ownership interest in or sponsor a hedge fund or a private equity fund. (2) Nonbank financial companies supervised by the Boar",
+      "source_id": "usc-t12-s1851",
+      "start": 113
+    },
+    {
+      "citation": "18 U.S.C. 1005",
+      "end": 745,
+      "id": "span-usc-t18-s1005-1005",
+      "quote": "1005 - Bank entries, reports and transactions From the U.S. Government Publishing Office, www.gpo.gov \u00a71005. Bank entries, reports and transactions Whoever, being an officer, director, agent or employee of any Federal Reserve bank, member bank, depository institution holding company, national bank, insured bank, branch or agency of a foreign bank, or organization operating under section 25 or section 25(a) 1 of the Federal Reserve Act, without authority from the directors of such bank, branch, agency, or organization or company, issues or puts in circulation any notes of such bank, branch, age",
+      "source_id": "usc-t18-s1005",
+      "start": 145
+    },
+    {
+      "citation": "12 CFR 380.7",
+      "end": 11668,
+      "id": "span-ecfr-t12-p380-380.7",
+      "quote": "\u00a7 380.7 Recoupment of compensation from senior executives and directors. (a) Substantially responsible. The Corporation, as receiver of a covered financial company, may file an action to recover from any current or former senior executive or director substantially responsible for the failed condition of the covered financial company any compensation received during the 2-year period preceding the date on which the Corporation was appointed as the receiver of the covered financial company, except that, in the case of fraud, no time limit shall apply. A senior executive or director shall be deem",
+      "source_id": "ecfr-t12-p380",
+      "start": 11068
+    },
+    {
+      "citation": "12 U.S.C. 1818(n)",
+      "end": 728,
+      "id": "span-usc-t12-s1818-1818",
+      "quote": "1818 - Termination of status as insured depository institution From the U.S. Government Publishing Office, www.gpo.gov \u00a71818. Termination of status as insured depository institution (a) Termination of insurance (1) Voluntary termination Any insured depository institution which is not\u2014 (A) a national member bank; (B) a State member bank; (C) a Federal branch; (D) a Federal savings association; or (E) an insured branch which is required to be insured under subsection (a) or (b) 1 of section 3104 of this title, may terminate such depository institution's status as an insured depository institutio",
+      "source_id": "usc-t12-s1818",
+      "start": 128
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 4000,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "lieved to conflict with such requirements. Page 2 of 7 Attributes of an Effective Board of Directors 1. Set Clear, Aligned, and Consistent Direction Regarding the Firm's Strategy and Risk Appetite An effective board oversees the development of, reviews, approves, and periodically monitors the firm's strategy and risk appetite. [Footnote 5 - \u201cRisk appetite\u201d is defined as the aggregate level and types of risk the board and senior management are willing to assume to achieve the firm's strategic bus",
+      "source_id": "sr-21-3-att",
+      "start": 3500
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 11750,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "er (CEO) and his or her direct reports, and discussions with Federal Reserve senior supervisors. Director training is another way directors may learn more about topics relevant to their responsibilities and may highlight the need for further director inquiries. Directors of an effective board, particularly the lead independent director or independent board chair and committee chairs, take an active role in setting board and committee meeting agendas. Directors provide input such that the content",
+      "source_id": "sr-21-3-att",
+      "start": 11250
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 13750,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "ise warranted, directors challenge senior management's assessments and recommendations. Engagement may also take place outside board and committee meetings. An effective board engages in robust inquiry into, among other things: \u2022 Drivers, indicators, and trends related to current and emerging risks; \u2022 Adherence to the board-approved strategy and risk appetite by relevant lines of business; and \u2022 Material or persistent deficiencies in risk management or control practices, whether in policy or in ",
+      "source_id": "sr-21-3-att",
+      "start": 13250
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 14500,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "e as an effective check against firm executives who sit on the board and senior management. For example, if the board has an executive chair, independent directors may be empowered through the election of a lead independent director with the authority, among others, to call board meetings with or without the chair present. A crucial aspect of holding senior management accountable is regular board oversight and evaluation of the performance and compensation of senior management. An effective boar",
+      "source_id": "sr-21-3-att",
+      "start": 14000
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 17000,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "The chief risk officer and chief audit executive are named here given the independence of those positions and the control function each serves. End of Footnote 15 .] 4. Support the Independence and Stature of Independent Risk Management and Internal Audit An effective board of directors, through its risk and audit committees, assesses and supports the stature and independence of the firm's independent risk management and internal Page 5 of 7 Page 6 of 7 audit functions. An effective risk committ",
+      "source_id": "sr-21-3-att",
+      "start": 16500
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 22250,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "lement the board's knowledge, expertise, and experience and support the board in making sound, well-informed decisions. An effective board evaluates on an ongoing basis its strengths and weaknesses, including the performance of the board committees, particularly the risk, audit, and other key committees. An effective board adapts its structure and practices to address identified weaknesses or deficiencies and as the firm's asset size, scope of operations, risk profile, and other characteristics ",
+      "source_id": "sr-21-3-att",
+      "start": 21750
+    },
+    {
+      "citation": "SR 12-17 (letter body)",
+      "end": 14000,
+      "id": "span-sr-12-17-body-anchor",
+      "quote": "ange of internal and external risk scenarios and account for interconnectivities across operations and legal entities. Ensure that the recovery plan is updated as needed, and reflects lessons learned from reviews of trigger events, testing, and training exercises. Ensure that recovery planning is sufficiently integrated into corporate governance structures and processes, subject to independent validation, and effectively supported by related MIS reporting to the board and its committees. Managem",
+      "source_id": "sr-12-17",
+      "start": 13500
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.A",
+      "end": 108797,
+      "id": "span-ecfr-t12-p30-appD-III.A",
+      "quote": "A. Require an Effective Risk Governance Framework. Each member of a covered bank's board of directors should oversee the covered bank's compliance with safe and sound banking practices. The board of directors should also require management to establish and implement an effective risk governance framework that meets the minimum standards described in these Guidelines. The board of directors or the board's risk committee should approve any significant changes to the risk governance framework and monitor compliance with such framework. B. Provide Active Oversight of Management. A covered bank's b",
+      "source_id": "ecfr-t12-p30",
+      "start": 108197
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.C",
+      "end": 109982,
+      "id": "span-ecfr-t12-p30-appD-III.C",
+      "quote": "C. Exercise Independent Judgment. When providing active oversight under paragraph III.B. of these Guidelines, each member of the board of directors should exercise sound, independent judgment. D. Include Independent Directors. To promote effective, independent oversight of the covered bank's management, at least two members of the board of directors: 6 6 This provision does not supersede other regulatory requirements regarding the composition of the Board that apply to Federal savings associations. These institutions must continue to comply with such other requirements. 1. Should not be an off",
+      "source_id": "ecfr-t12-p30",
+      "start": 109382
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.D",
+      "end": 110175,
+      "id": "span-ecfr-t12-p30-appD-III.D",
+      "quote": "D. Include Independent Directors. To promote effective, independent oversight of the covered bank's management, at least two members of the board of directors: 6 6 This provision does not supersede other regulatory requirements regarding the composition of the Board that apply to Federal savings associations. These institutions must continue to comply with such other requirements. 1. Should not be an officer or employee of the parent company or covered bank and has not been an officer or employee of the parent company or covered bank during the previous three years; 2. Should not be a member o",
+      "source_id": "ecfr-t12-p30",
+      "start": 109575
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.E",
+      "end": 111269,
+      "id": "span-ecfr-t12-p30-appD-III.E",
+      "quote": "E. Provide Ongoing Training to All Directors. The board of directors should establish and adhere to a formal, ongoing training program for all directors. This program should consider the directors' knowledge and experience and the covered bank's risk profile. The program should include, as appropriate, training on: 1. Complex products, services, lines of business, and risks that have a significant impact on the covered bank; 2. Laws, regulations, and supervisory requirements applicable to the covered bank; and 3. Other topics identified by the board of directors. F. Self-Assessments. A covered",
+      "source_id": "ecfr-t12-p30",
+      "start": 110669
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.F",
+      "end": 111518,
+      "id": "span-ecfr-t12-p30-appD-III.F",
+      "quote": "F. Self-Assessments. A covered bank's board of directors should conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines. [79 FR 54545, Sept. 11, 2014, as amended at 91 FR 18293, Apr. 10, 2026]",
+      "source_id": "ecfr-t12-p30",
+      "start": 111239
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, II.L",
+      "end": 88343,
+      "id": "span-ecfr-t12-p30-appD-II.L",
+      "quote": "II. Standards for Risk Governance Framework A. Risk Governance Framework. A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee. The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities. Independent risk management should review and update the risk governance framework at least annually, and as",
+      "source_id": "ecfr-t12-p30",
+      "start": 87743
+    },
+    {
+      "citation": "OCC Comptroller's Handbook: Corporate and Risk Governance",
+      "end": 25000,
+      "id": "span-occ-ch-crg-anchor",
+      "quote": "e effective governance of its bank. The board is accountable to shareholders, regulators, and other stakeholders. The board is responsible for overseeing management, providing organizational leadership, and establishing core corporate values. The board should create a corporate and risk governance framework to facilitate oversight and help set the bank\u2019s strategic direction, risk culture, and risk appetite. The board also oversees the talent management processes for senior management, which incl",
+      "source_id": "occ-ch-crg",
+      "start": 24500
+    }
+  ],
+  "summary": {
+    "unverified": 6,
+    "verified": 36
+  },
+  "wave": "w6-governance-structural"
+}

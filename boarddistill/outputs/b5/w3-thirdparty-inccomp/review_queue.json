@@ -1,0 +1,72 @@
+{
+  "_meta": "B5-T2 review queue for wave w3-thirdparty-inccomp: non-verified rows and currency flags.",
+  "counts": {
+    "unverified": 9
+  },
+  "items": [
+    {
+      "citation": "12 CFR part 359; FDI Act \u00a718(k)",
+      "cluster": "Incentive compensation",
+      "duty_id": "b:ELG-04",
+      "flag": "unverified",
+      "note": "part-level CFR cite; no addressable section"
+    },
+    {
+      "citation": "Appendix C \u2014 Corporate governance/nominating committee",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:BCG-08",
+      "flag": "unverified",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.42); candidate recorded \u2014 checkpoint \u00a73: 'xes > Appendix C Comptroller\u2019s Handbook 110 Corporate and Risk Governance Committee Description Corp'"
+    },
+    {
+      "citation": "Access to Senior Management; Outside Advisors",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:BCG-13",
+      "flag": "unverified",
+      "note": "duty text not located in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.36)"
+    },
+    {
+      "citation": "Principle 3 (Strong Corporate Governance)",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-01",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Principle 3",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-02",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Principle 3",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-03",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Proposed only",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-04",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Secs. D.1 and D.2 (Independent Reviews), pp. 21-22",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-05",
+      "flag": "unverified",
+      "note": "anchor match borderline in SR 23-4 attachment (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'system of internal controls to manage risks associated with third-party relationships; \u2022 Assessing w'"
+    },
+    {
+      "citation": "CMR service-provider oversight (local ll. ~2921-2944)",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-07",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    }
+  ],
+  "wave": "w3-thirdparty-inccomp"
+}

@@ -1,0 +1,51 @@
+{
+  "_meta": "B5-T2 review queue for wave w6-governance-structural: non-verified rows and currency flags.",
+  "counts": {
+    "unverified": 6
+  },
+  "items": [
+    {
+      "citation": "FDI Act \u00a77(a)(3); \u00a77(j)",
+      "cluster": "Director eligibility & continuity",
+      "duty_id": "b:ELG-03",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "NYSE Listed Company Manual 303A; Nasdaq Rule 5600",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "b:IND-06",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "FDI Act \u00a78(e); \u00a78(e)(2)(B)",
+      "cluster": "Personal liability",
+      "duty_id": "p:PLB-02",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Section A.2(a)-(f); A.1(f)",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-16",
+      "flag": "unverified",
+      "note": "no attachment PDF on the SR 12-17 page; letter-body anchor borderline (best 0.42); candidate recorded \u2014 checkpoint \u00a73: 'ure, incentives, structure, and processes that promote its compliance with laws, regulations, and su'"
+    },
+    {
+      "citation": "Five enumerated duties",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:GOV-30",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Corporate Governance \u2014 subsidiary bank / affiliate relationships (local ll. ~1915-1962)",
+      "cluster": "Director independence (cross-cutting)",
+      "duty_id": "s:SUB-01",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    }
+  ],
+  "wave": "w6-governance-structural"
+}

@@ -1,0 +1,72 @@
+{
+  "_meta": "B5-T2 corpus verification summary: per-wave + MVP funnel and residual taxonomy, cache-replayed. Contradictions (if any) are wave-halting checkpoints.",
+  "by_wave": {
+    "mvp": {
+      "contradicted": 0,
+      "unverified": 21,
+      "verified": 51
+    },
+    "w1-liquidity-resolution": {
+      "contradicted": 0,
+      "unverified": 12,
+      "verified": 20
+    },
+    "w2-opres-cyber-model": {
+      "contradicted": 0,
+      "unverified": 10,
+      "verified": 9
+    },
+    "w3-thirdparty-inccomp": {
+      "contradicted": 0,
+      "unverified": 9,
+      "verified": 9
+    },
+    "w4-bsa-consumer": {
+      "contradicted": 0,
+      "unverified": 23,
+      "verified": 10
+    },
+    "w5-credit-insider": {
+      "contradicted": 0,
+      "unverified": 4,
+      "verified": 7
+    },
+    "w6-governance-structural": {
+      "contradicted": 0,
+      "unverified": 6,
+      "verified": 36
+    }
+  },
+  "residual_taxonomy": {
+    "CFR/guidance appendix \u2014 not section-addressable in this pass": 2,
+    "anchor match borderline in FDIC RMS Manual of Examination Po": 1,
+    "anchor match borderline in OCC Comptroller's Handbook: Corpo": 8,
+    "anchor match borderline in SR 12-7 attachment": 1,
+    "anchor match borderline in SR 13-1 attachment": 1,
+    "anchor match borderline in SR 15-18 attachment": 1,
+    "anchor match borderline in SR 19-3 attachment": 2,
+    "anchor match borderline in SR 20-24 attachment": 1,
+    "anchor match borderline in SR 21-3 attachment": 2,
+    "anchor match borderline in SR 23-4 attachment": 1,
+    "anchor match borderline in SR 95-51 attachment": 1,
+    "duty text not located in FDIC RMS Manual of Examination Poli": 3,
+    "duty text not located in OCC Comptroller's Handbook: Corpora": 2,
+    "duty text not located in the SR 10-6 attachment": 1,
+    "duty text not located in the SR 14-1 attachment": 1,
+    "duty text not located in the SR 26-2 attachment": 1,
+    "local line-number reference": 11,
+    "no attachment PDF on the SR 08-8 page": 3,
+    "no attachment PDF on the SR 11-7 page": 1,
+    "no attachment PDF on the SR 12-17 page": 1,
+    "no attachment PDF on the SR 14-8 page": 1,
+    "part-level CFR cite": 5,
+    "unrecognized or non-primary citation form": 34
+  },
+  "strata": {},
+  "totals": {
+    "contradicted": 0,
+    "rows": 227,
+    "unverified": 85,
+    "verified": 142
+  }
+}

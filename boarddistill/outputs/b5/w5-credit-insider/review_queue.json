@@ -1,0 +1,37 @@
+{
+  "_meta": "B5-T2 review queue for wave w5-credit-insider: non-verified rows and currency flags.",
+  "counts": {
+    "unverified": 4
+  },
+  "items": [
+    {
+      "citation": "12 CFR 208 subpart E / 12 CFR 365 / 12 CFR 34 subpart D",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-01",
+      "flag": "unverified",
+      "note": "part-level CFR cite; no addressable section"
+    },
+    {
+      "citation": "Interagency ACL policy statement; ASC 326",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-02",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "12 CFR part 206",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-06",
+      "flag": "unverified",
+      "note": "part-level CFR cite; no addressable section"
+    },
+    {
+      "citation": "Credit-risk handbook/manual sections",
+      "cluster": "Credit risk governance",
+      "duty_id": "s:CRX-01",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    }
+  ],
+  "wave": "w5-credit-insider"
+}

@@ -1,0 +1,709 @@
+{
+  "_meta": "B5-T2 verification for wave w4-bsa-consumer. Same resolver stack and allowlist as B1/B2; verified rows carry a pinned span, non-verified rows carry a reason. A contradicted row halts the wave (checkpoint).",
+  "contradicted": [],
+  "records": [
+    {
+      "checked_span_ids": [
+        "span-ecfr-t31-p1010-1010.210"
+      ],
+      "claim_id": "claim-b:BSA-01",
+      "id": "v-claim-b:BSA-01",
+      "method": "live_retrieval",
+      "note": "31 CFR 1010.210 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t31-p1010-1010.210"
+      ],
+      "claim_id": "claim-b:BSA-02",
+      "id": "v-claim-b:BSA-02",
+      "method": "live_retrieval",
+      "note": "31 CFR 1010.210(a)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t31-p1010-1010.210"
+      ],
+      "claim_id": "claim-b:BSA-03",
+      "id": "v-claim-b:BSA-03",
+      "method": "live_retrieval",
+      "note": "31 CFR 1010.210 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t31-p1010-1010.210"
+      ],
+      "claim_id": "claim-b:BSA-04",
+      "id": "v-claim-b:BSA-04",
+      "method": "live_retrieval",
+      "note": "31 CFR 1010.210(a)(5) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t31-p1010-1010.210"
+      ],
+      "claim_id": "claim-b:BSA-05",
+      "id": "v-claim-b:BSA-05",
+      "method": "live_retrieval",
+      "note": "31 CFR 1010.210(a)(4) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p208-208.63"
+      ],
+      "claim_id": "claim-s:BSA-01",
+      "id": "v-claim-s:BSA-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 208.63 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p208-208.63"
+      ],
+      "claim_id": "claim-s:BSA-02",
+      "id": "v-claim-s:BSA-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 208.63(c)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-03",
+      "id": "v-claim-s:BSA-03",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p208-208.63"
+      ],
+      "claim_id": "claim-s:BSA-04",
+      "id": "v-claim-s:BSA-04",
+      "method": "live_retrieval",
+      "note": "12 CFR 208.63(c)(3) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-05",
+      "id": "v-claim-s:BSA-05",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-06",
+      "id": "v-claim-s:BSA-06",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-07",
+      "id": "v-claim-s:BSA-07",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-08",
+      "id": "v-claim-s:BSA-08",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-09",
+      "id": "v-claim-s:BSA-09",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-10",
+      "id": "v-claim-s:BSA-10",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-11",
+      "id": "v-claim-s:BSA-11",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-12",
+      "id": "v-claim-s:BSA-12",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BSA-13",
+      "id": "v-claim-s:BSA-13",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s2901-2901"
+      ],
+      "claim_id": "claim-s:CCX-01",
+      "id": "v-claim-s:CCX-01",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 2901 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-13-24-13-24"
+      ],
+      "claim_id": "claim-s:CCX-02",
+      "id": "v-claim-s:CCX-02",
+      "method": "live_retrieval",
+      "note": "SR 13-24 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-01",
+      "id": "v-claim-s:CON-01",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-02",
+      "id": "v-claim-s:CON-02",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-03",
+      "id": "v-claim-s:CON-03",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-04",
+      "id": "v-claim-s:CON-04",
+      "method": "live_retrieval",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.32)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-05",
+      "id": "v-claim-s:CON-05",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-06",
+      "id": "v-claim-s:CON-06",
+      "method": "live_retrieval",
+      "note": "no attachment PDF on the SR 08-8 page; letter-body anchor borderline (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'se of senior management. Boards of Directors. 10 The board should oversee the development of, review'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-07",
+      "id": "v-claim-s:CON-07",
+      "method": "live_retrieval",
+      "note": "no attachment PDF on the SR 08-8 page; letter-body anchor borderline (best 0.52); candidate recorded \u2014 checkpoint \u00a73: ' rest either with the corporate compliance function, or with a member or committee of senior managem'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-08",
+      "id": "v-claim-s:CON-08",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-09",
+      "id": "v-claim-s:CON-09",
+      "method": "live_retrieval",
+      "note": "no attachment PDF on the SR 08-8 page; duty text not located in the letter body (best 0.24)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-10",
+      "id": "v-claim-s:CON-10",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-11",
+      "id": "v-claim-s:CON-11",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-12",
+      "id": "v-claim-s:CON-12",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CON-13",
+      "id": "v-claim-s:CON-13",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    }
+  ],
+  "rows": [
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "31 CFR 1010.210 / 1020.210; 12 CFR 21.21, 208.63, 326.8",
+      "cluster": "BSA/AML program",
+      "duty_id": "b:BSA-01",
+      "note": "31 CFR 1010.210 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "31 CFR 1010.210(a)(2); 12 CFR 21.21(c)(3)",
+      "cluster": "BSA/AML program",
+      "duty_id": "b:BSA-02",
+      "note": "31 CFR 1010.210(a)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "31 CFR 1010.210",
+      "cluster": "BSA/AML program",
+      "duty_id": "b:BSA-03",
+      "note": "31 CFR 1010.210 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "31 CFR 1010.210(a)(5)",
+      "cluster": "BSA/AML program",
+      "duty_id": "b:BSA-04",
+      "note": "31 CFR 1010.210(a)(5) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "31 CFR 1010.210(a)(4)",
+      "cluster": "BSA/AML program",
+      "duty_id": "b:BSA-05",
+      "note": "31 CFR 1010.210(a)(4) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "Introduction, para. 1 (citing 12 CFR 208.63, 326.8, 21.21, 748.2)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-01",
+      "note": "12 CFR 208.63 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "Internal Controls, para. 1 (citing 12 CFR 208.63(c)(1), etc.)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-02",
+      "note": "12 CFR 208.63(c)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Internal Controls, bulleted control expectations",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-03",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "BSA Compliance Officer, Objective + para. 1 (citing 12 CFR 208.63(c)(3), etc.)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-04",
+      "note": "12 CFR 208.63(c)(3) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "BSA Compliance Officer, para. 1 (cross-ref FinCEN FIN-2014-A007)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-05",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "BSA Compliance Officer, para. 2",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-06",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "BSA/AML Training, para. 2",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-07",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Advisory",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-08",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Proposed 31 CFR 10XX.210(d); preamble sec. V.E.2",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-09",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Proposed program-rule amendments",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-10",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "BSA/AML oversight (local ll. ~1184-1193, 3504-3526)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-11",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Independent Testing exam procedures",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-12",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "OFAC / sanctions examination sections",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-13",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 2901 et seq.",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CCX-01",
+      "note": "12 U.S.C. 2901 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 328; SR 13-24",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CCX-02",
+      "note": "SR 13-24 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Oversight and Commitment / Board of Directors, pp. 6-7",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-01",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Board of Directors, p. 7",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-02",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Board of Directors, p. 7",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-03",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. II-3.1",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-04",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.32)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. II-3.1 (audit and training subsections)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-05",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. IV (Responsibilities of the Board of Directors and Senior Management), p. 8; sec. I",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-06",
+      "note": "no attachment PDF on the SR 08-8 page; letter-body anchor borderline (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'se of senior management. Boards of Directors. 10 The board should oversee the development of, review'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. IV (Boards of Directors), p. 9; sec. II",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-07",
+      "note": "no attachment PDF on the SR 08-8 page; letter-body anchor borderline (best 0.52); candidate recorded \u2014 checkpoint \u00a73: ' rest either with the corporate compliance function, or with a member or committee of senior managem'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "CMR module (board and senior management)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-08",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Fair-lending exam procedures; CMS expectations",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-09",
+      "note": "no attachment PDF on the SR 08-8 page; duty text not located in the letter body (best 0.24)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "CMR Module 1 (local ll. ~2878-2949)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-10",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "CMR procedures (local ll. ~2991-3065)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-11",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "CMR Monitoring/Audit (local ll. ~3354-3401)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-12",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Consumer compliance (local ll. ~3442-3473, 3895-3901)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-13",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "31 CFR 1010.210",
+      "end": 40412,
+      "id": "span-ecfr-t31-p1010-1010.210",
+      "quote": "\u00a7 1010.210 Anti-money laundering programs. Each financial institution (as defined in 31 U.S.C. 5312(a)(2) or (c)(1)) should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements.",
+      "source_id": "ecfr-t31-p1010",
+      "start": 40185
+    },
+    {
+      "citation": "31 CFR 1010.210(a)(2)",
+      "end": 40412,
+      "id": "span-ecfr-t31-p1010-1010.210",
+      "quote": "(a)(2) or (c)(1)) should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements.",
+      "source_id": "ecfr-t31-p1010",
+      "start": 40284
+    },
+    {
+      "citation": "31 CFR 1010.210",
+      "end": 40412,
+      "id": "span-ecfr-t31-p1010-1010.210",
+      "quote": "\u00a7 1010.210 Anti-money laundering programs. Each financial institution (as defined in 31 U.S.C. 5312(a)(2) or (c)(1)) should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements.",
+      "source_id": "ecfr-t31-p1010",
+      "start": 40185
+    },
+    {
+      "citation": "31 CFR 1010.210(a)(5)",
+      "end": 40412,
+      "id": "span-ecfr-t31-p1010-1010.210",
+      "quote": "(a)(2) or (c)(1)) should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements.",
+      "source_id": "ecfr-t31-p1010",
+      "start": 40284
+    },
+    {
+      "citation": "31 CFR 1010.210(a)(4)",
+      "end": 40412,
+      "id": "span-ecfr-t31-p1010-1010.210",
+      "quote": "(a)(2) or (c)(1)) should refer to subpart B of its chapter X part for any additional anti-money laundering program requirements.",
+      "source_id": "ecfr-t31-p1010",
+      "start": 40284
+    },
+    {
+      "citation": "12 CFR 208.63",
+      "end": 172917,
+      "id": "span-ecfr-t12-p208-208.63",
+      "quote": "\u00a7 208.63 Procedures for monitoring Bank Secrecy Act compliance. (a) Purpose. This section is issued to assure that all state member banks establish and maintain procedures reasonably designed to assure and monitor their compliance with the provisions of the Bank Secrecy Act (31 U.S.C. 5311, et seq. ) and the implementing regulations promulgated thereunder by the Department of Treasury at 31 CFR part 103, requiring recordkeeping and reporting of currency transactions. (b) Establishment of BSA compliance program \u2014(1) Program requirement. Each bank shall develop and provide for the continued admi",
+      "source_id": "ecfr-t12-p208",
+      "start": 172317
+    },
+    {
+      "citation": "12 CFR 208.63(c)(1)",
+      "end": 174210,
+      "id": "span-ecfr-t12-p208-208.63",
+      "quote": "(c) Contents of compliance program. The compliance program shall, at a minimum: (1) Provide for a system of internal controls to assure ongoing compliance; (2) Provide for independent testing for compliance to be conducted by bank personnel or by an outside party; (3) Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance; and (4) Provide training for appropriate personnel. [63 FR 37655, July 13, 1998, as amended at 68 FR 25111, May 9, 2003]",
+      "source_id": "ecfr-t12-p208",
+      "start": 173715
+    },
+    {
+      "citation": "12 CFR 208.63(c)(3)",
+      "end": 174210,
+      "id": "span-ecfr-t12-p208-208.63",
+      "quote": "(c) Contents of compliance program. The compliance program shall, at a minimum: (1) Provide for a system of internal controls to assure ongoing compliance; (2) Provide for independent testing for compliance to be conducted by bank personnel or by an outside party; (3) Designate an individual or individuals responsible for coordinating and monitoring day-to-day compliance; and (4) Provide training for appropriate personnel. [63 FR 37655, July 13, 1998, as amended at 68 FR 25111, May 9, 2003]",
+      "source_id": "ecfr-t12-p208",
+      "start": 173715
+    },
+    {
+      "citation": "12 U.S.C. 2901",
+      "end": 713,
+      "id": "span-usc-t12-s2901-2901",
+      "quote": "2901 - Congressional findings and statement of purpose From the U.S. Government Publishing Office, www.gpo.gov \u00a72901. Congressional findings and statement of purpose (a) The Congress finds that\u2014 (1) regulated financial institutions are required by law to demonstrate that their deposit facilities serve the convenience and needs of the communities in which they are chartered to do business; (2) the convenience and needs of communities include the need for credit services as well as deposit services; and (3) regulated financial institutions have continuing and affirmative obligation to help meet ",
+      "source_id": "usc-t12-s2901",
+      "start": 113
+    },
+    {
+      "citation": "SR 13-24",
+      "end": 2310,
+      "id": "span-sr-13-24-13-24",
+      "quote": "SUBJECT: Managing Foreign Exchange Settlement Risks for Physically Settled Transactions Applicability: This guidance applies to large financial institutions supervised by the Federal Reserve, as defined in SR letter 12-17 / CA letter 12-14, \"Consolidated Supervision Framework for Large Financial Institutions.\" This guidance does not apply to community and regional banking organizations, defined as those with less than $50 billion in total consolidated assets, unless the banking organization engages in significant foreign exchange activities. The Federal Reserve notes that the Basel Committee o",
+      "source_id": "sr-13-24",
+      "start": 1710
+    }
+  ],
+  "summary": {
+    "unverified": 23,
+    "verified": 10
+  },
+  "wave": "w4-bsa-consumer"
+}

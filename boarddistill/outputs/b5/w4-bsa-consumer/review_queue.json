@@ -1,0 +1,170 @@
+{
+  "_meta": "B5-T2 review queue for wave w4-bsa-consumer: non-verified rows and currency flags.",
+  "counts": {
+    "unverified": 23
+  },
+  "items": [
+    {
+      "citation": "Internal Controls, bulleted control expectations",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-03",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "BSA Compliance Officer, para. 1 (cross-ref FinCEN FIN-2014-A007)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-05",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "BSA Compliance Officer, para. 2",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-06",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "BSA/AML Training, para. 2",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-07",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Advisory",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-08",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Proposed 31 CFR 10XX.210(d); preamble sec. V.E.2",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-09",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Proposed program-rule amendments",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-10",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "BSA/AML oversight (local ll. ~1184-1193, 3504-3526)",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-11",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "Independent Testing exam procedures",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-12",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "OFAC / sanctions examination sections",
+      "cluster": "BSA/AML program",
+      "duty_id": "s:BSA-13",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Oversight and Commitment / Board of Directors, pp. 6-7",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-01",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Board of Directors, p. 7",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-02",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Board of Directors, p. 7",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-03",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Sec. II-3.1",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-04",
+      "flag": "unverified",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.32)"
+    },
+    {
+      "citation": "Sec. II-3.1 (audit and training subsections)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-05",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Sec. IV (Responsibilities of the Board of Directors and Senior Management), p. 8; sec. I",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-06",
+      "flag": "unverified",
+      "note": "no attachment PDF on the SR 08-8 page; letter-body anchor borderline (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'se of senior management. Boards of Directors. 10 The board should oversee the development of, review'"
+    },
+    {
+      "citation": "Sec. IV (Boards of Directors), p. 9; sec. II",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-07",
+      "flag": "unverified",
+      "note": "no attachment PDF on the SR 08-8 page; letter-body anchor borderline (best 0.52); candidate recorded \u2014 checkpoint \u00a73: ' rest either with the corporate compliance function, or with a member or committee of senior managem'"
+    },
+    {
+      "citation": "CMR module (board and senior management)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-08",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Fair-lending exam procedures; CMS expectations",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-09",
+      "flag": "unverified",
+      "note": "no attachment PDF on the SR 08-8 page; duty text not located in the letter body (best 0.24)"
+    },
+    {
+      "citation": "CMR Module 1 (local ll. ~2878-2949)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-10",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "CMR procedures (local ll. ~2991-3065)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-11",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "CMR Monitoring/Audit (local ll. ~3354-3401)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-12",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "Consumer compliance (local ll. ~3442-3473, 3895-3901)",
+      "cluster": "Consumer compliance (CMS)",
+      "duty_id": "s:CON-13",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    }
+  ],
+  "wave": "w4-bsa-consumer"
+}

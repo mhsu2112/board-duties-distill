@@ -1,0 +1,429 @@
+{
+  "_meta": "B5-T2 verification for wave w3-thirdparty-inccomp. Same resolver stack and allowlist as B1/B2; verified rows carry a pinned span, non-verified rows carry a reason. A contradicted row halts the wave (checkpoint).",
+  "contradicted": [],
+  "records": [
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:ELG-04",
+      "id": "v-claim-b:ELG-04",
+      "method": "live_retrieval",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s5641-5641"
+      ],
+      "claim_id": "claim-b:INC-01",
+      "id": "v-claim-b:INC-01",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 5641 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t17-p240-240.10C-1"
+      ],
+      "claim_id": "claim-b:IND-07",
+      "id": "v-claim-b:IND-07",
+      "method": "live_retrieval",
+      "note": "17 CFR 240.10C-1 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-08",
+      "id": "v-claim-s:BCG-08",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.42); candidate recorded \u2014 checkpoint \u00a73: 'xes > Appendix C Comptroller\u2019s Handbook 110 Corporate and Risk Governance Committee Description Corp'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-occ-ch-crg-anchor"
+      ],
+      "claim_id": "claim-s:BCG-11",
+      "id": "v-claim-s:BCG-11",
+      "method": "live_retrieval",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.69)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-13",
+      "id": "v-claim-s:BCG-13",
+      "method": "live_retrieval",
+      "note": "duty text not located in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.36)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:INC-01",
+      "id": "v-claim-s:INC-01",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:INC-02",
+      "id": "v-claim-s:INC-02",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:INC-03",
+      "id": "v-claim-s:INC-03",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:INC-04",
+      "id": "v-claim-s:INC-04",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.E"
+      ],
+      "claim_id": "claim-s:INC-05",
+      "id": "v-claim-s:INC-05",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-23-4-att-anchor"
+      ],
+      "claim_id": "claim-s:TPR-01",
+      "id": "v-claim-s:TPR-01",
+      "method": "live_retrieval",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-23-4-att-anchor"
+      ],
+      "claim_id": "claim-s:TPR-02",
+      "id": "v-claim-s:TPR-02",
+      "method": "live_retrieval",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 0.63)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-23-4-att-anchor"
+      ],
+      "claim_id": "claim-s:TPR-03",
+      "id": "v-claim-s:TPR-03",
+      "method": "live_retrieval",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-23-4-att-anchor"
+      ],
+      "claim_id": "claim-s:TPR-04",
+      "id": "v-claim-s:TPR-04",
+      "method": "live_retrieval",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:TPR-05",
+      "id": "v-claim-s:TPR-05",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 23-4 attachment (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'system of internal controls to manage risks associated with third-party relationships; \u2022 Assessing w'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-23-4-att-anchor"
+      ],
+      "claim_id": "claim-s:TPR-06",
+      "id": "v-claim-s:TPR-06",
+      "method": "live_retrieval",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 0.69)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:TPR-07",
+      "id": "v-claim-s:TPR-07",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    }
+  ],
+  "rows": [
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "12 CFR part 359; FDI Act \u00a718(k)",
+      "cluster": "Incentive compensation",
+      "duty_id": "b:ELG-04",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 5641; 12 CFR part 236 (reserved)",
+      "cluster": "Incentive compensation",
+      "duty_id": "b:INC-01",
+      "note": "12 U.S.C. 5641 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "15 U.S.C. 78j-3; 17 CFR 240.10C-1",
+      "cluster": "Incentive compensation",
+      "duty_id": "b:IND-07",
+      "note": "17 CFR 240.10C-1 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Appendix C \u2014 Corporate governance/nominating committee",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:BCG-08",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.42); candidate recorded \u2014 checkpoint \u00a73: 'xes > Appendix C Comptroller\u2019s Handbook 110 Corporate and Risk Governance Committee Description Corp'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Director Compensation",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:BCG-11",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.69)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Access to Senior Management; Outside Advisors",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:BCG-13",
+      "note": "duty text not located in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.36)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Principle 3 (Strong Corporate Governance)",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-01",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Principle 3",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-02",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Principle 3",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-03",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Proposed only",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-04",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. D, secs. III.E / II.L (Talent Management); III (Risk Governance Framework)",
+      "cluster": "Incentive compensation",
+      "duty_id": "s:INC-05",
+      "note": "12 CFR Part 30, App. D, III.E present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Sec. D.1 (Oversight and Accountability), p. 20",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-01",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Sec. D.1, p. 20",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-02",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 0.63)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Sec. C.3 (Contract Negotiation), p. 11",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-03",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Sec. C.1 (Planning), p. 4",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-04",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Secs. D.1 and D.2 (Independent Reviews), pp. 21-22",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-05",
+      "note": "anchor match borderline in SR 23-4 attachment (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'system of internal controls to manage risks associated with third-party relationships; \u2022 Assessing w'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Sec. D (local ll. ~1092-1124)",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-06",
+      "note": "SR 23-4 attachment: duty text anchor-matched (score 0.69)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "CMR service-provider oversight (local ll. ~2921-2944)",
+      "cluster": "Third-party risk management",
+      "duty_id": "s:TPR-07",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "12 U.S.C. 5641",
+      "end": 765,
+      "id": "span-usc-t12-s5641-5641",
+      "quote": "5641 - Enhanced compensation structure reporting From the U.S. Government Publishing Office, www.gpo.gov \u00a75641. Enhanced compensation structure reporting (a) Enhanced disclosure and reporting of compensation arrangements (1) In general Not later than 9 months after July 21, 2010, the appropriate Federal regulators jointly shall prescribe regulations or guidelines to require each covered financial institution to disclose to the appropriate Federal regulator the structures of all incentive-based compensation arrangements offered by such covered financial institutions sufficient to determine whet",
+      "source_id": "usc-t12-s5641",
+      "start": 165
+    },
+    {
+      "citation": "17 CFR 240.10C-1",
+      "end": 442245,
+      "id": "span-ecfr-t17-p240-240.10C-1",
+      "quote": "\u00a7 240.10C-1 Listing standards relating to compensation committees. (a) Pursuant to section 10C(a) of the Act (15 U.S.C. 78j-3(a)) and section 952 of the Dodd-Frank Wall Street Reform and Consumer Protection Act of 2010 (Pub. L. 111-203, 124 Stat. 1900): (1) National securities exchanges. The rules of each national securities exchange registered pursuant to section 6 of the Act (15 U.S.C. 78f), to the extent such national securities exchange lists equity securities, must, in accordance with the provisions of this section, prohibit the initial or continued listing of any equity security of an is",
+      "source_id": "ecfr-t17-p240",
+      "start": 441645
+    },
+    {
+      "citation": "OCC Comptroller's Handbook: Corporate and Risk Governance",
+      "end": 43750,
+      "id": "span-occ-ch-crg-anchor",
+      "quote": "a director\u2019s time and the responsibilities, director compensation should be competitive and sufficient to attract and retain qualified individuals. The board or a designated committee sets and periodically reevaluates director compensation. Such compensation should be aligned with industry standards and be commensurate with an individual director\u2019s responsibilities. The board also should safeguard against payment of compensation, fees, and benefits that are excessive or that could lead to materi",
+      "source_id": "occ-ch-crg",
+      "start": 43250
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.E",
+      "end": 111269,
+      "id": "span-ecfr-t12-p30-appD-III.E",
+      "quote": "E. Provide Ongoing Training to All Directors. The board of directors should establish and adhere to a formal, ongoing training program for all directors. This program should consider the directors' knowledge and experience and the covered bank's risk profile. The program should include, as appropriate, training on: 1. Complex products, services, lines of business, and risks that have a significant impact on the covered bank; 2. Laws, regulations, and supervisory requirements applicable to the covered bank; and 3. Other topics identified by the board of directors. F. Self-Assessments. A covered",
+      "source_id": "ecfr-t12-p30",
+      "start": 110669
+    },
+    {
+      "citation": "SR 23-4 attachment",
+      "end": 61250,
+      "id": "span-sr-23-4-att-anchor",
+      "quote": " a banking organization to minimize adverse financial, operational, or other consequences. A banking organization's board of directors has ultimate responsibility for providing oversight for third-party risk management and holding management accountable. The board also provides clear guidance regarding acceptable risk appetite, approves appropriate policies, and ensures that appropriate procedures and practices have been established. A banking organization's management is responsible for develop",
+      "source_id": "sr-23-4-att",
+      "start": 60750
+    },
+    {
+      "citation": "SR 23-4 attachment",
+      "end": 62000,
+      "id": "span-sr-23-4-att-anchor",
+      "quote": "es, the board of directors (or a designated board committee) typically considers the following factors, among others: \u2022 Whether third-party relationships are managed in a manner consistent with the banking organization's strategic goals and risk appetite and in compliance with applicable laws and regulations; \u2022 Whether there is appropriate periodic reporting on the banking organization's third-party relationships, such as the results of management's planning, due diligence, contract negotiation,",
+      "source_id": "sr-23-4-att",
+      "start": 61500
+    },
+    {
+      "citation": "SR 23-4 attachment",
+      "end": 33750,
+      "id": "span-sr-23-4-att-anchor",
+      "quote": "may gain an advantage by negotiating contracts as a group with other organizations. It is important that a banking organization understand the benefits and risks associated with engaging third parties and particularly before executing contracts involving higher-risk activities, including critical activities. As part of its oversight responsibilities, the board of directors should be aware of and, as appropriate, may approve or delegate approval of contracts involving higher-risk activities. Lega",
+      "source_id": "sr-23-4-att",
+      "start": 33250
+    },
+    {
+      "citation": "SR 23-4 attachment",
+      "end": 10000,
+      "id": "span-sr-23-4-att-anchor",
+      "quote": "ks before entering into a third-party relationship. Certain third parties, such as those that support a banking organization's higher-risk activities, including critical activities, typically warrant a greater degree of planning and consideration. For example, when critical activities are involved, plans may be presented to and approved by a banking organization's board of directors (or a designated board committee). Depending on the degree of risk and complexity of the third-party relationship,",
+      "source_id": "sr-23-4-att",
+      "start": 9500
+    },
+    {
+      "citation": "SR 23-4 attachment",
+      "end": 66750,
+      "id": "span-sr-23-4-att-anchor",
+      "quote": " \u2022 If applicable, reports related to customer complaint and inquiry monitoring, and any subsequent remediation reports; \u2022 Reports from third parties of service disruptions, security breaches, or other events that pose, or may pose, a material risk to the banking organization; \u2022 Results of independent reviews; and \u2022 Periodic reporting to the board (including, as applicable, dependency on a single provider for multiple activities). Page 23 of 23 E. SUPERVISORY REVIEWS OF THIRD-PARTY RELATIONSHIPS ",
+      "source_id": "sr-23-4-att",
+      "start": 66250
+    }
+  ],
+  "summary": {
+    "unverified": 9,
+    "verified": 9
+  },
+  "wave": "w3-thirdparty-inccomp"
+}

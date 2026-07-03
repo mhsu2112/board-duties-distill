@@ -1,0 +1,79 @@
+{
+  "_meta": "B5-T2 review queue for wave w2-opres-cyber-model: non-verified rows and currency flags.",
+  "counts": {
+    "unverified": 10
+  },
+  "items": [
+    {
+      "citation": "12 CFR part 53 (OCC); part 225 subpart N (FRB); part 304 subpart C (FDIC)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "b:CYB-04",
+      "flag": "unverified",
+      "note": "part-level CFR cite; no addressable section"
+    },
+    {
+      "citation": "Sec. I.A / I.B (Governance of the Information Security Program)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-01",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Sec. I.B",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-02",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Sec. I.A.1 (Board of Directors Oversight)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-03",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Final rule",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-06",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Governance / resources sections",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-08",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Sec. VI (Governance and Controls)",
+      "cluster": "Model risk governance",
+      "duty_id": "s:MOD-01",
+      "flag": "unverified",
+      "note": "duty text not located in the SR 26-2 attachment (best 0.35)"
+    },
+    {
+      "citation": "Governance, Policies, and Controls (Board of Directors and Senior Management)",
+      "cluster": "Model risk governance",
+      "duty_id": "s:MOD-02",
+      "flag": "unverified",
+      "note": "no attachment PDF on the SR 11-7 page; duty text not located in the letter body (best 0.00)"
+    },
+    {
+      "citation": "Sec. 7 and 7(c); Appendix A (cyber)",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-04",
+      "flag": "unverified",
+      "note": "anchor match borderline in SR 20-24 attachment (best 0.57); candidate recorded \u2014 checkpoint \u00a73: 'activity that could lead to a disruption affecting the firm\u2019s critical operations and core business '"
+    },
+    {
+      "citation": "Sec. II.A, Board and Senior Management Responsibilities",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-05",
+      "flag": "unverified",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.19)"
+    }
+  ],
+  "wave": "w2-opres-cyber-model"
+}

@@ -1,0 +1,283 @@
+{
+  "_meta": "B5-T2 verification for wave w5-credit-insider. Same resolver stack and allowlist as B1/B2; verified rows carry a pinned span, non-verified rows carry a reason. A contradicted row halts the wave (checkpoint).",
+  "contradicted": [],
+  "records": [
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s375b-375b"
+      ],
+      "claim_id": "claim-b:AFF-01",
+      "id": "v-claim-b:AFF-01",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 375b present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s371c-371c"
+      ],
+      "claim_id": "claim-b:AFF-02",
+      "id": "v-claim-b:AFF-02",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 371c present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:CRD-01",
+      "id": "v-claim-b:CRD-01",
+      "method": "live_retrieval",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:CRD-02",
+      "id": "v-claim-b:CRD-02",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-full"
+      ],
+      "claim_id": "claim-b:CRD-03",
+      "id": "v-claim-b:CRD-03",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s375b-375b"
+      ],
+      "claim_id": "claim-b:CRD-04",
+      "id": "v-claim-b:CRD-04",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 375b(3) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s371c-1-371c-1"
+      ],
+      "claim_id": "claim-b:CRD-05",
+      "id": "v-claim-b:CRD-05",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 371c-1 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:CRD-06",
+      "id": "v-claim-b:CRD-06",
+      "method": "live_retrieval",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t17-p229-229.404"
+      ],
+      "claim_id": "claim-b:IND-09",
+      "id": "v-claim-b:IND-09",
+      "method": "live_retrieval",
+      "note": "17 CFR 229.404 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CRX-01",
+      "id": "v-claim-s:CRX-01",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-11-10-11-10"
+      ],
+      "claim_id": "claim-s:CRX-02",
+      "id": "v-claim-s:CRX-02",
+      "method": "live_retrieval",
+      "note": "SR 11-10 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified"
+    }
+  ],
+  "rows": [
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 215 (215.4); 12 U.S.C. 375b",
+      "cluster": "Insider / affiliate / related-party",
+      "duty_id": "b:AFF-01",
+      "note": "12 U.S.C. 375b present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 223; 12 U.S.C. 371c, 371c-1",
+      "cluster": "Insider / affiliate / related-party",
+      "duty_id": "b:AFF-02",
+      "note": "12 U.S.C. 371c present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "12 CFR 208 subpart E / 12 CFR 365 / 12 CFR 34 subpart D",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-01",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Interagency ACL policy statement; ASC 326",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-02",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 30 App. D (independent risk mgmt)",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-03",
+      "note": "12 CFR Part 30, App. D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 215; 12 U.S.C. 375b(3)",
+      "cluster": "Insider / affiliate / related-party",
+      "duty_id": "b:CRD-04",
+      "note": "12 U.S.C. 375b(3) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 223; 12 U.S.C. 371c-1",
+      "cluster": "Insider / affiliate / related-party",
+      "duty_id": "b:CRD-05",
+      "note": "12 U.S.C. 371c-1 present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "12 CFR part 206",
+      "cluster": "Credit risk governance",
+      "duty_id": "b:CRD-06",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "17 CFR 229.404",
+      "cluster": "Insider / affiliate / related-party",
+      "duty_id": "b:IND-09",
+      "note": "17 CFR 229.404 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Credit-risk handbook/manual sections",
+      "cluster": "Credit risk governance",
+      "duty_id": "s:CRX-01",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "SR 11-10; 2013 leveraged-lending guidance",
+      "cluster": "Credit risk governance",
+      "duty_id": "s:CRX-02",
+      "note": "SR 11-10 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "12 U.S.C. 375b",
+      "end": 761,
+      "id": "span-usc-t12-s375b-375b",
+      "quote": "375b - Extensions of credit to executive officers, directors, and principal shareholders of member banks From the U.S. Government Publishing Office, www.gpo.gov \u00a7375b. Extensions of credit to executive officers, directors, and principal shareholders of member banks (1) In general No member bank may extend credit to any of its executive officers, directors, or principal shareholders, or to any related interest of such a person, except to the extent permitted under paragraphs (2), (3), (4), (5), and (6). (2) Preferential terms prohibited (A) In general A member bank may extend credit to its exec",
+      "source_id": "usc-t12-s375b",
+      "start": 161
+    },
+    {
+      "citation": "12 U.S.C. 371c",
+      "end": 761,
+      "id": "span-usc-t12-s371c-371c",
+      "quote": "371c - Banking affiliates From the U.S. Government Publishing Office, www.gpo.gov \u00a7371c. Banking affiliates (a) Restrictions on transactions with affiliates (1) A member bank and its subsidiaries may engage in a covered transaction with an affiliate only if\u2014 (A) in the case of any affiliate, the aggregate amount of covered transactions of the member bank and its subsidiaries will not exceed 10 per centum of the capital stock and surplus of the member bank; and (B) in the case of all affiliates, the aggregate amount of covered transactions of the member bank and its subsidiaries will not exceed",
+      "source_id": "usc-t12-s371c",
+      "start": 161
+    },
+    {
+      "citation": "12 CFR Part 30, App. D",
+      "end": 75119,
+      "id": "span-ecfr-t12-p30-appD-full",
+      "quote": "Appendix D to Part 30\u2014OCC Guidelines Establishing Heightened Standards for Certain Large Insured National Banks, Insured Federal Savings Associations, and Insured Federal Branches Table of Contents I. Introduction A. Scope B. Compliance Date C. Reservation of Authority D. Preservation of Existing Authority E. Definitions II. Standards For Risk Governance Framework A. Risk Governance Framework B. Scope of Risk Governance Framework C. Roles and Responsibilities 1. Role and Responsibilities of Front Line Units 2. Role and Responsibilities of Independent Risk Management 3. Role and Responsibilitie",
+      "source_id": "ecfr-t12-p30",
+      "start": 74519
+    },
+    {
+      "citation": "12 U.S.C. 375b(3)",
+      "end": 761,
+      "id": "span-usc-t12-s375b-375b",
+      "quote": "375b - Extensions of credit to executive officers, directors, and principal shareholders of member banks From the U.S. Government Publishing Office, www.gpo.gov \u00a7375b. Extensions of credit to executive officers, directors, and principal shareholders of member banks (1) In general No member bank may extend credit to any of its executive officers, directors, or principal shareholders, or to any related interest of such a person, except to the extent permitted under paragraphs (2), (3), (4), (5), and (6). (2) Preferential terms prohibited (A) In general A member bank may extend credit to its exec",
+      "source_id": "usc-t12-s375b",
+      "start": 161
+    },
+    {
+      "citation": "12 U.S.C. 371c-1",
+      "end": 761,
+      "id": "span-usc-t12-s371c-1-371c-1",
+      "quote": "371c-1 - Restrictions on transactions with affiliates From the U.S. Government Publishing Office, www.gpo.gov \u00a7371c\u20131. Restrictions on transactions with affiliates (a) In general (1) Terms A member bank and its subsidiaries may engage in any of the transactions described in paragraph (2) only\u2014 (A) on terms and under circumstances, including credit standards, that are substantially the same, or at least as favorable to such bank or its subsidiary, as those prevailing at the time for comparable transactions with or involving other nonaffiliated companies, or (B) in the absence of comparable tran",
+      "source_id": "usc-t12-s371c-1",
+      "start": 161
+    },
+    {
+      "citation": "17 CFR 229.404",
+      "end": 359423,
+      "id": "span-ecfr-t17-p229-229.404",
+      "quote": "\u00a7 229.404 (Item 404) Transactions with related persons, promoters and certain control persons. (a) Transactions with related persons. Describe any transaction, since the beginning of the registrant's last fiscal year, or any currently proposed transaction, in which the registrant was or is to be a participant and the amount involved exceeds $120,000, and in which any related person had or will have a direct or indirect material interest. Disclose the following information regarding the transaction: (1) The name of the related person and the basis on which the person is a related person. (2) Th",
+      "source_id": "ecfr-t17-p229",
+      "start": 358823
+    },
+    {
+      "citation": "SR 11-10",
+      "end": 2387,
+      "id": "span-sr-11-10-11-10",
+      "quote": "SUBJECT: Interagency Counterparty Credit Risk Management Guidance The federal banking agencies 1 are issuing the attached Interagency Supervisory Guidance on Counterparty Credit Risk Management . It is intended primarily for use by banking organizations with large derivatives portfolios in establishing and maintaining counterparty credit risk (CCR) management practices, as well as for supervisors as they assess and examine such institutions' CCR management. This guidance would generally not be applicable to community banking organizations and banking organizations with insignificant derivative",
+      "source_id": "sr-11-10",
+      "start": 1787
+    }
+  ],
+  "summary": {
+    "unverified": 4,
+    "verified": 7
+  },
+  "wave": "w5-credit-insider"
+}

@@ -101,6 +101,17 @@ Resolvable = CfrCite | CfrAppendixCite | UscCite | SrCite
 Citation = Resolvable | UnresolvedCite
 
 
+def _first_section_of_range(section: str) -> str:
+    """Resolve a numeric CFR section *range* to its first section.
+
+    The section char class captures a trailing range fragment: ``252.62-252.63`` is captured
+    as ``252.62-252`` and ``225.71-.73`` as ``225.71-``. A purely-numeric ``part.sec-`` prefix
+    marks a range, so we keep the first section. A within-section hyphen (e.g. ``240.13a-14`` —
+    a letter precedes the dash) is a single section and is preserved unchanged.
+    """
+    return re.sub(r"^(\d+\.\d+)-.*$", r"\1", section)
+
+
 def _unresolved_reason(text: str) -> str:
     s = text.lower()
     if "u.s.c" in s:
@@ -130,7 +141,7 @@ def parse_citation(text: str) -> list[Citation]:
         CfrCite(
             title=int(m.group("title")),
             part=m.group("part"),
-            section=f"{m.group('part')}.{m.group('sec')}",
+            section=_first_section_of_range(f"{m.group('part')}.{m.group('sec')}"),
             paragraphs=m.group("paras"),
             raw=m.group(0),
         )

@@ -1,0 +1,927 @@
+{
+  "_meta": "Instrument-graph v3 (B5-T2). One node per instrument the full 227-row corpus cites (72 MVP + 155 wave), bears_on from cache-replayed verification, plus the B4 concept nodes. Strata drive the classifier's cross-stratum disposition rule.",
+  "_unknown_agency_instruments": [],
+  "_verified_not_covered": [],
+  "coverage": {
+    "baseline_answered": 142,
+    "concept_nodes": 9,
+    "instruments": 49,
+    "unknown_agency_instruments": 0,
+    "verified_duties": 142
+  },
+  "graph": {
+    "edges": [],
+    "nodes": [
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:BSA-01",
+          "s:BSA-02",
+          "s:BSA-04"
+        ],
+        "citation": "12 CFR Part 208",
+        "effective_date": "1998-09-28",
+        "grounded_to": [],
+        "id": "12-cfr-part-208",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "b:CAP-02",
+          "b:CAP-03",
+          "b:ELG-01",
+          "b:SS-02",
+          "s:CAP-02",
+          "s:CAP-09"
+        ],
+        "citation": "12 CFR Part 225",
+        "effective_date": "1984-01-01",
+        "grounded_to": [],
+        "id": "12-cfr-part-225",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "b:RES-01"
+        ],
+        "citation": "12 CFR Part 243",
+        "effective_date": "2011-11-30",
+        "grounded_to": [],
+        "id": "12-cfr-part-243",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "b:CAP-04",
+          "b:CAP-05",
+          "b:LIQ-01",
+          "b:LIQ-02",
+          "b:LIQ-03",
+          "b:LIQ-04",
+          "b:RGC-02",
+          "b:RGC-03",
+          "b:RGC-04",
+          "b:RGC-05",
+          "b:RGC-06",
+          "b:TLA-01",
+          "b:TLA-02",
+          "b:TLA-03",
+          "s:LIQ-01",
+          "s:LIQ-02",
+          "s:LIQ-03",
+          "s:LIQ-04",
+          "s:LIQ-05",
+          "s:LIQ-06",
+          "s:LIQ-07",
+          "s:LIQ-13"
+        ],
+        "citation": "12 CFR Part 252",
+        "effective_date": "2014-06-01",
+        "grounded_to": [],
+        "id": "12-cfr-part-252",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "b:SS-01",
+          "s:GOV-31",
+          "s:GOV-32",
+          "s:GOV-33"
+        ],
+        "citation": "12 CFR Part 30 App. A",
+        "effective_date": "1995-08-09",
+        "grounded_to": [],
+        "id": "12-cfr-part-30-app-a",
+        "kind": "instrument",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "b:CYB-01",
+          "b:CYB-02",
+          "s:CYB-04",
+          "s:CYB-05"
+        ],
+        "citation": "12 CFR Part 30 App. B",
+        "effective_date": "2005-03-29",
+        "grounded_to": [],
+        "id": "12-cfr-part-30-app-b",
+        "kind": "instrument",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "b:AUD-08",
+          "b:CRD-03",
+          "b:IND-01",
+          "b:IND-02",
+          "b:IND-03",
+          "b:IND-04",
+          "b:RGC-07",
+          "b:RGC-08",
+          "b:RGC-09",
+          "b:RGC-10",
+          "s:GOV-21",
+          "s:GOV-22",
+          "s:GOV-23",
+          "s:GOV-24",
+          "s:GOV-25",
+          "s:GOV-26",
+          "s:GOV-27",
+          "s:GOV-28",
+          "s:INC-05"
+        ],
+        "citation": "12 CFR Part 30 App. D",
+        "effective_date": "2014-09-25",
+        "grounded_to": [],
+        "id": "12-cfr-part-30-app-d",
+        "kind": "instrument",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "b:RES-02",
+          "s:RES-05"
+        ],
+        "citation": "12 CFR Part 360",
+        "effective_date": "2008-07-01",
+        "grounded_to": [],
+        "id": "12-cfr-part-360",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "b:AUD-01",
+          "b:AUD-02",
+          "b:AUD-03",
+          "b:AUD-04"
+        ],
+        "citation": "12 CFR Part 363",
+        "effective_date": "1993-07-02",
+        "grounded_to": [],
+        "id": "12-cfr-part-363",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "p:PLB-03"
+        ],
+        "citation": "12 CFR Part 380",
+        "effective_date": "2011-07-15",
+        "grounded_to": [],
+        "id": "12-cfr-part-380",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "b:FID-01",
+          "b:FID-02",
+          "b:FID-03"
+        ],
+        "citation": "12 CFR Part 9",
+        "effective_date": "1996-12-30",
+        "grounded_to": [],
+        "id": "12-cfr-part-9",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "p:PLB-04"
+        ],
+        "citation": "12 U.S.C. 1818",
+        "effective_date": "1966-10-16",
+        "grounded_to": [],
+        "id": "12-u-s-c-1818",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:ELG-02"
+        ],
+        "citation": "12 U.S.C. 1829",
+        "effective_date": "1950-09-21",
+        "grounded_to": [],
+        "id": "12-u-s-c-1829",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:VOL-01"
+        ],
+        "citation": "12 U.S.C. 1851",
+        "effective_date": "2010-07-21",
+        "grounded_to": [],
+        "id": "12-u-s-c-1851",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "s:CCX-01"
+        ],
+        "citation": "12 U.S.C. 2901",
+        "effective_date": "1977-10-12",
+        "grounded_to": [],
+        "id": "12-u-s-c-2901",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:AFF-02",
+          "b:CRD-05"
+        ],
+        "citation": "12 U.S.C. 371c",
+        "effective_date": "1933-06-16",
+        "grounded_to": [],
+        "id": "12-u-s-c-371c",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:AFF-01",
+          "b:CRD-04"
+        ],
+        "citation": "12 U.S.C. 375b",
+        "effective_date": "1978-11-10",
+        "grounded_to": [],
+        "id": "12-u-s-c-375b",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:CAP-01",
+          "b:RGC-01"
+        ],
+        "citation": "12 U.S.C. 5365",
+        "effective_date": "2010-07-21",
+        "grounded_to": [],
+        "id": "12-u-s-c-5365",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:INC-01"
+        ],
+        "citation": "12 U.S.C. 5641",
+        "effective_date": "2010-07-21",
+        "grounded_to": [],
+        "id": "12-u-s-c-5641",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "b:AUD-05",
+          "b:AUD-06"
+        ],
+        "citation": "15 U.S.C. 7262",
+        "effective_date": "2002-07-30",
+        "grounded_to": [],
+        "id": "15-u-s-c-7262",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "SEC",
+        "bears_on": [
+          "b:CYB-03",
+          "b:IND-08",
+          "b:IND-09"
+        ],
+        "citation": "17 CFR Part 229",
+        "effective_date": "1982-05-24",
+        "grounded_to": [],
+        "id": "17-cfr-part-229",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "SEC",
+        "bears_on": [
+          "b:AUD-07",
+          "b:IND-05",
+          "b:IND-07"
+        ],
+        "citation": "17 CFR Part 240",
+        "effective_date": "2003-08-29",
+        "grounded_to": [],
+        "id": "17-cfr-part-240",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "Congress",
+        "bears_on": [
+          "p:PLB-01"
+        ],
+        "citation": "18 U.S.C. 1005",
+        "effective_date": "1948-06-25",
+        "grounded_to": [],
+        "id": "18-u-s-c-1005",
+        "kind": "instrument",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FinCEN",
+        "bears_on": [
+          "b:BSA-01",
+          "b:BSA-02",
+          "b:BSA-03",
+          "b:BSA-04",
+          "b:BSA-05"
+        ],
+        "citation": "31 CFR Part 1010",
+        "effective_date": "2011-03-01",
+        "grounded_to": [],
+        "id": "31-cfr-part-1010",
+        "kind": "instrument",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "AppD-bank-committee-expectations"
+        ],
+        "citation": "App. D bank-level committee expectations (12 CFR Part 30 App. D)",
+        "effective_date": "2014-09-25",
+        "grounded_to": [
+          {
+            "instrument_id": "12-cfr-part-30-app-d",
+            "quote": "The board of directors or the board's risk committee reviews and approves the risk governance framework",
+            "source_id": "ecfr-t12-p30"
+          }
+        ],
+        "id": "concept-appd-bank-committee-expectations",
+        "kind": "concept_ref",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "AppD-committee-expectations"
+        ],
+        "citation": "App. D board/risk-committee expectations (12 CFR Part 30 App. D)",
+        "effective_date": "2014-09-25",
+        "grounded_to": [
+          {
+            "instrument_id": "12-cfr-part-30-app-d",
+            "quote": "The board of directors or the board's risk committee reviews and approves the risk governance framework",
+            "source_id": "ecfr-t12-p30"
+          }
+        ],
+        "id": "concept-appd-committee-expectations",
+        "kind": "concept_ref",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "consolidated-committee-standard"
+        ],
+        "citation": "Consolidated risk-committee standard (12 CFR 252.33)",
+        "effective_date": "2014-06-01",
+        "grounded_to": [
+          {
+            "instrument_id": "12-cfr-part-252",
+            "quote": "must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "source_id": "ecfr-t12-p252"
+          }
+        ],
+        "id": "concept-consolidated-committee-standard",
+        "kind": "concept_ref",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "interagency",
+        "bears_on": [
+          "Part363+SOX301+exchange committee requirements"
+        ],
+        "citation": "D3 audit-committee requirements composite (Part 363 App. A + SOX 301 / Rule 10A-3 + SOX 404(b))",
+        "effective_date": "2002-07-30",
+        "grounded_to": [
+          {
+            "instrument_id": "17-cfr-part-240",
+            "quote": "Listing standards relating to audit committees. (a) Pursuant to section 10A(m) of the Act (15 U.S.C. 78j-1(m)) and section 3 of the Sarbanes-Oxley Act of 2002",
+            "source_id": "ecfr-t17-p240"
+          },
+          {
+            "instrument_id": "15-u-s-c-7262",
+            "quote": "An attestation made under this subsection shall be made in accordance with standards for attestation engagements issued or adopted by the Board.",
+            "source_id": "usc-t15-s7262"
+          }
+        ],
+        "id": "concept-d3-committee-requirements",
+        "kind": "concept_ref",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:GOV-02..13 (SR 12-17 attributes)"
+        ],
+        "citation": "D6 SR 12-17 board-governance attributes",
+        "effective_date": "2012-12-17",
+        "grounded_to": [
+          {
+            "instrument_id": "sr-12-17",
+            "quote": "The board should set direction and oversight for revenue and profit generation, risk management and control functions",
+            "source_id": "sr-12-17"
+          }
+        ],
+        "id": "concept-d6-sr1217-attributes",
+        "kind": "concept_ref",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "interagency",
+        "bears_on": [
+          "AppD-III.F self-assessment",
+          "SR 21-3 assessment"
+        ],
+        "citation": "D7 board-effectiveness assessment (App. D III.F self-assessment + SR 21-3)",
+        "effective_date": "2014-09-25",
+        "grounded_to": [
+          {
+            "instrument_id": "12-cfr-part-30-app-d",
+            "quote": "A covered bank's board of directors should conduct an annual self-assessment that includes an evaluation of its effectiveness in meeting the standards in section III of these Guidelines.",
+            "source_id": "ecfr-t12-p30"
+          },
+          {
+            "instrument_id": "sr-21-3",
+            "quote": "attributes of effective boards of directors that have been observed over time in the course of the Federal Reserve's supervision",
+            "source_id": "sr-21-3-att"
+          }
+        ],
+        "id": "concept-d7-board-effectiveness",
+        "kind": "concept_ref",
+        "stratum": "enforceable_guideline",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "interagency",
+        "bears_on": [
+          "<BHC_duty>",
+          "<IDI_duty>"
+        ],
+        "citation": "D8 BHC/IDI vertical mirror (Reg YY risk committee \u2194 App. D)",
+        "effective_date": "2014-06-01",
+        "grounded_to": [
+          {
+            "instrument_id": "12-cfr-part-252",
+            "quote": "must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations",
+            "source_id": "ecfr-t12-p252"
+          },
+          {
+            "instrument_id": "12-cfr-part-30-app-d",
+            "quote": "The board of directors or the board's risk committee reviews and approves the risk governance framework",
+            "source_id": "ecfr-t12-p30"
+          }
+        ],
+        "id": "concept-d8-vertical-mirror",
+        "kind": "concept_ref",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "Part363-ICFR-assessment"
+        ],
+        "citation": "Part 363 ICFR management assessment (12 CFR 363.2)",
+        "effective_date": "1993-07-02",
+        "grounded_to": [
+          {
+            "instrument_id": "12-cfr-part-363",
+            "quote": "an assessment by management of the effectiveness of such internal control structure and procedures as of the end of such fiscal year",
+            "source_id": "ecfr-t12-p363"
+          }
+        ],
+        "id": "concept-part363-icfr-assessment",
+        "kind": "concept_ref",
+        "stratum": "regulation",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "SEC",
+        "bears_on": [
+          "SOX-404b-attestation"
+        ],
+        "citation": "SOX 404(b) external attestation (15 U.S.C. 7262(b))",
+        "effective_date": "2002-07-30",
+        "grounded_to": [
+          {
+            "instrument_id": "15-u-s-c-7262",
+            "quote": "An attestation made under this subsection shall be made in accordance with standards for attestation engagements issued or adopted by the Board.",
+            "source_id": "usc-t15-s7262"
+          }
+        ],
+        "id": "concept-sox-404b-attestation",
+        "kind": "concept_ref",
+        "stratum": "statute",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FDIC",
+        "bears_on": [
+          "s:FDR-01",
+          "s:FDR-02"
+        ],
+        "citation": "FDIC RMS Manual: Management",
+        "effective_date": "2005-01-01",
+        "grounded_to": [],
+        "id": "fdic-rms-manual-management",
+        "kind": "instrument",
+        "stratum": "manual",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "OCC",
+        "bears_on": [
+          "s:BCG-03",
+          "s:BCG-06",
+          "s:BCG-11",
+          "s:GOV-29"
+        ],
+        "citation": "OCC Comptroller's Handbook: Corporate & Risk Governance",
+        "effective_date": "2019-07-01",
+        "grounded_to": [],
+        "id": "occ-comptroller-s-handbook-corporate-risk-governance",
+        "kind": "instrument",
+        "stratum": "manual",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CAP-11"
+        ],
+        "citation": "SR 09-4",
+        "effective_date": "2009-03-27",
+        "grounded_to": [],
+        "id": "sr-09-4",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": "2015-12-18",
+        "treatment_evidence": "SR 15-18 fn. 5 supersedes SR 09-4 for GSIBs (cited by s:CAP-11).",
+        "treatment_status": "superseded"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:LIQ-08",
+          "s:LIQ-09",
+          "s:LIQ-10",
+          "s:LIQ-11"
+        ],
+        "citation": "SR 10-6",
+        "effective_date": "2010-03-17",
+        "grounded_to": [],
+        "id": "sr-10-6",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CRX-02"
+        ],
+        "citation": "SR 11-10",
+        "effective_date": "2011-04-01",
+        "grounded_to": [],
+        "id": "sr-11-10",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:GOV-15",
+          "s:GOV-17"
+        ],
+        "citation": "SR 12-17",
+        "effective_date": "2012-12-17",
+        "grounded_to": [],
+        "id": "sr-12-17",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:STR-01",
+          "s:STR-03",
+          "s:STR-04"
+        ],
+        "citation": "SR 12-7",
+        "effective_date": "2012-05-14",
+        "grounded_to": [],
+        "id": "sr-12-7",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:IAU-01",
+          "s:IAU-02"
+        ],
+        "citation": "SR 13-1",
+        "effective_date": "2013-01-23",
+        "grounded_to": [],
+        "id": "sr-13-1",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CCX-02"
+        ],
+        "citation": "SR 13-24",
+        "effective_date": "2013-12-05",
+        "grounded_to": [],
+        "id": "sr-13-24",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:REC-02"
+        ],
+        "citation": "SR 14-8",
+        "effective_date": "2014-09-25",
+        "grounded_to": [],
+        "id": "sr-14-8",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CAP-01",
+          "s:CAP-03",
+          "s:CAP-04",
+          "s:CAP-06",
+          "s:CAP-07",
+          "s:CAP-08",
+          "s:CAP-11"
+        ],
+        "citation": "SR 15-18",
+        "effective_date": "2015-12-18",
+        "grounded_to": [],
+        "id": "sr-15-18",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:OPR-01",
+          "s:OPR-02",
+          "s:OPR-03"
+        ],
+        "citation": "SR 20-24",
+        "effective_date": "2020-11-01",
+        "grounded_to": [],
+        "id": "sr-20-24",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:GOV-01",
+          "s:GOV-03",
+          "s:GOV-04",
+          "s:GOV-05",
+          "s:GOV-06",
+          "s:GOV-07",
+          "s:GOV-08",
+          "s:GOV-09",
+          "s:GOV-10",
+          "s:GOV-12",
+          "s:GOV-13",
+          "s:GOV-14"
+        ],
+        "citation": "SR 21-3",
+        "effective_date": "2021-02-26",
+        "grounded_to": [],
+        "id": "sr-21-3",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:TPR-01",
+          "s:TPR-02",
+          "s:TPR-03",
+          "s:TPR-04",
+          "s:TPR-06"
+        ],
+        "citation": "SR 23-4",
+        "effective_date": "2023-06-06",
+        "grounded_to": [],
+        "id": "sr-23-4",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:CYB-07"
+        ],
+        "citation": "SR 24-7",
+        "effective_date": "2024-01-01",
+        "grounded_to": [],
+        "id": "sr-24-7",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": null,
+        "treatment_evidence": null,
+        "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:GOV-20"
+        ],
+        "citation": "SR 95-51",
+        "effective_date": "1995-11-14",
+        "grounded_to": [],
+        "id": "sr-95-51",
+        "kind": "instrument",
+        "stratum": "guidance",
+        "treatment_date": "2025-06-23",
+        "treatment_evidence": "Fed SR 95-51 page (B3-T0): revised June 23, 2025 to remove reputational-risk references; per SR 21-4 / CA 21-2 (Feb 26, 2021) its board-responsibility content was clarified. Active but amended \u2014 not rescinded.",
+        "treatment_status": "amended"
+      }
+    ]
+  }
+}

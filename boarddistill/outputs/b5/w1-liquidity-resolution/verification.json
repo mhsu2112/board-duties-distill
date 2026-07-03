@@ -1,0 +1,791 @@
+{
+  "_meta": "B5-T2 verification for wave w1-liquidity-resolution. Same resolver stack and allowlist as B1/B2; verified rows carry a pinned span, non-verified rows carry a reason. A contradicted row halts the wave (checkpoint).",
+  "contradicted": [],
+  "records": [
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-b:LIQ-01",
+      "id": "v-claim-b:LIQ-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(a)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-b:LIQ-02",
+      "id": "v-claim-b:LIQ-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(a)(1)(ii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-b:LIQ-03",
+      "id": "v-claim-b:LIQ-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(a)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-b:LIQ-04",
+      "id": "v-claim-b:LIQ-04",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(b) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p243-243.4"
+      ],
+      "claim_id": "claim-b:RES-01",
+      "id": "v-claim-b:RES-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 243.4(f) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p360-360.10"
+      ],
+      "claim_id": "claim-b:RES-02",
+      "id": "v-claim-b:RES-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 360.10(c)(5) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:RES-03",
+      "id": "v-claim-b:RES-03",
+      "method": "live_retrieval",
+      "note": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-s:LIQ-01",
+      "id": "v-claim-s:LIQ-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(a)(1)(i) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-s:LIQ-02",
+      "id": "v-claim-s:LIQ-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(a)(1)(ii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-s:LIQ-03",
+      "id": "v-claim-s:LIQ-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(a)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-s:LIQ-04",
+      "id": "v-claim-s:LIQ-04",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(b) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-s:LIQ-05",
+      "id": "v-claim-s:LIQ-05",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(c)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.34"
+      ],
+      "claim_id": "claim-s:LIQ-06",
+      "id": "v-claim-s:LIQ-06",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.34(d)(2)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.33"
+      ],
+      "claim_id": "claim-s:LIQ-07",
+      "id": "v-claim-s:LIQ-07",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.33 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-10-6-att-anchor"
+      ],
+      "claim_id": "claim-s:LIQ-08",
+      "id": "v-claim-s:LIQ-08",
+      "method": "live_retrieval",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 0.84)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-10-6-att-anchor"
+      ],
+      "claim_id": "claim-s:LIQ-09",
+      "id": "v-claim-s:LIQ-09",
+      "method": "live_retrieval",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-10-6-att-anchor"
+      ],
+      "claim_id": "claim-s:LIQ-10",
+      "id": "v-claim-s:LIQ-10",
+      "method": "live_retrieval",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 0.75)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-10-6-att-anchor"
+      ],
+      "claim_id": "claim-s:LIQ-11",
+      "id": "v-claim-s:LIQ-11",
+      "method": "live_retrieval",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 0.64)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:LIQ-12",
+      "id": "v-claim-s:LIQ-12",
+      "method": "live_retrieval",
+      "note": "duty text not located in the SR 10-6 attachment (best 0.27)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.35"
+      ],
+      "claim_id": "claim-s:LIQ-13",
+      "id": "v-claim-s:LIQ-13",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.35 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:OLQ-01",
+      "id": "v-claim-s:OLQ-01",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:OLQ-02",
+      "id": "v-claim-s:OLQ-02",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:OLQ-03",
+      "id": "v-claim-s:OLQ-03",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:REC-01",
+      "id": "v-claim-s:REC-01",
+      "method": "live_retrieval",
+      "note": "duty text not located in the SR 14-1 attachment (best 0.28)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-14-8-body-anchor"
+      ],
+      "claim_id": "claim-s:REC-02",
+      "id": "v-claim-s:REC-02",
+      "method": "live_retrieval",
+      "note": "SR 14-8: no attachment PDF; duty text anchor-matched in the letter body (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:REC-03",
+      "id": "v-claim-s:REC-03",
+      "method": "live_retrieval",
+      "note": "no attachment PDF on the SR 14-8 page; letter-body anchor borderline (best 0.50); candidate recorded \u2014 checkpoint \u00a73: \"y based on the firm's risk profile and scope of operations. A recovery plan should address, at a min\"",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:REC-04",
+      "id": "v-claim-s:REC-04",
+      "method": "live_retrieval",
+      "note": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:RES-01",
+      "id": "v-claim-s:RES-01",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:RES-02",
+      "id": "v-claim-s:RES-02",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:RES-03",
+      "id": "v-claim-s:RES-03",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:RES-04",
+      "id": "v-claim-s:RES-04",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p360-360.10"
+      ],
+      "claim_id": "claim-s:RES-05",
+      "id": "v-claim-s:RES-05",
+      "method": "live_retrieval",
+      "note": "12 CFR 360.10 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    }
+  ],
+  "rows": [
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(a)(1)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "b:LIQ-01",
+      "note": "12 CFR 252.34(a)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(a)(1)(ii)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "b:LIQ-02",
+      "note": "12 CFR 252.34(a)(1)(ii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(a)(2)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "b:LIQ-03",
+      "note": "12 CFR 252.34(a)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(b)",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "b:LIQ-04",
+      "note": "12 CFR 252.34(b) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 5365(d); 12 CFR 243.4(f)",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "b:RES-01",
+      "note": "12 CFR 243.4(f) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 360.10(c)(5)",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "b:RES-02",
+      "note": "12 CFR 360.10(c)(5) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "App. E (rescinded)",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "b:RES-03",
+      "note": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(a)(1)(i)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-01",
+      "note": "12 CFR 252.34(a)(1)(i) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(a)(1)(ii)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-02",
+      "note": "12 CFR 252.34(a)(1)(ii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(a)(2), (c)(1)(i)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-03",
+      "note": "12 CFR 252.34(a)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(b)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-04",
+      "note": "12 CFR 252.34(b) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(c)(2)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-05",
+      "note": "12 CFR 252.34(c)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.34(d)(2)(iii)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-06",
+      "note": "12 CFR 252.34(d)(2)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.33",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-07",
+      "note": "12 CFR 252.33 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, Corporate Governance, p. 3",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-08",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 0.84)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, p. 3",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-09",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, p. 3",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-10",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 0.75)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Attachment, p. 5",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-11",
+      "note": "SR 10-6 attachment: duty text anchor-matched (score 0.64)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Addendum",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-12",
+      "note": "duty text not located in the SR 10-6 attachment (best 0.27)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 252.35; 252.34(c)(6)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-13",
+      "note": "12 CFR 252.35 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Board responsibilities (local ll. ~1260-1282)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:OLQ-01",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Board reporting (local ll. ~1273-1295)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:OLQ-02",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Examination procedures (local ll. ~3442-3455)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:OLQ-03",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Attachment, Principles and Practices for Recovery and Resolution Preparedness",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-01",
+      "note": "duty text not located in the SR 14-1 attachment (best 0.28)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Section 'Role of the Board of Directors'",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-02",
+      "note": "SR 14-8: no attachment PDF; duty text anchor-matched in the letter body (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Section 'Supervisory Expectations'; 'Internal Governance' element",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-03",
+      "note": "no attachment PDF on the SR 14-8 page; letter-body anchor borderline (best 0.50); candidate recorded \u2014 checkpoint \u00a73: \"y based on the firm's risk profile and scope of operations. A recovery plan should address, at a min\"",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "App. E, Section III",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-04",
+      "note": "CFR/guidance appendix \u2014 not section-addressable in this pass",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Section IV (Governance Mechanisms), p. 54",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-01",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Section IV, pp. 54-55",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-02",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Section IV, p. 55",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-03",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Liquidity section, p. 53",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-04",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR 360.10 (content requirements)",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-05",
+      "note": "12 CFR 360.10 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "12 CFR 252.34(a)(1)",
+      "end": 60373,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(a) Responsibilities of the board of directors \u2014(1) Liquidity risk tolerance. The board of directors of a bank holding company that is subject to this subpart must: (i) Approve the acceptable level of liquidity risk that the bank holding company may assume in connection with its operating strategies (liquidity risk tolerance) at least annually, taking into account the bank holding company's capital structure, risk profile, complexity, activities, and size; and (ii) Receive and review at least semi-annually information provided by senior management to determine whether the bank holding company ",
+      "source_id": "ecfr-t12-p252",
+      "start": 59773
+    },
+    {
+      "citation": "12 CFR 252.34(a)(1)(ii)",
+      "end": 60373,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(a) Responsibilities of the board of directors \u2014(1) Liquidity risk tolerance. The board of directors of a bank holding company that is subject to this subpart must: (i) Approve the acceptable level of liquidity risk that the bank holding company may assume in connection with its operating strategies (liquidity risk tolerance) at least annually, taking into account the bank holding company's capital structure, risk profile, complexity, activities, and size; and (ii) Receive and review at least semi-annually information provided by senior management to determine whether the bank holding company ",
+      "source_id": "ecfr-t12-p252",
+      "start": 59773
+    },
+    {
+      "citation": "12 CFR 252.34(a)(2)",
+      "end": 60373,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(a) Responsibilities of the board of directors \u2014(1) Liquidity risk tolerance. The board of directors of a bank holding company that is subject to this subpart must: (i) Approve the acceptable level of liquidity risk that the bank holding company may assume in connection with its operating strategies (liquidity risk tolerance) at least annually, taking into account the bank holding company's capital structure, risk profile, complexity, activities, and size; and (ii) Receive and review at least semi-annually information provided by senior management to determine whether the bank holding company ",
+      "source_id": "ecfr-t12-p252",
+      "start": 59773
+    },
+    {
+      "citation": "12 CFR 252.34(b)",
+      "end": 61321,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(b) Responsibilities of the risk committee. The risk committee (or a designated subcommittee of such committee composed of members of the board of directors) must approve the contingency funding plan described in paragraph (f) of this section at least annually, and must approve any material revisions to the plan prior to the implementation of such revisions. (c) Responsibilities of senior management \u2014(1) Liquidity risk. (i) Senior management of a bank holding company subject to this subpart must establish and implement strategies, policies, and procedures designed to effectively manage the ris",
+      "source_id": "ecfr-t12-p252",
+      "start": 60721
+    },
+    {
+      "citation": "12 CFR 243.4(f)",
+      "end": 40075,
+      "id": "span-ecfr-t12-p243-243.4",
+      "quote": "(f) Board of directors approval of resolution plan. Before submission of a resolution plan under paragraphs (a) through (c) of this section, the resolution plan of a covered company shall be approved by: (1) The board of directors of the covered company and noted in the minutes; or (2) In the case of a foreign-based covered company only, a delegee acting under the express authority of the board of directors of the covered company to approve the resolution plan. (g) Resolution plans provided to the Council. The Board shall make the resolution plans and updates submitted by the covered company p",
+      "source_id": "ecfr-t12-p243",
+      "start": 39475
+    },
+    {
+      "citation": "12 CFR 360.10(c)(5)",
+      "end": 76353,
+      "id": "span-ecfr-t12-p360-360.10",
+      "quote": "(c)(1) of this section. Bridge depository institution has the same meaning as in 12 U.S.C. 1813(i)(2). Capabilities testing is defined in paragraph (f)(7) of this section. CIDI or covered insured depository institution means a group A CIDI or a group B CIDI. Company has the same meaning as in 12 CFR 362.2(d). Control has the same meaning as in 12 U.S.C. 1813(w)(5). Core business lines means those business lines of the CIDI, including associated operations, services, functions, and support, that, in the view of the CIDI, upon failure would result in a material loss of revenue, profit, or franch",
+      "source_id": "ecfr-t12-p360",
+      "start": 75753
+    },
+    {
+      "citation": "12 CFR 252.34(a)(1)(i)",
+      "end": 60373,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(a) Responsibilities of the board of directors \u2014(1) Liquidity risk tolerance. The board of directors of a bank holding company that is subject to this subpart must: (i) Approve the acceptable level of liquidity risk that the bank holding company may assume in connection with its operating strategies (liquidity risk tolerance) at least annually, taking into account the bank holding company's capital structure, risk profile, complexity, activities, and size; and (ii) Receive and review at least semi-annually information provided by senior management to determine whether the bank holding company ",
+      "source_id": "ecfr-t12-p252",
+      "start": 59773
+    },
+    {
+      "citation": "12 CFR 252.34(a)(1)(ii)",
+      "end": 60373,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(a) Responsibilities of the board of directors \u2014(1) Liquidity risk tolerance. The board of directors of a bank holding company that is subject to this subpart must: (i) Approve the acceptable level of liquidity risk that the bank holding company may assume in connection with its operating strategies (liquidity risk tolerance) at least annually, taking into account the bank holding company's capital structure, risk profile, complexity, activities, and size; and (ii) Receive and review at least semi-annually information provided by senior management to determine whether the bank holding company ",
+      "source_id": "ecfr-t12-p252",
+      "start": 59773
+    },
+    {
+      "citation": "12 CFR 252.34(a)(2)",
+      "end": 60373,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(a) Responsibilities of the board of directors \u2014(1) Liquidity risk tolerance. The board of directors of a bank holding company that is subject to this subpart must: (i) Approve the acceptable level of liquidity risk that the bank holding company may assume in connection with its operating strategies (liquidity risk tolerance) at least annually, taking into account the bank holding company's capital structure, risk profile, complexity, activities, and size; and (ii) Receive and review at least semi-annually information provided by senior management to determine whether the bank holding company ",
+      "source_id": "ecfr-t12-p252",
+      "start": 59773
+    },
+    {
+      "citation": "12 CFR 252.34(b)",
+      "end": 61321,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(b) Responsibilities of the risk committee. The risk committee (or a designated subcommittee of such committee composed of members of the board of directors) must approve the contingency funding plan described in paragraph (f) of this section at least annually, and must approve any material revisions to the plan prior to the implementation of such revisions. (c) Responsibilities of senior management \u2014(1) Liquidity risk. (i) Senior management of a bank holding company subject to this subpart must establish and implement strategies, policies, and procedures designed to effectively manage the ris",
+      "source_id": "ecfr-t12-p252",
+      "start": 60721
+    },
+    {
+      "citation": "12 CFR 252.34(c)(2)",
+      "end": 61297,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(c)(1) of this section. (b) Responsibilities of the risk committee. The risk committee (or a designated subcommittee of such committee composed of members of the board of directors) must approve the contingency funding plan described in paragraph (f) of this section at least annually, and must approve any material revisions to the plan prior to the implementation of such revisions. (c) Responsibilities of senior management \u2014(1) Liquidity risk. (i) Senior management of a bank holding company subject to this subpart must establish and implement strategies, policies, and procedures designed to ef",
+      "source_id": "ecfr-t12-p252",
+      "start": 60697
+    },
+    {
+      "citation": "12 CFR 252.34(d)(2)(iii)",
+      "end": 65409,
+      "id": "span-ecfr-t12-p252-252.34",
+      "quote": "(d) periodically; and (iv) Approve the size and composition of the liquidity buffer established under \u00a7 252.35(b) at least quarterly. (d) Independent review function. (1) A bank holding company subject to this subpart must establish and maintain a review function that is independent of management functions that execute funding to evaluate its liquidity risk management. (2) The independent review function must: (i) Regularly, but no less frequently than annually, review and evaluate the adequacy and effectiveness of the company's liquidity risk-management processes, including its liquidity stre",
+      "source_id": "ecfr-t12-p252",
+      "start": 64809
+    },
+    {
+      "citation": "12 CFR 252.33",
+      "end": 54938,
+      "id": "span-ecfr-t12-p252-252.33",
+      "quote": "\u00a7 252.33 Risk-management and risk committee requirements. (a) Risk committee \u2014(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b). (2) Risk-management framework. The bank holding company's global risk-management framework must be commensurate with its st",
+      "source_id": "ecfr-t12-p252",
+      "start": 54338
+    },
+    {
+      "citation": "SR 10-6 attachment",
+      "end": 7750,
+      "id": "span-sr-10-6-att-anchor",
+      "quote": "in their reviews of an institution\u2019s liquidity risk management process in relation to its size, complexity, and scope of operations. Corporate Governance The board of directors is ultimately responsible for the liquidity risk assumed by the institution. As a result, the board should ensure that the institution\u2019s liquidity risk tolerance is established and communicated in such a manner that all levels of management clearly understand the institution\u2019s approach to managing the trade-offs between l",
+      "source_id": "sr-10-6-att",
+      "start": 7250
+    },
+    {
+      "citation": "SR 10-6 attachment",
+      "end": 8000,
+      "id": "span-sr-10-6-att-anchor",
+      "quote": "on. As a result, the board should ensure that the institution\u2019s liquidity risk tolerance is established and communicated in such a manner that all levels of management clearly understand the institution\u2019s approach to managing the trade-offs between liquidity risk and short-term profits. The board of directors or its delegated committee of board members should oversee the establishment and approval of liquidity management strategies, policies and procedures, and review them at least annually. In ",
+      "source_id": "sr-10-6-att",
+      "start": 7500
+    },
+    {
+      "citation": "SR 10-6 attachment",
+      "end": 8500,
+      "id": "span-sr-10-6-att-anchor",
+      "quote": "addition, the board should ensure that it: . Understands the nature of the liquidity risks of its institution and periodically reviews information necessary to maintain this understanding. . Establishes executive-level lines of authority and responsibility for managing the institution\u2019s liquidity risk. . Enforces management\u2019s duties to identify, measure, monitor, and control liquidity risk. . Understands and periodically reviews the institution\u2019s CFPs for handling potential adverse liquidity eve",
+      "source_id": "sr-10-6-att",
+      "start": 8000
+    },
+    {
+      "citation": "SR 10-6 attachment",
+      "end": 16500,
+      "id": "span-sr-10-6-att-anchor",
+      "quote": "ion\u2019s complexity, it should have the ability to increase the frequency of reporting on short notice, if the need arises. Liquidity risk reports should impart to senior management and the board a clear understanding of the institution\u2019s liquidity risk exposure, compliance with risk limits, consistency between management\u2019s strategies and tactics, and consistency between these strategies and the board's expressed risk tolerance. Institutions should consider liquidity costs, benefits, and risks in s",
+      "source_id": "sr-10-6-att",
+      "start": 16000
+    },
+    {
+      "citation": "12 CFR 252.35",
+      "end": 75355,
+      "id": "span-ecfr-t12-p252-252.35",
+      "quote": "\u00a7 252.35 Liquidity stress testing and buffer requirements. (a) Liquidity stress testing requirement \u2014(1) General. A bank holding company subject to this subpart must conduct stress tests to assess the potential impact of the liquidity stress scenarios set forth in paragraph (a)(3) of this section on its cash flows, liquidity position, profitability, and solvency, taking into account its current liquidity condition, risks, exposures, strategies, and activities. (i) The bank holding company must take into consideration its balance sheet exposures, off-balance sheet exposures, size, risk profile,",
+      "source_id": "ecfr-t12-p252",
+      "start": 74755
+    },
+    {
+      "citation": "SR 14-8 (letter body)",
+      "end": 10250,
+      "id": "span-sr-14-8-body-anchor",
+      "quote": "le of the Board of Directors The firm's board of directors is responsible for oversight of the firm. This should include oversight of the firm's recovery planning process. The board, or a designated committee thereof, should focus this oversight on the firm's ability to effectively identify and implement recovery options and oversee management's remediation of weaknesses identified in the firm\u2019s processes. Elements of a Recovery Plan The level of detail and analysis in a recovery plan should var",
+      "source_id": "sr-14-8",
+      "start": 9750
+    },
+    {
+      "citation": "12 CFR 360.10",
+      "end": 74228,
+      "id": "span-ecfr-t12-p360-360.10",
+      "quote": "\u00a7 360.10 Resolution plans required for insured depository institutions with $100 billion or more in total assets; informational filings required for insured depository institutions with at least $50 billion but less than $100 billion in total assets. (a) Scope and purpose. This section applies to insured depository institutions with $50 billion or more in total assets. It requires a covered insured depository institution with $100 billion or more in total assets (a group A CIDI, as defined in paragraph (b) of this section) to submit a resolution plan that should enable the FDIC, as receiver, t",
+      "source_id": "ecfr-t12-p360",
+      "start": 73628
+    }
+  ],
+  "summary": {
+    "unverified": 12,
+    "verified": 20
+  },
+  "wave": "w1-liquidity-resolution"
+}

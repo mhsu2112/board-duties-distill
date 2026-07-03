@@ -481,6 +481,132 @@ def b5_waves(
         raise typer.Exit(code=1)
 
 
+@app.command("b5-verify")
+def b5_verify(
+    wave: Annotated[
+        str, typer.Option("--wave", help="Wave slug, or 'all' for every wave.")
+    ] = "all",
+    waves_json: Annotated[
+        Path, typer.Option("--waves", help="B5-T1 waves.json.")
+    ] = Path("outputs/b5/waves.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json.")
+    ] = Path("outputs/import/imported_duties.json"),
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/sources"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+    offline: Annotated[
+        bool, typer.Option("--offline", help="Replay from cache only; no network.")
+    ] = False,
+) -> None:
+    """B5-T2: verify a wave's rows against primary sources (allowlisted)."""
+    import json
+
+    from adapters.b5_verify import verify_wave, wave_payload, wave_review_queue
+    from adapters.resolvers import build_resolver
+    from adapters.retrieval import Fetcher, default_client, offline_client
+
+    waves_doc = json.loads(waves_json.read_text())
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    selected = [w for w in waves_doc["waves"] if wave in (w["wave"], "all")]
+    if not selected:
+        typer.echo(f"[boarddistill] no such wave: {wave}", err=True)
+        raise typer.Exit(code=1)
+
+    client = offline_client() if offline else default_client()
+    try:
+        resolver = build_resolver(Fetcher(cache, client))
+        for w in selected:
+            rows = verify_wave(w, drafts, resolver)
+            payload = wave_payload(w["wave"], rows)
+            queue = wave_review_queue(w["wave"], rows)
+            wave_dir = out / w["wave"]
+            wave_dir.mkdir(parents=True, exist_ok=True)
+            (wave_dir / "verification.json").write_text(
+                json.dumps(payload, indent=2, sort_keys=True) + "\n"
+            )
+            (wave_dir / "review_queue.json").write_text(
+                json.dumps(queue, indent=2, sort_keys=True) + "\n"
+            )
+            s = payload["summary"]
+            halt = " ⚠ CONTRADICTED (wave halted)" if payload["contradicted"] else ""
+            typer.echo(
+                f"[boarddistill] {w['wave']}: {len(rows)} rows · "
+                + " ".join(f"{k}={v}" for k, v in sorted(s.items()))
+                + halt
+            )
+            if payload["contradicted"]:
+                typer.echo(f"  contradicted: {payload['contradicted']}", err=True)
+    finally:
+        client.close()
+
+
+@app.command("b5-graph")
+def b5_graph_cmd(
+    waves_json: Annotated[
+        Path, typer.Option("--waves", help="B5-T1 waves.json.")
+    ] = Path("outputs/b5/waves.json"),
+    targets: Annotated[
+        Path, typer.Option("--targets", help="MVP targets.json.")
+    ] = Path("outputs/b1/targets.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json.")
+    ] = Path("outputs/import/imported_duties.json"),
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/sources"
+    ),
+    graph_out: Annotated[
+        Path, typer.Option("--graph-out", help="Corpus graph output path.")
+    ] = Path("data/graph/us-gsib_v3.json"),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+) -> None:
+    """B5-T2: build the corpus-wide instrument graph (v3) + verification summary (offline)."""
+    import json
+
+    from adapters.b5_graph import (
+        all_corpus_rows,
+        corpus_graph_document,
+        corpus_verification_summary,
+    )
+    from adapters.resolvers import build_resolver
+    from adapters.retrieval import Fetcher, offline_client
+
+    waves_doc = json.loads(waves_json.read_text())
+    mvp_targets = json.loads(targets.read_text())["targets"]
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+
+    resolver = build_resolver(Fetcher(cache, offline_client()))
+    rows = all_corpus_rows(mvp_targets, waves_doc, drafts, resolver)
+
+    graph_doc = corpus_graph_document(rows)
+    graph_out.parent.mkdir(parents=True, exist_ok=True)
+    graph_out.write_text(json.dumps(graph_doc, indent=2, sort_keys=True) + "\n")
+
+    summary = corpus_verification_summary(rows, waves_doc)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "verification_summary.json").write_text(
+        json.dumps(summary, indent=2, sort_keys=True) + "\n"
+    )
+
+    cov = graph_doc["coverage"]
+    t = summary["totals"]
+    typer.echo("[boarddistill] B5-T2 corpus graph + verification summary:")
+    typer.echo(
+        f"  instruments: {cov['instruments']} (concept: {cov['concept_nodes']}, unknown-agency: "
+        f"{cov['unknown_agency_instruments']}) · verified duties: {cov['verified_duties']} · "
+        f"baseline answered: {cov['baseline_answered']}"
+    )
+    typer.echo(
+        f"  corpus funnel: {t['verified']} verified / {t['unverified']} unverified / "
+        f"{t['contradicted']} contradicted of {t['rows']} rows"
+    )
+    if cov["unknown_agency_instruments"]:
+        typer.echo(
+            f"  ⚠ unknown-agency instruments: {graph_doc['_unknown_agency_instruments']}", err=True
+        )
+
+
 @app.command("b5-redistill")
 def b5_redistill(
     import_json: Annotated[

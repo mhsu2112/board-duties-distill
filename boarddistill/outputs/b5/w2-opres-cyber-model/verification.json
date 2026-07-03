@@ -1,0 +1,447 @@
+{
+  "_meta": "B5-T2 verification for wave w2-opres-cyber-model. Same resolver stack and allowlist as B1/B2; verified rows carry a pinned span, non-verified rows carry a reason. A contradicted row halts the wave (checkpoint).",
+  "contradicted": [],
+  "records": [
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appB-full"
+      ],
+      "claim_id": "claim-b:CYB-01",
+      "id": "v-claim-b:CYB-01",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. B present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appB-III.F"
+      ],
+      "claim_id": "claim-b:CYB-02",
+      "id": "v-claim-b:CYB-02",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. B, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t17-p229-229.106"
+      ],
+      "claim_id": "claim-b:CYB-03",
+      "id": "v-claim-b:CYB-03",
+      "method": "live_retrieval",
+      "note": "17 CFR 229.106 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-b:CYB-04",
+      "id": "v-claim-b:CYB-04",
+      "method": "live_retrieval",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CYB-01",
+      "id": "v-claim-s:CYB-01",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CYB-02",
+      "id": "v-claim-s:CYB-02",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CYB-03",
+      "id": "v-claim-s:CYB-03",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appB-III.A"
+      ],
+      "claim_id": "claim-s:CYB-04",
+      "id": "v-claim-s:CYB-04",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. B, III.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appB-III.F"
+      ],
+      "claim_id": "claim-s:CYB-05",
+      "id": "v-claim-s:CYB-05",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. B, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CYB-06",
+      "id": "v-claim-s:CYB-06",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-24-7-24-7"
+      ],
+      "claim_id": "claim-s:CYB-07",
+      "id": "v-claim-s:CYB-07",
+      "method": "live_retrieval",
+      "note": "SR 24-7 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CYB-08",
+      "id": "v-claim-s:CYB-08",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:MOD-01",
+      "id": "v-claim-s:MOD-01",
+      "method": "live_retrieval",
+      "note": "duty text not located in the SR 26-2 attachment (best 0.35)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:MOD-02",
+      "id": "v-claim-s:MOD-02",
+      "method": "live_retrieval",
+      "note": "no attachment PDF on the SR 11-7 page; duty text not located in the letter body (best 0.00)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-20-24-att-anchor"
+      ],
+      "claim_id": "claim-s:OPR-01",
+      "id": "v-claim-s:OPR-01",
+      "method": "live_retrieval",
+      "note": "SR 20-24 attachment: duty text anchor-matched (score 0.89)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-20-24-att-anchor"
+      ],
+      "claim_id": "claim-s:OPR-02",
+      "id": "v-claim-s:OPR-02",
+      "method": "live_retrieval",
+      "note": "SR 20-24 attachment: duty text anchor-matched (score 0.89)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-20-24-att-anchor"
+      ],
+      "claim_id": "claim-s:OPR-03",
+      "id": "v-claim-s:OPR-03",
+      "method": "live_retrieval",
+      "note": "SR 20-24 attachment: duty text anchor-matched (score 0.93)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:OPR-04",
+      "id": "v-claim-s:OPR-04",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 20-24 attachment (best 0.57); candidate recorded \u2014 checkpoint \u00a73: 'activity that could lead to a disruption affecting the firm\u2019s critical operations and core business '",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:OPR-05",
+      "id": "v-claim-s:OPR-05",
+      "method": "live_retrieval",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.19)",
+      "status": "unverified"
+    }
+  ],
+  "rows": [
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 30 App. B; part 208 App. D-2; part 225 App. F; part 364 App. B",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "b:CYB-01",
+      "note": "12 CFR Part 30, App. B present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "12 CFR part 30 App. B, sec. III.F",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "b:CYB-02",
+      "note": "12 CFR Part 30, App. B, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "17 CFR 229.106 (Reg S-K Item 106); Form 8-K Item 1.05",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "b:CYB-03",
+      "note": "17 CFR 229.106 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "12 CFR part 53 (OCC); part 225 subpart N (FRB); part 304 subpart C (FDIC)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "b:CYB-04",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. I.A / I.B (Governance of the Information Security Program)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-01",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. I.B",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-02",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. I.A.1 (Board of Directors Oversight)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-03",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. B, sec. III.A (Involve the Board of Directors)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-04",
+      "note": "12 CFR Part 30, App. B, III.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "App. B, sec. III.F (Report to the Board)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-05",
+      "note": "12 CFR Part 30, App. B, III.F present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Final rule",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-06",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": true,
+      "citation": "Sunset announcement (FFIEC, Aug. 29, 2024; SR 24-7; OCC Bulletin 2024-25)",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-07",
+      "note": "SR 24-7 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Governance / resources sections",
+      "cluster": "Information security & cybersecurity",
+      "duty_id": "s:CYB-08",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. VI (Governance and Controls)",
+      "cluster": "Model risk governance",
+      "duty_id": "s:MOD-01",
+      "note": "duty text not located in the SR 26-2 attachment (best 0.35)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Governance, Policies, and Controls (Board of Directors and Senior Management)",
+      "cluster": "Model risk governance",
+      "duty_id": "s:MOD-02",
+      "note": "no attachment PDF on the SR 11-7 page; duty text not located in the letter body (best 0.00)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Governance, sec. 1(a)",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-01",
+      "note": "SR 20-24 attachment: duty text anchor-matched (score 0.89)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Governance, sec. 1(b)",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-02",
+      "note": "SR 20-24 attachment: duty text anchor-matched (score 0.89)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "Governance, sec. 1(c)",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-03",
+      "note": "SR 20-24 attachment: duty text anchor-matched (score 0.93)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. 7 and 7(c); Appendix A (cyber)",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-04",
+      "note": "anchor match borderline in SR 20-24 attachment (best 0.57); candidate recorded \u2014 checkpoint \u00a73: 'activity that could lead to a disruption affecting the firm\u2019s critical operations and core business '",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "anchor_matched": false,
+      "as_of_valid": false,
+      "citation": "Sec. II.A, Board and Senior Management Responsibilities",
+      "cluster": "Operational resilience / business continuity",
+      "duty_id": "s:OPR-05",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.19)",
+      "status": "unverified",
+      "support_signal": "none"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "12 CFR Part 30, App. B",
+      "end": 28034,
+      "id": "span-ecfr-t12-p30-appB-full",
+      "quote": "Appendix B to Part 30\u2014Interagency Guidelines Establishing Information Security Standards Table of Contents I. Introduction A. Scope B. Preservation of Existing Authority C. Definitions II. Standards for Safeguarding Customer Information A. Information Security Program B. Objectives III. Development and Implementation of Customer Information Security Program A. Involve the Board of Directors B. Assess Risk C. Manage and Control Risk D. Oversee Service Provider Arrangements E. Adjust the Program F. Report to the Board G. Implement the Standards I. Introduction The Interagency Guidelines Establis",
+      "source_id": "ecfr-t12-p30",
+      "start": 27434
+    },
+    {
+      "citation": "12 CFR Part 30, App. B, III.F",
+      "end": 52635,
+      "id": "span-ecfr-t12-p30-appB-III.F",
+      "quote": "III. Customer Notice Financial institutions have an affirmative duty to protect their customers' information against unauthorized access or use. Notifying customers of a security incident involving the unauthorized access or use of the customer's information in accordance with the standard set forth below is a key part of that duty. Timely and effective notice also may reduce an institution's legal risk, assist in maintaining good customer relations, and enable the institution's customers to take steps to protect themselves against the consequences of identity theft. When customer notification",
+      "source_id": "ecfr-t12-p30",
+      "start": 52035
+    },
+    {
+      "citation": "17 CFR 229.106",
+      "end": 56195,
+      "id": "span-ecfr-t17-p229-229.106",
+      "quote": "\u00a7 229.106 (Item 106) Cybersecurity. (a) Definitions. For purposes of this section: Cybersecurity incident means an unauthorized occurrence, or a series of related unauthorized occurrences, on or conducted through a registrant's information systems that jeopardizes the confidentiality, integrity, or availability of a registrant's information systems or any information residing therein. Cybersecurity threat means any potential unauthorized occurrence on or conducted through a registrant's information systems that may result in adverse effects on the confidentiality, integrity, or availability of",
+      "source_id": "ecfr-t17-p229",
+      "start": 55595
+    },
+    {
+      "citation": "12 CFR Part 30, App. B, III.A",
+      "end": 53421,
+      "id": "span-ecfr-t12-p30-appB-III.A",
+      "quote": "A. Standard for Providing Notice When a financial institution becomes aware of an incident of unauthorized access to sensitive customer information, the institution should conduct a reasonable investigation to promptly determine the likelihood that the information has been or will be misused. If the institution determines that misuse of its information about a customer has occurred or is reasonably possible, it should notify the affected customer as soon as possible. Customer notice may be delayed if an appropriate law enforcement agency determines that notification will interfere with a crimi",
+      "source_id": "ecfr-t12-p30",
+      "start": 52821
+    },
+    {
+      "citation": "12 CFR Part 30, App. B, III.F",
+      "end": 52635,
+      "id": "span-ecfr-t12-p30-appB-III.F",
+      "quote": "III. Customer Notice Financial institutions have an affirmative duty to protect their customers' information against unauthorized access or use. Notifying customers of a security incident involving the unauthorized access or use of the customer's information in accordance with the standard set forth below is a key part of that duty. Timely and effective notice also may reduce an institution's legal risk, assist in maintaining good customer relations, and enable the institution's customers to take steps to protect themselves against the consequences of identity theft. When customer notification",
+      "source_id": "ecfr-t12-p30",
+      "start": 52035
+    },
+    {
+      "citation": "SR 24-7",
+      "end": 2163,
+      "id": "span-sr-24-7-24-7",
+      "quote": "SUBJECT: FFIEC Cybersecurity Assessment Tool Sunset Statement Applicability : This letter applies to financial institutions supervised by the Federal Reserve, including those with $10 billion or less in consolidated assets. The Federal Financial Institutions Examination Council (FFIEC), on behalf of its members, issued a statement on August 29, 2024, to communicate the sunset of the Cybersecurity Assessment Tool (CAT) in August 2025 (Statement). In light of new government resources available to financial institutions, the CAT will no longer be updated and will be removed from the FFIEC website",
+      "source_id": "sr-24-7",
+      "start": 1563
+    },
+    {
+      "citation": "SR 20-24 attachment",
+      "end": 8250,
+      "id": "span-sr-20-24-att-anchor",
+      "quote": "with applicable laws and regulations, but also maintain operational resilience. In keeping with existing regulations and guidance, the practices outlined below promote effective governance. a) The firm\u2019s board of directors approves and periodically reviews its risk appetite8 for weathering disruption from operational risks,9 at the enterprise level and for the firm\u2019s critical operations and core business lines. In setting the firm\u2019s risk appetite, the board of directors articulates the firm\u2019s to",
+      "source_id": "sr-20-24-att",
+      "start": 7750
+    },
+    {
+      "citation": "SR 20-24 attachment",
+      "end": 8750,
+      "id": "span-sr-20-24-att-anchor",
+      "quote": "lerance for disruption considering its risk profile and the capabilities of its supporting operational environment10 (\u201ctolerance for disruption\u201d).11 b) The firm\u2019s board of directors works with senior management to confirm that operational resilience practices are led and staffed by individuals with relevant expertise, approve appropriate budgets and resources, and promote a culture of effective risk management. c) The firm\u2019s board of directors oversees the firm\u2019s management of operational risk i",
+      "source_id": "sr-20-24-att",
+      "start": 8250
+    },
+    {
+      "citation": "SR 20-24 attachment",
+      "end": 9000,
+      "id": "span-sr-20-24-att-anchor",
+      "quote": "practices are led and staffed by individuals with relevant expertise, approve appropriate budgets and resources, and promote a culture of effective risk management. c) The firm\u2019s board of directors oversees the firm\u2019s management of operational risk in its business line operations, its independent operational risk management function, and its independent internal (or external) audit function. Senior management is accountable for ensuring that each of these areas adheres to the firm\u2019s tolerance fo",
+      "source_id": "sr-20-24-att",
+      "start": 8500
+    }
+  ],
+  "summary": {
+    "unverified": 10,
+    "verified": 9
+  },
+  "wave": "w2-opres-cyber-model"
+}

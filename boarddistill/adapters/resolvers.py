@@ -11,6 +11,8 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
+from typing import Any
+from urllib.parse import urljoin
 
 from distillcore.models.base import SourceSpan
 from distillcore.pipeline.verify import CitationVerdict
@@ -87,6 +89,35 @@ class UscResolver:
         return CitationVerdict("verified", note, True, _support(quote, expected_actor), span)
 
 
+def _sr_page_urls(year: str, number: str) -> list[str]:
+    """Candidate federalreserve.gov URLs for an SR letter: the modern ``supervisionreg`` path
+    and the legacy ``boarddocs`` path older letters (e.g. SR 10-6) still live under. Both hosts
+    are on the allowlist; trying both is a URL fallback, not an allowlist expansion (B5-T2)."""
+    yy = int(number)
+    full_year = 2000 + int(year) if int(year) < 50 else 1900 + int(year)
+    return [
+        f"https://www.federalreserve.gov/supervisionreg/srletters/sr{year}{yy:02d}.htm",
+        f"https://www.federalreserve.gov/boarddocs/srletters/{full_year}/sr{year}{yy:02d}.htm",
+    ]
+
+
+def _fetch_sr_html(
+    fetcher: Fetcher, cite: SrCite
+) -> tuple[Any, str] | None:  # (CachedDocument, page_url)
+    """Fetch an SR letter's HTML, trying the modern then the legacy URL. Returns
+    ``(doc, page_url)`` on success or ``None`` if every candidate was unreachable."""
+    source_id = f"sr-{cite.year}-{cite.number}"
+    for url in _sr_page_urls(cite.year, cite.number):
+        try:
+            doc = fetcher.fetch(url, source_id, title=cite.label, notes=cite.raw)
+            return doc, url
+        except NotAllowedError:
+            raise
+        except Exception:  # noqa: BLE001 — try the next candidate URL
+            continue
+    return None
+
+
 @dataclass
 class SrResolver:
     """Resolve an SR supervisory letter to its federalreserve.gov page text."""
@@ -95,18 +126,13 @@ class SrResolver:
 
     def verify(self, cite: SrCite, expected_actor: str) -> CitationVerdict:
         source_id = f"sr-{cite.year}-{cite.number}"
-        url = (
-            f"https://www.federalreserve.gov/supervisionreg/srletters/"
-            f"sr{cite.year}{int(cite.number):02d}.htm"
-        )
-        try:
-            doc = self.fetcher.fetch(url, source_id, title=cite.label, notes=cite.raw)
-        except NotAllowedError:
-            raise
-        except Exception as exc:  # noqa: BLE001 — unreachable ⇒ unverified
+        fetched = _fetch_sr_html(self.fetcher, cite)
+        if fetched is None:
             return CitationVerdict(
-                "unverified", f"fetch failed: {type(exc).__name__}", False, "n/a", None
+                "unverified", "fetch failed: SR page unreachable at every known URL", False,
+                "n/a", None,
             )
+        doc, _page_url = fetched
 
         text = html_to_text(doc.text)
         marker = f"{cite.year}-{cite.number}"
@@ -153,17 +179,13 @@ class SrAttachmentResolver:
         if not isinstance(cite, SrCite):
             return CitationVerdict("unverified", "source is not an SR letter", False, "n/a", None)
         year, num = cite.year, cite.number
-        htm_url = (
-            f"https://www.federalreserve.gov/supervisionreg/srletters/sr{year}{int(num):02d}.htm"
-        )
-        try:
-            htm = self.fetcher.fetch(htm_url, f"sr-{year}-{num}", title=cite.label)
-        except NotAllowedError:
-            raise
-        except Exception as exc:  # noqa: BLE001
+        fetched = _fetch_sr_html(self.fetcher, cite)
+        if fetched is None:
             return CitationVerdict(
-                "unverified", f"fetch failed: {type(exc).__name__}", False, "n/a", None
+                "unverified", "fetch failed: SR page unreachable at every known URL", False,
+                "n/a", None,
             )
+        htm, page_url = fetched
 
         pdf_path = _attachment_pdf_path(htm.text, year, num)
         if pdf_path is None:
@@ -198,7 +220,8 @@ class SrAttachmentResolver:
                 "none",
                 None,
             )
-        pdf_url = "https://www.federalreserve.gov" + pdf_path
+        # Resolve the PDF href relative to the page URL (boarddocs hrefs are page-relative).
+        pdf_url = pdf_path if pdf_path.startswith("http") else urljoin(page_url, pdf_path)
         try:
             doc = self.fetcher.fetch_extracted(
                 pdf_url, f"sr-{year}-{num}-att", pdf_to_text, title=f"{cite.label} attachment"

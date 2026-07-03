@@ -1,0 +1,93 @@
+{
+  "_meta": "B5-T2 review queue for wave w1-liquidity-resolution: non-verified rows and currency flags.",
+  "counts": {
+    "unverified": 12
+  },
+  "items": [
+    {
+      "citation": "App. E (rescinded)",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "b:RES-03",
+      "flag": "unverified",
+      "note": "CFR/guidance appendix \u2014 not section-addressable in this pass"
+    },
+    {
+      "citation": "Addendum",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:LIQ-12",
+      "flag": "unverified",
+      "note": "duty text not located in the SR 10-6 attachment (best 0.27)"
+    },
+    {
+      "citation": "Board responsibilities (local ll. ~1260-1282)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:OLQ-01",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "Board reporting (local ll. ~1273-1295)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:OLQ-02",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "Examination procedures (local ll. ~3442-3455)",
+      "cluster": "Liquidity risk management",
+      "duty_id": "s:OLQ-03",
+      "flag": "unverified",
+      "note": "local line-number reference (guidance doc); no addressable primary source"
+    },
+    {
+      "citation": "Attachment, Principles and Practices for Recovery and Resolution Preparedness",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-01",
+      "flag": "unverified",
+      "note": "duty text not located in the SR 14-1 attachment (best 0.28)"
+    },
+    {
+      "citation": "Section 'Supervisory Expectations'; 'Internal Governance' element",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-03",
+      "flag": "unverified",
+      "note": "no attachment PDF on the SR 14-8 page; letter-body anchor borderline (best 0.50); candidate recorded \u2014 checkpoint \u00a73: \"y based on the firm's risk profile and scope of operations. A recovery plan should address, at a min\""
+    },
+    {
+      "citation": "App. E, Section III",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:REC-04",
+      "flag": "unverified",
+      "note": "CFR/guidance appendix \u2014 not section-addressable in this pass"
+    },
+    {
+      "citation": "Section IV (Governance Mechanisms), p. 54",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-01",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Section IV, pp. 54-55",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-02",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Section IV, p. 55",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-03",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    },
+    {
+      "citation": "Liquidity section, p. 53",
+      "cluster": "Resolution, recovery & contingency funding",
+      "duty_id": "s:RES-04",
+      "flag": "unverified",
+      "note": "unrecognized or non-primary citation form"
+    }
+  ],
+  "wave": "w1-liquidity-resolution"
+}
