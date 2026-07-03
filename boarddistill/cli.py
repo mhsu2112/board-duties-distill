@@ -495,6 +495,114 @@ def b3_package(
         typer.echo(f"  {slug}/package.md · {len(md.splitlines())} lines · findings final: {final}")
 
 
+@app.command("b3-eval")
+def b3_eval_cmd(
+    decompositions: Annotated[
+        Path, typer.Option("--decompositions", help="b0_decompositions.json.")
+    ] = Path("../b0_decompositions.json"),
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json.")
+    ] = Path("outputs/import/imported_duties.json"),
+    distilled: Annotated[
+        Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
+    ] = Path("outputs/b3/as_built_distilled.json"),
+    findings: Annotated[
+        Path, typer.Option("--findings", help="B3-T4 findings.json.")
+    ] = Path("outputs/b3/findings.json"),
+    verification: Annotated[
+        Path, typer.Option("--verification", help="b2 verification.json.")
+    ] = Path("outputs/b2/verification.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
+    samples: Annotated[int, typer.Option("--samples", help="Stability samples per stage.")] = 3,
+    live: Annotated[
+        bool, typer.Option("--live", help="Draw live stability samples (needs API key).")
+    ] = False,
+) -> None:
+    """B3-T6: eval — B0 agreement, stability, citation integrity, baseline comparison."""
+    import json
+
+    from adapters.b3_eval import (
+        agreement_report,
+        baseline_comparison,
+        citation_integrity,
+        eval_report_md,
+        stability_diagnose,
+        stability_distill,
+    )
+    from adapters.diagnose import DiagnosticSet, _cluster_duties, diagnose_cluster
+    from adapters.distill import _prompt_for, build_targets
+    from distillcore.llm import LlmHarness
+
+    decs = json.loads(decompositions.read_text())["decompositions"]
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    distilled_doc = json.loads(distilled.read_text())
+    findings_doc = json.loads(findings.read_text())
+    verif = json.loads(verification.read_text())
+
+    records = {r["claim_id"]: r for r in verif["records"]}
+    spans = {s["id"]: s for s in verif["spans"]}
+    excerpts: dict[str, str] = {}
+    cluster_of: dict[str, str] = {}
+    for row in verif["rows"]:
+        cluster_of[row["duty_id"]] = row.get("cluster", "")
+        rec = records.get(f"claim-{row['duty_id']}")
+        if rec and rec["checked_span_ids"]:
+            span = spans.get(rec["checked_span_ids"][0])
+            if span:
+                excerpts[row["duty_id"]] = span["quote"]
+
+    agreement = agreement_report(decs, findings_doc)
+    integrity = citation_integrity(distilled_doc, findings_doc, excerpts)
+    baseline = baseline_comparison(drafts, cluster_of, excerpts, "Audit committee & independence")
+
+    stability: list[dict[str, object]] = []
+    harness = LlmHarness(cache_root=cache, live=live)
+    targets = build_targets(verif, drafts)
+    _AUD = "Audit committee & independence"
+    aud_target = next((t for t in targets if cluster_of.get(t.duty_id) == _AUD), None)
+    try:
+        if aud_target is not None:
+            stability.append(stability_distill(harness, _prompt_for(aud_target), samples))
+        dd = {**distilled_doc, "_cluster_of": cluster_of}
+        aud_duties = _cluster_duties(dd, "Audit committee & independence", excerpts)
+        if aud_duties:
+            _, corpus = diagnose_cluster(harness, "Audit committee & independence", aud_duties)
+            # Rebuild the diagnose prompt for sampling (diagnose_cluster returns the corpus).
+            from distillcore.llm import load_template, render
+            from profiles.lex_balanus.enums import NormativeKind
+
+            block = "\n\n".join(
+                f"{d['duty_id']} · {d['verb']} · {d['object']}\n<<<\n{d['excerpt']}\n>>>"
+                for d in aud_duties
+            )
+            prompt = render(
+                load_template("diagnose"),
+                {
+                    "cluster": "Audit committee & independence",
+                    "normative_kinds": ", ".join(m.value for m in NormativeKind),
+                    "duties": block,
+                },
+            )
+            stability.append(stability_diagnose(harness, prompt, DiagnosticSet, samples))
+    except Exception as exc:  # replay miss when samples aren't cached yet
+        typer.echo(f"  (stability skipped: {exc})", err=True)
+
+    out.mkdir(parents=True, exist_ok=True)
+    md = eval_report_md(agreement, stability, integrity, baseline)
+    (out / "eval_report.md").write_text(md)
+
+    typer.echo("[boarddistill] B3-T6 eval:")
+    typer.echo(
+        f"  effect-class agreement vs B0: {agreement['effect_class_agreement']} · "
+        f"hallucinated-citation rate: {integrity['hallucinated_citation_rate']} "
+        f"(gate {integrity['release_gate']}) · stability stages: {len(stability)} · "
+        f"budget: {harness.budget.summary()}"
+    )
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[
