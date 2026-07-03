@@ -308,6 +308,39 @@ def b4_apply(
     )
 
 
+@app.command("b4-aud07")
+def b4_aud07(
+    distilled: Annotated[
+        Path, typer.Option("--distilled", help="B3-T2 as_built_distilled.json.")
+    ] = Path("outputs/b3/as_built_distilled.json"),
+    retags: Annotated[
+        Path, typer.Option("--retags", help="b2 retags.json.")
+    ] = Path("outputs/b2/retags.json"),
+    out: Annotated[Path, typer.Option("--out", help="B4 output directory.")] = Path("outputs/b4"),
+) -> None:
+    """B4-T1: apply the AUD-07 resolution (board oversight; certify→CEO/CFO)."""
+    import json
+
+    from adapters.aud07 import AUD07, apply_to_distilled
+
+    distilled_doc = json.loads(distilled.read_text())
+    empty: dict[str, object] = {}
+    retag = next(
+        (r for r in json.loads(retags.read_text())["retags"] if r["duty_id"] == AUD07), empty
+    )
+    doc = apply_to_distilled(distilled_doc, retag)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "as_built_distilled.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+    (out / "aud07_resolution.json").write_text(
+        json.dumps(doc["aud07_resolution"], indent=2, sort_keys=True) + "\n"
+    )
+    typer.echo("[boarddistill] B4-T1 AUD-07 resolved:")
+    typer.echo(
+        f"  board-side verb → review_and_challenge · certify → CEO/CFO actor record · "
+        f"verb-vs-retag conflicts now: {doc['counts']['verb_retag_conflicts']}"
+    )
+
+
 @app.command("b3-distill")
 def b3_distill(
     verification: Annotated[
