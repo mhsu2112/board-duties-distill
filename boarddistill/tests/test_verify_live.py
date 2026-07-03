@@ -210,6 +210,10 @@ def test_full_72_row_pass_from_cache_is_deterministic() -> None:
     assert sum(1 for r in first if r.record.status == "verified") == 50
     # borderline anchor matches are recorded as candidates, never auto-verified (§3)
     assert any("candidate recorded" in (r.record.note or "") for r in first)
+    # no contradicted result (a contradiction would be a B2 checkpoint), and every
+    # non-verified row carries a specific reason
+    assert not any(r.record.status == "contradicted" for r in first)
+    assert all(r.record.note for r in first if r.record.status == "unverified")
     # every row has a status; verified rows carry a pinned span
     for r in first:
         assert r.record.status in {"verified", "contradicted", "unverified"}

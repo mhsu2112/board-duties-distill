@@ -1,0 +1,1736 @@
+{
+  "records": [
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p363-363.5"
+      ],
+      "claim_id": "claim-b:AUD-01",
+      "id": "v-claim-b:AUD-01",
+      "method": "live_retrieval",
+      "note": "12 CFR 363.5 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p363-363.5"
+      ],
+      "claim_id": "claim-b:AUD-02",
+      "id": "v-claim-b:AUD-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 363.5(a) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p363-363.5"
+      ],
+      "claim_id": "claim-b:AUD-03",
+      "id": "v-claim-b:AUD-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 363.5(b)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p363-363.2"
+      ],
+      "claim_id": "claim-b:AUD-04",
+      "id": "v-claim-b:AUD-04",
+      "method": "live_retrieval",
+      "note": "12 CFR 363.2 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t15-s7262-7262"
+      ],
+      "claim_id": "claim-b:AUD-05",
+      "id": "v-claim-b:AUD-05",
+      "method": "live_retrieval",
+      "note": "15 U.S.C. 7262(a) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t15-s7262-7262"
+      ],
+      "claim_id": "claim-b:AUD-06",
+      "id": "v-claim-b:AUD-06",
+      "method": "live_retrieval",
+      "note": "15 U.S.C. 7262(b) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t17-p240-240.13a-14"
+      ],
+      "claim_id": "claim-b:AUD-07",
+      "id": "v-claim-b:AUD-07",
+      "method": "live_retrieval",
+      "note": "17 CFR 240.13a-14 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-I.E.8(b)"
+      ],
+      "claim_id": "claim-b:AUD-08",
+      "id": "v-claim-b:AUD-08",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, I.E.8(b) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s5365-5365"
+      ],
+      "claim_id": "claim-b:CAP-01",
+      "id": "v-claim-b:CAP-01",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 5365(i) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p225-225.8"
+      ],
+      "claim_id": "claim-b:CAP-02",
+      "id": "v-claim-b:CAP-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 225.8(e)(1)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p225-225.8"
+      ],
+      "claim_id": "claim-b:CAP-03",
+      "id": "v-claim-b:CAP-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 225.8(d) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.54"
+      ],
+      "claim_id": "claim-b:CAP-04",
+      "id": "v-claim-b:CAP-04",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.54 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.44"
+      ],
+      "claim_id": "claim-b:CAP-05",
+      "id": "v-claim-b:CAP-05",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.44 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p9-9.9"
+      ],
+      "claim_id": "claim-b:FID-02",
+      "id": "v-claim-b:FID-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 9.9 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-usc-t12-s5365-5365"
+      ],
+      "claim_id": "claim-b:RGC-01",
+      "id": "v-claim-b:RGC-01",
+      "method": "live_retrieval",
+      "note": "12 U.S.C. 5365(h)(1) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.33"
+      ],
+      "claim_id": "claim-b:RGC-02",
+      "id": "v-claim-b:RGC-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.33(a)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.33"
+      ],
+      "claim_id": "claim-b:RGC-03",
+      "id": "v-claim-b:RGC-03",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.33(a)(3) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.33"
+      ],
+      "claim_id": "claim-b:RGC-04",
+      "id": "v-claim-b:RGC-04",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.33(a)(3)(iv) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p252-252.33"
+      ],
+      "claim_id": "claim-b:RGC-05",
+      "id": "v-claim-b:RGC-05",
+      "method": "live_retrieval",
+      "note": "12 CFR 252.33(a)(4)(ii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-II.A"
+      ],
+      "claim_id": "claim-b:RGC-07",
+      "id": "v-claim-b:RGC-07",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, II.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-II.D"
+      ],
+      "claim_id": "claim-b:RGC-10",
+      "id": "v-claim-b:RGC-10",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, II.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-01",
+      "id": "v-claim-s:BCG-01",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.53); candidate recorded \u2014 checkpoint \u00a73: ' between full board meetings. \u2022 relieves the full board of detailed reviews of information and opera'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-02",
+      "id": "v-claim-s:BCG-02",
+      "method": "live_retrieval",
+      "note": "duty text not located in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.32)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-occ-ch-crg-anchor"
+      ],
+      "claim_id": "claim-s:BCG-03",
+      "id": "v-claim-s:BCG-03",
+      "method": "live_retrieval",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.61)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-04",
+      "id": "v-claim-s:BCG-04",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.52); candidate recorded \u2014 checkpoint \u00a73: 'w function that opine on the effectiveness of the bank\u2019s loan rating systems and credit risk managem'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-05",
+      "id": "v-claim-s:BCG-05",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.47); candidate recorded \u2014 checkpoint \u00a73: ', and risk profile. The risk committee\u2019s roles and responsibilities should be explicitly defined and'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-occ-ch-crg-anchor"
+      ],
+      "claim_id": "claim-s:BCG-06",
+      "id": "v-claim-s:BCG-06",
+      "method": "live_retrieval",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.61)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-07",
+      "id": "v-claim-s:BCG-07",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.54); candidate recorded \u2014 checkpoint \u00a73: 'ard or the fiduciary audit committee. Compensation committee A bank may have a compensation committe'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-09",
+      "id": "v-claim-s:BCG-09",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 'p structure. The individual selected as board chair plays a crucial leadership role in the board\u2019s p'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-10",
+      "id": "v-claim-s:BCG-10",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.40); candidate recorded \u2014 checkpoint \u00a73: 'ent to put the bank\u2019s interests ahead of personal interests and to avoid conflicts of interest. \u2022 ha'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-12",
+      "id": "v-claim-s:BCG-12",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.43); candidate recorded \u2014 checkpoint \u00a73: 'ecords of board meetings. Minutes may be subject to discovery, for example, during stockholder deriv'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:BCG-14",
+      "id": "v-claim-s:BCG-14",
+      "method": "live_retrieval",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-att-anchor"
+      ],
+      "claim_id": "claim-s:CAP-01",
+      "id": "v-claim-s:CAP-01",
+      "method": "live_retrieval",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p225-225.8"
+      ],
+      "claim_id": "claim-s:CAP-02",
+      "id": "v-claim-s:CAP-02",
+      "method": "live_retrieval",
+      "note": "12 CFR 225.8(e)(1)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-att-anchor"
+      ],
+      "claim_id": "claim-s:CAP-03",
+      "id": "v-claim-s:CAP-03",
+      "method": "live_retrieval",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.62)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-att-anchor"
+      ],
+      "claim_id": "claim-s:CAP-04",
+      "id": "v-claim-s:CAP-04",
+      "method": "live_retrieval",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.68)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CAP-05",
+      "id": "v-claim-s:CAP-05",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 15-18 attachment (best 0.53); candidate recorded \u2014 checkpoint \u00a73: 'nagement to establish sound controls for the entire capital planning process. The board should appro'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-att-anchor"
+      ],
+      "claim_id": "claim-s:CAP-06",
+      "id": "v-claim-s:CAP-06",
+      "method": "live_retrieval",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.71)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-att-anchor"
+      ],
+      "claim_id": "claim-s:CAP-07",
+      "id": "v-claim-s:CAP-07",
+      "method": "live_retrieval",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-att-anchor"
+      ],
+      "claim_id": "claim-s:CAP-08",
+      "id": "v-claim-s:CAP-08",
+      "method": "live_retrieval",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.85)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p225-225.8"
+      ],
+      "claim_id": "claim-s:CAP-09",
+      "id": "v-claim-s:CAP-09",
+      "method": "live_retrieval",
+      "note": "12 CFR 225.8(e)(1)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:CAP-10",
+      "id": "v-claim-s:CAP-10",
+      "method": "live_retrieval",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-15-18-15-18"
+      ],
+      "claim_id": "claim-s:CAP-11",
+      "id": "v-claim-s:CAP-11",
+      "method": "live_retrieval",
+      "note": "SR 15-18 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-fdic-rms-mgmt-anchor"
+      ],
+      "claim_id": "claim-s:FDR-01",
+      "id": "v-claim-s:FDR-01",
+      "method": "live_retrieval",
+      "note": "FDIC RMS Manual of Examination Policies: Management (Section 4.1): duty text anchor-matched (score 0.72)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-fdic-rms-mgmt-anchor"
+      ],
+      "claim_id": "claim-s:FDR-02",
+      "id": "v-claim-s:FDR-02",
+      "method": "live_retrieval",
+      "note": "FDIC RMS Manual of Examination Policies: Management (Section 4.1): duty text anchor-matched (score 0.68)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:FDR-03",
+      "id": "v-claim-s:FDR-03",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'ning process and the plan itself when assigning the Management rating. Selecting and Retaining Compe'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:FDR-04",
+      "id": "v-claim-s:FDR-04",
+      "method": "live_retrieval",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.20)",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:FDR-05",
+      "id": "v-claim-s:FDR-05",
+      "method": "live_retrieval",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-02",
+      "id": "v-claim-s:GOV-02",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 21-3 attachment (best 0.53); candidate recorded \u2014 checkpoint \u00a73: \"ding the allocation of responsibilities to enable the board to evaluate senior management's executio\"",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-03",
+      "id": "v-claim-s:GOV-03",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.87)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-04",
+      "id": "v-claim-s:GOV-04",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.88)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-08",
+      "id": "v-claim-s:GOV-08",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.63)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-09",
+      "id": "v-claim-s:GOV-09",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.82)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-11",
+      "id": "v-claim-s:GOV-11",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 21-3 attachment (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 'End of Footnote 17 .] engage in robust inquiry into, among other matters: \u2022 the causes and consequen'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-12",
+      "id": "v-claim-s:GOV-12",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.76)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-21-3-att-anchor"
+      ],
+      "claim_id": "claim-s:GOV-13",
+      "id": "v-claim-s:GOV-13",
+      "method": "live_retrieval",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.80)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-15",
+      "id": "v-claim-s:GOV-15",
+      "method": "live_retrieval",
+      "note": "no attachment PDF found on the SR 12-17 page",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-18",
+      "id": "v-claim-s:GOV-18",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 19-3 attachment (best 0.47); candidate recorded \u2014 checkpoint \u00a73: 'be subject to a formal enforcement action by the Federal Reserve. A firm rated \u201cDeficient-2\u201d for any'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-19",
+      "id": "v-claim-s:GOV-19",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 19-3 attachment (best 0.46); candidate recorded \u2014 checkpoint \u00a73: 'ion to restore and maintain its governance and controls consistent with supervisory expectations. Th'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:GOV-20",
+      "id": "v-claim-s:GOV-20",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 95-51 attachment (best 0.56); candidate recorded \u2014 checkpoint \u00a73: 'Attachment A for SR letter 95-51 Suggested Transmittal Letter to State Member Banks and Bank Holding'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-III.B"
+      ],
+      "claim_id": "claim-s:GOV-22",
+      "id": "v-claim-s:GOV-22",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, III.B present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appD-II.D"
+      ],
+      "claim_id": "claim-s:GOV-27",
+      "id": "v-claim-s:GOV-27",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. D, II.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appA-II.A"
+      ],
+      "claim_id": "claim-s:GOV-31",
+      "id": "v-claim-s:GOV-31",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. A, II.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appA-II.D.4"
+      ],
+      "claim_id": "claim-s:GOV-32",
+      "id": "v-claim-s:GOV-32",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. A, II.D.4 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-ecfr-t12-p30-appA-II.I"
+      ],
+      "claim_id": "claim-s:GOV-33",
+      "id": "v-claim-s:GOV-33",
+      "method": "live_retrieval",
+      "note": "12 CFR Part 30, App. A, II.I present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-13-1-att-anchor"
+      ],
+      "claim_id": "claim-s:IAU-01",
+      "id": "v-claim-s:IAU-01",
+      "method": "live_retrieval",
+      "note": "SR 13-1 attachment: duty text anchor-matched (score 0.67)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-13-1-att-anchor"
+      ],
+      "claim_id": "claim-s:IAU-02",
+      "id": "v-claim-s:IAU-02",
+      "method": "live_retrieval",
+      "note": "SR 13-1 attachment: duty text anchor-matched (score 0.82)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:IAU-03",
+      "id": "v-claim-s:IAU-03",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 13-1 attachment (best 0.56); candidate recorded \u2014 checkpoint \u00a73: 'lity for maintaining an effective system of internal controls cannot be delegated to a third party. '",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-12-7-att-anchor"
+      ],
+      "claim_id": "claim-s:STR-01",
+      "id": "v-claim-s:STR-01",
+      "method": "live_retrieval",
+      "note": "SR 12-7 attachment: duty text anchor-matched (score 0.95)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [],
+      "claim_id": "claim-s:STR-02",
+      "id": "v-claim-s:STR-02",
+      "method": "live_retrieval",
+      "note": "anchor match borderline in SR 12-7 attachment (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 't and sufficiently rigorous stress testing practices across the entire banking organization; \\uf0b7 Indic'",
+      "status": "unverified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-12-7-att-anchor"
+      ],
+      "claim_id": "claim-s:STR-03",
+      "id": "v-claim-s:STR-03",
+      "method": "live_retrieval",
+      "note": "SR 12-7 attachment: duty text anchor-matched (score 0.83)",
+      "status": "verified"
+    },
+    {
+      "checked_span_ids": [
+        "span-sr-12-7-att-anchor"
+      ],
+      "claim_id": "claim-s:STR-04",
+      "id": "v-claim-s:STR-04",
+      "method": "live_retrieval",
+      "note": "SR 12-7 attachment: duty text anchor-matched (score 0.80)",
+      "status": "verified"
+    }
+  ],
+  "rows": [
+    {
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 1831m; 12 CFR 363.5",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:AUD-01",
+      "note": "12 CFR 363.5 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 363.5(a); App. A",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:AUD-02",
+      "note": "12 CFR 363.5(a) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 363.5(b)(2); App. A Guidelines 32, 34",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:AUD-03",
+      "note": "12 CFR 363.5(b)(2) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 363.2, 363.3; App. A Guideline 31",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-04",
+      "note": "12 CFR 363.2 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "SOX sec. 404(a); 15 U.S.C. 7262(a)",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-05",
+      "note": "15 U.S.C. 7262(a) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "SOX sec. 404(b); 15 U.S.C. 7262(b)",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-06",
+      "note": "15 U.S.C. 7262(b) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "SOX sec. 302; 17 CFR 240.13a-14",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-07",
+      "note": "17 CFR 240.13a-14 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. D, secs. I.E.8(b),(c)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:AUD-08",
+      "note": "12 CFR Part 30, App. D, I.E.8(b) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 5365(i)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-01",
+      "note": "12 U.S.C. 5365(i) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 225.8(e)(1)(iii)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-02",
+      "note": "12 CFR 225.8(e)(1)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 225.8(d)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-03",
+      "note": "12 CFR 225.8(d) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 252.54",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-04",
+      "note": "12 CFR 252.54 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 252.44",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-05",
+      "note": "12 CFR 252.44 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 9.9",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:FID-02",
+      "note": "12 CFR 9.9 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 U.S.C. 5365(h)(1)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-01",
+      "note": "12 U.S.C. 5365(h)(1) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 252.33(a)(1)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-02",
+      "note": "12 CFR 252.33(a)(1) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 252.33(a)(3)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-03",
+      "note": "12 CFR 252.33(a)(3) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 252.33(a)(3)(iv)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-04",
+      "note": "12 CFR 252.33(a)(3)(iv) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 252.33(a)(4)(ii)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-05",
+      "note": "12 CFR 252.33(a)(4)(ii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. D, sec. II.A",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "b:RGC-07",
+      "note": "12 CFR Part 30, App. D, II.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. D, sec. II.D",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "b:RGC-10",
+      "note": "12 CFR Part 30, App. D, II.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Appendix C \u2014 Executive committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-01",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.53); candidate recorded \u2014 checkpoint \u00a73: ' between full board meetings. \u2022 relieves the full board of detailed reviews of information and opera'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Appendix C \u2014 Audit committee",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-02",
+      "note": "duty text not located in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.32)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Appendix C \u2014 Credit committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-03",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.61)",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Appendix C \u2014 Asset-liability committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-04",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.52); candidate recorded \u2014 checkpoint \u00a73: 'w function that opine on the effectiveness of the bank\u2019s loan rating systems and credit risk managem'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Appendix C \u2014 Risk committee",
+      "cluster": "Risk committee architecture",
+      "duty_id": "s:BCG-05",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.47); candidate recorded \u2014 checkpoint \u00a73: ', and risk profile. The risk committee\u2019s roles and responsibilities should be explicitly defined and'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Appendix C \u2014 Fiduciary committees",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-06",
+      "note": "OCC Comptroller's Handbook: Corporate and Risk Governance: duty text anchor-matched (score 0.61)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Appendix C \u2014 Compensation committee",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-07",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.54); candidate recorded \u2014 checkpoint \u00a73: 'ard or the fiduciary audit committee. Compensation committee A bank may have a compensation committe'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Board Leadership (CRG); Director's Book Board Structure",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-09",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 'p structure. The individual selected as board chair plays a crucial leadership role in the board\u2019s p'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Director Nomination and Selection",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-10",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.40); candidate recorded \u2014 checkpoint \u00a73: 'ent to put the bank\u2019s interests ahead of personal interests and to avoid conflicts of interest. \u2022 ha'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Board and Committee Minutes",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-12",
+      "note": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.43); candidate recorded \u2014 checkpoint \u00a73: 'ecords of board meetings. Minutes may be subject to discovery, for example, during stockholder deriv'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Audit committee composition; 12 CFR part 363 worksheet",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-14",
+      "note": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, sec. III.A.1 (Board of Directors), p. 3",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-01",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, sec. III.A.1, p. 3, fn. 8 (cites 12 CFR 225.8(e)(1)(iii))",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-02",
+      "note": "12 CFR 225.8(e)(1)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, sec. III.A.1, pp. 3-4; sec. III.A 'Differences in Expectations', p. 5",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-03",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.62)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, sec. III.A.1, p. 4",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-04",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.68)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Attachment, sec. III.A.1, p. 4; sec. III.D (Capital Policy), p. 11, fn. 18 (cites 225.8(e)(1)(iii))",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-05",
+      "note": "anchor match borderline in SR 15-18 attachment (best 0.53); candidate recorded \u2014 checkpoint \u00a73: 'nagement to establish sound controls for the entire capital planning process. The board should appro'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, secs. III.A.1 and III.A.2, p. 4",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-06",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.71)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, sec. III.A.1, p. 4",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-07",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 1.00)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, sec. III.D, p. 12",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-08",
+      "note": "SR 15-18 attachment: duty text anchor-matched (score 0.85)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "12 CFR 225.8(e)(1)(iii); 225.8(d)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-09",
+      "note": "12 CFR 225.8(e)(1)(iii) present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "FR Y-14A attestation requirement",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-10",
+      "note": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "SR 15-18 fn. 5 (supersession)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-11",
+      "note": "SR 15-18 retrieved from federalreserve.gov; cover-letter text pinned",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Management (local ll. ~11944-12024)",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:FDR-01",
+      "note": "FDIC RMS Manual of Examination Policies: Management (Section 4.1): duty text anchor-matched (score 0.72)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Management (local ll. ~12024-12054)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-02",
+      "note": "FDIC RMS Manual of Examination Policies: Management (Section 4.1): duty text anchor-matched (score 0.68)",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Management (local ll. ~12073-12119)",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:FDR-03",
+      "note": "anchor match borderline in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'ning process and the plan itself when assigning the Management rating. Selecting and Retaining Compe'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Management (local ll. ~12170-12270)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-04",
+      "note": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.20)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Management component (local ll. ~1576-1607)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-05",
+      "note": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Attachment, Attribute 1, p. 3, fns. 9-14",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-02",
+      "note": "anchor match borderline in SR 21-3 attachment (best 0.53); candidate recorded \u2014 checkpoint \u00a73: \"ding the allocation of responsibilities to enable the board to evaluate senior management's executio\"",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 1, pp. 2-3",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-03",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.87)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 2, pp. 3-4",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-04",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.88)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 3, p. 5",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-08",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.63)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 3, p. 5, fn. 15",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-09",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.82)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Attachment, Attribute 4, p. 6",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-11",
+      "note": "anchor match borderline in SR 21-3 attachment (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 'End of Footnote 17 .] engage in robust inquiry into, among other matters: \u2022 the causes and consequen'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 4, p. 6",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-12",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.76)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Attribute 5, p. 7, fn. 19",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-13",
+      "note": "SR 21-3 attachment: duty text anchor-matched (score 0.80)",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Section A.2 (Corporate Governance), pp. 5-6",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-15",
+      "note": "no attachment PDF found on the SR 12-17 page",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Attachment, Governance & Controls component, sec. C.3, p. 12",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-18",
+      "note": "anchor match borderline in SR 19-3 attachment (best 0.47); candidate recorded \u2014 checkpoint \u00a73: 'be subject to a formal enforcement action by the Federal Reserve. A firm rated \u201cDeficient-2\u201d for any'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Adopting release (bcreg20251105a1), pp. 6, 10-12, 24",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-19",
+      "note": "anchor match borderline in SR 19-3 attachment (best 0.46); candidate recorded \u2014 checkpoint \u00a73: 'ion to restore and maintain its governance and controls consistent with supervisory expectations. Th'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Risk-management rating definitions",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-20",
+      "note": "anchor match borderline in SR 95-51 attachment (best 0.56); candidate recorded \u2014 checkpoint \u00a73: 'Attachment A for SR letter 95-51 Suggested Transmittal Letter to State Member Banks and Bank Holding'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. D, sec. III.B",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-22",
+      "note": "12 CFR Part 30, App. D, III.B present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. D, secs. II.D, II.G.3, II.H.3",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-27",
+      "note": "12 CFR Part 30, App. D, II.D present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. A, secs. II.A, II.B.7",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-31",
+      "note": "12 CFR Part 30, App. A, II.A present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. A, secs. II.D.4, II.E.2, II.G.6, II.H.5",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-32",
+      "note": "12 CFR Part 30, App. A, II.D.4 present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "App. A, secs. II.I, III.A-B",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-33",
+      "note": "12 CFR Part 30, App. A, II.I present and in force at 2026-06-30; verbatim text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, p. (local ll. 195-217)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-01",
+      "note": "SR 13-1 attachment: duty text anchor-matched (score 0.67)",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, p. (local ll. 209-217)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-02",
+      "note": "SR 13-1 attachment: duty text anchor-matched (score 0.82)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Attachment, p. (local ll. 599-623)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-03",
+      "note": "anchor match borderline in SR 13-1 attachment (best 0.56); candidate recorded \u2014 checkpoint \u00a73: 'lity for maintaining an effective system of internal controls cannot be delegated to a third party. '",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, Principle/Governance, p. (local ll. 800-806)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-01",
+      "note": "SR 12-7 attachment: duty text anchor-matched (score 0.95)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": false,
+      "citation": "Attachment, p. (local ll. 822-838)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-02",
+      "note": "anchor match borderline in SR 12-7 attachment (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 't and sufficiently rigorous stress testing practices across the entire banking organization; \\uf0b7 Indic'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, p. (local ll. 813-822)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-03",
+      "note": "SR 12-7 attachment: duty text anchor-matched (score 0.83)",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "as_of_valid": true,
+      "citation": "Attachment, p. (local ll. 860-872)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-04",
+      "note": "SR 12-7 attachment: duty text anchor-matched (score 0.80)",
+      "status": "verified",
+      "support_signal": "strong"
+    }
+  ],
+  "spans": [
+    {
+      "citation": "12 CFR 363.5",
+      "end": 23030,
+      "id": "span-ecfr-t12-p363-363.5",
+      "quote": "\u00a7 363.5 Audit committees. (a) Composition and duties. Each insured depository institution shall establish an audit committee of its board of directors, the composition of which complies with paragraphs (a)(1), (2), and (3) of this section. The duties of the audit committee shall include the appointment, compensation, and oversight of the independent public accountant who performs services required under this part, and reviewing with management and the independent public accountant the basis for the reports issued under this part. (1) Each insured depository institution with total assets of $5 ",
+      "source_id": "ecfr-t12-p363",
+      "start": 22430
+    },
+    {
+      "citation": "12 CFR 363.5(a)",
+      "end": 23056,
+      "id": "span-ecfr-t12-p363-363.5",
+      "quote": "(a) Composition and duties. Each insured depository institution shall establish an audit committee of its board of directors, the composition of which complies with paragraphs (a)(1), (2), and (3) of this section. The duties of the audit committee shall include the appointment, compensation, and oversight of the independent public accountant who performs services required under this part, and reviewing with management and the independent public accountant the basis for the reports issued under this part. (1) Each insured depository institution with total assets of $5 billion, as adjusted from ",
+      "source_id": "ecfr-t12-p363",
+      "start": 22456
+    },
+    {
+      "citation": "12 CFR 363.5(b)(2)",
+      "end": 24998,
+      "id": "span-ecfr-t12-p363-363.5",
+      "quote": "(b) Committees of large institutions. The audit committee of any insured depository institution with total assets of more than $5 billion, as adjusted from time to time in accordance with 12 CFR 314.1, as of the beginning of its fiscal year shall include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the institution. If a large institution is a subsidiary of a holding company and relies on the audit committee of the holding company to comply with this rule, the holding company's audit committee shal",
+      "source_id": "ecfr-t12-p363",
+      "start": 24398
+    },
+    {
+      "citation": "12 CFR 363.2",
+      "end": 4909,
+      "id": "span-ecfr-t12-p363-363.2",
+      "quote": "\u00a7 363.2 Annual reporting requirements. (a) Audited financial statements. Each insured depository institution shall prepare annual financial statements in accordance with GAAP, which shall be audited by an independent public accountant. The annual financial statements must reflect all material correcting adjustments necessary to conform with GAAP that were identified by the independent public accountant. (b) Management report. Each insured depository institution annually shall prepare, as of the end of the institution's most recent fiscal year, a management report that must contain the followin",
+      "source_id": "ecfr-t12-p363",
+      "start": 4309
+    },
+    {
+      "citation": "15 U.S.C. 7262(a)",
+      "end": 800,
+      "id": "span-usc-t15-s7262-7262",
+      "quote": "7262 - Management assessment of internal controls From the U.S. Government Publishing Office, www.gpo.gov \u00a77262. Management assessment of internal controls (a) Rules required The Commission shall prescribe rules requiring each annual report required by section 78m(a) or 78o(d) of this title to contain an internal control report, which shall\u2014 (1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and (2) contain an assessment, as of the end of the most recent fiscal year of the issuer, of the eff",
+      "source_id": "usc-t15-s7262",
+      "start": 200
+    },
+    {
+      "citation": "15 U.S.C. 7262(b)",
+      "end": 800,
+      "id": "span-usc-t15-s7262-7262",
+      "quote": "7262 - Management assessment of internal controls From the U.S. Government Publishing Office, www.gpo.gov \u00a77262. Management assessment of internal controls (a) Rules required The Commission shall prescribe rules requiring each annual report required by section 78m(a) or 78o(d) of this title to contain an internal control report, which shall\u2014 (1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and (2) contain an assessment, as of the end of the most recent fiscal year of the issuer, of the eff",
+      "source_id": "usc-t15-s7262",
+      "start": 200
+    },
+    {
+      "citation": "17 CFR 240.13a-14",
+      "end": 672150,
+      "id": "span-ecfr-t17-p240-240.13a-14",
+      "quote": "\u00a7 240.13a-14 Certification of disclosure in annual and quarterly reports. (a) Each report, including transition reports, filed on Form 10-Q, Form 10-K, Form 20-F or Form 40-F (\u00a7 249.308a, \u00a7 249.310, \u00a7 249.220f or \u00a7 249.240f of this chapter) under Section 13(a) of the Act (15 U.S.C. 78m(a)), other than a report filed by an Asset-Backed Issuer (as defined in \u00a7 229.1101 of this chapter) or a report on Form 20-F filed under \u00a7 240.13a-19, must include certifications in the form specified in the applicable exhibit filing requirements of such report and such certifications must be filed as an exhibit",
+      "source_id": "ecfr-t17-p240",
+      "start": 671550
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, I.E.8(b)",
+      "end": 104670,
+      "id": "span-ecfr-t12-p30-appD-I.E.8(b)",
+      "quote": "I. Concentration Risk Management. The risk governance framework should include policies and supporting processes appropriate for the covered bank's size, complexity, and risk profile for effectively identifying, measuring, monitoring, and controlling the covered bank's concentrations of risk. J. Risk Data Aggregation and Reporting. The risk governance framework should include a set of policies, supported by appropriate procedures and processes, designed to provide risk data aggregation and reporting capabilities appropriate for the size, complexity, and risk profile of the covered bank, and to",
+      "source_id": "ecfr-t12-p30",
+      "start": 104070
+    },
+    {
+      "citation": "12 U.S.C. 5365(i)",
+      "end": 884,
+      "id": "span-usc-t12-s5365-5365",
+      "quote": "5365 - Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies From the U.S. Government Publishing Office, www.gpo.gov \u00a75365. Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies (a) In general (1) Purpose In order to prevent or mitigate risks to the financial stability of the United States that could arise from the material financial distress or failure, or ongoing activities, of large, interconnected fin",
+      "source_id": "usc-t12-s5365",
+      "start": 284
+    },
+    {
+      "citation": "12 CFR 225.8(e)(1)(iii)",
+      "end": 47766,
+      "id": "span-ecfr-t12-p225-225.8",
+      "quote": "(e)(2) of this section. (6) C apital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year. (7) Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines. (8) Category IV bank holding company me",
+      "source_id": "ecfr-t12-p225",
+      "start": 47166
+    },
+    {
+      "citation": "12 CFR 225.8(d)",
+      "end": 46351,
+      "id": "span-ecfr-t12-p225-225.8",
+      "quote": "(d) Definitions. For purposes of this section, the following definitions apply: (1) Advanced approaches means the risk-weighted assets calculation methodologies at 12 CFR part 217, subpart E, as applicable. (2) Average total nonbank assets means the average of the total nonbank assets, calculated in accordance with the instructions to the FR Y-9LP, for the four most recent calendar quarters or, if the bank holding company has not filed the FR Y-9LP for each of the four most recent calendar quarters, for the most recent quarter or quarters, as applicable. (3) Capital action means any issuance o",
+      "source_id": "ecfr-t12-p225",
+      "start": 45751
+    },
+    {
+      "citation": "12 CFR 252.54",
+      "end": 105019,
+      "id": "span-ecfr-t12-p252-252.54",
+      "quote": "\u00a7 252.54 Stress test. (a) Stress test \u2014(1) In general. A covered company must conduct a stress test as required under this subpart. (2) Frequency \u2014(i) General. Except as provided in paragraph (a)(2)(ii) of this section, a covered company must conduct a stress test according to the frequency in Table 1 to \u00a7 252.54(a)(2)(i). Table 1 to \u00a7 252.54( a )(2)( i ) If the covered company is a Then the stress test must be conducted Global systemically important BHC Annually, by April 5 of each calendar year based on data as of December 31 of the preceding calendar year, unless the time or the as-of date ",
+      "source_id": "ecfr-t12-p252",
+      "start": 104419
+    },
+    {
+      "citation": "12 CFR 252.44",
+      "end": 90289,
+      "id": "span-ecfr-t12-p252-252.44",
+      "quote": "\u00a7 252.44 Analysis conducted by the Board. (a) In general. (1) The Board will conduct an analysis of each covered company's capital, on a total consolidated basis, taking into account all relevant exposures and activities of that covered company, to evaluate the ability of the covered company to absorb losses in specified economic and financial conditions. (2) The analysis will include an assessment of the projected losses, net income, and pro forma capital levels and regulatory capital ratios and other capital ratios for the covered company and use such analytical techniques that the Board det",
+      "source_id": "ecfr-t12-p252",
+      "start": 89689
+    },
+    {
+      "citation": "12 CFR 9.9",
+      "end": 11859,
+      "id": "span-ecfr-t12-p9-9.9",
+      "quote": "\u00a7 9.9 Audit of fiduciary activities. (a) Annual audit. At least once during each calendar year, a national bank shall arrange for a suitable audit (by internal or external auditors) of all significant fiduciary activities, under the direction of its fiduciary audit committee, unless the bank adopts a continuous audit system in accordance with paragraph (b) of this section. The bank shall note the results of the audit (including significant actions taken as a result of the audit) in the minutes of the board of directors. (b) Continuous audit. In lieu of performing annual audits under paragraph ",
+      "source_id": "ecfr-t12-p9",
+      "start": 11259
+    },
+    {
+      "citation": "12 U.S.C. 5365(h)(1)",
+      "end": 884,
+      "id": "span-usc-t12-s5365-5365",
+      "quote": "5365 - Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies From the U.S. Government Publishing Office, www.gpo.gov \u00a75365. Enhanced supervision and prudential standards for nonbank financial companies supervised by the Board of Governors and certain bank holding companies (a) In general (1) Purpose In order to prevent or mitigate risks to the financial stability of the United States that could arise from the material financial distress or failure, or ongoing activities, of large, interconnected fin",
+      "source_id": "usc-t12-s5365",
+      "start": 284
+    },
+    {
+      "citation": "12 CFR 252.33(a)(1)",
+      "end": 47238,
+      "id": "span-ecfr-t12-p252-252.33",
+      "quote": "(a) Risk committee \u2014(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b). (2) Risk-management framework. The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size an",
+      "source_id": "ecfr-t12-p252",
+      "start": 46638
+    },
+    {
+      "citation": "12 CFR 252.33(a)(3)",
+      "end": 47238,
+      "id": "span-ecfr-t12-p252-252.33",
+      "quote": "(a) Risk committee \u2014(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b). (2) Risk-management framework. The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size an",
+      "source_id": "ecfr-t12-p252",
+      "start": 46638
+    },
+    {
+      "citation": "12 CFR 252.33(a)(3)(iv)",
+      "end": 47238,
+      "id": "span-ecfr-t12-p252-252.33",
+      "quote": "(a) Risk committee \u2014(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b). (2) Risk-management framework. The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size an",
+      "source_id": "ecfr-t12-p252",
+      "start": 46638
+    },
+    {
+      "citation": "12 CFR 252.33(a)(4)(ii)",
+      "end": 47238,
+      "id": "span-ecfr-t12-p252-252.33",
+      "quote": "(a) Risk committee \u2014(1) General. A bank holding company subject to this subpart must maintain a risk committee that approves and periodically reviews the risk-management policies of the bank holding company's global operations and oversees the operation of the bank holding company's global risk-management framework. The risk committee's responsibilities include liquidity risk-management as set forth in \u00a7 252.34(b). (2) Risk-management framework. The bank holding company's global risk-management framework must be commensurate with its structure, risk profile, complexity, activities, and size an",
+      "source_id": "ecfr-t12-p252",
+      "start": 46638
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, II.A",
+      "end": 88387,
+      "id": "span-ecfr-t12-p30-appD-II.A",
+      "quote": "A. Risk Governance Framework. A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee. The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities. Independent risk management should review and update the risk governance framework at least annually, and as often as needed to address improvements in ",
+      "source_id": "ecfr-t12-p30",
+      "start": 87787
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, II.D",
+      "end": 88343,
+      "id": "span-ecfr-t12-p30-appD-II.D",
+      "quote": "II. Standards for Risk Governance Framework A. Risk Governance Framework. A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee. The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities. Independent risk management should review and update the risk governance framework at least annually, and as",
+      "source_id": "ecfr-t12-p30",
+      "start": 87743
+    },
+    {
+      "citation": "OCC Comptroller's Handbook: Corporate and Risk Governance",
+      "end": 282750,
+      "id": "span-occ-ch-crg-anchor",
+      "quote": "limits. \u2022 review and approve lending policies and underwriting standards that reflect the bank\u2019s risk appetite. \u2022 approve loans as outlined in the bank\u2019s lending policy for credits involving large dollar amounts relative to the bank\u2019s size and capital levels. \u2022 monitor the loan portfolio\u2019s performance, exceptions, and the allowance for loan and lease losses. \u2022 oversee the bank\u2019s compliance with credit-related policies, limits, laws, and regulations. \u2022 receive periodic reports from the loan revie",
+      "source_id": "occ-ch-crg",
+      "start": 282250
+    },
+    {
+      "citation": "OCC Comptroller's Handbook: Corporate and Risk Governance",
+      "end": 287750,
+      "id": "span-occ-ch-crg-anchor",
+      "quote": "trust committee and a fiduciary audit committee. A bank with fiduciary powers must have an audit of fiduciary activities as well as a fiduciary audit committee.151 Regulations outline the composition requirements of the fiduciary audit committee. The committee oversees the bank\u2019s audit of significant fiduciary activities. The audit could be conducted annually or continuously, depending on the audit\u2019s setup. The committee should note results of the audit and actions taken in the minutes of the bo",
+      "source_id": "occ-ch-crg",
+      "start": 287250
+    },
+    {
+      "citation": "SR 15-18 attachment",
+      "end": 8000,
+      "id": "span-sr-15-18-att-anchor",
+      "quote": " and periodically approve that process. 1. Board of Directors A firm's board of directors is ultimately responsible and accountable for the firm's capital-related decisions and for capital planning. The firm's capital planning should be consistent with the strategy and risk appetite set by the board and with the firm's risk levels, including how risks at the firm may emerge and evolve under stress. The board must annually review and approve the firm's capital plan. [Footnote 8 -12 CFR 225.8(e)(1",
+      "source_id": "sr-15-18-att",
+      "start": 7500
+    },
+    {
+      "citation": "12 CFR 225.8(e)(1)(iii)",
+      "end": 47766,
+      "id": "span-ecfr-t12-p225-225.8",
+      "quote": "(e)(2) of this section. (6) C apital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year. (7) Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines. (8) Category IV bank holding company me",
+      "source_id": "ecfr-t12-p225",
+      "start": 47166
+    },
+    {
+      "citation": "SR 15-18 attachment",
+      "end": 8500,
+      "id": "span-sr-15-18-att-anchor",
+      "quote": ")(iii). End of Footnote8 .] The board should direct senior management to provide a briefing on their assessment of the firm's capital adequacy at least quarterly, and whenever economic, financial, or firm-specific conditions warrant a more frequent update. The briefing should describe whether current capital levels and planned capital distributions remain appropriate and consistent with capital goals (see Section III.D, \u201cCapital Policy\u201d). In their briefing, senior management should also highligh",
+      "source_id": "sr-15-18-att",
+      "start": 8000
+    },
+    {
+      "citation": "SR 15-18 attachment",
+      "end": 9000,
+      "id": "span-sr-15-18-att-anchor",
+      "quote": "t for the board any problem areas related to capital planning identified by senior management, internal audit, or supervisors. Page 4 of 41 The board should hold senior management accountable for providing sufficient information on the firm's material risks and exposures to inform board decisions on capital adequacy and actions, including capital distributions. Information provided to the board should be clear, accurate, and timely. The board should direct senior management to provide this infor",
+      "source_id": "sr-15-18-att",
+      "start": 8500
+    },
+    {
+      "citation": "SR 15-18 attachment",
+      "end": 11000,
+      "id": "span-sr-15-18-att-anchor",
+      "quote": "ormation should include key assumptions and the analysis of sensitivity of a firm's projections to changes in the assumptions (see Appendix D, \u201cSensitivity Analysis and Assumptions Management\u201d). The board should incorporate uncertainties in projections and limitations in the firm's capital planning process into its decisions on capital adequacy and capital actions. It should also review and approve mitigating steps to address capital planning process weaknesses. The board should direct senior ma",
+      "source_id": "sr-15-18-att",
+      "start": 10500
+    },
+    {
+      "citation": "SR 15-18 attachment",
+      "end": 11500,
+      "id": "span-sr-15-18-att-anchor",
+      "quote": "nagement to establish sound controls for the entire capital planning process. The board should approve policies related to capital planning, and review them annually. The board should also approve capital planning activities and strategies. The board of directors should maintain an accurate record of its meetings pertaining to the firm's capital planning process. 2. Senior Management Senior management should direct staff to implement board-approved capital policies, capital planning activities, ",
+      "source_id": "sr-15-18-att",
+      "start": 11000
+    },
+    {
+      "citation": "SR 15-18 attachment",
+      "end": 35000,
+      "id": "span-sr-15-18-att-anchor",
+      "quote": "vidends), available at: http://www.federalreserve.gov/boarddocs/supmanual/bhc/bhc.pdf. End of Footnote 19 .] The policy should incorporate actionable protocols, including governance and escalation, in the event a post-stress capital goal, real-time targeted capital level, or other early warning metric is breached. The policy should also include elements such as: \u2022 Roles and responsibilities of key parties, including those responsible for producing analytical materials, reviewing the analysis, an",
+      "source_id": "sr-15-18-att",
+      "start": 34500
+    },
+    {
+      "citation": "12 CFR 225.8(e)(1)(iii)",
+      "end": 47766,
+      "id": "span-ecfr-t12-p225-225.8",
+      "quote": "(e)(2) of this section. (6) C apital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year. (7) Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines. (8) Category IV bank holding company me",
+      "source_id": "ecfr-t12-p225",
+      "start": 47166
+    },
+    {
+      "citation": "SR 15-18",
+      "end": 2599,
+      "id": "span-sr-15-18-15-18",
+      "quote": "SUBJECT: Federal Reserve Supervisory Assessment of Capital Planning and Positions for Firms Subject to Category I Standards Applicability: This guidance applies only to U.S. bank holding companies that are subject to Category I standards under the Board\u2019s tailoring framework. The Federal Reserve is issuing this letter to explain its supervisory expectations for capital planning at firms subject to Category I standards, consistent with the broad supervisory expectations set forth in SR letter 12-17/CA letter 12-14, \"Consolidated Supervision Framework for Large Financial Institutions.\" 2 Capital",
+      "source_id": "sr-15-18",
+      "start": 1999
+    },
+    {
+      "citation": "FDIC RMS Manual of Examination Policies: Management (Section 4.1)",
+      "end": 7250,
+      "id": "span-fdic-rms-mgmt-anchor",
+      "quote": "her IAP from office or to prohibit any further participation by such party, in any manner, in the conduct of the affairs of any insured depository institution. The board of directors is the source of all authority and responsibility. In the broadest sense, the board is responsible for formulation of sound policies and objectives of the bank, effective supervision of its affairs, and promotion of its welfare. T he primary responsibility of executive management is implementation of the board \u2019s po",
+      "source_id": "fdic-rms-mgmt",
+      "start": 6750
+    },
+    {
+      "citation": "FDIC RMS Manual of Examination Policies: Management (Section 4.1)",
+      "end": 12250,
+      "id": "span-fdic-rms-mgmt-anchor",
+      "quote": "ctives and policies at a minimum, include written guidelines for such matters as investments, loans, asset/liability and funds management, profit planning and budgeting, capital planning , internal routine and controls , audit programs, conflicts of interest, code of ethics, and personnel. Policies for specialty areas, such as the Bank Secrecy Act (BSA), Information Technology (IT), Trust Department activities, and consumer compliance will also facilitate appropriate oversight. Objectives and po",
+      "source_id": "fdic-rms-mgmt",
+      "start": 11750
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 7500,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "ffectively Page 3 of 7 manage different or additional risks posed by the new business. If the strategy calls for expansion into a new line of business or a new jurisdiction, the board evaluates the increased level of risk. In addition, an effective board reviews any corresponding risk management or controls enhancements, including those related to compliance with U.S. laws, [Footnote 8 - U.S. laws include, without limitation, the Bank Secrecy Act and the Foreign Corrupt Practices Act. End of Foo",
+      "source_id": "sr-21-3-att",
+      "start": 7000
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 10750,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "to provide directors with information that is sufficient in scope, detail, and analysis to enable the board to make sound, well-informed decisions and consider potential risks. An effective board directs senior management to provide it with information that is timely, accurate, and well organized. An effective board also evaluates the sufficiency and quality of information it receives and directs senior management to (a) provide more Page 4 of 7 information, (b) address any concerns regarding th",
+      "source_id": "sr-21-3-att",
+      "start": 10250
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 15500,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "ormance objectives. An effective board approves clear financial and nonfinancial performance objectives aligned with the firm's strategy and risk appetite for the CEO and business line executives and nonfinancial performance objectives for the chief risk officer and chief audit executive. Similar performance objectives are developed for other members of senior management. An effective board of directors also holds senior management accountable for the implementation of performance management and",
+      "source_id": "sr-21-3-att",
+      "start": 15000
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 16500,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "lations, and the firm's strategy, an effective board oversees succession plans for the CEO, and depending on the size, complexity, and nature of the firm, the chief risk officer, chief audit executive, or other senior management officials. [Footnote 15 - This may extend beyond requirements to which firms may be subject under other statutory and regulatory authorities. For example, the NYSE requires formalized succession planning for the CEO only. See NYSE Listed Company Manual, section 303A.09. ",
+      "source_id": "sr-21-3-att",
+      "start": 16000
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 19750,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "internal audit function, organizational concerns, and industry concerns. The audit committee supports internal audit's budget, staffing, and systems of internal controls relative to the firm's asset size, complexity and the pace of technological and other changes. The audit committee also reviews the status of actions recommended by internal audit and external auditors to remediate and resolve material or persistent deficiencies identified by internal audit, external audit, and findings identifi",
+      "source_id": "sr-21-3-att",
+      "start": 19250
+    },
+    {
+      "citation": "SR 21-3 attachment",
+      "end": 21000,
+      "id": "span-sr-21-3-att-anchor",
+      "quote": "es a process designed to identify and select potential director nominees with a mix of skills, knowledge, experience, and perspectives. This process takes into account, for example, a potential nominee's expertise, availability, integrity, and potential conflicts of interest and considers a diverse pool of potential nominees, including women and minorities. [Footnote 19 - \u201cFinal Interagency Policy Statement Establishing Joint Standards for Assessing the Diversity Policies and Practices of Entiti",
+      "source_id": "sr-21-3-att",
+      "start": 20500
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, III.B",
+      "end": 109336,
+      "id": "span-ecfr-t12-p30-appD-III.B",
+      "quote": "B. Provide Active Oversight of Management. A covered bank's board of directors should actively oversee the covered bank's risk-taking activities and hold management accountable for adhering to the risk governance framework. In providing active oversight, the board of directors may rely on risk assessments and reports prepared by independent risk management and internal audit to support the board's ability to question, challenge, and when necessary, oppose recommendations and decisions made by management that could cause the covered bank's risk profile to exceed its risk appetite or jeopardize ",
+      "source_id": "ecfr-t12-p30",
+      "start": 108736
+    },
+    {
+      "citation": "12 CFR Part 30, App. D, II.D",
+      "end": 88343,
+      "id": "span-ecfr-t12-p30-appD-II.D",
+      "quote": "II. Standards for Risk Governance Framework A. Risk Governance Framework. A covered bank should establish and adhere to a formal, written risk governance framework that is designed by independent risk management and approved by the board of directors or the board's risk committee. The risk governance framework should include delegations of authority from the board of directors to management committees and executive officers as well as the risk limits established for material activities. Independent risk management should review and update the risk governance framework at least annually, and as",
+      "source_id": "ecfr-t12-p30",
+      "start": 87743
+    },
+    {
+      "citation": "12 CFR Part 30, App. A, II.A",
+      "end": 20950,
+      "id": "span-ecfr-t12-p30-appA-II.A",
+      "quote": "A. Internal controls and information systems. An institution should have internal controls and information systems that are appropriate to the size of the institution and the nature, scope and risk of its activities and that provide for: 1. An organizational structure that establishes clear lines of authority and responsibility for monitoring adherence to established policies; 2. Effective risk assessment; 3. Timely and accurate financial, operational and regulatory reports; 4. Adequate procedures to safeguard and manage assets; and 5. Compliance with applicable laws and regulations. B. Intern",
+      "source_id": "ecfr-t12-p30",
+      "start": 20350
+    },
+    {
+      "citation": "12 CFR Part 30, App. A, II.D.4",
+      "end": 22975,
+      "id": "span-ecfr-t12-p30-appA-II.D.4",
+      "quote": "D. Credit underwriting. An institution should establish and maintain prudent credit underwriting practices that: 1. Are commensurate with the types of loans the institution will make and consider the terms and conditions under which they will be made; 2. Consider the nature of the markets in which loans will be made; 3. Provide for consideration, prior to credit commitment, of the borrower's overall financial condition and resources, the financial responsibility of any guarantor, the nature and value of any underlying collateral, and the borrower's character and willingness to repay as agreed;",
+      "source_id": "ecfr-t12-p30",
+      "start": 22375
+    },
+    {
+      "citation": "12 CFR Part 30, App. A, II.I",
+      "end": 14697,
+      "id": "span-ecfr-t12-p30-appA-II.I",
+      "quote": "I. Operational and Managerial Standards A. Internal controls and information systems. An institution should have internal controls and information systems that are appropriate to the size of the institution and the nature, scope and risk of its activities and that provide for: 1. An organizational structure that establishes clear lines of authority and responsibility for monitoring adherence to established policies; 2. Effective risk assessment; 3. Timely and accurate financial, operational and regulatory reports; 4. Adequate procedures to safeguard and manage assets; and 5. Compliance with ap",
+      "source_id": "ecfr-t12-p30",
+      "start": 14097
+    },
+    {
+      "citation": "SR 13-1 attachment",
+      "end": 11750,
+      "id": "span-sr-13-1-att-anchor",
+      "quote": "ssed the structure of an internal audit function, noting that it should be positioned so that an institution\u2019s board of directors has confidence that the internal audit function can be impartial and not unduly influenced by managers of day-to-day operations. Thus, the member of management responsible for the internal audit function (hereafter referred to as the chief audit executive or CAE) 6 should have no responsibility for operating the system of internal control and should report functionall",
+      "source_id": "sr-13-1-att",
+      "start": 11250
+    },
+    {
+      "citation": "SR 13-1 attachment",
+      "end": 13000,
+      "id": "span-sr-13-1-att-anchor",
+      "quote": "ty of internal audit is served best when the CAE reports administratively to the chief executive officer (CEO). If the CAE reports administratively to someone other than the CEO, the audit committee should document its rationale for this reporting structure, including mitigating controls available for situations that could adversely impact the objectivity of the CAE. In such instances, the audit committee should periodically (at least annually) evaluate whether the CAE is impartial and not undul",
+      "source_id": "sr-13-1-att",
+      "start": 12500
+    },
+    {
+      "citation": "SR 12-7 attachment",
+      "end": 54750,
+      "id": "span-sr-12-7-att-anchor",
+      "quote": "e extent and sophistication of that framework. Governance over a banking organization\u2019s stress testing framework rests with the banking organization\u2019s board of directors and senior management. As part of their overall responsibilities, a banking organization\u2019s board and senior management should establish a comprehensive, integrated and effective stress testing framework that fits into the broader risk management of the banking organization. While the board is ultimately responsible for ensuring ",
+      "source_id": "sr-12-7-att",
+      "start": 54250
+    },
+    {
+      "citation": "SR 12-7 attachment",
+      "end": 55750,
+      "id": "span-sr-12-7-att-anchor",
+      "quote": "prompt remedial action where necessary. Senior management, directly and through relevant committees, also should be responsible for regularly reporting to the board on stress testing developments (including the process to design tests and develop scenarios) and on stress testing results (including from individual tests, where material), as well as on compliance with stress testing policy. Board members should actively evaluate and discuss this information, ensuring that the stress testing framew",
+      "source_id": "sr-12-7-att",
+      "start": 55250
+    },
+    {
+      "citation": "SR 12-7 attachment",
+      "end": 59250,
+      "id": "span-sr-12-7-att-anchor",
+      "quote": " be used to inform the board about alignment of the banking organization\u2019s risk profile with the board\u2019s chosen risk appetite, as well as inform operating and strategic decisions. Stress testing results should be considered directly by the board and senior management for decisions relating to capital and liquidity adequacy, including capital contingency plans and contingency funding plans. Senior management, in consultation with the board, should ensure that the stress testing framework includes",
+      "source_id": "sr-12-7-att",
+      "start": 58750
+    }
+  ],
+  "summary": {
+    "unverified": 22,
+    "verified": 50
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "_meta": "B1 review queue \u2014 TODO(human). Non-verified rows + F2/fidelity flags. The agent records these; it never edits the inventory, drafts, or B0 to match (\u00a76.1).",
+  "counts": {
+    "f2_support": 11,
+    "fidelity_caveat": 1,
+    "unverified": 22
+  },
+  "queue": [
+    {
+      "citation": "12 CFR 363.2, 363.3; App. A Guideline 31",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-04",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is weak",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "citation": "SOX sec. 404(a); 15 U.S.C. 7262(a)",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-05",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "SOX sec. 404(b); 15 U.S.C. 7262(b)",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-06",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "SOX sec. 302; 17 CFR 240.13a-14",
+      "cluster": "Internal control over financial reporting",
+      "duty_id": "b:AUD-07",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "App. D, secs. I.E.8(b),(c)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "b:AUD-08",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is weak",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "citation": "12 U.S.C. 5365(i)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "b:CAP-01",
+      "kind": "fidelity_caveat",
+      "reason": "12 U.S.C. 5365(i) present in U.S. Code (2024 ed.); text pinned",
+      "status": "verified",
+      "support_signal": "strong"
+    },
+    {
+      "citation": "12 U.S.C. 5365(h)(1)",
+      "cluster": "Risk committee architecture",
+      "duty_id": "b:RGC-01",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Appendix C \u2014 Executive committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-01",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.53); candidate recorded \u2014 checkpoint \u00a73: ' between full board meetings. \u2022 relieves the full board of detailed reviews of information and opera'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Audit committee",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-02",
+      "kind": "unverified",
+      "reason": "duty text not located in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.32)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Appendix C \u2014 Credit committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-03",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Appendix C \u2014 Asset-liability committee",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-04",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.52); candidate recorded \u2014 checkpoint \u00a73: 'w function that opine on the effectiveness of the bank\u2019s loan rating systems and credit risk managem'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Risk committee",
+      "cluster": "Risk committee architecture",
+      "duty_id": "s:BCG-05",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.47); candidate recorded \u2014 checkpoint \u00a73: ', and risk profile. The risk committee\u2019s roles and responsibilities should be explicitly defined and'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Appendix C \u2014 Compensation committee",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-07",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.54); candidate recorded \u2014 checkpoint \u00a73: 'ard or the fiduciary audit committee. Compensation committee A bank may have a compensation committe'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Board Leadership (CRG); Director's Book Board Structure",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-09",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 'p structure. The individual selected as board chair plays a crucial leadership role in the board\u2019s p'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Director Nomination and Selection",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-10",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.40); candidate recorded \u2014 checkpoint \u00a73: 'ent to put the bank\u2019s interests ahead of personal interests and to avoid conflicts of interest. \u2022 ha'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Board and Committee Minutes",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:BCG-12",
+      "kind": "unverified",
+      "reason": "anchor match borderline in OCC Comptroller's Handbook: Corporate and Risk Governance (best 0.43); candidate recorded \u2014 checkpoint \u00a73: 'ecords of board meetings. Minutes may be subject to discovery, for example, during stockholder deriv'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Audit committee composition; 12 CFR part 363 worksheet",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:BCG-14",
+      "kind": "unverified",
+      "reason": "part-level CFR cite; no addressable section",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, sec. III.A.1, p. 4; sec. III.D (Capital Policy), p. 11, fn. 18 (cites 225.8(e)(1)(iii))",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-05",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 15-18 attachment (best 0.53); candidate recorded \u2014 checkpoint \u00a73: 'nagement to establish sound controls for the entire capital planning process. The board should appro'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "FR Y-14A attestation requirement",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-10",
+      "kind": "unverified",
+      "reason": "unrecognized or non-primary citation form",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "SR 15-18 fn. 5 (supersession)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:CAP-11",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Management (local ll. ~12024-12054)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-02",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is none",
+      "status": "verified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Management (local ll. ~12073-12119)",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:FDR-03",
+      "kind": "unverified",
+      "reason": "anchor match borderline in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.55); candidate recorded \u2014 checkpoint \u00a73: 'ning process and the plan itself when assigning the Management rating. Selecting and Retaining Compe'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Management (local ll. ~12170-12270)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-04",
+      "kind": "unverified",
+      "reason": "duty text not located in FDIC RMS Manual of Examination Policies: Management (Section 4.1) (best 0.20)",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Management component (local ll. ~1576-1607)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:FDR-05",
+      "kind": "unverified",
+      "reason": "local line-number reference (guidance doc); no addressable primary source",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 1, p. 3, fns. 9-14",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-02",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 21-3 attachment (best 0.53); candidate recorded \u2014 checkpoint \u00a73: \"ding the allocation of responsibilities to enable the board to evaluate senior management's executio\"",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 4, p. 6",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:GOV-11",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 21-3 attachment (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 'End of Footnote 17 .] engage in robust inquiry into, among other matters: \u2022 the causes and consequen'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, Attribute 5, p. 7, fn. 19",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-13",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is weak",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "citation": "Section A.2 (Corporate Governance), pp. 5-6",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-15",
+      "kind": "unverified",
+      "reason": "no attachment PDF found on the SR 12-17 page",
+      "status": "unverified",
+      "support_signal": "none"
+    },
+    {
+      "citation": "Attachment, Governance & Controls component, sec. C.3, p. 12",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-18",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 19-3 attachment (best 0.47); candidate recorded \u2014 checkpoint \u00a73: 'be subject to a formal enforcement action by the Federal Reserve. A firm rated \u201cDeficient-2\u201d for any'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Adopting release (bcreg20251105a1), pp. 6, 10-12, 24",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-19",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 19-3 attachment (best 0.46); candidate recorded \u2014 checkpoint \u00a73: 'ion to restore and maintain its governance and controls consistent with supervisory expectations. Th'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Risk-management rating definitions",
+      "cluster": "Risk-governance framework / strategy",
+      "duty_id": "s:GOV-20",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 95-51 attachment (best 0.56); candidate recorded \u2014 checkpoint \u00a73: 'Attachment A for SR letter 95-51 Suggested Transmittal Letter to State Member Banks and Bank Holding'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 195-217)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-01",
+      "kind": "f2_support",
+      "reason": "citation verified but board support is weak",
+      "status": "verified",
+      "support_signal": "weak"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 599-623)",
+      "cluster": "Audit committee & independence",
+      "duty_id": "s:IAU-03",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 13-1 attachment (best 0.56); candidate recorded \u2014 checkpoint \u00a73: 'lity for maintaining an effective system of internal controls cannot be delegated to a third party. '",
+      "status": "unverified",
+      "support_signal": "n/a"
+    },
+    {
+      "citation": "Attachment, p. (local ll. 822-838)",
+      "cluster": "Capital planning & stress testing",
+      "duty_id": "s:STR-02",
+      "kind": "unverified",
+      "reason": "anchor match borderline in SR 12-7 attachment (best 0.50); candidate recorded \u2014 checkpoint \u00a73: 't and sufficiently rigorous stress testing practices across the entire banking organization; \\uf0b7 Indic'",
+      "status": "unverified",
+      "support_signal": "n/a"
+    }
+  ]
+}
