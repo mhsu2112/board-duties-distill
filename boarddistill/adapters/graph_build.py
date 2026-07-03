@@ -58,7 +58,7 @@ _META: dict[str, dict[str, Any]] = {
     "FDIC RMS Manual: Management": {"agency": "FDIC", "stratum": "manual", "eff": "2005-01-01"},
 }
 
-# Instruments referenced but not the primary cite of any row (added per B2-T6).
+# Instruments referenced but not the primary cite of any verified row (B2-T6 / B3-T0).
 _EXTRA_NODES = [
     {
         "id": "sr-09-4",
@@ -70,7 +70,20 @@ _EXTRA_NODES = [
         "treatment_date": "2015-12-18",
         "treatment_evidence": "SR 15-18 fn. 5 supersedes SR 09-4 for GSIBs (cited by s:CAP-11).",
         "bears_on": ["s:CAP-11"],
-    }
+    },
+    {
+        "id": "sr-95-51",
+        "citation": "SR 95-51",
+        "agency": "FRB",
+        "stratum": "guidance",
+        "effective_date": "1995-11-14",
+        "treatment_status": "amended",
+        "treatment_date": "2025-06-23",
+        "treatment_evidence": "Fed SR 95-51 page (B3-T0): revised June 23, 2025 to remove "
+        "reputational-risk references; per SR 21-4 / CA 21-2 (Feb 26, 2021) its board-"
+        "responsibility content was clarified. Active but amended — not rescinded.",
+        "bears_on": ["s:GOV-20"],
+    },
 ]
 
 

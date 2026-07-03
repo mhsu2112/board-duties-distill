@@ -254,6 +254,30 @@ def b2_report(
     typer.echo(f"[boarddistill] B2 report -> {out / 'B2_report.md'} ({len(report)} chars)")
 
 
+@app.command("b3-apply")
+def b3_apply(
+    verification: Annotated[
+        Path, typer.Option("--verification", help="b2 verification.json.")
+    ] = Path("outputs/b2/verification.json"),
+    out: Annotated[Path, typer.Option("--out", help="B3 output directory.")] = Path("outputs/b3"),
+) -> None:
+    """B3-T0: accept-residual dispositions + s:CAP-11 reclassification."""
+    import json
+
+    from adapters.b3_dispositions import ledger
+
+    verif = json.loads(verification.read_text())
+    doc = ledger(verif)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "dispositions.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+    c = doc["counts"]
+    typer.echo("[boarddistill] B3 dispositions applied:")
+    typer.echo(
+        f"  target duty rows: {c['target_duty_rows']} (s:CAP-11 -> supersession_note) · "
+        f"verified: {c['verified_duties']} · residuals accepted: {c['residuals_accepted']}"
+    )
+
+
 @app.command("b2-graph")
 def b2_graph(
     targets: Annotated[

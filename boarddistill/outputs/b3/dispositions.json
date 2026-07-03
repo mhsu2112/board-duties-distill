@@ -1,0 +1,196 @@
+{
+  "_meta": "B3-T0 review state. 22 residuals accepted as documented; s:CAP-11 reclassified as a supersession_note (excluded from duty counts).",
+  "counts": {
+    "residuals_accepted": 22,
+    "supersession_notes": 1,
+    "target_duty_rows": 71,
+    "verified_duties": 49
+  },
+  "residual_dispositions": [
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-01",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-04",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-05",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-07",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-09",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-10",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-12",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:BCG-14",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:CAP-05",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:CAP-10",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:FDR-03",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:FDR-04",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:FDR-05",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:GOV-02",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:GOV-11",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:GOV-15",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:GOV-18",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:GOV-19",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:GOV-20",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:IAU-03",
+      "timestamp": "2026-07-02"
+    },
+    {
+      "from_state": null,
+      "rationale": "accepted as documented residual (B2); stays unverified, does not block B3",
+      "reviewer_id": "mhsu",
+      "state": "reviewer_accepted",
+      "subject_id": "s:STR-02",
+      "timestamp": "2026-07-02"
+    }
+  ],
+  "supersession_notes": [
+    {
+      "duty_id": "s:CAP-11",
+      "note": "Reclassified (B3-T0): s:CAP-11 is a supersession/currency record \u2014 SR 09-4 is superseded for GSIBs per SR 15-18 fn. 5 \u2014 not a board duty. Excluded from duty counts and packages; retained in the instrument graph as SR 09-4 treatment evidence. The B2 placeholder actor-retag is withdrawn.",
+      "record_type": "supersession_note",
+      "reviewer_id": "mhsu",
+      "timestamp": "2026-07-02"
+    }
+  ]
+}

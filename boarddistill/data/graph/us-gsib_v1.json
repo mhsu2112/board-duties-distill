@@ -3,7 +3,7 @@
   "_verified_not_covered": [],
   "coverage": {
     "baseline_answered": 50,
-    "instruments": 16,
+    "instruments": 17,
     "verified_duties": 50
   },
   "graph": {
@@ -251,6 +251,19 @@
         "treatment_date": null,
         "treatment_evidence": null,
         "treatment_status": "active"
+      },
+      {
+        "agency": "FRB",
+        "bears_on": [
+          "s:GOV-20"
+        ],
+        "citation": "SR 95-51",
+        "effective_date": "1995-11-14",
+        "id": "sr-95-51",
+        "stratum": "guidance",
+        "treatment_date": "2025-06-23",
+        "treatment_evidence": "Fed SR 95-51 page (B3-T0): revised June 23, 2025 to remove reputational-risk references; per SR 21-4 / CA 21-2 (Feb 26, 2021) its board-responsibility content was clarified. Active but amended \u2014 not rescinded.",
+        "treatment_status": "amended"
       }
     ]
   }
