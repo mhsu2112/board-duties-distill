@@ -35,6 +35,9 @@ ALLOWLIST_SUFFIXES: frozenset[str] = frozenset(
         "web.archive.org",
         "nyse.com",
         "listingcenter.nasdaq.com",
+        # B6 (RBI rediscovery benchmark) — added FOR THIS BENCHMARK ONLY (B6_TASKS §1.2 / T1).
+        # RBI's own site + the archive for moved/rescinded circulars. Not a US-corpus source.
+        "rbi.org.in",
     }
 )
 

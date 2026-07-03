@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "task": "B6-T1 sample selection — RBI Master-Directions rediscovery benchmark",
+    "status": "DRAFT — pending_human_signoff (B6_TASKS §3.1: human sign-off required BEFORE mass download)",
+    "no_download_yet": true,
+    "reachability_probe": "rbi.org.in/Scripts/BS_ViewMasterDirections.aspx fetched once (736 KB, ~58 MDs in one category page) to confirm retrievability; NO source circulars or answer keys downloaded.",
+    "selection_criteria": "§1.1: (a) published traceability appendix; (b) ~10-80 source circulars; (c) domain spread; (d) publicly retrievable (rbi.org.in / web.archive.org).",
+    "leakage_note": "Naming the MDs here is corpus definition (§1.2), not a proposal-pipeline input. The pipeline never sees MD names; circular ids are pseudonymized (T2)."
+  },
+  "proposed_sample": [
+    {
+      "md_id": "MD-KYC-2016",
+      "title": "Master Direction – Know Your Customer (KYC) Direction, 2016",
+      "domain": "KYC/AML",
+      "has_traceability_appendix": "yes (Repeal & Other Provisions section lists superseded circulars / master circular)",
+      "est_source_circulars": "40-80 (upper end; a size-risk to confirm on acquisition — may need trimming to the core AML/KYC set)",
+      "rationale": "The canonical KYC/AML consolidation; large, well-documented repeal list; the domain the engine PRD names first."
+    },
+    {
+      "md_id": "MD-INVPF-2023",
+      "title": "Master Direction – Classification, Valuation and Operation of Investment Portfolio of Commercial Banks (Directions), 2023",
+      "domain": "prudential / exposure (investment)",
+      "has_traceability_appendix": "yes (annex of repealed circulars / master circular on investments)",
+      "est_source_circulars": "25-40",
+      "rationale": "A clean prudential consolidation with an explicit repeal annex; mid-size corpus."
+    },
+    {
+      "md_id": "MD-IRD-2016",
+      "title": "Master Direction – Reserve Bank of India (Interest Rate on Deposits) Directions, 2016",
+      "domain": "deposits / interest-rate",
+      "has_traceability_appendix": "yes (appendix of repealed circulars)",
+      "est_source_circulars": "30-50",
+      "rationale": "The deposits/interest-rate domain required by §1.1(c); a 2016-vintage MD with a documented repeal appendix."
+    },
+    {
+      "md_id": "MD-FRAUD-COMM-2024",
+      "title": "Master Direction on Fraud Risk Management in Commercial Banks (including Regional Rural Banks) and All India Financial Institutions, 2024",
+      "domain": "governance / conduct (fraud governance)",
+      "has_traceability_appendix": "yes (repeals the earlier Master Circular on Frauds + listed circulars)",
+      "est_source_circulars": "15-30",
+      "rationale": "Covers the governance/oversight domain (board & audit-committee fraud responsibilities); a very recent (2024) RRA-style consolidation with a clean repeal list."
+    },
+    {
+      "md_id": "MD-PSL-2020",
+      "title": "Master Direction – Reserve Bank of India (Priority Sector Lending – Targets and Classification) Directions, 2020",
+      "domain": "lending / prudential",
+      "has_traceability_appendix": "yes (appendix of consolidated/repealed PSL circulars)",
+      "est_source_circulars": "30-50",
+      "rationale": "A second prudential/lending domain; large, well-mapped PSL circular set."
+    },
+    {
+      "md_id": "MD-CARDS-2022",
+      "title": "Master Direction – Credit Card and Debit Card – Issuance and Conduct Directions, 2022",
+      "domain": "conduct / payments",
+      "has_traceability_appendix": "yes (repeals listed card circulars)",
+      "est_source_circulars": "15-30",
+      "rationale": "Adds a conduct/payments domain; a compact, well-documented 2022 consolidation."
+    },
+    {
+      "md_id": "MD-DPSC-2021",
+      "title": "Master Direction on Digital Payment Security Controls, 2021",
+      "domain": "cyber / IT",
+      "has_traceability_appendix": "partial (fewer explicit repeals; more a fresh framework) — a size/answer-key RISK to confirm",
+      "est_source_circulars": "10-20",
+      "rationale": "A cyber/IT domain for spread; flagged as a candidate to DROP if its repeal list is too thin to score (§1.1a)."
+    }
+  ],
+  "rejected_candidates": [
+    {"candidate": "Master Direction – Compounding of Contraventions under FEMA, 1999", "reason": "regulatory-process direction; not a consolidation of prior subject-matter circulars into groupings — no grouping to rediscover."},
+    {"candidate": "Master Direction – Rupee Interest Rate Derivatives / Credit Derivatives / Electronic Trading Platforms", "reason": "narrow market-infrastructure MDs; small source-circular sets below the ~10-80 target and far from board-duty domains."},
+    {"candidate": "Master Direction – Operational Guidelines for Primary Dealers", "reason": "niche market-participant scope; poor domain spread contribution."},
+    {"candidate": "NBFC-facing Master Directions (IT Framework, Auditor's Report, Fraud Risk in NBFCs)", "reason": "different regulated-entity class; excluded to keep the pooled corpus comparable to the bank-facing set (a deliberate comparability choice, not a quality judgment)."},
+    {"candidate": "Master Direction – Internal Ombudsman for Regulated Entities, 2023", "reason": "consolidates a small number of scheme documents; thin repeal list, weak grouping signal."}
+  ],
+  "pooling_plan": "Per §1.2, pool ALL selected MDs' source circulars into one mixed corpus (est. ~150-260 documents at the mid estimates) and hold out every MD's identity, text, structure, and grouping. The engine proposes groupings on the pooled corpus under a prompt that never names Master Directions or the RRA.",
+  "sample_bias_transparency": "English-only; bank-facing only (NBFC excluded for comparability); 2016-2024 vintage; sizes estimated, to be confirmed on acquisition. A candidate whose repeal appendix proves too thin to score (DPSC risk) is dropped and its circulars removed from BOTH corpus and answer key symmetrically (§1.1)."
+}
