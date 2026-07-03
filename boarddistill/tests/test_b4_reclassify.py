@@ -19,6 +19,7 @@ from adapters.diagnose import (
     as_built_map,
     consolidation_finding,
     intended_map,
+    operand_strata,
 )
 from adapters.intended import scaffold_operations
 from profiles.lex_balanus.models import InstrumentGraph
@@ -75,6 +76,28 @@ def test_extended_graph_needed_for_the_five_levers() -> None:
         ops = scaffold_operations(decs[lever])
         f = consolidation_finding(decs[lever], ops, ab, intended, base)
         assert f.effect_class == "unresolved"  # no concept baseline ⇒ never guessed
+
+
+@pytest.mark.skipif(not _ARTIFACTS, reason="B3 artifacts absent")
+def test_d7_disposition_reads_cross_stratum_through_concept_groundings() -> None:
+    """B5-T0(b): D7's operands are concept refs (App. D self-assessment ↔ SR 21-3), whose
+    concept node collapses to one stratum but whose *groundings* span `enforceable_guideline`
+    and `guidance`. Reading strata through the groundings surfaces the cross-stratum signal, so
+    a codify-class finding still defaults `needs_review` — closing the B4-characterized gap."""
+    decs = {d["id"]: d for d in json.loads(_DECS.read_text())["decompositions"]}
+    drafts = {d["duty_id"]: d for d in json.loads(_IMPORT.read_text())["duties"]}
+    ab = as_built_map(drafts)
+    intended = intended_map(json.loads(_INTENDED.read_text()))
+    graph = extend_graph(InstrumentGraph.model_validate(json.loads(_GRAPH_V1.read_text())["graph"]))
+
+    ops = scaffold_operations(decs["D7"])
+    strata = operand_strata(ops, ab, graph)
+    assert {"enforceable_guideline", "guidance"} <= strata  # both grounding strata are seen
+    assert len(strata) > 1
+
+    f = consolidation_finding(decs["D7"], ops, ab, intended, graph)
+    assert f.effect_class == "codify"  # effect unchanged (B4-T5 target)
+    assert f.disposition_state == "needs_review"  # was auto_ok in B4 — now surfaced for review
 
 
 def test_baseline_target_prefers_a_concept_covered_ref() -> None:

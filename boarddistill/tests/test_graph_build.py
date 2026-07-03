@@ -50,5 +50,8 @@ def test_graph_covers_every_verified_duty_and_flags_supersession() -> None:
     # baseline_for resolves a verified duty to its instrument stratum
     baseline = graph.baseline_for("b:AUD-02", date(2026, 6, 30))
     assert baseline is not None and str(baseline.stratum) == "regulation"
-    # an unverified duty has no baseline node
-    assert graph.baseline_for("s:GOV-15", date(2026, 6, 30)) is None
+    # s:GOV-15 is now verified (B5-T0c SR-body fallback), so it carries a guidance baseline
+    gov15 = graph.baseline_for("s:GOV-15", date(2026, 6, 30))
+    assert gov15 is not None and str(gov15.stratum) == "guidance"
+    # a still-unverified duty has no baseline node
+    assert graph.baseline_for("s:BCG-01", date(2026, 6, 30)) is None

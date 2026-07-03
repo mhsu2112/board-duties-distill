@@ -162,6 +162,37 @@ def _baseline_target(
     return _first_resolved(ops, as_built)
 
 
+def operand_strata(
+    ops: list[BankingOperation], as_built: dict[str, DutySpec], graph: InstrumentGraph
+) -> set[str]:
+    """The set of legal-force strata the finding's operands sit at, read **through concept
+    groundings** (B5-T0). An inventory operand contributes its own ``legal_force``; a concept-ref
+    operand contributes the strata of its grounded instrument nodes (not the single collapsed
+    stratum the concept node carries). This is what lets a cross-stratum lever whose operands are
+    concept refs — the D7 case, App. D `enforceable_guideline` ↔ SR 21-3 `guidance` — be seen as
+    cross-stratum for the disposition default, closing the B4-characterized under-detection."""
+    node_by_id = {n.id: n for n in graph.nodes}
+    strata: set[str] = set()
+    for op in ops:
+        for ref in op.operands:
+            if ref in as_built:
+                strata.add(str(as_built[ref].legal_force))
+                continue
+            node = graph.baseline_for(ref, AS_OF)
+            if node is None:
+                continue
+            grounded = [
+                node_by_id[g.instrument_id]
+                for g in node.grounded_to
+                if g.instrument_id in node_by_id
+            ]
+            if node.kind == "concept_ref" and grounded:
+                strata.update(str(g.stratum) for g in grounded)
+            else:
+                strata.add(str(node.stratum))
+    return strata
+
+
 def _force_conversion(
     ops: list[BankingOperation], as_built: dict[str, DutySpec], output_force: Any
 ) -> bool:
@@ -196,8 +227,9 @@ def consolidation_finding(
 
     output_force = intended[intended_ref].legal_force if intended_ref in intended else None
     fc = _force_conversion(ops, as_built, output_force)
-    forces = {as_built[o].legal_force for op in ops for o in op.operands if o in as_built}
-    cross_stratum = len(forces) > 1
+    # Strata read through concept groundings (B5-T0), not only from in-inventory operand forces —
+    # so a lever whose operands are concept refs spanning strata still defaults needs_review.
+    cross_stratum = len(operand_strata(ops, as_built, graph)) > 1
     deem_floor = any(
         str(op.primitive) == "DEEM_SATISFIED"
         and op.satisfied_ref in as_built

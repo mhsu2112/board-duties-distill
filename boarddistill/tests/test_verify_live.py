@@ -206,8 +206,9 @@ def test_full_72_row_pass_from_cache_is_deterministic() -> None:
     resolver = build_resolver(Fetcher(_CACHE, offline_client()))
     first = verify_targets(targets, resolver)
     assert len(first) == 72
-    # 21 base + 8 appendices + 17 SR-attachment + 4 manual (OCC/FDIC) anchor matches, from cache
-    assert sum(1 for r in first if r.record.status == "verified") == 50
+    # 50 as of B2 + s:GOV-15, which the B5-T0(c) SR-letter-body anchor fallback now reaches
+    # (SR 12-17 carries its corporate-governance attributes inline, with no attachment PDF).
+    assert sum(1 for r in first if r.record.status == "verified") == 51
     # borderline anchor matches are recorded as candidates, never auto-verified (§3)
     assert any("candidate recorded" in (r.record.note or "") for r in first)
     # no contradicted result (a contradiction would be a B2 checkpoint), and every

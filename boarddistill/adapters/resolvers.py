@@ -167,9 +167,33 @@ class SrAttachmentResolver:
 
         pdf_path = _attachment_pdf_path(htm.text, year, num)
         if pdf_path is None:
+            # No separate attachment PDF (e.g. SR 12-17, whose corporate-governance attributes
+            # live in the letter body). Fall back to anchor-matching the duty text against the
+            # body itself — a "better resolver" for guidance whose substance is inline (B5-T0c).
+            body = html_to_text(htm.text)
+            score, window = anchor_match(anchor, body)
+            body_source_id = f"sr-{year}-{num}"
+            if score >= HIGH_CONFIDENCE:
+                span = _text_span(
+                    body_source_id, "body-anchor", f"{cite.label} (letter body)", body, window
+                )
+                note = (
+                    f"{cite.label}: no attachment PDF; duty text anchor-matched in the letter "
+                    f"body (score {score:.2f})"
+                )
+                return CitationVerdict(
+                    "verified", note, True, _support(window, expected_actor), span, True
+                )
+            if score >= CANDIDATE_FLOOR:
+                note = (
+                    f"no attachment PDF on the {cite.label} page; letter-body anchor borderline "
+                    f"(best {score:.2f}); candidate recorded — checkpoint §3: {window[:100]!r}"
+                )
+                return CitationVerdict("unverified", note, False, "n/a", None)
             return CitationVerdict(
                 "unverified",
-                f"no attachment PDF found on the {cite.label} page",
+                f"no attachment PDF on the {cite.label} page; duty text not located in the "
+                f"letter body (best {score:.2f})",
                 False,
                 "none",
                 None,

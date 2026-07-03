@@ -5,7 +5,7 @@
 ## Cluster summary
 
 - as-built (distilled) duties: 11 · intended (illustrative) duties: 3
-- findings: 24 · final: 0 · in-review: 23
+- findings: 24 · final: 0 · in-review: 24
 
 
 ## As-built duties (distilled)
@@ -51,7 +51,7 @@
 | --- | --- | --- | --- | --- | --- |
 | f-D1 | One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation) | change | policy_choice, interagency_coordination | needs_review | draft |
 | f-D6 | Codify SR 12-17 governance content into Reg YY; retire the letter | change | policy_choice, interpretive_ambiguity | needs_review | draft |
-| f-D7 | Single interagency board-effectiveness assessment | codify | — | auto_ok | draft |
+| f-D7 | Single interagency board-effectiveness assessment | codify | — | needs_review | draft |
 | dx-ris-0 | restatement :: b:RGC-07, b:RGC-10 | unresolved | interpretive_ambiguity | needs_review | draft |
 | dx-ris-1 | restatement :: b:RGC-10, s:GOV-27 | unresolved | interpretive_ambiguity | needs_review | draft |
 | dx-ris-2 | rule_guidance_restatement :: s:GOV-27, b:RGC-10 | unresolved | interpretive_ambiguity | needs_review | draft |
@@ -121,7 +121,7 @@
 | --- | --- | --- |
 | One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation) | change | needs_review |
 | Codify SR 12-17 governance content into Reg YY; retire the letter | change | needs_review |
-| Single interagency board-effectiveness assessment | codify | auto_ok |
+| Single interagency board-effectiveness assessment | codify | needs_review |
 | restatement :: b:RGC-07, b:RGC-10 | unresolved | needs_review |
 | restatement :: b:RGC-10, s:GOV-27 | unresolved | needs_review |
 | rule_guidance_restatement :: s:GOV-27, b:RGC-10 | unresolved | needs_review |
@@ -167,6 +167,7 @@
 | --- | --- | --- | --- |
 | f-D1 | One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation) | policy_choice, interagency_coordination | change |
 | f-D6 | Codify SR 12-17 governance content into Reg YY; retire the letter | policy_choice, interpretive_ambiguity | change |
+| f-D7 | Single interagency board-effectiveness assessment | — | codify |
 | dx-ris-0 | restatement :: b:RGC-07, b:RGC-10 | interpretive_ambiguity | unresolved |
 | dx-ris-1 | restatement :: b:RGC-10, s:GOV-27 | interpretive_ambiguity | unresolved |
 | dx-ris-2 | rule_guidance_restatement :: s:GOV-27, b:RGC-10 | interpretive_ambiguity | unresolved |
@@ -193,6 +194,6 @@
 ## Final-status blocker summary
 
 - 24 findings, all `draft` — 0 reach `final`.
-- 23 in `needs_review` (normative kind proposed, effect=change, or no baseline).
+- 24 in `needs_review` (normative kind proposed, effect=change, or no baseline).
 - Intended/consolidated duty language is illustrative (NG2) and unverified — cannot finalize without human authorization.
 - Every normative kind is a proposal; none is resolved (checkpoint discipline).

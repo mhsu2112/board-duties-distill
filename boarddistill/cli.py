@@ -452,6 +452,85 @@ def b3_distill(
         )
 
 
+@app.command("b5-redistill")
+def b5_redistill(
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json (draft specs).")
+    ] = Path("outputs/import/imported_duties.json"),
+    retags: Annotated[
+        Path, typer.Option("--retags", help="b2 retags.json.")
+    ] = Path("outputs/b2/retags.json"),
+    distilled: Annotated[
+        Path, typer.Option("--distilled", help="MVP as_built_distilled.json to merge into.")
+    ] = Path("outputs/b4/as_built_distilled.json"),
+    cache: Annotated[
+        Path, typer.Option("--cache", help="LLM response cache directory.")
+    ] = Path("data/llm_cache"),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+    live: Annotated[
+        bool, typer.Option("--live", help="Populate the cache via live calls (needs API key).")
+    ] = False,
+) -> None:
+    """B5-T0(a): re-distill the ten B4 re-pinned rows against their corrected excerpts."""
+    import json
+
+    from adapters.redistill import merge_into_distilled, redistill_all, redistill_document
+    from distillcore.llm import LlmHarness
+
+    drafts = {d["duty_id"]: d for d in json.loads(import_json.read_text())["duties"]}
+    retag_ledger = {r["duty_id"]: r for r in json.loads(retags.read_text())["retags"]}
+
+    harness = LlmHarness(cache_root=cache, live=live)
+    rows = redistill_all(harness, drafts, retag_ledger)
+
+    out.mkdir(parents=True, exist_ok=True)
+    doc = redistill_document(rows)
+    (out / "redistill.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    if distilled.exists():
+        merged = merge_into_distilled(json.loads(distilled.read_text()), rows)
+        distilled.write_text(json.dumps(merged, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B5-T0(a) re-distill (ten re-pinned rows):")
+    typer.echo(
+        f"  rows: {c['rows']} · anchor-clean: {c['anchor_clean']} · object-resolved: "
+        f"{c['object_resolved']} · anchor-failures: {c['anchor_failures']} · "
+        f"verb-vs-retag conflicts: {c['verb_retag_conflicts']} · budget: {harness.budget.summary()}"
+    )
+    if c["anchor_failures"]:
+        typer.echo(f"  ⚠ anchor failures: {', '.join(doc['anchor_failure_rows'])}", err=True)
+        raise typer.Exit(code=1)
+
+
+@app.command("b5-retry-residuals")
+def b5_retry_residuals(
+    import_json: Annotated[
+        Path, typer.Option("--import", help="imported_duties.json.")
+    ] = Path("outputs/import/imported_duties.json"),
+    cache: Annotated[Path, typer.Option("--cache", help="Source cache directory.")] = Path(
+        "data/sources"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="B5 output directory.")] = Path("outputs/b5"),
+) -> None:
+    """B5-T0(c): retry the three B2 residuals (s:GOV-15, s:CAP-10, s:BCG-14)."""
+    import json
+
+    from adapters.retry_residuals import run_retries
+
+    doc = run_retries(json.loads(import_json.read_text()), cache)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "residual_retries.json").write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+    c = doc["counts"]
+    typer.echo("[boarddistill] B5-T0(c) residual retries:")
+    typer.echo(
+        f"  retried: {c['retried']} · resolved: {c['resolved']} "
+        f"({', '.join(doc['resolved_rows']) or '—'}) · re-documented: {c['re_documented']} "
+        f"({', '.join(doc['re_documented_rows'])})"
+    )
+
+
 @app.command("b3-intended")
 def b3_intended(
     decompositions: Annotated[

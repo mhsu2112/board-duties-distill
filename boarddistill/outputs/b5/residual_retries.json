@@ -1,0 +1,69 @@
+{
+  "_meta": "B5-T0(c) residual retries. The three B2 residuals the stronger resolver stack may now reach; s:GOV-15 resolves via the SR-letter-body anchor fallback, the other two are re-documented with evidence (never forced). The remaining 19 B2 residuals stay accepted residuals.",
+  "counts": {
+    "re_documented": 2,
+    "resolved": 1,
+    "retried": 3
+  },
+  "outcomes": [
+    {
+      "anchor_borderline": true,
+      "anchor_score": 0.42,
+      "candidate_citation": "12 CFR Part 363, App. A, Guideline 27 (audit committee composition)",
+      "candidate_source_id": "ecfr-t12-p363",
+      "currency_flag": true,
+      "duty_id": "s:BCG-14",
+      "evidence_window": "total assets of more than $5 billion, as adjusted from time to time in accordance with 12 CFR 314.1, as of the beginning of its fiscal year shall include members with banking or related financial management expertise, have access to its own outside counsel, and not include any large customers of the",
+      "note": "Audit-committee composition content located in 12 CFR Part 363 App. A (anchor 0.42 \u2014 borderline, not forced). Currency flag: the duty states \">$3 billion\" but current Part 363 App. A applies at \"$5 billion\" (threshold raised) \u2014 an F3-adjacent stale-threshold candidate for human review.",
+      "outcome": "re-documented",
+      "status": "unverified"
+    },
+    {
+      "cross_reference": "12 CFR 225.8(e) / SR 15-18 capital-plan approval (already verified)",
+      "duty_id": "s:CAP-10",
+      "note": "Negative record: no board-of-directors attestation is required on the FR Y-14A (the CFO signs). FR Y-14A form instructions are not a primary-law source, so the row is not independently verifiable as a duty. Proposed (human-gated, like s:CAP-11): reclassify as record_type=no_board_duty_note, excluded from duty counts; the board instrument it points to (225.8(e)/SR 15-18) is verified elsewhere. Not applied here \u2014 normative/reclassification checkpoint.",
+      "outcome": "re-documented",
+      "proposed_record_type": "no_board_duty_note",
+      "status": "unverified"
+    },
+    {
+      "anchor_matched": true,
+      "as_of_valid": true,
+      "citation": "SR 12-17 (letter body)",
+      "duty_id": "s:GOV-15",
+      "note": "SR 12-17: no attachment PDF; duty text anchor-matched in the letter body (score 0.87)",
+      "outcome": "resolved",
+      "status": "verified",
+      "support_signal": "strong"
+    }
+  ],
+  "re_documented_rows": [
+    "s:BCG-14",
+    "s:CAP-10"
+  ],
+  "resolved_records": [
+    {
+      "checked_span_ids": [
+        "span-sr-12-17-body-anchor"
+      ],
+      "claim_id": "claim-s:GOV-15",
+      "id": "v-claim-s:GOV-15",
+      "method": "live_retrieval",
+      "note": "SR 12-17: no attachment PDF; duty text anchor-matched in the letter body (score 0.87)",
+      "status": "verified"
+    }
+  ],
+  "resolved_rows": [
+    "s:GOV-15"
+  ],
+  "resolved_spans": [
+    {
+      "citation": "SR 12-17 (letter body)",
+      "end": 10750,
+      "id": "span-sr-12-17-body-anchor",
+      "quote": "onal, legal or other stresses, its board of directors (or equivalent for the U.S. operations of FBOs) should provide effective corporate governance with the support of senior management. The board is expected to establish and maintain the firm\u2019s culture, incentives, structure, and processes that promote its compliance with laws, regulations, and supervisory guidance. Each firm\u2019s board of directors and committees, with support from senior management, should: Maintain a clearly articulated corpora",
+      "source_id": "sr-12-17",
+      "start": 10250
+    }
+  ]
+}

@@ -12,7 +12,7 @@
       "fill_gap": 1,
       "unresolved": 29
     },
-    "in_review": 37
+    "in_review": 38
   },
   "duplicate_divergence": {
     "agreed": [],
@@ -512,7 +512,7 @@
         "start": null
       },
       "confidence": 0.5,
-      "disposition_state": "auto_ok",
+      "disposition_state": "needs_review",
       "effect_class": "codify",
       "force_conversion_declared": false,
       "id": "f-D7",

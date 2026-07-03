@@ -28,7 +28,7 @@
     "anchor_clean": 50,
     "anchor_failures": 0,
     "distilled": 50,
-    "source_mismatch_rows": 10,
+    "source_mismatch_rows": 0,
     "verb_retag_conflicts": 0
   },
   "rows": [
@@ -331,19 +331,31 @@
       "distilled": {
         "cadence": "none_specified",
         "cadence_evidence": "",
-        "definitions_used": [],
+        "definitions_used": [
+          {
+            "quote": "Chief Audit Executive",
+            "term": "Chief Audit Executive"
+          }
+        ],
         "duty_id": "b:AUD-08",
-        "elements": [],
-        "notes": "The source excerpt concerns Concentration Risk Management and Risk Data Aggregation and Reporting components of the risk governance framework. It contains nothing about the audit committee, chief audit executive, appointment/removal/compensation, or the internal-audit charter and plan. No field of this duty is supported by the provided text; all substantive fields are unresolved.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "the appointment or removal",
+            "text": "Approve decisions regarding appointment or removal of the Chief Audit Executive"
+          },
+          {
+            "quote": "annual compensation and salary adjustment of the Chief Audit Executive",
+            "text": "Approve annual compensation and salary adjustment of the Chief Audit Executive"
+          }
+        ],
+        "notes": "Excerpt only covers appointment/removal and compensation of the CAE, not the internal-audit charter and plan from the draft; those are excluded. 'annual compensation' modifies the object, not a recurrence of the board's approval duty, and the excerpt gives no explicit cadence for the duty itself, so cadence is none_specified.",
+        "object": "Decisions regarding the appointment or removal and annual compensation and salary adjustment of the Chief Audit Executive",
+        "object_evidence": "all decisions regarding the appointment or removal and annual compensation and salary adjustment of the Chief Audit Executive",
         "unresolved_fields": [
-          "verb_standard",
-          "object",
           "cadence"
         ],
-        "verb_evidence": "",
-        "verb_standard": "none_specified"
+        "verb_evidence": "The audit committee approves all decisions regarding",
+        "verb_standard": "approve"
       },
       "duty_id": "b:AUD-08",
       "retag_conflict": null
@@ -374,30 +386,22 @@
       "anchor_failures": [],
       "anchor_ok": true,
       "distilled": {
-        "cadence": "none_specified",
-        "cadence_evidence": "",
-        "definitions_used": [
+        "cadence": "annual",
+        "cadence_evidence": "at least annually and prior to submission of the capital plan",
+        "definitions_used": [],
+        "duty_id": "b:CAP-02",
+        "elements": [
           {
-            "quote": "Capital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year.",
-            "term": "Capital plan cycle"
-          },
-          {
-            "quote": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines.",
-            "term": "Capital policy"
+            "quote": "at least annually and prior to submission of the capital plan under paragraph (e)(1)(ii) of this section: (A) Review the robustness of the bank holding company's process for assessing capital adequacy",
+            "text": "Review the robustness of the process for assessing capital adequacy, at least annually and prior to submission of the capital plan"
           }
         ],
-        "duty_id": "b:CAP-02",
-        "elements": [],
-        "notes": "The provided excerpt is a definitions section (capital plan cycle, capital policy, category IV bank holding company). It contains no board-action standard, no duty to review/approve, and no cadence directed at the board. The draft duty's substance (board or committee reviewing robustness, remedying deficiencies, approving the capital plan) is not supported by this excerpt, so verb_standard, object, and cadence are all unresolved.",
-        "object": "Capital policy and related capital planning definitions",
-        "object_evidence": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions",
-        "unresolved_fields": [
-          "verb_standard",
-          "object",
-          "cadence"
-        ],
-        "verb_evidence": "",
-        "verb_standard": "none_specified"
+        "notes": "Excerpt supports a review standard ('Review the robustness of...') over the process for assessing capital adequacy. Cadence is 'at least annually', treated as annual (basis not specified). The excerpt does not contain the draft's 'ensure deficiencies remedied' or 'approve the capital plan' elements, so those are excluded.",
+        "object": "the bank holding company's process for assessing capital adequacy",
+        "object_evidence": "the robustness of the bank holding company's process for assessing capital adequacy",
+        "unresolved_fields": [],
+        "verb_evidence": "Review the robustness of the bank holding company's process for assessing capital adequacy",
+        "verb_standard": "review_and_challenge"
       },
       "duty_id": "b:CAP-02",
       "retag_conflict": null
@@ -716,13 +720,21 @@
         "cadence_evidence": "",
         "definitions_used": [],
         "duty_id": "b:RGC-05",
-        "elements": [],
-        "notes": "The draft duty concerns who must chair the risk committee (independent director with risk-management experience per 252.33(a)(4)(ii)). The provided excerpt covers only (a)(1) General and (a)(2) Risk-management framework \u2014 it says nothing about the committee chair, chair independence, SEC/NYSE standards, or risk-management experience. No substring supports the object, verb_standard, or cadence for this duty. Everything left unresolved per the unresolved-over-guess rule.",
-        "object": "Chair of the risk committee (independence and risk-management experience qualifications)",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "Be chaired by a director who:",
+            "text": "The committee must be chaired by a director"
+          },
+          {
+            "quote": "(A) Is not an officer or employee of the bank holding company",
+            "text": "That director must not be an officer or employee of the bank holding company"
+          }
+        ],
+        "notes": "The excerpt only establishes a chairing requirement (a director who is not an officer/employee). It states no board-action standard (no approve/review/etc.) and no timing/cadence. The draft's references to SEC/NYSE independence standards and risk-management experience are not present in this excerpt, so they are not asserted. Continuous cadence from the draft is not supported by the excerpt text.",
+        "object": "Risk committee to be chaired by a director who is not an officer or employee of the bank holding company",
+        "object_evidence": "Be chaired by a director who: (A) Is not an officer or employee of the bank holding company",
         "unresolved_fields": [
           "verb_standard",
-          "object",
           "cadence"
         ],
         "verb_evidence": "",
@@ -813,13 +825,17 @@
         "cadence_evidence": "",
         "definitions_used": [],
         "duty_id": "s:BCG-03",
-        "elements": [],
-        "notes": "The source excerpt concerns a fiduciary audit committee overseeing the audit of fiduciary activities \u2014 not a credit committee, lending strategy, credit risk appetite, credit policies, or portfolio monitoring. None of the draft duty's subject matter is supported by this excerpt. There is no verbatim text here establishing a credit-committee lending/credit-risk duty, so verb_standard, object, and cadence cannot be grounded and are left unresolved.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "establish and guide the bank\u2019s lending strategy, credit risk appetite, and risk limits.",
+            "text": "Establish and guide the bank's lending strategy, credit risk appetite, and risk limits"
+          }
+        ],
+        "notes": "The excerpt covers only the establish/guide of lending strategy, credit risk appetite, and risk limits \u2014 not the review/approve, large credits, monitoring, or compliance elements of the draft. The verb 'establish and guide' does not map cleanly to any of the enumerated board-action standards (approve, review_and_challenge, etc.), so verb_standard is none_specified. No timing language present.",
+        "object": "the bank's lending strategy, credit risk appetite, and risk limits",
+        "object_evidence": "the bank\u2019s lending strategy, credit risk appetite, and risk limits",
         "unresolved_fields": [
           "verb_standard",
-          "object",
           "cadence"
         ],
         "verb_evidence": "",
@@ -1026,18 +1042,21 @@
       "anchor_failures": [],
       "anchor_ok": true,
       "distilled": {
-        "cadence": "none_specified",
-        "cadence_evidence": "",
+        "cadence": "continuous",
+        "cadence_evidence": "should maintain an accurate record",
         "definitions_used": [],
         "duty_id": "s:CAP-07",
-        "elements": [],
-        "notes": "The excerpt concerns policy protocols for breached capital goals, roles and responsibilities of key parties producing/reviewing analysis. It says nothing about the board maintaining a record of its meetings pertaining to the capital-planning process. No board-action standard, no object matching the draft duty, and no timing standard for record-keeping are stated. All substantive fields are unresolved from this excerpt.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "The board of directors should maintain an accurate record of its meetings pertaining to the firm's capital planning process.",
+            "text": "The board should maintain an accurate record of its meetings pertaining to the firm's capital planning process."
+          }
+        ],
+        "notes": "The excerpt directs the board to 'maintain an accurate record' of its capital-planning meetings, an ongoing recordkeeping obligation (continuous). No listed verb_standard (approve/review_and_challenge/etc.) fits maintaining records, so verb_standard is none_specified. No defined terms are supplied in the excerpt.",
+        "object": "an accurate record of the board's meetings pertaining to the firm's capital planning process",
+        "object_evidence": "maintain an accurate record of its meetings pertaining to the firm's capital planning process",
         "unresolved_fields": [
-          "verb_standard",
-          "object",
-          "cadence"
+          "verb_standard"
         ],
         "verb_evidence": "",
         "verb_standard": "none_specified"
@@ -1079,30 +1098,31 @@
       "anchor_failures": [],
       "anchor_ok": true,
       "distilled": {
-        "cadence": "none_specified",
-        "cadence_evidence": "",
+        "cadence": "annual",
+        "cadence_evidence": "at least annually and prior to submission of the capital plan",
         "definitions_used": [
           {
-            "quote": "C apital plan cycle means the period beginning on January 1 of a calendar year and ending on December 31 of that year.",
-            "term": "Capital plan cycle"
-          },
-          {
-            "quote": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions, including internal capital goals; the quantitative or qualitative guidelines for capital distributions; the strategies for addressing potential capital shortfalls; and the internal governance procedures around capital policy principles and guidelines.",
-            "term": "Capital policy"
+            "quote": "prior to submission of the capital plan under paragraph (e)(1)(ii) of this section",
+            "term": "capital plan"
           }
         ],
         "duty_id": "s:CAP-09",
-        "elements": [],
-        "notes": "The excerpt contains only definitional text (capital plan cycle, capital policy, and the start of a Category IV definition). It states no board action, no object of a duty, and no cadence for any board action. The draft's assertions about board review, remediation, and approval are not supported by this excerpt, so verb_standard, object, and cadence are all unresolved. Definitions present are captured.",
-        "object": "Capital policy and capital plan cycle terminology; the excerpt only provides definitions and states no board duty.",
-        "object_evidence": "Capital policy means a bank holding company's written principles and guidelines used for capital planning, capital issuance, capital usage and distributions",
-        "unresolved_fields": [
-          "verb_standard",
-          "object",
-          "cadence"
+        "elements": [
+          {
+            "quote": "at least annually and prior to submission of the capital plan under paragraph (e)(1)(ii) of this section",
+            "text": "Timing: at least annually and prior to submission of the capital plan"
+          },
+          {
+            "quote": "Review the robustness of the bank holding company's process for assessing capital adequacy",
+            "text": "Review the robustness of the capital adequacy assessment process"
+          }
         ],
-        "verb_evidence": "",
-        "verb_standard": "none_specified"
+        "notes": "The excerpt supports a review standard ('Review the robustness of...'), an object (the process for assessing capital adequacy), and an annual cadence ('at least annually'). The draft's remedy-deficiencies and approve-capital-plan elements are not present in this excerpt, so they are not asserted. The 'approve' components of the draft are cut off after subparagraph (A); only the review element is in evidence.",
+        "object": "the bank holding company's process for assessing capital adequacy",
+        "object_evidence": "Review the robustness of the bank holding company's process for assessing capital adequacy",
+        "unresolved_fields": [],
+        "verb_evidence": "Review the robustness of the bank holding company's process for assessing capital adequacy",
+        "verb_standard": "review_and_challenge"
       },
       "duty_id": "s:CAP-09",
       "retag_conflict": null
@@ -1218,19 +1238,25 @@
       "anchor_failures": [],
       "anchor_ok": true,
       "distilled": {
-        "cadence": "none_specified",
-        "cadence_evidence": "",
+        "cadence": "event_driven",
+        "cadence_evidence": "If the strategy calls for expansion into a new line of business or a new jurisdiction",
         "definitions_used": [],
         "duty_id": "s:GOV-03",
-        "elements": [],
-        "notes": "The source excerpt concerns a process to identify and select potential director nominees (skills, diversity, conflicts of interest) and references the Interagency Policy Statement on diversity. It contains no text about evaluating risk of expansion into a new business or jurisdiction, nor about risk-management/control enhancements, BSA, or FCPA. None of the draft duty's assertions are supported by this excerpt; no board-action standard or timing is stated. All substantive fields are left unresolved.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "If the strategy calls for expansion into a new line of business or a new jurisdiction",
+            "text": "Trigger: strategy calls for expansion into a new line of business or a new jurisdiction"
+          },
+          {
+            "quote": "the board evaluates the increased level of risk",
+            "text": "Board evaluates the increased level of risk"
+          }
+        ],
+        "notes": "The excerpt states the board 'evaluates' risk but this does not map cleanly to a listed action standard (approve/review_and_challenge/receive_report/be_informed/certify), so verb_standard is none_specified. Cadence is event_driven because the duty is triggered conditionally ('If the strategy calls for expansion'), not continuous. The excerpt does not mention risk-management/control enhancements, BSA, or FCPA, so those parts of the draft object are dropped.",
+        "object": "The board evaluates the increased level of risk arising from strategy-driven expansion into a new line of business or a new jurisdiction.",
+        "object_evidence": "the board evaluates the increased level of risk",
         "unresolved_fields": [
-          "verb_standard",
-          "object",
-          "object_evidence",
-          "cadence"
+          "verb_standard"
         ],
         "verb_evidence": "",
         "verb_standard": "none_specified"
@@ -1246,17 +1272,32 @@
         "cadence_evidence": "",
         "definitions_used": [],
         "duty_id": "s:GOV-04",
-        "elements": [],
-        "notes": "The source excerpt concerns a process for identifying and selecting potential director nominees (skills, expertise, diversity, conflicts of interest). It contains no text about the board directing senior management to provide timely, accurate information, evaluating information sufficiency, or demanding improvement. None of the fields for this duty (verb_standard, object, cadence) can be supported by a verbatim substring of this excerpt, so all are left unresolved.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "An effective board directs senior management to provide it with information",
+            "text": "Board directs senior management to provide it with information"
+          },
+          {
+            "quote": "timely",
+            "text": "Information must be timely"
+          },
+          {
+            "quote": "accurate",
+            "text": "Information must be accurate"
+          },
+          {
+            "quote": "well organized",
+            "text": "Information must be well organized"
+          }
+        ],
+        "notes": "The excerpt states the board directs senior management to provide information meeting quality criteria (timely, accurate, well organized); this is best captured as receive_report standard. The draft's 'evaluates sufficiency and demands improvement' and 'sufficient in scope and detail' language is not present in the excerpt, so it is excluded. No timing/cadence is stated in the excerpt.",
+        "object": "information provided by senior management that is timely, accurate, and well organized",
+        "object_evidence": "information that is timely, accurate, and well organized",
         "unresolved_fields": [
-          "verb_standard",
-          "object",
           "cadence"
         ],
-        "verb_evidence": "",
-        "verb_standard": "none_specified"
+        "verb_evidence": "directs senior management to provide it with information",
+        "verb_standard": "receive_report"
       },
       "duty_id": "s:GOV-04",
       "retag_conflict": null
@@ -1269,17 +1310,24 @@
         "cadence_evidence": "",
         "definitions_used": [],
         "duty_id": "s:GOV-08",
-        "elements": [],
-        "notes": "The excerpt concerns a process for identifying and selecting director nominees (skills, diversity, conflicts of interest), which does not correspond to the draft duty on approving CEO/executive performance objectives and compensation. No text in this excerpt supports the verb_standard, object, or cadence for s:GOV-08, so all are left unresolved/neutral.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "approves clear financial and nonfinancial performance objectives aligned with the firm's strategy and risk appetite",
+            "text": "Board approves financial and nonfinancial performance objectives aligned with strategy and risk appetite"
+          },
+          {
+            "quote": "for the CEO and business line executives",
+            "text": "Objectives apply to the CEO and business line executives"
+          }
+        ],
+        "notes": "Excerpt supports 'approve' standard. Object refined to only the CEO and business line executives; excerpt does not mention CRO, chief audit executive, or compensation discouraging risk-taking, so those draft elements are dropped. No timing language present, so cadence is none_specified (draft's 'continuous' not supported).",
+        "object": "clear financial and nonfinancial performance objectives aligned with the firm's strategy and risk appetite for the CEO and business line executives",
+        "object_evidence": "approves clear financial and nonfinancial performance objectives aligned with the firm's strategy and risk appetite for the CEO and business line executives",
         "unresolved_fields": [
-          "verb_standard",
-          "object",
           "cadence"
         ],
-        "verb_evidence": "",
-        "verb_standard": "none_specified"
+        "verb_evidence": "An effective board approves",
+        "verb_standard": "approve"
       },
       "duty_id": "s:GOV-08",
       "retag_conflict": null
@@ -1327,13 +1375,21 @@
         "cadence_evidence": "",
         "definitions_used": [],
         "duty_id": "s:GOV-12",
-        "elements": [],
-        "notes": "The source excerpt concerns director nominee selection processes, skills/diversity considerations, and cites the Final Interagency Policy Statement on diversity policies. It contains nothing about the audit committee, the CAE, internal-audit budget/staffing, or remediation of audit/supervisory findings. No field for this duty can be supported by the provided excerpt, so all substantive fields are left neutral and marked unresolved.",
-        "object": "",
-        "object_evidence": "",
+        "elements": [
+          {
+            "quote": "assesses and supports the stature and independence",
+            "text": "assesses and supports stature and independence"
+          },
+          {
+            "quote": "the firm's independent risk management and internal",
+            "text": "applies to the firm's independent risk management and internal"
+          }
+        ],
+        "notes": "The excerpt describes assessing and supporting stature/independence of independent risk management and internal (audit, truncated), which does not match the draft's CAE/budget/remediation content. The excerpt states no board-action standard mappable to the enum and gives no timing, so verb_standard and cadence are unresolved. Object is grounded strictly in the excerpt, which is truncated ('internal').",
+        "object": "stature and independence of the firm's independent risk management and internal",
+        "object_evidence": "assesses and supports the stature and independence of the firm's independent risk management and internal",
         "unresolved_fields": [
           "verb_standard",
-          "object",
           "cadence"
         ],
         "verb_evidence": "",
@@ -1762,17 +1818,6 @@
       "retag_conflict": null
     }
   ],
-  "source_mismatch_rows": [
-    "b:AUD-08",
-    "b:CAP-02",
-    "b:RGC-05",
-    "s:BCG-03",
-    "s:CAP-07",
-    "s:CAP-09",
-    "s:GOV-03",
-    "s:GOV-04",
-    "s:GOV-08",
-    "s:GOV-12"
-  ],
+  "source_mismatch_rows": [],
   "verb_retag_conflicts": []
 }
