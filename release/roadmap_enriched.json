@@ -16,7 +16,13 @@
   ],
   "lead": "FRB",
   "deps": [],
-  "impl_note": "No coordination needed; guidance action + conforming note."
+  "impl_note": "No coordination needed; guidance action + conforming note.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "2",
@@ -37,7 +43,13 @@
   "deps": [
    "Independence definition"
   ],
-  "impl_note": "Finalizes the Phase 2 definition work into rules/listing-standard cross-refs."
+  "impl_note": "Finalizes the Phase 2 definition work into rules/listing-standard cross-refs.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -56,7 +68,13 @@
   ],
   "lead": "FRB+OCC",
   "deps": [],
-  "impl_note": "Joint statement; near-identical source texts."
+  "impl_note": "Joint statement; near-identical source texts.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -75,7 +93,13 @@
   ],
   "lead": "FRB+OCC+FDIC+SEC",
   "deps": [],
-  "impl_note": "Start early \u2014 SEC coordination is the longest pole; finalizes in Phase 3."
+  "impl_note": "Start early \u2014 SEC coordination is the longest pole; finalizes in Phase 3.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -94,7 +118,13 @@
   ],
   "lead": "FRB+OCC+FDIC+FinCEN",
   "deps": [],
-  "impl_note": "Statement; BSA module preserves the statutory training pillar."
+  "impl_note": "Statement; BSA module preserves the statutory training pillar.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -113,7 +143,13 @@
   ],
   "lead": "FRB+SEC",
   "deps": [],
-  "impl_note": "Coordination only; no consolidation (distinct statutes)."
+  "impl_note": "Coordination only; no consolidation (distinct statutes).",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -134,7 +170,13 @@
   "deps": [
    "G-Part statement"
   ],
-  "impl_note": "Deem-satisfied statement citing the General-Part mechanics."
+  "impl_note": "Deem-satisfied statement citing the General-Part mechanics.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -155,7 +197,13 @@
   "deps": [
    "G-Part statement"
   ],
-  "impl_note": "Template published with the framework statement; safe harbor may need a conforming rule note (Phase 3)."
+  "impl_note": "Template published with the framework statement; safe harbor may need a conforming rule note (Phase 3).",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -176,7 +224,13 @@
   "deps": [
    "G-Part statement"
   ],
-  "impl_note": "Statement + safe harbor now; feeds the Phase 4 structural expansion."
+  "impl_note": "Statement + safe harbor now; feeds the Phase 4 structural expansion.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "2",
@@ -195,7 +249,13 @@
   ],
   "lead": "FRB+OCC",
   "deps": [],
-  "impl_note": "Duplicate lever entry (MVP D7) \u2014 same action."
+  "impl_note": "Duplicate lever entry (MVP D7) \u2014 same action.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "2",
@@ -216,7 +276,13 @@
   "deps": [
    "Threshold value (principals)"
   ],
-  "impl_note": "Amends the 2023 interagency guidance; threshold value is a principals decision."
+  "impl_note": "Amends the 2023 interagency guidance; threshold value is a principals decision.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "3",
@@ -235,7 +301,13 @@
   ],
   "lead": "FinCEN+FBAs",
   "deps": [],
-  "impl_note": "Reconcile the two pending BSA rewrites before layering compounds; then manual cross-references."
+  "impl_note": "Reconcile the two pending BSA rewrites before layering compounds; then manual cross-references.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -256,7 +328,13 @@
   "deps": [
    "Risk-committee standard"
   ],
-  "impl_note": "CRO/CRE rides the same Reg YY amendment cycle."
+  "impl_note": "CRO/CRE rides the same Reg YY amendment cycle.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -277,7 +355,13 @@
   "deps": [
    "Risk-committee standard"
   ],
-  "impl_note": "Credit cycle folds into the consolidated committee standard."
+  "impl_note": "Credit cycle folds into the consolidated committee standard.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -296,7 +380,13 @@
   ],
   "lead": "FRB+OCC",
   "deps": [],
-  "impl_note": "Modest joint rulemaking."
+  "impl_note": "Modest joint rulemaking.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -315,7 +405,13 @@
   ],
   "lead": "OCC",
   "deps": [],
-  "impl_note": "Single-agency 12 CFR 9 amendment."
+  "impl_note": "Single-agency 12 CFR 9 amendment.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -336,7 +432,13 @@
   "deps": [
    "Timeline selection (principals)"
   ],
-  "impl_note": "Conform four appendices; the incident-timeline choice is a principals decision."
+  "impl_note": "Conform four appendices; the incident-timeline choice is a principals decision.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -355,7 +457,13 @@
   ],
   "lead": "FDIC",
   "deps": [],
-  "impl_note": "Single-agency Part 363 amendment; start immediately, lands in Phase 2 window."
+  "impl_note": "Single-agency Part 363 amendment; start immediately, lands in Phase 2 window.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -376,7 +484,13 @@
   "deps": [
    "Risk-appetite template"
   ],
-  "impl_note": "Operational-resilience fold rides the risk-appetite instruments."
+  "impl_note": "Operational-resilience fold rides the risk-appetite instruments.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -397,7 +511,13 @@
   "deps": [
    "G-Part statement"
   ],
-  "impl_note": "Joint rulemaking; FDIC annex preserves the distinct resolvability interest."
+  "impl_note": "Joint rulemaking; FDIC annex preserves the distinct resolvability interest.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -418,7 +538,13 @@
   "deps": [
    "Independence definition"
   ],
-  "impl_note": "Joint rulemaking; App. D cross-references Reg YY; certification template from Phase 2."
+  "impl_note": "Joint rulemaking; App. D cross-references Reg YY; certification template from Phase 2.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "3",
@@ -439,7 +565,13 @@
   "deps": [
    "G-Part statement"
   ],
-  "impl_note": "Notice-and-comment; the declared guidance-to-rule conversion; retires the letter with a logged signal."
+  "impl_note": "Notice-and-comment; the declared guidance-to-rule conversion; retires the letter with a logged signal.",
+  "e_phase": "E2",
+  "e_window": [
+   4,
+   12
+  ],
+  "e_note": "Folded into the omnibus joint NPRM: drafted months 3\u20137, 60-day comment, final by month 12."
  },
  {
   "tier": "5",
@@ -462,7 +594,13 @@
    "Risk-appetite template",
    "Enterprise framework statement"
   ],
-  "impl_note": "The structural prize; requires consolidated enterprise standards in force first; statutory at the margin."
+  "impl_note": "The structural prize; requires consolidated enterprise standards in force first; statutory at the margin.",
+  "e_phase": "E2\u2192E3",
+  "e_window": [
+   4,
+   24
+  ],
+  "e_note": "Rides the omnibus NPRM with contingent effective dates; switches on months 18\u201324 as the standards it relies on take effect."
  },
  {
   "tier": "6",
@@ -481,7 +619,13 @@
   ],
   "lead": "FBAs+CFPB",
   "deps": [],
-  "impl_note": "Coordination item."
+  "impl_note": "Coordination item.",
+  "e_phase": "E1",
+  "e_window": [
+   0,
+   4
+  ],
+  "e_note": "Issued in the 90-day guidance sweep (extended to month 4 where a principals\u2019 dial is a prerequisite)."
  },
  {
   "tier": "6",
@@ -500,7 +644,13 @@
   ],
   "lead": "6 agencies (principals)",
   "deps": [],
-  "impl_note": "Open policy branch; either branch slots into Phase 3 mechanics once decided."
+  "impl_note": "Open policy branch; either branch slots into Phase 3 mechanics once decided.",
+  "e_phase": "E1\u2192E2",
+  "e_window": [
+   2,
+   12
+  ],
+  "e_note": "Branch decided months 2\u20134 on the dials calendar; chosen branch executed inside the omnibus (or by directed withdrawal)."
  },
  {
   "tier": "6",
@@ -516,7 +666,10 @@
   "window": null,
   "lead": "\u2014",
   "deps": [],
-  "impl_note": "No implementation action (retained / documented non-target)."
+  "impl_note": "No implementation action (retained / documented non-target).",
+  "e_phase": null,
+  "e_window": null,
+  "e_note": "No action either track (retained / non-target)."
  },
  {
   "tier": "6",
@@ -532,7 +685,10 @@
   "window": null,
   "lead": "\u2014",
   "deps": [],
-  "impl_note": "No implementation action (retained / documented non-target)."
+  "impl_note": "No implementation action (retained / documented non-target).",
+  "e_phase": null,
+  "e_window": null,
+  "e_note": "No action either track (retained / non-target)."
  },
  {
   "tier": "6",
@@ -548,7 +704,10 @@
   "window": null,
   "lead": "\u2014",
   "deps": [],
-  "impl_note": "No implementation action (retained / documented non-target)."
+  "impl_note": "No implementation action (retained / documented non-target).",
+  "e_phase": null,
+  "e_window": null,
+  "e_note": "No action either track (retained / non-target)."
  },
  {
   "tier": "6",
@@ -564,7 +723,10 @@
   "window": null,
   "lead": "\u2014",
   "deps": [],
-  "impl_note": "No implementation action (retained / documented non-target)."
+  "impl_note": "No implementation action (retained / documented non-target).",
+  "e_phase": null,
+  "e_window": null,
+  "e_note": "No action either track (retained / non-target)."
  },
  {
   "tier": "6",
@@ -580,7 +742,10 @@
   "window": null,
   "lead": "\u2014",
   "deps": [],
-  "impl_note": "No implementation action (retained / documented non-target)."
+  "impl_note": "No implementation action (retained / documented non-target).",
+  "e_phase": null,
+  "e_window": null,
+  "e_note": "No action either track (retained / non-target)."
  },
  {
   "tier": "6",
@@ -599,6 +764,12 @@
   ],
   "lead": "Interagency WG",
   "deps": [],
-  "impl_note": "THE G-PART STATEMENT: the framework statement each later instrument cross-references. Gating item for Phases 2-4."
+  "impl_note": "THE G-PART STATEMENT: the framework statement each later instrument cross-references. Gating item for Phases 2-4.",
+  "e_phase": "E1",
+  "e_window": [
+   1,
+   3
+  ],
+  "e_note": "THE GATING ITEM both tracks share \u2014 issued in the guidance sweep, month 1\u20133 instead of 6\u201315."
  }
 ]
