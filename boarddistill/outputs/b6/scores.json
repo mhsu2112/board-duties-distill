@@ -1,0 +1,197 @@
+{
+  "_meta": "B6-T5 structural scoring. Answer key unsealed here only (scorer). Metrics: pairwise P/R/F1 + Adjusted Rand Index of the proposed grouping vs RBI's circular\u2192MD assignment; operation-mix; baseline delta. RBI's policy choices are never scored.",
+  "baseline": {
+    "grouping": {
+      "adjusted_rand_index": 0.444,
+      "n_groups": 12,
+      "pairwise": {
+        "f1": 0.536,
+        "precision": 0.933,
+        "recall": 0.376
+      }
+    }
+  },
+  "corpus": {
+    "scored_circulars": 163,
+    "true_mds": 4
+  },
+  "disagreements": [
+    {
+      "dominant_md": "MD-DEPOSITS",
+      "group_id": "grp-nre-fcnr",
+      "kind": "mixed",
+      "md_distribution": {
+        "MD-DEPOSITS": 32,
+        "MD-PSL": 2
+      },
+      "purity": 0.94,
+      "size": 34,
+      "theme": "Interest Rates on NRE / FCNR(B) / Non-Resident Deposits"
+    },
+    {
+      "dominant_md": "MD-INVPF",
+      "group_id": "grp-invest-ucb",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-INVPF": 24
+      },
+      "purity": 1.0,
+      "size": 24,
+      "theme": "Investment Portfolio & Non-SLR Securities \u2013 Urban Co-operative Banks"
+    },
+    {
+      "dominant_md": "MD-INVPF",
+      "group_id": "grp-govsec-ucb",
+      "kind": "mixed",
+      "md_distribution": {
+        "MD-INVPF": 18,
+        "MD-PSL": 1
+      },
+      "purity": 0.95,
+      "size": 19,
+      "theme": "Government Securities Transactions & Settlement \u2013 UCBs"
+    },
+    {
+      "dominant_md": "MD-DEPOSITS",
+      "group_id": "grp-interest-deposits",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-DEPOSITS": 18
+      },
+      "purity": 1.0,
+      "size": 18,
+      "theme": "Interest Rates on Rupee/Savings/Term Deposits"
+    },
+    {
+      "dominant_md": "MD-PSL",
+      "group_id": "grp-psl-scb",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-PSL": 16
+      },
+      "purity": 1.0,
+      "size": 16,
+      "theme": "Priority Sector Lending \u2013 Targets and Classification (Scheduled Commercial Banks)"
+    },
+    {
+      "dominant_md": "MD-PSL",
+      "group_id": "grp-psl-ucb",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-PSL": 13
+      },
+      "purity": 1.0,
+      "size": 13,
+      "theme": "Priority Sector Lending for Primary (Urban) Co-operative Banks"
+    },
+    {
+      "dominant_md": "MD-DEPOSITS",
+      "group_id": "grp-customer-service",
+      "kind": "mixed",
+      "md_distribution": {
+        "MD-CARDS": 5,
+        "MD-DEPOSITS": 5,
+        "MD-INVPF": 1
+      },
+      "purity": 0.45,
+      "size": 11,
+      "theme": "Customer Service, Protection & Communications"
+    },
+    {
+      "dominant_md": "MD-CARDS",
+      "group_id": "grp-cards",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-CARDS": 9
+      },
+      "purity": 1.0,
+      "size": 9,
+      "theme": "Credit / Debit / ATM Card Operations"
+    },
+    {
+      "dominant_md": "MD-INVPF",
+      "group_id": "grp-deposits-placement-ucb",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-INVPF": 8
+      },
+      "purity": 1.0,
+      "size": 8,
+      "theme": "Placement of Deposits by UCBs with Other Banks"
+    },
+    {
+      "dominant_md": "MD-PSL",
+      "group_id": "grp-psl-sfb",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-PSL": 5
+      },
+      "purity": 1.0,
+      "size": 5,
+      "theme": "Priority Sector Lending and Operating Guidelines \u2013 Small Finance Banks"
+    },
+    {
+      "dominant_md": "MD-PSL",
+      "group_id": "grp-psl-rrb",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-PSL": 3
+      },
+      "purity": 1.0,
+      "size": 3,
+      "theme": "Priority Sector Lending \u2013 Regional Rural Banks"
+    },
+    {
+      "dominant_md": "MD-DEPOSITS",
+      "group_id": "grp-money-market",
+      "kind": "pure",
+      "md_distribution": {
+        "MD-DEPOSITS": 3
+      },
+      "purity": 1.0,
+      "size": 3,
+      "theme": "Call/Notice/Term Money Market & Bills Rediscounting Participation"
+    }
+  ],
+  "engine": {
+    "grouping": {
+      "adjusted_rand_index": 0.427,
+      "n_groups": 12,
+      "pairwise": {
+        "f1": 0.52,
+        "precision": 0.922,
+        "recall": 0.362
+      }
+    },
+    "operation_mix": {
+      "by_primitive": {
+        "CANONICALIZE_DEFINITION": 13,
+        "ELEVATE_GENERAL_RULE": 17,
+        "MERGE": 17,
+        "RELATE_OBLIGATION": 16,
+        "REPEAL": 32,
+        "RESOLVE_CROSS_REFERENCE": 36
+      },
+      "prd_prediction": "concentrates in {MERGE, REPEAL, CANONICALIZE_DEFINITION, RESOLVE_CROSS_REFERENCE} (\u00a718)",
+      "primary_share": 0.748,
+      "total_operations": 131
+    },
+    "survival_repeal": {
+      "corpus_all_repealed": 163,
+      "note": "every consolidated circular is formally repealed \u21d2 precision trivially 1.0; within-group survivor is not in RBI's flat appendix (characterized, not scored).",
+      "precision_vs_appendix": 1.0,
+      "recall_over_corpus": 0.294,
+      "repealed_predicted": 48
+    }
+  },
+  "engine_minus_baseline": {
+    "ari": -0.017,
+    "f1": -0.016
+  },
+  "md_spread_engine": {
+    "MD-CARDS": 2,
+    "MD-DEPOSITS": 4,
+    "MD-INVPF": 4,
+    "MD-PSL": 6
+  }
+}

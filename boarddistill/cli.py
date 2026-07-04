@@ -923,6 +923,36 @@ def b6_engine(
         typer.echo(f"  ⚠ leakage quarantine (checkpoint 3.2): {doc['quarantined'][:3]}", err=True)
 
 
+@app.command("b6-score")
+def b6_score(
+    root: Annotated[Path, typer.Option("--root", help="Benchmark data root.")] = Path(
+        "data/benchmark"
+    ),
+    out: Annotated[Path, typer.Option("--out", help="B6 output dir.")] = Path("outputs/b6"),
+) -> None:
+    """B6-T5: unseal the answer key and score engine + baseline (structural only)."""
+    from adapters.b6_score import write_scores
+
+    s = write_scores(root, out)
+    eg, bg = s["engine"]["grouping"], s["baseline"]["grouping"]
+    d = s["engine_minus_baseline"]
+    typer.echo("[boarddistill] B6-T5 scoring (answer key unsealed):")
+    typer.echo(
+        f"  scored {s['corpus']['scored_circulars']} circulars vs {s['corpus']['true_mds']} MDs"
+    )
+    typer.echo(
+        f"  ENGINE   pairwise F1 {eg['pairwise']['f1']} · ARI {eg['adjusted_rand_index']} · "
+        f"groups {eg['n_groups']}"
+    )
+    typer.echo(
+        f"  BASELINE pairwise F1 {bg['pairwise']['f1']} · ARI {bg['adjusted_rand_index']} · "
+        f"groups {bg['n_groups']}"
+    )
+    typer.echo(f"  DELTA (engine − baseline): F1 {d['f1']:+} · ARI {d['ari']:+}")
+    om = s["engine"]["operation_mix"]
+    typer.echo(f"  op-mix primary share: {om['primary_share']} · {om['by_primitive']}")
+
+
 @app.command("b6-baseline")
 def b6_baseline(
     root: Annotated[Path, typer.Option("--root", help="Benchmark data root.")] = Path(
