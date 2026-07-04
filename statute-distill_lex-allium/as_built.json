@@ -1,0 +1,104 @@
+{
+  "offense_id": "dc-theft",
+  "label": "Theft (current D.C. law)",
+  "jurisdiction": "dc",
+  "layer": "as_built",
+  "snapshot_dates": {
+    "before_as_of": "2020-01-01",
+    "reform_as_of": "2021-03-24",
+    "current_as_of": "2026-06-11"
+  },
+  "elements": [
+    {
+      "id": "el-conduct",
+      "type": "conduct",
+      "text": "wrongfully obtains or uses the property of another",
+      "source_span_ids": ["src-dc-22-3211-conduct"]
+    },
+    {
+      "id": "el-circ-poa",
+      "type": "circumstance",
+      "text": "the property is the property of another",
+      "source_span_ids": ["src-dc-22-3211-conduct"]
+    },
+    {
+      "id": "el-circ-consent",
+      "type": "circumstance",
+      "text": "the taking is without the owner's authorization (implicit in 'wrongfully'; supplied by case law)",
+      "source_span_ids": ["src-dc-22-3211-conduct", "src-dca-theft-consent-PLACEHOLDER"]
+    },
+    {
+      "id": "el-result-deprive",
+      "type": "result",
+      "text": "the owner is deprived of a right to or benefit of the property",
+      "source_span_ids": ["src-dc-22-3211-intent"]
+    }
+  ],
+  "mens_rea": [
+    {
+      "element_id": "el-conduct",
+      "mental_state": "unresolved",
+      "explicit_or_implicit": "implicit",
+      "source_span_ids": ["src-dc-22-3211-conduct"]
+    },
+    {
+      "element_id": "el-circ-poa",
+      "mental_state": "unresolved",
+      "explicit_or_implicit": "implicit",
+      "source_span_ids": ["src-dc-22-3211-conduct"]
+    },
+    {
+      "element_id": "el-circ-consent",
+      "mental_state": "unresolved",
+      "explicit_or_implicit": "implicit",
+      "source_span_ids": ["src-dca-theft-consent-PLACEHOLDER"]
+    },
+    {
+      "element_id": "el-result-deprive",
+      "mental_state": "purpose",
+      "explicit_or_implicit": "explicit",
+      "source_span_ids": ["src-dc-22-3211-intent"]
+    }
+  ],
+  "gradations": [
+    {
+      "id": "grad-value",
+      "degree": 1,
+      "criterion": "property value >= $1,000 (first degree); otherwise second degree",
+      "source_span_ids": ["src-dc-22-3212-degrees"]
+    }
+  ],
+  "defenses": [
+    {
+      "id": "def-claim-of-right",
+      "kind": "affirmative",
+      "text": "claim of right / honest belief in entitlement (recognized in case law; not codified as a discrete element)",
+      "source_span_ids": ["src-dca-theft-consent-PLACEHOLDER"]
+    }
+  ],
+  "definitions_used": [],
+  "cross_refs": ["dc-robbery", "dc-theft-from-person"],
+  "source_citations": ["src-dc-22-3211-conduct", "src-dc-22-3211-intent", "src-dc-22-3212-degrees"],
+  "claims": [
+    {
+      "id": "claim-asbuilt-intent",
+      "claim": "Current D.C. theft requires intent to deprive the owner of the property.",
+      "source_span_ids": ["src-dc-22-3211-intent"],
+      "support_type": "quoted",
+      "authority_type": "statute",
+      "as_of_valid": true,
+      "confidence": 0.95,
+      "verifier_status": "unverified"
+    },
+    {
+      "id": "claim-asbuilt-consent-implicit",
+      "claim": "Current D.C. theft does not explicitly state the culpable mental state as to lack of the owner's consent; the consent requirement is supplied by judicial construction.",
+      "source_span_ids": ["src-dca-theft-consent-PLACEHOLDER"],
+      "support_type": "paraphrased",
+      "authority_type": "controlling_case",
+      "as_of_valid": true,
+      "confidence": 0.5,
+      "verifier_status": "unverified"
+    }
+  ]
+}

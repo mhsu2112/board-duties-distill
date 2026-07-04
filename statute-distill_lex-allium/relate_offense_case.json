@@ -1,0 +1,108 @@
+{
+  "_purpose": "Minimal deterministic stub for the M0 calculus test. Proves RELATE_OFFENSE composes as a single primitive (both offenses survive), distinct from MERGE.",
+  "offenses": [
+    {
+      "offense_id": "dc-robbery",
+      "label": "Robbery (RCC)",
+      "jurisdiction": "dc",
+      "layer": "intended",
+      "snapshot_dates": {
+        "before_as_of": "2020-01-01",
+        "reform_as_of": "2021-03-24",
+        "current_as_of": "2026-06-11"
+      },
+      "elements": [
+        {
+          "id": "el-rob-possession",
+          "type": "circumstance",
+          "text": "property taken from the immediate actual possession of another",
+          "source_span_ids": ["src-rob-1"]
+        },
+        {
+          "id": "el-rob-force",
+          "type": "conduct",
+          "text": "by force or violence, or by putting in fear",
+          "source_span_ids": ["src-rob-1"]
+        }
+      ],
+      "mens_rea": [
+        {
+          "element_id": "el-rob-force",
+          "mental_state": "knowledge",
+          "explicit_or_implicit": "explicit",
+          "source_span_ids": ["src-rob-1"]
+        }
+      ],
+      "gradations": [],
+      "defenses": [],
+      "definitions_used": [],
+      "cross_refs": ["dc-theft-from-person"],
+      "source_citations": ["src-rob-1"],
+      "claims": []
+    },
+    {
+      "offense_id": "dc-theft-from-person",
+      "label": "Theft from a person (RCC theft gradation)",
+      "jurisdiction": "dc",
+      "layer": "intended",
+      "snapshot_dates": {
+        "before_as_of": "2020-01-01",
+        "reform_as_of": "2021-03-24",
+        "current_as_of": "2026-06-11"
+      },
+      "elements": [
+        {
+          "id": "el-tfp-take",
+          "type": "conduct",
+          "text": "takes property from the person of another (non-forcible)",
+          "source_span_ids": ["src-tfp-1"]
+        }
+      ],
+      "mens_rea": [
+        {
+          "element_id": "el-tfp-take",
+          "mental_state": "purpose",
+          "explicit_or_implicit": "explicit",
+          "source_span_ids": ["src-tfp-1"]
+        }
+      ],
+      "gradations": [],
+      "defenses": [],
+      "definitions_used": [],
+      "cross_refs": ["dc-robbery"],
+      "source_citations": ["src-tfp-1"],
+      "claims": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-rob-1",
+      "source_id": "rcc-22E-1201",
+      "citation": "RCC § 22E-1201 (Robbery)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] taking from immediate actual possession by force, violence, or putting in fear"
+    },
+    {
+      "id": "src-tfp-1",
+      "source_id": "rcc-22E-2101-d4B",
+      "citation": "RCC § 22E-2101(d)(4)(B) (theft from a person gradation)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] theft-from-a-person gradation of revised theft"
+    }
+  ],
+  "expected_operations": [
+    {
+      "id": "op-relate-rob-tfp",
+      "primitive": "RELATE_OFFENSE",
+      "operands": ["dc-robbery", "dc-theft-from-person"],
+      "inverse": null,
+      "scope": "special_part",
+      "relation": "aggravated_form_of",
+      "diagnostics_triggering": ["overlapping_offenses"],
+      "normative_load": "low"
+    }
+  ],
+  "expected_residual": []
+}

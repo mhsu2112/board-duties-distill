@@ -1,4 +1,48 @@
-# Bank Board "Policy Sludge" — Cumulative Project
+# BoardDistill — From 227 Board Duties to 30
+
+**An end-to-end, replicable method for cleaning up accumulated regulatory obligations ("policy sludge"), demonstrated on the duties of the largest U.S. bank boards — with every claim citation-verified, every judgment human-decided and logged, and the whole pipeline replayable offline.**
+
+227 duty statements from five agencies across five instrument strata → a proposed set of ~30 consolidated duties, an A→B crosswalk, a dual-track reform roadmap, and a cross-jurisdiction validation benchmark. Produced by one human reviewer plus an AI pipeline in days; verified like it took years.
+
+## Start here
+
+| If you are a… | Read |
+|---|---|
+| Policymaker / director / counsel wanting the substance | [`release/gsib-board-duties_consolidated-proposal_v0.1.docx`](release/) — the proposal, readable cold. Then the [A→B explorer](release/gsib-board-duties_A-to-B_explorer.html) (download + double-click) or the [crosswalk spreadsheet](release/) |
+| Someone who wants the how, quickly | [`release/method_summary_3-pages.docx`](release/) |
+| Someone who wants the how, completely | [`release/method_from-227-to-30_policymaker-edition.docx`](release/) — chapter per stage, incl. a measured token/cost accounting |
+| A replicator / forker | [`release/REPLICATION.md`](release/REPLICATION.md) — reading order, 5-minute offline verification, adapter recipe |
+| An implementer at an agency | [`release/gsib-board-duties_reform-roadmap_v2.2_dual-track.docx`](release/) — feasibility / agency / timeline views, baseline and executive-priority tracks |
+
+## The six stages (and where each lives)
+
+1. **Build a trustworthy inventory** — multi-model horserace, 3 LLM judges, integrity-weighted rubric → 227-duty inventory. → `Tools/`, `Evals/`, `Reports/`, `Synthesis/`, and Part II below
+2. **Import the calculus** — the D.C. code-reform method formalized (Lex-Allium/StatuteDistill); 16 typed operations, effect classes. → `statute-distill_lex-allium/` (engine specs), `lex-allium_feasibility_board-duties.md`, `boarddistill-prd-v0.1.md`, `B0_calculus-closure.md`
+3. **Build the engine, then verify** — deterministic guardrails as code (84 tests), then citation verification: 142/227 pinned verbatim, 0 contradicted. → `boarddistill/` (AGENTS.md, B1–B2), `boarddistill/outputs/b1–b2/`
+4. **AI under guardrails** — span-anchored distillation and diagnostics; 0 hallucinated citations; ~60 logged human dispositions. → `boarddistill/B3–B4_TASKS.md`, `outputs/b3–b4/`, `REVIEW_PACKET_B3.md`
+5. **Scale + product** — full corpus; 6 residual levers hand-closed; the release package. → `B5_TASKS.md`, `outputs/b5/`, `REVIEW_PACKET_B5.md`, `B5_residual-closure.md`, `release/`
+6. **Held-out validation** — RBI Master-Directions rediscovery benchmark, sealed answer key. → `B6_TASKS.md`, `outputs/b6/`
+
+`PROJECT_OVERVIEW.md` is the one-page chronology; `scripts/check_links.py` validates every internal reference (run it after any reorganization).
+
+## Verify it yourself (offline, ~5 minutes)
+
+```bash
+cd boarddistill && uv sync && make check
+uv run boarddistill eval-fixture data/fixtures/us-gsib/icfr
+```
+
+## Honest limits, up front
+
+85 of 227 statements (exam-manual/guidance strata) remain unverified against primary text and are flagged row-by-row. The evidence base is as-published law — confidential supervisory expectations are outside it. The consolidated set is an illustrative draft, not proposed regulatory text. "Sludge" is a normative lens; every substantive choice in this repo is a logged human decision, not a model output.
+
+## License
+
+Code: [Apache-2.0](LICENSE). Documents, data, and graphics: [CC-BY-4.0](LICENSE-DOCS). Cite as: M. Hsu, *BoardDistill: From 227 Board Duties to 30* (2026), github.com/mhsu2112.
+
+---
+
+# Part II — The Stage-1 Study: Building the Inventory (original project README)
 
 A small, reproducible study that asks two linked questions:
 

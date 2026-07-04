@@ -1,0 +1,12 @@
+Documents, data files, and graphics in this repository (including release/,
+Synthesis/, Reports/, Evals/, Tools/, and all .md, .docx, .xlsx, .csv, .png,
+and .svg files) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Attribution: Michael Hsu, "BoardDistill: From 227 Board Duties to 30" (2026).
+
+Code (boarddistill/, scripts/, and all .py files) is licensed separately under
+Apache-2.0 — see LICENSE.
+
+Primary legal materials quoted or cached herein (U.S. statutes, regulations,
+and agency issuances) are U.S. government works in the public domain.

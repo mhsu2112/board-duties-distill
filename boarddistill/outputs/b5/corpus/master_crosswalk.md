@@ -252,7 +252,7 @@
 
 ## Internal control over financial reporting  (4/4 verified)
 
-- Reform lever: **SOX 404(b) satisfies FDICIA ICFR by cross-reference; align cycles** — `DEEM_SATISFIED+FACTOR_EXCEPTION+RELATE_OBLIGATION+ASSIGN_DUTY_PARAMETER` (valid_composite); intended home traceable to `outputs/b4/internal-control-ove/package.md`.
+- Reform lever: **SOX 404(b) satisfies FDICIA ICFR by cross-reference; align cycles** — `DEEM_SATISFIED+FACTOR_EXCEPTION+RELATE_OBLIGATION+ASSIGN_DUTY_PARAMETER` (valid_composite); intended home traceable to `outputs/b4/B4_report.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |
@@ -358,7 +358,7 @@
 
 ## Risk committee architecture  (5/6 verified)
 
-- Reform lever: **One risk-committee standard at the consolidated level + streamlined IDI certification** — `RELATE_OBLIGATION+MERGE+DEEM_SATISFIED+FACTOR_EXCEPTION+RESOLVE_CROSS_REFERENCE` (valid_composite); intended home traceable to `outputs/b4/risk-committee-archi/package.md`.
+- Reform lever: **One risk-committee standard at the consolidated level + streamlined IDI certification** — `RELATE_OBLIGATION+MERGE+DEEM_SATISFIED+FACTOR_EXCEPTION+RESOLVE_CROSS_REFERENCE` (valid_composite); intended home traceable to `outputs/b4/risk-governance/package.md`.
 
 | duty_id | verify status | proposed operation(s) | lever status |
 | --- | --- | --- | --- |

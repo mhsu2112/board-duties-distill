@@ -1,0 +1,70 @@
+{
+  "operations": [
+    {
+      "id": "op-define-consent",
+      "primitive": "DEFINE_TERM",
+      "operands": ["el-circ-consent", "effective consent"],
+      "inverse": null,
+      "scope": "special_part",
+      "relation": null,
+      "diagnostics_triggering": ["undefined_term", "implicit_mens_rea"],
+      "normative_load": "low"
+    },
+    {
+      "id": "op-merge-theftrelated",
+      "primitive": "MERGE",
+      "operands": ["dc-theft", "dc-code-theft-related-cluster"],
+      "inverse": "SPLIT",
+      "scope": "special_part",
+      "relation": null,
+      "diagnostics_triggering": ["overlapping_offenses"],
+      "normative_load": "med"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-theft-define-consent",
+      "provision": "RCC § 22E-2101 (with § 22E-701) vs. D.C. Code § 22-3211",
+      "as_built_ref": "dc-theft@as_built",
+      "intended_ref": "dc-theft@intended",
+      "operation_ids": ["op-define-consent"],
+      "effect_class": "clarify",
+      "rationale": "The RCC replaces the implicit consent concept in current theft's 'wrongfully' with an explicit 'without the owner's effective consent' element plus a defined 'property of another'. District case law already construed a consent/intent requirement, so the move clarifies an ambiguous element rather than altering the offense's reach.",
+      "baseline": {
+        "id": "src-dca-theft-consent-PLACEHOLDER",
+        "source_id": "dca-PLACEHOLDER",
+        "citation": "[PLACEHOLDER — not a real cite] DCCA construction supplying a consent/intent reading of current theft",
+        "start": null,
+        "end": null,
+        "quote": "[PLACEHOLDER] District case law construes 'wrongfully' to require taking without the owner's consent"
+      },
+      "normative_kind": ["doctrinal_ambiguity"],
+      "disposition_state": "needs_review",
+      "confidence": 0.7,
+      "verifier_records": [],
+      "status": "draft"
+    },
+    {
+      "id": "F-theft-consolidate",
+      "provision": "RCC § 22E-2101 (and § 22E-2102 UUP carve-out) vs. D.C. Code tit. 22, ch. 32",
+      "as_built_ref": "dc-theft@as_built",
+      "intended_ref": "dc-theft@intended",
+      "operation_ids": ["op-merge-theftrelated"],
+      "effect_class": "change",
+      "rationale": "The RCC consolidates overlapping theft and theft-related provisions and carves non-deprivation takings out to Unauthorized Use of Property, reducing overlap but altering charging and merger consequences. This is a substantive change, not mere housekeeping.",
+      "baseline": {
+        "id": "src-dc-overlap-theftrelated",
+        "source_id": "dc-code-ch32",
+        "citation": "D.C. Code tit. 22, ch. 32 (theft and theft-related offenses)",
+        "start": null,
+        "end": null,
+        "quote": "[FIXTURE] cluster of overlapping theft-related provisions consolidated by the RCC"
+      },
+      "normative_kind": ["policy_choice"],
+      "disposition_state": "needs_review",
+      "confidence": 0.6,
+      "verifier_records": [],
+      "status": "draft"
+    }
+  ]
+}

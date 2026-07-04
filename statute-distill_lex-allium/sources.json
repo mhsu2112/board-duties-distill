@@ -1,0 +1,84 @@
+{
+  "sources": [
+    {
+      "id": "src-dc-22-3211-conduct",
+      "source_id": "dc-code-22-3211",
+      "citation": "D.C. Code § 22-3211(b) (Theft)",
+      "start": null,
+      "end": null,
+      "quote": "wrongfully obtains or uses the property of another"
+    },
+    {
+      "id": "src-dc-22-3211-intent",
+      "source_id": "dc-code-22-3211",
+      "citation": "D.C. Code § 22-3211(b)(1) (Theft)",
+      "start": null,
+      "end": null,
+      "quote": "with intent to deprive the other of a right to the property or a benefit of the property"
+    },
+    {
+      "id": "src-dc-22-3212-degrees",
+      "source_id": "dc-code-22-3212",
+      "citation": "D.C. Code § 22-3212 (Theft; penalties)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] first/second degree distinguished by value threshold ($1,000)"
+    },
+    {
+      "id": "src-dc-overlap-theftrelated",
+      "source_id": "dc-code-ch32",
+      "citation": "D.C. Code tit. 22, ch. 32 (theft and theft-related offenses)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] cluster of overlapping theft-related provisions consolidated by the RCC"
+    },
+    {
+      "id": "src-dca-theft-consent-PLACEHOLDER",
+      "source_id": "dca-PLACEHOLDER",
+      "citation": "[PLACEHOLDER — not a real cite] DCCA construction supplying a consent/intent reading of current theft",
+      "start": null,
+      "end": null,
+      "quote": "[PLACEHOLDER] District case law construes 'wrongfully' to require taking without the owner's consent"
+    },
+    {
+      "id": "src-rcc-22E-2101",
+      "source_id": "rcc-22E-2101",
+      "citation": "RCC § 22E-2101 (Theft)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] revised theft: typed elements with explicit culpable mental states and intent to deprive"
+    },
+    {
+      "id": "src-rcc-22E-701-poa",
+      "source_id": "rcc-22E-701",
+      "citation": "RCC § 22E-701 (definition of 'property of another')",
+      "start": null,
+      "end": null,
+      "quote": "any property that a person has an interest in that the accused is not privileged to interfere with, regardless of whether the accused also has an interest in that property"
+    },
+    {
+      "id": "src-rcc-22E-2102-uup",
+      "source_id": "rcc-22E-2102",
+      "citation": "RCC § 22E-2102 (Unauthorized Use of Property)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] criminalizes takings without an owner's effective consent that lack intent to deprive"
+    },
+    {
+      "id": "src-rcc-22E-214-merger",
+      "source_id": "rcc-22E-214",
+      "citation": "RCC § 22E-214 (merger provision)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] general merger rule governing convictions for the same course of conduct"
+    },
+    {
+      "id": "src-rcc-22E-205-culpability",
+      "source_id": "rcc-22E-205",
+      "citation": "RCC §§ 22E-205 to 207 (culpable mental states; distribution rule)",
+      "start": null,
+      "end": null,
+      "quote": "[FIXTURE] General Part definitions and distribution of culpable mental states across objective elements"
+    }
+  ]
+}

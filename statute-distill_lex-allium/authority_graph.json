@@ -1,0 +1,42 @@
+{
+  "authorities": [
+    {
+      "id": "a-theft-consent-PLACEHOLDER",
+      "citation": "[PLACEHOLDER — not a real cite] DCCA, theft consent/intent construction",
+      "court": "D.C. Court of Appeals",
+      "hierarchy_level": "appellate",
+      "controlling_status": "controlling",
+      "date": "2005-01-01",
+      "as_of_valid": true,
+      "treatment_status": "good",
+      "holding_or_dicta": "holding",
+      "bears_on": ["dc-theft@as_built:el-circ-consent", "dc-theft@as_built:el-result-deprive"]
+    },
+    {
+      "id": "a-lattimore-1996",
+      "citation": "Lattimore v. United States, 684 A.2d 357 (D.C. 1996)",
+      "court": "D.C. Court of Appeals",
+      "hierarchy_level": "appellate",
+      "controlling_status": "controlling",
+      "date": "1996-10-01",
+      "as_of_valid": true,
+      "treatment_status": "good",
+      "holding_or_dicta": "holding",
+      "bears_on": ["dc-theft@as_built:el-conduct"]
+    }
+  ],
+  "edges": [
+    {
+      "authority_id": "a-theft-consent-PLACEHOLDER",
+      "target_ref": "dc-theft@as_built:el-circ-consent",
+      "relation": "supplies_element",
+      "source_span_id": "src-dca-theft-consent-PLACEHOLDER"
+    },
+    {
+      "authority_id": "a-lattimore-1996",
+      "target_ref": "dc-theft@as_built:el-conduct",
+      "relation": "construes_element",
+      "source_span_id": "src-dc-22-3211-conduct"
+    }
+  ]
+}

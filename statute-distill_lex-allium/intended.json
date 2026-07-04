@@ -1,0 +1,129 @@
+{
+  "offense_id": "dc-theft",
+  "label": "Theft (Revised Criminal Code)",
+  "jurisdiction": "dc",
+  "layer": "intended",
+  "snapshot_dates": {
+    "before_as_of": "2020-01-01",
+    "reform_as_of": "2021-03-24",
+    "current_as_of": "2026-06-11"
+  },
+  "elements": [
+    {
+      "id": "el-conduct",
+      "type": "conduct",
+      "text": "obtains, or exerts control over, property",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    },
+    {
+      "id": "el-circ-poa",
+      "type": "circumstance",
+      "text": "the property is property of another (defined term)",
+      "source_span_ids": ["src-rcc-22E-2101", "src-rcc-22E-701-poa"]
+    },
+    {
+      "id": "el-circ-consent",
+      "type": "circumstance",
+      "text": "without the owner's effective consent",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    },
+    {
+      "id": "el-circ-value",
+      "type": "circumstance",
+      "text": "the value of the property (grading circumstance)",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    },
+    {
+      "id": "el-result-deprive",
+      "type": "result",
+      "text": "the owner is deprived of the property",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    }
+  ],
+  "mens_rea": [
+    {
+      "element_id": "el-conduct",
+      "mental_state": "knowledge",
+      "explicit_or_implicit": "explicit",
+      "source_span_ids": ["src-rcc-22E-2101", "src-rcc-22E-205-culpability"]
+    },
+    {
+      "element_id": "el-circ-poa",
+      "mental_state": "knowledge",
+      "explicit_or_implicit": "explicit",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    },
+    {
+      "element_id": "el-circ-consent",
+      "mental_state": "knowledge",
+      "explicit_or_implicit": "explicit",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    },
+    {
+      "element_id": "el-circ-value",
+      "mental_state": "strict",
+      "explicit_or_implicit": "explicit",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    },
+    {
+      "element_id": "el-result-deprive",
+      "mental_state": "purpose",
+      "explicit_or_implicit": "explicit",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    }
+  ],
+  "gradations": [
+    {
+      "id": "grad-value",
+      "degree": 1,
+      "criterion": "uniform value-based degrees; value is a strict-liability ('in fact') grading circumstance",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    }
+  ],
+  "defenses": [
+    {
+      "id": "def-claim-of-right",
+      "kind": "affirmative",
+      "text": "claim of right, represented as an explicit codified defense",
+      "source_span_ids": ["src-rcc-22E-2101"]
+    }
+  ],
+  "definitions_used": [
+    {
+      "term": "property of another",
+      "text": "any property that a person has an interest in that the accused is not privileged to interfere with, regardless of whether the accused also has an interest in that property",
+      "canonical": true,
+      "source_span_ids": ["src-rcc-22E-701-poa"]
+    },
+    {
+      "term": "effective consent",
+      "text": "[FIXTURE] consent that is legally operative (not induced by force, deception, or incapacity)",
+      "canonical": true,
+      "source_span_ids": ["src-rcc-22E-2101"]
+    }
+  ],
+  "cross_refs": ["dc-uup-22E-2102", "dc-robbery", "dc-theft-from-person"],
+  "source_citations": ["src-rcc-22E-2101", "src-rcc-22E-701-poa", "src-rcc-22E-205-culpability"],
+  "claims": [
+    {
+      "id": "claim-intended-knowledge-consent",
+      "claim": "Revised theft requires that the defendant know they lack the owner's effective consent.",
+      "source_span_ids": ["src-rcc-22E-2101"],
+      "support_type": "paraphrased",
+      "authority_type": "statute",
+      "as_of_valid": true,
+      "confidence": 0.8,
+      "verifier_status": "unverified"
+    },
+    {
+      "id": "claim-intended-poa-defined",
+      "claim": "Revised theft relies on a canonical defined term 'property of another' shared across property offenses.",
+      "source_span_ids": ["src-rcc-22E-701-poa"],
+      "support_type": "quoted",
+      "authority_type": "statute",
+      "as_of_valid": true,
+      "confidence": 0.85,
+      "verifier_status": "unverified"
+    }
+  ]
+}
