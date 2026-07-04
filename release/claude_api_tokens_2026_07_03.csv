@@ -1,0 +1,12 @@
+usage_date_utc,model_version,api_key,workspace,usage_type,context_window,usage_input_tokens_no_cache,usage_input_tokens_cache_write_5m,usage_input_tokens_cache_write_1h,usage_input_tokens_cache_read,usage_output_tokens,web_search_count,inference_geo,speed
+2026-07-03 01:00,claude-opus-4-8,Project for Jeff,Default,standard,≤ 200k,296,0,0,0,27,0,global,
+2026-07-03 02:00,claude-opus-4-8,Project for Jeff,Default,standard,≤ 200k,208367,0,0,0,39423,0,global,
+2026-07-03 10:00,claude-haiku-4-5-20251001,Project for Jeff,Default,standard,≤ 200k,538,0,0,0,22,0,not_available,
+2026-07-03 10:00,claude-opus-4-8,Project for Jeff,Default,standard,200k - 1M,3600,96358,0,17605061,68071,0,global,
+2026-07-03 10:00,claude-opus-4-8,Project for Jeff,Default,standard,≤ 200k,131615,446562,0,8533740,77389,0,global,
+2026-07-03 11:00,claude-opus-4-8,Project for Jeff,Default,standard,200k - 1M,11822,422208,0,28113563,71144,0,global,
+2026-07-03 11:00,claude-opus-4-8,Project for Jeff,Default,standard,≤ 200k,422298,0,0,0,65601,0,global,
+2026-07-03 12:00,claude-opus-4-8,Project for Jeff,Default,standard,≤ 200k,27531,0,0,0,4093,0,global,
+2026-07-03 12:00,claude-opus-4-8,Project for Jeff,Default,standard,200k - 1M,25957,643368,0,67608112,108301,0,global,
+2026-07-03 13:00,claude-opus-4-8,Project for Jeff,Default,standard,≤ 200k,228747,0,0,0,54347,0,global,
+2026-07-03 13:00,claude-opus-4-8,Project for Jeff,Default,standard,200k - 1M,15474,720032,0,66995539,124187,0,global,

@@ -1,0 +1,32 @@
+{
+ "_meta": "Measured API token usage for stages 2-6, from Anthropic console exports (2026-07-03/04 UTC), model claude-opus-4-8",
+ "totals": {
+  "input_no_cache": 1084721,
+  "cache_write": 3093574,
+  "cache_read": 220260913,
+  "output": 637127,
+  "processed_total": 225076335,
+  "fresh_total": 4815422,
+  "cache_read_share": 0.979
+ },
+ "pipeline_rows_zero_cache": {
+  "input": 887777,
+  "output": 163513,
+  "total": 1051290,
+  "note": "hourly buckets with zero cache activity = the analysis pipeline's live passes; the 02:00 bucket (208,367 in / 39,423 out) matches the B3 report's self-logged 205k/39k"
+ },
+ "orchestration": {
+  "cache_read": 220260913,
+  "note": "the 200k-1M-context buckets with 17-68M cache reads/hour = the agent coding sessions"
+ },
+ "estimate_scorecard": {
+  "processed_est": "150-300M",
+  "processed_actual": "225M (in range)",
+  "cache_share_est": ">98%",
+  "cache_share_actual": "97.9% (confirmed)",
+  "fresh_est": "25-60M",
+  "fresh_actual": "4.8M (overestimated ~10x - cache efficiency better than assumed)",
+  "pipeline_est": "1.5-2M",
+  "pipeline_actual": "~1.05M identifiable (slightly overestimated)"
+ }
+}
