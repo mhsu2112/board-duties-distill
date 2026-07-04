@@ -1,0 +1,604 @@
+[
+ {
+  "tier": "1",
+  "cluster": "Capital planning & stress testing",
+  "lever": "Separate board capital-action decisions from technical methodology reporting",
+  "effect": "clarify",
+  "composition": "SPLIT+ASSIGN_DUTY_PARAMETER+ASSIGN_DUTY_PARAMETER+RESOLVE_CROSS_REFERENCE+REPEAL",
+  "kinds": "supervisory_value_judgment",
+  "actor": "FRB",
+  "instrument": "guidance_action_plus_conforming_rule_note",
+  "status": "valid_composite",
+  "phase": 1,
+  "window": [
+   0,
+   6
+  ],
+  "lead": "FRB",
+  "deps": [],
+  "impl_note": "No coordination needed; guidance action + conforming note."
+ },
+ {
+  "tier": "2",
+  "cluster": "Audit committee & independence",
+  "lever": "Single 'independent director' definition; one audit committee satisfies all regimes",
+  "effect": "change",
+  "composition": "CANONICALIZE_DEFINITION+RELATE_OBLIGATION+DEEM_SATISFIED+RESOLVE_CROSS_REFERENCE",
+  "kinds": "interagency_coordination, statutory_constraint, policy_choice",
+  "actor": "FRB, OCC, FDIC, SEC",
+  "instrument": "interagency_statement_plus_SEC_coordination",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   12,
+   30
+  ],
+  "lead": "FRB+OCC+FDIC+SEC",
+  "deps": [
+   "Independence definition"
+  ],
+  "impl_note": "Finalizes the Phase 2 definition work into rules/listing-standard cross-refs."
+ },
+ {
+  "tier": "2",
+  "cluster": "Board self-assessment / effectiveness",
+  "lever": "Single interagency board-effectiveness assessment.",
+  "effect": "change",
+  "composition": "consolidation",
+  "kinds": "interagency_coordination, supervisory_value_judgment",
+  "actor": "FRB, OCC",
+  "instrument": "interagency_statement",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   6,
+   12
+  ],
+  "lead": "FRB+OCC",
+  "deps": [],
+  "impl_note": "Joint statement; near-identical source texts."
+ },
+ {
+  "tier": "2",
+  "cluster": "Director independence (cross-cutting)",
+  "lever": "Single cross-referenced prudential independence definition.",
+  "effect": "change",
+  "composition": "single:CANONICALIZE_DEFINITION",
+  "kinds": "statutory_constraint, interagency_coordination, policy_choice",
+  "actor": "FRB, OCC, FDIC, SEC",
+  "instrument": "interagency_statement",
+  "status": "valid_single",
+  "phase": 2,
+  "window": [
+   6,
+   24
+  ],
+  "lead": "FRB+OCC+FDIC+SEC",
+  "deps": [],
+  "impl_note": "Start early \u2014 SEC coordination is the longest pole; finalizes in Phase 3."
+ },
+ {
+  "tier": "2",
+  "cluster": "Director training",
+  "lever": "One consolidated director-training program covering all topics.",
+  "effect": "change",
+  "composition": "composition",
+  "kinds": "supervisory_value_judgment, interagency_coordination, policy_choice",
+  "actor": "FRB, OCC, FDIC, FinCEN",
+  "instrument": "interagency_statement",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   9,
+   18
+  ],
+  "lead": "FRB+OCC+FDIC+FinCEN",
+  "deps": [],
+  "impl_note": "Statement; BSA module preserves the statutory training pillar."
+ },
+ {
+  "tier": "2",
+  "cluster": "Insider / affiliate / related-party",
+  "lever": "Coordinate related-party review processes.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "interagency_coordination, statutory_constraint",
+  "actor": "FRB, SEC",
+  "instrument": "interagency_statement",
+  "status": "documented_non_target",
+  "phase": 2,
+  "window": [
+   6,
+   18
+  ],
+  "lead": "FRB+SEC",
+  "deps": [],
+  "impl_note": "Coordination only; no consolidation (distinct statutes)."
+ },
+ {
+  "tier": "2",
+  "cluster": "Liquidity risk management",
+  "lever": "One board liquidity approval satisfies rule and guidance.",
+  "effect": "change",
+  "composition": "single:DEEM_SATISFIED",
+  "kinds": "supervisory_value_judgment, interagency_coordination, statutory_constraint",
+  "actor": "FRB, OCC",
+  "instrument": "interagency_statement",
+  "status": "valid_single",
+  "phase": 2,
+  "window": [
+   6,
+   15
+  ],
+  "lead": "FRB+OCC",
+  "deps": [
+   "G-Part statement"
+  ],
+  "impl_note": "Deem-satisfied statement citing the General-Part mechanics."
+ },
+ {
+  "tier": "2",
+  "cluster": "Risk appetite statement",
+  "lever": "Interagency risk-appetite template + safe harbor that one board-approved statement satisfies all.",
+  "effect": "change",
+  "composition": "safe_harbor_template",
+  "kinds": "interagency_coordination, policy_choice",
+  "actor": "FRB, OCC",
+  "instrument": "interagency_statement",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   6,
+   18
+  ],
+  "lead": "FRB+OCC",
+  "deps": [
+   "G-Part statement"
+  ],
+  "impl_note": "Template published with the framework statement; safe harbor may need a conforming rule note (Phase 3)."
+ },
+ {
+  "tier": "2",
+  "cluster": "Risk-governance framework / strategy",
+  "lever": "One enterprise framework approval with an IDI addendum (expanded App. D reliance accommodation)",
+  "effect": "change",
+  "composition": "RELATE_OBLIGATION+DEEM_SATISFIED+FACTOR_EXCEPTION+RESOLVE_CROSS_REFERENCE",
+  "kinds": "policy_choice, interagency_coordination",
+  "actor": "FRB, OCC",
+  "instrument": "interagency_statement_plus_rule_safe_harbor",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   9,
+   18
+  ],
+  "lead": "FRB+OCC",
+  "deps": [
+   "G-Part statement"
+  ],
+  "impl_note": "Statement + safe harbor now; feeds the Phase 4 structural expansion."
+ },
+ {
+  "tier": "2",
+  "cluster": "Risk-governance framework / strategy",
+  "lever": "Single interagency board-effectiveness assessment",
+  "effect": "codify",
+  "composition": "MERGE+RESOLVE_CROSS_REFERENCE",
+  "kinds": "\u2014",
+  "actor": "FRB, OCC",
+  "instrument": "joint_statement",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   6,
+   12
+  ],
+  "lead": "FRB+OCC",
+  "deps": [],
+  "impl_note": "Duplicate lever entry (MVP D7) \u2014 same action."
+ },
+ {
+  "tier": "2",
+  "cluster": "Third-party risk management",
+  "lever": "Quantitative 'critical activity' threshold for board attention; management approval + aggregate reporting otherwise.",
+  "effect": "clarify",
+  "composition": "composition",
+  "kinds": "policy_choice, interagency_coordination, supervisory_value_judgment",
+  "actor": "FRB, OCC, FDIC",
+  "instrument": "interagency_statement",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   9,
+   18
+  ],
+  "lead": "FRB+OCC+FDIC",
+  "deps": [
+   "Threshold value (principals)"
+  ],
+  "impl_note": "Amends the 2023 interagency guidance; threshold value is a principals decision."
+ },
+ {
+  "tier": "3",
+  "cluster": "BSA/AML program",
+  "lever": "Cross-reference manual to the rule; avoid restating. v2.1: resolve the two unreconciled pending rewrites (2024 proposals add a freestanding board-oversight standard + annual ratification; 2026 proposals permit approval by the board, an equivalent body, or senior management) before they compound the layering.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "policy_choice, interagency_coordination, interpretive_ambiguity",
+  "actor": "FinCEN, FRB, OCC, FDIC",
+  "instrument": "rule_apa",
+  "status": "documented_non_target",
+  "phase": 2,
+  "window": [
+   6,
+   18
+  ],
+  "lead": "FinCEN+FBAs",
+  "deps": [],
+  "impl_note": "Reconcile the two pending BSA rewrites before layering compounds; then manual cross-references."
+ },
+ {
+  "tier": "3",
+  "cluster": "CRO / CRE appointment & compensation",
+  "lever": "Consolidate into Reg YY; OCC incorporates by reference.",
+  "effect": "clarify",
+  "composition": "composition",
+  "kinds": "interagency_coordination",
+  "actor": "FRB, OCC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   12,
+   27
+  ],
+  "lead": "FRB+OCC",
+  "deps": [
+   "Risk-committee standard"
+  ],
+  "impl_note": "CRO/CRE rides the same Reg YY amendment cycle."
+ },
+ {
+  "tier": "3",
+  "cluster": "Credit risk governance",
+  "lever": "One interagency real-estate-lending standard; fold ACL/credit-review into the risk-committee credit cycle.",
+  "effect": "change",
+  "composition": "consolidation",
+  "kinds": "policy_choice, interagency_coordination, supervisory_value_judgment",
+  "actor": "FRB, OCC, FDIC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   15,
+   30
+  ],
+  "lead": "FRB+OCC+FDIC",
+  "deps": [
+   "Risk-committee standard"
+  ],
+  "impl_note": "Credit cycle folds into the consolidated committee standard."
+ },
+ {
+  "tier": "3",
+  "cluster": "Director eligibility & continuity",
+  "lever": "Single interagency change-in-director notice procedure.",
+  "effect": "change",
+  "composition": "consolidation",
+  "kinds": "interagency_coordination, policy_choice",
+  "actor": "FRB, OCC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   12,
+   24
+  ],
+  "lead": "FRB+OCC",
+  "deps": [],
+  "impl_note": "Modest joint rulemaking."
+ },
+ {
+  "tier": "3",
+  "cluster": "Fiduciary (trust) governance",
+  "lever": "Permit the \u00a736/Part 363 audit committee to satisfy the fiduciary-audit duty where composition overlaps.",
+  "effect": "change",
+  "composition": "single:DEEM_SATISFIED",
+  "kinds": "supervisory_value_judgment, policy_choice",
+  "actor": "OCC",
+  "instrument": "rule_apa",
+  "status": "valid_single",
+  "phase": 1,
+  "window": [
+   0,
+   9
+  ],
+  "lead": "OCC",
+  "deps": [],
+  "impl_note": "Single-agency 12 CFR 9 amendment."
+ },
+ {
+  "tier": "3",
+  "cluster": "Information security & cybersecurity",
+  "lever": "One enterprise info-security program approval; joint SEC/banking statement on cyber oversight. v2.1: the 36-hour interagency incident-notification rule and the SEC cyber-disclosure regime impose non-aligned timelines on the same incident \u2014 harmonization here is selection of a single operational standard, not deletion.",
+  "effect": "change",
+  "composition": "consolidation",
+  "kinds": "policy_choice, interagency_coordination, supervisory_value_judgment",
+  "actor": "FRB, OCC, FDIC, SEC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   12,
+   30
+  ],
+  "lead": "FRB+OCC+FDIC+SEC",
+  "deps": [
+   "Timeline selection (principals)"
+  ],
+  "impl_note": "Conform four appendices; the incident-timeline choice is a principals decision."
+ },
+ {
+  "tier": "3",
+  "cluster": "Internal control over financial reporting",
+  "lever": "SOX 404(b) satisfies FDICIA ICFR by cross-reference; align cycles",
+  "effect": "change",
+  "composition": "DEEM_SATISFIED+FACTOR_EXCEPTION+RELATE_OBLIGATION+ASSIGN_DUTY_PARAMETER",
+  "kinds": "policy_choice, institutional_discretion",
+  "actor": "FDIC",
+  "instrument": "rule_amendment(Part 363)",
+  "status": "valid_composite",
+  "phase": 1,
+  "window": [
+   0,
+   12
+  ],
+  "lead": "FDIC",
+  "deps": [],
+  "impl_note": "Single-agency Part 363 amendment; start immediately, lands in Phase 2 window."
+ },
+ {
+  "tier": "3",
+  "cluster": "Operational resilience / business continuity",
+  "lever": "Fold into the enterprise risk-appetite approval.",
+  "effect": "codify",
+  "composition": "single:ELEVATE_GENERAL_RULE",
+  "kinds": "policy_choice, interagency_coordination",
+  "actor": "FRB, OCC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_single",
+  "phase": 3,
+  "window": [
+   12,
+   24
+  ],
+  "lead": "FRB+OCC",
+  "deps": [
+   "Risk-appetite template"
+  ],
+  "impl_note": "Operational-resilience fold rides the risk-appetite instruments."
+ },
+ {
+  "tier": "3",
+  "cluster": "Resolution, recovery & contingency funding",
+  "lever": "Single 'resilience planning' board cycle; shared resolution submission with an IDI annex.",
+  "effect": "clarify",
+  "composition": "composition",
+  "kinds": "institutional_discretion, statutory_constraint, interagency_coordination",
+  "actor": "FRB, FDIC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   15,
+   33
+  ],
+  "lead": "FRB+FDIC",
+  "deps": [
+   "G-Part statement"
+  ],
+  "impl_note": "Joint rulemaking; FDIC annex preserves the distinct resolvability interest."
+ },
+ {
+  "tier": "3",
+  "cluster": "Risk committee architecture",
+  "lever": "One risk-committee standard at the consolidated level + streamlined IDI certification",
+  "effect": "change",
+  "composition": "RELATE_OBLIGATION+MERGE+DEEM_SATISFIED+FACTOR_EXCEPTION+RESOLVE_CROSS_REFERENCE",
+  "kinds": "statutory_constraint, interagency_coordination, policy_choice",
+  "actor": "FRB, OCC",
+  "instrument": "joint_rulemaking",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   12,
+   30
+  ],
+  "lead": "FRB+OCC",
+  "deps": [
+   "Independence definition"
+  ],
+  "impl_note": "Joint rulemaking; App. D cross-references Reg YY; certification template from Phase 2."
+ },
+ {
+  "tier": "3",
+  "cluster": "Risk-governance framework / strategy",
+  "lever": "Codify SR 12-17 governance content into Reg YY; retire the letter",
+  "effect": "change",
+  "composition": "RELOCATE+ASSIGN_DUTY_PARAMETER+REPEAL",
+  "kinds": "policy_choice, interpretive_ambiguity",
+  "actor": "FRB",
+  "instrument": "rule_amendment_notice_and_comment",
+  "status": "valid_composite",
+  "phase": 3,
+  "window": [
+   15,
+   30
+  ],
+  "lead": "FRB",
+  "deps": [
+   "G-Part statement"
+  ],
+  "impl_note": "Notice-and-comment; the declared guidance-to-rule conversion; retires the letter with a logged signal."
+ },
+ {
+  "tier": "5",
+  "cluster": "cross-cutting (largest structural lever)",
+  "lever": "Vertical HC/IDI rationalization via expanded reliance accommodation (schema, per mirror pair)",
+  "effect": "change",
+  "composition": "RELATE_OBLIGATION+DEEM_SATISFIED+FACTOR_EXCEPTION",
+  "kinds": "policy_choice",
+  "actor": "FRB, OCC, FDIC",
+  "instrument": "rulemaking_possibly_statutory",
+  "status": "valid_composite",
+  "phase": 4,
+  "window": [
+   24,
+   48
+  ],
+  "lead": "FRB+OCC+FDIC",
+  "deps": [
+   "Risk-committee standard",
+   "Risk-appetite template",
+   "Enterprise framework statement"
+  ],
+  "impl_note": "The structural prize; requires consolidated enterprise standards in force first; statutory at the margin."
+ },
+ {
+  "tier": "6",
+  "cluster": "Consumer compliance (CMS)",
+  "lever": "Coordinate CMS expectations; CFPB now lightly enforced (2026).",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "interagency_coordination, supervisory_value_judgment",
+  "actor": "\u2014",
+  "instrument": "\u2014",
+  "status": "documented_non_target",
+  "phase": 2,
+  "window": [
+   9,
+   18
+  ],
+  "lead": "FBAs+CFPB",
+  "deps": [],
+  "impl_note": "Coordination item."
+ },
+ {
+  "tier": "6",
+  "cluster": "Incentive compensation",
+  "lever": "Finalize one 956 framework or rely on guidance; SEC independence satisfies the prudential element.",
+  "effect": "unresolved",
+  "composition": "policy_disjunction",
+  "kinds": "\u2014",
+  "actor": "FRB, OCC, FDIC, SEC, NCUA, FHFA",
+  "instrument": "\u2014",
+  "status": "policy_disjunction",
+  "phase": 0,
+  "window": [
+   0,
+   48
+  ],
+  "lead": "6 agencies (principals)",
+  "deps": [],
+  "impl_note": "Open policy branch; either branch slots into Phase 3 mechanics once decided."
+ },
+ {
+  "tier": "6",
+  "cluster": "Model risk governance",
+  "lever": "Confirm the Heightened Standards do not re-impose the dropped board duty. v2.1: SR 26-2 and OCC Bulletin 2026-13 (eff. Apr. 17, 2026) are expressly non-prescriptive and non-enforceable \u2014 neither should be cited as a binding board-approval mandate; any enforceable duty derives from 12 U.S.C. 1831p-1 / 12 CFR 30 App. D.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "statutory_constraint, interpretive_ambiguity",
+  "actor": "\u2014",
+  "instrument": "\u2014",
+  "status": "documented_non_target",
+  "phase": null,
+  "window": null,
+  "lead": "\u2014",
+  "deps": [],
+  "impl_note": "No implementation action (retained / documented non-target)."
+ },
+ {
+  "tier": "6",
+  "cluster": "Personal & individual-director liability",
+  "lever": "Not a consolidation target; documented to show how personal liability compounds the cost of duplicative mandates.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "\u2014",
+  "actor": "\u2014",
+  "instrument": "\u2014",
+  "status": "documented_non_target",
+  "phase": null,
+  "window": null,
+  "lead": "\u2014",
+  "deps": [],
+  "impl_note": "No implementation action (retained / documented non-target)."
+ },
+ {
+  "tier": "6",
+  "cluster": "Safety-and-soundness baseline",
+  "lever": "Treat as baseline; avoid re-imposing in domain rules.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "policy_choice, supervisory_value_judgment",
+  "actor": "\u2014",
+  "instrument": "\u2014",
+  "status": "documented_non_target",
+  "phase": null,
+  "window": null,
+  "lead": "\u2014",
+  "deps": [],
+  "impl_note": "No implementation action (retained / documented non-target)."
+ },
+ {
+  "tier": "6",
+  "cluster": "Source of strength / charter sanctity",
+  "lever": "Clarify the interaction for overlapping directors.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "interpretive_ambiguity, supervisory_value_judgment, statutory_constraint",
+  "actor": "\u2014",
+  "instrument": "\u2014",
+  "status": "documented_non_target",
+  "phase": null,
+  "window": null,
+  "lead": "\u2014",
+  "deps": [],
+  "impl_note": "No implementation action (retained / documented non-target)."
+ },
+ {
+  "tier": "6",
+  "cluster": "Unique structural duties",
+  "lever": "Retain; distinct purpose.",
+  "effect": "unresolved",
+  "composition": "none",
+  "kinds": "\u2014",
+  "actor": "\u2014",
+  "instrument": "\u2014",
+  "status": "documented_non_target",
+  "phase": null,
+  "window": null,
+  "lead": "\u2014",
+  "deps": [],
+  "impl_note": "No implementation action (retained / documented non-target)."
+ },
+ {
+  "tier": "6",
+  "cluster": "cross-cutting",
+  "lever": "Recurring meta-duty (approve framework / review annually / receive reports) -> General Part",
+  "effect": "fill_gap",
+  "composition": "INTRODUCE+ELEVATE_GENERAL_RULE+RESOLVE_CROSS_REFERENCE",
+  "kinds": "\u2014",
+  "actor": "per instrument owner",
+  "instrument": "varies",
+  "status": "valid_composite",
+  "phase": 2,
+  "window": [
+   6,
+   15
+  ],
+  "lead": "Interagency WG",
+  "deps": [],
+  "impl_note": "THE G-PART STATEMENT: the framework statement each later instrument cross-references. Gating item for Phases 2-4."
+ }
+]
