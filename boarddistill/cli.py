@@ -923,6 +923,18 @@ def b6_engine(
         typer.echo(f"  ⚠ leakage quarantine (checkpoint 3.2): {doc['quarantined'][:3]}", err=True)
 
 
+@app.command("b6-report")
+def b6_report(
+    out: Annotated[Path, typer.Option("--out", help="B6 output dir.")] = Path("outputs/b6"),
+) -> None:
+    """B6-T6: assemble outputs/b6/B6_report.md from the scored artifacts."""
+    from adapters.b6_report import build_report
+
+    md = build_report(out)
+    (out / "B6_report.md").write_text(md)
+    typer.echo(f"[boarddistill] B6-T6 report -> {out / 'B6_report.md'} ({len(md)} chars)")
+
+
 @app.command("b6-score")
 def b6_score(
     root: Annotated[Path, typer.Option("--root", help="Benchmark data root.")] = Path(

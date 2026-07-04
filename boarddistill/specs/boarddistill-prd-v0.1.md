@@ -250,6 +250,8 @@ Plus: the instrument hierarchy graph for those clusters only; hand-built gold fi
 
 **Research benchmark (held out):** **RBI rediscovery** — given a sample of pre-consolidation RBI circulars, how much of the published Master-Direction mapping (which circulars merged where, what was repealed, what was preserved-and-related) does the engine recover, scored on operation-set agreement, with RBI's substantive policy choices held out. Secondary: Fed 2017–21 board-effectiveness reallocations as an `ASSIGN_DUTY_STANDARD` reference set.
 
+> **Result (B6, executed 2026-07; `boarddistill/B6_TASKS.md`, report `outputs/b6/B6_report.md`).** Pooled-blind over 163 pseudonymized circulars from 4 Master Directions. Engine grouping: pairwise F1 0.52 (precision 0.92, recall 0.36), ARI 0.43 — **~0 delta vs. a plain-LLM baseline**. The calculus scaffold's distinctive output was 131 span-anchored consolidation *operations*, 75% in the {MERGE, REPEAL, CANONICALIZE_DEFINITION, RESOLVE_CROSS_REFERENCE} set this PRD predicted (§18). Disagreements were clean bank-type/sub-topic splits that RBI's own 2025 consolidation independently adopted. Conclusion: the calculus generalizes cross-jurisdiction as a *structuring/auditing* discipline, not as a better clusterer than an LLM. Standing leakage caveat applies (parametric familiarity mitigated, not eliminated).
+
 ---
 
 ## 14. Risks & mitigations

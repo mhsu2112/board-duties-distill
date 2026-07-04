@@ -251,8 +251,42 @@ uv run python cli.py b5-corpus                   # T6
 uv run python cli.py b5-eval                     # T7
 ```
 
-After B5 and the human review pass, one arc remains: the RBI Master-Directions rediscovery
-benchmark — its own file, on M. Hsu's word. Not started.
+## B6 — the RBI Master-Directions rediscovery benchmark (held-out cross-jurisdiction test)
+
+The final planned arc: a pooled-blind test of whether the consolidation calculus generalizes to
+another regulator. B6-T0 first applied the human-approved B5-residual closure (three named
+composites added, `validate_composition` relaxed to any enum composition, held-out-dial rule
+codified — **the 16-primitive set is closed over the corpus, zero residuals**).
+
+Then the benchmark itself: pool the pre-consolidation source circulars of a sample of RBI Master
+Directions, hold out every MD's identity/text/grouping, pseudonymize all identifiers, and ask the
+engine (and a plain-LLM baseline) to recover the consolidation grouping — scored against RBI's
+published traceability appendices. **RBI's substantive policy choices are never scored.**
+
+- **Sample** (human sign-off checkpoint): 4 MDs / **163 circulars**, 100% retrieval, via
+  web.archive.org + live RBI. KYC/AML and governance MDs dropped at acquisition (§3.3).
+- **Sealed answer key** (`data/benchmark/answer_key/`, path-guarded) + **pseudonymized pooled
+  corpus** (`data/benchmark/pooled/`, 0 surviving identifiers).
+- **Result:** engine pairwise F1 **0.52** (precision 0.92, recall 0.36), ARI 0.43 — **~0 delta vs
+  the plain-LLM baseline** on grouping. But the engine uniquely produces **131 span-anchored
+  operations, 75% in the PRD §18-predicted {MERGE, REPEAL, CANONICALIZE, RESOLVE_CROSS_REFERENCE}**.
+  Both over-split RBI's coarse 4 MDs into ~12 pure bank-type/sub-topic groups — mirroring RBI's
+  own 2025 per-bank-type consolidation. Full write-up: `outputs/b6/B6_report.md`.
+
+The calculus generalizes as a **structuring/auditing discipline**, not as a better clusterer than
+a capable LLM — a reportable finding, not optimized toward agreement.
+
+```bash
+uv run python cli.py b6-acquire      # T1 (network; --offline to replay) — after sign-off
+uv run python cli.py b6-normalize    # T2 pseudonymize
+uv run python cli.py b6-engine       # T3 (--live to populate)
+uv run python cli.py b6-baseline     # T4
+uv run python cli.py b6-score        # T5 (unseals the answer key)
+uv run python cli.py b6-report       # T6
+```
+
+**Project state: full US-GSIB corpus product (B5) + validated cross-jurisdiction benchmark (B6) —
+write-up territory.**
 
 ## Next steps (roadmap — NOT built in slice one)
 
@@ -269,7 +303,8 @@ benchmark — its own file, on M. Hsu's word. Not started.
 5. Per-cluster consolidation packages — **done (B3/B4 for the MVP clusters; B5 for the
    remaining ~27).** The corpus-wide product (master crosswalk, reform roadmap v2, stats,
    `REVIEW_PACKET_B5`) is built.
-6. **RBI Master-Directions rediscovery benchmark** + baselines (the existing horserace
+6. ~~**RBI Master-Directions rediscovery benchmark**~~ — **done (B6)**; see the B6 section above.
+   Original note (the existing horserace
    reports in `Reports/` are the plain-LLM baselines).
 7. **`lex_allium` profile build** per the engine `AGENTS.md` (proves the core is genuinely
    shared).
