@@ -1,8 +1,8 @@
-# BoardDistill — From 227 Board Duties to 30
+# BoardDistill — From 227 Board Duties to 26
 
 **An end-to-end, replicable method for cleaning up accumulated regulatory obligations ("policy sludge"), demonstrated on the duties of the largest U.S. bank boards — with every claim citation-verified, every judgment human-decided and logged, and the whole pipeline replayable offline.**
 
-227 duty statements from five agencies across five instrument strata → a proposed set of ~30 consolidated duties, an A→B crosswalk, a dual-track reform roadmap, and a cross-jurisdiction validation benchmark. Produced by one human reviewer plus an AI pipeline in days; verified like it took years.
+227 duty statements from five agencies across five instrument strata → a proposed set of 26 consolidated duties, an A→B crosswalk, a dual-track reform roadmap, and a cross-jurisdiction validation benchmark. (The proposal drafts six general governance mechanics plus twenty-four domain duties; in the built A→B crosswalk these resolve to 26 consolidated targets — four mechanics embed within the domain duties, and several domain duties merge or fold.) Produced by one human reviewer plus an AI pipeline in days; verified like it took years.
 
 ## Start here
 
@@ -10,7 +10,7 @@
 |---|---|
 | Policymaker / director / counsel wanting the substance | [`release/gsib-board-duties_consolidated-proposal_v0.1.docx`](release/) — the proposal, readable cold. Then the [A→B explorer](release/gsib-board-duties_A-to-B_explorer.html) (download + double-click) or the [crosswalk spreadsheet](release/) |
 | Someone who wants the how, quickly | [`release/method_summary_3-pages.docx`](release/) |
-| Someone who wants the how, completely | [`release/method_from-227-to-30_policymaker-edition.docx`](release/) — chapter per stage, incl. a measured token/cost accounting |
+| Someone who wants the how, completely | [`release/method_from-227-to-26_policymaker-edition.docx`](release/) — chapter per stage, incl. a measured token/cost accounting |
 | A replicator / forker | [`release/REPLICATION.md`](release/REPLICATION.md) — reading order, 5-minute offline verification, adapter recipe |
 | An implementer at an agency | [`release/gsib-board-duties_reform-roadmap_v2.2_dual-track.docx`](release/) — feasibility / agency / timeline views, baseline and executive-priority tracks |
 
@@ -38,7 +38,7 @@ uv run boarddistill eval-fixture data/fixtures/us-gsib/icfr
 
 ## License
 
-Code: [Apache-2.0](LICENSE). Documents, data, and graphics: [CC-BY-4.0](LICENSE-DOCS). Cite as: M. Hsu, *BoardDistill: From 227 Board Duties to 30* (2026), github.com/mhsu2112.
+Code: [Apache-2.0](LICENSE). Documents, data, and graphics: [CC-BY-4.0](LICENSE-DOCS). Cite as: M. Hsu, *BoardDistill: From 227 Board Duties to 26* (2026), github.com/mhsu2112.
 
 ---
 

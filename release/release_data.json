@@ -3,7 +3,7 @@
   "built": "2026-07-02",
   "rows": 227,
   "source": "imported_duties.json + lever_decompositions.json + b5_residual_decompositions.json",
-  "note": "Illustrative draft (NG2). Target set = 6 General-Part mechanics + 24 domain duties (v0.1).",
+  "note": "Illustrative draft (NG2). Target set: 26 consolidated targets in the A\u2192B crosswalk (drafted as 6 General-Part mechanics + 24 domain duties; four mechanics embed within domain duties and several duties merge or fold) (v0.1).",
   "verification_totals": {
    "verified": 142,
    "unverified": 85

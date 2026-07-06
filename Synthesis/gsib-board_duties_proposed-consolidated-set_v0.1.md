@@ -4,7 +4,7 @@
 
 **What it is not:** operative or proposed regulatory text (PRD NG2). Every entry is a `draft` finding downstream of `needs_review` dispositions; several levers require joint rulemaking or statutes that do not yet exist. Quantitative dial values (thresholds, cadences chosen) are deliberately unset. Treat as the working "after" picture for the reform roadmap — the thing a drafting team would start from.
 
-**The headline arithmetic:** ~227 overlapping duty statements across five agencies and five instrument strata → **6 General-Part mechanics + 24 domain duties ≈ 30 consolidated duty statements**, with every statutory-floor obligation intact and every "parallel-but-justified" interest preserved by relation rather than deleted.
+**The headline arithmetic:** ~227 overlapping duty statements across five agencies and five instrument strata → **26 consolidated duty targets**, with every statutory-floor obligation intact and every "parallel-but-justified" interest preserved by relation rather than deleted. (Drafted below as 6 General-Part mechanics + 24 domain duties; in the built A→B crosswalk, four of the mechanics embed within the domain duties and several domain duties merge or fold, resolving to the 26 targets.)
 
 ---
 

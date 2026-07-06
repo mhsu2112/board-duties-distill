@@ -7,7 +7,7 @@ Everything below lives in this repository (`bank boards_cumulative-sludge/`). Th
 | # | File | What it gives you |
 |---|------|-------------------|
 | 1 | `release/method_summary_3-pages.docx` | The whole method in 3 pages |
-| 2 | `release/method_from-227-to-30_policymaker-edition.docx` | Full non-technical narrative, chapter per stage |
+| 2 | `release/method_from-227-to-26_policymaker-edition.docx` | Full non-technical narrative, chapter per stage |
 | 3 | `README.md` | Stage 1: the inventory horserace — producers, judges, rubric |
 | 4 | `Tools/policy-sludge-rubric-v2.md` + `policy-sludge-llm-judge-prompt-v2.md` + `sludge-report-evaluation-instructions.md` | Stage 1 harness: reproduce the evaluation end to end |
 | 5 | `Synthesis/gsib-board_duties-combined_inventory.xlsx` | The 227-row two-layer inventory (primary data input) |
